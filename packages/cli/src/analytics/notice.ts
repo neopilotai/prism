@@ -22,7 +22,7 @@ export function markNoticeSeen(): void {
 }
 
 const NOTICE_TEXT =
-  'Anonymous usage data is collected for agents-md. Opt out: HEROUI_ANALYTICS_DISABLED=1. Learn more: https://github.com/khulnasoft/heroui-cli#analytics\n';
+  'Anonymous usage data is collected for agents-md. Opt out: HEROUI_ANALYTICS_DISABLED=1. Learn more: https://github.com/khulnasoft/prism#analytics\n';
 
 export function showAnalyticsNotice(): void {
   if (hasSeenNotice()) {

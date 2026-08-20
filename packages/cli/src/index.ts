@@ -119,9 +119,9 @@ heroui.hook('preAction', async (command) => {
         `Available upgrade: v${currentVersion} -> ${chalk.greenBright(
           `v${cliLatestVersion}`
         )}\nRun \`${chalk.cyan(
-          'npm install -g heroui-cli@latest'
+          'npm install -g prism-cli@latest'
         )}\` to upgrade\nChangelog: ${chalk.underline(
-          'https://github.com/khulnasoft/heroui-cli/releases'
+          'https://github.com/khulnasoft/prism/releases'
         )}`
       )}`,
       title: gradientString('HeroUI CLI')

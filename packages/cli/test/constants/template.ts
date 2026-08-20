@@ -13,7 +13,7 @@ export function getPkgTemplate(options: PkgTemplate = {}) {
         ...options.devDependencies
       },
       license: 'MIT',
-      name: 'heroui-cli-pkg-template',
+      name: 'prism-cli-pkg-template',
       private: false,
       type: 'module',
       version: '1.0.0'

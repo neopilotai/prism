@@ -1,9 +1,9 @@
 {
-  "name": "heroui-cli-test",
+  "name": "prism-cli-test",
   "type": "module",
   "private": true,
   "version": "1.0.0",
-  "description": "test for heroui-cli",
+  "description": "test for prism-cli",
   "main": "index.js",
   "scripts": {
     "test": "vitest",

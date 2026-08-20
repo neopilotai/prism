@@ -39,7 +39,7 @@ body:
       placeholder: |
         This issue page is ONLY for HeroUI's core library. If you are facing an issue with a specific product, please refer to the following links:
         - HeroUI Pro: Report in HeroUI Pro Discord Channel or Contact Support in Pro Dashboard
-        - HeroUI CLI: Report in https://github.com/khulnasoft/heroui-cli/issues
+        - HeroUI CLI: Report in https://github.com/khulnasoft/prism/issues
         - HeroUI Native: Report in https://github.com/khulnasoft/heroui-native/issues
         - Tailwind Variants: Report in https://github.com/khulnasoft/prism/issues
     validations:

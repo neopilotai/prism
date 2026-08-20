@@ -1,10 +1,10 @@
 {
-  "name": "heroui-cli",
+  "name": "prism-cli",
   "private": false,
   "type": "module",
   "license": "MIT",
   "version": "3.0.4",
-  "homepage": "https://github.com/khulnasoft/heroui-cli#readme",
+  "homepage": "https://github.com/khulnasoft/prism#readme",
   "description": "A CLI tool that unlocks seamless HeroUI integration",
   "keywords": [
     "UI",
@@ -22,10 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/heroui-cli.git"
+    "url": "https://github.com/khulnasoft/prism.git",
+    "directory": "cli"
   },
   "bugs": {
-    "url": "https://github.com/khulnasoft/heroui-cli/issues"
+    "url": "https://github.com/khulnasoft/prism/issues"
   },
   "publishConfig": {
     "access": "public",
@@ -43,7 +44,7 @@
   "scripts": {
     "dev": "tsup --watch",
     "link:cli": "pnpm link --global",
-    "link:remove": "pnpm uninstall --global heroui-cli",
+    "link:remove": "pnpm uninstall --global prism-cli",
     "build": "tsup",
     "sync:docs": "tsx src/scripts/sync/sync.ts",
     "clean:cache": "tsx src/scripts/cache/clean.ts",

@@ -1,4 +1,4 @@
-export const HEROUI_CLI = 'heroui-cli';
+export const HEROUI_CLI = 'prism-cli';
 
 export const TAILWINDCSS = 'tailwindcss';
 export const HERO_UI = '@heroui/react';
