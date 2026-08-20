@@ -40,7 +40,7 @@ body:
         This issue page is ONLY for PrismUI's core library. If you are facing an issue with a specific product, please refer to the following links:
         - PrismUI Pro: Report in PrismUI Pro Discord Channel or Contact Support in Pro Dashboard
         - PrismUI CLI: Report in https://github.com/khulnasoft/prism/issues
-        - PrismUI Native: Report in https://github.com/khulnasoft/prismui-native/issues
+        - PrismUI Native: Report in https://github.com/khulnasoft/prism/issues
         - Tailwind Variants: Report in https://github.com/khulnasoft/prism/issues
     validations:
       required: true

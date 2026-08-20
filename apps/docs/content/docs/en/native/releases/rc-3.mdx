@@ -122,7 +122,7 @@ export function RemovableTagGroup() {
 
 For complete documentation and examples, see the [TagGroup component page](/docs/native/components/tag-group).
 
-**Related PR:** [#309](https://github.com/khulnasoft/prismui-native/pull/309)
+**Related PR:** [#309](https://github.com/khulnasoft/prism/pull/309)
 
 #### Menu
 
@@ -204,7 +204,7 @@ export function MenuWithSections() {
 
 For complete documentation and examples, see the [Menu component page](/docs/native/components/menu).
 
-**Related PR:** [#312](https://github.com/khulnasoft/prismui-native/pull/312)
+**Related PR:** [#312](https://github.com/khulnasoft/prism/pull/312)
 
 #### InputGroup
 
@@ -258,7 +258,7 @@ export function DisabledInput() {
 
 For complete documentation and examples, see the [InputGroup component page](/docs/native/components/input-group).
 
-**Related PR:** [#313](https://github.com/khulnasoft/prismui-native/pull/313)
+**Related PR:** [#313](https://github.com/khulnasoft/prism/pull/313)
 
 ## Component Improvements
 
@@ -274,7 +274,7 @@ The [Bottom Sheet](/docs/native/components/bottom-sheet) shared container now ha
 
 The fix uses React Native's `BackHandler` API which is a no-op on iOS, so no platform-specific handling is needed.
 
-**Related PR:** [#308](https://github.com/khulnasoft/prismui-native/pull/308)
+**Related PR:** [#308](https://github.com/khulnasoft/prism/pull/308)
 
 ### Slot `combineStyles` Fix
 
@@ -286,7 +286,7 @@ The Slot primitive's `combineStyles` function now returns style arrays instead o
 - React Native handles nested style arrays natively, so consumer behavior is unchanged
 - Fixes animation breakages across components that compose via the Slot primitive
 
-**Related PR:** [#314](https://github.com/khulnasoft/prismui-native/pull/314)
+**Related PR:** [#314](https://github.com/khulnasoft/prism/pull/314)
 
 ## Dependencies
 
@@ -299,20 +299,20 @@ Dependency versions have been updated for Expo SDK 55 compatibility:
 
 The `combineStyles` fix described above is the primary code change enabling Expo 55 support, as the previous `StyleSheet.flatten` approach broke Reanimated style bindings in the new SDK.
 
-**Related PR:** [#314](https://github.com/khulnasoft/prismui-native/pull/314)
+**Related PR:** [#314](https://github.com/khulnasoft/prism/pull/314)
 
 ## Bug Fixes
 
 This release includes fixes for the following issues:
 
-- **[Issue #272](https://github.com/khulnasoft/prismui-native/issues/272)**: Resolved `FullWindowOverlay` interfering with the React Native element inspector.
+- **[Issue #272](https://github.com/khulnasoft/prism/issues/272)**: Resolved `FullWindowOverlay` interfering with the React Native element inspector.
 
-- **[Issue #280](https://github.com/khulnasoft/prismui-native/issues/280)**: Fixed Avatar component and other Reanimated-dependent components breaking under Expo 55. The `combineStyles` function was destroying Reanimated animated style bindings via `StyleSheet.flatten`; it now returns style arrays to preserve `SharedValue` and `useAnimatedStyle` bindings.
+- **[Issue #280](https://github.com/khulnasoft/prism/issues/280)**: Fixed Avatar component and other Reanimated-dependent components breaking under Expo 55. The `combineStyles` function was destroying Reanimated animated style bindings via `StyleSheet.flatten`; it now returns style arrays to preserve `SharedValue` and `useAnimatedStyle` bindings.
 
 **Related PRs:**
 
-- [#308](https://github.com/khulnasoft/prismui-native/pull/308)
-- [#314](https://github.com/khulnasoft/prismui-native/pull/314)
+- [#308](https://github.com/khulnasoft/prism/pull/308)
+- [#314](https://github.com/khulnasoft/prism/pull/314)
 
 ## Updated Documentation
 
@@ -325,7 +325,7 @@ The following documentation pages have been updated to reflect the changes in th
 ## Links
 
 - [Component Documentation](../components)
-- [GitHub Repository](https://github.com/khulnasoft/prismui-native)
+- [GitHub Repository](https://github.com/khulnasoft/prism)
 
 ## Contributors
 

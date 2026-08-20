@@ -93,7 +93,7 @@ import { Dialog } from "prismui-native";
 
 `--backdrop` 已纳入所有内置主题的浅色与深色模式，对应的 Tailwind 工具类 `bg-backdrop` 也可用于自定义组件样式。
 
-**相关 PR：** [#366](https://github.com/khulnasoft/prismui-native/pull/366)
+**相关 PR：** [#366](https://github.com/khulnasoft/prism/pull/366)
 
 ## 样式修复
 
@@ -113,20 +113,20 @@ import { Dialog } from "prismui-native";
 
 所有 `isDisabled` 变体类现均使用 `disabled:` 前缀（例如 `disabled:opacity-disabled disabled:pointer-events-none`），正确限定在禁用伪状态，并在禁用态动态切换时消除样式冲突。
 
-**相关 PR：** [#361](https://github.com/khulnasoft/prismui-native/pull/361)
+**相关 PR：** [#361](https://github.com/khulnasoft/prism/pull/361)
 
 ## 问题修复
 
 本版本包含以下修复：
 
-- **[Issue #359](https://github.com/khulnasoft/prismui-native/issues/359)**：修复 Toast 提供程序中 `total` SharedValue 与实际 Toast 数量可能不同步的竞态。原先手动增减在 `hide` 与 `show` 同一帧执行、或自动消失与手动隐藏竞速时，易出现闭包陈旧导致不一致。`total` 现通过 `useEffect` 由 `toasts.length` 派生，使透明度、缩放、translateY 等插值始终反映真实数量。
+- **[Issue #359](https://github.com/khulnasoft/prism/issues/359)**：修复 Toast 提供程序中 `total` SharedValue 与实际 Toast 数量可能不同步的竞态。原先手动增减在 `hide` 与 `show` 同一帧执行、或自动消失与手动隐藏竞速时，易出现闭包陈旧导致不一致。`total` 现通过 `useEffect` 由 `toasts.length` 派生，使透明度、缩放、translateY 等插值始终反映真实数量。
 
-- **[Issue #356](https://github.com/khulnasoft/prismui-native/issues/356)**：修复在 `isDisabled` 为 true 时禁用样式被无条件应用、阻碍开发者主题化或自定义禁用外观的问题。上述七个组件均已改为 `disabled:` 前缀，将样式正确限定在禁用伪状态。
+- **[Issue #356](https://github.com/khulnasoft/prism/issues/356)**：修复在 `isDisabled` 为 true 时禁用样式被无条件应用、阻碍开发者主题化或自定义禁用外观的问题。上述七个组件均已改为 `disabled:` 前缀，将样式正确限定在禁用伪状态。
 
 **相关 PR：**
 
-- [#360](https://github.com/khulnasoft/prismui-native/pull/360)
-- [#361](https://github.com/khulnasoft/prismui-native/pull/361)
+- [#360](https://github.com/khulnasoft/prism/pull/360)
+- [#361](https://github.com/khulnasoft/prism/pull/361)
 
 ## 文档更新
 
@@ -138,7 +138,7 @@ import { Dialog } from "prismui-native";
 ## 链接
 
 - [组件文档](../components)
-- [GitHub 仓库](https://github.com/khulnasoft/prismui-native)
+- [GitHub 仓库](https://github.com/khulnasoft/prism)
 
 ## 贡献者
 

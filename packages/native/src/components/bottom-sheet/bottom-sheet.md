@@ -105,7 +105,7 @@ import { BottomSheetScrollView } from '@gorhom/bottom-sheet';
 </BottomSheet>;
 ```
 
-See the full example with a sticky footer (`BottomSheetFooter`) in the [GitHub repository](https://github.com/khulnasoft/prismui-native/blob/main/example/src/components/bottom-sheet/scrollable-with-snap-points.tsx).
+See the full example with a sticky footer (`BottomSheetFooter`) in the [GitHub repository](https://github.com/khulnasoft/prism/blob/main/example/src/components/bottom-sheet/scrollable-with-snap-points.tsx).
 
 ### Blur Overlay
 
@@ -194,7 +194,7 @@ const BottomSheetTextInput = () => {
 </BottomSheet>;
 ```
 
-See full examples for [`Input`](https://github.com/khulnasoft/prismui-native/blob/main/example/src/components/bottom-sheet/with-text-input.tsx) and [`InputOTP`](https://github.com/khulnasoft/prismui-native/blob/main/example/src/components/bottom-sheet/with-otp-input.tsx) inside a bottom sheet.
+See full examples for [`Input`](https://github.com/khulnasoft/prism/blob/main/example/src/components/bottom-sheet/with-text-input.tsx) and [`InputOTP`](https://github.com/khulnasoft/prism/blob/main/example/src/components/bottom-sheet/with-otp-input.tsx) inside a bottom sheet.
 
 ## Example
 
@@ -249,7 +249,7 @@ export default function BottomSheetExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/bottom-sheet.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prism/blob/main/example/src/app/(home)/components/bottom-sheet.tsx>).
 
 ## API Reference
 

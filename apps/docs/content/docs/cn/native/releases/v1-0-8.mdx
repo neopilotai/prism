@@ -121,7 +121,7 @@ import { View } from 'react-native';
 
 示例应用现在通过 Lingui 附带 `en`、`ar`、`he` 三套语言目录并配有运行时区域切换器，还加入了 `eslint-plugin-lingui` 以防止出现未翻译的字符串。本版本已在 iOS 与 Android 上针对全部三种区域设置进行手动验证，包括在从右到左的应用外壳内部限定为从左到右的预览。
 
-**相关 PR：** [#459](https://github.com/khulnasoft/prismui-native/pull/459)
+**相关 PR：** [#459](https://github.com/khulnasoft/prism/pull/459)
 
 ## 样式
 
@@ -152,7 +152,7 @@ Tailwind v4 会相对于包含 `@source` 的 CSS 文件来解析它，因此在�
 
 现有的应用级 `@source` 行仍可继续工作——它们只是变得多余，可以移除。
 
-**相关 PR：** [#455](https://github.com/khulnasoft/prismui-native/pull/455)
+**相关 PR：** [#455](https://github.com/khulnasoft/prism/pull/455)
 
 ## ⚠️ 破坏性变更
 
@@ -176,7 +176,7 @@ Tailwind v4 会相对于包含 `@source` 的 CSS 文件来解析它，因此在�
 </Card.Header>
 ```
 
-**相关 PR：** [#459](https://github.com/khulnasoft/prismui-native/pull/459)
+**相关 PR：** [#459](https://github.com/khulnasoft/prism/pull/459)
 
 ### TagGroup.List 应用内联布局样式
 
@@ -196,23 +196,23 @@ Tailwind v4 会相对于包含 `@source` 的 CSS 文件来解析它，因此在�
 
 对 [TagGroup](/docs/native/components/tag-group) 的其他 `className` 覆盖不受影响。
 
-**相关 PR：** [#459](https://github.com/khulnasoft/prismui-native/pull/459)
+**相关 PR：** [#459](https://github.com/khulnasoft/prism/pull/459)
 
 ## 问题修复
 
 本版本包含以下问题的修复：
 
-- **[Issue #454](https://github.com/khulnasoft/prismui-native/issues/454)**：修复了在 monorepo 布局下类名扫描失效的问题。`prismui-native/styles` 未为其自身文件声明 `@source`，因此应用必须把一个指向 `node_modules` 的路径硬编码进来，而该路径只在部分包管理器布局下才能解析——一旦出错，Tailwind 便什么都不扫描且静默失败，导致 PrismUI 组件在没有样式的情况下渲染。随包发布的样式表现在会声明相对于自身的扫描路径。
+- **[Issue #454](https://github.com/khulnasoft/prism/issues/454)**：修复了在 monorepo 布局下类名扫描失效的问题。`prismui-native/styles` 未为其自身文件声明 `@source`，因此应用必须把一个指向 `node_modules` 的路径硬编码进来，而该路径只在部分包管理器布局下才能解析——一旦出错，Tailwind 便什么都不扫描且静默失败，导致 PrismUI 组件在没有样式的情况下渲染。随包发布的样式表现在会声明相对于自身的扫描路径。
 
 **相关 PR：**
 
-- [#455](https://github.com/khulnasoft/prismui-native/pull/455)
+- [#455](https://github.com/khulnasoft/prism/pull/455)
 
 ## 内部变更
 
 本版本还移除了循环模块依赖：`Surface` 上下文被拆分为一个叶子模块，共享的 `Toast` 配置被提取到 `toast.base-types`。仅内部导入路径发生变化——不影响任何公共 API。
 
-**相关 PR：** [#459](https://github.com/khulnasoft/prismui-native/pull/459)
+**相关 PR：** [#459](https://github.com/khulnasoft/prism/pull/459)
 
 ## 更新的文档
 
@@ -224,7 +224,7 @@ Tailwind v4 会相对于包含 `@source` 的 CSS 文件来解析它，因此在�
 ## 链接
 
 - [组件文档](../components)
-- [GitHub 仓库](https://github.com/khulnasoft/prismui-native)
+- [GitHub 仓库](https://github.com/khulnasoft/prism)
 
 ## 贡献者
 

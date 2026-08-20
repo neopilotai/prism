@@ -55,14 +55,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/khulnasoft/prismui-native.git"
+    "url": "git+https://github.com/khulnasoft/prism.git",
+    "directory": "native"
   },
   "author": "PrismUI <support@khulnasoft.com> (https://github.com/khulnasoft)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/khulnasoft/prismui-native/issues"
+    "url": "https://github.com/khulnasoft/prism/issues"
   },
-  "homepage": "https://github.com/khulnasoft/prismui-native#readme",
+  "homepage": "https://github.com/khulnasoft/prism#readme",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

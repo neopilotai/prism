@@ -62,7 +62,7 @@ The [Popover](/docs/native/components/popover), [Menu](/docs/native/components/m
 
 Public component APIs are unchanged — the single-mount path is entirely internal, and custom entering animations behave exactly as before. We recommend verifying enter and exit animations across all four placements, sub-menu transitions, and the disabled-animations case.
 
-**Related PR:** [#438](https://github.com/khulnasoft/prismui-native/pull/438)
+**Related PR:** [#438](https://github.com/khulnasoft/prism/pull/438)
 
 ## Component Improvements
 
@@ -78,7 +78,7 @@ The [Typography](/docs/native/components/text) component now applies a default `
 
 This change is iOS-only and does not alter the Typography API. Apps that already pass `dynamicTypeRamp` directly continue to control scaling explicitly.
 
-**Related PR:** [#435](https://github.com/khulnasoft/prismui-native/pull/435)
+**Related PR:** [#435](https://github.com/khulnasoft/prism/pull/435)
 
 ### Select Check Icon Color
 
@@ -91,7 +91,7 @@ The [Select](/docs/native/components/select) component's `Select.ItemIndicator` 
 
 Only the default icon color changes when `iconProps.color` is omitted — the API is unchanged and custom colors still work. Manual verification on light and dark themes is recommended to confirm indicator contrast.
 
-**Related PR:** [#436](https://github.com/khulnasoft/prismui-native/pull/436)
+**Related PR:** [#436](https://github.com/khulnasoft/prism/pull/436)
 
 ## API Enhancements
 
@@ -128,7 +128,7 @@ export function App() {
 
 Global props are applied as defaults, so any prop passed directly to a component still overrides them.
 
-**Related PR:** [#437](https://github.com/khulnasoft/prismui-native/pull/437)
+**Related PR:** [#437](https://github.com/khulnasoft/prism/pull/437)
 
 ## Dependencies
 
@@ -154,7 +154,7 @@ The project has been upgraded to the Expo 57 / React Native 0.86 toolchain. This
 
 Public APIs are unchanged, but consumers should align their peer versions with Expo 57 / React Native 0.86. Manual testing of overlay open/close animations on iOS and Android and input focus states is recommended.
 
-**Related PR:** [#439](https://github.com/khulnasoft/prismui-native/pull/439)
+**Related PR:** [#439](https://github.com/khulnasoft/prism/pull/439)
 
 ## ⚠️ Breaking Changes
 
@@ -202,7 +202,7 @@ When using the field border width utility directly, rename it:
 
 If you rely on `--field-border` color to produce resting borders, set a non-zero `--field-border-width` default to restore that appearance.
 
-**Related PR:** [#434](https://github.com/khulnasoft/prismui-native/pull/434)
+**Related PR:** [#434](https://github.com/khulnasoft/prism/pull/434)
 
 ## Updated Documentation
 
@@ -215,7 +215,7 @@ The following documentation pages have been updated to reflect the changes in th
 ## Links
 
 - [Component Documentation](../components)
-- [GitHub Repository](https://github.com/khulnasoft/prismui-native)
+- [GitHub Repository](https://github.com/khulnasoft/prism)
 
 ## Contributors
 

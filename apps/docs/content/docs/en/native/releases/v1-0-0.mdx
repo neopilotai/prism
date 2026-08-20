@@ -87,7 +87,7 @@ export function TermsLink() {
 }
 ```
 
-**Related PR:** [#341](https://github.com/khulnasoft/prismui-native/pull/341)
+**Related PR:** [#341](https://github.com/khulnasoft/prism/pull/341)
 
 ## Component Improvements
 
@@ -103,13 +103,13 @@ The [Menu](/docs/native/components/menu) sub-menu system has been refactored to 
 - Open sub-menu content uses `z-50`; closed uses `z-40` to avoid stacking issues
 - New "Two Sub Menus" example added to the demo app showcasing multiple sub-menus in a single menu
 
-**Related PR:** [#343](https://github.com/khulnasoft/prismui-native/pull/343)
+**Related PR:** [#343](https://github.com/khulnasoft/prism/pull/343)
 
 ### Button Label Ref Type Fix
 
 The `ButtonLabel` ref type has been corrected from `View` to `TextRef`, and an unused `View` import has been removed from `button.tsx`. This fix aligns the ref type with the actual rendered element.
 
-**Related PR:** [#341](https://github.com/khulnasoft/prismui-native/pull/341)
+**Related PR:** [#341](https://github.com/khulnasoft/prism/pull/341)
 
 ## API Enhancements
 
@@ -131,7 +131,7 @@ const [color] = useThemeColor("muted"); // color: never
 
 `ThemeColorValue` extends `string`, so it is assignable everywhere a `string` is expected. Existing call sites are unaffected at runtime. The `_colorValueBrand` symbol is declared with `declare const` so it has zero runtime footprint.
 
-**Related PR:** [#337](https://github.com/khulnasoft/prismui-native/pull/337)
+**Related PR:** [#337](https://github.com/khulnasoft/prism/pull/337)
 
 ### `useBottomSheetAwareHandlers` Public Hook
 
@@ -149,7 +149,7 @@ export function BottomSheetInput() {
 }
 ```
 
-**Related PR:** [#347](https://github.com/khulnasoft/prismui-native/pull/347)
+**Related PR:** [#347](https://github.com/khulnasoft/prism/pull/347)
 
 ## ⚠️ Breaking Changes
 
@@ -172,20 +172,20 @@ const { onFocus, onBlur } = useBottomSheetAwareHandlers();
 
 This applies to any `Input` or `InputOTP` rendered inside a `BottomSheet`. Components used outside of bottom sheets are unaffected.
 
-**Related PR:** [#347](https://github.com/khulnasoft/prismui-native/pull/347)
+**Related PR:** [#347](https://github.com/khulnasoft/prism/pull/347)
 
 ## Bug Fixes
 
 This release includes fixes for the following issues:
 
-- **[Issue #330](https://github.com/khulnasoft/prismui-native/issues/330)**: Resolved `Input` unconditionally importing `@gorhom/bottom-sheet` at the module level even when `isBottomSheetAware` was `false`. The package is now loaded lazily via an optional `try/catch` wrapper, so projects that don't use bottom sheet features no longer need it installed.
+- **[Issue #330](https://github.com/khulnasoft/prism/issues/330)**: Resolved `Input` unconditionally importing `@gorhom/bottom-sheet` at the module level even when `isBottomSheetAware` was `false`. The package is now loaded lazily via an optional `try/catch` wrapper, so projects that don't use bottom sheet features no longer need it installed.
 
-- **[Issue #340](https://github.com/khulnasoft/prismui-native/issues/340)**: Fixed sub-menu content appearing behind sibling sub-menu triggers. The sub-menu system now tracks the active sub-menu by ID, enforces single-open behavior, and applies correct z-index layering (`z-50` for open, `z-40` for closed).
+- **[Issue #340](https://github.com/khulnasoft/prism/issues/340)**: Fixed sub-menu content appearing behind sibling sub-menu triggers. The sub-menu system now tracks the active sub-menu by ID, enforces single-open behavior, and applies correct z-index layering (`z-50` for open, `z-40` for closed).
 
 **Related PRs:**
 
-- [#347](https://github.com/khulnasoft/prismui-native/pull/347)
-- [#343](https://github.com/khulnasoft/prismui-native/pull/343)
+- [#347](https://github.com/khulnasoft/prism/pull/347)
+- [#343](https://github.com/khulnasoft/prism/pull/343)
 
 ## Updated Documentation
 
@@ -199,7 +199,7 @@ The following documentation pages have been updated to reflect the changes in th
 ## Links
 
 - [Component Documentation](../components)
-- [GitHub Repository](https://github.com/khulnasoft/prismui-native)
+- [GitHub Repository](https://github.com/khulnasoft/prism)
 
 ## Contributors
 

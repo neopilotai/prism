@@ -86,7 +86,7 @@ export function Example() {
   **无需迁移。** 既有的 `import { Text } from "prismui-native"` 通过弃用重导出仍然可用。请在未来某个大版本移除弃用别名之前，按你的节奏迁移到 `Typography`。
 </Callout>
 
-**相关 PR：** [#417](https://github.com/khulnasoft/prismui-native/pull/417)
+**相关 PR：** [#417](https://github.com/khulnasoft/prism/pull/417)
 
 ### 鲜亮主题配色（可选）
 
@@ -105,7 +105,7 @@ import "prismui-native/styles/vibrant";
 
 在引入基础样式之后再引入 `prismui-native/styles/vibrant`，即可用更饱和的取值覆盖柔和前景令牌。无需修改任何组件代码即可启用。
 
-**相关 PR：** [#420](https://github.com/khulnasoft/prismui-native/pull/420)
+**相关 PR：** [#420](https://github.com/khulnasoft/prism/pull/420)
 
 ## 组件改进
 
@@ -122,7 +122,7 @@ import "prismui-native/styles/vibrant";
 
 组件属性与公开 API 均无变化——仅 soft 变体的取色发生变化。沿用默认主题的应用将开箱获得 soft 变体上更柔和、可读性更佳的图标与标签颜色。
 
-**相关 PR：** [#420](https://github.com/khulnasoft/prismui-native/pull/420)
+**相关 PR：** [#420](https://github.com/khulnasoft/prism/pull/420)
 
 ### TextArea 垂直内边距修复
 
@@ -133,7 +133,7 @@ import "prismui-native/styles/vibrant";
 - `TextArea` 现使用 `h-32 py-2`，提供一致的内部间距
 - 无 API 变更——仅为组件内的样式调整
 
-**相关 PR：** [#421](https://github.com/khulnasoft/prismui-native/pull/421)
+**相关 PR：** [#421](https://github.com/khulnasoft/prism/pull/421)
 
 ## API 增强
 
@@ -162,7 +162,7 @@ const colors = useThemeColor([
 
 如果你使用了已移除的 `useThemeColor` 键（`on-surface-*`）或旧的 `overlay-backdrop` 键，请改用更新后的令牌名。组件属性与视觉默认值保持不变。
 
-**相关 PR：** [#420](https://github.com/khulnasoft/prismui-native/pull/420)
+**相关 PR：** [#420](https://github.com/khulnasoft/prism/pull/420)
 
 ## 依赖
 
@@ -176,7 +176,7 @@ npm i @gorhom/bottom-sheet@^5.2.9
 
 这是本版本对消费者唯一的对等依赖变更。库的 `react`（`>=19.0.0`）与 `react-native`（`>=0.81.0`）对等依赖范围保持不变。
 
-**相关 PR：** [#421](https://github.com/khulnasoft/prismui-native/pull/421)
+**相关 PR：** [#421](https://github.com/khulnasoft/prism/pull/421)
 
 ### 示例应用升级至 Expo 56 / React Native 0.85
 
@@ -197,7 +197,7 @@ npm i @gorhom/bottom-sheet@^5.2.9
 - 移除未使用的 `example/src/components/safe-area-view.tsx`、`eas.json` 以及陈旧的 `newArchEnabled` / `edgeToEdgeEnabled` 标记
 - 示例应用的 slug/bundle 重命名为 `prismui-native-oss`；调整 Android 上 `WithStateToggle` 的内边距
 
-**相关 PR：** [#421](https://github.com/khulnasoft/prismui-native/pull/421)
+**相关 PR：** [#421](https://github.com/khulnasoft/prism/pull/421)
 
 ## 文档
 
@@ -226,19 +226,19 @@ const insets = useSafeAreaInsets();
 
 这是纯文档变更，未改动任何 API 或运行时行为。
 
-**相关 PR：** [#419](https://github.com/khulnasoft/prismui-native/pull/419)
+**相关 PR：** [#419](https://github.com/khulnasoft/prism/pull/419)
 
 ## 问题修复
 
 本版本包含以下修复：
 
-- **[Issue #405](https://github.com/khulnasoft/prismui-native/issues/405)**：补充了在 React Navigation 原生模态中 `Menu` 渲染错位的处理方案。Menu 文档新增**原生模态（iOS）**章节，解释 Fabric / `FullWindowOverlay` 的坐标不一致，并演示如何用 `useSafeAreaInsets` 配合 `offset={insets.top}` 补偿。
-- **[Issue #418](https://github.com/khulnasoft/prismui-native/issues/418)**：修复将示例应用升级到 Expo 56 后出现的 Hermes 崩溃（「Maximum call stack size exceeded」）及 `BottomSheet` 内容不可见的问题。示例的 `metro.config.js` 现已将对等依赖解析（`react`、`react-native`、`uniwind` 等）锁定到示例的本地 `node_modules`，防止从 workspace 根加载到重复副本。
+- **[Issue #405](https://github.com/khulnasoft/prism/issues/405)**：补充了在 React Navigation 原生模态中 `Menu` 渲染错位的处理方案。Menu 文档新增**原生模态（iOS）**章节，解释 Fabric / `FullWindowOverlay` 的坐标不一致，并演示如何用 `useSafeAreaInsets` 配合 `offset={insets.top}` 补偿。
+- **[Issue #418](https://github.com/khulnasoft/prism/issues/418)**：修复将示例应用升级到 Expo 56 后出现的 Hermes 崩溃（「Maximum call stack size exceeded」）及 `BottomSheet` 内容不可见的问题。示例的 `metro.config.js` 现已将对等依赖解析（`react`、`react-native`、`uniwind` 等）锁定到示例的本地 `node_modules`，防止从 workspace 根加载到重复副本。
 
 **相关 PR：**
 
-- [#419](https://github.com/khulnasoft/prismui-native/pull/419)
-- [#421](https://github.com/khulnasoft/prismui-native/pull/421)
+- [#419](https://github.com/khulnasoft/prism/pull/419)
+- [#421](https://github.com/khulnasoft/prism/pull/421)
 
 ## 弃用
 
@@ -264,7 +264,7 @@ import {
 <Typography.Heading type="h1">Welcome</Typography.Heading>;
 ```
 
-**相关 PR：** [#417](https://github.com/khulnasoft/prismui-native/pull/417)
+**相关 PR：** [#417](https://github.com/khulnasoft/prism/pull/417)
 
 ## 文档更新
 
@@ -279,7 +279,7 @@ import {
 ## 链接
 
 - [组件文档](../components)
-- [GitHub 仓库](https://github.com/khulnasoft/prismui-native)
+- [GitHub 仓库](https://github.com/khulnasoft/prism)
 
 ## 贡献者
 

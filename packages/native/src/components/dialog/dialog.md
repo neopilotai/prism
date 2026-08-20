@@ -149,7 +149,7 @@ export default function DialogExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/dialog.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prism/blob/main/example/src/app/(home)/components/dialog.tsx>).
 
 ## API Reference
 

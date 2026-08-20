@@ -188,7 +188,7 @@ export default function AlertExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/alert.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prism/blob/main/example/src/app/(home)/components/alert.tsx>).
 
 ## API Reference
 
