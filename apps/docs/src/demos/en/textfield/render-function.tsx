@@ -1,6 +1,6 @@
 "use client";
 
-import {Input, Label, TextField} from "@khulnasoft/react";
+import {Input, Label, TextField} from "@prismui/react";
 
 export function RenderFunction() {
   return (

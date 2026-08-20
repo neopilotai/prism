@@ -1,4 +1,4 @@
-import {Alert, Button, CloseButton, Spinner} from "@khulnasoft/react";
+import {Alert, Button, CloseButton, Spinner} from "@prismui/react";
 import React from "react";
 
 export function Basic() {

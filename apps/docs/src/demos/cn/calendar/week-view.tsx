@@ -1,6 +1,6 @@
 "use client";
 
-import {Calendar, Label, ListBox, Select} from "@khulnasoft/react";
+import {Calendar, Label, ListBox, Select} from "@prismui/react";
 import {useState} from "react";
 
 const weekOptions = [

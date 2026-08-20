@@ -1,7 +1,7 @@
 "use client";
 
 import {CircleInfo} from "@gravity-ui/icons";
-import {Button, Modal} from "@khulnasoft/react";
+import {Button, Modal} from "@prismui/react";
 
 export function DismissBehavior() {
   return (

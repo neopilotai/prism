@@ -1,4 +1,4 @@
-import {Label} from "@khulnasoft/react";
+import {Label} from "@prismui/react";
 import React, {useCallback, useRef} from "react";
 import {tv} from "tailwind-variants";
 

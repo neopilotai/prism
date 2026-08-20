@@ -1,5 +1,5 @@
 import {Icon} from "@iconify/react";
-import {Button} from "@khulnasoft/react";
+import {Button} from "@prismui/react";
 
 export function Social() {
   return (

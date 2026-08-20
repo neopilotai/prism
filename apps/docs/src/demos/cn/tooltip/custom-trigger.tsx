@@ -1,5 +1,5 @@
 import {CircleCheckFill, CircleQuestion} from "@gravity-ui/icons";
-import {Avatar, Chip, Tooltip} from "@khulnasoft/react";
+import {Avatar, Chip, Tooltip} from "@prismui/react";
 
 export function TooltipCustomTrigger() {
   return (

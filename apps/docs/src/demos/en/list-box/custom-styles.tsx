@@ -1,4 +1,4 @@
-import {Avatar, Description, Label, ListBox} from "@khulnasoft/react";
+import {Avatar, Description, Label, ListBox} from "@prismui/react";
 
 export function CustomStyles() {
   return (

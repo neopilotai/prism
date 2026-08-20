@@ -1,4 +1,4 @@
-import {Table} from "@khulnasoft/react";
+import {Table} from "@prismui/react";
 
 const headerCell = "text-xs font-semibold uppercase tracking-wide text-muted";
 

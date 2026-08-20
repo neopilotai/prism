@@ -1,4 +1,4 @@
-import {Description, Label, SearchField} from "@khulnasoft/react";
+import {Description, Label, SearchField} from "@prismui/react";
 
 export function Disabled() {
   return (

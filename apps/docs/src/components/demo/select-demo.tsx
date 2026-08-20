@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, ListBox, Select} from "@khulnasoft/react";
+import {Label, ListBox, Select} from "@prismui/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

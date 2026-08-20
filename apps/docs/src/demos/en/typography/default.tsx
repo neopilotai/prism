@@ -1,4 +1,4 @@
-import {Typography} from "@khulnasoft/react";
+import {Typography} from "@prismui/react";
 
 export const Default = () => {
   return (
@@ -14,7 +14,7 @@ export const Default = () => {
       <Typography color="muted" type="body-sm">
         Smaller muted body copy for secondary descriptions.
       </Typography>
-      <Typography type="code">pnpm add @khulnasoft/react</Typography>
+      <Typography type="code">pnpm add @prismui/react</Typography>
     </div>
   );
 };

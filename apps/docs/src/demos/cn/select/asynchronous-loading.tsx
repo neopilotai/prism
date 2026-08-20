@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, ListBox, Select, Spinner} from "@khulnasoft/react";
+import {Label, ListBox, Select, Spinner} from "@prismui/react";
 import {useAsyncList} from "@react-stately/data";
 import {Collection, ListBoxLoadMoreItem} from "react-aria-components";
 

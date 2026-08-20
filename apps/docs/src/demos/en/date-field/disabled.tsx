@@ -1,7 +1,7 @@
 "use client";
 
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {DateField, Description, Label} from "@khulnasoft/react";
+import {DateField, Description, Label} from "@prismui/react";
 
 export function Disabled() {
   return (

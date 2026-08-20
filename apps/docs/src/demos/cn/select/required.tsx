@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, FieldError, Form, Label, ListBox, Select} from "@khulnasoft/react";
+import {Button, FieldError, Form, Label, ListBox, Select} from "@prismui/react";
 
 export function Required() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {

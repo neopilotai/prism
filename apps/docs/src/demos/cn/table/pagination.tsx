@@ -1,6 +1,6 @@
 "use client";
 
-import {Pagination, Table} from "@khulnasoft/react";
+import {Pagination, Table} from "@prismui/react";
 import {useMemo, useState} from "react";
 
 const columns = [

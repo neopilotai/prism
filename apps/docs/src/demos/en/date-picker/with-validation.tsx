@@ -3,7 +3,7 @@
 import type {DateValue} from "@internationalized/date";
 
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {Calendar, DateField, DatePicker, FieldError, Label} from "@khulnasoft/react";
+import {Calendar, DateField, DatePicker, FieldError, Label} from "@prismui/react";
 import {useState} from "react";
 
 export function WithValidation() {

@@ -1,7 +1,7 @@
 "use client";
 
 import {Clock} from "@gravity-ui/icons";
-import {Label, TimeField} from "@khulnasoft/react";
+import {Label, TimeField} from "@prismui/react";
 
 export function WithSuffixIcon() {
   return (

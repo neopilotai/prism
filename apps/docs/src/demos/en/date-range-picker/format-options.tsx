@@ -1,6 +1,6 @@
 "use client";
 
-import type {TimeValue} from "@khulnasoft/react";
+import type {TimeValue} from "@prismui/react";
 import type {DateValue} from "@internationalized/date";
 
 import {

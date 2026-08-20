@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, ListBox, NumberField, ProgressBar, Select, Separator} from "@khulnasoft/react";
+import {Label, ListBox, NumberField, ProgressBar, Select, Separator} from "@prismui/react";
 import {useState} from "react";
 
 const formatStyleOptions: {label: string; value: string}[] = [

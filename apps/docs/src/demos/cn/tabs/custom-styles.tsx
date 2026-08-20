@@ -1,4 +1,4 @@
-import {Tabs} from "@khulnasoft/react";
+import {Tabs} from "@prismui/react";
 
 const listClassName = [
   "rounded-xl border border-accent/10 bg-accent-soft/30 p-1",

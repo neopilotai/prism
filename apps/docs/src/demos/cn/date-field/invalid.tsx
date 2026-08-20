@@ -1,6 +1,6 @@
 "use client";
 
-import {DateField, FieldError, Label} from "@khulnasoft/react";
+import {DateField, FieldError, Label} from "@prismui/react";
 
 export function Invalid() {
   return (

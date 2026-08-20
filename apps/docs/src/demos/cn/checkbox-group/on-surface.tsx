@@ -1,4 +1,4 @@
-import {Checkbox, CheckboxGroup, Description, Label, Surface} from "@khulnasoft/react";
+import {Checkbox, CheckboxGroup, Description, Label, Surface} from "@prismui/react";
 
 export function OnSurface() {
   return (

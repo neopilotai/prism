@@ -1,4 +1,4 @@
-import {Description, Switch} from "@khulnasoft/react";
+import {Description, Switch} from "@prismui/react";
 
 export function WithDescription() {
   return (

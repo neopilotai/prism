@@ -1,4 +1,4 @@
-import {buttonVariants} from "@khulnasoft/react";
+import {buttonVariants} from "@prismui/react";
 import {tv} from "tailwind-variants";
 
 export const docsButtonVariants = tv({

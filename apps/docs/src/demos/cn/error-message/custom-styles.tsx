@@ -1,6 +1,6 @@
 "use client";
 
-import type {Key} from "@khulnasoft/react";
+import type {Key} from "@prismui/react";
 
 import {Description, ErrorMessage, Label, Tag, TagGroup} from "@prismui/react";
 import {useMemo, useState} from "react";

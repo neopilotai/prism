@@ -1,4 +1,4 @@
-import {Button, Tooltip} from "@khulnasoft/react";
+import {Button, Tooltip} from "@prismui/react";
 
 export function TooltipWithArrow() {
   return (

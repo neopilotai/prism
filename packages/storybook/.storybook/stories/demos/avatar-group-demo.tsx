@@ -1,4 +1,4 @@
-import {Avatar} from "@khulnasoft/react";
+import {Avatar} from "@prismui/react";
 import React from "react";
 
 const avatars = [

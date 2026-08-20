@@ -1,9 +1,9 @@
 "use client";
 
-import type {Selection} from "@khulnasoft/react";
+import type {Selection} from "@prismui/react";
 
 import {Check} from "@gravity-ui/icons";
-import {Avatar, Description, Label, ListBox, Surface} from "@khulnasoft/react";
+import {Avatar, Description, Label, ListBox, Surface} from "@prismui/react";
 import {useState} from "react";
 
 export function Controlled() {

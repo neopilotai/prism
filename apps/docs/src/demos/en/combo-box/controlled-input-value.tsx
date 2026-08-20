@@ -1,6 +1,6 @@
 "use client";
 
-import {ComboBox, Input, Label, ListBox} from "@khulnasoft/react";
+import {ComboBox, Input, Label, ListBox} from "@prismui/react";
 import {useState} from "react";
 
 export function ControlledInputValue() {

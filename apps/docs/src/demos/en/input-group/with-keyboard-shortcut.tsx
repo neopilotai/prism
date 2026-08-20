@@ -1,6 +1,6 @@
 "use client";
 
-import {InputGroup, Kbd, TextField} from "@khulnasoft/react";
+import {InputGroup, Kbd, TextField} from "@prismui/react";
 
 export function WithKeyboardShortcut() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import {getLocalTimeZone, isToday} from "@internationalized/date";
-import {Calendar} from "@khulnasoft/react";
+import {Calendar} from "@prismui/react";
 
 const datesWithEvents = [3, 7, 12, 15, 21, 28];
 

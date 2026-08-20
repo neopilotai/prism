@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, TextArea} from "@khulnasoft/react";
+import {Description, TextArea} from "@prismui/react";
 import React from "react";
 
 export function Controlled() {

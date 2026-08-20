@@ -1,6 +1,6 @@
 "use client";
 
-import {Button} from "@khulnasoft/react";
+import {Button} from "@prismui/react";
 
 /**
  * 下面的 `gradient-border` 类依赖全局 utility。

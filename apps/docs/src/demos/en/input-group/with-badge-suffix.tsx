@@ -1,6 +1,6 @@
 "use client";
 
-import {Chip, InputGroup, TextField} from "@khulnasoft/react";
+import {Chip, InputGroup, TextField} from "@prismui/react";
 
 export function WithBadgeSuffix() {
   return (

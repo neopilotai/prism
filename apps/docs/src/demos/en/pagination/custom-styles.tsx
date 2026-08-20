@@ -1,6 +1,6 @@
 "use client";
 
-import {Pagination} from "@khulnasoft/react";
+import {Pagination} from "@prismui/react";
 import {useState} from "react";
 
 const linkClass = "text-muted hover:bg-surface hover:text-foreground";

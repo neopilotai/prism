@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, TooltipArrow, TooltipContent, TooltipRoot, TooltipTrigger} from "@khulnasoft/react";
+import {Button, TooltipArrow, TooltipContent, TooltipRoot, TooltipTrigger} from "@prismui/react";
 import React from "react";
 
 import {Iconify} from "@/components/iconify";

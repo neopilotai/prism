@@ -144,7 +144,7 @@ function mcpApiDocument(kind: "react" | "native"): OpenAPIDocument {
       title,
       "1.1.0",
       serverUrl,
-      `Read-only data API used by the ${isReact ? "@khulnasoft/react-mcp" : "@khulnasoft/native-mcp"} packPrismUId PrismUI agent skills.`,
+      `Read-only data API used by the ${isReact ? "@prismui/react-mcp" : "@khulnasoft/native-mcp"} packPrismUId PrismUI agent skills.`,
     ),
     paths: {
       "/health": {

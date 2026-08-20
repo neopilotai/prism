@@ -25,7 +25,7 @@ import {
   Surface,
   Switch,
   Tabs,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {Icon} from "@iconify/react";
 import React from "react";
 

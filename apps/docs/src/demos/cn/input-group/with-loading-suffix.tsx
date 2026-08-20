@@ -1,6 +1,6 @@
 "use client";
 
-import {InputGroup, Spinner, TextField} from "@khulnasoft/react";
+import {InputGroup, Spinner, TextField} from "@prismui/react";
 
 export function WithLoadingSuffix() {
   return (

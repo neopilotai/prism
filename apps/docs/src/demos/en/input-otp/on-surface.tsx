@@ -1,4 +1,4 @@
-import {InputOTP, Label, Link, Surface} from "@khulnasoft/react";
+import {InputOTP, Label, Link, Surface} from "@prismui/react";
 
 export function OnSurface() {
   return (

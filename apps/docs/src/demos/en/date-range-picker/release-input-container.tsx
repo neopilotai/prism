@@ -1,6 +1,6 @@
 "use client";
 
-import type {TimeValue} from "@khulnasoft/react";
+import type {TimeValue} from "@prismui/react";
 
 import {DateField, DateRangePicker, Label, RangeCalendar, TimeField} from "@prismui/react";
 import {getLocalTimeZone, parseZonedDateTime} from "@internationalized/date";

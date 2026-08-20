@@ -1,4 +1,4 @@
-import {Card, ScrollShadow} from "@khulnasoft/react";
+import {Card, ScrollShadow} from "@prismui/react";
 
 const images = [
   "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/robot1.jpeg",

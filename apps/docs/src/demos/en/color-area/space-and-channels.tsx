@@ -1,6 +1,6 @@
 "use client";
 
-import type {ColorSpace, Key} from "@khulnasoft/react";
+import type {ColorSpace, Key} from "@prismui/react";
 
 import {ColorArea, Label, ListBox, Select, parseColor} from "@prismui/react";
 import {useState} from "react";

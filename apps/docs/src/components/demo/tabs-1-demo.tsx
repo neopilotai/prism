@@ -1,6 +1,6 @@
 "use client";
 
-import {Tabs} from "@khulnasoft/react";
+import {Tabs} from "@prismui/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

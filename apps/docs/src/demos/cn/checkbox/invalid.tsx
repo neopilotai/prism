@@ -1,4 +1,4 @@
-import {Checkbox, FieldError} from "@khulnasoft/react";
+import {Checkbox, FieldError} from "@prismui/react";
 
 export function Invalid() {
   return (

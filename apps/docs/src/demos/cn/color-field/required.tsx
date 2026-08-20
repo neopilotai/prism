@@ -1,4 +1,4 @@
-import {ColorField, Description, Label} from "@khulnasoft/react";
+import {ColorField, Description, Label} from "@prismui/react";
 
 export function Required() {
   return (

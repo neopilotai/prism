@@ -1,4 +1,4 @@
-import {Description, Label, Radio, RadioGroup} from "@khulnasoft/react";
+import {Description, Label, Radio, RadioGroup} from "@prismui/react";
 
 const options = [
   {description: "每月扣费 $12", label: "按月", value: "monthly"},

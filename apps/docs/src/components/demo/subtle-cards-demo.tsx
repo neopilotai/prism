@@ -1,6 +1,6 @@
 "use client";
 
-import {Avatar, Card} from "@khulnasoft/react";
+import {Avatar, Card} from "@prismui/react";
 import {tv} from "tailwind-variants";
 
 import {useDictionary} from "@/hooks/use-dictionary";

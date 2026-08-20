@@ -1,4 +1,4 @@
-import {Tabs} from "@khulnasoft/react";
+import {Tabs} from "@prismui/react";
 
 const items = [
   {id: "overview", label: "概览"},

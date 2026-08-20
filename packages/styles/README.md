@@ -258,7 +258,7 @@ The package provides:
 
 ## Framework Integration
 
-This package is designed to work with any framework. For React-specific components, use `@khulnasoft/react` which builds on top of these core styles.
+This package is designed to work with any framework. For React-specific components, use `@prismui/react` which builds on top of these core styles.
 
 ## License
 

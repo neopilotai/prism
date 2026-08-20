@@ -1,4 +1,4 @@
-import {InputOTP, Label, Link} from "@khulnasoft/react";
+import {InputOTP, Label, Link} from "@prismui/react";
 
 export function Basic() {
   return (

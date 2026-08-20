@@ -15,7 +15,7 @@ import {
   ToggleButton,
   ToggleButtonGroup,
   Toolbar,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 
 export function WithButtonGroup() {
   return (

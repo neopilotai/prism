@@ -1,7 +1,7 @@
 "use client";
 
 import {Time, getLocalTimeZone, now} from "@internationalized/date";
-import {Description, Label, TimeField} from "@khulnasoft/react";
+import {Description, Label, TimeField} from "@prismui/react";
 
 export function Disabled() {
   const currentTime = now(getLocalTimeZone());

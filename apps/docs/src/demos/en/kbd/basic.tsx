@@ -1,4 +1,4 @@
-import {Kbd} from "@khulnasoft/react";
+import {Kbd} from "@prismui/react";
 
 export function Basic() {
   return (

@@ -1,4 +1,4 @@
-import {Avatar, Card} from "@khulnasoft/react";
+import {Avatar, Card} from "@prismui/react";
 
 export function WithAvatar() {
   return (

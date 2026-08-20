@@ -9,7 +9,7 @@ import {
   Label,
   Link,
   TextField,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {useMemo, useState} from "react";
 
 import {useDictionary} from "@/hooks/use-dictionary";

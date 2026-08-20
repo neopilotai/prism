@@ -1,4 +1,4 @@
-import {Avatar, Card} from "@khulnasoft/react";
+import {Avatar, Card} from "@prismui/react";
 import React from "react";
 
 import {VerifiedBadgeIcon} from "./components/icons";

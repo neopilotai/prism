@@ -4,7 +4,7 @@ import type {DateValue} from "@internationalized/date";
 
 import {Calendar} from "@gravity-ui/icons";
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {Button, DateField, Description, FieldError, Form, Label} from "@khulnasoft/react";
+import {Button, DateField, Description, FieldError, Form, Label} from "@prismui/react";
 import {useState} from "react";
 
 export function FormExample() {

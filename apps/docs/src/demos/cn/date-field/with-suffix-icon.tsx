@@ -1,7 +1,7 @@
 "use client";
 
 import {Calendar} from "@gravity-ui/icons";
-import {DateField, Label} from "@khulnasoft/react";
+import {DateField, Label} from "@prismui/react";
 
 export function WithSuffixIcon() {
   return (

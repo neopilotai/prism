@@ -1,4 +1,4 @@
-import {Label, Slider} from "@khulnasoft/react";
+import {Label, Slider} from "@prismui/react";
 
 export function Vertical() {
   return (

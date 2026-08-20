@@ -1,4 +1,4 @@
-import {Checkbox} from "@khulnasoft/react";
+import {Checkbox} from "@prismui/react";
 
 export function DefaultSelected() {
   return (

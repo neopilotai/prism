@@ -1,4 +1,4 @@
-import {ScrollShadow} from "@khulnasoft/react";
+import {ScrollShadow} from "@prismui/react";
 
 const entries = [
   "与设计团队一起回顾季度目标。",

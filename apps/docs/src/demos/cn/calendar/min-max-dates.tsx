@@ -1,7 +1,7 @@
 "use client";
 
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {Calendar, Description} from "@khulnasoft/react";
+import {Calendar, Description} from "@prismui/react";
 
 export function MinMaxDates() {
   const now = today(getLocalTimeZone());

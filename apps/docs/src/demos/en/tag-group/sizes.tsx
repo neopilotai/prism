@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, Tag, TagGroup} from "@khulnasoft/react";
+import {Label, Tag, TagGroup} from "@prismui/react";
 
 export function TagGroupSizes() {
   return (

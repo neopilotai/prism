@@ -1,7 +1,7 @@
 "use client";
 
 import {CircleInfo} from "@gravity-ui/icons";
-import {AlertDialog, Button} from "@khulnasoft/react";
+import {AlertDialog, Button} from "@prismui/react";
 
 export function DismissBehavior() {
   return (

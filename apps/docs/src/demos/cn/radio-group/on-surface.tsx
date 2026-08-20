@@ -1,4 +1,4 @@
-import {Description, Label, Radio, RadioGroup, Surface} from "@khulnasoft/react";
+import {Description, Label, Radio, RadioGroup, Surface} from "@prismui/react";
 
 export function OnSurface() {
   return (

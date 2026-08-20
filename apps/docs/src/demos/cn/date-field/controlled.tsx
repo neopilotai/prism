@@ -3,7 +3,7 @@
 import type {DateValue} from "@internationalized/date";
 
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {Button, DateField, Description, Label} from "@khulnasoft/react";
+import {Button, DateField, Description, Label} from "@prismui/react";
 import {useState} from "react";
 
 export function Controlled() {

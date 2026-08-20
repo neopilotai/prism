@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Description, Label, NumberField} from "@khulnasoft/react";
+import {Button, Description, Label, NumberField} from "@prismui/react";
 import React from "react";
 
 export function Controlled() {

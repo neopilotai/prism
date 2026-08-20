@@ -1,4 +1,4 @@
-import {Label, Slider} from "@khulnasoft/react";
+import {Label, Slider} from "@prismui/react";
 import React from "react";
 
 export function SliderDemo() {

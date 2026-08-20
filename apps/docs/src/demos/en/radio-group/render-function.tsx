@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Label, Radio, RadioGroup} from "@khulnasoft/react";
+import {Description, Label, Radio, RadioGroup} from "@prismui/react";
 
 export function RenderFunction() {
   return (

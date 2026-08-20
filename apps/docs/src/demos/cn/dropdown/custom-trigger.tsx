@@ -1,5 +1,5 @@
 import {ArrowRightFromSquare, Gear, Persons} from "@gravity-ui/icons";
-import {Avatar, Dropdown, Label} from "@khulnasoft/react";
+import {Avatar, Dropdown, Label} from "@prismui/react";
 
 export function CustomTrigger() {
   return (

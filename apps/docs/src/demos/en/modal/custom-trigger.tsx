@@ -1,7 +1,7 @@
 "use client";
 
 import {Gear} from "@gravity-ui/icons";
-import {Button, Modal} from "@khulnasoft/react";
+import {Button, Modal} from "@prismui/react";
 
 export function CustomTrigger() {
   return (

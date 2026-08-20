@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Label, ListBox, ListLayout, Virtualizer} from "@khulnasoft/react";
+import {Description, Label, ListBox, ListLayout, Virtualizer} from "@prismui/react";
 
 interface User {
   id: number;

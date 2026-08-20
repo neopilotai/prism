@@ -1,4 +1,4 @@
-import {Avatar, Badge, Separator} from "@khulnasoft/react";
+import {Avatar, Badge, Separator} from "@prismui/react";
 import React from "react";
 
 const AVATAR_URL = "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg";

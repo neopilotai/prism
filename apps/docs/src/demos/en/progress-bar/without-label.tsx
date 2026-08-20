@@ -1,4 +1,4 @@
-import {ProgressBar} from "@khulnasoft/react";
+import {ProgressBar} from "@prismui/react";
 
 export function WithoutLabel() {
   return (

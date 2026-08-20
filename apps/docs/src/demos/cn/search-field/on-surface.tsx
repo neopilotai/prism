@@ -1,4 +1,4 @@
-import {Description, Label, SearchField, Surface} from "@khulnasoft/react";
+import {Description, Label, SearchField, Surface} from "@prismui/react";
 
 export function OnSurface() {
   return (

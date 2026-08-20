@@ -1,4 +1,4 @@
-import {Avatar} from "@khulnasoft/react";
+import {Avatar} from "@prismui/react";
 
 export function Sizes() {
   return (

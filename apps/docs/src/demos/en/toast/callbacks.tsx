@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, toast} from "@khulnasoft/react";
+import {Button, toast} from "@prismui/react";
 import React from "react";
 
 export function Callbacks() {

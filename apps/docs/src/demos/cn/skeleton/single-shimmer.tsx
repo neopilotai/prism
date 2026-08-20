@@ -1,4 +1,4 @@
-import {Skeleton} from "@khulnasoft/react";
+import {Skeleton} from "@prismui/react";
 
 export function SingleShimmer() {
   return (

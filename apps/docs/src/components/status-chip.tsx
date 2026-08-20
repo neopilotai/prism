@@ -1,6 +1,6 @@
 "use client";
 
-import {Chip} from "@khulnasoft/react";
+import {Chip} from "@prismui/react";
 import * as React from "react";
 
 import {useDictionary} from "@/hooks/use-dictionary";

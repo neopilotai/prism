@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Form, Input, Label, TextField} from "@khulnasoft/react";
+import {Button, Form, Input, Label, TextField} from "@prismui/react";
 
 export function CustomStyles() {
   return (

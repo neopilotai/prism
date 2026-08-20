@@ -1,6 +1,6 @@
 "use client";
 
-import type {Key} from "@khulnasoft/react";
+import type {Key} from "@prismui/react";
 
 import {
   Autocomplete,
@@ -13,7 +13,7 @@ import {
   ListBox,
   SearchField,
   useFilter,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {useState} from "react";
 
 export function UserSelection() {

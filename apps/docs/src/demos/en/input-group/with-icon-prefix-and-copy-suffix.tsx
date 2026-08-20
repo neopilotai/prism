@@ -1,7 +1,7 @@
 "use client";
 
 import {Copy, Globe} from "@gravity-ui/icons";
-import {Button, InputGroup, Label, TextField} from "@khulnasoft/react";
+import {Button, InputGroup, Label, TextField} from "@prismui/react";
 
 export function WithIconPrefixAndCopySuffix() {
   return (

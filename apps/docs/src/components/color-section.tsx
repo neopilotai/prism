@@ -1,6 +1,6 @@
 "use client";
 
-import {Chip, Tooltip, toast} from "@khulnasoft/react";
+import {Chip, Tooltip, toast} from "@prismui/react";
 import {converter, parse} from "culori";
 import * as React from "react";
 

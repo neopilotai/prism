@@ -1,7 +1,7 @@
 "use client";
 
 import {HardDrive, Persons} from "@gravity-ui/icons";
-import {Button, toast} from "@khulnasoft/react";
+import {Button, toast} from "@prismui/react";
 
 const noop = () => {};
 

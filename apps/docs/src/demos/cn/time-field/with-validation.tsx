@@ -3,7 +3,7 @@
 import type {Time} from "@internationalized/date";
 
 import {parseTime} from "@internationalized/date";
-import {Description, FieldError, Label, TimeField} from "@khulnasoft/react";
+import {Description, FieldError, Label, TimeField} from "@prismui/react";
 import {useState} from "react";
 
 export function WithValidation() {

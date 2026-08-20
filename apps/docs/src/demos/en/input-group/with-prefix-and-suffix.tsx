@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, InputGroup, Label, TextField} from "@khulnasoft/react";
+import {Description, InputGroup, Label, TextField} from "@prismui/react";
 
 export function WithPrefixAndSuffix() {
   return (

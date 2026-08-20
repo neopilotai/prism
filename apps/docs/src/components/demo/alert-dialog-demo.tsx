@@ -1,6 +1,6 @@
 "use client";
 
-import {Avatar, Button, Card, CloseButton} from "@khulnasoft/react";
+import {Avatar, Button, Card, CloseButton} from "@prismui/react";
 
 import {Iconify} from "@/components/iconify";
 import {useDictionary} from "@/hooks/use-dictionary";

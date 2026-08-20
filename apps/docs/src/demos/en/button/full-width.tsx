@@ -1,5 +1,5 @@
 import {Plus} from "@gravity-ui/icons";
-import {Button} from "@khulnasoft/react";
+import {Button} from "@prismui/react";
 
 export function FullWidth() {
   return (

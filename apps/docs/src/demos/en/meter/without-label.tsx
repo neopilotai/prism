@@ -1,4 +1,4 @@
-import {Meter} from "@khulnasoft/react";
+import {Meter} from "@prismui/react";
 
 export function WithoutLabel() {
   return (

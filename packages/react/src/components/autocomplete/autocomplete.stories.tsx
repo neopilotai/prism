@@ -1,4 +1,4 @@
-import type {Key} from "@khulnasoft/react";
+import type {Key} from "@prismui/react";
 import type {Meta, StoryObj} from "@storybook/react";
 
 import {Icon} from "@iconify/react";

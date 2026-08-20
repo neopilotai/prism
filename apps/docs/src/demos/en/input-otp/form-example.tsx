@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Description, Form, InputOTP, Label, Link, Spinner} from "@khulnasoft/react";
+import {Button, Description, Form, InputOTP, Label, Link, Spinner} from "@prismui/react";
 import React from "react";
 
 export function FormExample() {

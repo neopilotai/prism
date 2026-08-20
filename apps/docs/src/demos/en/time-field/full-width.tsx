@@ -1,7 +1,7 @@
 "use client";
 
 import {ChevronDown, Clock} from "@gravity-ui/icons";
-import {Label, TimeField} from "@khulnasoft/react";
+import {Label, TimeField} from "@prismui/react";
 
 export function FullWidth() {
   return (

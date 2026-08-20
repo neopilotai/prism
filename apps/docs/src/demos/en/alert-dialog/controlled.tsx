@@ -1,6 +1,6 @@
 "use client";
 
-import {AlertDialog, Button, useOverlayState} from "@khulnasoft/react";
+import {AlertDialog, Button, useOverlayState} from "@prismui/react";
 import React from "react";
 
 export function Controlled() {

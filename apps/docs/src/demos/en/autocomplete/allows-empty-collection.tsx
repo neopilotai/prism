@@ -1,6 +1,6 @@
 "use client";
 
-import {Autocomplete, EmptyState, Label, ListBox, SearchField, useFilter} from "@khulnasoft/react";
+import {Autocomplete, EmptyState, Label, ListBox, SearchField, useFilter} from "@prismui/react";
 
 export function AllowsEmptyCollection() {
   const {contains} = useFilter({sensitivity: "base"});

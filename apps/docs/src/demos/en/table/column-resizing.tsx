@@ -1,4 +1,4 @@
-import {Chip, Table} from "@khulnasoft/react";
+import {Chip, Table} from "@prismui/react";
 
 export function ColumnResizing() {
   return (

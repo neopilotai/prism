@@ -1,6 +1,6 @@
 "use client";
 
-import {Button} from "@khulnasoft/react";
+import {Button} from "@prismui/react";
 import {useCopyButton} from "fumadocs-ui/utils/use-copy-button";
 
 import {Iconify} from "@/components/iconify";

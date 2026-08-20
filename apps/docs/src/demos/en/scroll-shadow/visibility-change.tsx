@@ -1,6 +1,6 @@
 "use client";
 
-import type {ScrollShadowVisibility} from "@khulnasoft/react";
+import type {ScrollShadowVisibility} from "@prismui/react";
 
 import {Card, ScrollShadow} from "@prismui/react";
 import {useState} from "react";

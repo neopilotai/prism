@@ -1,6 +1,6 @@
 "use client";
 
-import type {Key} from "@khulnasoft/react";
+import type {Key} from "@prismui/react";
 
 import {Label, ListBox, Select} from "@prismui/react";
 import React from "react";

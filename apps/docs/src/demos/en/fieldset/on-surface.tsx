@@ -12,7 +12,7 @@ import {
   Surface,
   TextArea,
   TextField,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import React from "react";
 
 export function OnSurface() {

@@ -1,4 +1,4 @@
-import {Label, Meter} from "@khulnasoft/react";
+import {Label, Meter} from "@prismui/react";
 
 export function Colors() {
   return (

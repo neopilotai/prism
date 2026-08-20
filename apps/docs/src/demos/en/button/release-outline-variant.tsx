@@ -1,4 +1,4 @@
-import {Button, ButtonGroup} from "@khulnasoft/react";
+import {Button, ButtonGroup} from "@prismui/react";
 
 export function OutlineVariant() {
   return (

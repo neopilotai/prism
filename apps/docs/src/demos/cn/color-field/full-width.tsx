@@ -1,4 +1,4 @@
-import {ColorField, Label} from "@khulnasoft/react";
+import {ColorField, Label} from "@prismui/react";
 
 export function FullWidth() {
   return (

@@ -2,7 +2,7 @@
 
 import type {Key} from "react-aria-components";
 
-import {Tabs} from "@khulnasoft/react";
+import {Tabs} from "@prismui/react";
 import React from "react";
 import {cn} from "tailwind-variants";
 

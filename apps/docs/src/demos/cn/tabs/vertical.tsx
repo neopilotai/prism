@@ -1,4 +1,4 @@
-import {Tabs} from "@khulnasoft/react";
+import {Tabs} from "@prismui/react";
 
 export function Vertical() {
   return (

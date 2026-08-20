@@ -3,7 +3,7 @@
 import type {DateValue} from "@internationalized/date";
 
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {DateField, DateRangePicker, FieldError, Label, RangeCalendar} from "@khulnasoft/react";
+import {DateField, DateRangePicker, FieldError, Label, RangeCalendar} from "@prismui/react";
 import {useState} from "react";
 
 type DateRange = {

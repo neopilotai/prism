@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Description, FieldError, Form, Label, Radio, RadioGroup} from "@khulnasoft/react";
+import {Button, Description, FieldError, Form, Label, Radio, RadioGroup} from "@prismui/react";
 import React from "react";
 
 export function Validation() {

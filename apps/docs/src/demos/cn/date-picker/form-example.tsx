@@ -12,7 +12,7 @@ import {
   FieldError,
   Form,
   Label,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {useState} from "react";
 
 export function FormExample() {

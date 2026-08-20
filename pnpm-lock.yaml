@@ -189,12 +189,12 @@ importers:
       '@internationalized/date':
         specifier: 3.12.3
         version: 3.12.3
-      '@prismui/react':
-        specifier: workspace:*
-        version: link:../../packages/react
       '@lglab/react-qr-code':
         specifier: 1.7.0
         version: 1.7.0(react@19.2.6)
+      '@prismui/react':
+        specifier: workspace:*
+        version: link:../../packages/react
       '@react-aria/overlays':
         specifier: 3.32.1
         version: 3.32.1(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
@@ -912,12 +912,12 @@ importers:
       '@iconify/react':
         specifier: 6.0.2
         version: 6.0.2(react@19.2.6)
-      '@prismui/react':
-        specifier: workspace:*
-        version: link:../react
       '@khulnasoft/styles':
         specifier: workspace:*
         version: link:../styles
+      '@prismui/react':
+        specifier: workspace:*
+        version: link:../react
       apcach:
         specifier: 0.6.4
         version: 0.6.4

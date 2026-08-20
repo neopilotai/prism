@@ -1,7 +1,7 @@
 "use client";
 
 import {FloppyDisk, FolderOpen, SquarePlus, TrashBin} from "@gravity-ui/icons";
-import {Button, Dropdown, Kbd, Label} from "@khulnasoft/react";
+import {Button, Dropdown, Kbd, Label} from "@prismui/react";
 
 export function WithIcons() {
   return (

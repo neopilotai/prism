@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Popover} from "@khulnasoft/react";
+import {Button, Popover} from "@prismui/react";
 
 export function RenderFunction() {
   return (

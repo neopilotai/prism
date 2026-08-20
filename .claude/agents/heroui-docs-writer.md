@@ -104,7 +104,7 @@ Before creating or updating any documentation, you MUST:
    // IMPORTANT: Always add "use client" directive to all demo files to ensure they work correctly
    "use client";
 
-   import {ComponentName} from "@khulnasoft/react";
+   import {ComponentName} from "@prismui/react";
    import {Icon} from "@iconify/react"; // If icons needed
 
    export function ComponentDemo() {
@@ -115,7 +115,7 @@ Before creating or updating any documentation, you MUST:
    ("use client");
 
    import {useState} from "react";
-   import {ComponentName} from "@khulnasoft/react";
+   import {ComponentName} from "@prismui/react";
 
    export function ComponentDemo() {
      const [value, setValue] = useState("");
@@ -154,7 +154,7 @@ links:
 ## Import
 
 ```tsx
-import {ComponentName} from "@khulnasoft/react";
+import {ComponentName} from "@prismui/react";
 ```
 ````
 
@@ -169,7 +169,7 @@ import {ComponentName} from "@khulnasoft/react";
 Import all parts and piece them together.
 
 ```tsx
-import {ComponentName} from "@khulnasoft/react";
+import {ComponentName} from "@prismui/react";
 
 export default () => (
   <ComponentName>
@@ -209,7 +209,7 @@ export default () => (
 ### Passing Tailwind CSS classes
 
 ```tsx
-import {ComponentName} from "@khulnasoft/react";
+import {ComponentName} from "@prismui/react";
 
 function CustomComponent() {
   return <ComponentName className="custom-tailwind-classes">Content</ComponentName>;

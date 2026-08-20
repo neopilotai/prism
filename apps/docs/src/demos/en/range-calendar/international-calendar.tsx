@@ -1,6 +1,6 @@
 "use client";
 
-import {RangeCalendar} from "@khulnasoft/react";
+import {RangeCalendar} from "@prismui/react";
 import {I18nProvider} from "react-aria-components";
 
 export function InternationalCalendar() {

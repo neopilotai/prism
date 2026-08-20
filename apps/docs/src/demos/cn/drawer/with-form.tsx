@@ -1,4 +1,4 @@
-import {Button, Drawer, Input, Label, TextField} from "@khulnasoft/react";
+import {Button, Drawer, Input, Label, TextField} from "@prismui/react";
 
 export function WithForm() {
   return (

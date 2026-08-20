@@ -1,6 +1,6 @@
 "use client";
 
-import type {Key} from "@khulnasoft/react";
+import type {Key} from "@prismui/react";
 
 import {Bold, Italic, Strikethrough, Underline} from "@gravity-ui/icons";
 import {ToggleButton, ToggleButtonGroup} from "@prismui/react";

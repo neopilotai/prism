@@ -1,4 +1,4 @@
-import {Chip} from "@khulnasoft/react";
+import {Chip} from "@prismui/react";
 
 export function ChipBasic() {
   return (

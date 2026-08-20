@@ -1,7 +1,7 @@
 "use client";
 
 import {Envelope} from "@gravity-ui/icons";
-import {Description, InputGroup, Label, TextField} from "@khulnasoft/react";
+import {Description, InputGroup, Label, TextField} from "@prismui/react";
 
 export function WithSuffixIcon() {
   return (

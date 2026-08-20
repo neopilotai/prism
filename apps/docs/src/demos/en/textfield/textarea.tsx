@@ -1,4 +1,4 @@
-import {Description, Label, TextArea, TextField} from "@khulnasoft/react";
+import {Description, Label, TextArea, TextField} from "@prismui/react";
 
 export function TextAreaExample() {
   return (

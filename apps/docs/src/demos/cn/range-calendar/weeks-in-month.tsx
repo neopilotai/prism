@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, RangeCalendar} from "@khulnasoft/react";
+import {Description, RangeCalendar} from "@prismui/react";
 
 export function WeeksInMonth() {
   return (

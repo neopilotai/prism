@@ -1,4 +1,4 @@
-import {Accordion} from "@khulnasoft/react";
+import {Accordion} from "@prismui/react";
 
 export function Multiple() {
   return (

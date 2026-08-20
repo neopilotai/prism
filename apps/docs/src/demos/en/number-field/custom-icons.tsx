@@ -1,4 +1,4 @@
-import {Description, Label, NumberField} from "@khulnasoft/react";
+import {Description, Label, NumberField} from "@prismui/react";
 
 export function CustomIcons() {
   return (

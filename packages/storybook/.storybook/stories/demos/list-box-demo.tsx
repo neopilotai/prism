@@ -1,5 +1,5 @@
 import {Pencil, SquarePlus, TrashBin} from "@gravity-ui/icons";
-import {Description, Header, Kbd, Label, ListBox, Separator, Surface} from "@khulnasoft/react";
+import {Description, Header, Kbd, Label, ListBox, Separator, Surface} from "@prismui/react";
 import React from "react";
 
 export function ListBoxDemo() {

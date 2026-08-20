@@ -1,4 +1,4 @@
-import {ColorSwatch} from "@khulnasoft/react";
+import {ColorSwatch} from "@prismui/react";
 
 export function ColorSwatchBasic() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import {QrCode} from "@gravity-ui/icons";
-import {Button, Disclosure, DisclosureGroup, Separator} from "@khulnasoft/react";
+import {Button, Disclosure, DisclosureGroup, Separator} from "@prismui/react";
 import {Icon} from "@iconify/react";
 import React from "react";
 import {cn} from "tailwind-variants";

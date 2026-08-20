@@ -1,6 +1,6 @@
 "use client";
 
-import type {Selection} from "@khulnasoft/react";
+import type {Selection} from "@prismui/react";
 
 import {Button, Dropdown, Header, Label} from "@prismui/react";
 import {useState} from "react";

@@ -172,7 +172,7 @@ The Button component is a fundamental UI element that allows users to trigger ac
 4. **Improve code examples**:
    ```tsx
    // ✅ Good: Complete, contextual example
-   import { TextField, Label, Description, FieldError } from '@khulnasoft/react';
+   import { TextField, Label, Description, FieldError } from '@prismui/react';
    import { useState } from 'react';
    
    function EmailField() {

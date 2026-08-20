@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, ListBox, RangeCalendar, Select} from "@khulnasoft/react";
+import {Label, ListBox, RangeCalendar, Select} from "@prismui/react";
 import {useState} from "react";
 
 const dayOptions = [

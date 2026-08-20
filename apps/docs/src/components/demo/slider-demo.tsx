@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, Slider} from "@khulnasoft/react";
+import {Label, Slider} from "@prismui/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

@@ -1,5 +1,5 @@
 import {Bold, Italic, Underline} from "@gravity-ui/icons";
-import {ToggleButton, ToggleButtonGroup} from "@khulnasoft/react";
+import {ToggleButton, ToggleButtonGroup} from "@prismui/react";
 
 export function Disabled() {
   return (

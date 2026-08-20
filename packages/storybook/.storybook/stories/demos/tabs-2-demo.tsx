@@ -1,5 +1,5 @@
 import {Comment, Envelope} from "@gravity-ui/icons";
-import {Tabs} from "@khulnasoft/react";
+import {Tabs} from "@prismui/react";
 import React from "react";
 
 export function TabsDemo2() {

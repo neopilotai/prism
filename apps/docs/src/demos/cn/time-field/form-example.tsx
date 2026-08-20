@@ -4,7 +4,7 @@ import type {Time} from "@internationalized/date";
 
 import {Clock} from "@gravity-ui/icons";
 import {parseTime} from "@internationalized/date";
-import {Button, Description, FieldError, Form, Label, TimeField} from "@khulnasoft/react";
+import {Button, Description, FieldError, Form, Label, TimeField} from "@prismui/react";
 import {useState} from "react";
 
 export function FormExample() {

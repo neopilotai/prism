@@ -1,4 +1,4 @@
-import {Typography} from "@khulnasoft/react";
+import {Typography} from "@prismui/react";
 
 export const Primitives = () => {
   return (

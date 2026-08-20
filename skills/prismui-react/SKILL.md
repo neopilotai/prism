@@ -1,6 +1,6 @@
 ---
 name: prismui-react
-description: "PrismUI v3 React component library (Tailwind CSS v4 + React Aria). Use when building UIs with PrismUI — creating Buttons, Modals, Forms, Cards; installing @khulnasoft/react; configuring dark/light themes with oklch variables; or fetching component docs. Keywords: PrismUI, Hero UI, prismui, @khulnasoft/react, @khulnasoft/styles."
+description: "PrismUI v3 React component library (Tailwind CSS v4 + React Aria). Use when building UIs with PrismUI — creating Buttons, Modals, Forms, Cards; installing @prismui/react; configuring dark/light themes with oklch variables; or fetching component docs. Keywords: PrismUI, Hero UI, prismui, @prismui/react, @khulnasoft/styles."
 metadata:
   author: prismui
   version: "3.0.1"
@@ -30,11 +30,11 @@ curl -fsSL https://prism.khulnasoft.com/install | bash -s prismui-react
 | Animations    | `framer-motion` package           | CSS-based, no extra deps                    |
 | Component API | Flat props: `<Card title="x">`    | Compound: `<Card><Card.Header>`             |
 | Styling       | Tailwind v3 + `@khulnasoft/theme`     | Tailwind v4 + `@khulnasoft/styles`         	  |
-| Packages      | `@khulnasoft/system`, `@khulnasoft/theme` | `@khulnasoft/react`, `@khulnasoft/styles` 		  |
+| Packages      | `@khulnasoft/system`, `@khulnasoft/theme` | `@prismui/react`, `@khulnasoft/styles` 		  |
 
 ```tsx
 // DO NOT DO THIS - v2 pattern
-import { PrismUIProvider } from "@khulnasoft/react";
+import { PrismUIProvider } from "@prismui/react";
 import { motion } from "framer-motion";
 
 <PrismUIProvider>
@@ -46,7 +46,7 @@ import { motion } from "framer-motion";
 
 ```tsx
 // DO THIS - v3 pattern (no provider, compound components)
-import { Card } from "@khulnasoft/react";
+import { Card } from "@prismui/react";
 
 <Card>
 	<Card.Header>
@@ -117,7 +117,7 @@ Getting started guides: use a concrete topic URL such as `https://prism.khulnaso
 ### Quick Install
 
 ```bash
-npm i @khulnasoft/styles @khulnasoft/react tailwind-variants
+npm i @khulnasoft/styles @prismui/react tailwind-variants
 ```
 
 ### Framework Setup (Next.js App Router - Recommended)
@@ -125,7 +125,7 @@ npm i @khulnasoft/styles @khulnasoft/react tailwind-variants
 1. **Install dependencies:**
 
 ```bash
-npm i @khulnasoft/styles @khulnasoft/react tailwind-variants tailwindcss @tailwindcss/postcss postcss
+npm i @khulnasoft/styles @prismui/react tailwind-variants tailwindcss @tailwindcss/postcss postcss
 ```
 
 2. **Create/update `app/globals.css`:**

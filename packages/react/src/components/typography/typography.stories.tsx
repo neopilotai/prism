@@ -92,7 +92,7 @@ export const InlineCode: Story = {
   render: () => (
     <div className="flex max-w-2xl flex-col gap-4">
       <Typography.Paragraph>
-        Install the package with <Typography.Code>pnpm add @khulnasoft/react</Typography.Code> and
+        Install the package with <Typography.Code>pnpm add @prismui/react</Typography.Code> and
         import <Typography.Code>{"<Typography>"}</Typography.Code> from the library.
       </Typography.Paragraph>
       <Typography.Paragraph size="sm">
@@ -252,10 +252,10 @@ export const ProseBlock: Story = {
       <h2>Installation</h2>
       <p>
         Add the library to your project using your preferred package manager. The{" "}
-        <code>@khulnasoft/react</code> package includes every component:
+        <code>@prismui/react</code> package includes every component:
       </p>
       <pre>
-        <code>pnpm add @khulnasoft/react</code>
+        <code>pnpm add @prismui/react</code>
       </pre>
 
       <h3>Quick Setup</h3>

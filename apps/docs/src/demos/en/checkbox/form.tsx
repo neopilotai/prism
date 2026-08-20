@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Checkbox} from "@khulnasoft/react";
+import {Button, Checkbox} from "@prismui/react";
 import React from "react";
 
 export function Form() {

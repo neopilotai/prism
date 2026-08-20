@@ -1,4 +1,4 @@
-import {Card} from "@khulnasoft/react";
+import {Card} from "@prismui/react";
 
 export function Variants() {
   return (

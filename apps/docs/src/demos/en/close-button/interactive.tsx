@@ -1,6 +1,6 @@
 "use client";
 
-import {CloseButton} from "@khulnasoft/react";
+import {CloseButton} from "@prismui/react";
 import {useState} from "react";
 
 export function Interactive() {

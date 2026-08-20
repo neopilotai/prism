@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Kbd, Label, SearchField} from "@khulnasoft/react";
+import {Description, Kbd, Label, SearchField} from "@prismui/react";
 import React from "react";
 
 export function WithKeyboardShortcut() {

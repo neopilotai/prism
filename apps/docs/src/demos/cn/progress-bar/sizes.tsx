@@ -1,4 +1,4 @@
-import {Label, ProgressBar} from "@khulnasoft/react";
+import {Label, ProgressBar} from "@prismui/react";
 
 const SIZE_LABELS = {
   lg: "大",

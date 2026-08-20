@@ -1,6 +1,6 @@
 "use client";
 
-import type {Key} from "@khulnasoft/react";
+import type {Key} from "@prismui/react";
 import type {Item, Node} from "fumadocs-core/page-tree";
 import type {SearchItemType, SharedProps} from "fumadocs-ui/components/dialog/search";
 import type {ComponentProps} from "react";

@@ -1,7 +1,7 @@
 "use client";
 
 import {parseDate} from "@internationalized/date";
-import {RangeCalendar} from "@khulnasoft/react";
+import {RangeCalendar} from "@prismui/react";
 
 const cellClassName = [
   "rounded-md",

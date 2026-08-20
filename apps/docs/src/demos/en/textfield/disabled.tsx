@@ -1,4 +1,4 @@
-import {Description, Input, Label, TextField} from "@khulnasoft/react";
+import {Description, Input, Label, TextField} from "@prismui/react";
 
 export function Disabled() {
   return (

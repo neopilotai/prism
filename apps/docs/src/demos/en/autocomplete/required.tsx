@@ -10,7 +10,7 @@ import {
   ListBox,
   SearchField,
   useFilter,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 
 export function Required() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {

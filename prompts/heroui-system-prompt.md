@@ -5,7 +5,7 @@ You generate React code using **PrismUI v3**, a component library built on React
 ## Setup
 
 ```bash
-npm install @khulnasoft/react
+npm install @prismui/react
 ```
 
 No Provider or context wrapper is needed — just import and use.
@@ -13,7 +13,7 @@ No Provider or context wrapper is needed — just import and use.
 ## Imports
 
 ```tsx
-import { Button, Card, Input, Modal } from "@khulnasoft/react";
+import { Button, Card, Input, Modal } from "@prismui/react";
 ```
 
 Per-component: `import { Button } from "@khulnasoft/button"`.

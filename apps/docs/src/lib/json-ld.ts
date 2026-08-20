@@ -31,7 +31,7 @@ export function getSoftwareApplicationJsonLd() {
     "@type": "SoftwareApplication",
     applicationCategory: "DeveloperApplication",
     description: siteConfig.description,
-    downloadUrl: "https://www.npmjs.com/package/@khulnasoft/react",
+    downloadUrl: "https://www.npmjs.com/package/@prismui/react",
     name: "PrismUI",
     offers: {
       "@type": "Offer",

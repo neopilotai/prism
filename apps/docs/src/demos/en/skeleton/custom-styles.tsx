@@ -1,4 +1,4 @@
-import {Skeleton} from "@khulnasoft/react";
+import {Skeleton} from "@prismui/react";
 
 const bone = "animate-shine rounded-lg bg-neutral-200/90 dark:bg-neutral-800/90";
 

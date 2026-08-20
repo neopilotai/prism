@@ -3,7 +3,7 @@
 import type {CalendarDate, DateValue} from "@internationalized/date";
 
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {Description, RangeCalendar} from "@khulnasoft/react";
+import {Description, RangeCalendar} from "@prismui/react";
 
 export function AnchorUnavailableDates() {
   const now = today(getLocalTimeZone());

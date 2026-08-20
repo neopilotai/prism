@@ -1,6 +1,6 @@
 "use client";
 
-import {ColorSlider, ColorSwatch, Label} from "@khulnasoft/react";
+import {ColorSlider, ColorSwatch, Label} from "@prismui/react";
 import {useState} from "react";
 import {parseColor} from "react-aria-components";
 

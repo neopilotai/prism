@@ -1,7 +1,7 @@
 "use client";
 
 import {Envelope} from "@gravity-ui/icons";
-import {Description, InputGroup, Label, Surface, TextField} from "@khulnasoft/react";
+import {Description, InputGroup, Label, Surface, TextField} from "@prismui/react";
 
 export function OnSurface() {
   return (

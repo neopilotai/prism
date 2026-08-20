@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Modal} from "@khulnasoft/react";
+import {Button, Modal} from "@prismui/react";
 import {useCallback, useRef, useState} from "react";
 
 export function CustomPortal() {

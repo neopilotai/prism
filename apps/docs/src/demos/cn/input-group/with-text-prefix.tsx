@@ -1,6 +1,6 @@
 "use client";
 
-import {InputGroup, Label, TextField} from "@khulnasoft/react";
+import {InputGroup, Label, TextField} from "@prismui/react";
 
 export function WithTextPrefix() {
   return (

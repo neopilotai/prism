@@ -1,4 +1,4 @@
-import {CloseButton} from "@khulnasoft/react";
+import {CloseButton} from "@prismui/react";
 
 export function Default() {
   return <CloseButton />;

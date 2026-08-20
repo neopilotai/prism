@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, ListBox, Select} from "@khulnasoft/react";
+import {Label, ListBox, Select} from "@prismui/react";
 
 export function RenderFunction() {
   return (

@@ -7,7 +7,7 @@ import {
   DisclosureGroup,
   Separator,
   useDisclosureGroupNavigation,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {Icon} from "@iconify/react";
 import React from "react";
 import {cn} from "tailwind-variants";

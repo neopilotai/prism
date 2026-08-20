@@ -2,7 +2,7 @@
 
 import type {DateValue} from "@internationalized/date";
 
-import {Calendar, Description} from "@khulnasoft/react";
+import {Calendar, Description} from "@prismui/react";
 import {useState} from "react";
 
 export function MultipleSelection() {

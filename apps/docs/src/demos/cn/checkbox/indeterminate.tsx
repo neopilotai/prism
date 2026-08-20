@@ -1,6 +1,6 @@
 "use client";
 
-import {Checkbox, Description} from "@khulnasoft/react";
+import {Checkbox, Description} from "@prismui/react";
 import {useState} from "react";
 
 export function Indeterminate() {

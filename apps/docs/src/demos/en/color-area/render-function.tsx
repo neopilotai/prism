@@ -1,6 +1,6 @@
 "use client";
 
-import {ColorArea} from "@khulnasoft/react";
+import {ColorArea} from "@prismui/react";
 
 export function RenderFunction() {
   return (

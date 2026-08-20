@@ -1,4 +1,4 @@
-import {Label, TextArea} from "@khulnasoft/react";
+import {Label, TextArea} from "@prismui/react";
 
 export function Rows() {
   return (

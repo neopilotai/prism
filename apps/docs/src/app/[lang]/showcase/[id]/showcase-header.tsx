@@ -8,7 +8,7 @@ import {
   TooltipContent,
   TooltipRoot,
   TooltipTrigger,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {useParams, useRouter, useSearchParams} from "next/navigation";
 import {useEffect} from "react";
 

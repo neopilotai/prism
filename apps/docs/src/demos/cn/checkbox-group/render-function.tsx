@@ -1,6 +1,6 @@
 "use client";
 
-import {Checkbox, CheckboxGroup, Description, Label} from "@khulnasoft/react";
+import {Checkbox, CheckboxGroup, Description, Label} from "@prismui/react";
 
 export function RenderFunction() {
   return (

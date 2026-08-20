@@ -1,4 +1,4 @@
-import {Description, InputOTP, Label} from "@khulnasoft/react";
+import {Description, InputOTP, Label} from "@prismui/react";
 
 export function Disabled() {
   return (

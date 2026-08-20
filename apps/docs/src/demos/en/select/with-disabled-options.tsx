@@ -1,4 +1,4 @@
-import {Label, ListBox, Select} from "@khulnasoft/react";
+import {Label, ListBox, Select} from "@prismui/react";
 
 export function WithDisabledOptions() {
   return (

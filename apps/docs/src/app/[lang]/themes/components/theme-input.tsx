@@ -1,7 +1,7 @@
 "use client";
 
 import {ChevronsExpandVertical} from "@gravity-ui/icons";
-import {Avatar, InputGroup} from "@khulnasoft/react";
+import {Avatar, InputGroup} from "@prismui/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

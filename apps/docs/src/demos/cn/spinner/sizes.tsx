@@ -1,4 +1,4 @@
-import {Spinner} from "@khulnasoft/react";
+import {Spinner} from "@prismui/react";
 
 const SIZE_LABELS = {
   lg: "大",

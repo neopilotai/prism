@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Label, TimeField} from "@khulnasoft/react";
+import {Description, Label, TimeField} from "@prismui/react";
 
 export function WithDescription() {
   return (

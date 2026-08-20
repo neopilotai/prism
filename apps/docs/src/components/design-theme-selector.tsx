@@ -1,7 +1,7 @@
 "use client";
 
 import type {ThemeId} from "@/app/[lang]/themes/constants";
-import type {ButtonProps} from "@khulnasoft/react";
+import type {ButtonProps} from "@prismui/react";
 import type {StaticImageData} from "next/image";
 
 import {BucketPaint, Palette} from "@gravity-ui/icons";

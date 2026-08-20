@@ -1,4 +1,4 @@
-import {Button} from "@khulnasoft/react";
+import {Button} from "@prismui/react";
 import React from "react";
 
 export const ButtonsDemo = () => {

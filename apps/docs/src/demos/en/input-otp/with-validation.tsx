@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Description, Form, InputOTP, Label} from "@khulnasoft/react";
+import {Button, Description, Form, InputOTP, Label} from "@prismui/react";
 import React from "react";
 
 export function WithValidation() {

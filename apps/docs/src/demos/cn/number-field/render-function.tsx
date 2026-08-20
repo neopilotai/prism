@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, NumberField} from "@khulnasoft/react";
+import {Label, NumberField} from "@prismui/react";
 
 export function RenderFunction() {
   return (

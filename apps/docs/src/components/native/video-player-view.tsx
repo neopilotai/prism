@@ -2,7 +2,7 @@
 
 import type {NativeQRPreviewTarget} from "./qr-preview-popover/target";
 
-import {cn} from "@khulnasoft/react";
+import {cn} from "@prismui/react";
 import {useTheme} from "next-themes";
 
 import {VideoPlayer} from "../video-player";

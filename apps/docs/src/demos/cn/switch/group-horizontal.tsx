@@ -1,4 +1,4 @@
-import {Switch, SwitchGroup} from "@khulnasoft/react";
+import {Switch, SwitchGroup} from "@prismui/react";
 
 export function GroupHorizontal() {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, ButtonGroup, Description, Dropdown, Label} from "@khulnasoft/react";
+import {Button, ButtonGroup, Description, Dropdown, Label} from "@prismui/react";
 import {useCopyButton} from "fumadocs-ui/utils/use-copy-button";
 import {ChevronDown} from "lucide-react";
 import {useMemo, useState} from "react";

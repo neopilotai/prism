@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, CloseButton, buttonVariants} from "@khulnasoft/react";
+import {Button, CloseButton, buttonVariants} from "@prismui/react";
 import {Calligraph} from "calligraph";
 import {AnimatePresence, motion} from "motion/react";
 import {useEffect, useState, useSyncExternalStore} from "react";

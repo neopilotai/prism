@@ -1,4 +1,4 @@
-import {Button, Drawer} from "@khulnasoft/react";
+import {Button, Drawer} from "@prismui/react";
 
 export function CustomStyles() {
   return (

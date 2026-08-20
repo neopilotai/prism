@@ -1,6 +1,6 @@
 "use client";
 
-import {FieldError, Input, Label, TextField} from "@khulnasoft/react";
+import {FieldError, Input, Label, TextField} from "@prismui/react";
 import {useState} from "react";
 
 export function CustomStyles() {

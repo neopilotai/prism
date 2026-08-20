@@ -1,4 +1,4 @@
-import {Description, Label, ListBox, Select} from "@khulnasoft/react";
+import {Description, Label, ListBox, Select} from "@prismui/react";
 
 export function WithDescription() {
   return (

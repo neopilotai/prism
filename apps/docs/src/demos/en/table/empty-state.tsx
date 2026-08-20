@@ -1,7 +1,7 @@
 "use client";
 
 import {Icon} from "@iconify/react";
-import {EmptyState, Table} from "@khulnasoft/react";
+import {EmptyState, Table} from "@prismui/react";
 
 export function EmptyStateDemo() {
   return (

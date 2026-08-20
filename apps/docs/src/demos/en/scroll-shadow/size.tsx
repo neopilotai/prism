@@ -1,4 +1,4 @@
-import {ScrollShadow} from "@khulnasoft/react";
+import {ScrollShadow} from "@prismui/react";
 
 export default function CustomSize() {
   return (

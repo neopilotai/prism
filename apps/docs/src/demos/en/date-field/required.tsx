@@ -1,6 +1,6 @@
 "use client";
 
-import {DateField, Description, Label} from "@khulnasoft/react";
+import {DateField, Description, Label} from "@prismui/react";
 
 export function Required() {
   return (

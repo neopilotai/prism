@@ -1,4 +1,4 @@
-import {Table} from "@khulnasoft/react";
+import {Table} from "@prismui/react";
 
 export function SecondaryVariant() {
   return (

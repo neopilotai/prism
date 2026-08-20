@@ -1,4 +1,4 @@
-import {Switch} from "@khulnasoft/react";
+import {Switch} from "@prismui/react";
 
 export function WithoutLabel() {
   return (

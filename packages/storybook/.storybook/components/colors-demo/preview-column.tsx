@@ -1,6 +1,6 @@
 import type {Theme} from "../../hooks/use-theme-toggle";
 
-import {Chip} from "@khulnasoft/react";
+import {Chip} from "@prismui/react";
 import React, {forwardRef, useEffect} from "react";
 
 import {ComponentShowcase} from "./component-showcase";

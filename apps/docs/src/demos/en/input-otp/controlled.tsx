@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, InputOTP, Label} from "@khulnasoft/react";
+import {Description, InputOTP, Label} from "@prismui/react";
 import React from "react";
 
 export function Controlled() {

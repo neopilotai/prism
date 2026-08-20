@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Checkbox, CheckboxGroup, FieldError, Form, Label} from "@khulnasoft/react";
+import {Button, Checkbox, CheckboxGroup, FieldError, Form, Label} from "@prismui/react";
 
 export function Validation() {
   return (

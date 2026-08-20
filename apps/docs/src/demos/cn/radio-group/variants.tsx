@@ -1,4 +1,4 @@
-import {Description, Radio, RadioGroup} from "@khulnasoft/react";
+import {Description, Radio, RadioGroup} from "@prismui/react";
 
 export function Variants() {
   return (

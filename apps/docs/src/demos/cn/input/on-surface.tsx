@@ -1,4 +1,4 @@
-import {Input, Surface} from "@khulnasoft/react";
+import {Input, Surface} from "@prismui/react";
 
 export function OnSurface() {
   return (

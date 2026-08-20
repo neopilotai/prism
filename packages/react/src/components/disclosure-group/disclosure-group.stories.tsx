@@ -1,5 +1,5 @@
 import type {DisclosureGroupProps} from "./index";
-import type {ButtonProps} from "@khulnasoft/react";
+import type {ButtonProps} from "@prismui/react";
 import type {Meta} from "@storybook/react";
 import type {SVGProps} from "react";
 

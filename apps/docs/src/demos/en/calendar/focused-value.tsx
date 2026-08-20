@@ -3,7 +3,7 @@
 import type {DateValue} from "@internationalized/date";
 
 import {parseDate} from "@internationalized/date";
-import {Button, Calendar, Description} from "@khulnasoft/react";
+import {Button, Calendar, Description} from "@prismui/react";
 import {useState} from "react";
 
 export function FocusedValue() {

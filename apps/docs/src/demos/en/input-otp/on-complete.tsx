@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Form, InputOTP, Label, Spinner} from "@khulnasoft/react";
+import {Button, Form, InputOTP, Label, Spinner} from "@prismui/react";
 import React from "react";
 
 export function OnComplete() {

@@ -1,6 +1,6 @@
 "use client";
 
-import {Alert, Button} from "@khulnasoft/react";
+import {Alert, Button} from "@prismui/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

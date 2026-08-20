@@ -1,7 +1,7 @@
 "use client";
 
 import {Rocket} from "@gravity-ui/icons";
-import {AlertDialog, Button} from "@khulnasoft/react";
+import {AlertDialog, Button} from "@prismui/react";
 
 export function Sizes() {
   const sizes = ["xs", "sm", "md", "lg", "cover"] as const;

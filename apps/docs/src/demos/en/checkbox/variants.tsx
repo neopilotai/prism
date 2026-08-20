@@ -1,4 +1,4 @@
-import {Checkbox, Description} from "@khulnasoft/react";
+import {Checkbox, Description} from "@prismui/react";
 
 export function Variants() {
   return (

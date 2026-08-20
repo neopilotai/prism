@@ -2,7 +2,7 @@
 
 import type {ComponentProps} from "react";
 
-import {Button, Dropdown, Header, Label} from "@khulnasoft/react";
+import {Button, Dropdown, Header, Label} from "@prismui/react";
 import {useI18n} from "fumadocs-ui/contexts/i18n";
 
 import {Languages} from "@/components/fumadocs/ui/icons";

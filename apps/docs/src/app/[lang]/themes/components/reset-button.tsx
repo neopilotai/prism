@@ -1,7 +1,7 @@
 "use client";
 
 import {ArrowRotateLeft} from "@gravity-ui/icons";
-import {AlertDialog, Button, Kbd, Tooltip, useOverlayState} from "@khulnasoft/react";
+import {AlertDialog, Button, Kbd, Tooltip, useOverlayState} from "@prismui/react";
 import {useMemo} from "react";
 
 import {useDictionary} from "@/hooks/use-dictionary";

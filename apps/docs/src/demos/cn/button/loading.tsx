@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Spinner} from "@khulnasoft/react";
+import {Button, Spinner} from "@prismui/react";
 import React from "react";
 
 export function Loading() {

@@ -12,7 +12,7 @@ import {
   Form,
   Label,
   RangeCalendar,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {useState} from "react";
 
 type DateRange = {

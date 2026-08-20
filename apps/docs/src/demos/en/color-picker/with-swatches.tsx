@@ -5,7 +5,7 @@ import {
   ColorSwatch,
   ColorSwatchPicker,
   Label,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 
 export function WithSwatches() {
   const presets = [

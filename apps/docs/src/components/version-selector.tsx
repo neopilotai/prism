@@ -1,6 +1,6 @@
 "use client";
 
-import {Popover, Separator} from "@khulnasoft/react";
+import {Popover, Separator} from "@prismui/react";
 import Link from "next/link";
 import {useState} from "react";
 

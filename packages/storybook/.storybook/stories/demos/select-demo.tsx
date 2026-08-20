@@ -1,4 +1,4 @@
-import {Label, ListBox, Select} from "@khulnasoft/react";
+import {Label, ListBox, Select} from "@prismui/react";
 import React from "react";
 
 export function SelectDemo() {

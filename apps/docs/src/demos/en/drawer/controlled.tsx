@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Drawer, useOverlayState} from "@khulnasoft/react";
+import {Button, Drawer, useOverlayState} from "@prismui/react";
 import React from "react";
 
 export function Controlled() {

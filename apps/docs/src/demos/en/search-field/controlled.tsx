@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Description, Label, SearchField} from "@khulnasoft/react";
+import {Button, Description, Label, SearchField} from "@prismui/react";
 import React from "react";
 
 export function Controlled() {

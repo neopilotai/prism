@@ -1,6 +1,6 @@
 "use client";
 
-import type {Key} from "@khulnasoft/react";
+import type {Key} from "@prismui/react";
 
 import {Autocomplete, EmptyState, Label, ListBox, SearchField, useFilter} from "@prismui/react";
 import {Icon} from "@iconify/react";

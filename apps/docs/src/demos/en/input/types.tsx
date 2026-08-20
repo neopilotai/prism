@@ -1,4 +1,4 @@
-import {Input, Label} from "@khulnasoft/react";
+import {Input, Label} from "@prismui/react";
 
 export function Types() {
   return (

@@ -9,7 +9,7 @@ import {
   startOfWeek,
   today,
 } from "@internationalized/date";
-import {Button, ButtonGroup, Description, RangeCalendar} from "@khulnasoft/react";
+import {Button, ButtonGroup, Description, RangeCalendar} from "@prismui/react";
 import {useState} from "react";
 import {useLocale} from "react-aria-components";
 

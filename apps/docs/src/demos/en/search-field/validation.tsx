@@ -1,4 +1,4 @@
-import {FieldError, Label, SearchField} from "@khulnasoft/react";
+import {FieldError, Label, SearchField} from "@prismui/react";
 
 export function Validation() {
   return (

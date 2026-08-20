@@ -8,7 +8,7 @@ import {
   Label,
   ListBox,
   Select,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 
 export function CustomValue() {
   const users = [

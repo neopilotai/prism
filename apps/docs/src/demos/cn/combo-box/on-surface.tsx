@@ -9,7 +9,7 @@ import {
   Label,
   ListBox,
   Surface,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 
 export function OnSurface() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {

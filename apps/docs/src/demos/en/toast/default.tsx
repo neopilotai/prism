@@ -1,7 +1,7 @@
 "use client";
 
 import {Persons} from "@gravity-ui/icons";
-import {Button, toast} from "@khulnasoft/react";
+import {Button, toast} from "@prismui/react";
 
 export function Default() {
   return (

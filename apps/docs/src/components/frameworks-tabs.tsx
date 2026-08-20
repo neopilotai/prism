@@ -1,7 +1,7 @@
 "use client";
 
 import type {Framework} from "@/hooks/use-current-framework";
-import type {Key} from "@khulnasoft/react";
+import type {Key} from "@prismui/react";
 
 import {Globe, Smartphone} from "@gravity-ui/icons";
 import {Tabs} from "@prismui/react";

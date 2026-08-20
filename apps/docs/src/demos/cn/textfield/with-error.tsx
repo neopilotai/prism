@@ -1,4 +1,4 @@
-import {FieldError, Input, Label, TextField} from "@khulnasoft/react";
+import {FieldError, Input, Label, TextField} from "@prismui/react";
 
 export function WithError() {
   return (

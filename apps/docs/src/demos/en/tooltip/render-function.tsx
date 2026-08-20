@@ -1,7 +1,7 @@
 "use client";
 
 import {CircleInfo} from "@gravity-ui/icons";
-import {Button, Tooltip} from "@khulnasoft/react";
+import {Button, Tooltip} from "@prismui/react";
 
 export function RenderFunction() {
   return (

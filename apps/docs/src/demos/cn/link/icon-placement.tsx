@@ -1,4 +1,4 @@
-import {Link} from "@khulnasoft/react";
+import {Link} from "@prismui/react";
 
 export function LinkIconPlacement() {
   return (

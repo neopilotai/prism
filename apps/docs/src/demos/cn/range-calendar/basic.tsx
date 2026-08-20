@@ -1,6 +1,6 @@
 "use client";
 
-import {RangeCalendar} from "@khulnasoft/react";
+import {RangeCalendar} from "@prismui/react";
 
 export function Basic() {
   return (

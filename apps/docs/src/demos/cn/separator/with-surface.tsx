@@ -1,4 +1,4 @@
-import {Separator, Surface} from "@khulnasoft/react";
+import {Separator, Surface} from "@prismui/react";
 
 export function WithSurface() {
   return (

@@ -1,4 +1,4 @@
-import {Label, Meter} from "@khulnasoft/react";
+import {Label, Meter} from "@prismui/react";
 
 const SIZE_LABELS = {
   lg: "大",

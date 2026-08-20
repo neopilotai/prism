@@ -1,4 +1,4 @@
-import {Avatar, Badge} from "@khulnasoft/react";
+import {Avatar, Badge} from "@prismui/react";
 
 export function CustomStyles() {
   return (

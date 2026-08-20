@@ -1,4 +1,4 @@
-import {Description, Input, Label} from "@khulnasoft/react";
+import {Description, Input, Label} from "@prismui/react";
 
 export function CustomStyles() {
   return (

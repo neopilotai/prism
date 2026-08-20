@@ -1,5 +1,5 @@
 import {Bookmark, Heart} from "@gravity-ui/icons";
-import {ToggleButton} from "@khulnasoft/react";
+import {ToggleButton} from "@prismui/react";
 
 export function IconOnly() {
   return (

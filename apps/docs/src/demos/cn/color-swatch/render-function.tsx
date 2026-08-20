@@ -1,6 +1,6 @@
 "use client";
 
-import {ColorSwatch} from "@khulnasoft/react";
+import {ColorSwatch} from "@prismui/react";
 
 export function RenderFunction() {
   return (

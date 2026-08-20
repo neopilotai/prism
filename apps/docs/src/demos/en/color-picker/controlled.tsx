@@ -11,7 +11,7 @@ import {
   ColorSwatchPicker,
   Label,
   parseColor,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {useState} from "react";
 
 export function Controlled() {

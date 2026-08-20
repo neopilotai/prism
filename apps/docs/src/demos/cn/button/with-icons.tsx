@@ -1,5 +1,5 @@
 import {Envelope, Globe, Plus, TrashBin} from "@gravity-ui/icons";
-import {Button} from "@khulnasoft/react";
+import {Button} from "@prismui/react";
 
 export function WithIcons() {
   return (

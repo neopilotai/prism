@@ -1,4 +1,4 @@
-import {ListBox, Surface} from "@khulnasoft/react";
+import {ListBox, Surface} from "@prismui/react";
 
 type ScrollbarMode = {
   id: string;

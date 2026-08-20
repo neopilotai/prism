@@ -2,7 +2,7 @@
 
 import type {ThemeId} from "../constants";
 
-import {ListBox, ScrollShadow} from "@khulnasoft/react";
+import {ListBox, ScrollShadow} from "@prismui/react";
 import Image from "next/image";
 
 import {useDictionary} from "@/hooks/use-dictionary";

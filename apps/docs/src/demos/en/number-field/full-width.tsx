@@ -1,4 +1,4 @@
-import {Label, NumberField} from "@khulnasoft/react";
+import {Label, NumberField} from "@prismui/react";
 
 export function FullWidth() {
   return (

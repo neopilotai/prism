@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Modal, Radio, RadioGroup} from "@khulnasoft/react";
+import {Button, Modal, Radio, RadioGroup} from "@prismui/react";
 import {useState} from "react";
 
 export function ScrollComparison() {

@@ -1,6 +1,6 @@
 "use client";
 
-import {buttonVariants} from "@khulnasoft/react";
+import {buttonVariants} from "@prismui/react";
 import {useEffect, useRef, useState} from "react";
 
 import {useCurrentFramework} from "@/hooks/use-current-framework";

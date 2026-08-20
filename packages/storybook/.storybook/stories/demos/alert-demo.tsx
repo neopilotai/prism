@@ -1,4 +1,4 @@
-import {Alert, Button} from "@khulnasoft/react";
+import {Alert, Button} from "@prismui/react";
 import React from "react";
 
 export function AlertDemo() {

@@ -7,7 +7,7 @@ import {
   TextAlignRight,
   Underline,
 } from "@gravity-ui/icons";
-import {ToggleButton, ToggleButtonGroup} from "@khulnasoft/react";
+import {ToggleButton, ToggleButtonGroup} from "@prismui/react";
 
 export function SelectionMode() {
   return (

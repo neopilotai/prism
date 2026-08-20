@@ -1,6 +1,6 @@
 "use client";
 
-import type {SortDescriptor} from "@khulnasoft/react";
+import type {SortDescriptor} from "@prismui/react";
 import type {SortingState} from "@tanstack/react-table";
 
 import {Chip, Pagination, Table} from "@prismui/react";

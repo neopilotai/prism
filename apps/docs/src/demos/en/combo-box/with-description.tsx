@@ -1,6 +1,6 @@
 "use client";
 
-import {ComboBox, Description, Input, Label, ListBox} from "@khulnasoft/react";
+import {ComboBox, Description, Input, Label, ListBox} from "@prismui/react";
 
 export function WithDescription() {
   return (

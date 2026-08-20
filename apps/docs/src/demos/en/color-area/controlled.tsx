@@ -1,6 +1,6 @@
 "use client";
 
-import type {Color} from "@khulnasoft/react";
+import type {Color} from "@prismui/react";
 
 import {ColorArea, ColorSwatch, parseColor} from "@prismui/react";
 import {useState} from "react";

@@ -1,6 +1,6 @@
 "use client";
 
-import {DateField, DateRangePicker, Label, RangeCalendar} from "@khulnasoft/react";
+import {DateField, DateRangePicker, Label, RangeCalendar} from "@prismui/react";
 
 export function CustomStyles() {
   return (

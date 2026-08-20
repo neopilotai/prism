@@ -3,7 +3,7 @@
 import type {DateValue} from "@internationalized/date";
 
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {Description, RangeCalendar} from "@khulnasoft/react";
+import {Description, RangeCalendar} from "@prismui/react";
 
 export function AllowsNonContiguousRanges() {
   const now = today(getLocalTimeZone());

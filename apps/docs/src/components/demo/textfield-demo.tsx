@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, FieldError, Input, Label, TextField} from "@khulnasoft/react";
+import {Description, FieldError, Input, Label, TextField} from "@prismui/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

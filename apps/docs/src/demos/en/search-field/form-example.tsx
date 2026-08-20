@@ -8,7 +8,7 @@ import {
   Label,
   SearchField,
   Spinner,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import React from "react";
 
 export function FormExample() {

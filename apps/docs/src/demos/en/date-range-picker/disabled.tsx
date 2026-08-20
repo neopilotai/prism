@@ -1,7 +1,7 @@
 "use client";
 
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {DateField, DateRangePicker, Description, Label, RangeCalendar} from "@khulnasoft/react";
+import {DateField, DateRangePicker, Description, Label, RangeCalendar} from "@prismui/react";
 
 export function Disabled() {
   const start = today(getLocalTimeZone());

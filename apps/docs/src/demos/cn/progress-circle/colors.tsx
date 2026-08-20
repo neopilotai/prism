@@ -1,4 +1,4 @@
-import {ProgressCircle} from "@khulnasoft/react";
+import {ProgressCircle} from "@prismui/react";
 
 const colors = ["default", "accent", "success", "warning", "danger"] as const;
 

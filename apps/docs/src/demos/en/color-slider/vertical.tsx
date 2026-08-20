@@ -1,4 +1,4 @@
-import {ColorSlider} from "@khulnasoft/react";
+import {ColorSlider} from "@prismui/react";
 
 export function Vertical() {
   return (

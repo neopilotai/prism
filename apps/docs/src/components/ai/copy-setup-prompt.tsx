@@ -10,11 +10,11 @@ interface SetupPromptConfig {
   docsPath: string;
   /** Skill / MCP server / install identifier, e.g. `prismui-react`. */
   id: string;
-  /** One-line summary of what is being built, e.g. ``UIs with PrismUI v3 (`@khulnasoft/react`)``. */
+  /** One-line summary of what is being built, e.g. ``UIs with PrismUI v3 (`@prismui/react`)``. */
   intro: string;
   /** Sentence describing what the MCP server exposes. */
   mcpAccess: string;
-  /** MCP npm package, e.g. `@khulnasoft/react-mcp`. */
+  /** MCP npm package, e.g. `@prismui/react-mcp`. */
   mcpPackage: string;
   /** Short marketing name, e.g. `PrismUI` or `PrismUI Native`. */
   productName: string;
@@ -137,9 +137,9 @@ These instructions are published at https://prism.khulnasoft.com/docs/${docsPath
 const REACT_PROMPT = buildSetupPrompt({
   docsPath: "react",
   id: "prismui-react",
-  intro: "UIs with PrismUI v3 (`@khulnasoft/react`)",
+  intro: "UIs with PrismUI v3 (`@prismui/react`)",
   mcpAccess: "component docs, source code, CSS, and theme variables",
-  mcpPackage: "@khulnasoft/react-mcp",
+  mcpPackage: "@prismui/react-mcp",
   productName: "PrismUI",
 });
 

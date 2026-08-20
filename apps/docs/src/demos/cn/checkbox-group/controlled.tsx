@@ -1,6 +1,6 @@
 "use client";
 
-import {Checkbox, CheckboxGroup, Label} from "@khulnasoft/react";
+import {Checkbox, CheckboxGroup, Label} from "@prismui/react";
 import {useState} from "react";
 
 export function Controlled() {

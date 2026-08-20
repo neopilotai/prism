@@ -1,4 +1,4 @@
-import {Header, Label, ListBox, Select, Separator} from "@khulnasoft/react";
+import {Header, Label, ListBox, Select, Separator} from "@prismui/react";
 
 export function WithSections() {
   return (

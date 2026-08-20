@@ -3,7 +3,7 @@
 import type {ColorFormat, ColorPickerProps} from "./types";
 
 import {Shuffle} from "@gravity-ui/icons";
-import {Button, InputGroup, ListBox, Popover, Select, TextField} from "@khulnasoft/react";
+import {Button, InputGroup, ListBox, Popover, Select, TextField} from "@prismui/react";
 import React, {useState} from "react";
 import {ColorPicker as AriaColorPicker, parseColor} from "react-aria-components";
 

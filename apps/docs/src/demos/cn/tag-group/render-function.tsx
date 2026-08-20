@@ -1,7 +1,7 @@
 "use client";
 
 import {PlanetEarth, Rocket, ShoppingBag, SquareArticle} from "@gravity-ui/icons";
-import {Tag, TagGroup} from "@khulnasoft/react";
+import {Tag, TagGroup} from "@prismui/react";
 
 export function RenderFunction() {
   return (

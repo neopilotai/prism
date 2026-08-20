@@ -1,6 +1,6 @@
 "use client";
 
-import {Calendar} from "@khulnasoft/react";
+import {Calendar} from "@prismui/react";
 
 export function MultipleMonths() {
   return (

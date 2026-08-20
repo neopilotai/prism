@@ -1,4 +1,4 @@
-import {Input} from "@khulnasoft/react";
+import {Input} from "@prismui/react";
 
 export function Variants() {
   return (

@@ -1,4 +1,4 @@
-import {Checkbox, Label} from "@khulnasoft/react";
+import {Checkbox, Label} from "@prismui/react";
 
 export function FullRounded() {
   return (

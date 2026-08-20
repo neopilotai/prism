@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Label, Switch} from "@khulnasoft/react";
+import {Description, Label, Switch} from "@prismui/react";
 
 export function CustomStyles() {
   return (

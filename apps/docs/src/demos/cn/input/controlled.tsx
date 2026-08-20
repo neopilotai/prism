@@ -1,6 +1,6 @@
 "use client";
 
-import {Input} from "@khulnasoft/react";
+import {Input} from "@prismui/react";
 import React from "react";
 
 export function Controlled() {

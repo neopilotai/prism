@@ -1,4 +1,4 @@
-import {Button, Dropdown, Label} from "@khulnasoft/react";
+import {Button, Dropdown, Label} from "@prismui/react";
 
 export function CustomStyles() {
   return (

@@ -1,5 +1,5 @@
 import {ChevronDown, CircleCheckFill, CircleFill, Clock, Xmark} from "@gravity-ui/icons";
-import {Chip} from "@khulnasoft/react";
+import {Chip} from "@prismui/react";
 
 export function ChipWithIcon() {
   return (

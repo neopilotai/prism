@@ -1,4 +1,4 @@
-import {Button, Card, CloseButton} from "@khulnasoft/react";
+import {Button, Card, CloseButton} from "@prismui/react";
 
 export function Horizontal() {
   return (

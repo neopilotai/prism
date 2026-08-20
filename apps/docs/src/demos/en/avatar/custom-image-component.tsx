@@ -1,4 +1,4 @@
-import {Avatar} from "@khulnasoft/react";
+import {Avatar} from "@prismui/react";
 import Image from "next/image";
 
 const SRC = "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg";

@@ -8,7 +8,7 @@ import {
   ListBox,
   SearchField,
   useFilter,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {useState} from "react";
 
 export function ControlledOpenState() {

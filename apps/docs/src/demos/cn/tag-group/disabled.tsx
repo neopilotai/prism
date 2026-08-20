@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Label, Tag, TagGroup} from "@khulnasoft/react";
+import {Description, Label, Tag, TagGroup} from "@prismui/react";
 
 export function TagGroupDisabled() {
   return (

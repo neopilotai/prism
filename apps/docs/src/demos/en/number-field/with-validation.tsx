@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, FieldError, Label, NumberField} from "@khulnasoft/react";
+import {Description, FieldError, Label, NumberField} from "@prismui/react";
 import React from "react";
 
 export function WithValidation() {

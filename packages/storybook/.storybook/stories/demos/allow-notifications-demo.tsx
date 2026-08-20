@@ -1,4 +1,4 @@
-import {Description, Label, Switch} from "@khulnasoft/react";
+import {Description, Label, Switch} from "@prismui/react";
 import React from "react";
 
 export function AllowNotificationsDemo() {

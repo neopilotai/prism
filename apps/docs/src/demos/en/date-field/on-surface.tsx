@@ -1,7 +1,7 @@
 "use client";
 
 import {Calendar} from "@gravity-ui/icons";
-import {DateField, Description, Label, Surface} from "@khulnasoft/react";
+import {DateField, Description, Label, Surface} from "@prismui/react";
 
 export function OnSurface() {
   return (

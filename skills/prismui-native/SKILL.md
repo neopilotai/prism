@@ -28,7 +28,7 @@ curl -fsSL https://prism.khulnasoft.com/install | bash -s prismui-native
 | ------------ | -------------------- | ----------------------------------- |
 | **Styling**  | Tailwind CSS v4      | Uniwind (Tailwind for React Native) |
 | **Colors**   | oklch format         | HSL format                          |
-| **Package**  | `@khulnasoft/react` 	  | `prismui-native`                     |
+| **Package**  | `@prismui/react` 	  | `prismui-native`                     |
 | **Platform** | Web browsers         | iOS & Android                       |
 
 ```tsx

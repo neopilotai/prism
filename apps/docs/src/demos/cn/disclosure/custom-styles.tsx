@@ -1,7 +1,7 @@
 "use client";
 
 import {ShoppingBag} from "@gravity-ui/icons";
-import {Button, Disclosure} from "@khulnasoft/react";
+import {Button, Disclosure} from "@prismui/react";
 import {useState} from "react";
 
 export function CustomStyles() {

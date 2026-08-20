@@ -1,6 +1,6 @@
 "use client";
 
-import {AlertDialog, Button} from "@khulnasoft/react";
+import {AlertDialog, Button} from "@prismui/react";
 
 export function BackdropVariants() {
   const variants = ["opaque", "blur", "transparent"] as const;

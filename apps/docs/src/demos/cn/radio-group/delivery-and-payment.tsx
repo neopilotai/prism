@@ -1,5 +1,5 @@
 import {Icon} from "@iconify/react";
-import {Description, Label, Radio, RadioGroup} from "@khulnasoft/react";
+import {Description, Label, Radio, RadioGroup} from "@prismui/react";
 import clsx from "clsx";
 
 export function DeliveryAndPayment() {

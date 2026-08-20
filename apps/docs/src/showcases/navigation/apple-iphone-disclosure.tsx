@@ -1,6 +1,6 @@
 "use client";
 
-import type {ButtonProps} from "@khulnasoft/react";
+import type {ButtonProps} from "@prismui/react";
 import type {SVGProps} from "react";
 
 import {Button, Disclosure, DisclosureGroup, useDisclosureGroupNavigation} from "@prismui/react";

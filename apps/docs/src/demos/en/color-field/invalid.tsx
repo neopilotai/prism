@@ -1,4 +1,4 @@
-import {ColorField, FieldError, Label} from "@khulnasoft/react";
+import {ColorField, FieldError, Label} from "@prismui/react";
 
 export function Invalid() {
   return (

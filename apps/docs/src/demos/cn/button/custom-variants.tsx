@@ -1,4 +1,4 @@
-import type {ButtonProps} from "@khulnasoft/react";
+import type {ButtonProps} from "@prismui/react";
 import type {VariantProps} from "tailwind-variants";
 
 import {Button, buttonVariants} from "@prismui/react";

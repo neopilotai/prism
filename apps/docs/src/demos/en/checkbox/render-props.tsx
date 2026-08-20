@@ -1,6 +1,6 @@
 "use client";
 
-import {Checkbox, Description} from "@khulnasoft/react";
+import {Checkbox, Description} from "@prismui/react";
 
 export function RenderProps() {
   return (

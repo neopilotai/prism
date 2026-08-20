@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, SearchField} from "@khulnasoft/react";
+import {Label, SearchField} from "@prismui/react";
 
 export function RenderFunction() {
   return (

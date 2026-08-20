@@ -2,7 +2,7 @@
 
 import type {BlogPost} from "@/lib/blog";
 
-import {Chip} from "@khulnasoft/react";
+import {Chip} from "@prismui/react";
 import Link from "next/link";
 import {useState} from "react";
 

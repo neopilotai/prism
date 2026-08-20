@@ -1,7 +1,7 @@
 "use client";
 
 import {getLocalTimeZone, today} from "@internationalized/date";
-import {Calendar, DateField, DatePicker, Label} from "@khulnasoft/react";
+import {Calendar, DateField, DatePicker, Label} from "@prismui/react";
 import {I18nProvider} from "react-aria-components";
 
 export function InternationalCalendar() {

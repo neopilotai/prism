@@ -1,4 +1,4 @@
-import {Label, ProgressCircle} from "@khulnasoft/react";
+import {Label, ProgressCircle} from "@prismui/react";
 
 export function WithLabel() {
   return (

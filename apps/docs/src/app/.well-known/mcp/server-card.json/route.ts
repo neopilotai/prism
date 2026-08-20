@@ -29,7 +29,7 @@ export async function GET(request: Request) {
         absoluteUrl(origin, "/docs/native/getting-started/mcp-server"),
       ],
       npm: [
-        "https://www.npmjs.com/package/@khulnasoft/react-mcp",
+        "https://www.npmjs.com/package/@prismui/react-mcp",
         "https://www.npmjs.com/package/@khulnasoft/native-mcp",
       ],
       source: "https://github.com/khulnasoft/prismui-mcp",
@@ -44,32 +44,32 @@ export async function GET(request: Request) {
       {
         description: "List all available PrismUI v3 React components.",
         name: "list_components",
-        package: "@khulnasoft/react-mcp",
+        package: "@prismui/react-mcp",
       },
       {
         description: "Get complete React component documentation.",
         name: "get_component_docs",
-        package: "@khulnasoft/react-mcp",
+        package: "@prismui/react-mcp",
       },
       {
         description: "Get React component TypeScript source code.",
         name: "get_component_source_code",
-        package: "@khulnasoft/react-mcp",
+        package: "@prismui/react-mcp",
       },
       {
         description: "Get React component CSS source styles.",
         name: "get_component_source_styles",
-        package: "@khulnasoft/react-mcp",
+        package: "@prismui/react-mcp",
       },
       {
         description: "Get PrismUI React theme variables.",
         name: "get_theme_variables",
-        package: "@khulnasoft/react-mcp",
+        package: "@prismui/react-mcp",
       },
       {
         description: "Browse full PrismUI React documentation.",
         name: "get_docs",
-        package: "@khulnasoft/react-mcp",
+        package: "@prismui/react-mcp",
       },
       {
         description: "List all available PrismUI Native components.",
@@ -94,10 +94,10 @@ export async function GET(request: Request) {
     ],
     transports: [
       {
-        args: ["-y", "@khulnasoft/react-mcp@latest"],
+        args: ["-y", "@prismui/react-mcp@latest"],
         command: "npx",
         dataApi: REACT_MCP_API_URL,
-        package: "@khulnasoft/react-mcp",
+        package: "@prismui/react-mcp",
         type: "stdio",
       },
       {

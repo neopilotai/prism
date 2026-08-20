@@ -1,5 +1,5 @@
 import {Person} from "@gravity-ui/icons";
-import {Avatar} from "@khulnasoft/react";
+import {Avatar} from "@prismui/react";
 
 export function Fallback() {
   return (

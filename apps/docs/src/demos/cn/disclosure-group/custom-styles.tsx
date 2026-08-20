@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Disclosure, DisclosureGroup, Separator} from "@khulnasoft/react";
+import {Button, Disclosure, DisclosureGroup, Separator} from "@prismui/react";
 
 export function CustomStyles() {
   return (

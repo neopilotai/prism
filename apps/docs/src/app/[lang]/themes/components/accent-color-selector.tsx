@@ -2,7 +2,7 @@
 
 import type {Color} from "@/components/color-picker";
 
-import {Button, cn} from "@khulnasoft/react";
+import {Button, cn} from "@prismui/react";
 import {formatHsl} from "culori";
 import {useMemo} from "react";
 

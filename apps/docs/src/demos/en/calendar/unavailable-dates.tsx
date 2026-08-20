@@ -3,7 +3,7 @@
 import type {DateValue} from "@internationalized/date";
 
 import {isWeekend} from "@internationalized/date";
-import {Calendar, Description} from "@khulnasoft/react";
+import {Calendar, Description} from "@prismui/react";
 import {useLocale} from "react-aria-components";
 
 export function UnavailableDates() {

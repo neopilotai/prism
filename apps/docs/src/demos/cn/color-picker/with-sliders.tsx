@@ -1,6 +1,6 @@
 "use client";
 
-import type {ColorChannel, ColorSpace} from "@khulnasoft/react";
+import type {ColorChannel, ColorSpace} from "@prismui/react";
 
 import {ColorPicker, ColorSlider, ColorSwatch, Label, ListBox, Select} from "@prismui/react";
 import {useState} from "react";

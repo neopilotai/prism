@@ -1,4 +1,4 @@
-import {InputOTP, Label, Link} from "@khulnasoft/react";
+import {InputOTP, Label, Link} from "@prismui/react";
 
 const slotClass =
   "rounded-lg border-border/80 bg-default data-[active=true]:border-accent/40 data-[active=true]:bg-accent-soft";

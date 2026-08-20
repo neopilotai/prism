@@ -1,6 +1,6 @@
 "use client";
 
-import {Button} from "@khulnasoft/react";
+import {Button} from "@prismui/react";
 import {Ripple} from "m3-ripple";
 
 import "m3-ripple/ripple.css";

@@ -1,7 +1,7 @@
 "use client";
 
 import {Eye, EyeSlash} from "@gravity-ui/icons";
-import {Button, InputGroup, Label, TextField} from "@khulnasoft/react";
+import {Button, InputGroup, Label, TextField} from "@prismui/react";
 import {useState} from "react";
 
 export function PasswordWithToggle() {

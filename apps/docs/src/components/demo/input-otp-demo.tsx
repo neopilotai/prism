@@ -1,6 +1,6 @@
 "use client";
 
-import {InputOTP, Label, Link} from "@khulnasoft/react";
+import {InputOTP, Label, Link} from "@prismui/react";
 import {useState} from "react";
 
 import {useDictionary} from "@/hooks/use-dictionary";

@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, TimeField} from "@khulnasoft/react";
+import {Label, TimeField} from "@prismui/react";
 
 export function Basic() {
   return (

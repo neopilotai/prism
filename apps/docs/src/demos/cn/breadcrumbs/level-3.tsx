@@ -1,6 +1,6 @@
 "use client";
 
-import {Breadcrumbs} from "@khulnasoft/react";
+import {Breadcrumbs} from "@prismui/react";
 
 export default function BreadcrumbsLevel3() {
   return (

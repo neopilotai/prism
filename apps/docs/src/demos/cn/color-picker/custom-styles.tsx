@@ -1,4 +1,4 @@
-import {ColorArea, ColorPicker, ColorSlider, ColorSwatch, Label} from "@khulnasoft/react";
+import {ColorArea, ColorPicker, ColorSlider, ColorSwatch, Label} from "@prismui/react";
 
 export function CustomStyles() {
   return (

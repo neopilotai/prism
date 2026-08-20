@@ -5,7 +5,7 @@ import type {CSSProperties} from "react";
 import type {Color} from "react-aria-components";
 
 import {Palette} from "@gravity-ui/icons";
-import {ColorSwatchPicker, Spinner, Tabs, Tooltip, buttonVariants} from "@khulnasoft/react";
+import {ColorSwatchPicker, Spinner, Tabs, Tooltip, buttonVariants} from "@prismui/react";
 import {converter} from "culori";
 import LinkRoot from "fumadocs-core/link";
 import {useTheme} from "next-themes";

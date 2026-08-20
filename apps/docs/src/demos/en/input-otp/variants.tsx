@@ -1,4 +1,4 @@
-import {InputOTP, Label} from "@khulnasoft/react";
+import {InputOTP, Label} from "@prismui/react";
 
 export function Variants() {
   return (

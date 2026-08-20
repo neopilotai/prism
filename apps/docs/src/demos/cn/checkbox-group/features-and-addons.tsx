@@ -1,5 +1,5 @@
 import {Bell, Comment, Envelope} from "@gravity-ui/icons";
-import {Checkbox, CheckboxGroup, Description, Label} from "@khulnasoft/react";
+import {Checkbox, CheckboxGroup, Description, Label} from "@prismui/react";
 import clsx from "clsx";
 
 export function FeaturesAndAddOns() {

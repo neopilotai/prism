@@ -1,4 +1,4 @@
-import {Avatar, Link} from "@khulnasoft/react";
+import {Avatar, Link} from "@prismui/react";
 import * as React from "react";
 
 import {siteConfig} from "@/config/site";

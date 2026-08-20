@@ -1,5 +1,5 @@
 import {Bell} from "@gravity-ui/icons";
-import {Avatar, Badge} from "@khulnasoft/react";
+import {Avatar, Badge} from "@prismui/react";
 
 const AVATAR_URL = "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg";
 

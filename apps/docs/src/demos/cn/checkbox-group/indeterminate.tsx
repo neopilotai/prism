@@ -1,6 +1,6 @@
 "use client";
 
-import {Checkbox, CheckboxGroup} from "@khulnasoft/react";
+import {Checkbox, CheckboxGroup} from "@prismui/react";
 import {useState} from "react";
 
 export function Indeterminate() {

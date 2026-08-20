@@ -16,7 +16,7 @@ import {
   ThumbsUp,
   Video,
 } from "@gravity-ui/icons";
-import {Button, ButtonGroup, Chip, Description, Dropdown, Label} from "@khulnasoft/react";
+import {Button, ButtonGroup, Chip, Description, Dropdown, Label} from "@prismui/react";
 
 export function Basic() {
   return (

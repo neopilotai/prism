@@ -1,6 +1,6 @@
 "use client";
 
-import {Kbd, Label, Tooltip, cn} from "@khulnasoft/react";
+import {Kbd, Label, Tooltip, cn} from "@prismui/react";
 import {useTheme} from "next-themes";
 
 import {ThemeToggle} from "@/components/fumadocs/ui/theme-toggle";

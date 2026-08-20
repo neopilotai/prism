@@ -1,6 +1,6 @@
 "use client";
 
-import type {TimeValue} from "@khulnasoft/react";
+import type {TimeValue} from "@prismui/react";
 
 import {Button, Description, Label, TimeField} from "@prismui/react";
 import {Time, getLocalTimeZone, now} from "@internationalized/date";

@@ -1,6 +1,6 @@
 "use client";
 
-import {Switch} from "@khulnasoft/react";
+import {Switch} from "@prismui/react";
 import React from "react";
 
 export function Controlled() {

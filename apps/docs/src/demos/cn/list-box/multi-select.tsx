@@ -1,4 +1,4 @@
-import {Avatar, Description, Label, ListBox, Surface} from "@khulnasoft/react";
+import {Avatar, Description, Label, ListBox, Surface} from "@prismui/react";
 
 export function MultiSelect() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import {Check} from "@gravity-ui/icons";
-import {Avatar, Description, Label, ListBox, Surface} from "@khulnasoft/react";
+import {Avatar, Description, Label, ListBox, Surface} from "@prismui/react";
 
 export function CustomCheckIcon() {
   return (

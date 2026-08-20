@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Label, Switch} from "@khulnasoft/react";
+import {Description, Label, Switch} from "@prismui/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

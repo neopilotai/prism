@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 
-import {buttonVariants} from "@khulnasoft/react";
+import {buttonVariants} from "@prismui/react";
 import LinkRoot from "fumadocs-core/link";
 import {notFound} from "next/navigation";
 

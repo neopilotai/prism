@@ -1,7 +1,7 @@
 "use client";
 
 import {Icon} from "@iconify/react";
-import {DateField, DateRangePicker, Description, Label, RangeCalendar} from "@khulnasoft/react";
+import {DateField, DateRangePicker, Description, Label, RangeCalendar} from "@prismui/react";
 
 export function WithCustomIndicator() {
   return (

@@ -1,4 +1,4 @@
-import {ColorSlider, Label} from "@khulnasoft/react";
+import {ColorSlider, Label} from "@prismui/react";
 
 export function Basic() {
   return (

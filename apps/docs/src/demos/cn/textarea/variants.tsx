@@ -1,4 +1,4 @@
-import {TextArea} from "@khulnasoft/react";
+import {TextArea} from "@prismui/react";
 
 export function Variants() {
   return (

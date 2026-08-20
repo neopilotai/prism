@@ -1,5 +1,5 @@
 import {Person} from "@gravity-ui/icons";
-import {Avatar, Separator} from "@khulnasoft/react";
+import {Avatar, Separator} from "@prismui/react";
 
 const colors = ["accent", "default", "success", "warning", "danger"] as const;
 

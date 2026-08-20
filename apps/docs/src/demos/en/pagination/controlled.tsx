@@ -1,6 +1,6 @@
 "use client";
 
-import {Pagination} from "@khulnasoft/react";
+import {Pagination} from "@prismui/react";
 import {useState} from "react";
 
 export function PaginationControlled() {

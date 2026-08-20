@@ -9,7 +9,7 @@ import {
   Label,
   Tooltip,
   useOverlayState,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {useEffect, useRef, useState} from "react";
 
 import {useDictionary} from "@/hooks/use-dictionary";

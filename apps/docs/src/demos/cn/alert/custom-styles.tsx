@@ -1,4 +1,4 @@
-import {Alert, Button, CloseButton} from "@khulnasoft/react";
+import {Alert, Button, CloseButton} from "@prismui/react";
 
 export function CustomStyles() {
   return (

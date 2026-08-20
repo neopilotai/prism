@@ -1,6 +1,6 @@
 "use client";
 
-import {Avatar, Button, Popover} from "@khulnasoft/react";
+import {Avatar, Button, Popover} from "@prismui/react";
 import {useState} from "react";
 
 export function PopoverInteractive() {

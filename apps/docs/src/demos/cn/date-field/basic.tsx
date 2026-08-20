@@ -1,6 +1,6 @@
 "use client";
 
-import {DateField, Label} from "@khulnasoft/react";
+import {DateField, Label} from "@prismui/react";
 
 export function Basic() {
   return (

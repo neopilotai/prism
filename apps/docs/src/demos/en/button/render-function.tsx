@@ -1,6 +1,6 @@
 "use client";
 
-import {Button} from "@khulnasoft/react";
+import {Button} from "@prismui/react";
 
 export function RenderFunction() {
   return (

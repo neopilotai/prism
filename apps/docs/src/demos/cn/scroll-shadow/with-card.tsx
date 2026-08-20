@@ -1,4 +1,4 @@
-import {Button, Card, ScrollShadow} from "@khulnasoft/react";
+import {Button, Card, ScrollShadow} from "@prismui/react";
 
 export default function WithCard() {
   return (

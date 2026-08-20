@@ -1,4 +1,4 @@
-# @khulnasoft/react
+# @prismui/react
 
 ## 3.0.1
 

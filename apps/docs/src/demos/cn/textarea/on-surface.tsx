@@ -1,4 +1,4 @@
-import {Surface, TextArea} from "@khulnasoft/react";
+import {Surface, TextArea} from "@prismui/react";
 
 export function OnSurface() {
   return (

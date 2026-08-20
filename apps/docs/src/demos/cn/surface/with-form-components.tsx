@@ -1,6 +1,6 @@
 "use client";
 
-import {Input, Surface, TextArea} from "@khulnasoft/react";
+import {Input, Surface, TextArea} from "@prismui/react";
 
 export function WithFormComponents() {
   return (

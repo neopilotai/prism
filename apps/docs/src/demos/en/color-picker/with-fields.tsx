@@ -1,6 +1,6 @@
 "use client";
 
-import type {ColorChannel, ColorSpace} from "@khulnasoft/react";
+import type {ColorChannel, ColorSpace} from "@prismui/react";
 
 import {
   ColorArea,

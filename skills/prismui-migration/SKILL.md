@@ -34,7 +34,7 @@ curl -fsSL https://prism.khulnasoft.com/install | bash -s prismui-migration
 | Event handlers | `onClick`                 | `onPress`                              |
 | Styling       | `classNames` prop         | `className` prop                       |
 | Hooks         | `useSwitch`, `useDisclosure`, etc. | Compound components, `useOverlayState` |
-| Packages      | `@khulnasoft/system`, `@khulnasoft/theme` | `@khulnasoft/react`, `@khulnasoft/styles` |
+| Packages      | `@khulnasoft/system`, `@khulnasoft/theme` | `@prismui/react`, `@khulnasoft/styles` |
 
 ---
 

@@ -9,7 +9,7 @@ import {
   ListBox,
   ListBoxLoadMoreItem,
   Spinner,
-} from "@khulnasoft/react";
+} from "@prismui/react";
 import {useAsyncList} from "@react-stately/data";
 
 interface Character {

@@ -1,7 +1,7 @@
 "use client";
 
 import {ArrowUp, At, Microphone, PlugConnection, Plus} from "@gravity-ui/icons";
-import {Button, InputGroup, Kbd, Spinner, TextField, Tooltip} from "@khulnasoft/react";
+import {Button, InputGroup, Kbd, Spinner, TextField, Tooltip} from "@prismui/react";
 import {useState} from "react";
 
 export function WithTextArea() {

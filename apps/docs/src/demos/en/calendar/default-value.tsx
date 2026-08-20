@@ -1,7 +1,7 @@
 "use client";
 
 import {parseDate} from "@internationalized/date";
-import {Calendar} from "@khulnasoft/react";
+import {Calendar} from "@prismui/react";
 
 export function DefaultValue() {
   return (

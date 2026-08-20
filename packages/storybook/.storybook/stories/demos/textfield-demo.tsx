@@ -1,4 +1,4 @@
-import {Description, FieldError, Input, Label, TextField} from "@khulnasoft/react";
+import {Description, FieldError, Input, Label, TextField} from "@prismui/react";
 import React from "react";
 
 export function TextfieldDemo() {

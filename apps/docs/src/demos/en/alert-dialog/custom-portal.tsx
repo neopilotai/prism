@@ -1,6 +1,6 @@
 "use client";
 
-import {AlertDialog, Button} from "@khulnasoft/react";
+import {AlertDialog, Button} from "@prismui/react";
 import {useCallback, useRef, useState} from "react";
 
 export function CustomPortal() {

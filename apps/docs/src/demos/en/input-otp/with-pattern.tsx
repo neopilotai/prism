@@ -1,4 +1,4 @@
-import {Description, InputOTP, Label, REGEXP_ONLY_CHARS} from "@khulnasoft/react";
+import {Description, InputOTP, Label, REGEXP_ONLY_CHARS} from "@prismui/react";
 
 export function WithPattern() {
   return (
