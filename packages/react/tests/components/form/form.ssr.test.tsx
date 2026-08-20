@@ -1,4 +1,4 @@
-import {ssrSmoke} from "@heroui/testing/helpers";
+import {ssrSmoke} from "@khulnasoft/testing/helpers";
 
 import {Form} from "@/components/form";
 import {Input} from "@/components/input";

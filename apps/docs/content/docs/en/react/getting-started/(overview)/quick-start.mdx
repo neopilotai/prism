@@ -14,7 +14,7 @@ icon: rocket
 <CopyPrompt
   prompt={`Set up HeroUI in this React project.
 
-Use the HeroUI MCP server (@heroui/react-mcp) as the single source of truth for installation steps, peer dependencies, and component APIs. Start by retrieving the latest quick-start / installation guide from the MCP and follow it precisely — do not rely on memory for versions, package names, or setup steps.
+Use the HeroUI MCP server (@khulnasoft/react-mcp) as the single source of truth for installation steps, peer dependencies, and component APIs. Start by retrieving the latest quick-start / installation guide from the MCP and follow it precisely — do not rely on memory for versions, package names, or setup steps.
 
 Before making any changes:
 
@@ -24,10 +24,10 @@ Before making any changes:
 
 Then apply the setup:
 
-- Install @heroui/react and @heroui/styles plus any missing mandatory peer dependencies.
-- In the main Tailwind CSS entry file, add \`@import "@heroui/styles";\` immediately after \`@import "tailwindcss";\`. Import order matters — tailwindcss must be imported first.
+- Install @khulnasoft/react and @khulnasoft/styles plus any missing mandatory peer dependencies.
+- In the main Tailwind CSS entry file, add \`@import "@khulnasoft/styles";\` immediately after \`@import "tailwindcss";\`. Import order matters — tailwindcss must be imported first.
 - Make sure the CSS entry file is loaded by the app (e.g. imported in the root layout / entry file for Next.js, Vite, Remix, etc.). HeroUI v3 does not require a Provider, so no wrapper component is needed.
-- Add a small smoke test by rendering a \`<Button>\` from \`@heroui/react\` somewhere visible to confirm styles are applied.
+- Add a small smoke test by rendering a \`<Button>\` from \`@khulnasoft/react\` somewhere visible to confirm styles are applied.
 
 When done, summarize the changes you made and tell me how to start the dev server.`}
 >
@@ -39,22 +39,22 @@ Install HeroUI and required dependencies:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @heroui/styles @heroui/react
+    npm i @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @heroui/styles @heroui/react
+    pnpm add @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @heroui/styles @heroui/react
+    yarn add @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @heroui/styles @heroui/react
+    bun add @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
 </Tabs>
@@ -65,7 +65,7 @@ Add to your main CSS file `globals.css`:
 
 ```css
 @import "tailwindcss";
-@import "@heroui/styles"; /* [!code highlight]*/
+@import "@khulnasoft/styles"; /* [!code highlight]*/
 ```
 
 <Callout type="warning">
@@ -75,7 +75,7 @@ Add to your main CSS file `globals.css`:
 ## Use Components
 
 ```tsx
-import { Button } from '@heroui/react';
+import { Button } from '@khulnasoft/react';
 
 function App() {
   return (

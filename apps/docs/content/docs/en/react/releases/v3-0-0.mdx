@@ -53,9 +53,9 @@ Premium components, templates, and AI tooling for React and React Native. Comman
 
 **Composition over configuration:** v2 components were black boxes. v3 adopts compound components: every internal piece is a real element you can style, move, swap, or remove.
 
-**Styles separated from implementation:** `@heroui/styles` is standalone CSS. `@heroui/react` handles behavior. Use the styles with React, plain HTML + Tailwind, or any framework. BEM class names make every slot customizable globally. Swap themes to change not just variables, but how components look and feel.
+**Styles separated from implementation:** `@khulnasoft/styles` is standalone CSS. `@khulnasoft/react` handles behavior. Use the styles with React, plain HTML + Tailwind, or any framework. BEM class names make every slot customizable globally. Swap themes to change not just variables, but how components look and feel.
 
-**Headless when you want it:** Remove the `@heroui/styles` import and you have a headless library. We maintain functionality and accessibility. You focus on your product.
+**Headless when you want it:** Remove the `@khulnasoft/styles` import and you have a headless library. We maintain functionality and accessibility. You focus on your product.
 
 **Performance by default:** v2 used Framer Motion for every animation. v3 replaced it with native CSS transitions and keyframes. Lighter bundles, GPU-accelerated, no JS animation runtime.
 
@@ -156,7 +156,7 @@ No provider component. No JavaScript theme object. One CSS import, two lines:
 
 ```css
 @import "tailwindcss";
-@import "@heroui/styles";
+@import "@khulnasoft/styles";
 ```
 
 ### BEM Classes
@@ -206,10 +206,10 @@ Import the full library or pick individual component styles:
 
 ```css
 @import "tailwindcss";
-@import "@heroui/styles/base" layer(base);
-@import "@heroui/styles/themes/default" layer(theme);
-@import "@heroui/styles/components/button.css" layer(components);
-@import "@heroui/styles/components/card.css" layer(components);
+@import "@khulnasoft/styles/base" layer(base);
+@import "@khulnasoft/styles/themes/default" layer(theme);
+@import "@khulnasoft/styles/components/button.css" layer(components);
+@import "@khulnasoft/styles/components/card.css" layer(components);
 ```
 
 Ship only the CSS you use. No unused component styles in production.
@@ -255,7 +255,7 @@ Framer Motion, Motion One, or any CSS animation library works alongside HeroUI's
 
 ```tsx
 import { motion } from "framer-motion";
-import { Button } from "@heroui/react";
+import { Button } from "@khulnasoft/react";
 
 const MotionButton = motion(Button);
 
@@ -352,12 +352,12 @@ Import from the root or from per-component subpaths. Both work:
 
 ```tsx
 // Root import
-import { Button, Card, Table } from "@heroui/react";
+import { Button, Card, Table } from "@khulnasoft/react";
 
 // Subpath import
-import { Button } from "@heroui/react/button";
-import { Card } from "@heroui/react/card";
-import { Table } from "@heroui/react/table";
+import { Button } from "@khulnasoft/react/button";
+import { Card } from "@khulnasoft/react/card";
+import { Table } from "@khulnasoft/react/table";
 ```
 
 ## UI for Agents
@@ -373,7 +373,7 @@ The HeroUI MCP Server connects AI coding assistants (Cursor, Claude Code, VS Cod
   "mcpServers": {
     "heroui-react": {
       "command": "npx",
-      "args": ["-y", "@heroui/react-mcp@latest"]
+      "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
   }
 }
@@ -561,7 +561,7 @@ HeroUI Native ships with its own MCP Server, agent skills, and LLMs.txt. Same to
   "mcpServers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -601,22 +601,22 @@ Pre-sale pricing is live. v2 Pro customers get an upgrade discount. Use the same
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @heroui/styles @heroui/react
+    npm i @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @heroui/styles @heroui/react
+    pnpm add @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @heroui/styles @heroui/react
+    yarn add @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @heroui/styles @heroui/react
+    bun add @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
 </Tabs>
@@ -625,7 +625,7 @@ Add two lines to your CSS:
 
 ```css
 @import "tailwindcss";
-@import "@heroui/styles";
+@import "@khulnasoft/styles";
 ```
 
 ### React Native

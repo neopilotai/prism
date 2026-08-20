@@ -33,7 +33,7 @@ importers:
       '@eslint/js':
         specifier: 9.39.2
         version: 9.39.2
-      '@heroui/standard':
+      '@khulnasoft/standard':
         specifier: workspace:*
         version: link:packages/standard
       '@next/eslint-plugin-next':
@@ -180,7 +180,7 @@ importers:
       '@gravity-ui/icons':
         specifier: 2.16.0
         version: 2.16.0(react@19.2.6)
-      '@heroui/react':
+      '@khulnasoft/react':
         specifier: workspace:*
         version: link:../../packages/react
       '@iconify-json/gravity-ui':
@@ -310,10 +310,10 @@ importers:
         specifier: 4.2.1
         version: 4.2.1
     devDependencies:
-      '@heroui/standard':
+      '@khulnasoft/standard':
         specifier: workspace:*
         version: link:../../packages/standard
-      '@heroui/styles':
+      '@khulnasoft/styles':
         specifier: workspace:*
         version: link:../../packages/styles
       '@tailwindcss/postcss':
@@ -352,7 +352,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@heroui/styles':
+      '@khulnasoft/styles':
         specifier: workspace:*
         version: link:../styles
       '@radix-ui/react-avatar':
@@ -377,10 +377,10 @@ importers:
         specifier: 3.3.1
         version: 3.3.1(tailwind-merge@3.4.0)(tailwindcss@4.1.18)
     devDependencies:
-      '@heroui/standard':
+      '@khulnasoft/standard':
         specifier: workspace:*
         version: link:../standard
-      '@heroui/testing':
+      '@khulnasoft/testing':
         specifier: workspace:*
         version: link:../testing
       '@iconify/react':
@@ -448,10 +448,10 @@ importers:
       '@gravity-ui/icons':
         specifier: 2.16.0
         version: 2.16.0(react@19.2.6)
-      '@heroui/react':
+      '@khulnasoft/react':
         specifier: workspace:*
         version: link:../react
-      '@heroui/styles':
+      '@khulnasoft/styles':
         specifier: workspace:*
         version: link:../styles
       '@iconify/react':
@@ -479,7 +479,7 @@ importers:
         specifier: 3.3.1
         version: 3.3.1(tailwind-merge@3.6.0)(tailwindcss@4.3.0)
     devDependencies:
-      '@heroui/standard':
+      '@khulnasoft/standard':
         specifier: workspace:*
         version: link:../standard
       '@storybook/addon-a11y':
@@ -537,7 +537,7 @@ importers:
         specifier: 1.4.0
         version: 1.4.0
     devDependencies:
-      '@heroui/standard':
+      '@khulnasoft/standard':
         specifier: workspace:*
         version: link:../standard
       '@tailwindcss/cli':
@@ -592,7 +592,7 @@ importers:
         specifier: 2.2.0
         version: 2.2.0(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.10)
     devDependencies:
-      '@heroui/standard':
+      '@khulnasoft/standard':
         specifier: workspace:*
         version: link:../standard
       '@types/react':

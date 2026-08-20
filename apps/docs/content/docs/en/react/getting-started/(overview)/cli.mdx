@@ -70,10 +70,10 @@ Options:
 
 Commands:
   init [options] [projectName]   Initializes a new project
-  install [options]              Installs @heroui/react and @heroui/styles to your project
-  upgrade [options]              Upgrades @heroui/react and @heroui/styles to the latest versions
-  uninstall [options]            Uninstall @heroui/react and @heroui/styles from the project
-  list [options]                 Lists installed HeroUI packages (@heroui/react, @heroui/styles)
+  install [options]              Installs @khulnasoft/react and @khulnasoft/styles to your project
+  upgrade [options]              Upgrades @khulnasoft/react and @khulnasoft/styles to the latest versions
+  uninstall [options]            Uninstall @khulnasoft/react and @khulnasoft/styles from the project
+  list [options]                 Lists installed HeroUI packages (@khulnasoft/react, @khulnasoft/styles)
   env [options]                  Displays debugging information for the local environment
   doctor [options]               Checks for issues in the project
   agents-md [options]            Downloads HeroUI documentation for AI coding agents
@@ -161,7 +161,7 @@ npm run dev
 
 ### Install
 
-Install `@heroui/react` and `@heroui/styles` to your project, along with their peer dependencies. If they are already installed, the command does nothing.
+Install `@khulnasoft/react` and `@khulnasoft/styles` to your project, along with their peer dependencies. If they are already installed, the command does nothing.
 
 ```bash
 heroui install [options]
@@ -181,8 +181,8 @@ HeroUI CLI <version>
 ╭─────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version        │   Status   │   Docs                 │
 │─────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0          │   stable   │   https://heroui.com   │
-│   @heroui/styles   │   3.0.0          │   stable   │   https://heroui.com   │
+│   @khulnasoft/react    │   3.0.0          │   stable   │   https://heroui.com   │
+│   @khulnasoft/styles   │   3.0.0          │   stable   │   https://heroui.com   │
 ╰─────────────────────────────────────────────────────────────────────────────╯
 
 ╭─────────────── PeerDependencies ────────────────╮
@@ -194,13 +194,13 @@ HeroUI CLI <version>
 ❯   Yes
     No
 
-✅ @heroui/react and @heroui/styles installed successfully
+✅ @khulnasoft/react and @khulnasoft/styles installed successfully
 ```
 
 ### upgrade
 
 
-Upgrade `@heroui/react` and `@heroui/styles` with their peer dependencies to the latest versions.
+Upgrade `@khulnasoft/react` and `@khulnasoft/styles` with their peer dependencies to the latest versions.
 
 ```bash
 heroui upgrade [options]
@@ -216,8 +216,8 @@ heroui upgrade [options]
 HeroUI CLI <version>
 
 ╭──────────────────────────── Upgrade ────────────────────────────╮
-│  @heroui/react               ^3.0.0  ->  ^3.1.0                │
-│  @heroui/styles              ^3.0.0  ->  ^3.1.0                │
+│  @khulnasoft/react               ^3.0.0  ->  ^3.1.0                │
+│  @khulnasoft/styles              ^3.0.0  ->  ^3.1.0                │
 ╰─────────────────────────────────────────────────────────────────╯
 
 ? Would you like to proceed with the upgrade? › - Use arrow-keys. Return to submit.
@@ -229,7 +229,7 @@ HeroUI CLI <version>
 
 ### uninstall
 
-Uninstall `@heroui/react` and `@heroui/styles` from your project. Peer dependencies will not be uninstalled.
+Uninstall `@khulnasoft/react` and `@khulnasoft/styles` from your project. Peer dependencies will not be uninstalled.
 
 ```bash
 heroui uninstall [options]
@@ -248,19 +248,19 @@ HeroUI CLI <version>
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version   │   Status   │   Docs                               │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0     │   stable   │   https://heroui.com                 │
-│   @heroui/styles   │   3.0.0     │   stable   │   https://heroui.com                 │
+│   @khulnasoft/react    │   3.0.0     │   stable   │   https://heroui.com                 │
+│   @khulnasoft/styles   │   3.0.0     │   stable   │   https://heroui.com                 │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ? Confirm uninstallation of these packages: › - Use arrow-keys. Return to submit.
 ❯   Yes
     No
 
-✅ Successfully uninstalled: @heroui/react, @heroui/styles
+✅ Successfully uninstalled: @khulnasoft/react, @khulnasoft/styles
 ```
 
 ### list
 
-List the installed HeroUI packages (`@heroui/react`, `@heroui/styles`).
+List the installed HeroUI packages (`@khulnasoft/react`, `@khulnasoft/styles`).
 
 ```bash
 heroui list [options]
@@ -280,15 +280,15 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
-│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @khulnasoft/react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @khulnasoft/styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 ### doctor
 
 Check for issues in your project.
-- Check whether `@heroui/react` and `@heroui/styles` are installed
+- Check whether `@khulnasoft/react` and `@khulnasoft/styles` are installed
 - Check whether `required peer dependencies` are installed and matched minimal requirements in the project
 
 
@@ -312,7 +312,7 @@ HeroUI CLI: ❌ Your project has 1 issue that require attention
 ❗️Issue 1: missingHeroUIPackages
 
 The following HeroUI packages are not installed:
-- @heroui/styles
+- @khulnasoft/styles
 
 Run `heroui install` to install them.
 ```
@@ -347,8 +347,8 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
-│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @khulnasoft/react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @khulnasoft/styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 
 Environment Info:

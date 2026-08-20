@@ -25,22 +25,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @heroui/styles@rc @heroui/react@rc
+    npm i @khulnasoft/styles@rc @khulnasoft/react@rc
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @heroui/styles@rc @heroui/react@rc
+    pnpm add @khulnasoft/styles@rc @khulnasoft/react@rc
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @heroui/styles@rc @heroui/react@rc
+    yarn add @khulnasoft/styles@rc @khulnasoft/react@rc
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @heroui/styles@rc @heroui/react@rc
+    bun add @khulnasoft/styles@rc @khulnasoft/react@rc
     ```
   </Tab>
 </Tabs>
@@ -183,7 +183,7 @@ New `ButtonGroup.Separator` sub-component adds an explicit visual divider betwee
 
 ### Table & ListBox Virtualization
 
-Table and ListBox now support virtualization via React Aria's `Virtualizer` for large datasets. `Virtualizer`, `TableLayout`, and `ListLayout` are re-exported from `@heroui/react`.
+Table and ListBox now support virtualization via React Aria's `Virtualizer` for large datasets. `Virtualizer`, `TableLayout`, and `ListLayout` are re-exported from `@khulnasoft/react`.
 
 <ComponentPreview
   name="table-virtualization"
@@ -203,14 +203,14 @@ Focus rings on grouped buttons now use `ring-inset` so they stay within button b
 
 ### Granular Component Imports
 
-`@heroui/react` now supports per-component subpath entrypoints for more explicit imports ([#6301](https://github.com/heroui-inc/heroui/pull/6301)):
+`@khulnasoft/react` now supports per-component subpath entrypoints for more explicit imports ([#6301](https://github.com/heroui-inc/heroui/pull/6301)):
 
 ```tsx
 // Before — root entrypoint
-import { Button } from "@heroui/react";
+import { Button } from "@khulnasoft/react";
 
 // After — granular subpath import
-import { Button } from "@heroui/react/button";
+import { Button } from "@khulnasoft/react/button";
 ```
 
 ## Dependencies

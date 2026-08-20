@@ -12,7 +12,7 @@ The HeroUI MCP Server gives AI assistants direct access to HeroUI Native compone
 />
 
 
-The MCP server currently supports **heroui-native** and [stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio). Published at `@heroui/native-mcp` on npm. View the source code on [GitHub](https://github.com/heroui-inc/heroui-mcp).
+The MCP server currently supports **heroui-native** and [stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio). Published at `@khulnasoft/native-mcp` on npm. View the source code on [GitHub](https://github.com/heroui-inc/heroui-mcp).
 
 <Callout>
   As we add more components to HeroUI Native, they'll be available in the MCP server too.
@@ -41,7 +41,7 @@ Or manually add to **Cursor Settings** → **Tools** → **MCP Servers**:
   "mcpServers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -52,7 +52,7 @@ Alternatively, add the following to your `~/.cursor/mcp.json` file. To learn mor
 **Claude Code:** Run this command in your terminal:
 
 ```bash
-claude mcp add heroui-native -- npx -y @heroui/native-mcp@latest
+claude mcp add heroui-native -- npx -y @khulnasoft/native-mcp@latest
 ```
 
 Or manually add to your project's `.mcp.json` file:
@@ -62,7 +62,7 @@ Or manually add to your project's `.mcp.json` file:
   "mcpServers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -79,7 +79,7 @@ See the [Claude Code MCP documentation](https://docs.claude.com/en/docs/claude-c
   "mcpServers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -96,7 +96,7 @@ See the [Windsurf MCP documentation](https://docs.windsurf.com/windsurf/cascade/
   "context_servers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"],
+      "args": ["-y", "@khulnasoft/native-mcp@latest"],
       "env": {}
     }
   }
@@ -115,7 +115,7 @@ See the [Zed MCP documentation](https://zed.dev/docs/ai/mcp) for more details.
     "heroui-native": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -130,7 +130,7 @@ See the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/c
 ```toml title="config.toml"
 [mcp_servers.heroui-native]
 command = "npx"
-args = ["-y", "@heroui/native-mcp@latest"]
+args = ["-y", "@khulnasoft/native-mcp@latest"]
 ```
 
 After adding the configuration, restart Codex and run `/mcp` in the TUI to verify the server is active.
@@ -145,7 +145,7 @@ See the [Codex MCP documentation](https://developers.openai.com/codex/mcp) for m
   "mcp": {
     "heroui-native": {
       "type": "local",
-      "command": ["npx", "-y", "@heroui/native-mcp@latest"]
+      "command": ["npx", "-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -200,6 +200,6 @@ The MCP server provides these tools to AI assistants:
 
 ## Links
 
-- [npm Package](https://www.npmjs.com/package/@heroui/native-mcp)
+- [npm Package](https://www.npmjs.com/package/@khulnasoft/native-mcp)
 - [GitHub Repository](https://github.com/heroui-inc/heroui-mcp)
 - [Contributing Guide](https://github.com/heroui-inc/heroui-mcp/blob/main/CONTRIBUTING.md)

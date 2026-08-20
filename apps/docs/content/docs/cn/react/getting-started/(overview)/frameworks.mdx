@@ -23,7 +23,7 @@ npx heroui-cli@latest init
     示例：`app/page.tsx`
 
     ```tsx
-    import {Button} from "@heroui/react";
+    import {Button} from "@khulnasoft/react";
 
     export default function HomePage() {
       return (
@@ -38,7 +38,7 @@ npx heroui-cli@latest init
     示例：`pages/index.tsx`
 
     ```tsx
-    import {Button} from "@heroui/react";
+    import {Button} from "@khulnasoft/react";
 
     export default function HomePage() {
       return (
@@ -64,7 +64,7 @@ npx heroui-cli@latest init
 ```tsx
 // app/layout.tsx
 import {headers} from 'next/headers';
-import {isRTL} from '@heroui/react';
+import {isRTL} from '@khulnasoft/react';
 import {ClientProviders} from './provider';
 
 export default async function RootLayout({children}) {
@@ -91,7 +91,7 @@ export default async function RootLayout({children}) {
 // app/provider.tsx
 "use client";
 
-import {I18nProvider} from '@heroui/react';
+import {I18nProvider} from '@khulnasoft/react';
 
 export function ClientProviders({lang, children}) {
   return (
@@ -121,7 +121,7 @@ npx heroui-cli@latest init
 示例：`src/App.tsx`
 
 ```tsx
-import {Button} from "@heroui/react";
+import {Button} from "@khulnasoft/react";
 
 function App() {
   return (

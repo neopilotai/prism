@@ -18,22 +18,22 @@ github:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @heroui/styles@beta @heroui/react@beta
+    npm i @khulnasoft/styles@beta @khulnasoft/react@beta
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @heroui/styles@beta @heroui/react@beta
+    pnpm add @khulnasoft/styles@beta @khulnasoft/react@beta
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @heroui/styles@beta @heroui/react@beta
+    yarn add @khulnasoft/styles@beta @khulnasoft/react@beta
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @heroui/styles@beta @heroui/react@beta
+    bun add @khulnasoft/styles@beta @khulnasoft/react@beta
     ```
   </Tab>
 </Tabs>
@@ -172,7 +172,7 @@ HeroUI 现在支持更灵活的组件写法。复合组件可以带 `.Root` 也�
 **可用模式：**
 
 ```tsx
-import { Avatar } from "@heroui/react"
+import { Avatar } from "@khulnasoft/react"
 
 // 1. Compound pattern (no .Root needed) - recommended
 <Avatar>
@@ -187,7 +187,7 @@ import { Avatar } from "@heroui/react"
 </Avatar.Root>
 
 // 3. Named exports
-import { AvatarRoot, AvatarImage, AvatarFallback } from "@heroui/react"
+import { AvatarRoot, AvatarImage, AvatarFallback } from "@khulnasoft/react"
 
 <AvatarRoot>
   <AvatarImage src="/avatar.jpg" alt="User" />
@@ -198,7 +198,7 @@ import { AvatarRoot, AvatarImage, AvatarFallback } from "@heroui/react"
 **简单组件**（如 Button）的写法也完全一致：
 
 ```tsx
-import { Button } from "@heroui/react"
+import { Button } from "@khulnasoft/react"
 
 // No .Root needed
 <Button>Label</Button>
@@ -207,14 +207,14 @@ import { Button } from "@heroui/react"
 <Button.Root>Label</Button.Root>
 
 // Or named export
-import { ButtonRoot } from "@heroui/react"
+import { ButtonRoot } from "@khulnasoft/react"
 <ButtonRoot>Label</ButtonRoot>
 ```
 
 **你也可以在同一个组件中混用复合写法与命名导出：**
 
 ```tsx
-import { Avatar, AvatarFallback } from "@heroui/react"
+import { Avatar, AvatarFallback } from "@khulnasoft/react"
 
 <Avatar>
   <Avatar.Image src="/avatar.jpg" alt="User" />
@@ -420,14 +420,14 @@ Chip 组件的 `type` prop 已重命名为 `color`，同时新增 `size` prop，
 
 **之前：**
 ```tsx
-import { Chip } from "@heroui/react";
+import { Chip } from "@khulnasoft/react";
 
 <Chip type="danger" variant="secondary">Label</Chip>
 ```
 
 **之后：**
 ```tsx
-import { Chip } from "@heroui/react";
+import { Chip } from "@khulnasoft/react";
 
 <Chip color="danger" variant="soft" size="md">Label</Chip>
 ```
@@ -443,14 +443,14 @@ Link 组件现在支持 `underline` 与 `underlineOffset` prop，并加入了对
 
 **之前：**
 ```tsx
-import { Link } from "@heroui/react";
+import { Link } from "@khulnasoft/react";
 
 <Link href="#">Link text</Link>
 ```
 
 **之后：**
 ```tsx
-import { Link } from "@heroui/react";
+import { Link } from "@khulnasoft/react";
 
 <Link href="#" underline="hover" underlineOffset={4}>Link text</Link>
 ```
@@ -475,7 +475,7 @@ type AvatarProps = Avatar["RootProps"]
 
 **之后（方式 2 —— 具名类型导入，推荐）：**
 ```tsx
-import type { AvatarRootProps } from "@heroui/react"
+import type { AvatarRootProps } from "@khulnasoft/react"
 
 type AvatarProps = AvatarRootProps
 ```
@@ -717,7 +717,7 @@ type ButtonProps = Button["RootProps"]
 
 **之后（方式 2 —— 具名导入，推荐）：**
 ```tsx
-import type { ButtonRootProps } from "@heroui/react"
+import type { ButtonRootProps } from "@khulnasoft/react"
 
 type ButtonProps = ButtonRootProps
 ```
@@ -728,7 +728,7 @@ type ButtonProps = ButtonRootProps
 
 **之前：**
 ```tsx
-import { Tabs } from "@heroui/react"
+import { Tabs } from "@khulnasoft/react"
 
 <Tabs.Root>
   <Tabs.ListWrapper>
@@ -742,7 +742,7 @@ import { Tabs } from "@heroui/react"
 
 **之后：**
 ```tsx
-import { Tabs } from "@heroui/react"
+import { Tabs } from "@khulnasoft/react"
 
 <Tabs>
   <Tabs.ListContainer>

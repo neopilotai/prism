@@ -1,5 +1,5 @@
 {
-  "name": "@heroui/testing",
+  "name": "@khulnasoft/testing",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -35,7 +35,7 @@
     "vitest": "^4.1.0"
   },
   "devDependencies": {
-    "@heroui/standard": "workspace:*",
+    "@khulnasoft/standard": "workspace:*",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "react": "19.2.6",

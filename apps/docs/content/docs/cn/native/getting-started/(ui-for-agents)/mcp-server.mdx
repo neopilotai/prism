@@ -12,7 +12,7 @@ HeroUI MCP 服务器让 AI 助手直接读取 HeroUI Native 组件文档，便�
 />
 
 
-当前 MCP 服务器支持 **heroui-native** 与 [stdio 传输](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio)。npm 包名为 `@heroui/native-mcp`。源码见 [GitHub](https://github.com/heroui-inc/heroui-mcp)。
+当前 MCP 服务器支持 **heroui-native** 与 [stdio 传输](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio)。npm 包名为 `@khulnasoft/native-mcp`。源码见 [GitHub](https://github.com/heroui-inc/heroui-mcp)。
 
 <Callout>
   随着 HeroUI Native 组件增加，MCP 中的可用内容也会同步扩展。
@@ -41,7 +41,7 @@ HeroUI MCP 服务器让 AI 助手直接读取 HeroUI Native 组件文档，便�
   "mcpServers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -52,7 +52,7 @@ HeroUI MCP 服务器让 AI 助手直接读取 HeroUI Native 组件文档，便�
 **Claude Code：** 在终端执行：
 
 ```bash
-claude mcp add heroui-native -- npx -y @heroui/native-mcp@latest
+claude mcp add heroui-native -- npx -y @khulnasoft/native-mcp@latest
 ```
 
 或手动写入项目的 `.mcp.json`：
@@ -62,7 +62,7 @@ claude mcp add heroui-native -- npx -y @heroui/native-mcp@latest
   "mcpServers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -79,7 +79,7 @@ claude mcp add heroui-native -- npx -y @heroui/native-mcp@latest
   "mcpServers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -96,7 +96,7 @@ claude mcp add heroui-native -- npx -y @heroui/native-mcp@latest
   "context_servers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"],
+      "args": ["-y", "@khulnasoft/native-mcp@latest"],
       "env": {}
     }
   }
@@ -115,7 +115,7 @@ claude mcp add heroui-native -- npx -y @heroui/native-mcp@latest
     "heroui-native": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -130,7 +130,7 @@ claude mcp add heroui-native -- npx -y @heroui/native-mcp@latest
 ```toml title="config.toml"
 [mcp_servers.heroui-native]
 command = "npx"
-args = ["-y", "@heroui/native-mcp@latest"]
+args = ["-y", "@khulnasoft/native-mcp@latest"]
 ```
 
 重启 Codex，在 TUI 中运行 `/mcp` 校验服务器已激活。
@@ -145,7 +145,7 @@ args = ["-y", "@heroui/native-mcp@latest"]
   "mcp": {
     "heroui-native": {
       "type": "local",
-      "command": ["npx", "-y", "@heroui/native-mcp@latest"]
+      "command": ["npx", "-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -201,6 +201,6 @@ MCP 向 AI 暴露以下工具：
 
 ## 链接
 
-- [npm 包](https://www.npmjs.com/package/@heroui/native-mcp)
+- [npm 包](https://www.npmjs.com/package/@khulnasoft/native-mcp)
 - [GitHub 仓库](https://github.com/heroui-inc/heroui-mcp)
 - [贡献指南](https://github.com/heroui-inc/heroui-mcp/blob/main/CONTRIBUTING.md)

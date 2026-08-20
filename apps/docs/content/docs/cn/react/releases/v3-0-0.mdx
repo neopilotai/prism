@@ -53,9 +53,9 @@ description: 面向 React 与 React Native 的彻底重写。75+ Web 组件、37
 
 **组合优于配置：** v2 的组件是黑盒。v3 采用复合组件模式：每一个内部部件都是真实的元素，你可以为它们设置样式、调整位置、替换或移除。
 
-**样式与实现分离：** `@heroui/styles` 是独立的 CSS 包，`@heroui/react` 负责行为逻辑。这套样式可以配合 React、原生 HTML + Tailwind 或任意框架使用。BEM 类名让每一个 slot 都能在全局层面被定制。切换主题不仅会改变变量，还能改变组件的外观与质感。
+**样式与实现分离：** `@khulnasoft/styles` 是独立的 CSS 包，`@khulnasoft/react` 负责行为逻辑。这套样式可以配合 React、原生 HTML + Tailwind 或任意框架使用。BEM 类名让每一个 slot 都能在全局层面被定制。切换主题不仅会改变变量，还能改变组件的外观与质感。
 
-**按需变身 Headless：** 只要不引入 `@heroui/styles`，你就拥有了一套 headless 组件库。我们负责功能与无障碍，你专注于自己的产品。
+**按需变身 Headless：** 只要不引入 `@khulnasoft/styles`，你就拥有了一套 headless 组件库。我们负责功能与无障碍，你专注于自己的产品。
 
 **默认就有好性能：** v2 的所有动画都依赖 Framer Motion。v3 已将其替换为原生的 CSS transition 与 keyframes。打包体积更小、可使用 GPU 加速，且无需任何 JS 动画运行时。
 
@@ -156,7 +156,7 @@ Tailwind 的 `@theme` 指令会将这些 token 映射为工具类。`bg-accent`�
 
 ```css
 @import "tailwindcss";
-@import "@heroui/styles";
+@import "@khulnasoft/styles";
 ```
 
 ### BEM 类名
@@ -206,10 +206,10 @@ Tailwind 的 `@theme` 指令会将这些 token 映射为工具类。`bg-accent`�
 
 ```css
 @import "tailwindcss";
-@import "@heroui/styles/base" layer(base);
-@import "@heroui/styles/themes/default" layer(theme);
-@import "@heroui/styles/components/button.css" layer(components);
-@import "@heroui/styles/components/card.css" layer(components);
+@import "@khulnasoft/styles/base" layer(base);
+@import "@khulnasoft/styles/themes/default" layer(theme);
+@import "@khulnasoft/styles/components/button.css" layer(components);
+@import "@khulnasoft/styles/components/card.css" layer(components);
 ```
 
 只发布你实际用到的 CSS，避免在生产环境中携带未使用的组件样式。
@@ -255,7 +255,7 @@ Framer Motion、Motion One 或任何 CSS 动画库都可以与 HeroUI 内置的�
 
 ```tsx
 import { motion } from "framer-motion";
-import { Button } from "@heroui/react";
+import { Button } from "@khulnasoft/react";
 
 const MotionButton = motion(Button);
 
@@ -352,12 +352,12 @@ Button、ButtonGroup、ToggleButton、ToggleButtonGroup、CloseButton 与 Toolba
 
 ```tsx
 // Root import
-import { Button, Card, Table } from "@heroui/react";
+import { Button, Card, Table } from "@khulnasoft/react";
 
 // Subpath import
-import { Button } from "@heroui/react/button";
-import { Card } from "@heroui/react/card";
-import { Table } from "@heroui/react/table";
+import { Button } from "@khulnasoft/react/button";
+import { Card } from "@khulnasoft/react/card";
+import { Table } from "@khulnasoft/react/table";
 ```
 
 ## 面向 Agent 的 UI
@@ -373,7 +373,7 @@ HeroUI MCP 服务器将 AI 编码助手（Cursor、Claude Code、VS Code Copilot
   "mcpServers": {
     "heroui-react": {
       "command": "npx",
-      "args": ["-y", "@heroui/react-mcp@latest"]
+      "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
   }
 }
@@ -561,7 +561,7 @@ HeroUI Native 也配套提供了自己的 MCP 服务器、Agent Skills 与 LLMs.
   "mcpServers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"]
+      "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
   }
 }
@@ -601,22 +601,22 @@ Pro 许可包含高级版的 MCP 服务器与 Agent Skills，并内置 Pro 组�
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @heroui/styles @heroui/react
+    npm i @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @heroui/styles @heroui/react
+    pnpm add @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @heroui/styles @heroui/react
+    yarn add @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @heroui/styles @heroui/react
+    bun add @khulnasoft/styles @khulnasoft/react
     ```
   </Tab>
 </Tabs>
@@ -625,7 +625,7 @@ Pro 许可包含高级版的 MCP 服务器与 Agent Skills，并内置 Pro 组�
 
 ```css
 @import "tailwindcss";
-@import "@heroui/styles";
+@import "@khulnasoft/styles";
 ```
 
 ### React Native

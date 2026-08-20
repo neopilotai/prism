@@ -9,10 +9,10 @@
 </p>
 <p align="center">
   <a href="https://github.com/heroui-inc/heroui/blob/main/LICENSE">
-    <img src="https://img.shields.io/npm/l/@heroui/react?style=flat" alt="License">
+    <img src="https://img.shields.io/npm/l/@khulnasoft/react?style=flat" alt="License">
   </a>
-  <a href="https://www.npmjs.com/package/@heroui/react">
-    <img src="https://img.shields.io/npm/dm/@heroui/react.svg?style=flat-round" alt="npm downloads">
+  <a href="https://www.npmjs.com/package/@khulnasoft/react">
+    <img src="https://img.shields.io/npm/dm/@khulnasoft/react.svg?style=flat-round" alt="npm downloads">
   </a>
 </p>
 
@@ -31,16 +31,16 @@ HeroUI (previously NextUI) is a production-ready React component library that co
 
 | Package | Description |
 |---|---|
-| [`@heroui/react`](https://www.npmjs.com/package/@heroui/react) | Full component bundle |
-| [`@heroui/styles`](https://www.npmjs.com/package/@heroui/styles) | Styles / theme only |
-| Individual packages | e.g. `@heroui/button`, `@heroui/modal` — tree-shakeable per-component imports |
+| [`@khulnasoft/react`](https://www.npmjs.com/package/@khulnasoft/react) | Full component bundle |
+| [`@khulnasoft/styles`](https://www.npmjs.com/package/@khulnasoft/styles) | Styles / theme only |
+| Individual packages | e.g. `@khulnasoft/button`, `@khulnasoft/modal` — tree-shakeable per-component imports |
 
 ## Getting Started
 
 Visit [heroui.com/docs/react/getting-started/quick-start](https://heroui.com/docs/react/getting-started/quick-start) to get started with HeroUI.
 
 ```bash
-npm install @heroui/react
+npm install @khulnasoft/react
 ```
 
 ## Who Is This For?
@@ -59,7 +59,7 @@ HeroUI is built for the AI-assisted development workflow.
 
 | Tool | What it does |
 |---|---|
-| **MCP Server** (`@heroui/react-mcp`) | Components that understand your theme — install the server in Cursor, Claude Code, Windsurf, or any MCP-compatible editor |
+| **MCP Server** (`@khulnasoft/react-mcp`) | Components that understand your theme — install the server in Cursor, Claude Code, Windsurf, or any MCP-compatible editor |
 | **llms.txt** | Available at [heroui.com/llms.txt](https://heroui.com/llms.txt) — structured context for LLMs about every component |
 | **Agent Skills** | Run `npx heroui-cli agents-md` to install skills for Cursor, Claude Code, and more |
 

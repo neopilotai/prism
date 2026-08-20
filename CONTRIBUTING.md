@@ -81,7 +81,7 @@ https://www.conventionalcommits.org/ or check out the
 3. Make and commit your changes following the
    [commit convention](https://github.com/heroui-inc/heroui/blob/main/CONTRIBUTING.md#commit-convention).
    As you go, you can run `pnpm build --filter=<module>` and
-   `pnpm --filter @heroui/react exec vitest run <name>` e.g. `pnpm build --filter=@heroui/react && pnpm --filter @heroui/react exec vitest run avatar` to make sure everything works as expected.
+   `pnpm --filter @khulnasoft/react exec vitest run <name>` e.g. `pnpm build --filter=@khulnasoft/react && pnpm --filter @khulnasoft/react exec vitest run avatar` to make sure everything works as expected.
 
    > To know more about the `--filter` option, please check the turborepo [docs](https://turborepo.org/docs/core-concepts/filtering).
 
@@ -150,23 +150,23 @@ git checkout -b fix/something
 4. If your code passes all the tests, then push your feature/fix branch:
 
 All commits that fix bugs or add features need a behavioral test when they change interactive component contracts.
-See Behavioral tests in [`AGENTS.md`](AGENTS.md): query by role/label, use `setupUser()` from `@heroui/testing/helpers`, assert `data-*` state hooks and callbacks — not CSS pixels.
+See Behavioral tests in [`AGENTS.md`](AGENTS.md): query by role/label, use `setupUser()` from `@khulnasoft/testing/helpers`, assert `data-*` state hooks and callbacks — not CSS pixels.
 
 ```bash
 # One-time local Playwright install (required before browser suites / `pnpm test`)
-pnpm --filter @heroui/testing exec playwright install chromium
+pnpm --filter @khulnasoft/testing exec playwright install chromium
 
 # Local: jsdom + browser (needs Chromium installed)
 pnpm test
 
 # Filter by file name (e.g. button.test.tsx)
-pnpm --filter @heroui/react exec vitest run button
+pnpm --filter @khulnasoft/react exec vitest run button
 
 # Coverage report (jsdom project + CI floors only — not a depth bar)
 pnpm test:coverage
 
 # Optional local shortcut: related jsdom tests for changed files (skips browser)
-pnpm --filter @heroui/react test:changed
+pnpm --filter @khulnasoft/react test:changed
 ```
 
 CI (`QA` Test job) installs Chromium with `--with-deps`, then runs `test:browser` and `test:coverage` separately. Do not treat `test:changed` or coverage floors alone as “fully tested.”

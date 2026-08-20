@@ -1,5 +1,5 @@
 {
-  "name": "@heroui/react",
+  "name": "@khulnasoft/react",
   "version": "3.2.4",
   "description": "🚀 Beautiful and modern React UI library built with Tailwind CSS 4.0.",
   "license": "MIT",
@@ -61,7 +61,7 @@
   },
   "clean-package": "./clean-package.config.json",
   "dependencies": {
-    "@heroui/styles": "workspace:*",
+    "@khulnasoft/styles": "workspace:*",
     "@radix-ui/react-avatar": "1.1.11",
     "@react-stately/utils": "3.12.1",
     "@react-types/color": "3.2.0",
@@ -71,8 +71,8 @@
     "tailwind-variants": "3.3.1"
   },
   "devDependencies": {
-    "@heroui/standard": "workspace:*",
-    "@heroui/testing": "workspace:*",
+    "@khulnasoft/standard": "workspace:*",
+    "@khulnasoft/testing": "workspace:*",
     "@iconify/react": "6.0.2",
     "@internationalized/date": "3.12.3",
     "@react-aria/i18n": "3.13.1",
