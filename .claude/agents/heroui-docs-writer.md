@@ -51,7 +51,7 @@ Before creating or updating any documentation, you MUST:
    - **HeroUI v3 is built on top of Tailwind CSS v4** - IT IS NOT OPTIONAL
    - **Always require Tailwind CSS v4 installation and setup**
    - **Check the demo project at `/Users/juniorgarcia/workspace/examples/heroui-v3-alpha` for actual usage patterns**
-   - **The CSS import pattern is**: `@import "tailwindcss"` followed by `@import "@heroui/styles"`
+   - **The CSS import pattern is**: `@import "tailwindcss"` followed by `@import "@khulnasoft/styles"`
 
 **Documentation Creation Workflow:**
 
@@ -104,7 +104,7 @@ Before creating or updating any documentation, you MUST:
    // IMPORTANT: Always add "use client" directive to all demo files to ensure they work correctly
    "use client";
 
-   import {ComponentName} from "@heroui/react";
+   import {ComponentName} from "@khulnasoft/react";
    import {Icon} from "@iconify/react"; // If icons needed
 
    export function ComponentDemo() {
@@ -115,7 +115,7 @@ Before creating or updating any documentation, you MUST:
    ("use client");
 
    import {useState} from "react";
-   import {ComponentName} from "@heroui/react";
+   import {ComponentName} from "@khulnasoft/react";
 
    export function ComponentDemo() {
      const [value, setValue] = useState("");
@@ -154,7 +154,7 @@ links:
 ## Import
 
 ```tsx
-import {ComponentName} from "@heroui/react";
+import {ComponentName} from "@khulnasoft/react";
 ```
 ````
 
@@ -169,7 +169,7 @@ import {ComponentName} from "@heroui/react";
 Import all parts and piece them together.
 
 ```tsx
-import {ComponentName} from "@heroui/react";
+import {ComponentName} from "@khulnasoft/react";
 
 export default () => (
   <ComponentName>
@@ -209,7 +209,7 @@ export default () => (
 ### Passing Tailwind CSS classes
 
 ```tsx
-import {ComponentName} from "@heroui/react";
+import {ComponentName} from "@khulnasoft/react";
 
 function CustomComponent() {
   return <ComponentName className="custom-tailwind-classes">Content</ComponentName>;
@@ -245,7 +245,7 @@ You can extend HeroUI components by wrapping them and adding your own custom var
 
 ### CSS Classes
 
-The ComponentName component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/component-name.css)):
+The ComponentName component uses these CSS classes ([View source styles](https://github.com/khulnasoft/heroui/blob/v3/packages/styles/components/component-name.css)):
 
 #### Base & Size Classes
 

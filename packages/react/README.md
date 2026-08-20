@@ -8,7 +8,7 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/heroui-inc/heroui/blob/main/LICENSE">
+  <a href="https://github.com/khulnasoft/heroui/blob/main/LICENSE">
     <img src="https://img.shields.io/npm/l/@khulnasoft/react?style=flat" alt="License">
   </a>
   <a href="https://www.npmjs.com/package/@khulnasoft/react">
@@ -98,15 +98,15 @@ Whether it's a feature request, bug report, or a project to showcase, please get
 
 - [Discord](https://discord.gg/9b6yyZKmH4)
 - [X](https://x.com/hero_ui)
-- [GitHub Discussions](https://github.com/heroui-inc/heroui/discussions)
+- [GitHub Discussions](https://github.com/khulnasoft/heroui/discussions)
 
 ## Contributing
 
 Contributions are always welcome!
 
-See [CONTRIBUTING.md](https://github.com/heroui-inc/heroui/blob/main/CONTRIBUTING.md) for ways to get started.
+See [CONTRIBUTING.md](https://github.com/khulnasoft/heroui/blob/main/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/heroui-inc/heroui/blob/main/CODE_OF_CONDUCT.md).
+Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/heroui/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 

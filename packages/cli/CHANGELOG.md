@@ -1,138 +1,138 @@
-## [3.0.4](https://github.com/heroui-inc/heroui-cli/compare/v3.0.3...v3.0.4) (2026-07-06)
+## [3.0.4](https://github.com/khulnasoft/heroui-cli/compare/v3.0.3...v3.0.4) (2026-07-06)
 
 ### Features
 
-- add react-router template ([#198](https://github.com/heroui-inc/heroui-cli/issues/198)) ([a53ef30](https://github.com/heroui-inc/heroui-cli/commit/a53ef302142bccf6cf6a1ef391e4bf2864cb82d7))
+- add react-router template ([#198](https://github.com/khulnasoft/heroui-cli/issues/198)) ([a53ef30](https://github.com/khulnasoft/heroui-cli/commit/a53ef302142bccf6cf6a1ef391e4bf2864cb82d7))
 
-## [3.0.3](https://github.com/heroui-inc/heroui-cli/compare/v3.0.2...v3.0.3) (2026-06-06)
+## [3.0.3](https://github.com/khulnasoft/heroui-cli/compare/v3.0.2...v3.0.3) (2026-06-06)
 
 ### Bug Fixes
 
-- **cli:** resolve agents-md silent failure on i18n docs layout ([#197](https://github.com/heroui-inc/heroui-cli/issues/197)) ([297d812](https://github.com/heroui-inc/heroui-cli/commit/297d812bf3ec710f18e4a48ea6c1ffa334bc7864))
-- **init:** enable download retries and fix exit code on rename failure ([#191](https://github.com/heroui-inc/heroui-cli/issues/191)) ([9228ef7](https://github.com/heroui-inc/heroui-cli/commit/9228ef7cb111308ed407527b76771061ce9fba9e))
+- **cli:** resolve agents-md silent failure on i18n docs layout ([#197](https://github.com/khulnasoft/heroui-cli/issues/197)) ([297d812](https://github.com/khulnasoft/heroui-cli/commit/297d812bf3ec710f18e4a48ea6c1ffa334bc7864))
+- **init:** enable download retries and fix exit code on rename failure ([#191](https://github.com/khulnasoft/heroui-cli/issues/191)) ([9228ef7](https://github.com/khulnasoft/heroui-cli/commit/9228ef7cb111308ed407527b76771061ce9fba9e))
 
-## [3.0.2](https://github.com/heroui-inc/heroui-cli/compare/v3.0.1...v3.0.2) (2026-05-19)
-
-### Bug Fixes
-
-- **cli:** handle flags logic ([#186](https://github.com/heroui-inc/heroui-cli/issues/186)) ([460a85e](https://github.com/heroui-inc/heroui-cli/commit/460a85e7e122a2bc13a0c006f23fc02506a85c2a))
-- **cli:** missing files after running agents-md ([#187](https://github.com/heroui-inc/heroui-cli/issues/187)) ([69dabdf](https://github.com/heroui-inc/heroui-cli/commit/69dabdfcb184f67fd22466b24c2f7ee6985e80ea))
-- **deps:** bump vite & vitest ([#188](https://github.com/heroui-inc/heroui-cli/issues/188)) ([20d936b](https://github.com/heroui-inc/heroui-cli/commit/20d936b278d31c3a812dbae998dee6bf424d82c1))
-
-## [3.0.1](https://github.com/heroui-inc/heroui-cli/compare/v3.0.0...v3.0.1) (2026-05-10)
-
-# [3.0.0](https://github.com/heroui-inc/heroui-cli/compare/v1.6.1...v3.0.0) (2026-03-21)
-
-### Features
-
-- remove v2 logic & support v3 ([#179](https://github.com/heroui-inc/heroui-cli/issues/179)) ([7c7b798](https://github.com/heroui-inc/heroui-cli/commit/7c7b798280abd0890ae43b20ae01638189e2e51d))
-
-## [1.6.1](https://github.com/heroui-inc/heroui-cli/compare/v1.6.0...v1.6.1) (2026-02-12)
+## [3.0.2](https://github.com/khulnasoft/heroui-cli/compare/v3.0.1...v3.0.2) (2026-05-19)
 
 ### Bug Fixes
 
-- **agents-md:** migration doc confirmation ([#178](https://github.com/heroui-inc/heroui-cli/issues/178)) ([9ba9c61](https://github.com/heroui-inc/heroui-cli/commit/9ba9c611e3fbbb29e0a70e19ceb2cf8a8decaf55))
+- **cli:** handle flags logic ([#186](https://github.com/khulnasoft/heroui-cli/issues/186)) ([460a85e](https://github.com/khulnasoft/heroui-cli/commit/460a85e7e122a2bc13a0c006f23fc02506a85c2a))
+- **cli:** missing files after running agents-md ([#187](https://github.com/khulnasoft/heroui-cli/issues/187)) ([69dabdf](https://github.com/khulnasoft/heroui-cli/commit/69dabdfcb184f67fd22466b24c2f7ee6985e80ea))
+- **deps:** bump vite & vitest ([#188](https://github.com/khulnasoft/heroui-cli/issues/188)) ([20d936b](https://github.com/khulnasoft/heroui-cli/commit/20d936b278d31c3a812dbae998dee6bf424d82c1))
 
-# [1.6.0](https://github.com/heroui-inc/heroui-cli/compare/v1.5.0...v1.6.0) (2026-02-12)
+## [3.0.1](https://github.com/khulnasoft/heroui-cli/compare/v3.0.0...v3.0.1) (2026-05-10)
 
-### Features
-
-- **agents-md:** support for migration docs ([#175](https://github.com/heroui-inc/heroui-cli/issues/175)) ([8d2cfa1](https://github.com/heroui-inc/heroui-cli/commit/8d2cfa18e7c035fd9fd6c6122331e2b7896037d0))
-
-# [1.5.0](https://github.com/heroui-inc/heroui-cli/compare/v1.3.0...v1.5.0) (2026-02-12)
+# [3.0.0](https://github.com/khulnasoft/heroui-cli/compare/v1.6.1...v3.0.0) (2026-03-21)
 
 ### Features
 
-- agents md ([#173](https://github.com/heroui-inc/heroui-cli/issues/173)) ([387c741](https://github.com/heroui-inc/heroui-cli/commit/387c741544c2190594f9d86418c13adc36e0923d))
-- **agents-md:** add posthog analytics ([#176](https://github.com/heroui-inc/heroui-cli/issues/176)) ([3497544](https://github.com/heroui-inc/heroui-cli/commit/3497544cfcbe450879b73a5306876d58904f617b))
+- remove v2 logic & support v3 ([#179](https://github.com/khulnasoft/heroui-cli/issues/179)) ([7c7b798](https://github.com/khulnasoft/heroui-cli/commit/7c7b798280abd0890ae43b20ae01638189e2e51d))
 
-## [1.4.1](https://github.com/heroui-inc/heroui-cli/compare/v1.3.0...v1.4.1) (2026-02-10)
-
-### Features
-
-- agents md ([#173](https://github.com/heroui-inc/heroui-cli/issues/173)) ([387c741](https://github.com/heroui-inc/heroui-cli/commit/387c741544c2190594f9d86418c13adc36e0923d))
-
-# [1.4.0](https://github.com/heroui-inc/heroui-cli/compare/v1.3.0...v1.4.0) (2026-02-10)
-
-### Features
-
-- agents md ([#173](https://github.com/heroui-inc/heroui-cli/issues/173)) ([387c741](https://github.com/heroui-inc/heroui-cli/commit/387c741544c2190594f9d86418c13adc36e0923d))
-
-# [1.3.0](https://github.com/heroui-inc/heroui-cli/compare/v1.2.5...v1.3.0) (2026-01-11)
+## [1.6.1](https://github.com/khulnasoft/heroui-cli/compare/v1.6.0...v1.6.1) (2026-02-12)
 
 ### Bug Fixes
 
-- **cache:** handle missing data.json ([#171](https://github.com/heroui-inc/heroui-cli/issues/171)) ([4b44fa7](https://github.com/heroui-inc/heroui-cli/commit/4b44fa7bd364db9038ffe02e3f0269f3387faba7))
+- **agents-md:** migration doc confirmation ([#178](https://github.com/khulnasoft/heroui-cli/issues/178)) ([9ba9c61](https://github.com/khulnasoft/heroui-cli/commit/9ba9c611e3fbbb29e0a70e19ceb2cf8a8decaf55))
 
-## [1.2.5](https://github.com/heroui-inc/heroui-cli/compare/v1.2.4...v1.2.5) (2026-01-07)
-
-### Bug Fixes
-
-- **helpers:** reduce of empty array with no initial value ([#170](https://github.com/heroui-inc/heroui-cli/issues/170)) ([d19cb3c](https://github.com/heroui-inc/heroui-cli/commit/d19cb3ceba76ca9c67ae55eb8d4fe012413824b7))
-
-## [1.2.4](https://github.com/heroui-inc/heroui-cli/compare/v1.2.2...v1.2.4) (2026-01-07)
-
-### Bug Fixes
-
-- add action tailwindcss version always install latest verion ([#144](https://github.com/heroui-inc/heroui-cli/issues/144)) ([29936b7](https://github.com/heroui-inc/heroui-cli/commit/29936b70940dda0e8b79fd33b13cf2c844fede16))
-- add cache directory check before reading cache data ([#162](https://github.com/heroui-inc/heroui-cli/issues/162)) ([7d16929](https://github.com/heroui-inc/heroui-cli/commit/7d16929c450bc2adcda2f4b674ad76beee0ac6af))
-- add missing lock file entry for bun.lock ([#158](https://github.com/heroui-inc/heroui-cli/issues/158)) ([bb56da4](https://github.com/heroui-inc/heroui-cli/commit/bb56da46e3106067edc42d5b0367f97fee69b7d4))
-- upgrade beta package wont upgrade @heroui/react package ([#156](https://github.com/heroui-inc/heroui-cli/issues/156)) ([ac29f7c](https://github.com/heroui-inc/heroui-cli/commit/ac29f7cd8ff50203ff3e07e7568318c1140f2145))
+# [1.6.0](https://github.com/khulnasoft/heroui-cli/compare/v1.5.0...v1.6.0) (2026-02-12)
 
 ### Features
 
-- add remix laravel template ([#127](https://github.com/heroui-inc/heroui-cli/issues/127)) ([2d57e3b](https://github.com/heroui-inc/heroui-cli/commit/2d57e3b801e0a62914eb91a62888b913f4a4cd42))
-- init test structure ([#147](https://github.com/heroui-inc/heroui-cli/issues/147)) ([4d27f97](https://github.com/heroui-inc/heroui-cli/commit/4d27f9770d90f0e4908866e5f5f72e544e7ef139))
+- **agents-md:** support for migration docs ([#175](https://github.com/khulnasoft/heroui-cli/issues/175)) ([8d2cfa1](https://github.com/khulnasoft/heroui-cli/commit/8d2cfa18e7c035fd9fd6c6122331e2b7896037d0))
 
-## [1.2.3](https://github.com/heroui-inc/heroui-cli/compare/v1.2.2...v1.2.3) (2025-04-19)
-
-### Bug Fixes
-
-- add action tailwindcss version always install latest verion ([#144](https://github.com/heroui-inc/heroui-cli/issues/144)) ([29936b7](https://github.com/heroui-inc/heroui-cli/commit/29936b70940dda0e8b79fd33b13cf2c844fede16))
-- upgrade beta package wont upgrade @heroui/react package ([#156](https://github.com/heroui-inc/heroui-cli/issues/156)) ([ac29f7c](https://github.com/heroui-inc/heroui-cli/commit/ac29f7cd8ff50203ff3e07e7568318c1140f2145))
+# [1.5.0](https://github.com/khulnasoft/heroui-cli/compare/v1.3.0...v1.5.0) (2026-02-12)
 
 ### Features
 
-- add remix laravel template ([#127](https://github.com/heroui-inc/heroui-cli/issues/127)) ([2d57e3b](https://github.com/heroui-inc/heroui-cli/commit/2d57e3b801e0a62914eb91a62888b913f4a4cd42))
-- init test structure ([#147](https://github.com/heroui-inc/heroui-cli/issues/147)) ([4d27f97](https://github.com/heroui-inc/heroui-cli/commit/4d27f9770d90f0e4908866e5f5f72e544e7ef139))
+- agents md ([#173](https://github.com/khulnasoft/heroui-cli/issues/173)) ([387c741](https://github.com/khulnasoft/heroui-cli/commit/387c741544c2190594f9d86418c13adc36e0923d))
+- **agents-md:** add posthog analytics ([#176](https://github.com/khulnasoft/heroui-cli/issues/176)) ([3497544](https://github.com/khulnasoft/heroui-cli/commit/3497544cfcbe450879b73a5306876d58904f617b))
 
-## [1.2.2](https://github.com/heroui-inc/heroui-cli/compare/v1.2.1...v1.2.2) (2025-03-18)
+## [1.4.1](https://github.com/khulnasoft/heroui-cli/compare/v1.3.0...v1.4.1) (2026-02-10)
+
+### Features
+
+- agents md ([#173](https://github.com/khulnasoft/heroui-cli/issues/173)) ([387c741](https://github.com/khulnasoft/heroui-cli/commit/387c741544c2190594f9d86418c13adc36e0923d))
+
+# [1.4.0](https://github.com/khulnasoft/heroui-cli/compare/v1.3.0...v1.4.0) (2026-02-10)
+
+### Features
+
+- agents md ([#173](https://github.com/khulnasoft/heroui-cli/issues/173)) ([387c741](https://github.com/khulnasoft/heroui-cli/commit/387c741544c2190594f9d86418c13adc36e0923d))
+
+# [1.3.0](https://github.com/khulnasoft/heroui-cli/compare/v1.2.5...v1.3.0) (2026-01-11)
+
+### Bug Fixes
+
+- **cache:** handle missing data.json ([#171](https://github.com/khulnasoft/heroui-cli/issues/171)) ([4b44fa7](https://github.com/khulnasoft/heroui-cli/commit/4b44fa7bd364db9038ffe02e3f0269f3387faba7))
+
+## [1.2.5](https://github.com/khulnasoft/heroui-cli/compare/v1.2.4...v1.2.5) (2026-01-07)
+
+### Bug Fixes
+
+- **helpers:** reduce of empty array with no initial value ([#170](https://github.com/khulnasoft/heroui-cli/issues/170)) ([d19cb3c](https://github.com/khulnasoft/heroui-cli/commit/d19cb3ceba76ca9c67ae55eb8d4fe012413824b7))
+
+## [1.2.4](https://github.com/khulnasoft/heroui-cli/compare/v1.2.2...v1.2.4) (2026-01-07)
+
+### Bug Fixes
+
+- add action tailwindcss version always install latest verion ([#144](https://github.com/khulnasoft/heroui-cli/issues/144)) ([29936b7](https://github.com/khulnasoft/heroui-cli/commit/29936b70940dda0e8b79fd33b13cf2c844fede16))
+- add cache directory check before reading cache data ([#162](https://github.com/khulnasoft/heroui-cli/issues/162)) ([7d16929](https://github.com/khulnasoft/heroui-cli/commit/7d16929c450bc2adcda2f4b674ad76beee0ac6af))
+- add missing lock file entry for bun.lock ([#158](https://github.com/khulnasoft/heroui-cli/issues/158)) ([bb56da4](https://github.com/khulnasoft/heroui-cli/commit/bb56da46e3106067edc42d5b0367f97fee69b7d4))
+- upgrade beta package wont upgrade @heroui/react package ([#156](https://github.com/khulnasoft/heroui-cli/issues/156)) ([ac29f7c](https://github.com/khulnasoft/heroui-cli/commit/ac29f7cd8ff50203ff3e07e7568318c1140f2145))
+
+### Features
+
+- add remix laravel template ([#127](https://github.com/khulnasoft/heroui-cli/issues/127)) ([2d57e3b](https://github.com/khulnasoft/heroui-cli/commit/2d57e3b801e0a62914eb91a62888b913f4a4cd42))
+- init test structure ([#147](https://github.com/khulnasoft/heroui-cli/issues/147)) ([4d27f97](https://github.com/khulnasoft/heroui-cli/commit/4d27f9770d90f0e4908866e5f5f72e544e7ef139))
+
+## [1.2.3](https://github.com/khulnasoft/heroui-cli/compare/v1.2.2...v1.2.3) (2025-04-19)
+
+### Bug Fixes
+
+- add action tailwindcss version always install latest verion ([#144](https://github.com/khulnasoft/heroui-cli/issues/144)) ([29936b7](https://github.com/khulnasoft/heroui-cli/commit/29936b70940dda0e8b79fd33b13cf2c844fede16))
+- upgrade beta package wont upgrade @heroui/react package ([#156](https://github.com/khulnasoft/heroui-cli/issues/156)) ([ac29f7c](https://github.com/khulnasoft/heroui-cli/commit/ac29f7cd8ff50203ff3e07e7568318c1140f2145))
+
+### Features
+
+- add remix laravel template ([#127](https://github.com/khulnasoft/heroui-cli/issues/127)) ([2d57e3b](https://github.com/khulnasoft/heroui-cli/commit/2d57e3b801e0a62914eb91a62888b913f4a4cd42))
+- init test structure ([#147](https://github.com/khulnasoft/heroui-cli/issues/147)) ([4d27f97](https://github.com/khulnasoft/heroui-cli/commit/4d27f9770d90f0e4908866e5f5f72e544e7ef139))
+
+## [1.2.2](https://github.com/khulnasoft/heroui-cli/compare/v1.2.1...v1.2.2) (2025-03-18)
 
 ### Reverts
 
-- Revert "chore: remove trace components.json (#153)" (#154) ([5bcab33](https://github.com/heroui-inc/heroui-cli/commit/5bcab3327904d67920f6465eeba00d3dc7e3f3b2)), closes [#153](https://github.com/heroui-inc/heroui-cli/issues/153) [#154](https://github.com/heroui-inc/heroui-cli/issues/154)
+- Revert "chore: remove trace components.json (#153)" (#154) ([5bcab33](https://github.com/khulnasoft/heroui-cli/commit/5bcab3327904d67920f6465eeba00d3dc7e3f3b2)), closes [#153](https://github.com/khulnasoft/heroui-cli/issues/153) [#154](https://github.com/khulnasoft/heroui-cli/issues/154)
 
-## [1.2.1](https://github.com/heroui-inc/heroui-cli/compare/v1.2.0...v1.2.1) (2025-03-18)
+## [1.2.1](https://github.com/khulnasoft/heroui-cli/compare/v1.2.0...v1.2.1) (2025-03-18)
 
 ### Bug Fixes
 
-- missing components json ([eab7ae0](https://github.com/heroui-inc/heroui-cli/commit/eab7ae0e00c05faf242f2e0e413577f413661cd0))
+- missing components json ([eab7ae0](https://github.com/khulnasoft/heroui-cli/commit/eab7ae0e00c05faf242f2e0e413577f413661cd0))
 
-# [1.2.0](https://github.com/heroui-inc/heroui-cli/compare/v1.1.0...v1.2.0) (2025-03-18)
+# [1.2.0](https://github.com/khulnasoft/heroui-cli/compare/v1.1.0...v1.2.0) (2025-03-18)
 
 ### Features
 
-- add action support chat codebase ([#146](https://github.com/heroui-inc/heroui-cli/issues/146)) ([8aa774d](https://github.com/heroui-inc/heroui-cli/commit/8aa774d7832541c6155dadad228f8017b7f3d406))
+- add action support chat codebase ([#146](https://github.com/khulnasoft/heroui-cli/issues/146)) ([8aa774d](https://github.com/khulnasoft/heroui-cli/commit/8aa774d7832541c6155dadad228f8017b7f3d406))
 
-# [1.1.0](https://github.com/heroui-inc/heroui-cli/compare/v1.0.0...v1.1.0) (2025-03-12)
-
-### Bug Fixes
-
-- upgrade all should upgrade all heroui packages ([#151](https://github.com/heroui-inc/heroui-cli/issues/151)) ([ef84d5b](https://github.com/heroui-inc/heroui-cli/commit/ef84d5b4bb2e52cc5f603cef47f5bf95a0760574))
-
-# [1.0.0](https://github.com/heroui-inc/heroui-cli/compare/v0.6.0...v1.0.0) (2025-01-18)
-
-# [0.6.0](https://github.com/heroui-inc/heroui-cli/compare/v0.5.4...v0.6.0) (2025-01-18)
+# [1.1.0](https://github.com/khulnasoft/heroui-cli/compare/v1.0.0...v1.1.0) (2025-03-12)
 
 ### Bug Fixes
 
-- autocompleteMultiselect cancel exit when prompt yes ([#139](https://github.com/heroui-inc/heroui-cli/issues/139)) ([a736537](https://github.com/heroui-inc/heroui-cli/commit/a736537e030b011e933d8a5809fbecf973bcc01a))
-- codemod bin command ([45712d7](https://github.com/heroui-inc/heroui-cli/commit/45712d7f5f00c05db2a8fdb82ef2dca6281d4257))
-- **codemod:** npm migrate issue ([#140](https://github.com/heroui-inc/heroui-cli/issues/140)) ([4987cc8](https://github.com/heroui-inc/heroui-cli/commit/4987cc814fceb3a14cc111b155bdb6a0ff059a41))
+- upgrade all should upgrade all heroui packages ([#151](https://github.com/khulnasoft/heroui-cli/issues/151)) ([ef84d5b](https://github.com/khulnasoft/heroui-cli/commit/ef84d5b4bb2e52cc5f603cef47f5bf95a0760574))
 
-## [0.5.4](https://github.com/heroui-inc/heroui-cli/compare/v0.5.3...v0.5.4) (2025-01-16)
+# [1.0.0](https://github.com/khulnasoft/heroui-cli/compare/v0.6.0...v1.0.0) (2025-01-18)
 
-## [0.5.3](https://github.com/heroui-inc/heroui-cli/compare/v0.5.2...v0.5.3) (2025-01-16)
+# [0.6.0](https://github.com/khulnasoft/heroui-cli/compare/v0.5.4...v0.6.0) (2025-01-18)
+
+### Bug Fixes
+
+- autocompleteMultiselect cancel exit when prompt yes ([#139](https://github.com/khulnasoft/heroui-cli/issues/139)) ([a736537](https://github.com/khulnasoft/heroui-cli/commit/a736537e030b011e933d8a5809fbecf973bcc01a))
+- codemod bin command ([45712d7](https://github.com/khulnasoft/heroui-cli/commit/45712d7f5f00c05db2a8fdb82ef2dca6281d4257))
+- **codemod:** npm migrate issue ([#140](https://github.com/khulnasoft/heroui-cli/issues/140)) ([4987cc8](https://github.com/khulnasoft/heroui-cli/commit/4987cc814fceb3a14cc111b155bdb6a0ff059a41))
+
+## [0.5.4](https://github.com/khulnasoft/heroui-cli/compare/v0.5.3...v0.5.4) (2025-01-16)
+
+## [0.5.3](https://github.com/khulnasoft/heroui-cli/compare/v0.5.2...v0.5.3) (2025-01-16)
 
 ## [0.5.2](https://github.com/nextui-org/nextui-cli/compare/v0.5.1...v0.5.2) (2025-01-16)
 

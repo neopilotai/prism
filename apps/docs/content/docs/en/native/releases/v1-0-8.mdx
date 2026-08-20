@@ -121,7 +121,7 @@ The scope drives the direction reads that happen in JavaScript: gesture inversio
 
 The example app now ships `en`, `ar`, and `he` catalogs via Lingui with a runtime locale switcher, plus an `eslint-plugin-lingui` guard against untranslated strings. The release was verified manually on iOS and Android across all three locales, including scoped left-to-right previews inside a right-to-left app shell.
 
-**Related PR:** [#459](https://github.com/heroui-inc/heroui-native/pull/459)
+**Related PR:** [#459](https://github.com/khulnasoft/heroui-native/pull/459)
 
 ## Styling
 
@@ -152,7 +152,7 @@ The failure was also silent: a missing `@source` directory is a no-op in Tailwin
 
 Existing app-level `@source` lines keep working — they are simply redundant now and can be removed.
 
-**Related PR:** [#455](https://github.com/heroui-inc/heroui-native/pull/455)
+**Related PR:** [#455](https://github.com/khulnasoft/heroui-native/pull/455)
 
 ## ⚠️ Breaking Changes
 
@@ -176,7 +176,7 @@ The change lives in CSS, so `items-stretch` restores the previous behavior:
 </Card.Header>
 ```
 
-**Related PR:** [#459](https://github.com/heroui-inc/heroui-native/pull/459)
+**Related PR:** [#459](https://github.com/khulnasoft/heroui-native/pull/459)
 
 ### TagGroup.List Applies an Inline Layout Style
 
@@ -196,23 +196,23 @@ Move those two properties from `className` to `style`, which is merged after the
 
 Other `className` overrides on [TagGroup](/docs/native/components/tag-group) are unaffected.
 
-**Related PR:** [#459](https://github.com/heroui-inc/heroui-native/pull/459)
+**Related PR:** [#459](https://github.com/khulnasoft/heroui-native/pull/459)
 
 ## Bug Fixes
 
 This release includes fixes for the following issues:
 
-- **[Issue #454](https://github.com/heroui-inc/heroui-native/issues/454)**: Fixed class scanning breaking in monorepo layouts. `heroui-native/styles` did not declare an `@source` for its own files, so apps had to hardcode a path into `node_modules` that only resolved under some package-manager layouts — and when it was wrong, Tailwind scanned nothing and failed silently, leaving HeroUI components rendering without their styles. The shipped stylesheet now declares its own scan path relative to itself.
+- **[Issue #454](https://github.com/khulnasoft/heroui-native/issues/454)**: Fixed class scanning breaking in monorepo layouts. `heroui-native/styles` did not declare an `@source` for its own files, so apps had to hardcode a path into `node_modules` that only resolved under some package-manager layouts — and when it was wrong, Tailwind scanned nothing and failed silently, leaving HeroUI components rendering without their styles. The shipped stylesheet now declares its own scan path relative to itself.
 
 **Related PRs:**
 
-- [#455](https://github.com/heroui-inc/heroui-native/pull/455)
+- [#455](https://github.com/khulnasoft/heroui-native/pull/455)
 
 ## Internal Changes
 
 This release also removes circular module dependencies: the `Surface` context is split into a leaf module, and shared `Toast` configuration is extracted into `toast.base-types`. Only internal import paths change — no public API is affected.
 
-**Related PR:** [#459](https://github.com/heroui-inc/heroui-native/pull/459)
+**Related PR:** [#459](https://github.com/khulnasoft/heroui-native/pull/459)
 
 ## Updated Documentation
 
@@ -224,7 +224,7 @@ The following documentation pages have been updated to reflect the changes in th
 ## Links
 
 - [Component Documentation](../components)
-- [GitHub Repository](https://github.com/heroui-inc/heroui-native)
+- [GitHub Repository](https://github.com/khulnasoft/heroui-native)
 
 ## Contributors
 

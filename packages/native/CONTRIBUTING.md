@@ -21,7 +21,7 @@ HeroUI Native follows a **strict design system** based on our Figma designs and 
 
 If you want to suggest significant changes or new features:
 
-1. **GitHub Discussions** (Preferred): Start a discussion in [GitHub Discussions](https://github.com/heroui-inc/heroui/discussions)
+1. **GitHub Discussions** (Preferred): Start a discussion in [GitHub Discussions](https://github.com/khulnasoft/heroui/discussions)
    - Use for: Feature proposals, API changes, new component ideas
    - Include: Use cases, examples, and rationale
 

@@ -10,11 +10,11 @@ interface SetupPromptConfig {
   docsPath: string;
   /** Skill / MCP server / install identifier, e.g. `heroui-react`. */
   id: string;
-  /** One-line summary of what is being built, e.g. ``UIs with HeroUI v3 (`@heroui/react`)``. */
+  /** One-line summary of what is being built, e.g. ``UIs with HeroUI v3 (`@khulnasoft/react`)``. */
   intro: string;
   /** Sentence describing what the MCP server exposes. */
   mcpAccess: string;
-  /** MCP npm package, e.g. `@heroui/react-mcp`. */
+  /** MCP npm package, e.g. `@khulnasoft/react-mcp`. */
   mcpPackage: string;
   /** Short marketing name, e.g. `HeroUI` or `HeroUI Native`. */
   productName: string;
@@ -52,7 +52,7 @@ curl -fsSL https://heroui.com/install | bash -s ${id}
 Or using the skills package:
 
 \`\`\`
-npx skills add heroui-inc/heroui
+npx skills add khulnasoft/heroui
 \`\`\`
 
 ## 2. Register the ${productName} MCP server
@@ -137,9 +137,9 @@ These instructions are published at https://heroui.com/docs/${docsPath}/getting-
 const REACT_PROMPT = buildSetupPrompt({
   docsPath: "react",
   id: "heroui-react",
-  intro: "UIs with HeroUI v3 (`@heroui/react`)",
+  intro: "UIs with HeroUI v3 (`@khulnasoft/react`)",
   mcpAccess: "component docs, source code, CSS, and theme variables",
-  mcpPackage: "@heroui/react-mcp",
+  mcpPackage: "@khulnasoft/react-mcp",
   productName: "HeroUI",
 });
 
@@ -148,7 +148,7 @@ const NATIVE_PROMPT = buildSetupPrompt({
   id: "heroui-native",
   intro: "mobile UIs with HeroUI Native (`heroui-native`)",
   mcpAccess: "component docs, theme variables, and setup guides",
-  mcpPackage: "@heroui/native-mcp",
+  mcpPackage: "@khulnasoft/native-mcp",
   productName: "HeroUI Native",
 });
 

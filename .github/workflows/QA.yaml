@@ -77,7 +77,7 @@ jobs:
 
   continuous-release:
     name: Continuous Release
-    if: github.repository == 'heroui-inc/heroui'
+    if: github.repository == 'khulnasoft/heroui'
     runs-on: ubuntu-latest
     permissions:
       contents: read

@@ -62,7 +62,7 @@ HeroUI Native v1.0.5 通过将字段边框拆分为独立的宽度与颜色令�
 
 组件的公开 API 未变——单次挂载路径完全是内部实现，自定义进入动画的行为与之前完全一致。建议在全部四个放置方向、子菜单过渡以及禁用动画的情形下，验证进入与退出动画。
 
-**相关 PR：** [#438](https://github.com/heroui-inc/heroui-native/pull/438)
+**相关 PR：** [#438](https://github.com/khulnasoft/heroui-native/pull/438)
 
 ## 组件改进
 
@@ -78,7 +78,7 @@ HeroUI Native v1.0.5 通过将字段边框拆分为独立的宽度与颜色令�
 
 此变更仅针对 iOS，不改动 Typography 的 API。已直接传入 `dynamicTypeRamp` 的应用仍会显式控制缩放行为。
 
-**相关 PR：** [#435](https://github.com/heroui-inc/heroui-native/pull/435)
+**相关 PR：** [#435](https://github.com/khulnasoft/heroui-native/pull/435)
 
 ### Select 勾选图标颜色
 
@@ -91,7 +91,7 @@ HeroUI Native v1.0.5 通过将字段边框拆分为独立的宽度与颜色令�
 
 仅在省略 `iconProps.color` 时默认图标颜色会发生变化——API 未变，自定义颜色仍然有效。建议在亮色与暗色主题下进行手动验证，以确认指示器对比度。
 
-**相关 PR：** [#436](https://github.com/heroui-inc/heroui-native/pull/436)
+**相关 PR：** [#436](https://github.com/khulnasoft/heroui-native/pull/436)
 
 ## API 增强
 
@@ -128,7 +128,7 @@ export function App() {
 
 全局属性作为默认值应用，因此任何直接传给组件的属性仍会覆盖它们。
 
-**相关 PR：** [#437](https://github.com/heroui-inc/heroui-native/pull/437)
+**相关 PR：** [#437](https://github.com/khulnasoft/heroui-native/pull/437)
 
 ## 依赖
 
@@ -154,7 +154,7 @@ export function App() {
 
 公开 API 未变，但消费者应将其对等依赖版本与 Expo 57 / React Native 0.86 对齐。建议在 iOS 与 Android 上手动测试遮罩的打开/关闭动画以及输入聚焦状态。
 
-**相关 PR：** [#439](https://github.com/heroui-inc/heroui-native/pull/439)
+**相关 PR：** [#439](https://github.com/khulnasoft/heroui-native/pull/439)
 
 ## ⚠️ 破坏性变更
 
@@ -202,7 +202,7 @@ export function App() {
 
 如果你依赖 `--field-border` 颜色来产生静止状态的边框，请设置一个非零的 `--field-border-width` 默认值以恢复该外观。
 
-**相关 PR：** [#434](https://github.com/heroui-inc/heroui-native/pull/434)
+**相关 PR：** [#434](https://github.com/khulnasoft/heroui-native/pull/434)
 
 ## 文档更新
 
@@ -215,7 +215,7 @@ export function App() {
 ## 链接
 
 - [组件文档](../components)
-- [GitHub 仓库](https://github.com/heroui-inc/heroui-native)
+- [GitHub 仓库](https://github.com/khulnasoft/heroui-native)
 
 ## 贡献者
 

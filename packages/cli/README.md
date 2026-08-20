@@ -1,12 +1,12 @@
 <p align="center">
   <a href="https://heroui.com">
-      <img width="20%" src="https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/public/icons/readme-logo.png" alt="heroui (previously nextui)" />
+      <img width="20%" src="https://raw.githubusercontent.com/khulnasoft/heroui/v3/apps/docs/public/icons/readme-logo.png" alt="heroui (previously nextui)" />
       <h1 align="center">HeroUI CLI</h1>
   </a>
 </p>
 </br>
 <p align="center">
-  <a href="https://github.com/heroui-inc/heroui-cli/blob/main/license">
+  <a href="https://github.com/khulnasoft/heroui-cli/blob/main/license">
     <img src="https://img.shields.io/npm/l/heroui-cli?style=flat" alt="License">
   </a>
   <a href="https://www.npmjs.com/package/heroui-cli">
@@ -454,15 +454,15 @@ Whether it's a feature request, bug report, or a project to showcase, please get
 
 - [Discord](https://discord.gg/9b6yyZKmH4)
 - [Twitter](https://twitter.com/hero_ui)
-- [GitHub Discussions](https://github.com/heroui-inc/heroui-cli/discussions)
+- [GitHub Discussions](https://github.com/khulnasoft/heroui-cli/discussions)
 
 ## Contributing
 
 Contributions are always welcome!
 
-See [CONTRIBUTING.md](https://github.com/heroui-inc/heroui-cli/blob/main/CONTRIBUTING.md) for ways to get started.
+See [CONTRIBUTING.md](https://github.com/khulnasoft/heroui-cli/blob/main/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/heroui-inc/heroui-cli/blob/main/CODE_OF_CONDUCT.md).
+Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/heroui-cli/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 

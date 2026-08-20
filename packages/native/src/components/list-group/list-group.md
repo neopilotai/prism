@@ -311,7 +311,7 @@ export default function ListGroupExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/heroui-inc/heroui-native/blob/main/example/src/app/(home)/components/list-group.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/list-group.tsx>).
 
 ## API Reference
 

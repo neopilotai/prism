@@ -143,7 +143,7 @@ export function RangeSlider() {
 
 完整文档与示例见 [Slider 组件页](/docs/native/components/slider)。
 
-**相关 PR：** [#305](https://github.com/heroui-inc/heroui-native/pull/305)
+**相关 PR：** [#305](https://github.com/khulnasoft/heroui-native/pull/305)
 
 #### ListGroup
 
@@ -193,7 +193,7 @@ export function Example() {
 
 完整文档与示例见 [ListGroup 组件页](/docs/native/components/list-group)。
 
-**相关 PR：** [#302](https://github.com/heroui-inc/heroui-native/pull/302)
+**相关 PR：** [#302](https://github.com/khulnasoft/heroui-native/pull/302)
 
 #### SearchField
 
@@ -236,7 +236,7 @@ export function Example() {
 
 完整文档与示例见 [SearchField 组件页](/docs/native/components/search-field)。
 
-**相关 PR：** [#299](https://github.com/heroui-inc/heroui-native/pull/299)
+**相关 PR：** [#299](https://github.com/khulnasoft/heroui-native/pull/299)
 
 ### Select 多选模式
 
@@ -273,7 +273,7 @@ export function MultiSelect() {
 }
 ```
 
-**相关 PR：** [#298](https://github.com/heroui-inc/heroui-native/pull/298)
+**相关 PR：** [#298](https://github.com/khulnasoft/heroui-native/pull/298)
 
 ### 新子组件
 
@@ -293,7 +293,7 @@ import { PressableFeedback } from "heroui-native";
 </PressableFeedback.Scale>
 ```
 
-**相关 PR：** [#302](https://github.com/heroui-inc/heroui-native/pull/302)
+**相关 PR：** [#302](https://github.com/khulnasoft/heroui-native/pull/302)
 
 ## 组件改进
 
@@ -308,13 +308,13 @@ import { PressableFeedback } from "heroui-native";
 - 触发器通过 `onLayout` 测量位置，正确支持 `isDefaultOpen`
 - 触发器样式更新为 `gap-3`、`py-3.5`，值文本使用 `flex-1` 改善布局
 
-**相关 PR：** [#298](https://github.com/heroui-inc/heroui-native/pull/298)
+**相关 PR：** [#298](https://github.com/khulnasoft/heroui-native/pull/298)
 
 ### Avatar asChild 图片修复
 
 [Avatar](/docs/native/components/avatar) 的 `AvatarImage` 在向底层原语转发时正确分离 `source`、`style` 与 `asChild` 及其余属性，修复使用 `asChild` 时错误将全部属性展开到图片组件的问题。
 
-**相关 PR：** [#298](https://github.com/heroui-inc/heroui-native/pull/298)
+**相关 PR：** [#298](https://github.com/khulnasoft/heroui-native/pull/298)
 
 ## API 增强
 
@@ -349,7 +349,7 @@ import { Button } from "heroui-native";
 
 `button.utils.ts` 中新增 `resolveAnimationObject` 与 `isAnimationDisabled`，集中解析动画属性。
 
-**相关 PR：** [#302](https://github.com/heroui-inc/heroui-native/pull/302)
+**相关 PR：** [#302](https://github.com/khulnasoft/heroui-native/pull/302)
 
 ## 依赖
 
@@ -366,7 +366,7 @@ import { Button } from "heroui-native";
 
 无运行时逻辑变更——此前已满足约束的项目无需修改即可继续工作。
 
-**相关 PR：** [#306](https://github.com/heroui-inc/heroui-native/pull/306)
+**相关 PR：** [#306](https://github.com/khulnasoft/heroui-native/pull/306)
 
 ## ⚠️ 破坏性变更
 
@@ -409,20 +409,20 @@ import { Button } from "heroui-native";
 - `"scale"` — 仅缩小
 - `"none"` — 无反馈动画
 
-**相关 PR：** [#302](https://github.com/heroui-inc/heroui-native/pull/302)
+**相关 PR：** [#302](https://github.com/khulnasoft/heroui-native/pull/302)
 
 ## 问题修复
 
 本版本包含以下修复：
 
-- **[Issue #291](https://github.com/heroui-inc/heroui-native/issues/291)**：修复 `Select.Trigger` 的 `variant` 被 `className` 覆盖的问题。传入触发器的自定义类名现正确参与样式计算，不再被静默丢弃。
+- **[Issue #291](https://github.com/khulnasoft/heroui-native/issues/291)**：修复 `Select.Trigger` 的 `variant` 被 `className` 覆盖的问题。传入触发器的自定义类名现正确参与样式计算，不再被静默丢弃。
 
-- **[Issue #294](https://github.com/heroui-inc/heroui-native/issues/294)**：兼容 `react-native-worklets` 0.7.x 与 `react-native-reanimated` 4.2.x（Expo SDK 55）。放宽对等依赖约束，接受上述新版本而不产生解析告警。
+- **[Issue #294](https://github.com/khulnasoft/heroui-native/issues/294)**：兼容 `react-native-worklets` 0.7.x 与 `react-native-reanimated` 4.2.x（Expo SDK 55）。放宽对等依赖约束，接受上述新版本而不产生解析告警。
 
 **相关 PR：**
 
-- [#298](https://github.com/heroui-inc/heroui-native/pull/298)
-- [#306](https://github.com/heroui-inc/heroui-native/pull/306)
+- [#298](https://github.com/khulnasoft/heroui-native/pull/298)
+- [#306](https://github.com/khulnasoft/heroui-native/pull/306)
 
 ## 文档更新
 
@@ -439,7 +439,7 @@ import { Button } from "heroui-native";
 ## 链接
 
 - [组件文档](../components)
-- [GitHub 仓库](https://github.com/heroui-inc/heroui-native)
+- [GitHub 仓库](https://github.com/khulnasoft/heroui-native)
 
 ## 贡献者
 

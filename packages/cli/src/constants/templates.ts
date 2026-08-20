@@ -1,8 +1,8 @@
-export const APP_REPO = 'https://codeload.github.com/heroui-inc/next-app-template/tar.gz/main';
-export const PAGES_REPO = 'https://codeload.github.com/heroui-inc/next-pages-template/tar.gz/main';
-export const VITE_REPO = 'https://codeload.github.com/heroui-inc/vite-template/tar.gz/main';
+export const APP_REPO = 'https://codeload.github.com/khulnasoft/next-app-template/tar.gz/main';
+export const PAGES_REPO = 'https://codeload.github.com/khulnasoft/next-pages-template/tar.gz/main';
+export const VITE_REPO = 'https://codeload.github.com/khulnasoft/vite-template/tar.gz/main';
 export const REACT_ROUTER_REPO =
-  'https://codeload.github.com/heroui-inc/react-router-template/tar.gz/main';
+  'https://codeload.github.com/khulnasoft/react-router-template/tar.gz/main';
 
 export const APP_DIR = 'next-app-template-main';
 export const PAGES_DIR = 'next-pages-template-main';

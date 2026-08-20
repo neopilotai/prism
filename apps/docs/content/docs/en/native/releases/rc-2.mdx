@@ -117,7 +117,7 @@ export function RangeSlider() {
 
 For complete documentation and examples, see the [Slider component page](/docs/native/components/slider).
 
-**Related PR:** [#305](https://github.com/heroui-inc/heroui-native/pull/305)
+**Related PR:** [#305](https://github.com/khulnasoft/heroui-native/pull/305)
 
 #### ListGroup
 
@@ -167,7 +167,7 @@ export function Example() {
 
 For complete documentation and examples, see the [ListGroup component page](/docs/native/components/list-group).
 
-**Related PR:** [#302](https://github.com/heroui-inc/heroui-native/pull/302)
+**Related PR:** [#302](https://github.com/khulnasoft/heroui-native/pull/302)
 
 #### SearchField
 
@@ -210,7 +210,7 @@ export function Example() {
 
 For complete documentation and examples, see the [SearchField component page](/docs/native/components/search-field).
 
-**Related PR:** [#299](https://github.com/heroui-inc/heroui-native/pull/299)
+**Related PR:** [#299](https://github.com/khulnasoft/heroui-native/pull/299)
 
 ### Select Multi-Selection Mode
 
@@ -247,7 +247,7 @@ export function MultiSelect() {
 }
 ```
 
-**Related PR:** [#298](https://github.com/heroui-inc/heroui-native/pull/298)
+**Related PR:** [#298](https://github.com/khulnasoft/heroui-native/pull/298)
 
 ### New Subcomponents
 
@@ -267,7 +267,7 @@ import { PressableFeedback } from "heroui-native";
 </PressableFeedback.Scale>
 ```
 
-**Related PR:** [#302](https://github.com/heroui-inc/heroui-native/pull/302)
+**Related PR:** [#302](https://github.com/khulnasoft/heroui-native/pull/302)
 
 ## Component Improvements
 
@@ -282,13 +282,13 @@ The [Select](/docs/native/components/select) component has been improved with se
 - Trigger measures position via `onLayout` to properly support `isDefaultOpen`
 - Updated trigger styles to use `gap-3`, `py-3.5` padding, and `flex-1` on the value text for improved layout
 
-**Related PR:** [#298](https://github.com/heroui-inc/heroui-native/pull/298)
+**Related PR:** [#298](https://github.com/khulnasoft/heroui-native/pull/298)
 
 ### Avatar asChild Image Fix
 
 The [Avatar](/docs/native/components/avatar) component's `AvatarImage` now correctly separates `source`, `style`, and `asChild` from rest props when forwarding to the underlying primitive, fixing an issue where all props were incorrectly spread to the image component when using `asChild`.
 
-**Related PR:** [#298](https://github.com/heroui-inc/heroui-native/pull/298)
+**Related PR:** [#298](https://github.com/khulnasoft/heroui-native/pull/298)
 
 ## API Enhancements
 
@@ -323,7 +323,7 @@ The `animation` prop is a discriminated union typed per variant, providing full 
 
 New utility helpers `resolveAnimationObject` and `isAnimationDisabled` in `button.utils.ts` centralise animation prop resolution.
 
-**Related PR:** [#302](https://github.com/heroui-inc/heroui-native/pull/302)
+**Related PR:** [#302](https://github.com/khulnasoft/heroui-native/pull/302)
 
 ## Dependencies
 
@@ -340,7 +340,7 @@ Peer dependency version constraints have been relaxed to use caret (`^`) and ran
 
 No runtime code changes are included—existing projects with previously valid versions continue to work without modification.
 
-**Related PR:** [#306](https://github.com/heroui-inc/heroui-native/pull/306)
+**Related PR:** [#306](https://github.com/khulnasoft/heroui-native/pull/306)
 
 ## ⚠️ Breaking Changes
 
@@ -383,20 +383,20 @@ Update all Button feedback prop usages:
 - `"scale"` - Scale down only
 - `"none"` - No feedback animation
 
-**Related PR:** [#302](https://github.com/heroui-inc/heroui-native/pull/302)
+**Related PR:** [#302](https://github.com/khulnasoft/heroui-native/pull/302)
 
 ## Bug Fixes
 
 This release includes fixes for the following issues:
 
-- **[Issue #291](https://github.com/heroui-inc/heroui-native/issues/291)**: Fixed `Select.Trigger` variant prop being overwritten by `className`. Custom class names passed to the trigger are now correctly forwarded to the style computation instead of being silently dropped.
+- **[Issue #291](https://github.com/khulnasoft/heroui-native/issues/291)**: Fixed `Select.Trigger` variant prop being overwritten by `className`. Custom class names passed to the trigger are now correctly forwarded to the style computation instead of being silently dropped.
 
-- **[Issue #294](https://github.com/heroui-inc/heroui-native/issues/294)**: Resolved compatibility with `react-native-worklets` 0.7.x and `react-native-reanimated` 4.2.x (Expo SDK 55). Peer dependency constraints have been relaxed to accept these newer versions without producing resolution warnings.
+- **[Issue #294](https://github.com/khulnasoft/heroui-native/issues/294)**: Resolved compatibility with `react-native-worklets` 0.7.x and `react-native-reanimated` 4.2.x (Expo SDK 55). Peer dependency constraints have been relaxed to accept these newer versions without producing resolution warnings.
 
 **Related PRs:**
 
-- [#298](https://github.com/heroui-inc/heroui-native/pull/298)
-- [#306](https://github.com/heroui-inc/heroui-native/pull/306)
+- [#298](https://github.com/khulnasoft/heroui-native/pull/298)
+- [#306](https://github.com/khulnasoft/heroui-native/pull/306)
 
 ## Updated Documentation
 
@@ -413,7 +413,7 @@ The following documentation pages have been updated to reflect the changes in th
 ## Links
 
 - [Component Documentation](../components)
-- [GitHub Repository](https://github.com/heroui-inc/heroui-native)
+- [GitHub Repository](https://github.com/khulnasoft/heroui-native)
 
 ## Contributors
 

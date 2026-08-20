@@ -18,7 +18,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.MCP_DISPATCH_TOKEN }}
-          repository: heroui-inc/heroui-mcp
+          repository: khulnasoft/heroui-mcp
           event-type: native-docs-deployed
           client-payload: |
             {
@@ -37,7 +37,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.MCP_DISPATCH_TOKEN }}
-          repository: heroui-inc/heroui-mcp
+          repository: khulnasoft/heroui-mcp
           event-type: react-docs-deployed
           client-payload: |
             {

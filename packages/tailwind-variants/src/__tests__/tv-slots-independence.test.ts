@@ -60,7 +60,7 @@ const runtimes = [
 ] as const;
 
 describe.each(runtimes)("%s slots independence (#304)", (_label, createTv) => {
-  // ryuji — https://github.com/heroui-inc/tailwind-variants/issues/304
+  // ryuji — https://github.com/khulnasoft/prism/issues/304
   test("ryuji: interleaved calls keep independent results and identity", () => {
     const v = createTv(slotsConfig);
 

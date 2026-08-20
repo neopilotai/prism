@@ -70,7 +70,7 @@ export default async function Page(props: {params: Promise<{lang: string; slug?:
 
   // TODO: add github last edit
   // const lastEditTime = await getGithubLastEdit({
-  //   owner: "heroui-inc",
+  //   owner: "khulnasoft",
   //   repo: "heroui",
   //   path: `apps/docs/content/docs/${page.path}`,
   // });

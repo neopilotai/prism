@@ -6,9 +6,9 @@ export const GITHUB_API_URL = "https://api.github.com";
 
 export const RAW_GITHUB_URL = "https://raw.githubusercontent.com";
 
-export const REPO_NAME = "heroui-inc/heroui";
+export const REPO_NAME = "khulnasoft/heroui";
 
-export const REPO_NAME_NATIVE = "heroui-inc/heroui-native";
+export const REPO_NAME_NATIVE = "khulnasoft/heroui-native";
 
 export const ISSUE_REPORT_URL = `${GITHUB_URL}/${REPO_NAME}/issues/new?assignees=&labels=bug&template=bug_report.yml&title=%5BBUG%5D+-+`;
 

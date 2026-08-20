@@ -121,7 +121,7 @@ heroui.hook('preAction', async (command) => {
         )}\nRun \`${chalk.cyan(
           'npm install -g heroui-cli@latest'
         )}\` to upgrade\nChangelog: ${chalk.underline(
-          'https://github.com/heroui-inc/heroui-cli/releases'
+          'https://github.com/khulnasoft/heroui-cli/releases'
         )}`
       )}`,
       title: gradientString('HeroUI CLI')

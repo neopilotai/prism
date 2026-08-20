@@ -89,8 +89,8 @@ export async function cloneDocsFolder(
 
   // Use SSH URL if flag is set, otherwise use HTTPS
   const repoUrl = useSsh
-    ? 'git@github.com:heroui-inc/heroui.git'
-    : 'https://github.com/heroui-inc/heroui.git';
+    ? 'git@github.com:khulnasoft/heroui.git'
+    : 'https://github.com/khulnasoft/heroui.git';
 
   try {
     try {
@@ -143,7 +143,7 @@ export async function cloneDocsFolder(
 
       if (!fs.existsSync(sourceReactDir)) {
         throw new Error(
-          `Expected React docs at "${DOCS_CONTENT_ROOT}/react" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/heroui-inc/heroui-cli/issues.`
+          `Expected React docs at "${DOCS_CONTENT_ROOT}/react" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/khulnasoft/heroui-cli/issues.`
         );
       }
 
@@ -171,7 +171,7 @@ export async function cloneDocsFolder(
 
       if (!fs.existsSync(sourceNativeDir)) {
         throw new Error(
-          `Expected Native docs at "${DOCS_CONTENT_ROOT}/native" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/heroui-inc/heroui-cli/issues.`
+          `Expected Native docs at "${DOCS_CONTENT_ROOT}/native" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/khulnasoft/heroui-cli/issues.`
         );
       }
 
@@ -192,7 +192,7 @@ export async function cloneDocsFolder(
 
       if (!fs.existsSync(sourceMigrationDir)) {
         throw new Error(
-          `Expected Migration docs at "${DOCS_CONTENT_ROOT}/react/migration" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/heroui-inc/heroui-cli/issues.`
+          `Expected Migration docs at "${DOCS_CONTENT_ROOT}/react/migration" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/khulnasoft/heroui-cli/issues.`
         );
       }
 

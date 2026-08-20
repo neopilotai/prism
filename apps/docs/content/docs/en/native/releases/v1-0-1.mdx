@@ -67,7 +67,7 @@ import { Dialog } from "heroui-native";
 
 The `--backdrop` variable is included in all built-in themes for both light and dark modes, and the corresponding `bg-backdrop` Tailwind utility is available for use in custom component styles.
 
-**Related PR:** [#366](https://github.com/heroui-inc/heroui-native/pull/366)
+**Related PR:** [#366](https://github.com/khulnasoft/heroui-native/pull/366)
 
 ## Style Fixes
 
@@ -87,20 +87,20 @@ Updated disabled-state styling across seven components to use the `disabled:` mo
 
 All `isDisabled` variant classes now use the `disabled:` modifier prefix (e.g., `disabled:opacity-disabled disabled:pointer-events-none`), ensuring proper scoping to the disabled pseudo-state and eliminating styling conflicts when the disabled state is toggled dynamically.
 
-**Related PR:** [#361](https://github.com/heroui-inc/heroui-native/pull/361)
+**Related PR:** [#361](https://github.com/khulnasoft/heroui-native/pull/361)
 
 ## Bug Fixes
 
 This release includes fixes for the following issues:
 
-- **[Issue #359](https://github.com/heroui-inc/heroui-native/issues/359)**: Fixed a race condition in the Toast provider where the `total` SharedValue could drift out of sync with the actual toast count. The manual increment/decrement approach was prone to stale-closure mismatches when `hide` and `show` ran in the same tick or when auto-dismiss raced with a manual hide. The `total` value is now derived from `toasts.length` via a `useEffect`, ensuring animated interpolations (opacity, scale, translateY) always reflect the real toast count.
+- **[Issue #359](https://github.com/khulnasoft/heroui-native/issues/359)**: Fixed a race condition in the Toast provider where the `total` SharedValue could drift out of sync with the actual toast count. The manual increment/decrement approach was prone to stale-closure mismatches when `hide` and `show` ran in the same tick or when auto-dismiss raced with a manual hide. The `total` value is now derived from `toasts.length` via a `useEffect`, ensuring animated interpolations (opacity, scale, translateY) always reflect the real toast count.
 
-- **[Issue #356](https://github.com/heroui-inc/heroui-native/issues/356)**: Resolved disabled-state styles being applied unconditionally when `isDisabled` was true, preventing developers from theming or customizing the disabled appearance. All seven affected components now use the `disabled:` modifier prefix, correctly scoping styles to the disabled pseudo-state.
+- **[Issue #356](https://github.com/khulnasoft/heroui-native/issues/356)**: Resolved disabled-state styles being applied unconditionally when `isDisabled` was true, preventing developers from theming or customizing the disabled appearance. All seven affected components now use the `disabled:` modifier prefix, correctly scoping styles to the disabled pseudo-state.
 
 **Related PRs:**
 
-- [#360](https://github.com/heroui-inc/heroui-native/pull/360)
-- [#361](https://github.com/heroui-inc/heroui-native/pull/361)
+- [#360](https://github.com/khulnasoft/heroui-native/pull/360)
+- [#361](https://github.com/khulnasoft/heroui-native/pull/361)
 
 ## Updated Documentation
 
@@ -112,7 +112,7 @@ The following documentation pages have been updated to reflect the changes in th
 ## Links
 
 - [Component Documentation](../components)
-- [GitHub Repository](https://github.com/heroui-inc/heroui-native)
+- [GitHub Repository](https://github.com/khulnasoft/heroui-native)
 
 ## Contributors
 

@@ -97,7 +97,7 @@ export function Example() {
 
 For complete documentation and examples, see the [Alert component page](/docs/native/components/alert).
 
-**Related PR:** [#284](https://github.com/heroui-inc/heroui-native/pull/284)
+**Related PR:** [#284](https://github.com/khulnasoft/heroui-native/pull/284)
 
 ### New Subcomponents
 
@@ -131,7 +131,7 @@ import { Select } from "heroui-native";
 </Select>
 ```
 
-**Related PR:** [#274](https://github.com/heroui-inc/heroui-native/pull/274)
+**Related PR:** [#274](https://github.com/khulnasoft/heroui-native/pull/274)
 
 ## Component Improvements
 
@@ -149,7 +149,7 @@ The [Toast](/docs/native/components/toast) component styling has been refactored
 
 This refactor ensures content remains properly hidden when toasts of different heights stack together, while providing a more maintainable and predictable styling approach.
 
-**Related PR:** [#229](https://github.com/heroui-inc/heroui-native/pull/229)
+**Related PR:** [#229](https://github.com/khulnasoft/heroui-native/pull/229)
 
 ### Dialog Overlay Animation Fix
 
@@ -162,7 +162,7 @@ The [Dialog](/docs/native/components/dialog) component's popup animation timing 
 - Removed immediate `progress.set(2)` call when `isOpen` becomes false
 - Smooth closing animations now play correctly when dismissing popups via swipe gestures
 
-**Related PR:** [#277](https://github.com/heroui-inc/heroui-native/pull/277)
+**Related PR:** [#277](https://github.com/khulnasoft/heroui-native/pull/277)
 
 ### Theme Surface Variables Refactor
 
@@ -177,7 +177,7 @@ The theme system has been refactored to replace calculated surface colors with e
 
 This change gives theme authors direct control over surface color values rather than relying on `color-mix` calculations, resulting in more predictable and consistent surface styling across all themes.
 
-**Related PR:** [#281](https://github.com/heroui-inc/heroui-native/pull/281)
+**Related PR:** [#281](https://github.com/khulnasoft/heroui-native/pull/281)
 
 ## API Enhancements
 
@@ -216,7 +216,7 @@ import { Accordion, Label } from "heroui-native";
 
 All changes maintain backward compatibility with existing `style` props and properly merge styles when both are provided.
 
-**Related PR:** [#271](https://github.com/heroui-inc/heroui-native/pull/271)
+**Related PR:** [#271](https://github.com/khulnasoft/heroui-native/pull/271)
 
 ### `disableFullWindowOverlay` Prop
 
@@ -250,7 +250,7 @@ On iOS, `FullWindowOverlay` uses a separate native window that blocks the React 
 
 For Toast, the prop is passed via `config.toast` when using `HeroUINativeProvider`.
 
-**Related PR:** [#283](https://github.com/heroui-inc/heroui-native/pull/283)
+**Related PR:** [#283](https://github.com/khulnasoft/heroui-native/pull/283)
 
 ### HeroUINativeProviderRaw
 
@@ -273,7 +273,7 @@ export function App() {
 
 This makes `react-native-screens`, `@gorhom/bottom-sheet`, and `react-native-svg` fully optional dependencies. The raw provider includes only `SafeAreaListener`, `GlobalAnimationSettingsProvider`, and `TextComponentProvider`. Consumers who need toast or portal features can compose them manually.
 
-**Related PR:** [#285](https://github.com/heroui-inc/heroui-native/pull/285)
+**Related PR:** [#285](https://github.com/khulnasoft/heroui-native/pull/285)
 
 ### Select.Trigger `variant` Prop
 
@@ -303,7 +303,7 @@ import { Button, Select } from "heroui-native";
 </Select>
 ```
 
-**Related PR:** [#274](https://github.com/heroui-inc/heroui-native/pull/274)
+**Related PR:** [#274](https://github.com/khulnasoft/heroui-native/pull/274)
 
 ### ControlField Radio Variant
 
@@ -320,7 +320,7 @@ import { ControlField } from "heroui-native";
 </ControlField>
 ```
 
-**Related PR:** [#286](https://github.com/heroui-inc/heroui-native/pull/286)
+**Related PR:** [#286](https://github.com/khulnasoft/heroui-native/pull/286)
 
 ## ⚠️ Breaking Changes
 
@@ -348,7 +348,7 @@ Update all instances of individual style props to the unified `styles` prop:
 />
 ```
 
-**Related PR:** [#271](https://github.com/heroui-inc/heroui-native/pull/271)
+**Related PR:** [#271](https://github.com/khulnasoft/heroui-native/pull/271)
 
 ### Select.Trigger Default Styles
 
@@ -368,7 +368,7 @@ Update all instances of individual style props to the unified `styles` prop:
 </Select.Trigger>
 ```
 
-**Related PR:** [#274](https://github.com/heroui-inc/heroui-native/pull/274)
+**Related PR:** [#274](https://github.com/khulnasoft/heroui-native/pull/274)
 
 ### Surface Theme Variables Restructured
 
@@ -388,7 +388,7 @@ color: var(--surface-foreground);
 color: var(--surface-secondary-foreground);
 ```
 
-**Related PR:** [#281](https://github.com/heroui-inc/heroui-native/pull/281)
+**Related PR:** [#281](https://github.com/khulnasoft/heroui-native/pull/281)
 
 ### RadioGroup Indicator Removed
 
@@ -426,22 +426,22 @@ import { Radio, RadioGroup } from "heroui-native";
 </RadioGroup>
 ```
 
-**Related PR:** [#286](https://github.com/heroui-inc/heroui-native/pull/286)
+**Related PR:** [#286](https://github.com/khulnasoft/heroui-native/pull/286)
 
 ## Bug Fixes
 
 This release includes fixes for the following issues:
 
-- **[Issue #229](https://github.com/heroui-inc/heroui-native/issues/229)**: Fixed InputOTP not working inside BottomSheet. The InputOTP component now functions correctly when rendered within a BottomSheet overlay, resolving input focus and interaction issues that previously prevented OTP entry in bottom sheet contexts.
+- **[Issue #229](https://github.com/khulnasoft/heroui-native/issues/229)**: Fixed InputOTP not working inside BottomSheet. The InputOTP component now functions correctly when rendered within a BottomSheet overlay, resolving input focus and interaction issues that previously prevented OTP entry in bottom sheet contexts.
 
-- **[Issue #265](https://github.com/heroui-inc/heroui-native/issues/265)**: Fixed the first letter of Toast description text being clipped. The toast styling refactor replaces the border-based padding approach with proper padding and placeholder views, ensuring all text content is fully visible regardless of toast stacking configuration.
+- **[Issue #265](https://github.com/khulnasoft/heroui-native/issues/265)**: Fixed the first letter of Toast description text being clipped. The toast styling refactor replaces the border-based padding approach with proper padding and placeholder views, ensuring all text content is fully visible regardless of toast stacking configuration.
 
-- **[Issue #272](https://github.com/heroui-inc/heroui-native/issues/272)**: Fixed FullWindowOverlay blocking the React Native element inspector on iOS. The new `disableFullWindowOverlay` prop on portal components allows developers to render overlay content in the main window during development, restoring element inspector functionality.
+- **[Issue #272](https://github.com/khulnasoft/heroui-native/issues/272)**: Fixed FullWindowOverlay blocking the React Native element inspector on iOS. The new `disableFullWindowOverlay` prop on portal components allows developers to render overlay content in the main window during development, restoring element inspector functionality.
 
 **Related PRs:**
 
-- [#229](https://github.com/heroui-inc/heroui-native/pull/229)
-- [#283](https://github.com/heroui-inc/heroui-native/pull/283)
+- [#229](https://github.com/khulnasoft/heroui-native/pull/229)
+- [#283](https://github.com/khulnasoft/heroui-native/pull/283)
 
 ## Updated Documentation
 
@@ -466,7 +466,7 @@ The following documentation pages have been updated to reflect the changes in th
 ## Links
 
 - [Component Documentation](../components)
-- [GitHub Repository](https://github.com/heroui-inc/heroui-native)
+- [GitHub Repository](https://github.com/khulnasoft/heroui-native)
 
 ## Contributors
 

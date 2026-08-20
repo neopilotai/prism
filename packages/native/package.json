@@ -55,14 +55,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heroui-inc/heroui-native.git"
+    "url": "git+https://github.com/khulnasoft/heroui-native.git"
   },
-  "author": "HeroUI <support@heroui.com> (https://github.com/heroui-inc)",
+  "author": "HeroUI <support@heroui.com> (https://github.com/khulnasoft)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/heroui-inc/heroui-native/issues"
+    "url": "https://github.com/khulnasoft/heroui-native/issues"
   },
-  "homepage": "https://github.com/heroui-inc/heroui-native#readme",
+  "homepage": "https://github.com/khulnasoft/heroui-native#readme",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

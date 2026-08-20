@@ -148,7 +148,7 @@ export function RemovableTagGroup() {
 
 完整文档与示例见 [TagGroup 组件页](/docs/native/components/tag-group)。
 
-**相关 PR：** [#309](https://github.com/heroui-inc/heroui-native/pull/309)
+**相关 PR：** [#309](https://github.com/khulnasoft/heroui-native/pull/309)
 
 #### Menu
 
@@ -230,7 +230,7 @@ export function MenuWithSections() {
 
 完整文档与示例见 [Menu 组件页](/docs/native/components/menu)。
 
-**相关 PR：** [#312](https://github.com/heroui-inc/heroui-native/pull/312)
+**相关 PR：** [#312](https://github.com/khulnasoft/heroui-native/pull/312)
 
 #### InputGroup
 
@@ -284,7 +284,7 @@ export function DisabledInput() {
 
 完整文档与示例见 [InputGroup 组件页](/docs/native/components/input-group)。
 
-**相关 PR：** [#313](https://github.com/heroui-inc/heroui-native/pull/313)
+**相关 PR：** [#313](https://github.com/khulnasoft/heroui-native/pull/313)
 
 ## 组件改进
 
@@ -300,7 +300,7 @@ export function DisabledInput() {
 
 实现使用 React Native 的 `BackHandler` API，在 iOS 上为空操作，无需分平台分支。
 
-**相关 PR：** [#308](https://github.com/heroui-inc/heroui-native/pull/308)
+**相关 PR：** [#308](https://github.com/khulnasoft/heroui-native/pull/308)
 
 ### Slot 的 `combineStyles` 修复
 
@@ -312,7 +312,7 @@ Slot 原语的 `combineStyles` 现返回样式数组，而不再使用 `StyleShe
 - React Native 原生支持嵌套样式数组，对使用方行为无影响
 - 修复通过 Slot 原语组合的组件上的动画断裂问题
 
-**相关 PR：** [#314](https://github.com/heroui-inc/heroui-native/pull/314)
+**相关 PR：** [#314](https://github.com/khulnasoft/heroui-native/pull/314)
 
 ## 依赖
 
@@ -325,20 +325,20 @@ Slot 原语的 `combineStyles` 现返回样式数组，而不再使用 `StyleShe
 
 上述 `combineStyles` 修复是支持 Expo 55 的主要代码变更：此前 `StyleSheet.flatten` 会在新 SDK 下破坏 Reanimated 样式绑定。
 
-**相关 PR：** [#314](https://github.com/heroui-inc/heroui-native/pull/314)
+**相关 PR：** [#314](https://github.com/khulnasoft/heroui-native/pull/314)
 
 ## 问题修复
 
 本版本包含以下修复：
 
-- **[Issue #272](https://github.com/heroui-inc/heroui-native/issues/272)**：解决 `FullWindowOverlay` 干扰 React Native 元素检查器的问题。
+- **[Issue #272](https://github.com/khulnasoft/heroui-native/issues/272)**：解决 `FullWindowOverlay` 干扰 React Native 元素检查器的问题。
 
-- **[Issue #280](https://github.com/heroui-inc/heroui-native/issues/280)**：修复 Expo 55 下 Avatar 等依赖 Reanimated 的组件失效。`combineStyles` 曾通过 `StyleSheet.flatten` 破坏动画绑定；现改为返回样式数组以保留 `SharedValue` 与 `useAnimatedStyle`。
+- **[Issue #280](https://github.com/khulnasoft/heroui-native/issues/280)**：修复 Expo 55 下 Avatar 等依赖 Reanimated 的组件失效。`combineStyles` 曾通过 `StyleSheet.flatten` 破坏动画绑定；现改为返回样式数组以保留 `SharedValue` 与 `useAnimatedStyle`。
 
 **相关 PR：**
 
-- [#308](https://github.com/heroui-inc/heroui-native/pull/308)
-- [#314](https://github.com/heroui-inc/heroui-native/pull/314)
+- [#308](https://github.com/khulnasoft/heroui-native/pull/308)
+- [#314](https://github.com/khulnasoft/heroui-native/pull/314)
 
 ## 文档更新
 
@@ -351,7 +351,7 @@ Slot 原语的 `combineStyles` 现返回样式数组，而不再使用 `StyleShe
 ## 链接
 
 - [组件文档](../components)
-- [GitHub 仓库](https://github.com/heroui-inc/heroui-native)
+- [GitHub 仓库](https://github.com/khulnasoft/heroui-native)
 
 ## 贡献者
 

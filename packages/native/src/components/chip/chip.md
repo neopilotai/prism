@@ -144,7 +144,7 @@ export default function ChipExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/heroui-inc/heroui-native/blob/main/example/src/app/(home)/components/chip.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/chip.tsx>).
 
 ## API Reference
 

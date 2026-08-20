@@ -72,7 +72,7 @@ HeroUI is the modern UI library for web and mobile, built to help teams move fas
 - [Get started](${baseUrl}/docs/react/getting-started)
 - [React components](${baseUrl}/docs/react/components)
 - [Native components](${baseUrl}/docs/native/components)
-- [GitHub repository](https://github.com/heroui-inc/heroui)
+- [GitHub repository](https://github.com/khulnasoft/heroui)
 
 ## Agent resources
 
