@@ -3,7 +3,7 @@
 import type {FieldErrorVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {fieldErrorVariants} from "@prismuisoft/styles";
+import {fieldErrorVariants} from "@prismui/styles";
 import {FieldError as FieldErrorPrimitive} from "react-aria-components/FieldError";
 
 import {composeTwRenderProps} from "../../utils/compose";

@@ -45,4 +45,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {switchVariants} from "@khulnasoft/styles";
 
-export type {SwitchVariants} from "@prismuisoft/styles";
+export type {SwitchVariants} from "@prismui/styles";

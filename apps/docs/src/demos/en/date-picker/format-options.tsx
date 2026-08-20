@@ -12,7 +12,7 @@ import {
   Select,
   Switch,
   TimeField,
-} from "@prismuisoft/react";
+} from "@prismui/react";
 import {getLocalTimeZone, parseDate, parseZonedDateTime} from "@internationalized/date";
 import {useMemo, useState} from "react";
 

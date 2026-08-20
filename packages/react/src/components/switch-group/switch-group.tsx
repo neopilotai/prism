@@ -4,7 +4,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {SwitchGroupVariants} from "@khulnasoft/styles";
 import type {ReactNode} from "react";
 
-import {switchGroupVariants} from "@prismuisoft/styles";
+import {switchGroupVariants} from "@prismui/styles";
 import React from "react";
 
 import {dom} from "../../utils/dom";

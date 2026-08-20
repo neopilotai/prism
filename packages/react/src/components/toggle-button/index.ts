@@ -29,4 +29,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {toggleButtonVariants} from "@khulnasoft/styles";
 
-export type {ToggleButtonVariants} from "@prismuisoft/styles";
+export type {ToggleButtonVariants} from "@prismui/styles";

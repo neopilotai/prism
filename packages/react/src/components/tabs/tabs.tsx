@@ -4,7 +4,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {TabsVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {tabsVariants} from "@prismuisoft/styles";
+import {tabsVariants} from "@prismui/styles";
 import React, {createContext, use, useCallback, useRef} from "react";
 import {SelectionIndicator as SelectionIndicatorPrimitive} from "react-aria-components/SelectionIndicator";
 import {

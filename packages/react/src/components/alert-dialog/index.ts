@@ -83,4 +83,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {alertDialogVariants} from "@khulnasoft/styles";
 
-export type {AlertDialogVariants} from "@prismuisoft/styles";
+export type {AlertDialogVariants} from "@prismui/styles";

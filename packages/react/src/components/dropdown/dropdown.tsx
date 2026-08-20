@@ -4,7 +4,7 @@ import type {SurfaceVariants} from "../surface";
 import type {DropdownVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {dropdownVariants} from "@prismuisoft/styles";
+import {dropdownVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {Button} from "react-aria-components/Button";
 import {

@@ -40,4 +40,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {radioVariants} from "@khulnasoft/styles";
 
-export type {RadioVariants} from "@prismuisoft/styles";
+export type {RadioVariants} from "@prismui/styles";

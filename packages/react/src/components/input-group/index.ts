@@ -47,4 +47,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {inputGroupVariants} from "@khulnasoft/styles";
 
-export type {InputGroupVariants} from "@prismuisoft/styles";
+export type {InputGroupVariants} from "@prismui/styles";

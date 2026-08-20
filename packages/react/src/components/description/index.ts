@@ -26,4 +26,4 @@ export type {DescriptionRootProps, DescriptionRootProps as DescriptionProps} fro
  * -----------------------------------------------------------------------------------------------*/
 export {descriptionVariants} from "@khulnasoft/styles";
 
-export type {DescriptionVariants} from "@prismuisoft/styles";
+export type {DescriptionVariants} from "@prismui/styles";

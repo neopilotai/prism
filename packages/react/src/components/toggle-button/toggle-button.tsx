@@ -3,7 +3,7 @@
 import type {ToggleButtonVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {toggleButtonVariants} from "@prismuisoft/styles";
+import {toggleButtonVariants} from "@prismui/styles";
 import {use} from "react";
 import {ToggleButton as ToggleButtonPrimitive} from "react-aria-components/ToggleButton";
 

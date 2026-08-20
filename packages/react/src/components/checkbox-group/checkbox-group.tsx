@@ -4,7 +4,7 @@ import type {CheckboxVariants} from "../checkbox";
 import type {CheckboxGroupVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {checkboxGroupVariants} from "@prismuisoft/styles";
+import {checkboxGroupVariants} from "@prismui/styles";
 import React, {createContext} from "react";
 import {CheckboxGroup as CheckboxGroupPrimitive} from "react-aria-components/CheckboxGroup";
 

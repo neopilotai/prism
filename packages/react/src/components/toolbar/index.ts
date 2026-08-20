@@ -26,4 +26,4 @@ export type {ToolbarRootProps, ToolbarRootProps as ToolbarProps} from "./toolbar
  * -----------------------------------------------------------------------------------------------*/
 export {toolbarVariants} from "@khulnasoft/styles";
 
-export type {ToolbarVariants} from "@prismuisoft/styles";
+export type {ToolbarVariants} from "@prismui/styles";

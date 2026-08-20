@@ -32,4 +32,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {colorAreaVariants} from "@khulnasoft/styles";
 
-export type {ColorAreaVariants} from "@prismuisoft/styles";
+export type {ColorAreaVariants} from "@prismui/styles";

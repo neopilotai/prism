@@ -28,4 +28,4 @@ export type {ChipRootProps, ChipRootProps as ChipProps, ChipLabelProps} from "./
  * -----------------------------------------------------------------------------------------------*/
 export {chipVariants} from "@khulnasoft/styles";
 
-export type {ChipVariants} from "@prismuisoft/styles";
+export type {ChipVariants} from "@prismui/styles";

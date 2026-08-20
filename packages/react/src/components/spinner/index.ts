@@ -26,4 +26,4 @@ export type {SpinnerRootProps, SpinnerRootProps as SpinnerProps} from "./spinner
  * -----------------------------------------------------------------------------------------------*/
 export {spinnerVariants} from "@khulnasoft/styles";
 
-export type {SpinnerVariants} from "@prismuisoft/styles";
+export type {SpinnerVariants} from "@prismui/styles";

@@ -5,7 +5,7 @@ import type {ColorPickerVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {ColorPickerProps as ColorPickerPrimitiveProps} from "react-aria-components/ColorPicker";
 
-import {colorPickerVariants} from "@prismuisoft/styles";
+import {colorPickerVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components/Button";
 import {ColorPicker as ColorPickerPrimitive} from "react-aria-components/ColorPicker";

@@ -51,4 +51,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {popoverVariants} from "@khulnasoft/styles";
 
-export type {PopoverVariants} from "@prismuisoft/styles";
+export type {PopoverVariants} from "@prismui/styles";

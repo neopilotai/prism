@@ -2,7 +2,7 @@
 
 import type {Selection} from "@khulnasoft/react";
 
-import {Button, Dropdown, Header, Label} from "@prismuisoft/react";
+import {Button, Dropdown, Header, Label} from "@prismui/react";
 import {useState} from "react";
 
 export function WithMultipleSelection() {

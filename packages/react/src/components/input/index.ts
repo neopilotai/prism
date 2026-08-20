@@ -26,4 +26,4 @@ export type {InputRootProps, InputRootProps as InputProps} from "./input";
  * -----------------------------------------------------------------------------------------------*/
 export {inputVariants} from "@khulnasoft/styles";
 
-export type {InputVariants} from "@prismuisoft/styles";
+export type {InputVariants} from "@prismui/styles";

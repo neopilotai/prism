@@ -2,7 +2,7 @@
 
 import type {Color} from "@khulnasoft/react";
 
-import {Button, ColorField, ColorSwatch, Description, Label, parseColor} from "@prismuisoft/react";
+import {Button, ColorField, ColorSwatch, Description, Label, parseColor} from "@prismui/react";
 import {useState} from "react";
 
 export function Controlled() {

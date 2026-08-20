@@ -2,7 +2,7 @@
 
 import type {Selection} from "@khulnasoft/react";
 
-import {Button, Table, cn} from "@prismuisoft/react";
+import {Button, Table, cn} from "@prismui/react";
 import {Icon} from "@iconify/react";
 import {useState} from "react";
 

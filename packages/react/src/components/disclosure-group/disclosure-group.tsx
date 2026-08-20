@@ -3,7 +3,7 @@
 import type {DisclosureGroupVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {disclosureGroupVariants} from "@prismuisoft/styles";
+import {disclosureGroupVariants} from "@prismui/styles";
 import React, {createContext} from "react";
 import {DisclosureGroup as DisclosureGroupPrimitive} from "react-aria-components/DisclosureGroup";
 

@@ -83,4 +83,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {drawerVariants} from "@khulnasoft/styles";
 
-export type {DrawerVariants} from "@prismuisoft/styles";
+export type {DrawerVariants} from "@prismui/styles";

@@ -11,7 +11,7 @@ import {
   Tag,
   TagGroup,
   useFilter,
-} from "@prismuisoft/react";
+} from "@prismui/react";
 import {useState} from "react";
 
 export function Variants() {

@@ -4,7 +4,7 @@ import type {DescriptionVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {TextProps} from "react-aria-components/Text";
 
-import {descriptionVariants} from "@prismuisoft/styles";
+import {descriptionVariants} from "@prismui/styles";
 import {Text} from "react-aria-components/Text";
 
 import {useHasTextSlot} from "../../utils/use-has-text-slot";

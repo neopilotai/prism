@@ -3,7 +3,7 @@
 import type {NumberFieldVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {numberFieldVariants} from "@prismuisoft/styles";
+import {numberFieldVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components/Button";
 import {Group as GroupPrimitive} from "react-aria-components/Group";

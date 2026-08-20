@@ -2,7 +2,7 @@
 
 import type {Selection, SortDescriptor} from "@khulnasoft/react";
 
-import {Avatar, Button, Checkbox, Chip, Table} from "@prismuisoft/react";
+import {Avatar, Button, Checkbox, Chip, Table} from "@prismui/react";
 import {Icon} from "@iconify/react";
 import {useMemo, useState} from "react";
 

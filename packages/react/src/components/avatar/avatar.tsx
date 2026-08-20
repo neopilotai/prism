@@ -3,7 +3,7 @@
 import type {AvatarVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {avatarVariants} from "@prismuisoft/styles";
+import {avatarVariants} from "@prismui/styles";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 import React, {createContext} from "react";
 

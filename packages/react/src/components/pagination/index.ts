@@ -78,4 +78,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {paginationVariants} from "@khulnasoft/styles";
 
-export type {PaginationVariants} from "@prismuisoft/styles";
+export type {PaginationVariants} from "@prismui/styles";

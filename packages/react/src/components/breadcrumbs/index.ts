@@ -32,4 +32,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {breadcrumbsVariants} from "@khulnasoft/styles";
 
-export type {BreadcrumbsVariants} from "@prismuisoft/styles";
+export type {BreadcrumbsVariants} from "@prismui/styles";

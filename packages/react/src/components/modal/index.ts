@@ -83,4 +83,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {modalVariants} from "@khulnasoft/styles";
 
-export type {ModalVariants} from "@prismuisoft/styles";
+export type {ModalVariants} from "@prismui/styles";

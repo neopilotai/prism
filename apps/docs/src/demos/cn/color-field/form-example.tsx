@@ -2,7 +2,7 @@
 
 import type {Color} from "@khulnasoft/react";
 
-import {Button, ColorField, ColorSwatch, Description, Form, Label} from "@prismuisoft/react";
+import {Button, ColorField, ColorSwatch, Description, Form, Label} from "@prismui/react";
 import {useState} from "react";
 
 export function FormExample() {

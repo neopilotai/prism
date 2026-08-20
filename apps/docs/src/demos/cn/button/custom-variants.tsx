@@ -1,7 +1,7 @@
 import type {ButtonProps} from "@khulnasoft/react";
 import type {VariantProps} from "tailwind-variants";
 
-import {Button, buttonVariants} from "@prismuisoft/react";
+import {Button, buttonVariants} from "@prismui/react";
 import {tv} from "tailwind-variants";
 
 const myButtonVariants = tv({

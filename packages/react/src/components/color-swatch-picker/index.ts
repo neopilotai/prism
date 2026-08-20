@@ -48,4 +48,4 @@ export type {
 | * -----------------------------------------------------------------------------------------------*/
 export {colorSwatchPickerVariants} from "@khulnasoft/styles";
 
-export type {ColorSwatchPickerVariants} from "@prismuisoft/styles";
+export type {ColorSwatchPickerVariants} from "@prismui/styles";

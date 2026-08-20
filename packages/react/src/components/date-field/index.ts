@@ -47,4 +47,4 @@ export type {DateFieldRootProps, DateFieldRootProps as DateFieldProps} from "./d
  * -----------------------------------------------------------------------------------------------*/
 export {dateFieldVariants} from "@khulnasoft/styles";
 
-export type {DateFieldVariants} from "@prismuisoft/styles";
+export type {DateFieldVariants} from "@prismui/styles";

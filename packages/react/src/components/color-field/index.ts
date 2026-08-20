@@ -45,4 +45,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {colorFieldVariants} from "@khulnasoft/styles";
 
-export type {ColorFieldVariants} from "@prismuisoft/styles";
+export type {ColorFieldVariants} from "@prismui/styles";

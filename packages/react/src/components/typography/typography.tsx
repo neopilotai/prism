@@ -3,7 +3,7 @@
 import type {TypographyVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {typographyVariants} from "@prismuisoft/styles";
+import {typographyVariants} from "@prismui/styles";
 import {Text as TextPrimitive} from "react-aria-components/Text";
 
 import {composeSlotClassName} from "../../utils/compose";

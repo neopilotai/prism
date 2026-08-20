@@ -3,7 +3,7 @@
 import type {TextFieldVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {textFieldVariants} from "@prismuisoft/styles";
+import {textFieldVariants} from "@prismui/styles";
 import React, {createContext} from "react";
 import {TextField as TextFieldPrimitive} from "react-aria-components/TextField";
 

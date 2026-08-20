@@ -4,7 +4,7 @@ import type {InputOTPVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {ValidationResult} from "react-aria-components/CheckboxGroup";
 
-import {inputOTPVariants} from "@prismuisoft/styles";
+import {inputOTPVariants} from "@prismui/styles";
 import {OTPInput, OTPInputContext} from "input-otp";
 import React, {createContext, use} from "react";
 import {FieldErrorContext} from "react-aria-components/FieldError";

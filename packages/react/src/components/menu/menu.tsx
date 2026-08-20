@@ -3,7 +3,7 @@
 import type {MenuVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {menuVariants} from "@prismuisoft/styles";
+import {menuVariants} from "@prismui/styles";
 import React from "react";
 import {Menu as MenuPrimitive} from "react-aria-components/Menu";
 

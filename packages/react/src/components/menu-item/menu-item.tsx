@@ -5,7 +5,7 @@ import type {MenuItemVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {MenuItemRenderProps} from "react-aria-components/Menu";
 
-import {menuItemVariants} from "@prismuisoft/styles";
+import {menuItemVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {MenuItem as MenuItemPrimitive} from "react-aria-components/Menu";
 

@@ -2,7 +2,7 @@
 
 import type {ScrollShadowVisibility} from "@khulnasoft/react";
 
-import {Card, ScrollShadow} from "@prismuisoft/react";
+import {Card, ScrollShadow} from "@prismui/react";
 import {useState} from "react";
 
 const images = [

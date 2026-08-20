@@ -2,7 +2,7 @@
 
 import type {TimeValue} from "@khulnasoft/react";
 
-import {Button, Description, Label, TimeField} from "@prismuisoft/react";
+import {Button, Description, Label, TimeField} from "@prismui/react";
 import {Time, getLocalTimeZone, now} from "@internationalized/date";
 import {useState} from "react";
 

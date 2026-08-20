@@ -41,4 +41,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {alertVariants} from "@khulnasoft/styles";
 
-export type {AlertVariants} from "@prismuisoft/styles";
+export type {AlertVariants} from "@prismui/styles";

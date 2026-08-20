@@ -3,7 +3,7 @@
 import type {Key} from "@khulnasoft/react";
 
 import {CircleXmarkFill} from "@gravity-ui/icons";
-import {Description, EmptyState, Label, Tag, TagGroup} from "@prismuisoft/react";
+import {Description, EmptyState, Label, Tag, TagGroup} from "@prismui/react";
 import {useState} from "react";
 
 export function TagGroupWithRemoveButton() {

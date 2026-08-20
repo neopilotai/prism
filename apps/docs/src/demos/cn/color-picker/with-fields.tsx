@@ -11,7 +11,7 @@ import {
   Label,
   ListBox,
   Select,
-} from "@prismuisoft/react";
+} from "@prismui/react";
 import {useState} from "react";
 
 const CHANNEL_LABELS: Record<ColorChannel, string> = {

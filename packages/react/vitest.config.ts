@@ -2,7 +2,7 @@ import {dirname, join} from "node:path";
 import {fileURLToPath} from "node:url";
 
 import {browserConfig} from "@khulnasoft/testing/configs/browser";
-import {uiConfig} from "@prismuisoft/testing/configs/react";
+import {uiConfig} from "@prismui/testing/configs/react";
 import react from "@vitejs/plugin-react";
 import {defineConfig, mergeConfig} from "vitest/config";
 

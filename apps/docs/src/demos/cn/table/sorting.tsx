@@ -2,7 +2,7 @@
 
 import type {SortDescriptor} from "@khulnasoft/react";
 
-import {Table} from "@prismuisoft/react";
+import {Table} from "@prismui/react";
 import {useMemo, useState} from "react";
 
 interface User {

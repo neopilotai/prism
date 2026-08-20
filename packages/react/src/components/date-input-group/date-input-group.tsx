@@ -10,7 +10,7 @@ import type {
   DateSegmentProps as TimeSegmentPrimitiveProps,
 } from "react-aria-components/DateField";
 
-import {dateInputGroupVariants} from "@prismuisoft/styles";
+import {dateInputGroupVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {
   DateInput as DateInputPrimitive,

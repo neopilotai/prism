@@ -116,6 +116,6 @@ export type {YearPickerContextValue} from "../calendar-year-picker";
 | * -----------------------------------------------------------------------------------------------*/
 export {calendarVariants} from "@khulnasoft/styles";
 
-export type {CalendarVariants} from "@prismuisoft/styles";
+export type {CalendarVariants} from "@prismui/styles";
 
 export type {CalendarSelectionMode} from "react-aria-components/Calendar";

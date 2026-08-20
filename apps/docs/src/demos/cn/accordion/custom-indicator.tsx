@@ -3,7 +3,7 @@
 import type {Key} from "@khulnasoft/react";
 
 import {ChevronsDown, CircleChevronDown, Minus, Plus} from "@gravity-ui/icons";
-import {Accordion} from "@prismuisoft/react";
+import {Accordion} from "@prismui/react";
 import React from "react";
 
 export function CustomIndicator() {

@@ -3,7 +3,7 @@
 import type {ColorAreaVariants} from "@khulnasoft/styles";
 import type {CSSProperties, ComponentPropsWithRef} from "react";
 
-import {colorAreaVariants} from "@prismuisoft/styles";
+import {colorAreaVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {
   ColorArea as ColorAreaPrimitive,

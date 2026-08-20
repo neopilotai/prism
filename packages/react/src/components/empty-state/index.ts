@@ -26,4 +26,4 @@ export type {EmptyStateRootProps, EmptyStateRootProps as EmptyStateProps} from "
  * -----------------------------------------------------------------------------------------------*/
 export {emptyStateVariants} from "@khulnasoft/styles";
 
-export type {EmptyStateVariants} from "@prismuisoft/styles";
+export type {EmptyStateVariants} from "@prismui/styles";

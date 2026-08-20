@@ -10,7 +10,7 @@ import {
   ListBox,
   SearchField,
   useFilter,
-} from "@prismuisoft/react";
+} from "@prismui/react";
 import {useState} from "react";
 
 interface City {

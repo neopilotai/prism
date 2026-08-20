@@ -5,7 +5,7 @@ import type {ListBoxItemVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {ListBoxItemRenderProps} from "react-aria-components/ListBox";
 
-import {listboxItemVariants} from "@prismuisoft/styles";
+import {listboxItemVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {ListBoxItem as ListBoxItemPrimitive} from "react-aria-components/ListBox";
 

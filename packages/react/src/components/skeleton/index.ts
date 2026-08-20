@@ -26,4 +26,4 @@ export type {SkeletonRootProps, SkeletonRootProps as SkeletonProps} from "./skel
  * -----------------------------------------------------------------------------------------------*/
 export {skeletonVariants} from "@khulnasoft/styles";
 
-export type {SkeletonVariants} from "@prismuisoft/styles";
+export type {SkeletonVariants} from "@prismui/styles";

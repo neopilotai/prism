@@ -6,7 +6,7 @@ import type {SurfaceVariants} from "../surface";
 import type {SelectVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {selectVariants} from "@prismuisoft/styles";
+import {selectVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components/Button";
 import {Popover as PopoverPrimitive} from "react-aria-components/Popover";

@@ -102,4 +102,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {tableVariants} from "@khulnasoft/styles";
 
-export type {TableVariants} from "@prismuisoft/styles";
+export type {TableVariants} from "@prismui/styles";

@@ -4,7 +4,7 @@ import {composeRenderProps} from "react-aria-components/composeRenderProps";
 import {cx} from "tailwind-variants";
 
 // Re-export utility classes from @khulnasoft/styles for backward compatibility
-export {disabledClasses, focusRingClasses, ariaDisabledClasses} from "@prismuisoft/styles";
+export {disabledClasses, focusRingClasses, ariaDisabledClasses} from "@prismui/styles";
 
 function composeTwRenderProps<T>(
   className: string | ((v: T) => string) | undefined,

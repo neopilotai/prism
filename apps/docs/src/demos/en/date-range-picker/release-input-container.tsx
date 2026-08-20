@@ -2,7 +2,7 @@
 
 import type {TimeValue} from "@khulnasoft/react";
 
-import {DateField, DateRangePicker, Label, RangeCalendar, TimeField} from "@prismuisoft/react";
+import {DateField, DateRangePicker, Label, RangeCalendar, TimeField} from "@prismui/react";
 import {getLocalTimeZone, parseZonedDateTime} from "@internationalized/date";
 
 export function InputContainer() {

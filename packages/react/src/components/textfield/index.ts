@@ -31,4 +31,4 @@ export {TextFieldContext} from "./textfield";
  * -----------------------------------------------------------------------------------------------*/
 export {textFieldVariants} from "@khulnasoft/styles";
 
-export type {TextFieldVariants} from "@prismuisoft/styles";
+export type {TextFieldVariants} from "@prismui/styles";

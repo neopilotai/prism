@@ -4,7 +4,7 @@ import type {Framework} from "@/hooks/use-current-framework";
 import type {Key} from "@khulnasoft/react";
 
 import {Globe, Smartphone} from "@gravity-ui/icons";
-import {Tabs} from "@prismuisoft/react";
+import {Tabs} from "@prismui/react";
 import {usePathname, useRouter} from "next/navigation";
 import {useCallback, useEffect, useRef, useState} from "react";
 
@@ -72,7 +72,7 @@ export function FrameworksTabs({className}: {className?: string}) {
     }
   }, [pathname, currentFramework, selectedKey]);
 
-  // Spacing lives on the wrapper: since @prismuisoft/styles 3.2.2 the ListContainer
+  // Spacing lives on the wrapper: since @prismui/styles 3.2.2 the ListContainer
   // is the visible pill (bg + radius), so padding on it distorts the pill.
   return (
     <div className={cn("ms-auto pb-1.5", className)}>

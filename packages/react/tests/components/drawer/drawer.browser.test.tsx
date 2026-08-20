@@ -1,5 +1,5 @@
 import {render} from "@khulnasoft/testing/browser";
-import {isDocumentScrollLocked} from "@prismuisoft/testing/helpers";
+import {isDocumentScrollLocked} from "@prismui/testing/helpers";
 import {page, userEvent} from "vitest/browser";
 
 import {DrawerFixture} from "./fixtures";

@@ -50,4 +50,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {colorSliderVariants} from "@khulnasoft/styles";
 
-export type {ColorSliderVariants} from "@prismuisoft/styles";
+export type {ColorSliderVariants} from "@prismui/styles";

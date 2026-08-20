@@ -5,7 +5,7 @@ import type {ButtonProps} from "@khulnasoft/react";
 import type {StaticImageData} from "next/image";
 
 import {BucketPaint, Palette} from "@gravity-ui/icons";
-import {Button, Description, Label, ListBox, Popover, Switch, buttonVariants} from "@prismuisoft/react";
+import {Button, Description, Label, ListBox, Popover, Switch, buttonVariants} from "@prismui/react";
 import LinkRoot from "fumadocs-core/link";
 import Image from "next/image";
 import {useCallback, useEffect, useMemo, useState} from "react";

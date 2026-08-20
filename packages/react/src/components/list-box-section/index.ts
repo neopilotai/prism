@@ -26,4 +26,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {listboxSectionVariants} from "@khulnasoft/styles";
 
-export type {ListBoxSectionVariants} from "@prismuisoft/styles";
+export type {ListBoxSectionVariants} from "@prismui/styles";

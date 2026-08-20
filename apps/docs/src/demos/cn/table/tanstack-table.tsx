@@ -3,7 +3,7 @@
 import type {SortDescriptor} from "@khulnasoft/react";
 import type {SortingState} from "@tanstack/react-table";
 
-import {Chip, Pagination, Table} from "@prismuisoft/react";
+import {Chip, Pagination, Table} from "@prismui/react";
 import {
   createColumnHelper,
   flexRender,

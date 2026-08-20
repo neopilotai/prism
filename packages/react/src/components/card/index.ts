@@ -44,4 +44,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {cardVariants} from "@khulnasoft/styles";
 
-export type {CardVariants} from "@prismuisoft/styles";
+export type {CardVariants} from "@prismui/styles";

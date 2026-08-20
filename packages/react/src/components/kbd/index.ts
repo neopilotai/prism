@@ -30,7 +30,7 @@ export type {KbdRootProps, KbdAbbrProps, KbdContentProps, KbdRootProps as KbdPro
  * -----------------------------------------------------------------------------------------------*/
 export {kbdVariants} from "@khulnasoft/styles";
 
-export type {KbdVariants} from "@prismuisoft/styles";
+export type {KbdVariants} from "@prismui/styles";
 
 /* -------------------------------------------------------------------------------------------------
  * Constants

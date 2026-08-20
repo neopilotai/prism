@@ -37,4 +37,4 @@ export {ToggleButtonGroupContext, TOGGLE_BUTTON_GROUP_CHILD} from "./toggle-butt
  * -----------------------------------------------------------------------------------------------*/
 export {toggleButtonGroupVariants} from "@khulnasoft/styles";
 
-export type {ToggleButtonGroupVariants} from "@prismuisoft/styles";
+export type {ToggleButtonGroupVariants} from "@prismui/styles";

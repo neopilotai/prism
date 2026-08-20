@@ -3,7 +3,7 @@
 import type {ColorSwatchVariants} from "@khulnasoft/styles";
 import type {CSSProperties, ComponentPropsWithRef} from "react";
 
-import {colorSwatchVariants} from "@prismuisoft/styles";
+import {colorSwatchVariants} from "@prismui/styles";
 import {ColorSwatch as ColorSwatchPrimitive} from "react-aria-components/ColorSwatch";
 
 import {composeTwRenderProps} from "../../utils/compose";

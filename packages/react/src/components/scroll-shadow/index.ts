@@ -30,7 +30,7 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {scrollShadowVariants} from "@khulnasoft/styles";
 
-export type {ScrollShadowVariants} from "@prismuisoft/styles";
+export type {ScrollShadowVariants} from "@prismui/styles";
 
 /* -------------------------------------------------------------------------------------------------
  * Hooks

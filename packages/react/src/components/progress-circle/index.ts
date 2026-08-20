@@ -48,4 +48,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {progressCircleVariants} from "@khulnasoft/styles";
 
-export type {ProgressCircleVariants} from "@prismuisoft/styles";
+export type {ProgressCircleVariants} from "@prismui/styles";

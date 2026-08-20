@@ -2,7 +2,7 @@
 
 import type {Selection} from "@khulnasoft/react";
 
-import {Button, Dropdown, Header, Kbd, Label, Separator} from "@prismuisoft/react";
+import {Button, Dropdown, Header, Kbd, Label, Separator} from "@prismui/react";
 import {useState} from "react";
 
 export function WithSectionLevelSelection() {

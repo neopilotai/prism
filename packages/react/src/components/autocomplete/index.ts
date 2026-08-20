@@ -63,4 +63,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {autocompleteVariants} from "@khulnasoft/styles";
 
-export type {AutocompleteVariants} from "@prismuisoft/styles";
+export type {AutocompleteVariants} from "@prismui/styles";

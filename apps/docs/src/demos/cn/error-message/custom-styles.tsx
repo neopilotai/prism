@@ -2,7 +2,7 @@
 
 import type {Key} from "@khulnasoft/react";
 
-import {Description, ErrorMessage, Label, Tag, TagGroup} from "@prismuisoft/react";
+import {Description, ErrorMessage, Label, Tag, TagGroup} from "@prismui/react";
 import {useMemo, useState} from "react";
 
 export function CustomStyles() {

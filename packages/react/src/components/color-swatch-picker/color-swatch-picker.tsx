@@ -5,7 +5,7 @@ import type {ColorSwatchPickerVariants} from "@khulnasoft/styles";
 import type {CSSProperties, ComponentPropsWithRef} from "react";
 import type {ColorSwatchPickerItemRenderProps} from "react-aria-components/ColorSwatchPicker";
 
-import {colorSwatchPickerVariants} from "@prismuisoft/styles";
+import {colorSwatchPickerVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {
   ColorSwatchPickerItem as ColorSwatchPickerItemPrimitive,

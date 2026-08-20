@@ -2,7 +2,7 @@
 
 import type {Selection} from "@khulnasoft/react";
 
-import {Button, Dropdown, Label} from "@prismuisoft/react";
+import {Button, Dropdown, Label} from "@prismui/react";
 import {useState} from "react";
 
 export function Controlled() {

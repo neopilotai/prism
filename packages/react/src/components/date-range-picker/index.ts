@@ -53,4 +53,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {dateRangePickerVariants} from "@khulnasoft/styles";
 
-export type {DateRangePickerVariants} from "@prismuisoft/styles";
+export type {DateRangePickerVariants} from "@prismui/styles";

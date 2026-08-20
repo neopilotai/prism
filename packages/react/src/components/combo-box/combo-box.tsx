@@ -7,7 +7,7 @@ import type {ComponentPropsWithRef, ReactElement, ReactNode} from "react";
 import type {ButtonProps} from "react-aria-components/Button";
 import type {ComboBoxValueRenderProps} from "react-aria-components/ComboBox";
 
-import {comboBoxVariants} from "@prismuisoft/styles";
+import {comboBoxVariants} from "@prismui/styles";
 import React, {Children, createContext, isValidElement, use} from "react";
 import {useIsHidden} from "react-aria/private/collections/Hidden";
 import {Button} from "react-aria-components/Button";

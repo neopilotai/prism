@@ -38,4 +38,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {tooltipVariants} from "@khulnasoft/styles";
 
-export type {TooltipVariants} from "@prismuisoft/styles";
+export type {TooltipVariants} from "@prismui/styles";

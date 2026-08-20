@@ -5,7 +5,7 @@ import type {Item, Node} from "fumadocs-core/page-tree";
 import type {SearchItemType, SharedProps} from "fumadocs-ui/components/dialog/search";
 import type {ComponentProps} from "react";
 
-import {Chip, Kbd, Tag, TagGroup} from "@prismuisoft/react";
+import {Chip, Kbd, Tag, TagGroup} from "@prismui/react";
 import {useDocsSearch} from "fumadocs-core/search/client";
 import {
   SearchDialog,

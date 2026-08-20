@@ -2,7 +2,7 @@
 
 import type {Key} from "@khulnasoft/react";
 
-import {Avatar, Description, EmptyState, Label, Tag, TagGroup, useListData} from "@prismuisoft/react";
+import {Avatar, Description, EmptyState, Label, Tag, TagGroup, useListData} from "@prismui/react";
 
 export function TagGroupWithListData() {
   type User = {

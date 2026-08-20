@@ -6,7 +6,7 @@ import type {SurfaceVariants} from "../surface";
 import type {AutocompleteVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode, RefObject} from "react";
 
-import {autocompleteVariants} from "@prismuisoft/styles";
+import {autocompleteVariants} from "@prismui/styles";
 import {mergeRefs, useResizeObserver} from "@react-aria/utils";
 import React, {createContext, use, useCallback, useRef, useState} from "react";
 import {useIsHidden} from "react-aria/private/collections/Hidden";

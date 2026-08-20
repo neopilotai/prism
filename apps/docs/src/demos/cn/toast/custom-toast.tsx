@@ -10,7 +10,7 @@ import {
   ToastIndicator,
   ToastQueue,
   ToastTitle,
-} from "@prismuisoft/react";
+} from "@prismui/react";
 
 export function CustomToast() {
   const customQueue = new ToastQueue();

@@ -37,4 +37,4 @@ export {ButtonGroupContext, BUTTON_GROUP_CHILD} from "./button-group";
  * -----------------------------------------------------------------------------------------------*/
 export {buttonGroupVariants} from "@khulnasoft/styles";
 
-export type {ButtonGroupVariants} from "@prismuisoft/styles";
+export type {ButtonGroupVariants} from "@prismui/styles";

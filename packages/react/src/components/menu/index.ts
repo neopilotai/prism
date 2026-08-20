@@ -36,4 +36,4 @@ export type {MenuRootProps, MenuRootProps as MenuProps} from "./menu";
  * -----------------------------------------------------------------------------------------------*/
 export {menuVariants} from "@khulnasoft/styles";
 
-export type {MenuVariants} from "@prismuisoft/styles";
+export type {MenuVariants} from "@prismui/styles";

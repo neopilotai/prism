@@ -2,7 +2,7 @@
 
 import type {Key} from "@khulnasoft/react";
 
-import {Autocomplete, EmptyState, Label, ListBox, SearchField, useFilter} from "@prismuisoft/react";
+import {Autocomplete, EmptyState, Label, ListBox, SearchField, useFilter} from "@prismui/react";
 import {useState} from "react";
 
 export function ControlledMultiple() {

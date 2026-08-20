@@ -29,4 +29,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {errorMessageVariants} from "@khulnasoft/styles";
 
-export type {ErrorMessageVariants} from "@prismuisoft/styles";
+export type {ErrorMessageVariants} from "@prismui/styles";

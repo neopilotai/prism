@@ -2,7 +2,7 @@
 
 import type {Key} from "@khulnasoft/react";
 
-import {Label, ListBox, Select} from "@prismuisoft/react";
+import {Label, ListBox, Select} from "@prismui/react";
 import React from "react";
 
 export function ControlledMultiple() {

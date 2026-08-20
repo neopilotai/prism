@@ -2,7 +2,7 @@
 
 import type {Selection} from "@khulnasoft/react";
 
-import {Checkbox, Table} from "@prismuisoft/react";
+import {Checkbox, Table} from "@prismui/react";
 import {useState} from "react";
 
 const users = [

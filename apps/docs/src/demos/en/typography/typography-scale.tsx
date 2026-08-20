@@ -58,7 +58,7 @@ const scale = [
   {
     label: "code",
     meta: "14px / mono",
-    sample: "pnpm add @prismuisoft/react",
+    sample: "pnpm add @prismui/react",
     type: "code" as const,
   },
 ] as const;

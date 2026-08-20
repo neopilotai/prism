@@ -35,4 +35,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {avatarVariants} from "@khulnasoft/styles";
 
-export type {AvatarVariants} from "@prismuisoft/styles";
+export type {AvatarVariants} from "@prismui/styles";

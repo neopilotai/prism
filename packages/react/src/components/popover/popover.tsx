@@ -5,7 +5,7 @@ import type {SurfaceVariants} from "../surface";
 import type {PopoverVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {popoverVariants} from "@prismuisoft/styles";
+import {popoverVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {
   Dialog as DialogPrimitive,

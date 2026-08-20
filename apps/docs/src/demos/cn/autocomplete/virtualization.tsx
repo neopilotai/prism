@@ -12,7 +12,7 @@ import {
   SearchField,
   Virtualizer,
   useFilter,
-} from "@prismuisoft/react";
+} from "@prismui/react";
 import {useMemo, useState} from "react";
 
 interface User {

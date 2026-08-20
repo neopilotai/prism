@@ -14,7 +14,7 @@ import {
   Switch,
   TimeField,
   useLocale,
-} from "@prismuisoft/react";
+} from "@prismui/react";
 import {
   DateFormatter,
   getLocalTimeZone,

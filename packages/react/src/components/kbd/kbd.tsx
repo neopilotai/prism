@@ -5,7 +5,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {KbdVariants} from "@khulnasoft/styles";
 import type {ReactNode} from "react";
 
-import {kbdVariants} from "@prismuisoft/styles";
+import {kbdVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 
 import {composeSlotClassName} from "../../utils/compose";

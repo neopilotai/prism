@@ -4,7 +4,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {SearchFieldVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {searchFieldVariants} from "@prismuisoft/styles";
+import {searchFieldVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {Group as GroupPrimitive} from "react-aria-components/Group";
 import {Input as InputPrimitive} from "react-aria-components/Input";

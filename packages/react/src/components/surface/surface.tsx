@@ -4,7 +4,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {SurfaceVariants} from "@khulnasoft/styles";
 import type {ReactNode} from "react";
 
-import {surfaceVariants} from "@prismuisoft/styles";
+import {surfaceVariants} from "@prismui/styles";
 import React, {createContext} from "react";
 
 import {dom} from "../../utils/dom";

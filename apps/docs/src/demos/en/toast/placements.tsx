@@ -2,7 +2,7 @@
 
 import type {ToastVariants} from "@khulnasoft/react";
 
-import {Button, Toast, ToastQueue} from "@prismuisoft/react";
+import {Button, Toast, ToastQueue} from "@prismui/react";
 
 type Placement = NonNullable<ToastVariants["placement"]>;
 

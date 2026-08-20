@@ -5,7 +5,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {AccordionVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {accordionVariants} from "@prismuisoft/styles";
+import {accordionVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {Button} from "react-aria-components/Button";
 import {

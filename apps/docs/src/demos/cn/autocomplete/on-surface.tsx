@@ -10,7 +10,7 @@ import {
   SearchField,
   Surface,
   useFilter,
-} from "@prismuisoft/react";
+} from "@prismui/react";
 import {useState} from "react";
 
 export function OnSurface() {

@@ -3,7 +3,7 @@
 import type {InputGroupVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {inputGroupVariants} from "@prismuisoft/styles";
+import {inputGroupVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 import {Group as GroupPrimitive} from "react-aria-components/Group";
 import {Input as InputPrimitive} from "react-aria-components/Input";

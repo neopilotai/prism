@@ -47,4 +47,4 @@ export type {TimeFieldRootProps, TimeFieldRootProps as TimeFieldProps} from "./t
  * -----------------------------------------------------------------------------------------------*/
 export {timeFieldVariants} from "@khulnasoft/styles";
 
-export type {TimeFieldVariants} from "@prismuisoft/styles";
+export type {TimeFieldVariants} from "@prismui/styles";

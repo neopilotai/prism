@@ -2,7 +2,7 @@
 
 import type {Key} from "@khulnasoft/react";
 
-import {ComboBox, Input, Label, ListBox} from "@prismuisoft/react";
+import {ComboBox, Input, Label, ListBox} from "@prismui/react";
 import {useState} from "react";
 
 export function Controlled() {

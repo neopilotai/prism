@@ -2,7 +2,7 @@
 
 import type {ColorSpace, Key} from "@khulnasoft/react";
 
-import {ColorArea, Label, ListBox, Select, parseColor} from "@prismuisoft/react";
+import {ColorArea, Label, ListBox, Select, parseColor} from "@prismui/react";
 import {useState} from "react";
 
 type ColorChannel = "hue" | "saturation" | "brightness" | "lightness" | "red" | "green" | "blue";

@@ -38,4 +38,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {fieldsetVariants} from "@khulnasoft/styles";
 
-export type {FieldsetVariants} from "@prismuisoft/styles";
+export type {FieldsetVariants} from "@prismui/styles";

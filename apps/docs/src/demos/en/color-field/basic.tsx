@@ -2,7 +2,7 @@
 
 import type {Color} from "@khulnasoft/react";
 
-import {ColorField, ColorSwatch, Label, parseColor} from "@prismuisoft/react";
+import {ColorField, ColorSwatch, Label, parseColor} from "@prismui/react";
 import {useState} from "react";
 
 export function Basic() {

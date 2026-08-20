@@ -4,7 +4,7 @@ import type {ColorFieldVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {Color} from "react-aria-components/ColorArea";
 
-import {colorFieldVariants} from "@prismuisoft/styles";
+import {colorFieldVariants} from "@prismui/styles";
 import React from "react";
 import {ColorField as ColorFieldPrimitive} from "react-aria-components/ColorField";
 

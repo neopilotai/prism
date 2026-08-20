@@ -4,7 +4,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {ChipVariants} from "@khulnasoft/styles";
 import type {ReactNode} from "react";
 
-import {chipVariants} from "@prismuisoft/styles";
+import {chipVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 
 import {composeSlotClassName} from "../../utils/compose";

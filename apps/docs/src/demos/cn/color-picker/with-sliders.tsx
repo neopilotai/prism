@@ -2,7 +2,7 @@
 
 import type {ColorChannel, ColorSpace} from "@khulnasoft/react";
 
-import {ColorPicker, ColorSlider, ColorSwatch, Label, ListBox, Select} from "@prismuisoft/react";
+import {ColorPicker, ColorSlider, ColorSwatch, Label, ListBox, Select} from "@prismui/react";
 import {useState} from "react";
 
 const CHANNEL_LABELS: Record<ColorChannel, string> = {

@@ -3,7 +3,7 @@
 import type {ButtonProps} from "@khulnasoft/react";
 import type {SVGProps} from "react";
 
-import {Button, Disclosure, DisclosureGroup, useDisclosureGroupNavigation} from "@prismuisoft/react";
+import {Button, Disclosure, DisclosureGroup, useDisclosureGroupNavigation} from "@prismui/react";
 import React from "react";
 import {cn} from "tailwind-variants";
 

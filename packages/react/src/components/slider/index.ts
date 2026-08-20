@@ -51,4 +51,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {sliderVariants} from "@khulnasoft/styles";
 
-export type {SliderVariants} from "@prismuisoft/styles";
+export type {SliderVariants} from "@prismui/styles";

@@ -5,7 +5,7 @@ import type {SurfaceVariants} from "../surface";
 import type {AlertVariants} from "@khulnasoft/styles";
 import type {ReactNode} from "react";
 
-import {alertVariants} from "@prismuisoft/styles";
+import {alertVariants} from "@prismui/styles";
 import React, {createContext, use} from "react";
 
 import {composeSlotClassName} from "../../utils/compose";

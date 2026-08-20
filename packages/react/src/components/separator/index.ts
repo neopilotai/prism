@@ -26,4 +26,4 @@ export type {SeparatorRootProps, SeparatorRootProps as SeparatorProps} from "./s
  * -----------------------------------------------------------------------------------------------*/
 export {separatorVariants} from "@khulnasoft/styles";
 
-export type {SeparatorVariants} from "@prismuisoft/styles";
+export type {SeparatorVariants} from "@prismui/styles";
