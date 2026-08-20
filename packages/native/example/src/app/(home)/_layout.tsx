@@ -1,0 +1,218 @@
+import { useLingui } from '@lingui/react/macro';
+import { isLiquidGlassAvailable } from 'expo-glass-effect';
+import { Stack } from 'expo-router';
+import { useThemeColor, useToast } from 'heroui-native';
+import { useCallback, useEffect, useState } from 'react';
+import { Image, Platform, StyleSheet, View } from 'react-native';
+import { useReducedMotion } from 'react-native-reanimated';
+import LogoDark from '../../../assets/logo-dark.png';
+import LogoLight from '../../../assets/logo-light.png';
+import { type UpdateBottomSheetMode } from '../../components/bottom-sheet/update-bottom-sheet';
+import { SettingsBottomSheet } from '../../components/settings/settings-bottom-sheet';
+import { SettingsButton } from '../../components/settings/settings-button';
+import { ThemeToggle } from '../../components/theme-toggle';
+import { useAppTheme } from '../../contexts/app-theme-context';
+import { COMPONENTS } from '../../helpers/data/components';
+import { useOtaUpdate } from '../../helpers/hooks/use-ota-update';
+import { useVersionCheck } from '../../helpers/hooks/use-version-check';
+
+export default function Layout() {
+  const { t } = useLingui();
+  const { isDark } = useAppTheme();
+  const [themeColorForeground, themeColorBackground] = useThemeColor([
+    'foreground',
+    'background',
+  ]);
+
+  const reducedMotion = useReducedMotion();
+  const { toast } = useToast();
+
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
+  // -- Update management state --
+  const [isVersionChecked, setIsVersionChecked] = useState(false);
+  const [isNewVersionAvailable, setIsNewVersionAvailable] = useState(false);
+  const [_updateSheetOpen, setUpdateSheetOpen] = useState(false);
+  const [_updateSheetMode, setUpdateSheetMode] =
+    useState<UpdateBottomSheetMode>('new-version');
+
+  const handleVersionChecked = useCallback((isNew: boolean) => {
+    setIsVersionChecked(true);
+    setIsNewVersionAvailable(isNew);
+
+    if (isNew) {
+      setUpdateSheetMode('new-version');
+      setUpdateSheetOpen(true);
+    }
+  }, []);
+
+  const handleOtaUpdateReady = useCallback(() => {
+    setUpdateSheetMode('ota-update');
+    setUpdateSheetOpen(true);
+  }, []);
+
+  useVersionCheck({ onVersionChecked: handleVersionChecked });
+
+  useOtaUpdate({
+    isVersionChecked,
+    isNewVersionAvailable,
+    onUpdateReady: handleOtaUpdateReady,
+  });
+
+  useEffect(() => {
+    if (reducedMotion) {
+      toast.show({
+        duration: 'persistent',
+        variant: 'warning',
+        label: t`Reduce motion enabled`,
+        description: t`All animations will be disabled`,
+        actionLabel: t`Close`,
+        onActionPress: ({ hide }) => hide(),
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reducedMotion]);
+
+  const _renderTitle = () => {
+    return (
+      <Image
+        source={isDark ? LogoLight : LogoDark}
+        style={styles.logo}
+        resizeMode="contain"
+      />
+    );
+  };
+
+  const _renderThemeToggle = useCallback(() => <ThemeToggle />, []);
+
+  const handleOpenSettings = useCallback(() => {
+    setIsSettingsOpen(true);
+  }, []);
+
+  const _renderSettingsButton = useCallback(
+    () => (
+      <SettingsButton
+        onPress={handleOpenSettings}
+        accessibilityLabel={t`Open settings`}
+      />
+    ),
+    [handleOpenSettings, t]
+  );
+
+  return (
+    <View className="flex-1 bg-background">
+      <Stack
+        screenOptions={{
+          headerTitleAlign: 'center',
+          headerTransparent: true,
+          headerBlurEffect: isDark ? 'dark' : 'light',
+          headerTintColor: themeColorForeground,
+          headerStyle: {
+            backgroundColor: Platform.select({
+              ios: undefined,
+              android: themeColorBackground,
+            }),
+          },
+          headerTitleStyle: {
+            fontFamily: 'Inter_600SemiBold',
+          },
+          headerRight: _renderThemeToggle,
+          headerBackButtonDisplayMode: 'generic',
+          gestureEnabled: true,
+          gestureDirection: 'horizontal',
+          fullScreenGestureEnabled: isLiquidGlassAvailable() ? false : true,
+          contentStyle: {
+            backgroundColor: themeColorBackground,
+          },
+        }}
+      >
+        {/*
+         * `headerLeft` is set per-screen rather than in `screenOptions`: a
+         * global value would replace the native back button on every pushed
+         * screen.
+         */}
+        <Stack.Screen
+          name="index"
+          options={{
+            headerTitle: _renderTitle,
+            headerLeft: _renderSettingsButton,
+          }}
+        />
+        <Stack.Screen
+          name="components/index"
+          options={{ headerTitle: t`Components` }}
+        />
+        {COMPONENTS.map((component) => (
+          <Stack.Screen
+            key={component.path}
+            name={`components/${component.path}`}
+            options={{ title: component.title }}
+          />
+        ))}
+        <Stack.Screen
+          name="components/bottom-sheet-native-modal"
+          options={{
+            title: t`BottomSheet Native Modal`,
+            presentation: 'formSheet',
+          }}
+        />
+        <Stack.Screen
+          name="components/dialog-native-modal"
+          options={{
+            title: t`Dialog Native Modal`,
+            presentation: 'formSheet',
+          }}
+        />
+        <Stack.Screen
+          name="components/popover-native-modal"
+          options={{
+            title: t`Popover Native Modal`,
+            presentation: 'formSheet',
+          }}
+        />
+        <Stack.Screen
+          name="components/select-native-modal"
+          options={{
+            title: t`Select Native Modal`,
+            presentation: 'formSheet',
+          }}
+        />
+        <Stack.Screen
+          name="components/toast-native-modal"
+          options={{
+            title: t`Toast From Native Modal`,
+            presentation: 'formSheet',
+          }}
+        />
+        <Stack.Screen
+          name="themes/index"
+          options={{ headerTitle: t`Themes` }}
+        />
+        <Stack.Screen
+          name="showcases"
+          options={{
+            headerShown: false,
+            animation: 'slide_from_bottom',
+            animationDuration: 300,
+          }}
+        />
+      </Stack>
+      <SettingsBottomSheet
+        isOpen={isSettingsOpen}
+        onOpenChange={setIsSettingsOpen}
+      />
+      {/* <UpdateBottomSheet
+        isOpen={updateSheetOpen}
+        onOpenChange={setUpdateSheetOpen}
+        mode={updateSheetMode}
+      /> */}
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  logo: {
+    width: 80,
+    height: 24,
+  },
+});
