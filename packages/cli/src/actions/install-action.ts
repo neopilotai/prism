@@ -11,7 +11,7 @@ import {getPackageInfo, transformPackageDetail} from '@helpers/package';
 import {getUpgradeVersion} from '@helpers/upgrade';
 import {getVersionAndMode, strip} from '@helpers/utils';
 import {resolver} from 'src/constants/path';
-import {HEROUI_PACKAGES} from 'src/constants/required';
+import {PRISMUI_PACKAGES} from 'src/constants/required';
 import {getSelect} from 'src/prompts';
 import {getCacheExecData} from 'src/scripts/cache/cache';
 import {getLatestVersion} from 'src/scripts/helpers';
@@ -55,7 +55,7 @@ export async function installAction(options: CommandOptions) {
 
   const {allDependencies, allDependenciesKeys} = getPackageInfo(packagePath);
 
-  const missing = HEROUI_PACKAGES.filter((pkg) => !allDependenciesKeys.has(pkg));
+  const missing = PRISMUI_PACKAGES.filter((pkg) => !allDependenciesKeys.has(pkg));
 
   if (!missing.length) {
     Logger.success('✅ @prismui/react and @prismui/styles are already installed');

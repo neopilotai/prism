@@ -2,7 +2,7 @@ import type {SAFE_ANY} from '@helpers/type';
 
 import {Logger} from '@helpers/logger';
 
-import {HEROUI_PREFIX, NEXTUI_PREFIX} from '../../../constants/prefix';
+import {PRISMUI_PREFIX, NEXTUI_PREFIX} from '../../../constants/prefix';
 import {fetchPackageLatestVersion} from '../../https';
 import {safeParseJson} from '../../parse';
 import {getStore, updateAffectedFiles, writeFileAndUpdateStore} from '../../store';
@@ -17,7 +17,7 @@ export function detectIndent(content: string): number {
 }
 
 function filterHeroUiPkgs(pkgs: string[]) {
-  return pkgs.filter((pkg) => pkg.includes(HEROUI_PREFIX) || pkg.includes(NEXTUI_PREFIX));
+  return pkgs.filter((pkg) => pkg.includes(PRISMUI_PREFIX) || pkg.includes(NEXTUI_PREFIX));
 }
 
 export async function migrateJson(files: string[]) {
@@ -28,7 +28,7 @@ export async function migrateJson(files: string[]) {
         const dirtyFlag = content.includes(NEXTUI_PREFIX);
 
         if (dirtyFlag) {
-          const replacedContent = content.replaceAll(NEXTUI_PREFIX, HEROUI_PREFIX);
+          const replacedContent = content.replaceAll(NEXTUI_PREFIX, PRISMUI_PREFIX);
           const json = safeParseJson(replacedContent);
 
           try {
@@ -76,7 +76,7 @@ export function migrateNextuiToHeroui(json: Record<string, SAFE_ANY>) {
   if (dependencies) {
     Object.keys(dependencies).forEach((key) => {
       if (key.includes(NEXTUI_PREFIX)) {
-        dependencies[key.replace(NEXTUI_PREFIX, HEROUI_PREFIX)] = dependencies[key];
+        dependencies[key.replace(NEXTUI_PREFIX, PRISMUI_PREFIX)] = dependencies[key];
         delete dependencies[key];
       }
     });
@@ -85,7 +85,7 @@ export function migrateNextuiToHeroui(json: Record<string, SAFE_ANY>) {
   if (devDependencies) {
     Object.keys(devDependencies).forEach((key) => {
       if (key.includes(NEXTUI_PREFIX)) {
-        devDependencies[key.replace(NEXTUI_PREFIX, HEROUI_PREFIX)] = devDependencies[key];
+        devDependencies[key.replace(NEXTUI_PREFIX, PRISMUI_PREFIX)] = devDependencies[key];
         delete devDependencies[key];
       }
     });

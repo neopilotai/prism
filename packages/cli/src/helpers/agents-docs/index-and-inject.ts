@@ -112,12 +112,12 @@ export function generateHerouiMdIndex(
   return parts.join('|');
 }
 
-const REACT_START_MARKER = '<!-- HEROUI-REACT-AGENTS-MD-START -->';
-const REACT_END_MARKER = '<!-- HEROUI-REACT-AGENTS-MD-END -->';
-const NATIVE_START_MARKER = '<!-- HEROUI-NATIVE-AGENTS-MD-START -->';
-const NATIVE_END_MARKER = '<!-- HEROUI-NATIVE-AGENTS-MD-END -->';
-const MIGRATION_START_MARKER = '<!-- HEROUI-MIGRATION-AGENTS-MD-START -->';
-const MIGRATION_END_MARKER = '<!-- HEROUI-MIGRATION-AGENTS-MD-END -->';
+const REACT_START_MARKER = '<!-- PRISMUI-REACT-AGENTS-MD-START -->';
+const REACT_END_MARKER = '<!-- PRISMUI-REACT-AGENTS-MD-END -->';
+const NATIVE_START_MARKER = '<!-- PRISMUI-NATIVE-AGENTS-MD-START -->';
+const NATIVE_END_MARKER = '<!-- PRISMUI-NATIVE-AGENTS-MD-END -->';
+const MIGRATION_START_MARKER = '<!-- PRISMUI-MIGRATION-AGENTS-MD-START -->';
+const MIGRATION_END_MARKER = '<!-- PRISMUI-MIGRATION-AGENTS-MD-END -->';
 
 function getMarkers(library: 'react' | 'native' | 'migration'): {start: string; end: string} {
   if (library === 'react') {

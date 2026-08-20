@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useEffect, useSyncExternalStore } from 'react';
 import { Platform, type View, type ViewStyle } from 'react-native';
 
-const DEFAULT_PORTAL_HOST = 'HEROUI_NATIVE_DEFAULT_HOST_NAME';
+const DEFAULT_PORTAL_HOST = 'PRISMUI_NATIVE_DEFAULT_HOST_NAME';
 
 type PortalMap = Map<string, React.ReactNode>;
 type PortalHostMap = Map<string, PortalMap>;

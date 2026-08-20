@@ -96,15 +96,15 @@ describe('prismui-agents-md', () => {
       const content = '# My project\n';
       const out = injectIntoClaudeMd(content, undefined, undefined, 'migration-index');
 
-      expect(out).toContain('<!-- HEROUI-MIGRATION-AGENTS-MD-START -->');
+      expect(out).toContain('<!-- PRISMUI-MIGRATION-AGENTS-MD-START -->');
       expect(out).toContain('migration-index');
-      expect(out).toContain('<!-- HEROUI-MIGRATION-AGENTS-MD-END -->');
+      expect(out).toContain('<!-- PRISMUI-MIGRATION-AGENTS-MD-END -->');
       expect(out).toContain('# My project');
     });
 
     it('replaces existing migration block when present', () => {
       const content =
-        'pre\n<!-- HEROUI-MIGRATION-AGENTS-MD-START -->\nold\n<!-- HEROUI-MIGRATION-AGENTS-MD-END -->\npost';
+        'pre\n<!-- PRISMUI-MIGRATION-AGENTS-MD-START -->\nold\n<!-- PRISMUI-MIGRATION-AGENTS-MD-END -->\npost';
       const out = injectIntoClaudeMd(content, undefined, undefined, 'new-migration');
 
       expect(out).toContain('pre');
@@ -117,9 +117,9 @@ describe('prismui-agents-md', () => {
       const content = '';
       const out = injectIntoClaudeMd(content, 'react-index', undefined, 'migration-index');
 
-      expect(out).toContain('<!-- HEROUI-REACT-AGENTS-MD-START -->');
+      expect(out).toContain('<!-- PRISMUI-REACT-AGENTS-MD-START -->');
       expect(out).toContain('react-index');
-      expect(out).toContain('<!-- HEROUI-MIGRATION-AGENTS-MD-START -->');
+      expect(out).toContain('<!-- PRISMUI-MIGRATION-AGENTS-MD-START -->');
       expect(out).toContain('migration-index');
     });
 

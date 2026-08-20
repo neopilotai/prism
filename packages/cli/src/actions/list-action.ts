@@ -3,7 +3,7 @@ import type {CommandOptions} from '../helpers/type';
 import {Logger} from '@helpers/logger';
 import {outputComponents} from '@helpers/output-info';
 import {getPackageInfo, transformPackageDetail} from '@helpers/package';
-import {HEROUI_PACKAGES} from 'src/constants/required';
+import {PRISMUI_PACKAGES} from 'src/constants/required';
 
 import {resolver} from '../constants/path';
 
@@ -13,7 +13,7 @@ export async function listAction(options: CommandOptions) {
   try {
     const {allDependencies, allDependenciesKeys} = getPackageInfo(packagePath);
 
-    const installed = HEROUI_PACKAGES.filter((pkg) => allDependenciesKeys.has(pkg));
+    const installed = PRISMUI_PACKAGES.filter((pkg) => allDependenciesKeys.has(pkg));
 
     if (!installed.length) {
       Logger.warn(

@@ -114,7 +114,7 @@ async function runScript(scriptName, args = null, envVars = null, timeout = 3000
 
 async function testListComponents(apiBase, verbose = false) {
   const name = "list_components";
-  const envVars = {HEROUI_API_BASE: apiBase};
+  const envVars = {PRISMUI_API_BASE: apiBase};
 
   const [stdout, _stderr, _code, duration] = await runScript("list_components.mjs", null, envVars);
 
@@ -144,7 +144,7 @@ async function testListComponents(apiBase, verbose = false) {
 
 async function testGetComponentDocs(apiBase, verbose = false) {
   const name = "get_component_docs";
-  const envVars = {HEROUI_API_BASE: apiBase};
+  const envVars = {PRISMUI_API_BASE: apiBase};
 
   // Test with single component
   const [stdout, stderr, _code, duration] = await runScript(
@@ -173,7 +173,7 @@ async function testGetComponentDocs(apiBase, verbose = false) {
 
 async function testGetComponentDocsMultiple(apiBase, verbose = false) {
   const name = "get_component_docs_multiple";
-  const envVars = {HEROUI_API_BASE: apiBase};
+  const envVars = {PRISMUI_API_BASE: apiBase};
 
   const [stdout, _stderr, _code, duration] = await runScript(
     "get_component_docs.mjs",
@@ -222,7 +222,7 @@ async function testGetComponentDocsMultiple(apiBase, verbose = false) {
 
 async function testGetSource(apiBase, verbose = false) {
   const name = "get_source";
-  const envVars = {HEROUI_API_BASE: apiBase};
+  const envVars = {PRISMUI_API_BASE: apiBase};
 
   const [stdout, _stderr, _code, duration] = await runScript("get_source.mjs", ["Button"], envVars);
 
@@ -246,7 +246,7 @@ async function testGetSource(apiBase, verbose = false) {
 
 async function testGetStyles(apiBase, verbose = false) {
   const name = "get_styles";
-  const envVars = {HEROUI_API_BASE: apiBase};
+  const envVars = {PRISMUI_API_BASE: apiBase};
 
   const [stdout, _stderr, _code, duration] = await runScript("get_styles.mjs", ["Button"], envVars);
 
@@ -271,7 +271,7 @@ async function testGetStyles(apiBase, verbose = false) {
 
 async function testGetTheme(apiBase, verbose = false) {
   const name = "get_theme";
-  const envVars = {HEROUI_API_BASE: apiBase};
+  const envVars = {PRISMUI_API_BASE: apiBase};
 
   const [stdout, _stderr, _code, duration] = await runScript("get_theme.mjs", null, envVars);
 
@@ -296,7 +296,7 @@ async function testGetTheme(apiBase, verbose = false) {
 
 async function testGetDocs(apiBase, verbose = false) {
   const name = "get_docs";
-  const envVars = {HEROUI_API_BASE: apiBase};
+  const envVars = {PRISMUI_API_BASE: apiBase};
 
   const [stdout, _stderr, _code, duration] = await runScript(
     "get_docs.mjs",
@@ -320,7 +320,7 @@ async function testGetDocs(apiBase, verbose = false) {
 
 async function testGetDocsUsage(apiBase, verbose = false) {
   const name = "get_docs_usage";
-  const envVars = {HEROUI_API_BASE: apiBase};
+  const envVars = {PRISMUI_API_BASE: apiBase};
 
   const [_stdout, stderr, _code, duration] = await runScript("get_docs.mjs", null, envVars);
 
@@ -341,7 +341,7 @@ async function testGetDocsUsage(apiBase, verbose = false) {
 
 async function testErrorHandling(apiBase, verbose = false) {
   const name = "error_handling";
-  const envVars = {HEROUI_API_BASE: apiBase};
+  const envVars = {PRISMUI_API_BASE: apiBase};
 
   const [stdout, stderr, _code, duration] = await runScript(
     "get_component_docs.mjs",

@@ -400,7 +400,7 @@ prismui agents-md --migration --output AGENTS.md
 
 1. Clones documentation from the `v3` branch using git sparse-checkout
 2. Generates a compact index of doc and demo files
-3. Injects the index into your markdown file between markers (`<!-- HEROUI-REACT-AGENTS-MD-START -->` / `<!-- HEROUI-REACT-AGENTS-MD-END -->`, and similar for Native and Migration)
+3. Injects the index into your markdown file between markers (`<!-- PRISMUI-REACT-AGENTS-MD-START -->` / `<!-- PRISMUI-REACT-AGENTS-MD-END -->`, and similar for Native and Migration)
 4. Adds `.prismui-docs/` to `.gitignore`
 
 Only one of `--react`, `--native`, or `--migration` can be selected at a time.
@@ -408,7 +408,7 @@ Only one of `--react`, `--native`, or `--migration` can be selected at a time.
 For more details, see [AGENTS.md](/docs/react/getting-started/agents-md).
 
 <Callout>
-  The `agents-md` command collects anonymous usage data (selection, output file names, duration, success or error). Set `HEROUI_ANALYTICS_DISABLED=1` to opt out.
+  The `agents-md` command collects anonymous usage data (selection, output file names, duration, success or error). Set `PRISMUI_ANALYTICS_DISABLED=1` to opt out.
 </Callout>
 
 ## Reporting issues

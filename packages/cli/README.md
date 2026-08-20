@@ -63,7 +63,7 @@ The `agents-md` command collects anonymous usage data.
 
 **What we collect:** Selection (react/native/both), output file names, duration, success or error. No file paths, or project contents are collected.
 
-**Opt out:** Set `HEROUI_ANALYTICS_DISABLED=1` in your environment or shell profile.
+**Opt out:** Set `PRISMUI_ANALYTICS_DISABLED=1` in your environment or shell profile.
 
 ## Commands
 
@@ -423,9 +423,9 @@ prismui agents-md --react --ssh --output AGENTS.md
 1. **Downloads Documentation**: Clones the PrismUI repository using git sparse-checkout to download only the documentation files
 2. **Generates Index**: Creates a compact index of all documentation files organized by directory
 3. **Injects into Markdown**: Injects the index into your specified markdown file (e.g., `AGENTS.md`) with special markers:
-   - `<!-- HEROUI-REACT-AGENTS-MD-START -->` / `<!-- HEROUI-REACT-AGENTS-MD-END -->` for React docs
-   - `<!-- HEROUI-NATIVE-AGENTS-MD-START -->` / `<!-- HEROUI-NATIVE-AGENTS-MD-END -->` for Native docs
-   - `<!-- HEROUI-MIGRATION-AGENTS-MD-START -->` / `<!-- HEROUI-MIGRATION-AGENTS-MD-END -->` for Migration docs
+   - `<!-- PRISMUI-REACT-AGENTS-MD-START -->` / `<!-- PRISMUI-REACT-AGENTS-MD-END -->` for React docs
+   - `<!-- PRISMUI-NATIVE-AGENTS-MD-START -->` / `<!-- PRISMUI-NATIVE-AGENTS-MD-END -->` for Native docs
+   - `<!-- PRISMUI-MIGRATION-AGENTS-MD-START -->` / `<!-- PRISMUI-MIGRATION-AGENTS-MD-END -->` for Migration docs
 4. **Single library**: Only one of React, Native, or Migration can be selected at a time
 
 #### File Structure

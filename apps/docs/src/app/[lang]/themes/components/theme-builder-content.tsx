@@ -5,14 +5,14 @@ import {ScrollShadow} from "@khulnasoft/react";
 import {useDictionary} from "@/hooks/use-dictionary";
 import {cn} from "@/utils/cn";
 
-import {HEROUI_PRO_URL} from "../constants";
+import {PRISMUI_PRO_URL} from "../constants";
 import {usePreviewTab} from "../hooks";
 
 import {PreviewContainer} from "./preview-container";
 import {ThemeCodePanel} from "./theme-code-panel";
 
 function getProUrl(utm: {campaign?: string; content?: string; medium: string}) {
-  const url = new URL(HEROUI_PRO_URL);
+  const url = new URL(PRISMUI_PRO_URL);
 
   url.searchParams.set("utm_source", "prism.khulnasoft.com");
   url.searchParams.set("utm_medium", utm.medium);

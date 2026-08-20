@@ -2,7 +2,7 @@ import type {SAFE_ANY} from '@helpers/type';
 
 import {getLatestVersion} from 'src/scripts/helpers';
 
-import {HEROUI_CLI, HERO_UI} from './required';
+import {PRISMUI_CLI, HERO_UI} from './required';
 
 export type Store = {
   debug: boolean;
@@ -31,7 +31,7 @@ export async function getStore<T extends StoreKeys = StoreKeys>(key: T): Promise
 
       store[key] = data;
     } else if (key === 'cliLatestVersion') {
-      data = (await getLatestVersion(HEROUI_CLI)) as SAFE_ANY;
+      data = (await getLatestVersion(PRISMUI_CLI)) as SAFE_ANY;
 
       store[key] = data;
     }

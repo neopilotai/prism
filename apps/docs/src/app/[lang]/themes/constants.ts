@@ -39,13 +39,13 @@ export type TabLabel = (typeof tabLabels)[number];
 
 export const tabs = tabLabels.map((label) => ({disabled: false, label}));
 
-export const HEROUI_PRO_URL = env.NEXT_PUBLIC_PRO_URL ?? "https://prismui.pro";
+export const PRISMUI_PRO_URL = env.NEXT_PUBLIC_PRO_URL ?? "https://prismui.pro";
 
 export const iframeTabs: Record<string, string> = {
-  chat: `${HEROUI_PRO_URL}/templates/chat`,
-  dashboard: `${HEROUI_PRO_URL}/templates/dashboard`,
-  finances: `${HEROUI_PRO_URL}/templates/finances`,
-  mail: `${HEROUI_PRO_URL}/templates/email`,
+  chat: `${PRISMUI_PRO_URL}/templates/chat`,
+  dashboard: `${PRISMUI_PRO_URL}/templates/dashboard`,
+  finances: `${PRISMUI_PRO_URL}/templates/finances`,
+  mail: `${PRISMUI_PRO_URL}/templates/email`,
 };
 
 /**

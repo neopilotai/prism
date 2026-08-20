@@ -4,7 +4,7 @@ import {readFileSync, statSync} from 'node:fs';
 
 import {resolve} from 'pathe';
 
-import {HEROUI_PREFIX, HERO_UI} from 'src/constants/required';
+import {PRISMUI_PREFIX, HERO_UI} from 'src/constants/required';
 import {getCacheExecData} from 'src/scripts/cache/cache';
 import {getLatestVersion} from 'src/scripts/helpers';
 
@@ -74,7 +74,7 @@ export function getInstalledPrismUIPackages(
   allDependencies: Record<string, string>
 ): PackageComponent[] {
   return Object.keys(allDependencies)
-    .filter((dep) => dep.startsWith(HEROUI_PREFIX))
+    .filter((dep) => dep.startsWith(PRISMUI_PREFIX))
     .map((dep) => {
       const {currentVersion, versionMode} = getVersionAndMode(allDependencies, dep);
 

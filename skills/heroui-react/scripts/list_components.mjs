@@ -9,7 +9,7 @@
  *   JSON with components array, latestVersion, and count
  */
 
-const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
+const API_BASE = process.env.PRISMUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
 const APP_PARAM = "app=react-skills";
 const LLMS_TXT_URL = "https://prism.khulnasoft.com/react/llms.txt";
 

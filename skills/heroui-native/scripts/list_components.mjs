@@ -9,7 +9,7 @@
  *   JSON with components array, latestVersion, and count
  */
 
-const API_BASE = process.env.HEROUI_NATIVE_API_BASE || "https://native-mcp-api.prism.khulnasoft.com";
+const API_BASE = process.env.PRISMUI_NATIVE_API_BASE || "https://native-mcp-api.prism.khulnasoft.com";
 const APP_PARAM = "app=native-skills";
 const LLMS_TXT_URL = "https://prism.khulnasoft.com/native/llms.txt";
 

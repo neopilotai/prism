@@ -1,13 +1,13 @@
 import {defineConfig} from 'tsup';
 
 export default defineConfig((options) => {
-  const posthogKey = process.env['HEROUI_CLI_POSTHOG_KEY'] ?? '';
+  const posthogKey = process.env['PRISMUI_CLI_POSTHOG_KEY'] ?? '';
 
   return {
     banner: {js: '#!/usr/bin/env node'},
     clean: true,
     define: {
-      __HEROUI_CLI_POSTHOG_KEY__: JSON.stringify(posthogKey)
+      __PRISMUI_CLI_POSTHOG_KEY__: JSON.stringify(posthogKey)
     },
     dts: true,
     entry: ['src/index.ts'],

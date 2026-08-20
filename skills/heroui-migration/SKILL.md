@@ -75,7 +75,7 @@ Examples:
 - Styling: `.../styling.mdx`
 - Hooks: `.../hooks.mdx`
 
-Override base URL with `HEROUI_MIGRATION_DOCS_BASE` when docs are merged to production.
+Override base URL with `PRISMUI_MIGRATION_DOCS_BASE` when docs are merged to production.
 
 ### MCP Alternative
 
@@ -137,4 +137,4 @@ When using Cursor or other MCP clients, configure the Migration MCP server for t
 
 ## Preview Mode
 
-This skill targets the staging deployment of the `docs/migration` branch. Once docs are merged to main and live on prism.khulnasoft.com, set `HEROUI_MIGRATION_DOCS_BASE=https://prism.khulnasoft.com/docs/react/migration` or update the default in scripts.
+This skill targets the staging deployment of the `docs/migration` branch. Once docs are merged to main and live on prism.khulnasoft.com, set `PRISMUI_MIGRATION_DOCS_BASE=https://prism.khulnasoft.com/docs/react/migration` or update the default in scripts.

@@ -6,7 +6,7 @@ import {Logger, type PrefixLogType} from '@helpers/logger';
 import {getPackageInfo} from '@helpers/package';
 import {getVersionAndMode, transformPeerVersion} from '@helpers/utils';
 import {resolver} from 'src/constants/path';
-import {DOCS_INSTALLED, HEROUI_PACKAGES} from 'src/constants/required';
+import {DOCS_INSTALLED, PRISMUI_PACKAGES} from 'src/constants/required';
 import {getCacheExecData} from 'src/scripts/cache/cache';
 import {compareVersions} from 'src/scripts/helpers';
 
@@ -21,7 +21,7 @@ export async function doctorAction(options: DoctorCommandOptions) {
 
   const {allDependencies, allDependenciesKeys} = getPackageInfo(packagePath);
 
-  const installed = HEROUI_PACKAGES.filter((pkg) => allDependenciesKeys.has(pkg));
+  const installed = PRISMUI_PACKAGES.filter((pkg) => allDependenciesKeys.has(pkg));
 
   if (!installed.length) {
     Logger.prefix(
@@ -36,7 +36,7 @@ export async function doctorAction(options: DoctorCommandOptions) {
 
   const problemRecord: ProblemRecord[] = [];
 
-  const missing = HEROUI_PACKAGES.filter((pkg) => !allDependenciesKeys.has(pkg));
+  const missing = PRISMUI_PACKAGES.filter((pkg) => !allDependenciesKeys.has(pkg));
 
   if (missing.length) {
     problemRecord.push({
@@ -63,7 +63,7 @@ export async function doctorAction(options: DoctorCommandOptions) {
     for (const [peerPkg, peerVersion] of Object.entries(peerDeps)) {
       if (
         seen.has(peerPkg) ||
-        HEROUI_PACKAGES.includes(peerPkg as (typeof HEROUI_PACKAGES)[number])
+        PRISMUI_PACKAGES.includes(peerPkg as (typeof PRISMUI_PACKAGES)[number])
       )
         continue;
       seen.add(peerPkg);

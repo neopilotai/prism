@@ -8,14 +8,14 @@ import {outputComponents} from '@helpers/output-info';
 import {getPackageInfo, transformPackageDetail} from '@helpers/package';
 import {removeDependencies} from '@helpers/remove';
 import {resolver} from 'src/constants/path';
-import {HEROUI_PACKAGES} from 'src/constants/required';
+import {PRISMUI_PACKAGES} from 'src/constants/required';
 import {getSelect} from 'src/prompts';
 
 export async function uninstallAction(options: CommandOptions) {
   const {packagePath = resolver('package.json')} = options;
   const {allDependencies, allDependenciesKeys} = getPackageInfo(packagePath);
 
-  const installed = HEROUI_PACKAGES.filter((pkg) => allDependenciesKeys.has(pkg));
+  const installed = PRISMUI_PACKAGES.filter((pkg) => allDependenciesKeys.has(pkg));
 
   if (!installed.length) {
     Logger.success('✅ No PrismUI packages to uninstall');

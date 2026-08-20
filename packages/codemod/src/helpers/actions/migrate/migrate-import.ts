@@ -1,6 +1,6 @@
 import jscodeshift from 'jscodeshift';
 
-import {HEROUI_PREFIX, NEXTUI_PREFIX} from '../../../constants/prefix';
+import {PRISMUI_PREFIX, NEXTUI_PREFIX} from '../../../constants/prefix';
 import {
   type StoreObject,
   getStore,
@@ -44,7 +44,7 @@ export function migrateImportPackage(parsedContent: NonNullable<StoreObject['par
     const importValue = path.node.source.value;
 
     if (importValue && importValue.toString().includes(NEXTUI_PREFIX)) {
-      path.node.source.value = importValue.toString().replaceAll(NEXTUI_PREFIX, HEROUI_PREFIX);
+      path.node.source.value = importValue.toString().replaceAll(NEXTUI_PREFIX, PRISMUI_PREFIX);
       dirtyFlag = true;
     }
   });
@@ -65,7 +65,7 @@ export function migrateImportPackage(parsedContent: NonNullable<StoreObject['par
           requireArg.type === 'StringLiteral' &&
           requireArg.value.includes(NEXTUI_PREFIX)
         ) {
-          requireArg.value = requireArg.value.replaceAll(NEXTUI_PREFIX, HEROUI_PREFIX);
+          requireArg.value = requireArg.value.replaceAll(NEXTUI_PREFIX, PRISMUI_PREFIX);
           dirtyFlag = true;
         }
       });

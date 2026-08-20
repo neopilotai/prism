@@ -10,7 +10,7 @@
  *   MDX documentation including imports, usage, variants, props, examples
  */
 
-const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
+const API_BASE = process.env.PRISMUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
 const FALLBACK_BASE = "https://prism.khulnasoft.com";
 const APP_PARAM = "app=react-skills";
 

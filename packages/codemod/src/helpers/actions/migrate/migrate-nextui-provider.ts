@@ -1,4 +1,4 @@
-import {HEROUI_PROVIDER, NEXTUI_PROVIDER} from '../../../constants/prefix';
+import {PRISMUI_PROVIDER, NEXTUI_PROVIDER} from '../../../constants/prefix';
 import {getStore, updateAffectedFiles, writeFileAndUpdateStore} from '../../store';
 
 import {migrateByRegex} from './migrate-common';
@@ -21,7 +21,7 @@ export function migrateNextuiProvider(paths: string[]) {
 
       // Replace JSX element NextUIProvider with PrismUIProvider
       // Replace NextUIProvider with PrismUIProvider in import statements
-      ({dirtyFlag, rawContent} = migrateByRegex(rawContent, NEXTUI_PROVIDER, HEROUI_PROVIDER));
+      ({dirtyFlag, rawContent} = migrateByRegex(rawContent, NEXTUI_PROVIDER, PRISMUI_PROVIDER));
 
       if (dirtyFlag) {
         // Write the modified content back to the file

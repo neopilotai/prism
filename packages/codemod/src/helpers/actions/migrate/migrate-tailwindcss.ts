@@ -3,8 +3,8 @@ import type {SAFE_ANY} from '@helpers/type';
 import jscodeshift from 'jscodeshift';
 
 import {
-  HEROUI_PLUGIN,
-  HEROUI_PREFIX,
+  PRISMUI_PLUGIN,
+  PRISMUI_PREFIX,
   NEXTUI_PLUGIN,
   NEXTUI_PREFIX
 } from '../../../constants/prefix';
@@ -24,13 +24,13 @@ export function migrateTailwindcss(paths: string[]) {
     let dirtyFlag = false;
 
     // Migrate const {nextui} = require("xxx") --> const {prismui} = require("xxx")
-    dirtyFlag = migrateImportName(parsedContent, NEXTUI_PLUGIN, HEROUI_PLUGIN);
+    dirtyFlag = migrateImportName(parsedContent, NEXTUI_PLUGIN, PRISMUI_PLUGIN);
 
     // Migrate const {xxx} = require("nextui") --> const {xxx} = require("prismui") -- (optional avoid user skip the "import-prismui" codemod)
     dirtyFlag = migrateImportPackage(parsedContent);
 
     // Migrate plugin call expression nextui() -> prismui()
-    dirtyFlag = migrateCallExpressionName(parsedContent, NEXTUI_PLUGIN, HEROUI_PLUGIN);
+    dirtyFlag = migrateCallExpressionName(parsedContent, NEXTUI_PLUGIN, PRISMUI_PLUGIN);
 
     // Migrate the content path from `@nextui-org/theme` to `@prismui/theme`
     parsedContent.find(jscodeshift.ObjectExpression).forEach((path) => {
@@ -46,7 +46,7 @@ export function migrateTailwindcss(paths: string[]) {
               typeof element.value === 'string' &&
               element.value.includes(NEXTUI_PREFIX)
             ) {
-              element.value = element.value.replace(NEXTUI_PREFIX, HEROUI_PREFIX);
+              element.value = element.value.replace(NEXTUI_PREFIX, PRISMUI_PREFIX);
               dirtyFlag = true;
             }
           });

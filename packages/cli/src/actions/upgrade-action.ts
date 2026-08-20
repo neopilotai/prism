@@ -16,7 +16,7 @@ import {
   transformPeerVersion
 } from '@helpers/utils';
 import {resolver} from 'src/constants/path';
-import {HEROUI_PACKAGES} from 'src/constants/required';
+import {PRISMUI_PACKAGES} from 'src/constants/required';
 import {getSelect} from 'src/prompts';
 import {getCacheExecData} from 'src/scripts/cache/cache';
 import {compareVersions, getLatestVersion} from 'src/scripts/helpers';
@@ -25,7 +25,7 @@ export async function upgradeAction(options: CommandOptions) {
   const {packagePath = resolver('package.json')} = options;
   const {allDependencies, allDependenciesKeys} = getPackageInfo(packagePath);
 
-  const installed = HEROUI_PACKAGES.filter((pkg) => allDependenciesKeys.has(pkg));
+  const installed = PRISMUI_PACKAGES.filter((pkg) => allDependenciesKeys.has(pkg));
 
   if (!installed.length) {
     Logger.prefix(

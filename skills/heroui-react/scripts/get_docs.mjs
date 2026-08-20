@@ -12,7 +12,7 @@
  * Note: For component docs, use get_component_docs.mjs instead.
  */
 
-const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
+const API_BASE = process.env.PRISMUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
 const FALLBACK_BASE = "https://prism.khulnasoft.com";
 const APP_PARAM = "app=react-skills";
 

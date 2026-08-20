@@ -400,7 +400,7 @@ prismui agents-md --migration --output AGENTS.md
 
 1. 使用 git sparse-checkout 从 `v3` 分支克隆文档
 2. 生成文档和示例文件的精简索引
-3. 将该索引注入到你的 markdown 文件中，置于标记之间（`<!-- HEROUI-REACT-AGENTS-MD-START -->` / `<!-- HEROUI-REACT-AGENTS-MD-END -->`，Native 和 Migration 也有类似的标记）
+3. 将该索引注入到你的 markdown 文件中，置于标记之间（`<!-- PRISMUI-REACT-AGENTS-MD-START -->` / `<!-- PRISMUI-REACT-AGENTS-MD-END -->`，Native 和 Migration 也有类似的标记）
 4. 将 `.prismui-docs/` 添加到 `.gitignore`
 
 `--react`、`--native` 和 `--migration` 一次只能选择其中一个。
@@ -408,7 +408,7 @@ prismui agents-md --migration --output AGENTS.md
 更多详情请参阅 [AGENTS.md](/docs/react/getting-started/agents-md)。
 
 <Callout>
-  `agents-md` 命令会收集匿名使用数据（所选项、输出文件名、耗时、成功或错误）。设置 `HEROUI_ANALYTICS_DISABLED=1` 可以选择不参与。
+  `agents-md` 命令会收集匿名使用数据（所选项、输出文件名、耗时、成功或错误）。设置 `PRISMUI_ANALYTICS_DISABLED=1` 可以选择不参与。
 </Callout>
 
 ## 问题反馈

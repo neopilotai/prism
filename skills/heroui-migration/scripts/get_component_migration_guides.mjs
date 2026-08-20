@@ -11,7 +11,7 @@
  */
 
 const DOCS_BASE =
-  process.env.HEROUI_MIGRATION_DOCS_BASE ||
+  process.env.PRISMUI_MIGRATION_DOCS_BASE ||
   "https://prismui-git-docs-migration-prismui.vercel.app/docs/react/migration";
 const APP_PARAM = "app=migration-skills";
 

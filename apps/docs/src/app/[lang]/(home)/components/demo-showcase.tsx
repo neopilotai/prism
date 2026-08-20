@@ -11,7 +11,7 @@ import LinkRoot from "fumadocs-core/link";
 import {useTheme} from "next-themes";
 import {useCallback, useEffect, useMemo, useRef, useState} from "react";
 
-import {HEROUI_PRO_URL, iframeTabs, themeValuesById} from "@/app/[lang]/themes/constants";
+import {PRISMUI_PRO_URL, iframeTabs, themeValuesById} from "@/app/[lang]/themes/constants";
 import {computeThemeVars} from "@/app/[lang]/themes/hooks";
 import {
   calculateAccentForeground,
@@ -50,7 +50,7 @@ const colors = [
 const toOklch = converter("oklch");
 
 function getProUrl(utm: {campaign?: string; content?: string; medium: string}) {
-  const url = new URL(HEROUI_PRO_URL);
+  const url = new URL(PRISMUI_PRO_URL);
 
   url.searchParams.set("utm_source", "prism.khulnasoft.com");
   url.searchParams.set("utm_medium", utm.medium);
