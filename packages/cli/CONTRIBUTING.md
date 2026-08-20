@@ -1,6 +1,6 @@
-# HeroUI CLI Contributing Guide
+# PrismUI CLI Contributing Guide
 
-Hello!, I am very excited that you are interested in contributing with HeroUI CLI. However, before submitting your contribution, be sure to take a moment and read the following guidelines.
+Hello!, I am very excited that you are interested in contributing with PrismUI CLI. However, before submitting your contribution, be sure to take a moment and read the following guidelines.
 
 - [Code of Conduct](https://github.com/khulnasoft/prism/blob/main/CODE_OF_CONDUCT.md)
 - [Pull Request Guidelines](#pull-request-guidelines)
@@ -92,7 +92,7 @@ After cloning the repository, execute the following commands in the root folder:
 2. Run dev to start development
 
    ```bash
-   ## Start the dev babel server of HeroUI CLI
+   ## Start the dev babel server of PrismUI CLI
    pnpm dev
    ```
 
@@ -137,7 +137,7 @@ Breaking changes should be accompanied with deprecations of removed functionalit
 
 ## Becoming a maintainer
 
-If you are interested in becoming a HeroUI maintainer, start by
+If you are interested in becoming a PrismUI maintainer, start by
 reviewing issues and pull requests. Answer questions for those in need of
 troubleshooting. Join us in the
 [Discord Community](https://discord.gg/9b6yyZKmH4) chat room.

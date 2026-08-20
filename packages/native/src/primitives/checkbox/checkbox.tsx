@@ -46,7 +46,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.Checkbox.Root';
+Root.displayName = 'PrismUINative.Primitive.Checkbox.Root';
 
 function useCheckboxContext() {
   const context = useContext(CheckboxContext);
@@ -93,7 +93,7 @@ const Trigger = forwardRef<PressableRef, SlottablePressableProps>(
   }
 );
 
-Trigger.displayName = 'HeroUINative.Primitive.Checkbox.Trigger';
+Trigger.displayName = 'PrismUINative.Primitive.Checkbox.Trigger';
 
 // --------------------------------------------------
 
@@ -114,6 +114,6 @@ const Indicator = forwardRef<IndicatorRef, IndicatorProps>(
   }
 );
 
-Indicator.displayName = 'HeroUINative.Primitive.Checkbox.Indicator';
+Indicator.displayName = 'PrismUINative.Primitive.Checkbox.Indicator';
 
 export { Indicator, Root, useCheckboxContext };

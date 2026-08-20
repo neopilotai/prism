@@ -6,7 +6,7 @@ import { useLayoutDirectionContext } from '../contexts';
  * (e.g. gesture deltas) that Yoga logical props cannot cover.
  *
  * @description
- * Reads the direction provided via `HeroUINativeProvider` config (`isRTL`), or
+ * Reads the direction provided via `PrismUINativeProvider` config (`isRTL`), or
  * the nearest `LayoutDirectionScope` override. Falls back to the global
  * `I18nManager.isRTL` state when no provider value is available, which matches
  * the default React Native behavior.

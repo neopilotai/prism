@@ -1,10 +1,10 @@
 # Theming
 
-HeroUI Native uses CSS variables for theming. Customize everything from colors to component styles using standard CSS.
+PrismUI Native uses CSS variables for theming. Customize everything from colors to component styles using standard CSS.
 
 ## How It Works
 
-HeroUI Native's theming system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme via [Uniwind](https://uniwind.dev/). When you import `heroui-native/styles`, it uses Tailwind's built-in color palettes, maps them to semantic variables, automatically switches between light and dark themes, and uses CSS layers and the `@theme` directive for organization.
+PrismUI Native's theming system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme via [Uniwind](https://uniwind.dev/). When you import `heroui-native/styles`, it uses Tailwind's built-in color palettes, maps them to semantic variables, automatically switches between light and dark themes, and uses CSS layers and the `@theme` directive for organization.
 
 **Naming pattern:**
 
@@ -25,7 +25,7 @@ import { View, Text } from 'react-native';
 
 **Switch themes:**
 
-HeroUI Native automatically supports dark mode through [Uniwind](https://docs.uniwind.dev/theming/basics). The theme switches between light and dark variants based on system preferences or manual selection:
+PrismUI Native automatically supports dark mode through [Uniwind](https://docs.uniwind.dev/theming/basics). The theme switches between light and dark variants based on system preferences or manual selection:
 
 ```tsx
 import { Uniwind, useUniwind } from 'uniwind';
@@ -288,7 +288,7 @@ First, load your custom fonts (using Expo's `useFonts` hook for example):
 
 ```tsx
 import { useFonts } from 'expo-font';
-import { HeroUINativeProvider } from 'heroui-native';
+import { PrismUINativeProvider } from 'heroui-native';
 import {
   YourFont_400Regular,
   YourFont_500Medium,
@@ -306,7 +306,7 @@ export default function App() {
     return null; // Or return a loading screen
   }
 
-  return <HeroUINativeProvider>{/* Your app content */}</HeroUINativeProvider>;
+  return <PrismUINativeProvider>{/* Your app content */}</PrismUINativeProvider>;
 }
 ```
 
@@ -324,11 +324,11 @@ After loading the fonts, override the font CSS variables in your `global.css` fi
 
 **Note:** The font names in CSS variables should match the PostScript names of your loaded fonts. Check your font package documentation or use the font names exactly as they appear in your `useFonts` hook.
 
-All HeroUI Native components automatically use these font variables, ensuring consistent typography throughout your app.
+All PrismUI Native components automatically use these font variables, ensuring consistent typography throughout your app.
 
 ## Variables Reference
 
-HeroUI defines three types of variables:
+PrismUI defines three types of variables:
 
 1. **Base Variables** — Non-changing values like `--white`, `--black`
 2. **Theme Variables** — Colors that change between light/dark themes

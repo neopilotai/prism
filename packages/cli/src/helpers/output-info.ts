@@ -43,8 +43,8 @@ export function outputComponents({
     return;
   }
 
-  const orderHeroUIComponentKeys = ['package', 'version', 'status', 'docs'] as const;
-  const colorHeroUIComponentKeys = ['package', 'version', 'status'];
+  const orderPrismUIComponentKeys = ['package', 'version', 'status', 'docs'] as const;
+  const colorPrismUIComponentKeys = ['package', 'version', 'status'];
 
   const componentKeyLengthMap: Record<keyof PackageComponent | 'originVersion', number> = {
     description: 0,
@@ -95,7 +95,7 @@ export function outputComponents({
   let transformComponentsOutput = components.reduce((acc, component) => {
     let outputData = padStart;
 
-    for (const key of orderHeroUIComponentKeys) {
+    for (const key of orderPrismUIComponentKeys) {
       let value = fillAnsiLength(component[key], componentKeyLengthMap[key]);
 
       /** ======================== Replace version to new version ======================== */
@@ -124,7 +124,7 @@ export function outputComponents({
       }
 
       /** ======================== Change the color according to different status ======================== */
-      if (component.status === 'stable' && colorHeroUIComponentKeys.includes(key)) {
+      if (component.status === 'stable' && colorPrismUIComponentKeys.includes(key)) {
         value = chalk.greenBright(value);
       } else if (component.status === 'new') {
         value = chalk.magentaBright(value);
@@ -147,7 +147,7 @@ export function outputComponents({
   let boxHeaderSec = padStart;
   let boxHeaderTrd = rounded.vertical + padStart.replace(/.*/g, rounded.horizontal).slice(1);
 
-  for (const key of orderHeroUIComponentKeys) {
+  for (const key of orderPrismUIComponentKeys) {
     boxHeader += `${rounded.horizontal.padEnd(componentKeyLengthMap[key] + 7, rounded.horizontal)}`;
     boxHeaderSec += chalk.redBright(PasCalCase(key).padEnd(componentKeyLengthMap[key])) + padEnd;
     boxHeaderTrd += `${rounded.horizontal.padEnd(
@@ -162,7 +162,7 @@ export function outputComponents({
   /** ======================== Generate box footer ======================== */
   let boxFooter = rounded.bottomLeft + padStart.replace(/.*/g, rounded.horizontal).slice(1);
 
-  for (const key of orderHeroUIComponentKeys) {
+  for (const key of orderPrismUIComponentKeys) {
     boxFooter += `${rounded.horizontal.padEnd(componentKeyLengthMap[key] + 7, rounded.horizontal)}`;
   }
 
@@ -346,14 +346,14 @@ export function outputDeprecatedInfo() {
   outputBox({
     color: 'yellow',
     padding: 1,
-    text: `NextUI has rebranded to HeroUI! These packages are deprecated and won’t receive updates.
-HeroUI offers the same great features with ongoing improvements.
+    text: `NextUI has rebranded to PrismUI! These packages are deprecated and won’t receive updates.
+PrismUI offers the same great features with ongoing improvements.
 
-→ ${chalk.bold('Switch to [HeroUI](https://heroui.com) for the latest updates.')}
-→ ${chalk.bold('Migration guide:')} [NextUI to HeroUI](https://heroui.com/docs/nextui-to-heroui)
+→ ${chalk.bold('Switch to [PrismUI](https://heroui.com) for the latest updates.')}
+→ ${chalk.bold('Migration guide:')} [NextUI to PrismUI](https://heroui.com/docs/nextui-to-heroui)
 → ${chalk.bold('New NPM package:')} "@heroui/react"
 
-Thanks for your support — see you at HeroUI!`,
-    title: chalk.yellow(`❗️ Notice: NextUI is now ${chalk.bold('HeroUI')} ❗️`)
+Thanks for your support — see you at PrismUI!`,
+    title: chalk.yellow(`❗️ Notice: NextUI is now ${chalk.bold('PrismUI')} ❗️`)
   });
 }

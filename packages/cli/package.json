@@ -5,7 +5,7 @@
   "license": "MIT",
   "version": "3.0.4",
   "homepage": "https://github.com/khulnasoft/prism#readme",
-  "description": "A CLI tool that unlocks seamless HeroUI integration",
+  "description": "A CLI tool that unlocks seamless PrismUI integration",
   "keywords": [
     "UI",
     "CLI",
@@ -13,10 +13,10 @@
     "Template",
     "Integration",
     "Add Component",
-    "HeroUI"
+    "PrismUI"
   ],
   "author": {
-    "name": "HeroUI",
+    "name": "PrismUI",
     "email": "support@heroui.com",
     "url": "https://github.com/khulnasoft"
   },

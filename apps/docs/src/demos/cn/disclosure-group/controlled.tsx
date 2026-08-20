@@ -7,7 +7,7 @@ import {
   DisclosureGroup,
   Separator,
   useDisclosureGroupNavigation,
-} from "@heroui/react";
+} from "@khulnasoft/react";
 import {Icon} from "@iconify/react";
 import React from "react";
 import {cn} from "tailwind-variants";
@@ -26,7 +26,7 @@ export function Controlled() {
     <div className="w-full max-w-md">
       <div className="flex flex-col gap-4 rounded-3xl p-4">
         <div className="mb-2 flex items-center justify-between">
-          <h3 className="text-lg font-semibold">HeroUI Native</h3>
+          <h3 className="text-lg font-semibold">PrismUI Native</h3>
           <div className="flex gap-2">
             <Button
               aria-label="上一个折叠项"
@@ -49,7 +49,7 @@ export function Controlled() {
           </div>
         </div>
         <DisclosureGroup expandedKeys={expandedKeys} onExpandedChange={setExpandedKeys}>
-          <Disclosure aria-label="预览 HeroUI Native" id="preview">
+          <Disclosure aria-label="预览 PrismUI Native" id="preview">
             <Disclosure.Heading>
               <Button
                 slot="trigger"
@@ -60,7 +60,7 @@ export function Controlled() {
               >
                 <div className="flex w-full items-center justify-start gap-2">
                   <QrCode />
-                  预览 HeroUI Native
+                  预览 PrismUI Native
                 </div>
                 <Disclosure.Indicator className="text-muted" />
               </Button>
@@ -68,7 +68,7 @@ export function Controlled() {
             <Disclosure.Content>
               <Disclosure.Body className="mx-2 flex flex-col items-center gap-2 p-4 text-center">
                 <p className="text-sm text-muted">
-                  使用手机相机扫描此二维码，即可预览 HeroUI Native 组件。
+                  使用手机相机扫描此二维码，即可预览 PrismUI Native 组件。
                 </p>
                 <img
                   alt="Expo Go 二维码"
@@ -85,7 +85,7 @@ export function Controlled() {
           </Disclosure>
           <Separator className="my-2" />
           <Disclosure id="download">
-            <Disclosure.Heading aria-label="下载 HeroUI Native">
+            <Disclosure.Heading aria-label="下载 PrismUI Native">
               <Button
                 slot="trigger"
                 variant={expandedKeys.has("download") ? "secondary" : "tertiary"}
@@ -95,7 +95,7 @@ export function Controlled() {
               >
                 <div className="flex w-full items-center justify-start gap-2">
                   <Icon icon="tabler:brand-apple-filled" />
-                  下载 HeroUI Native
+                  下载 PrismUI Native
                 </div>
                 <Disclosure.Indicator className="text-muted" />
               </Button>
@@ -103,7 +103,7 @@ export function Controlled() {
             <Disclosure.Content>
               <Disclosure.Body className="mx-2 flex flex-col items-center gap-2 p-4 text-center">
                 <p className="text-sm text-muted">
-                  使用手机相机扫描此二维码，即可预览 HeroUI Native 组件。
+                  使用手机相机扫描此二维码，即可预览 PrismUI Native 组件。
                 </p>
                 <img
                   alt="Expo Go 二维码"

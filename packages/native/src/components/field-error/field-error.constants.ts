@@ -4,7 +4,7 @@ import { Easing, FadeIn, FadeOut } from 'react-native-reanimated';
  * Display names for the FieldError component parts
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.FieldError',
+  ROOT: 'PrismUINative.FieldError',
 };
 
 /**

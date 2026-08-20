@@ -9,15 +9,15 @@ import { GlobalAnimationSettingsProvider } from '../animation-settings';
 import { TextComponentProvider } from '../text-component/provider';
 import { TextInputComponentProvider } from '../text-input-component/provider';
 import { ToastProvider } from '../toast/provider';
-import type { HeroUINativeProviderProps } from './types';
+import type { PrismUINativeProviderProps } from './types';
 
 /**
- * HeroUINativeProvider Component
+ * PrismUINativeProvider Component
  *
  * @description
- * Main provider component for HeroUI Native that configures the application
+ * Main provider component for PrismUI Native that configures the application
  * with global settings. This component should wrap your entire application
- * or the section where you want to use HeroUI Native components.
+ * or the section where you want to use PrismUI Native components.
  *
  * Currently provides:
  * - Global animation settings
@@ -26,12 +26,12 @@ import type { HeroUINativeProviderProps } from './types';
  * - Toast notification system
  * - Portal management for overlays
  *
- * @param {HeroUINativeProviderProps} props - Provider configuration props
+ * @param {PrismUINativeProviderProps} props - Provider configuration props
  * @param {ReactNode} props.children - Child components to wrap
- * @param {HeroUINativeConfig} [props.config] - Configuration object
+ * @param {PrismUINativeConfig} [props.config] - Configuration object
  *
  */
-const HeroUINativeProvider: React.FC<HeroUINativeProviderProps> = ({
+const PrismUINativeProvider: React.FC<PrismUINativeProviderProps> = ({
   children,
   config = {},
 }) => {
@@ -79,4 +79,4 @@ const HeroUINativeProvider: React.FC<HeroUINativeProviderProps> = ({
   );
 };
 
-export default HeroUINativeProvider;
+export default PrismUINativeProvider;

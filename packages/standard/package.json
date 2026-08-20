@@ -2,7 +2,7 @@
   "name": "@khulnasoft/standard",
   "private": true,
   "version": "0.0.0",
-  "description": "Standardized code style & lint rules for HeroUI.",
+  "description": "Standardized code style & lint rules for PrismUI.",
   "publishConfig": {
     "access": "public"
   }

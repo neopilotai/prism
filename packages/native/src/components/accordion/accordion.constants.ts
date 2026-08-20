@@ -9,13 +9,13 @@ import {
  * Display names for Accordion components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.Accordion.Root',
-  BACKGROUND: 'HeroUINative.Accordion.Background',
-  ITEM: 'HeroUINative.Accordion.Item',
-  TRIGGER: 'HeroUINative.Accordion.Trigger',
-  INDICATOR: 'HeroUINative.Accordion.Indicator',
-  CONTENT: 'HeroUINative.Accordion.Content',
-  CHEVRON_DOWN_ICON: 'HeroUINative.Accordion.ChevronDownIcon',
+  ROOT: 'PrismUINative.Accordion.Root',
+  BACKGROUND: 'PrismUINative.Accordion.Background',
+  ITEM: 'PrismUINative.Accordion.Item',
+  TRIGGER: 'PrismUINative.Accordion.Trigger',
+  INDICATOR: 'PrismUINative.Accordion.Indicator',
+  CONTENT: 'PrismUINative.Accordion.Content',
+  CHEVRON_DOWN_ICON: 'PrismUINative.Accordion.ChevronDownIcon',
 } as const;
 
 /**

@@ -317,7 +317,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.Slider.Root';
+Root.displayName = 'PrismUINative.Primitive.Slider.Root';
 
 // --------------------------------------------------
 // Track – resolves render-function children via context
@@ -362,7 +362,7 @@ const Track = forwardRef<TrackRef, TrackProps>(
   }
 );
 
-Track.displayName = 'HeroUINative.Primitive.Slider.Track';
+Track.displayName = 'PrismUINative.Primitive.Slider.Track';
 
 // --------------------------------------------------
 // Fill – unstyled placeholder
@@ -374,7 +374,7 @@ const Fill = forwardRef<FillRef, FillProps>(({ asChild, ...props }, ref) => {
   return <Component ref={ref} {...props} />;
 });
 
-Fill.displayName = 'HeroUINative.Primitive.Slider.Fill';
+Fill.displayName = 'PrismUINative.Primitive.Slider.Fill';
 
 // --------------------------------------------------
 // Thumb – accessibility-enabled view for each slider thumb
@@ -428,7 +428,7 @@ const Thumb = forwardRef<ThumbRef, ThumbProps>(
   }
 );
 
-Thumb.displayName = 'HeroUINative.Primitive.Slider.Thumb';
+Thumb.displayName = 'PrismUINative.Primitive.Slider.Thumb';
 
 // --------------------------------------------------
 // Output – resolves render-function children via context
@@ -458,6 +458,6 @@ const Output = forwardRef<OutputRef, OutputProps>(
   }
 );
 
-Output.displayName = 'HeroUINative.Primitive.Slider.Output';
+Output.displayName = 'PrismUINative.Primitive.Slider.Output';
 
 export { Fill, Output, Root, Thumb, Track, useSlider };

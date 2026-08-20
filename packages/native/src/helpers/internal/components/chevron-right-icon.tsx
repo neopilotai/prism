@@ -26,4 +26,4 @@ export const ChevronRightIcon: React.FC<ChevronRightIconProps> = ({
   );
 };
 
-ChevronRightIcon.displayName = 'HeroUINative.ChevronRightIcon';
+ChevronRightIcon.displayName = 'PrismUINative.ChevronRightIcon';

@@ -25,18 +25,18 @@ import {
   Surface,
   Switch,
   Tabs,
-} from "@heroui/react";
+} from "@khulnasoft/react";
 import {Icon} from "@iconify/react";
 import React from "react";
 
-import {HeroUILogo} from "../heroui-logo";
+import {PrismUILogo} from "../heroui-logo";
 
 export function ComponentShowcase() {
   return (
     <div>
       {/* Navigation */}
       <nav className="flex items-end gap-4 border-b border-border px-6 pt-4 pb-3 text-sm font-medium">
-        <HeroUILogo size={24} />
+        <PrismUILogo size={24} />
         <a className="text-foreground hover:text-accent" href="#">
           Pricing
         </a>
@@ -56,7 +56,7 @@ export function ComponentShowcase() {
           <br />
         </h1>
         <p className="rounded-xl text-sm text-muted">
-          HeroUI is the modern UI library for web and mobile.
+          PrismUI is the modern UI library for web and mobile.
         </p>
         {/* Buttons */}
         <div className="flex flex-wrap gap-2">
@@ -599,7 +599,7 @@ export function ComponentShowcase() {
                       <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
                         <Icon className="size-5" icon="gravity-ui:rocket" />
                       </Modal.Icon>
-                      <Modal.Heading>Welcome to HeroUI</Modal.Heading>
+                      <Modal.Heading>Welcome to PrismUI</Modal.Heading>
                     </Modal.Header>
                     <Modal.Body>
                       <p className="text-sm text-muted">

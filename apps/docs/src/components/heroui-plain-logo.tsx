@@ -1,11 +1,11 @@
-interface HeroUIPlainProps {
+interface PrismUIPlainProps {
   className?: string;
   size?: number;
   height?: number;
   width?: number;
 }
 
-export function HeroUIPlainLogo({className, height, size = 26, width}: HeroUIPlainProps) {
+export function PrismUIPlainLogo({className, height, size = 26, width}: PrismUIPlainProps) {
   // Calculate dimensions based on original aspect ratio (140:44)
   const aspectRatio = 114 / 158;
   const svgHeight = height || size;
@@ -41,7 +41,7 @@ export function HeroUIPlainLogo({className, height, size = 26, width}: HeroUIPla
           width: "1px",
         }}
       >
-        HeroUI Logo
+        PrismUI Logo
       </span>
     </>
   );

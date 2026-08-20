@@ -7,13 +7,13 @@ import { useDevInfo } from '../../helpers/internal/hooks';
 import { GlobalAnimationSettingsProvider } from '../animation-settings';
 import { TextComponentProvider } from '../text-component/provider';
 import { TextInputComponentProvider } from '../text-input-component/provider';
-import type { HeroUINativeProviderRawProps } from './types';
+import type { PrismUINativeProviderRawProps } from './types';
 
 /**
- * HeroUINativeProviderRaw Component
+ * PrismUINativeProviderRaw Component
  *
  * @description
- * Raw provider component for HeroUI Native that configures the application
+ * Raw provider component for PrismUI Native that configures the application
  * with global settings but without ToastProvider and PortalHost.
  * Use this when you need to manage toast and portal functionality separately
  * (e.g. nested providers or custom setups).
@@ -23,12 +23,12 @@ import type { HeroUINativeProviderRawProps } from './types';
  * - Global text component configuration
  * - Global text input component configuration
  *
- * @param {HeroUINativeProviderRawProps} props - Provider configuration props
+ * @param {PrismUINativeProviderRawProps} props - Provider configuration props
  * @param {ReactNode} props.children - Child components to wrap
- * @param {HeroUINativeConfigRaw} [props.config] - Configuration object
+ * @param {PrismUINativeConfigRaw} [props.config] - Configuration object
  *
  */
-const HeroUINativeProviderRaw: React.FC<HeroUINativeProviderRawProps> = ({
+const PrismUINativeProviderRaw: React.FC<PrismUINativeProviderRawProps> = ({
   children,
   config = {},
 }) => {
@@ -61,4 +61,4 @@ const HeroUINativeProviderRaw: React.FC<HeroUINativeProviderRawProps> = ({
   );
 };
 
-export default HeroUINativeProviderRaw;
+export default PrismUINativeProviderRaw;

@@ -57,7 +57,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.Alert.Root';
+Root.displayName = 'PrismUINative.Primitive.Alert.Root';
 
 // --------------------------------------------------
 
@@ -71,7 +71,7 @@ const Indicator = forwardRef<IndicatorRef, IndicatorProps>(
   }
 );
 
-Indicator.displayName = 'HeroUINative.Primitive.Alert.Indicator';
+Indicator.displayName = 'PrismUINative.Primitive.Alert.Indicator';
 
 // --------------------------------------------------
 
@@ -83,7 +83,7 @@ const Content = forwardRef<ContentRef, ContentProps>(
   }
 );
 
-Content.displayName = 'HeroUINative.Primitive.Alert.Content';
+Content.displayName = 'PrismUINative.Primitive.Alert.Content';
 
 // --------------------------------------------------
 
@@ -103,7 +103,7 @@ const Title = forwardRef<TitleRef, TitleProps>(({ asChild, ...props }, ref) => {
   );
 });
 
-Title.displayName = 'HeroUINative.Primitive.Alert.Title';
+Title.displayName = 'PrismUINative.Primitive.Alert.Title';
 
 // --------------------------------------------------
 
@@ -117,7 +117,7 @@ const Description = forwardRef<DescriptionRef, DescriptionProps>(
   }
 );
 
-Description.displayName = 'HeroUINative.Primitive.Alert.Description';
+Description.displayName = 'PrismUINative.Primitive.Alert.Description';
 
 // --------------------------------------------------
 

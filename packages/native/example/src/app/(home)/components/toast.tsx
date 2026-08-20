@@ -44,7 +44,7 @@ const DefaultVariantsContent = () => {
           toast.show({
             variant: 'default',
             label: t`Join a team`,
-            description: t`Junior Garcia sent you an invitation to join HeroUI team!`,
+            description: t`Junior Garcia sent you an invitation to join PrismUI team!`,
             icon: (
               <View className="mt-0.5">
                 <Logo
@@ -89,7 +89,7 @@ const DefaultVariantsContent = () => {
           toast.show({
             variant: 'success',
             label: t`Plan upgraded`,
-            description: t`You can continue using HeroUI Chat and more`,
+            description: t`You can continue using PrismUI Chat and more`,
             icon: (
               <View className="mt-0.5">
                 <ShieldCheckIcon
@@ -111,7 +111,7 @@ const DefaultVariantsContent = () => {
           toast.show({
             variant: 'warning',
             label: t`No credits left`,
-            description: t`Upgrade to a paid plan to continue using HeroUI Chat`,
+            description: t`Upgrade to a paid plan to continue using PrismUI Chat`,
             icon: (
               <View className="mt-0.5">
                 <ShieldExclamationIcon
@@ -169,7 +169,7 @@ const PlacementVariantsContent = () => {
       variant: 'success',
       placement: 'top',
       label: t`Plan upgraded`,
-      description: t`You can continue using HeroUI Chat and more`,
+      description: t`You can continue using PrismUI Chat and more`,
       icon: (
         <View className="mt-0.5">
           <ShieldCheckIcon
@@ -187,7 +187,7 @@ const PlacementVariantsContent = () => {
       variant: 'warning',
       placement: 'bottom',
       label: t`No credits left`,
-      description: t`Upgrade to a paid plan to continue using HeroUI Chat`,
+      description: t`Upgrade to a paid plan to continue using PrismUI Chat`,
       icon: (
         <View className="mt-0.5">
           <ShieldExclamationIcon
@@ -325,7 +325,7 @@ const KeyboardAvoidingContent = () => {
             placement: 'bottom',
             duration: 'persistent',
             label: t`Join a team`,
-            description: t`Junior Garcia sent you an invitation to join HeroUI team!`,
+            description: t`Junior Garcia sent you an invitation to join PrismUI team!`,
             icon: (
               <View className="mt-0.5">
                 <Logo

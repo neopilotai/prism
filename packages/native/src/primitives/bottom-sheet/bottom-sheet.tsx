@@ -76,7 +76,7 @@ function useRootContext() {
   return context;
 }
 
-Root.displayName = 'HeroUINative.Primitive.BottomSheet.Root';
+Root.displayName = 'PrismUINative.Primitive.BottomSheet.Root';
 
 // --------------------------------------------------
 
@@ -105,7 +105,7 @@ const Trigger = forwardRef<TriggerRef, TriggerProps>(
   }
 );
 
-Trigger.displayName = 'HeroUINative.Primitive.BottomSheet.Trigger';
+Trigger.displayName = 'PrismUINative.Primitive.BottomSheet.Trigger';
 
 // --------------------------------------------------
 
@@ -143,7 +143,7 @@ const Overlay = forwardRef<OverlayRef, OverlayProps>(
   }
 );
 
-Overlay.displayName = 'HeroUINative.Primitive.BottomSheet.Overlay';
+Overlay.displayName = 'PrismUINative.Primitive.BottomSheet.Overlay';
 
 // --------------------------------------------------
 
@@ -167,7 +167,7 @@ const Content = forwardRef<ContentRef, ContentProps>(
   }
 );
 
-Content.displayName = 'HeroUINative.Primitive.BottomSheet.Content';
+Content.displayName = 'PrismUINative.Primitive.BottomSheet.Content';
 
 // --------------------------------------------------
 
@@ -196,7 +196,7 @@ const Close = forwardRef<CloseRef, CloseProps>(
   }
 );
 
-Close.displayName = 'HeroUINative.Primitive.BottomSheet.Close';
+Close.displayName = 'PrismUINative.Primitive.BottomSheet.Close';
 
 // --------------------------------------------------
 
@@ -207,7 +207,7 @@ const Title = forwardRef<TitleRef, TitleProps>((props, ref) => {
   );
 });
 
-Title.displayName = 'HeroUINative.Primitive.BottomSheet.Title';
+Title.displayName = 'PrismUINative.Primitive.BottomSheet.Title';
 
 // --------------------------------------------------
 
@@ -218,7 +218,7 @@ const Description = forwardRef<DescriptionRef, DescriptionProps>(
   }
 );
 
-Description.displayName = 'HeroUINative.Primitive.BottomSheet.Description';
+Description.displayName = 'PrismUINative.Primitive.BottomSheet.Description';
 
 // --------------------------------------------------
 

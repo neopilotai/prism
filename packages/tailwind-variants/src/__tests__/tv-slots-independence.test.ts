@@ -18,7 +18,7 @@ const slotsConfig = {
 };
 
 /**
- * HeroUI Chip / React pattern (no React runtime):
+ * PrismUI Chip / React pattern (no React runtime):
  *   const slots = useMemo(() => chip({...}), [deps]);
  *   slots.base({ className }) // every render
  */
@@ -84,7 +84,7 @@ describe.each(runtimes)("%s slots independence (#304)", (_label, createTv) => {
     expect(viaDefault.root()).not.toHaveClass(["root-lg"]);
   });
 
-  // lightsound — issue comment (HeroUI Chip + useMemo + className every render)
+  // lightsound — issue comment (PrismUI Chip + useMemo + className every render)
   test("lightsound: held slots survive sibling mounts when re-applying className", () => {
     const chip = createTv(chipConfig);
 

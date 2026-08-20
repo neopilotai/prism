@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, CloseButton, buttonVariants} from "@heroui/react";
+import {Button, CloseButton, buttonVariants} from "@khulnasoft/react";
 import {Calligraph} from "calligraph";
 import {AnimatePresence, motion} from "motion/react";
 import {useEffect, useState, useSyncExternalStore} from "react";
@@ -28,17 +28,17 @@ const getProHref = (medium: string, campaign: string) =>
 const DEFAULT_PRO_COPY = {
   cardDescription:
     "Components, templates, and AI tooling for React and React Native. Made for teams that care about the details.",
-  cardTitle: "Build faster with HeroUI Pro",
+  cardTitle: "Build faster with PrismUI Pro",
   cta: "Explore Pro",
   headerDetail: "Components, templates & AI tooling",
-  headerTitle: "HeroUI Pro is live",
+  headerTitle: "PrismUI Pro is live",
   heroLabel: "Now available",
 };
 
 const DISCOUNT_PRO_COPY = {
   cardDescription:
     "More components, charts, advanced MCP & Skills, and a complete theme builder. Get your license now at a discounted price for a limited time.",
-  cardTitle: "HeroUI Pro launch discount is live!",
+  cardTitle: "PrismUI Pro launch discount is live!",
   cta: "Get Pro deal",
   headerTitle: "Launch discount is live!",
 };

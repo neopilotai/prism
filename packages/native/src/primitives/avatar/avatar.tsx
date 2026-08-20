@@ -61,7 +61,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.Avatar.Root';
+Root.displayName = 'PrismUINative.Primitive.Avatar.Root';
 
 // --------------------------------------------------
 
@@ -146,7 +146,7 @@ const Image = forwardRef<ImageRef, ImageProps>(
   }
 );
 
-Image.displayName = 'HeroUINative.Primitive.Avatar.Image';
+Image.displayName = 'PrismUINative.Primitive.Avatar.Image';
 
 // --------------------------------------------------
 
@@ -164,7 +164,7 @@ const Fallback = forwardRef<FallbackRef, FallbackProps>(
   }
 );
 
-Fallback.displayName = 'HeroUINative.Primitive.Avatar.Fallback';
+Fallback.displayName = 'PrismUINative.Primitive.Avatar.Fallback';
 
 // --------------------------------------------------
 

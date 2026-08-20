@@ -8,16 +8,16 @@ The primitive components in this directory are adapted from **rn-primitives** li
 **Author:** @roninoss  
 **License:** MIT
 
-These primitives have been adapted for use in HeroUI Native with modifications for:
+These primitives have been adapted for use in PrismUI Native with modifications for:
 
 - TypeScript compatibility and stricter typing
-- Integration with HeroUI Native's theme system
+- Integration with PrismUI Native's theme system
 - Enhanced accessibility features
-- Custom styling patterns aligned with HeroUI design principles
+- Custom styling patterns aligned with PrismUI design principles
 
 ## Usage
 
-These primitives serve as the foundation for HeroUI Native's component library. They provide:
+These primitives serve as the foundation for PrismUI Native's component library. They provide:
 
 - Unstyled, accessible base components
 - Flexible composition patterns

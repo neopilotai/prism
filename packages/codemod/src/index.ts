@@ -17,7 +17,7 @@ const heroui = new Command();
 heroui
   .name(pkg.name)
   .usage('[command]')
-  .description(getCommandDescAndLog(`\nHeroUI Codemod v${pkg.version}\n`, pkg.description))
+  .description(getCommandDescAndLog(`\nPrismUI Codemod v${pkg.version}\n`, pkg.description))
   .version(pkg.version, '-v, --version', 'Output the current version')
   .helpOption('-h, --help', 'Display help for command')
   .argument('[codemod]', `Specify which codemod to run\nCodemods: ${codemods.join(', ')}`)

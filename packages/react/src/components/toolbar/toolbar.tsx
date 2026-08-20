@@ -1,9 +1,9 @@
 "use client";
 
-import type {ToolbarVariants} from "@heroui/styles";
+import type {ToolbarVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {toolbarVariants} from "@heroui/styles";
+import {toolbarVariants} from "@khulnasoft/styles";
 import React from "react";
 import {SeparatorContext} from "react-aria-components/Separator";
 import {ToggleButtonGroupContext} from "react-aria-components/ToggleButtonGroup";
@@ -47,7 +47,7 @@ const ToolbarRoot = ({
   );
 };
 
-ToolbarRoot.displayName = "HeroUI.Toolbar";
+ToolbarRoot.displayName = "PrismUI.Toolbar";
 
 /* -------------------------------------------------------------------------------------------------
  * Exports

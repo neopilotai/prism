@@ -8,25 +8,25 @@ body:
       value: |
         Thank you for reporting an issue :pray:.
 
-        This issue tracker is for reporting bugs found in [HeroUI github repository](https://github.com/khulnasoft/heroui/)
+        This issue tracker is for reporting bugs found in [PrismUI github repository](https://github.com/khulnasoft/heroui/)
         If you have a question about how to achieve something and are struggling, please post a question
         inside of either of the following places:
-          - HeroUI's [Discussion's tab](https://github.com/khulnasoft/heroui/discussions)
-          - HeroUI's [Discord channel](https://discord.gg/9b6yyZKmH4)
+          - PrismUI's [Discussion's tab](https://github.com/khulnasoft/heroui/discussions)
+          - PrismUI's [Discord channel](https://discord.gg/9b6yyZKmH4)
 
 
         Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
-         - HeroUI's [Issue's tab](https://github.com/khulnasoft/heroui/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)
-         - HeroUI's [closed issues tab](https://github.com/khulnasoft/heroui/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
-         - HeroUI's [Discussions tab](https://github.com/khulnasoft/heroui/discussions)
+         - PrismUI's [Issue's tab](https://github.com/khulnasoft/heroui/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)
+         - PrismUI's [closed issues tab](https://github.com/khulnasoft/heroui/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+         - PrismUI's [Discussions tab](https://github.com/khulnasoft/heroui/discussions)
 
         The more information you fill in, the better the community can help you.
   - type: input
     id: version
     attributes:
-      label: HeroUI Version
+      label: PrismUI Version
       description: |
-        Please provide the version of HeroUI you are using (e.g. 3.0.5). Do NOT just put "latest" or "latest version".
+        Please provide the version of PrismUI you are using (e.g. 3.0.5). Do NOT just put "latest" or "latest version".
       placeholder: ex. 3.0.5
     validations:
       required: true
@@ -37,10 +37,10 @@ body:
       description: |
         Provide a clear and concise description of the challenge you are running into.
       placeholder: |
-        This issue page is ONLY for HeroUI's core library. If you are facing an issue with a specific product, please refer to the following links:
-        - HeroUI Pro: Report in HeroUI Pro Discord Channel or Contact Support in Pro Dashboard
-        - HeroUI CLI: Report in https://github.com/khulnasoft/prism/issues
-        - HeroUI Native: Report in https://github.com/khulnasoft/heroui-native/issues
+        This issue page is ONLY for PrismUI's core library. If you are facing an issue with a specific product, please refer to the following links:
+        - PrismUI Pro: Report in PrismUI Pro Discord Channel or Contact Support in Pro Dashboard
+        - PrismUI CLI: Report in https://github.com/khulnasoft/prism/issues
+        - PrismUI Native: Report in https://github.com/khulnasoft/heroui-native/issues
         - Tailwind Variants: Report in https://github.com/khulnasoft/prism/issues
     validations:
       required: true

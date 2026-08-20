@@ -1,10 +1,10 @@
-# @heroui/styles
+# @khulnasoft/styles
 
-The core HeroUI styles package containing CSS files for components, themes, and utilities. This package provides the foundation for HeroUI's design system using Tailwind CSS v4 and is framework-agnostic.
+The core PrismUI styles package containing CSS files for components, themes, and utilities. This package provides the foundation for PrismUI's design system using Tailwind CSS v4 and is framework-agnostic.
 
 ## Documentation
 
-It's the [heroui.com](https://heroui.com) website for the latest version of HeroUI.
+It's the [heroui.com](https://heroui.com) website for the latest version of PrismUI.
 
 - **Latest (v3)**: [https://heroui.com](https://heroui.com)
 - **v2**: [https://v2.heroui.com](https://v2.heroui.com)
@@ -12,28 +12,28 @@ It's the [heroui.com](https://heroui.com) website for the latest version of Hero
 ## Installation
 
 ```bash
-npm install @heroui/styles
+npm install @khulnasoft/styles
 # or
-pnpm add @heroui/styles
+pnpm add @khulnasoft/styles
 # or
-yarn add @heroui/styles
+yarn add @khulnasoft/styles
 ```
 
 ## Usage
 
 ### Basic Setup
 
-Import the HeroUI styles in your main CSS file:
+Import the PrismUI styles in your main CSS file:
 
 ```css
-@import "@heroui/styles";
+@import "@khulnasoft/styles";
 ```
 
 This will import:
 
 - Tailwind CSS base styles
-- HeroUI component styles
-- HeroUI utilities
+- PrismUI component styles
+- PrismUI utilities
 - Default theme variables
 - Animation utilities from tw-animate-css
 
@@ -42,7 +42,7 @@ This will import:
 The package exports CSS files organized into:
 
 ```
-@heroui/styles/
+@khulnasoft/styles/
 ├── index.css          # Main entry point
 ├── base/              # Base styles and CSS variables
 │   └── base.css       # Layout tokens, typography, scrollbar
@@ -74,11 +74,11 @@ Instead of importing everything, you can import only what you need:
 @import "tailwindcss";
 
 /* Import only specific components */
-@import "@heroui/styles/components/button.css" layer(components);
-@import "@heroui/styles/components/chip.css" layer(components);
+@import "@khulnasoft/styles/components/button.css" layer(components);
+@import "@khulnasoft/styles/components/chip.css" layer(components);
 
 /* Import theme */
-@import "@heroui/styles/themes/default" layer(base);
+@import "@khulnasoft/styles/themes/default" layer(base);
 ```
 
 ### Component Classes
@@ -258,7 +258,7 @@ The package provides:
 
 ## Framework Integration
 
-This package is designed to work with any framework. For React-specific components, use `@heroui/react` which builds on top of these core styles.
+This package is designed to work with any framework. For React-specific components, use `@khulnasoft/react` which builds on top of these core styles.
 
 ## License
 

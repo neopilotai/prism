@@ -1,17 +1,17 @@
 ---
 title: Styling
-description: Style HeroUI components with CSS, Tailwind, or CSS-in-JS
+description: Style PrismUI components with CSS, Tailwind, or CSS-in-JS
 icon: brush
 links:
   themes: true
   tailwind: theme
 ---
 
-HeroUI components provide flexible styling options: Tailwind CSS utilities, CSS with [BEM](https://getbem.com/) classes or data attributes, CSS-in-JS libraries, and render props for dynamic styling.
+PrismUI components provide flexible styling options: Tailwind CSS utilities, CSS with [BEM](https://getbem.com/) classes or data attributes, CSS-in-JS libraries, and render props for dynamic styling.
 
 ## Basic Styling
 
-**Using className:** All HeroUI components accept `className` props:
+**Using className:** All PrismUI components accept `className` props:
 
 ```tsx
 <Button className="bg-purple-500 hover:bg-purple-600">
@@ -33,7 +33,7 @@ HeroUI components provide flexible styling options: Tailwind CSS utilities, CSS 
 
 ## Scrollbars
 
-HeroUI scroll slots use `@apply scrollbar` in component CSS. For your own overflow containers, use the utilities from `@khulnasoft/styles`:
+PrismUI scroll slots use `@apply scrollbar` in component CSS. For your own overflow containers, use the utilities from `@khulnasoft/styles`:
 
 ```tsx
 <div className="scrollbar h-64 overflow-y-auto">
@@ -43,8 +43,8 @@ HeroUI scroll slots use `@apply scrollbar` in component CSS. For your own overfl
 
 | Utility | Effect |
 |---------|--------|
-| `scrollbar` | HeroUI thumb (reads theme `--scrollbar-*` variables) |
-| `scrollbar-thin` | HeroUI themed thin scrollbar |
+| `scrollbar` | PrismUI thumb (reads theme `--scrollbar-*` variables) |
+| `scrollbar-thin` | PrismUI themed thin scrollbar |
 | `scrollbar-default` | OS / browser scrollbars |
 | `scrollbar-none` | Hidden scrollbar |
 
@@ -52,7 +52,7 @@ Global and per-subtree control uses `data-scrollbar` on an ancestor. See [Themin
 
 ## State-Based Styling
 
-HeroUI components expose their state through data attributes, similar to CSS pseudo-classes:
+PrismUI components expose their state through data attributes, similar to CSS pseudo-classes:
 
 ```css
 /* Target different states */
@@ -101,7 +101,7 @@ Apply dynamic styling based on component state:
 
 ## BEM Classes
 
-HeroUI uses [BEM methodology](https://getbem.com/) for consistent class naming:
+PrismUI uses [BEM methodology](https://getbem.com/) for consistent class naming:
 
 ```css
 /* Block */

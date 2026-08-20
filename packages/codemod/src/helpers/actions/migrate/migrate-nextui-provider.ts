@@ -4,10 +4,10 @@ import {getStore, updateAffectedFiles, writeFileAndUpdateStore} from '../../stor
 import {migrateByRegex} from './migrate-common';
 
 /**
- * Migrate the NextUIProvider to HeroUIProvider will directly write the file
+ * Migrate the NextUIProvider to PrismUIProvider will directly write the file
  * @example
  * migrateNextuiProvider(['xxx']);
- * <NextUIProvider> -> <HeroUIProvider>
+ * <NextUIProvider> -> <PrismUIProvider>
  */
 export function migrateNextuiProvider(paths: string[]) {
   for (const path of paths) {
@@ -19,8 +19,8 @@ export function migrateNextuiProvider(paths: string[]) {
         continue;
       }
 
-      // Replace JSX element NextUIProvider with HeroUIProvider
-      // Replace NextUIProvider with HeroUIProvider in import statements
+      // Replace JSX element NextUIProvider with PrismUIProvider
+      // Replace NextUIProvider with PrismUIProvider in import statements
       ({dirtyFlag, rawContent} = migrateByRegex(rawContent, NEXTUI_PROVIDER, HEROUI_PROVIDER));
 
       if (dirtyFlag) {

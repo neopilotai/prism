@@ -1,4 +1,4 @@
-import {ListBox, Surface} from "@heroui/react";
+import {ListBox, Surface} from "@khulnasoft/react";
 
 type ScrollbarMode = {
   id: string;
@@ -9,7 +9,7 @@ type ScrollbarMode = {
 const modes: ScrollbarMode[] = [
   {
     id: "heroui",
-    label: "HeroUI 纤细",
+    label: "PrismUI 纤细",
     scrollbar: "thin",
   },
   {

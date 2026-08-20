@@ -671,19 +671,19 @@ const GroupLabel = React.forwardRef<GroupLabelRef, GroupLabelProps>(
 
 // --------------------------------------------------
 
-Root.displayName = 'HeroUINative.Primitive.Select.Root';
-Trigger.displayName = 'HeroUINative.Primitive.Select.Trigger';
-TriggerIndicator.displayName = 'HeroUINative.Primitive.Select.TriggerIndicator';
-Value.displayName = 'HeroUINative.Primitive.Select.Value';
-Overlay.displayName = 'HeroUINative.Primitive.Select.Overlay';
-PopoverContent.displayName = 'HeroUINative.Primitive.Select.PopoverContent';
-DialogContent.displayName = 'HeroUINative.Primitive.Select.DialogContent';
-Close.displayName = 'HeroUINative.Primitive.Select.Close';
-Item.displayName = 'HeroUINative.Primitive.Select.Item';
-ItemLabel.displayName = 'HeroUINative.Primitive.Select.ItemLabel';
-ItemIndicator.displayName = 'HeroUINative.Primitive.Select.ItemIndicator';
-Group.displayName = 'HeroUINative.Primitive.Select.Group';
-GroupLabel.displayName = 'HeroUINative.Primitive.Select.GroupLabel';
+Root.displayName = 'PrismUINative.Primitive.Select.Root';
+Trigger.displayName = 'PrismUINative.Primitive.Select.Trigger';
+TriggerIndicator.displayName = 'PrismUINative.Primitive.Select.TriggerIndicator';
+Value.displayName = 'PrismUINative.Primitive.Select.Value';
+Overlay.displayName = 'PrismUINative.Primitive.Select.Overlay';
+PopoverContent.displayName = 'PrismUINative.Primitive.Select.PopoverContent';
+DialogContent.displayName = 'PrismUINative.Primitive.Select.DialogContent';
+Close.displayName = 'PrismUINative.Primitive.Select.Close';
+Item.displayName = 'PrismUINative.Primitive.Select.Item';
+ItemLabel.displayName = 'PrismUINative.Primitive.Select.ItemLabel';
+ItemIndicator.displayName = 'PrismUINative.Primitive.Select.ItemIndicator';
+Group.displayName = 'PrismUINative.Primitive.Select.Group';
+GroupLabel.displayName = 'PrismUINative.Primitive.Select.GroupLabel';
 
 export {
   Close,

@@ -1,10 +1,10 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {TooltipVariants} from "@heroui/styles";
+import type {TooltipVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {tooltipVariants} from "@heroui/styles";
+import {tooltipVariants} from "@khulnasoft/styles";
 import {mergeProps} from "@react-aria/utils";
 import React, {createContext, use, useRef} from "react";
 import {useFocusable} from "react-aria/useFocusable";
@@ -38,7 +38,7 @@ type TooltipAnimationScopeProps = {
 };
 
 // React Aria sets `shouldSkipAnimation` while its global warmup timer is active, which makes
-// `Tooltip` drop `data-entering` / `data-exiting` when one tooltip replaces another. HeroUI drives
+// `Tooltip` drop `data-entering` / `data-exiting` when one tooltip replaces another. PrismUI drives
 // both phases from CSS keyframes, so the flag is cleared for descendants to keep the fade on swap.
 const TooltipAnimationScope = ({children, shouldSkipAnimation}: TooltipAnimationScopeProps) => {
   const state = use(TooltipTriggerStateContext);

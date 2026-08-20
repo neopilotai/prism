@@ -1,4 +1,4 @@
-export {render, type HeroUIRenderOptions} from "./render";
+export {render, type PrismUIRenderOptions} from "./render";
 export {setupUser, type SetupUserOptions} from "./user";
 export {advanceTimersByTime, runAllTimers} from "./timers";
 export {isDocumentScrollLocked} from "./scroll-lock";

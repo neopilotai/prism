@@ -64,7 +64,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.Accordion.Root';
+Root.displayName = 'PrismUINative.Primitive.Accordion.Root';
 
 function useRootContext() {
   const context = useContext(AccordionContext);
@@ -109,7 +109,7 @@ const Item = forwardRef<ItemRef, ItemProps>(
   }
 );
 
-Item.displayName = 'HeroUINative.Primitive.Accordion.Item';
+Item.displayName = 'PrismUINative.Primitive.Accordion.Item';
 
 function useItemContext() {
   const context = useContext(AccordionItemContext);
@@ -143,7 +143,7 @@ const Header = forwardRef<HeaderRef, HeaderProps>(
   }
 );
 
-Header.displayName = 'HeroUINative.Primitive.Accordion.Header';
+Header.displayName = 'PrismUINative.Primitive.Accordion.Header';
 
 // --------------------------------------------------
 
@@ -214,7 +214,7 @@ const Trigger = forwardRef<TriggerRef, TriggerProps>(
   }
 );
 
-Trigger.displayName = 'HeroUINative.Primitive.Accordion.Trigger';
+Trigger.displayName = 'PrismUINative.Primitive.Accordion.Trigger';
 
 // --------------------------------------------------
 
@@ -228,7 +228,7 @@ const Indicator = forwardRef<IndicatorRef, IndicatorProps>(
   }
 );
 
-Indicator.displayName = 'HeroUINative.Primitive.Accordion.Indicator';
+Indicator.displayName = 'PrismUINative.Primitive.Accordion.Indicator';
 
 // --------------------------------------------------
 
@@ -256,7 +256,7 @@ const Content = forwardRef<ContentRef, ContentProps>(
   }
 );
 
-Content.displayName = 'HeroUINative.Primitive.Accordion.Content';
+Content.displayName = 'PrismUINative.Primitive.Accordion.Content';
 
 export {
   Content,

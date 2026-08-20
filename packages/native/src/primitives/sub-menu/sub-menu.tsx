@@ -125,8 +125,8 @@ const Content = forwardRef<ContentRef, ContentProps>(
 
 // --------------------------------------------------
 
-Root.displayName = 'HeroUINative.SubMenu.Root';
-Trigger.displayName = 'HeroUINative.SubMenu.Trigger';
-Content.displayName = 'HeroUINative.SubMenu.Content';
+Root.displayName = 'PrismUINative.SubMenu.Root';
+Trigger.displayName = 'PrismUINative.SubMenu.Trigger';
+Content.displayName = 'PrismUINative.SubMenu.Content';
 
 export { Content, Root, Trigger, useSubMenuContext };

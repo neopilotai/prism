@@ -7,7 +7,7 @@
 
 </br>
 
-The CLI provides a comprehensive suite of tools to migrate your codebase from NextUI to HeroUI.
+The CLI provides a comprehensive suite of tools to migrate your codebase from NextUI to PrismUI.
 
 ## Quick Start
 
@@ -167,12 +167,12 @@ heroui Codemod v0.0.1
 │
 ◇  Migrated import nextui to heroui
 │
-◇  3. Migrating "NextUIProvider" to "HeroUIProvider"
+◇  3. Migrating "NextUIProvider" to "PrismUIProvider"
 │
-◇  Do you want to migrate NextUIProvider to HeroUIProvider?
+◇  Do you want to migrate NextUIProvider to PrismUIProvider?
 │  Yes
 │
-◇  Migrated NextUIProvider to HeroUIProvider
+◇  Migrated NextUIProvider to PrismUIProvider
 │
 ◇  4. Migrating "tailwindcss"
 │

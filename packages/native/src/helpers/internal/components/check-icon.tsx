@@ -25,4 +25,4 @@ export const CheckIcon: React.FC<CheckIconProps> = ({ size = 16, color }) => {
   );
 };
 
-CheckIcon.displayName = 'HeroUINative.CheckIcon';
+CheckIcon.displayName = 'PrismUINative.CheckIcon';

@@ -27,17 +27,17 @@ export interface DevInfoConfig {
 }
 
 /**
- * Configuration object for HeroUINativeProvider
+ * Configuration object for PrismUINativeProvider
  *
- * @interface HeroUINativeConfig
+ * @interface PrismUINativeConfig
  * @extends TextComponentContextValue
  * @extends TextInputComponentContextValue
  *
  * @description
- * Contains configuration options for the HeroUI Native provider.
+ * Contains configuration options for the PrismUI Native provider.
  * Additional configuration options can be added in future versions.
  */
-export interface HeroUINativeConfig
+export interface PrismUINativeConfig
   extends TextComponentContextValue,
     TextInputComponentContextValue {
   /**
@@ -68,7 +68,7 @@ export interface HeroUINativeConfig
    * Layout direction configuration
    *
    * @description
-   * Set to `true` to inform HeroUI Native components that they are rendered
+   * Set to `true` to inform PrismUI Native components that they are rendered
    * in a right-to-left layout. Components rely on Yoga logical properties
    * (`start`/`end`) for positioning, but JS-driven logic such as gesture
    * deltas needs this flag to resolve the effective direction.
@@ -82,32 +82,32 @@ export interface HeroUINativeConfig
 }
 
 /**
- * Props for HeroUINativeProvider component
+ * Props for PrismUINativeProvider component
  *
- * @interface HeroUINativeProviderProps
+ * @interface PrismUINativeProviderProps
  *
  * @description
  * Main provider component props that wraps the entire application
- * or a section of it to provide HeroUI Native functionality.
+ * or a section of it to provide PrismUI Native functionality.
  *
  * @example
  * ```tsx
- * <HeroUINativeProvider config={{
+ * <PrismUINativeProvider config={{
  *   textProps: {
  *     allowFontScaling: false,
  *     maxFontSizeMultiplier: 1.5
  *   }
  * }}>
  *   <App />
- * </HeroUINativeProvider>
+ * </PrismUINativeProvider>
  * ```
  */
-export interface HeroUINativeProviderProps {
+export interface PrismUINativeProviderProps {
   /**
    * Child components to render within the provider
    *
    * @description
-   * All children will have access to HeroUI Native theme
+   * All children will have access to PrismUI Native theme
    * and configuration through the provider.
    */
   children: ReactNode;
@@ -120,7 +120,7 @@ export interface HeroUINativeProviderProps {
    *
    * @example
    * ```tsx
-   * const config: HeroUINativeConfig = {
+   * const config: PrismUINativeConfig = {
    *   textProps: {
    *     allowFontScaling: false,
    *     adjustsFontSizeToFit: false,
@@ -129,5 +129,5 @@ export interface HeroUINativeProviderProps {
    * };
    * ```
    */
-  config?: HeroUINativeConfig;
+  config?: PrismUINativeConfig;
 }

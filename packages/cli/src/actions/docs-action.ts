@@ -27,10 +27,10 @@ import {compareVersions} from 'src/scripts/helpers';
 const DOCS_DIR_NAME = '.heroui-docs';
 
 function formatSelectionText(selection: DocSelection): string {
-  if (selection === 'react') return 'HeroUI React v3';
-  if (selection === 'native') return 'HeroUI Native';
+  if (selection === 'react') return 'PrismUI React v3';
+  if (selection === 'native') return 'PrismUI Native';
 
-  return 'HeroUI Migration (v2→v3)';
+  return 'PrismUI Migration (v2→v3)';
 }
 
 function formatSize(bytes: number): string {
@@ -86,7 +86,7 @@ function validateRequirements(cwd: string, selection: DocSelection): ValidationR
 
       if (majorVersion < 4) {
         warnings.push(
-          `Tailwind CSS version ${tailwindVersion} is installed, but HeroUI v3 requires Tailwind CSS v4+.`
+          `Tailwind CSS version ${tailwindVersion} is installed, but PrismUI v3 requires Tailwind CSS v4+.`
         );
       }
     }
@@ -102,11 +102,11 @@ function validateRequirements(cwd: string, selection: DocSelection): ValidationR
 
         if (comparison < 0) {
           warnings.push(
-            `React version ${reactVersion} is installed, but HeroUI v3 requires React 19+.`
+            `React version ${reactVersion} is installed, but PrismUI v3 requires React 19+.`
           );
         }
       } else {
-        warnings.push('React is not installed. HeroUI v3 requires React 19+.');
+        warnings.push('React is not installed. PrismUI v3 requires React 19+.');
       }
 
       // Check @heroui/react >= 2.8.0, @beta, or @latest (version that supports Tailwind v4)
@@ -159,13 +159,13 @@ async function confirmRequirements(cwd: string, selection: DocSelection): Promis
     return true;
   }
 
-  Logger.warn('\n⚠️  HeroUI v3 requirements not met:');
+  Logger.warn('\n⚠️  PrismUI v3 requirements not met:');
   for (const warning of validation.warnings) {
     Logger.warn(`  • ${warning}`);
   }
   Logger.newLine();
   Logger.log(
-    'The downloaded documentation is for HeroUI v3 and may not be compatible with your current setup.'
+    'The downloaded documentation is for PrismUI v3 and may not be compatible with your current setup.'
   );
   Logger.newLine();
 
@@ -220,11 +220,11 @@ export async function docsAction(options: DocsOptions) {
       } else if (hasReact) {
         // Only React found - use it automatically
         selection = 'react';
-        Logger.log(chalk.dim('Detected @heroui/react, using HeroUI React v3 docs'));
+        Logger.log(chalk.dim('Detected @heroui/react, using PrismUI React v3 docs'));
       } else if (hasNative) {
         // Only Native found - use it automatically
         selection = 'native';
-        Logger.log(chalk.dim('Detected heroui-native, using HeroUI Native docs'));
+        Logger.log(chalk.dim('Detected heroui-native, using PrismUI Native docs'));
       } else {
         // Neither found - prompt for selection with warning
         if (options.output) {
@@ -434,9 +434,9 @@ async function promptForLibrarySelection(neitherFound: boolean = false): Promise
   }
 
   const selection = await getSelect('Select docs to include', [
-    {title: 'HeroUI React v3', value: 'react'},
-    {title: 'HeroUI Native', value: 'native'},
-    {title: 'HeroUI Migration (v2→v3)', value: 'migration'}
+    {title: 'PrismUI React v3', value: 'react'},
+    {title: 'PrismUI Native', value: 'native'},
+    {title: 'PrismUI Migration (v2→v3)', value: 'migration'}
   ]);
 
   if (selection === undefined) {
@@ -451,8 +451,8 @@ async function promptForOptions(neitherFound?: boolean): Promise<{
   selection: DocSelection;
   targetFiles: string[];
 }> {
-  Logger.log(chalk.cyan('HeroUI Documentation for AI Agents'));
-  Logger.info('Download the latest HeroUI documentation for AI agents to the current project\n');
+  Logger.log(chalk.cyan('PrismUI Documentation for AI Agents'));
+  Logger.info('Download the latest PrismUI documentation for AI agents to the current project\n');
 
   const selection = await promptForLibrarySelection(neitherFound ?? false);
   const targetFile = await promptForOutputFile();

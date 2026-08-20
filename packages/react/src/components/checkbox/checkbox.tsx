@@ -1,14 +1,14 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {CheckboxVariants} from "@heroui/styles";
+import type {CheckboxVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {
   CheckboxButtonRenderProps,
   CheckboxFieldRenderProps,
 } from "react-aria-components/Checkbox";
 
-import {checkboxVariants} from "@heroui/styles";
+import {checkboxVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {
   CheckboxButton as CheckboxButtonPrimitive,
@@ -58,7 +58,7 @@ const CheckboxRoot = ({children, className, variant, ...props}: CheckboxRootProp
   );
 };
 
-CheckboxRoot.displayName = "HeroUI.Checkbox";
+CheckboxRoot.displayName = "PrismUI.Checkbox";
 
 /* -------------------------------------------------------------------------------------------------
  * Checkbox.Content — the clickable `CheckboxButton` label wrapping the control + `Label`.
@@ -80,7 +80,7 @@ const CheckboxContent = ({children, className, ...props}: CheckboxContentProps) 
   );
 };
 
-CheckboxContent.displayName = "HeroUI.Checkbox.Content";
+CheckboxContent.displayName = "PrismUI.Checkbox.Content";
 
 /* -----------------------------------------------------------------------------------------------*/
 
@@ -110,7 +110,7 @@ const CheckboxControl = <E extends keyof React.JSX.IntrinsicElements = "span">({
   );
 };
 
-CheckboxControl.displayName = "HeroUI.Checkbox.Control";
+CheckboxControl.displayName = "PrismUI.Checkbox.Control";
 
 /* -----------------------------------------------------------------------------------------------*/
 
@@ -180,7 +180,7 @@ const CheckboxIndicator = <E extends keyof React.JSX.IntrinsicElements = "span">
   );
 };
 
-CheckboxIndicator.displayName = "HeroUI.Checkbox.Indicator";
+CheckboxIndicator.displayName = "PrismUI.Checkbox.Indicator";
 
 /* ----------------------------------------------------------------------------------------------*/
 

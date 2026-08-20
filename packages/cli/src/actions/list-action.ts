@@ -17,7 +17,7 @@ export async function listAction(options: CommandOptions) {
 
     if (!installed.length) {
       Logger.warn(
-        'No HeroUI packages found. Run `heroui install` to install @heroui/react and @heroui/styles.'
+        'No PrismUI packages found. Run `heroui install` to install @heroui/react and @heroui/styles.'
       );
 
       return;
@@ -25,7 +25,7 @@ export async function listAction(options: CommandOptions) {
 
     const components = await transformPackageDetail(installed, allDependencies);
 
-    outputComponents({components, message: 'Installed HeroUI packages:\n'});
+    outputComponents({components, message: 'Installed PrismUI packages:\n'});
   } catch (error) {
     Logger.prefix('error', `An error occurred while listing packages: ${error}`);
   }

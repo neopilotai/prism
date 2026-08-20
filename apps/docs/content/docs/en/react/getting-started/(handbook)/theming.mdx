@@ -1,13 +1,13 @@
 ---
 title: Theming
-description: Customize HeroUI's design system with CSS variables and global styles
+description: Customize PrismUI's design system with CSS variables and global styles
 icon: palette
 links:
   themes: true
   tailwind: theme
 ---
 
-HeroUI uses CSS variables and [BEM](https://getbem.com/) classes for theming. Customize everything from colors to component styles using standard CSS.
+PrismUI uses CSS variables and [BEM](https://getbem.com/) classes for theming. Customize everything from colors to component styles using standard CSS.
 
 <Callout type="info">
   **Want to create your own theme?** Try the [Theme Builder](/themes) to visually customize colors, radius, fonts, and more — then export the CSS to use in your project.
@@ -15,7 +15,7 @@ HeroUI uses CSS variables and [BEM](https://getbem.com/) classes for theming. Cu
 
 ## How It Works
 
-HeroUI's theming system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme. When you import `@khulnasoft/styles`, it uses Tailwind's built-in color palettes, maps them to semantic variables, automatically switches between light and dark themes, and uses CSS layers and the `@theme` directive for organization.
+PrismUI's theming system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme. When you import `@khulnasoft/styles`, it uses Tailwind's built-in color palettes, maps them to semantic variables, automatically switches between light and dark themes, and uses CSS layers and the `@theme` directive for organization.
 
 **Naming pattern:**
 - Colors without a suffix are backgrounds (e.g., `--accent`)
@@ -110,7 +110,7 @@ export function ThemeSwitch() {
 
 > **Note**: See [Colors](/docs/handbook/colors) for the complete color palette and visual reference.
 
-> **Dark mode**: For a complete setup guide with `next-themes` and HeroUI's `useTheme` hook, see [Dark Mode](/docs/handbook/dark-mode).
+> **Dark mode**: For a complete setup guide with `next-themes` and PrismUI's `useTheme` hook, see [Dark Mode](/docs/handbook/dark-mode).
 
 **Create your own theme:**
 
@@ -414,7 +414,7 @@ Now use it in your components:
 
 ## Variables Reference
 
-HeroUI defines three types of variables in [`variables.css`](https://github.com/khulnasoft/heroui/blob/v3/packages/styles/themes/default/variables.css):
+PrismUI defines three types of variables in [`variables.css`](https://github.com/khulnasoft/heroui/blob/v3/packages/styles/themes/default/variables.css):
 
 1. **Base Variables** — Non-changing values like `--white`, `--black`, spacing, and typography
 2. **Theme Variables** — Colors that change between light/dark themes, plus scrollbar tokens (`--scrollbar-thumb`, `--scrollbar-width`, etc.)
@@ -598,13 +598,13 @@ Form controls rely on `--field-*` theme variables. Hover, focus, and border vari
 
 ## Scrollbars
 
-HeroUI applies a shared scrollbar style to component scroll areas (tables, popovers, drawers, and similar). Scrollbars use standard CSS properties (`scrollbar-width`, `scrollbar-color`, `scrollbar-gutter`) — no `::-webkit-scrollbar` overrides.
+PrismUI applies a shared scrollbar style to component scroll areas (tables, popovers, drawers, and similar). Scrollbars use standard CSS properties (`scrollbar-width`, `scrollbar-color`, `scrollbar-gutter`) — no `::-webkit-scrollbar` overrides.
 
 **Modes** — set `data-scrollbar` on `<html>`, a component root, or a scroll slot:
 
 | Mode | `data-scrollbar` | Behavior |
 |------|------------------|----------|
-| HeroUI thin | *(unset)* or `thin` | Thin thumb from theme tokens |
+| PrismUI thin | *(unset)* or `thin` | Thin thumb from theme tokens |
 | OS / browser | `default` | Native scrollbars (`auto`) |
 | Hidden | `none` | No visible scrollbar (`scrollbar-width: none`) |
 
@@ -612,7 +612,7 @@ HeroUI applies a shared scrollbar style to component scroll areas (tables, popov
 <!-- Native scrollbars everywhere -->
 <html data-scrollbar="default">
 
-<!-- Restore HeroUI scrollbars in one subtree -->
+<!-- Restore PrismUI scrollbars in one subtree -->
 <main data-scrollbar="thin">
   ...
 </main>
@@ -658,11 +658,11 @@ HeroUI applies a shared scrollbar style to component scroll areas (tables, popov
 
 **Custom overflow areas** — use the `scrollbar`, `scrollbar-thin`, `scrollbar-default`, or `scrollbar-none` utilities from `@khulnasoft/styles` on your own elements. See [Styling](/docs/handbook/styling) for class-based overrides.
 
-> **Note**: Some components hide scrollbars by default (date picker popovers, color picker, secondary tabs). Nested scroll slots (e.g. the calendar year picker inside a date picker) keep HeroUI scrollbars because `scrollbar-none` only affects the element it is applied to, not descendants using `@apply scrollbar`.
+> **Note**: Some components hide scrollbars by default (date picker popovers, color picker, secondary tabs). Nested scroll slots (e.g. the calendar year picker inside a date picker) keep PrismUI scrollbars because `scrollbar-none` only affects the element it is applied to, not descendants using `@apply scrollbar`.
 
 ## Vibrant Palette
 
-By default, HeroUI uses accessible soft foreground colors that mix the semantic color with the foreground for better contrast. If you prefer more saturated, vibrant soft foreground colors, add the `data-vibrant-palette` attribute to your root element:
+By default, PrismUI uses accessible soft foreground colors that mix the semantic color with the foreground for better contrast. If you prefer more saturated, vibrant soft foreground colors, add the `data-vibrant-palette` attribute to your root element:
 
 ```html
 <html data-vibrant-palette="true">

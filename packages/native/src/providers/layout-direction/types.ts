@@ -5,7 +5,7 @@ import type { ReactNode } from 'react';
  */
 export interface LayoutDirectionScopeProps {
   /**
-   * Layout direction applied to HeroUI Native components in this subtree
+   * Layout direction applied to PrismUI Native components in this subtree
    */
   isRTL: boolean;
 

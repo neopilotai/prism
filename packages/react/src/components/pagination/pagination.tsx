@@ -1,10 +1,10 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {PaginationVariants} from "@heroui/styles";
+import type {PaginationVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {paginationVariants} from "@heroui/styles";
+import {paginationVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components/Button";
 
@@ -57,7 +57,7 @@ const PaginationRoot = <E extends keyof React.JSX.IntrinsicElements = "nav">({
   );
 };
 
-PaginationRoot.displayName = "HeroUI.Pagination";
+PaginationRoot.displayName = "PrismUI.Pagination";
 
 /* -------------------------------------------------------------------------------------------------
  * Pagination Summary
@@ -92,7 +92,7 @@ const PaginationSummary = <E extends keyof React.JSX.IntrinsicElements = "div">(
   );
 };
 
-PaginationSummary.displayName = "HeroUI.Pagination.Summary";
+PaginationSummary.displayName = "PrismUI.Pagination.Summary";
 
 /* -------------------------------------------------------------------------------------------------
  * Pagination Content
@@ -123,7 +123,7 @@ const PaginationContent = <E extends keyof React.JSX.IntrinsicElements = "ul">({
   );
 };
 
-PaginationContent.displayName = "HeroUI.Pagination.Content";
+PaginationContent.displayName = "PrismUI.Pagination.Content";
 
 /* -------------------------------------------------------------------------------------------------
  * Pagination Item
@@ -153,7 +153,7 @@ const PaginationItem = <E extends keyof React.JSX.IntrinsicElements = "li">({
   );
 };
 
-PaginationItem.displayName = "HeroUI.Pagination.Item";
+PaginationItem.displayName = "PrismUI.Pagination.Item";
 
 /* -------------------------------------------------------------------------------------------------
  * Pagination Link
@@ -180,7 +180,7 @@ const PaginationLink = ({children, className, isActive, ...props}: PaginationLin
   );
 };
 
-PaginationLink.displayName = "HeroUI.Pagination.Link";
+PaginationLink.displayName = "PrismUI.Pagination.Link";
 
 /* -------------------------------------------------------------------------------------------------
  * Pagination Previous
@@ -205,7 +205,7 @@ const PaginationPrevious = ({children, className, ...props}: PaginationPreviousP
   );
 };
 
-PaginationPrevious.displayName = "HeroUI.Pagination.Previous";
+PaginationPrevious.displayName = "PrismUI.Pagination.Previous";
 
 /* -------------------------------------------------------------------------------------------------
  * Pagination Previous Icon
@@ -235,7 +235,7 @@ const PaginationPreviousIcon = <E extends keyof React.JSX.IntrinsicElements = "s
   );
 };
 
-PaginationPreviousIcon.displayName = "HeroUI.Pagination.PreviousIcon";
+PaginationPreviousIcon.displayName = "PrismUI.Pagination.PreviousIcon";
 
 /* -------------------------------------------------------------------------------------------------
  * Pagination Next
@@ -260,7 +260,7 @@ const PaginationNext = ({children, className, ...props}: PaginationNextProps) =>
   );
 };
 
-PaginationNext.displayName = "HeroUI.Pagination.Next";
+PaginationNext.displayName = "PrismUI.Pagination.Next";
 
 /* -------------------------------------------------------------------------------------------------
  * Pagination Next Icon
@@ -290,7 +290,7 @@ const PaginationNextIcon = <E extends keyof React.JSX.IntrinsicElements = "span"
   );
 };
 
-PaginationNextIcon.displayName = "HeroUI.Pagination.NextIcon";
+PaginationNextIcon.displayName = "PrismUI.Pagination.NextIcon";
 
 /* -------------------------------------------------------------------------------------------------
  * Pagination Ellipsis
@@ -320,7 +320,7 @@ const PaginationEllipsis = <E extends keyof React.JSX.IntrinsicElements = "span"
   );
 };
 
-PaginationEllipsis.displayName = "HeroUI.Pagination.Ellipsis";
+PaginationEllipsis.displayName = "PrismUI.Pagination.Ellipsis";
 
 /* -------------------------------------------------------------------------------------------------
  * Exports

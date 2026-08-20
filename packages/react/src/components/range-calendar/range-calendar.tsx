@@ -1,12 +1,12 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {RangeCalendarVariants} from "@heroui/styles";
+import type {RangeCalendarVariants} from "@khulnasoft/styles";
 import type {CalendarIdentifier} from "@internationalized/date";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {DateValue} from "react-aria-components/Calendar";
 
-import {rangeCalendarVariants} from "@heroui/styles";
+import {rangeCalendarVariants} from "@khulnasoft/styles";
 import {CalendarDate, DateFormatter, createCalendar} from "@internationalized/date";
 import {useControlledState} from "@react-stately/utils";
 import React, {createContext, use} from "react";
@@ -149,7 +149,7 @@ function RangeCalendarRoot<T extends DateValue = DateValue>({
   );
 }
 
-RangeCalendarRoot.displayName = "HeroUI.RangeCalendar";
+RangeCalendarRoot.displayName = "PrismUI.RangeCalendar";
 
 /* -------------------------------------------------------------------------------------------------
 | * RangeCalendar Header
@@ -180,7 +180,7 @@ const RangeCalendarHeader = <E extends keyof React.JSX.IntrinsicElements = "head
   );
 };
 
-RangeCalendarHeader.displayName = "HeroUI.RangeCalendar.Header";
+RangeCalendarHeader.displayName = "PrismUI.RangeCalendar.Header";
 
 /* -------------------------------------------------------------------------------------------------
 | * RangeCalendar Heading
@@ -201,7 +201,7 @@ const RangeCalendarHeading = ({className, ...props}: RangeCalendarHeadingProps) 
   );
 };
 
-RangeCalendarHeading.displayName = "HeroUI.RangeCalendar.Heading";
+RangeCalendarHeading.displayName = "PrismUI.RangeCalendar.Heading";
 
 /* -------------------------------------------------------------------------------------------------
 | * RangeCalendar Nav Button
@@ -241,7 +241,7 @@ const RangeCalendarNavButton = ({
   );
 };
 
-RangeCalendarNavButton.displayName = "HeroUI.RangeCalendar.NavButton";
+RangeCalendarNavButton.displayName = "PrismUI.RangeCalendar.NavButton";
 
 /* -------------------------------------------------------------------------------------------------
 | * RangeCalendar Grid
@@ -278,7 +278,7 @@ const RangeCalendarGrid = ({
   );
 };
 
-RangeCalendarGrid.displayName = "HeroUI.RangeCalendar.Grid";
+RangeCalendarGrid.displayName = "PrismUI.RangeCalendar.Grid";
 
 /* -------------------------------------------------------------------------------------------------
 | * RangeCalendar Grid Header
@@ -316,7 +316,7 @@ const RangeCalendarGridHeader = ({children, className, ...props}: RangeCalendarG
   );
 };
 
-RangeCalendarGridHeader.displayName = "HeroUI.RangeCalendar.GridHeader";
+RangeCalendarGridHeader.displayName = "PrismUI.RangeCalendar.GridHeader";
 
 /* -------------------------------------------------------------------------------------------------
 | * RangeCalendar Grid Body
@@ -352,7 +352,7 @@ const RangeCalendarGridBody = ({children, className, ...props}: RangeCalendarGri
   );
 };
 
-RangeCalendarGridBody.displayName = "HeroUI.RangeCalendar.GridBody";
+RangeCalendarGridBody.displayName = "PrismUI.RangeCalendar.GridBody";
 
 /* -------------------------------------------------------------------------------------------------
 | * RangeCalendar Header Cell
@@ -373,7 +373,7 @@ const RangeCalendarHeaderCell = ({className, ...props}: RangeCalendarHeaderCellP
   );
 };
 
-RangeCalendarHeaderCell.displayName = "HeroUI.RangeCalendar.HeaderCell";
+RangeCalendarHeaderCell.displayName = "PrismUI.RangeCalendar.HeaderCell";
 
 /* -------------------------------------------------------------------------------------------------
 | * RangeCalendar Cell
@@ -413,7 +413,7 @@ const RangeCalendarCell = ({children, className, ...props}: RangeCalendarCellPro
   );
 };
 
-RangeCalendarCell.displayName = "HeroUI.RangeCalendar.Cell";
+RangeCalendarCell.displayName = "PrismUI.RangeCalendar.Cell";
 
 /* -------------------------------------------------------------------------------------------------
 | * RangeCalendar Cell Indicator
@@ -441,7 +441,7 @@ const RangeCalendarCellIndicator = <E extends keyof React.JSX.IntrinsicElements 
   );
 };
 
-RangeCalendarCellIndicator.displayName = "HeroUI.RangeCalendar.CellIndicator";
+RangeCalendarCellIndicator.displayName = "PrismUI.RangeCalendar.CellIndicator";
 
 /* -------------------------------------------------------------------------------------------------
 | * Exports

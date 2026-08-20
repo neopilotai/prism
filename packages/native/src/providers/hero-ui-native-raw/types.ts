@@ -1,28 +1,28 @@
 import type { ReactNode } from 'react';
-import type { HeroUINativeConfig } from '../hero-ui-native/types';
+import type { PrismUINativeConfig } from '../hero-ui-native/types';
 
 /**
- * Configuration object for HeroUINativeProviderRaw
+ * Configuration object for PrismUINativeProviderRaw
  *
  * @description
- * A subset of {@link HeroUINativeConfig} containing only the configuration
+ * A subset of {@link PrismUINativeConfig} containing only the configuration
  * options supported by the raw provider.
  */
-export type HeroUINativeConfigRaw = Pick<
-  HeroUINativeConfig,
+export type PrismUINativeConfigRaw = Pick<
+  PrismUINativeConfig,
   'textProps' | 'textInputProps' | 'animation' | 'devInfo' | 'isRTL'
 >;
 
 /**
- * Props for HeroUINativeProviderRaw component
+ * Props for PrismUINativeProviderRaw component
  *
- * @interface HeroUINativeProviderRawProps
+ * @interface PrismUINativeProviderRawProps
  *
  * @description
  * Props for the raw variant of the provider that includes only
- * a subset of functionality from {@link HeroUINativeProviderProps}.
+ * a subset of functionality from {@link PrismUINativeProviderProps}.
  */
-export interface HeroUINativeProviderRawProps {
+export interface PrismUINativeProviderRawProps {
   /**
    * Child components to render within the raw provider
    */
@@ -33,7 +33,7 @@ export interface HeroUINativeProviderRawProps {
    *
    * @description
    * A subset of configuration options supported by the raw provider.
-   * See {@link HeroUINativeConfigRaw} for available options.
+   * See {@link PrismUINativeConfigRaw} for available options.
    */
-  config?: HeroUINativeConfigRaw;
+  config?: PrismUINativeConfigRaw;
 }

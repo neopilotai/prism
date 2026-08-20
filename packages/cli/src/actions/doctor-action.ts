@@ -27,7 +27,7 @@ export async function doctorAction(options: DoctorCommandOptions) {
     Logger.prefix(
       'error',
       `❌ No ${chalk.underline(
-        'HeroUI packages'
+        'PrismUI packages'
       )} found in your project. Please consult the installation guide at: https://heroui.com/docs/react/getting-started/quick-start`
     );
 
@@ -41,9 +41,9 @@ export async function doctorAction(options: DoctorCommandOptions) {
   if (missing.length) {
     problemRecord.push({
       level: 'warn',
-      name: 'missingHeroUIPackages',
+      name: 'missingPrismUIPackages',
       outputFn: () => {
-        Logger.log('The following HeroUI packages are not installed:');
+        Logger.log('The following PrismUI packages are not installed:');
         missing.forEach((pkg) => {
           Logger.log(`- ${pkg}`);
         });

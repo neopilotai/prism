@@ -6,10 +6,10 @@ import type { LayoutDirectionScopeProps } from './types';
  * LayoutDirectionScope Component
  *
  * @description
- * Overrides the layout direction that HeroUI Native components use for their
+ * Overrides the layout direction that PrismUI Native components use for their
  * JS-driven logic within a subtree.
  *
- * `HeroUINativeProvider` sets one direction for the whole app via `config.isRTL`.
+ * `PrismUINativeProvider` sets one direction for the whole app via `config.isRTL`.
  * Some surfaces need to opt out of it — for example a demo or preview area that
  * must stay left-to-right while the surrounding app is right-to-left.
  *

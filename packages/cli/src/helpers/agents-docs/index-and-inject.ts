@@ -35,10 +35,10 @@ export function generateHerouiMdIndex(
   const parts: string[] = [];
 
   if (library === 'react') {
-    parts.push('[HeroUI React v3 Docs Index]');
+    parts.push('[PrismUI React v3 Docs Index]');
     if (reactDocsPath) parts.push(`root: ${reactDocsPath}`);
     parts.push(
-      'STOP. What you remember about HeroUI React v3 is WRONG for this project. Always search docs and read before any task.'
+      'STOP. What you remember about PrismUI React v3 is WRONG for this project. Always search docs and read before any task.'
     );
 
     const targetFile = outputFile || 'AGENTS.md';
@@ -65,10 +65,10 @@ export function generateHerouiMdIndex(
       }
     }
   } else if (library === 'native') {
-    parts.push('[HeroUI Native Docs Index]');
+    parts.push('[PrismUI Native Docs Index]');
     if (nativeDocsPath) parts.push(`root: ${nativeDocsPath}`);
     parts.push(
-      'STOP. What you remember about HeroUI Native is WRONG for this project. Always search docs and read before any task.'
+      'STOP. What you remember about PrismUI Native is WRONG for this project. Always search docs and read before any task.'
     );
 
     const targetFile = outputFile || 'AGENTS.md';
@@ -86,10 +86,10 @@ export function generateHerouiMdIndex(
       }
     }
   } else {
-    parts.push('[HeroUI Migration Docs Index]');
+    parts.push('[PrismUI Migration Docs Index]');
     if (migrationDocsPath) parts.push(`root: ${migrationDocsPath}`);
     parts.push(
-      'STOP. Always search migration docs before migrating components from HeroUI v2 to v3.'
+      'STOP. Always search migration docs before migrating components from PrismUI v2 to v3.'
     );
     parts.push('Start with: agent-index.mdx, then follow the workflow and component guides.');
 

@@ -26,7 +26,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.ActivityIndicator.Root';
+Root.displayName = 'PrismUINative.Primitive.ActivityIndicator.Root';
 
 // --------------------------------------------------
 
@@ -45,6 +45,6 @@ const Indicator = forwardRef<IndicatorRef, IndicatorProps>(
   }
 );
 
-Indicator.displayName = 'HeroUINative.Primitive.ActivityIndicator.Indicator';
+Indicator.displayName = 'PrismUINative.Primitive.ActivityIndicator.Indicator';
 
 export { Indicator, Root };

@@ -149,7 +149,7 @@ export async function getRedirects(): Promise<Redirect[]> {
     source: "/en",
   });
 
-  // HeroUI Agents product page lives on heroui.pro. Docs and npm still link to
+  // PrismUI Agents product page lives on heroui.pro. Docs and npm still link to
   // heroui.com/agents, so send those legacy paths to the live product URL.
   const agentsProductUrl = "https://heroui.pro/agents";
 

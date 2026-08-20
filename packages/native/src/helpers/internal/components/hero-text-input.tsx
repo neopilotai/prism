@@ -12,7 +12,7 @@ export interface HeroTextInputProps extends RNTextInputProps {}
 
 /**
  * HeroTextInput component that automatically applies global text input
- * configuration from HeroUINativeProvider.
+ * configuration from PrismUINativeProvider.
  *
  * This component is distinct from React Native's TextInput component and
  * merges globally configured props (applied as defaults) with the props
@@ -28,16 +28,16 @@ export interface HeroTextInputProps extends RNTextInputProps {}
  * ```
  *
  * @example
- * Global configuration in HeroUINativeProvider:
+ * Global configuration in PrismUINativeProvider:
  * ```tsx
- * <HeroUINativeProvider config={{
+ * <PrismUINativeProvider config={{
  *   textInputProps: {
  *     allowFontScaling: false,
  *     maxFontSizeMultiplier: 1.5
  *   }
  * }}>
  *   <App />
- * </HeroUINativeProvider>
+ * </PrismUINativeProvider>
  * ```
  */
 export const HeroTextInput = React.forwardRef<RNTextInput, HeroTextInputProps>(

@@ -25,4 +25,4 @@ export const SuccessIcon: React.FC<AlertIconProps> = ({ size = 20, color }) => {
   );
 };
 
-SuccessIcon.displayName = 'HeroUINative.Alert.SuccessIcon';
+SuccessIcon.displayName = 'PrismUINative.Alert.SuccessIcon';

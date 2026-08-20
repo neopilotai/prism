@@ -1,15 +1,15 @@
 ---
 title: Hooks
-description: HeroUI Hooks 从 v2 到 v3 的迁移指南
+description: PrismUI Hooks 从 v2 到 v3 的迁移指南
 ---
 
 <Callout type="info">
-  完整的 API 参考请参阅 [v3 组件文档](/docs/components-list)。本指南重点介绍如何从 HeroUI v2 迁移 Hooks。
+  完整的 API 参考请参阅 [v3 组件文档](/docs/components-list)。本指南重点介绍如何从 PrismUI v2 迁移 Hooks。
 </Callout>
 
 ## 概述
 
-HeroUI v3 移除了 v2 中存在的大多数组件 Hooks，转而使用复合组件，并新增了一个用于管理浮层状态的 Hook。本指南涵盖：
+PrismUI v3 移除了 v2 中存在的大多数组件 Hooks，转而使用复合组件，并新增了一个用于管理浮层状态的 Hook。本指南涵盖：
 
 - 组件 Hooks 的移除（`useSwitch`、`useInput`、`useCheckbox` 等）
 - `useDisclosure` → `useOverlayState` 的迁移
@@ -17,7 +17,7 @@ HeroUI v3 移除了 v2 中存在的大多数组件 Hooks，转而使用复合组
 
 ## 组件 Hooks 的移除
 
-HeroUI v2 提供了一系列组件 Hooks（例如 `useSwitch`、`useInput`、`useCheckbox` 等），它们返回一组 prop getter（`getBaseProps`、`getWrapperProps`、`getThumbProps` 等），让用户在无法直接修改内部子组件的情况下也能自定义组件结构。HeroUI v3 通过复合组件解决了这个问题，从而无需再依赖这些 Hooks。
+PrismUI v2 提供了一系列组件 Hooks（例如 `useSwitch`、`useInput`、`useCheckbox` 等），它们返回一组 prop getter（`getBaseProps`、`getWrapperProps`、`getThumbProps` 等），让用户在无法直接修改内部子组件的情况下也能自定义组件结构。PrismUI v3 通过复合组件解决了这个问题，从而无需再依赖这些 Hooks。
 
 ### 为什么 v2 中存在这些 Hooks
 

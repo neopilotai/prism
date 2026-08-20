@@ -43,7 +43,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.RadioGroup.Root';
+Root.displayName = 'PrismUINative.Primitive.RadioGroup.Root';
 
 function useRadioGroupContext() {
   const context = useContext(RadioGroupContext);
@@ -97,7 +97,7 @@ const Item = forwardRef<ItemRef, ItemProps>(
   }
 );
 
-Item.displayName = 'HeroUINative.Primitive.RadioGroup.Item';
+Item.displayName = 'PrismUINative.Primitive.RadioGroup.Item';
 
 // --------------------------------------------------
 
@@ -109,6 +109,6 @@ const Indicator = forwardRef<IndicatorRef, IndicatorProps>(
   }
 );
 
-Indicator.displayName = 'HeroUINative.Primitive.RadioGroup.Indicator';
+Indicator.displayName = 'PrismUINative.Primitive.RadioGroup.Indicator';
 
 export { Indicator, Item, Root, useRadioGroupContext };

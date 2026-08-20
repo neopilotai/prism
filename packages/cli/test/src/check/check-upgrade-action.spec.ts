@@ -64,8 +64,8 @@ describe('Upgrade functionality with beta flag', () => {
     // Setup default implementations for mocks
     mockGetAllOutputDataImpl = vi
       .fn<typeof upgradeModule.getAllOutputData>()
-      .mockImplementation(async (all, isHeroUIAll) => {
-        if (!all || !isHeroUIAll) {
+      .mockImplementation(async (all, isPrismUIAll) => {
+        if (!all || !isPrismUIAll) {
           return {
             allOutputList: [],
             allPeerDepList: []
@@ -88,7 +88,7 @@ describe('Upgrade functionality with beta flag', () => {
       });
 
     mockUpgradeImpl = vi.fn<typeof upgradeModule.upgrade>().mockImplementation(async (options) => {
-      if (options.all && options.isHeroUIAll) {
+      if (options.all && options.isPrismUIAll) {
         if (store.beta) {
           return [
             {
@@ -228,7 +228,7 @@ describe('Upgrade functionality with beta flag', () => {
   });
 
   describe('getAllOutputData', () => {
-    it('should return empty lists when all or isHeroUIAll is false', async () => {
+    it('should return empty lists when all or isPrismUIAll is false', async () => {
       const result = await upgradeModule.getAllOutputData(false, false, {}, new Set());
 
       expect(result).toEqual({
@@ -289,7 +289,7 @@ describe('Upgrade functionality with beta flag', () => {
 
       // Provide a custom implementation for this specific test
       vi.spyOn(upgradeModule, 'getAllOutputData').mockImplementation(
-        async (_all, _isHeroUIAll, allDependencies, missingDepSet) => {
+        async (_all, _isPrismUIAll, allDependencies, missingDepSet) => {
           // Directly call getPackagePeerDep here to ensure it's called the correct number of times
           const result1 = await upgradeModule.getPackagePeerDep(
             '@heroui/react',
@@ -593,7 +593,7 @@ describe('Upgrade functionality with beta flag', () => {
       const result = await upgradeModule.upgrade({
         all: true,
         allDependencies: mockDependencies,
-        isHeroUIAll: true,
+        isPrismUIAll: true,
         upgradeOptionList: mockUpgradeOptionList
       });
 
@@ -619,7 +619,7 @@ describe('Upgrade functionality with beta flag', () => {
       const result = await upgradeModule.upgrade({
         all: true,
         allDependencies: mockDependencies,
-        isHeroUIAll: true,
+        isPrismUIAll: true,
         upgradeOptionList: mockUpgradeOptionList
       });
 
@@ -696,13 +696,13 @@ describe('Upgrade functionality with beta flag', () => {
 
         // Ensure options are non-null
         const all = options.all || false;
-        const isHeroUIAll = options.isHeroUIAll || false;
+        const isPrismUIAll = options.isPrismUIAll || false;
         const allDependencies = options.allDependencies || {};
         const upgradeOptionList = options.upgradeOptionList || [];
 
         const allOutputData = await upgradeModule.getAllOutputData(
           all,
-          isHeroUIAll,
+          isPrismUIAll,
           allDependencies,
           localMissingDepSet
         );
@@ -752,7 +752,7 @@ describe('Upgrade functionality with beta flag', () => {
       const result = await upgradeModule.upgrade({
         all: true,
         allDependencies: mockDependencies,
-        isHeroUIAll: true,
+        isPrismUIAll: true,
         upgradeOptionList: mockUpgradeOptionList
       });
 

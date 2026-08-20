@@ -1,5 +1,5 @@
 /**
- * Color generation utilities for the HeroUI Theme Builder
+ * Color generation utilities for the PrismUI Theme Builder
  * Generates all theme colors based on hue, chroma, AND lightness adjustments
  *
  * Based on packages/storybook/.storybook/utils/apcach-colors.ts but extended

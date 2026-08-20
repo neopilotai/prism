@@ -1,11 +1,11 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {MeterVariants} from "@heroui/styles";
+import type {MeterVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {MeterRenderProps} from "react-aria-components/Meter";
 
-import {meterVariants} from "@heroui/styles";
+import {meterVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {Meter as MeterPrimitive} from "react-aria-components/Meter";
 
@@ -45,7 +45,7 @@ const MeterRoot = ({children, className, color, size, ...props}: MeterRootProps)
   );
 };
 
-MeterRoot.displayName = "HeroUI.Meter";
+MeterRoot.displayName = "PrismUI.Meter";
 
 /* -------------------------------------------------------------------------------------------------
  * Meter Output
@@ -75,7 +75,7 @@ const MeterOutput = <E extends keyof React.JSX.IntrinsicElements = "span">({
   );
 };
 
-MeterOutput.displayName = "HeroUI.Meter.Output";
+MeterOutput.displayName = "PrismUI.Meter.Output";
 
 /* -------------------------------------------------------------------------------------------------
  * Meter Track
@@ -105,7 +105,7 @@ const MeterTrack = <E extends keyof React.JSX.IntrinsicElements = "div">({
   );
 };
 
-MeterTrack.displayName = "HeroUI.Meter.Track";
+MeterTrack.displayName = "PrismUI.Meter.Track";
 
 /* -------------------------------------------------------------------------------------------------
  * Meter Fill
@@ -138,7 +138,7 @@ const MeterFill = <E extends keyof React.JSX.IntrinsicElements = "div">({
   );
 };
 
-MeterFill.displayName = "HeroUI.Meter.Fill";
+MeterFill.displayName = "PrismUI.Meter.Fill";
 
 /* -------------------------------------------------------------------------------------------------
  * Exports

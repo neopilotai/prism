@@ -20,7 +20,7 @@ interface LogoProps {
 }
 
 /**
- * Logo component - HeroUI logo SVG
+ * Logo component - PrismUI logo SVG
  * Accepts themeColorForeground prop to dynamically color the logo based on theme
  */
 export const Logo: React.FC<LogoProps> = ({

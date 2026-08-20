@@ -3,11 +3,11 @@ import type {ReactElement, ReactNode} from "react";
 
 import {render as rtlRender} from "@testing-library/react";
 
-export type HeroUIRenderOptions = Omit<RenderOptions, "wrapper"> & {
+export type PrismUIRenderOptions = Omit<RenderOptions, "wrapper"> & {
   wrapper?: (props: {children: ReactNode}) => ReactNode;
 };
 
-export const render = (ui: ReactElement, options: HeroUIRenderOptions = {}) => {
+export const render = (ui: ReactElement, options: PrismUIRenderOptions = {}) => {
   const {wrapper, ...rest} = options;
 
   return rtlRender(ui, {

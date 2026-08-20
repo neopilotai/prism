@@ -1,10 +1,10 @@
 # Colors
 
-HeroUI Native uses CSS variables for colors that automatically switch between light and dark themes. All colors use the `oklch` color space for better color transitions.
+PrismUI Native uses CSS variables for colors that automatically switch between light and dark themes. All colors use the `oklch` color space for better color transitions.
 
 ## How It Works
 
-HeroUI Native's color system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme via [Uniwind](https://uniwind.dev/). When you import `heroui-native/styles`, it uses Tailwind's built-in color palettes and maps them to semantic variables.
+PrismUI Native's color system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme via [Uniwind](https://uniwind.dev/). When you import `heroui-native/styles`, it uses Tailwind's built-in color palettes and maps them to semantic variables.
 
 **Naming pattern:**
 

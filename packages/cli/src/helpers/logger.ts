@@ -15,7 +15,7 @@ export const defaultColors = ['#F54180', '#338EF7'] as const;
  */
 export const gradientString = _gradientString(...defaultColors);
 
-const logPrefix = gradientString('HeroUI CLI:');
+const logPrefix = gradientString('PrismUI CLI:');
 
 export type PrefixLogType = Extract<
   keyof typeof Logger,
@@ -25,7 +25,7 @@ export type PrefixLogType = Extract<
 type LogArgs = Parameters<typeof console.log>;
 
 /**
- * Centralized logging utility for the HeroUI CLI.
+ * Centralized logging utility for the PrismUI CLI.
  * Provides colored console output methods for different log levels.
  */
 export class Logger {

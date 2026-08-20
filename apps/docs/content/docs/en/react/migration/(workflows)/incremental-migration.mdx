@@ -1,11 +1,11 @@
 ---
 title: Incremental Migration
-description: Step-by-step guide for migrating HeroUI v2 to v3 incrementally while keeping both versions working side-by-side
+description: Step-by-step guide for migrating PrismUI v2 to v3 incrementally while keeping both versions working side-by-side
 ---
 
 ## Overview
 
-Incremental migration with coexistence allows you to migrate from HeroUI v2 to v3 component-by-component while keeping your project functional throughout the migration process. This approach uses special setup strategies to allow both v2 and v3 components to work side-by-side.
+Incremental migration with coexistence allows you to migrate from PrismUI v2 to v3 component-by-component while keeping your project functional throughout the migration process. This approach uses special setup strategies to allow both v2 and v3 components to work side-by-side.
 
 ### AI Assistant Resources
 
@@ -18,7 +18,7 @@ Before choosing this approach, be aware of:
 - **Bundle Size**: Both versions will be included during migration, increasing bundle size
 - **Styling Conflicts**: v2 and v3 styles may conflict; test thoroughly
 - **Type Conflicts**: TypeScript may show conflicts if both versions are imported in the same file
-- **Provider**: v2 requires `HeroUIProvider`, v3 doesn't - you may need conditional provider wrapping
+- **Provider**: v2 requires `PrismUIProvider`, v3 doesn't - you may need conditional provider wrapping
 - **React Version**: v3 requires React 19+, v2 supports React 18+ - ensure React 19 is installed
 - **Setup Complexity**: Requires more complex initial setup compared to full migration
 

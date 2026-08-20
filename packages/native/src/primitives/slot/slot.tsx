@@ -41,7 +41,7 @@ const Pressable = forwardRef<
   });
 });
 
-Pressable.displayName = 'HeroUINative.Primitive.Slot.Pressable';
+Pressable.displayName = 'PrismUINative.Primitive.Slot.Pressable';
 
 // --------------------------------------------------
 
@@ -66,7 +66,7 @@ const View = forwardRef<React.ComponentRef<typeof RNView>, RNViewProps>(
   }
 );
 
-View.displayName = 'HeroUINative.Primitive.Slot.View';
+View.displayName = 'PrismUINative.Primitive.Slot.View';
 
 // --------------------------------------------------
 
@@ -91,7 +91,7 @@ const Text = forwardRef<ComponentRef<typeof RNText>, RNTextProps>(
   }
 );
 
-Text.displayName = 'HeroUINative.Primitive.Slot.Text';
+Text.displayName = 'PrismUINative.Primitive.Slot.Text';
 
 // --------------------------------------------------
 
@@ -116,6 +116,6 @@ const Image = forwardRef<ComponentRef<typeof RNImage>, ImageSlotProps>(
   }
 );
 
-Image.displayName = 'HeroUINative.Primitive.Slot.Image';
+Image.displayName = 'PrismUINative.Primitive.Slot.Image';
 
 export { Image, Pressable, Text, View };

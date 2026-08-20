@@ -75,8 +75,8 @@ export function migrateImportName(
 /**
  * Migrate the name of the JSX element
  * @example
- * migrateJSXElementName(parsedContent, 'NextUIProvider', 'HeroUIProvider');
- * <NextUIProvider /> -> <HeroUIProvider />
+ * migrateJSXElementName(parsedContent, 'NextUIProvider', 'PrismUIProvider');
+ * <NextUIProvider /> -> <PrismUIProvider />
  */
 export function migrateJSXElementName(
   parsedContent: StoreObject['parsedContent'],

@@ -101,7 +101,7 @@ export const Project: FC = () => {
       },
       {
         value: 'hero-ui-native',
-        label: 'HeroUI Native',
+        label: 'PrismUI Native',
         indicator: (
           <StyledMaterialCommunityIcons
             name="arrow-right-drop-circle"
@@ -112,7 +112,7 @@ export const Project: FC = () => {
       },
       {
         value: 'hero-ui-web',
-        label: 'HeroUI Web',
+        label: 'PrismUI Web',
         indicator: (
           <StyledMaterialCommunityIcons
             name="web"
@@ -123,7 +123,7 @@ export const Project: FC = () => {
       },
       {
         value: 'hero-ui-chat',
-        label: 'HeroUI Chat',
+        label: 'PrismUI Chat',
         indicator: (
           <StyledMaterialCommunityIcons
             name="adjust"

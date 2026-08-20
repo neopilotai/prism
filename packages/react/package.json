@@ -8,7 +8,7 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "author": "HeroUI <support@heroui.com>",
+  "author": "PrismUI <support@heroui.com>",
   "homepage": "https://heroui.com",
   "keywords": [
     "next",

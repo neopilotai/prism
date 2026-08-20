@@ -50,7 +50,7 @@ export async function migrateAction(projectPaths?: string[], options = {} as Mig
   const nextuiFiles = filterNextuiFiles(files);
   let step = 1;
 
-  p.intro(chalk.inverse('Starting to migrate NextUI to HeroUI'));
+  p.intro(chalk.inverse('Starting to migrate NextUI to PrismUI'));
 
   /** ======================== 1. Migrate package.json ======================== */
   const runMigratePackageJson = getCanRunCodemod(codemod, 'package-json-package-name');
@@ -85,13 +85,13 @@ export async function migrateAction(projectPaths?: string[], options = {} as Mig
     step++;
   }
 
-  /** ======================== 3. Migrate NextUIProvider to HeroUIProvider ======================== */
+  /** ======================== 3. Migrate NextUIProvider to PrismUIProvider ======================== */
   const runMigrateNextuiProvider = getCanRunCodemod(codemod, 'heroui-provider');
 
   if (runMigrateNextuiProvider) {
-    p.log.step(`${step}. Migrating "NextUIProvider" to "HeroUIProvider"`);
+    p.log.step(`${step}. Migrating "NextUIProvider" to "PrismUIProvider"`);
     const selectMigrateNextuiProvider = await confirmClack({
-      message: 'Do you want to migrate NextUIProvider to HeroUIProvider?'
+      message: 'Do you want to migrate NextUIProvider to PrismUIProvider?'
     });
 
     if (selectMigrateNextuiProvider) {

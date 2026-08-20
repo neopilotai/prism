@@ -2,10 +2,10 @@
  * Display names for Toast components
  */
 export const DISPLAY_NAME = {
-  TOAST_ROOT: 'HeroUINative.Toast.Root',
-  TOAST_BACKGROUND: 'HeroUINative.Toast.Background',
-  TOAST_TITLE: 'HeroUINative.Toast.Title',
-  TOAST_DESCRIPTION: 'HeroUINative.Toast.Description',
-  TOAST_ACTION: 'HeroUINative.Toast.Action',
-  TOAST_CLOSE: 'HeroUINative.Toast.Close',
+  TOAST_ROOT: 'PrismUINative.Toast.Root',
+  TOAST_BACKGROUND: 'PrismUINative.Toast.Background',
+  TOAST_TITLE: 'PrismUINative.Toast.Title',
+  TOAST_DESCRIPTION: 'PrismUINative.Toast.Description',
+  TOAST_ACTION: 'PrismUINative.Toast.Action',
+  TOAST_CLOSE: 'PrismUINative.Toast.Close',
 } as const;

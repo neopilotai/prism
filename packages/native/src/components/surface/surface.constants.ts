@@ -2,6 +2,6 @@
  * Display names for Surface components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.Surface.Root',
-  BACKGROUND: 'HeroUINative.Surface.Background',
+  ROOT: 'PrismUINative.Surface.Root',
+  BACKGROUND: 'PrismUINative.Surface.Background',
 };

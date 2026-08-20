@@ -4,7 +4,7 @@ import { Easing, FadeIn, FadeOut } from 'react-native-reanimated';
  * Display names for Description components
  */
 export const DISPLAY_NAME = {
-  DESCRIPTION: 'HeroUINative.Description',
+  DESCRIPTION: 'PrismUINative.Description',
 } as const;
 
 /**

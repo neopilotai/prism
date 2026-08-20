@@ -9,7 +9,7 @@ import {
 } from 'tailwind-variants';
 
 /**
- * Shared `tailwind-merge` configuration for HeroUI Native.
+ * Shared `tailwind-merge` configuration for PrismUI Native.
  *
  * @see https://www.tailwind-variants.org/docs/config
  */
@@ -60,7 +60,7 @@ export function cn(...args: CnOptions) {
 }
 
 /**
- * HeroUI Native `tv` with {@link twMergeConfig} merged on every call.
+ * PrismUI Native `tv` with {@link twMergeConfig} merged on every call.
  *
  * @see https://www.tailwind-variants.org/docs/config#advanced-custom-tv-wrapper
  */

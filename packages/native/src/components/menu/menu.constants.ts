@@ -2,19 +2,19 @@
  * Display names for the Menu components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.Menu.Root',
-  TRIGGER: 'HeroUINative.Menu.Trigger',
-  PORTAL: 'HeroUINative.Menu.Portal',
-  OVERLAY: 'HeroUINative.Menu.Overlay',
-  CONTENT: 'HeroUINative.Menu.Content',
-  CONTENT_BACKGROUND: 'HeroUINative.Menu.ContentBackground',
-  CLOSE: 'HeroUINative.Menu.Close',
-  LABEL: 'HeroUINative.Menu.Label',
-  GROUP: 'HeroUINative.Menu.Group',
-  ITEM: 'HeroUINative.Menu.Item',
-  ITEM_TITLE: 'HeroUINative.Menu.ItemTitle',
-  ITEM_DESCRIPTION: 'HeroUINative.Menu.ItemDescription',
-  ITEM_INDICATOR: 'HeroUINative.Menu.ItemIndicator',
+  ROOT: 'PrismUINative.Menu.Root',
+  TRIGGER: 'PrismUINative.Menu.Trigger',
+  PORTAL: 'PrismUINative.Menu.Portal',
+  OVERLAY: 'PrismUINative.Menu.Overlay',
+  CONTENT: 'PrismUINative.Menu.Content',
+  CONTENT_BACKGROUND: 'PrismUINative.Menu.ContentBackground',
+  CLOSE: 'PrismUINative.Menu.Close',
+  LABEL: 'PrismUINative.Menu.Label',
+  GROUP: 'PrismUINative.Menu.Group',
+  ITEM: 'PrismUINative.Menu.Item',
+  ITEM_TITLE: 'PrismUINative.Menu.ItemTitle',
+  ITEM_DESCRIPTION: 'PrismUINative.Menu.ItemDescription',
+  ITEM_INDICATOR: 'PrismUINative.Menu.ItemIndicator',
 };
 
 /**

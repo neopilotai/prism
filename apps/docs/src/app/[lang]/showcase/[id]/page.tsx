@@ -36,14 +36,14 @@ export async function generateMetadata({params}: ShowcasePageProps): Promise<Met
 
   return {
     alternates,
-    description: `Interactive demo of ${showcase.name} built with HeroUI components.`,
+    description: `Interactive demo of ${showcase.name} built with PrismUI components.`,
     openGraph: {
-      description: `Interactive demo of ${showcase.name} built with HeroUI components.`,
+      description: `Interactive demo of ${showcase.name} built with PrismUI components.`,
       siteName: siteConfig.name,
-      title: `${showcase.name} - HeroUI Showcase`,
+      title: `${showcase.name} - PrismUI Showcase`,
       url: alternates.canonical,
     },
-    title: `${showcase.name} - HeroUI Showcase`,
+    title: `${showcase.name} - PrismUI Showcase`,
   };
 }
 

@@ -1,18 +1,18 @@
 ---
 title: Provider
-description: Configure HeroUI Native provider with text, text input, animation, toast, and layout direction settings
+description: Configure PrismUI Native provider with text, text input, animation, toast, and layout direction settings
 icon: chevrons-expand-horizontal
 ---
 
-The `HeroUINativeProvider` is the root provider component that configures and initializes HeroUI Native in your React Native application. It provides global configuration and portal management for your application.
+The `PrismUINativeProvider` is the root provider component that configures and initializes PrismUI Native in your React Native application. It provides global configuration and portal management for your application.
 
 ## Overview
 
-The provider serves as the main entry point for HeroUI Native, wrapping your application with essential contexts and configurations:
+The provider serves as the main entry point for PrismUI Native, wrapping your application with essential contexts and configurations:
 
 - **Safe Area Insets**: Automatically handles safe area insets updates via `SafeAreaListener` and syncs them with Uniwind for use in Tailwind classes (e.g., `pb-safe-offset-3`)
-- **Text Configuration**: Global text component settings for consistency across all HeroUI components
-- **Text Input Configuration**: Global text input settings for consistency across all HeroUI input components
+- **Text Configuration**: Global text component settings for consistency across all PrismUI components
+- **Text Input Configuration**: Global text input settings for consistency across all PrismUI input components
 - **Animation Configuration**: Global animation control to disable all animations across the application
 - **Toast Configuration**: Global toast system configuration including insets, default props, and wrapper components
 - **Layout Direction**: Global right-to-left flag used by component logic that runs in JavaScript instead of styles
@@ -23,13 +23,13 @@ The provider serves as the main entry point for HeroUI Native, wrapping your app
 Wrap your application root with the provider:
 
 ```tsx
-import { HeroUINativeProvider } from 'heroui-native';
+import { PrismUINativeProvider } from 'heroui-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <HeroUINativeProvider>{/* Your app content */}</HeroUINativeProvider>
+      <PrismUINativeProvider>{/* Your app content */}</PrismUINativeProvider>
     </GestureHandlerRootView>
   );
 }
@@ -41,13 +41,13 @@ The provider accepts a `config` prop with the following options:
 
 ### Text Component Configuration
 
-Global settings for all Text components within HeroUI Native. These props are carefully selected to include only those that make sense to configure globally across all Text components in the application:
+Global settings for all Text components within PrismUI Native. These props are carefully selected to include only those that make sense to configure globally across all Text components in the application:
 
 ```tsx
-import { HeroUINativeProvider } from 'heroui-native';
-import type { HeroUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider } from 'heroui-native';
+import type { PrismUINativeConfig } from 'heroui-native';
 
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   textProps: {
     // Disable font scaling for accessibility
     allowFontScaling: false,
@@ -65,22 +65,22 @@ const config: HeroUINativeConfig = {
 
 export default function App() {
   return (
-    <HeroUINativeProvider config={config}>
+    <PrismUINativeProvider config={config}>
       {/* Your app content */}
-    </HeroUINativeProvider>
+    </PrismUINativeProvider>
   );
 }
 ```
 
 ### Text Input Component Configuration
 
-Global settings for all TextInput-based components within HeroUI Native (e.g. Input, TextArea, SearchField, InputGroup, InputOTP). These props are carefully selected to include only those that make sense to configure globally across all inputs in the application:
+Global settings for all TextInput-based components within PrismUI Native (e.g. Input, TextArea, SearchField, InputGroup, InputOTP). These props are carefully selected to include only those that make sense to configure globally across all inputs in the application:
 
 ```tsx
-import { HeroUINativeProvider } from 'heroui-native';
-import type { HeroUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider } from 'heroui-native';
+import type { PrismUINativeConfig } from 'heroui-native';
 
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   textInputProps: {
     // Respect Text Size accessibility settings
     allowFontScaling: false,
@@ -92,9 +92,9 @@ const config: HeroUINativeConfig = {
 
 export default function App() {
   return (
-    <HeroUINativeProvider config={config}>
+    <PrismUINativeProvider config={config}>
       {/* Your app content */}
-    </HeroUINativeProvider>
+    </PrismUINativeProvider>
   );
 }
 ```
@@ -108,7 +108,7 @@ export default function App() {
 Global animation configuration for the entire application:
 
 ```tsx
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   // Disable all animations across the application (cascades to all children)
   animation: 'disable-all',
 };
@@ -123,7 +123,7 @@ const config: HeroUINativeConfig = {
 Control developer-facing informational messages displayed in the console:
 
 ```tsx
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   devInfo: {
     // Disable styling principles information message
     stylingPrinciples: false,
@@ -142,7 +142,7 @@ Configure the global toast system including insets, default props, and wrapper c
 **Option 1: Disable Toast Provider**
 
 ```tsx
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   // Disable toast provider entirely
   toast: false,
   // or
@@ -159,7 +159,7 @@ const config: HeroUINativeConfig = {
 ```tsx
 import { KeyboardAvoidingView } from 'react-native';
 
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   toast: {
     // Global toast configuration (used as defaults for all toasts)
     defaultProps: {
@@ -193,12 +193,12 @@ const config: HeroUINativeConfig = {
 
 ### Layout Direction Configuration
 
-Tell HeroUI Native components which layout direction they render in:
+Tell PrismUI Native components which layout direction they render in:
 
 ```tsx
 import { I18nManager } from 'react-native';
 
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   isRTL: I18nManager.isRTL,
 };
 ```
@@ -231,12 +231,12 @@ To override the direction for a subtree, wrap it with `LayoutDirectionScope`, to
 Here's a comprehensive example showing all configuration options:
 
 ```tsx
-import { HeroUINativeProvider } from 'heroui-native';
-import type { HeroUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider } from 'heroui-native';
+import type { PrismUINativeConfig } from 'heroui-native';
 import { I18nManager } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   // Global text configuration
   textProps: {
     minimumFontScale: 0.5,
@@ -281,9 +281,9 @@ const config: HeroUINativeConfig = {
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <HeroUINativeProvider config={config}>
+      <PrismUINativeProvider config={config}>
         <YourApp />
-      </HeroUINativeProvider>
+      </PrismUINativeProvider>
     </GestureHandlerRootView>
   );
 }
@@ -295,11 +295,11 @@ When using Expo Router, wrap your root layout:
 
 ```tsx
 // app/_layout.tsx
-import { HeroUINativeProvider } from 'heroui-native';
-import type { HeroUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider } from 'heroui-native';
+import type { PrismUINativeConfig } from 'heroui-native';
 import { Stack } from 'expo-router';
 
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   textProps: {
     minimumFontScale: 0.5,
     maxFontSizeMultiplier: 1.5,
@@ -308,9 +308,9 @@ const config: HeroUINativeConfig = {
 
 export default function RootLayout() {
   return (
-    <HeroUINativeProvider config={config}>
+    <PrismUINativeProvider config={config}>
       <Stack />
-    </HeroUINativeProvider>
+    </PrismUINativeProvider>
   );
 }
 ```
@@ -319,10 +319,10 @@ export default function RootLayout() {
 
 ### Provider Hierarchy
 
-The `HeroUINativeProvider` internally composes multiple providers:
+The `PrismUINativeProvider` internally composes multiple providers:
 
 ```
-HeroUINativeProvider
+PrismUINativeProvider
 ├── SafeAreaListener (handles safe area insets updates)
 │   └── LayoutDirectionProvider (layout direction configuration)
 │       └── GlobalAnimationSettingsProvider (animation configuration)
@@ -343,11 +343,11 @@ The provider automatically wraps your application with [`SafeAreaListener`](http
 
 ## Raw Provider
 
-`HeroUINativeProviderRaw` is a lightweight variant of `HeroUINativeProvider` designed for bundle optimization. It excludes `ToastProvider` and `PortalHost`, giving you a bare minimum starting point where you only install and add what you actually need. Its `HeroUINativeConfigRaw` config accepts the same options as `HeroUINativeConfig` except `toast`, so `textProps`, `textInputProps`, `animation`, `devInfo`, and `isRTL` all behave identically.
+`PrismUINativeProviderRaw` is a lightweight variant of `PrismUINativeProvider` designed for bundle optimization. It excludes `ToastProvider` and `PortalHost`, giving you a bare minimum starting point where you only install and add what you actually need. Its `PrismUINativeConfigRaw` config accepts the same options as `PrismUINativeConfig` except `toast`, so `textProps`, `textInputProps`, `animation`, `devInfo`, and `isRTL` all behave identically.
 
 ### When to Use
 
-Use `HeroUINativeProviderRaw` when you want full control over which dependencies are included in your bundle. With the raw provider imported from `heroui-native/provider-raw`, the following dependencies are optional and only required if you use the corresponding components:
+Use `PrismUINativeProviderRaw` when you want full control over which dependencies are included in your bundle. With the raw provider imported from `heroui-native/provider-raw`, the following dependencies are optional and only required if you use the corresponding components:
 
 - **react-native-screens** -- required for overlay components (Popover, Dialog)
 - **@gorhom/bottom-sheet** -- required for BottomSheet component
@@ -357,12 +357,12 @@ Use `HeroUINativeProviderRaw` when you want full control over which dependencies
 
 ```tsx
 import {
-  HeroUINativeProviderRaw,
-  type HeroUINativeConfigRaw,
+  PrismUINativeProviderRaw,
+  type PrismUINativeConfigRaw,
 } from 'heroui-native/provider-raw';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-const config: HeroUINativeConfigRaw = {
+const config: PrismUINativeConfigRaw = {
   textProps: {
     maxFontSizeMultiplier: 1.5,
   },
@@ -371,9 +371,9 @@ const config: HeroUINativeConfigRaw = {
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <HeroUINativeProviderRaw config={config}>
+      <PrismUINativeProviderRaw config={config}>
         {/* Your app content */}
-      </HeroUINativeProviderRaw>
+      </PrismUINativeProviderRaw>
     </GestureHandlerRootView>
   );
 }
@@ -384,19 +384,19 @@ export default function App() {
 If you need toast or portal functionality with the raw provider, add them yourself:
 
 ```tsx
-import { HeroUINativeProviderRaw } from 'heroui-native/provider-raw';
+import { PrismUINativeProviderRaw } from 'heroui-native/provider-raw';
 import { PortalHost } from 'heroui-native/portal';
 import { ToastProvider } from 'heroui-native/toast';
 
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <HeroUINativeProviderRaw>
+      <PrismUINativeProviderRaw>
         <ToastProvider>
           {/* Your app content */}
           <PortalHost />
         </ToastProvider>
-      </HeroUINativeProviderRaw>
+      </PrismUINativeProviderRaw>
     </GestureHandlerRootView>
   );
 }
@@ -405,7 +405,7 @@ export default function App() {
 ### Provider Hierarchy
 
 ```
-HeroUINativeProviderRaw
+PrismUINativeProviderRaw
 ├── SafeAreaListener (handles safe area insets updates)
 │   └── LayoutDirectionProvider (layout direction configuration)
 │       └── GlobalAnimationSettingsProvider (animation configuration)
@@ -418,24 +418,24 @@ HeroUINativeProviderRaw
 
 ### 1. Single Provider Instance
 
-Always use a single `HeroUINativeProvider` at the root of your app. Don't nest multiple providers:
+Always use a single `PrismUINativeProvider` at the root of your app. Don't nest multiple providers:
 
 ```tsx
 // ❌ Bad
-<HeroUINativeProvider>
+<PrismUINativeProvider>
   <SomeComponent>
-    <HeroUINativeProvider> {/* Don't do this */}
+    <PrismUINativeProvider> {/* Don't do this */}
       <AnotherComponent />
-    </HeroUINativeProvider>
+    </PrismUINativeProvider>
   </SomeComponent>
-</HeroUINativeProvider>
+</PrismUINativeProvider>
 
 // ✅ Good
-<HeroUINativeProvider>
+<PrismUINativeProvider>
   <SomeComponent>
     <AnotherComponent />
   </SomeComponent>
-</HeroUINativeProvider>
+</PrismUINativeProvider>
 ```
 
 ### 2. Configuration Object
@@ -446,7 +446,7 @@ Define your configuration outside the component to prevent recreating on each re
 // ❌ Bad
 function App() {
   return (
-    <HeroUINativeProvider
+    <PrismUINativeProvider
       config={{
         textProps: {
           /* inline config */
@@ -454,12 +454,12 @@ function App() {
       }}
     >
       {/* ... */}
-    </HeroUINativeProvider>
+    </PrismUINativeProvider>
   );
 }
 
 // ✅ Good
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   textProps: {
     maxFontSizeMultiplier: 1.5,
   },
@@ -467,7 +467,7 @@ const config: HeroUINativeConfig = {
 
 function App() {
   return (
-    <HeroUINativeProvider config={config}>{/* ... */}</HeroUINativeProvider>
+    <PrismUINativeProvider config={config}>{/* ... */}</PrismUINativeProvider>
   );
 }
 ```
@@ -477,7 +477,7 @@ function App() {
 Consider accessibility when configuring text props:
 
 ```tsx
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   textProps: {
     // Allow font scaling for accessibility
     allowFontScaling: true,
@@ -492,9 +492,9 @@ const config: HeroUINativeConfig = {
 The provider is fully typed. Import types for better IDE support:
 
 ```tsx
-import { HeroUINativeProvider, type HeroUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider, type PrismUINativeConfig } from 'heroui-native';
 
-const config: HeroUINativeConfig = {
+const config: PrismUINativeConfig = {
   // Full type safety and autocomplete
   textProps: {
     allowFontScaling: true,

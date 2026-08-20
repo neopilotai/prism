@@ -8,7 +8,7 @@ We want this community to be friendly and respectful to each other. Please follo
 
 ### Important Guidelines
 
-HeroUI Native follows a **strict design system** based on our Figma designs and roadmap. To ensure consistency and quality:
+PrismUI Native follows a **strict design system** based on our Figma designs and roadmap. To ensure consistency and quality:
 
 **No Unauthorized Changes**: Do NOT:
 
@@ -156,7 +156,7 @@ The `package.json` file contains various scripts for common tasks:
 
 ## Component Engineering Design System
 
-When adding new components to HeroUI Native, follow our standardized component engineering process to ensure consistency and quality across the library.
+When adding new components to PrismUI Native, follow our standardized component engineering process to ensure consistency and quality across the library.
 
 ### Component Structure
 
@@ -166,7 +166,7 @@ All components must follow these architectural patterns:
 2. **File Organization**: Each component requires specific files in a strict order
 3. **Styling**: Use NativeWind v4 with tailwind-variants for all styling
 4. **Animations**: Use react-native-reanimated for animations when needed
-5. **API Compatibility**: Component structure and API must align with the latest HeroUI web version where possible
+5. **API Compatibility**: Component structure and API must align with the latest PrismUI web version where possible
 
 ### Required Files for New Components
 

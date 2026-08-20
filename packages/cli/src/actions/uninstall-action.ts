@@ -18,7 +18,7 @@ export async function uninstallAction(options: CommandOptions) {
   const installed = HEROUI_PACKAGES.filter((pkg) => allDependenciesKeys.has(pkg));
 
   if (!installed.length) {
-    Logger.success('✅ No HeroUI packages to uninstall');
+    Logger.success('✅ No PrismUI packages to uninstall');
     process.exit(0);
   }
 

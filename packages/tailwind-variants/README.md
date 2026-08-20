@@ -179,7 +179,7 @@ For full documentation, visit [tailwind-variants.org](https://tailwind-variants.
 
 ## Community
 
-We're excited to see the community adopt HeroUI, raise issues, and provide feedback. Whether it's a
+We're excited to see the community adopt PrismUI, raise issues, and provide feedback. Whether it's a
 feature request, bug report, or a project to showcase, please get involved!
 
 - [Discord](https://discord.gg/9b6yyZKmH4)

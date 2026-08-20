@@ -4,9 +4,9 @@ import { Easing, FadeIn, FadeOut } from 'react-native-reanimated';
  * Display names for Spinner components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.Spinner.Root',
-  INDICATOR: 'HeroUINative.Spinner.Indicator',
-  ICON: 'HeroUINative.Spinner.Icon',
+  ROOT: 'PrismUINative.Spinner.Root',
+  INDICATOR: 'PrismUINative.Spinner.Indicator',
+  ICON: 'PrismUINative.Spinner.Icon',
 } as const;
 
 /**

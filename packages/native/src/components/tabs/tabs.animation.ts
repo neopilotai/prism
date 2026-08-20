@@ -60,7 +60,7 @@ export function useTabsIndicatorAnimation(options: {
 
   // The indicator is absolutely positioned with a physical `left: 0`, which
   // React Native re-anchors to the right edge only under app-wide RTL
-  // (`I18nManager.forceRTL`). A soft direction — `HeroUINativeProvider`
+  // (`I18nManager.forceRTL`). A soft direction — `PrismUINativeProvider`
   // `config.isRTL` or a `direction` style — leaves the anchor on the left while
   // still laying the triggers out right-to-left, and `onLayout` reports `x`
   // from the left edge in both cases. So the re-basing below must key off the

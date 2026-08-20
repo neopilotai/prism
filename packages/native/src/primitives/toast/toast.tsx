@@ -57,7 +57,7 @@ function useRootContext() {
   return context;
 }
 
-Root.displayName = 'HeroUINative.Primitive.Toast.Root';
+Root.displayName = 'PrismUINative.Primitive.Toast.Root';
 
 // --------------------------------------------------
 
@@ -74,7 +74,7 @@ const Title = forwardRef<TitleRef, TitleProps>((props, ref) => {
   );
 });
 
-Title.displayName = 'HeroUINative.Primitive.Toast.Title';
+Title.displayName = 'PrismUINative.Primitive.Toast.Title';
 
 // --------------------------------------------------
 
@@ -85,7 +85,7 @@ const Description = forwardRef<DescriptionRef, DescriptionProps>(
   }
 );
 
-Description.displayName = 'HeroUINative.Primitive.Toast.Description';
+Description.displayName = 'PrismUINative.Primitive.Toast.Description';
 
 // --------------------------------------------------
 
@@ -105,7 +105,7 @@ const Action = forwardRef<ActionRef, ActionProps>(
   }
 );
 
-Action.displayName = 'HeroUINative.Primitive.Toast.Action';
+Action.displayName = 'PrismUINative.Primitive.Toast.Action';
 
 // --------------------------------------------------
 
@@ -131,7 +131,7 @@ const Close = forwardRef<CloseRef, CloseProps>(
   }
 );
 
-Close.displayName = 'HeroUINative.Primitive.Toast.Close';
+Close.displayName = 'PrismUINative.Primitive.Toast.Close';
 
 // --------------------------------------------------
 

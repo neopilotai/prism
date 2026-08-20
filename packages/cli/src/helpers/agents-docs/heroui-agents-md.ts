@@ -1,5 +1,5 @@
 /**
- * heroui-agents-md: Generate HeroUI documentation index for AI coding agents.
+ * heroui-agents-md: Generate PrismUI documentation index for AI coding agents.
  *
  * Downloads docs from GitHub via git sparse-checkout, builds a compact
  * index of all doc files, and injects it into CLAUDE.md or AGENTS.md.

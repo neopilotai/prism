@@ -2,5 +2,5 @@
  * Display name for TextArea component
  */
 export const DISPLAY_NAME = {
-  TEXT_AREA: 'HeroUINative.TextArea',
+  TEXT_AREA: 'PrismUINative.TextArea',
 } as const;

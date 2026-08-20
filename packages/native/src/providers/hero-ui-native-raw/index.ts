@@ -1,2 +1,2 @@
-export { default as HeroUINativeProviderRaw } from './provider';
+export { default as PrismUINativeProviderRaw } from './provider';
 export * from './types';

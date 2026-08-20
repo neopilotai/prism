@@ -1,12 +1,12 @@
 "use client";
 
-import {Link} from "@heroui/react";
+import {Link} from "@khulnasoft/react";
 import {ReactQRCode} from "@lglab/react-qr-code";
 
 import {NATIVE_APP} from "@/config/native-app";
 import {useIsMobileDevice} from "@/hooks/use-is-mobile-device";
 
-import {HeroUIPlainLogo} from "../heroui-plain-logo";
+import {PrismUIPlainLogo} from "../heroui-plain-logo";
 
 /**
  * In-app route segment that hosts component screens. This matches the
@@ -93,7 +93,7 @@ export const DeepLinkQRCode = ({size = 160, url}: DeepLinkQRCodeProps) => {
         href={mobileUrl || "#"}
       >
         <div className="grid size-10 shrink-0 place-items-center rounded-xl bg-foreground text-background">
-          <HeroUIPlainLogo size={18} />
+          <PrismUIPlainLogo size={18} />
         </div>
         <div className="flex flex-1 flex-col items-center justify-center">
           <span className="truncate text-sm font-semibold text-foreground">{NATIVE_APP.NAME}</span>

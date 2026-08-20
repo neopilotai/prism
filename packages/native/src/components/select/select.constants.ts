@@ -2,22 +2,22 @@
  * Display names for the Select components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.Select.Root',
-  TRIGGER: 'HeroUINative.Select.Trigger',
-  TRIGGER_BACKGROUND: 'HeroUINative.Select.TriggerBackground',
-  VALUE: 'HeroUINative.Select.Value',
-  PORTAL: 'HeroUINative.Select.Portal',
-  OVERLAY: 'HeroUINative.Select.Overlay',
-  CONTENT: 'HeroUINative.Select.Content',
-  CONTENT_BACKGROUND: 'HeroUINative.Select.ContentBackground',
-  ITEM: 'HeroUINative.Select.Item',
-  ITEM_LABEL: 'HeroUINative.Select.ItemLabel',
-  ITEM_DESCRIPTION: 'HeroUINative.Select.ItemDescription',
-  ITEM_INDICATOR: 'HeroUINative.Select.ItemIndicator',
-  LIST_LABEL: 'HeroUINative.Select.ListLabel',
-  CLOSE: 'HeroUINative.Select.Close',
-  TRIGGER_INDICATOR: 'HeroUINative.Select.TriggerIndicator',
-  CHEVRON_DOWN_ICON: 'HeroUINative.Select.ChevronDownIcon',
+  ROOT: 'PrismUINative.Select.Root',
+  TRIGGER: 'PrismUINative.Select.Trigger',
+  TRIGGER_BACKGROUND: 'PrismUINative.Select.TriggerBackground',
+  VALUE: 'PrismUINative.Select.Value',
+  PORTAL: 'PrismUINative.Select.Portal',
+  OVERLAY: 'PrismUINative.Select.Overlay',
+  CONTENT: 'PrismUINative.Select.Content',
+  CONTENT_BACKGROUND: 'PrismUINative.Select.ContentBackground',
+  ITEM: 'PrismUINative.Select.Item',
+  ITEM_LABEL: 'PrismUINative.Select.ItemLabel',
+  ITEM_DESCRIPTION: 'PrismUINative.Select.ItemDescription',
+  ITEM_INDICATOR: 'PrismUINative.Select.ItemIndicator',
+  LIST_LABEL: 'PrismUINative.Select.ListLabel',
+  CLOSE: 'PrismUINative.Select.Close',
+  TRIGGER_INDICATOR: 'PrismUINative.Select.TriggerIndicator',
+  CHEVRON_DOWN_ICON: 'PrismUINative.Select.ChevronDownIcon',
 } as const;
 
 /**

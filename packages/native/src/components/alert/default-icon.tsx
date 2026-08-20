@@ -25,4 +25,4 @@ export const DefaultIcon: React.FC<AlertIconProps> = ({ size = 20, color }) => {
   );
 };
 
-DefaultIcon.displayName = 'HeroUINative.Alert.DefaultIcon';
+DefaultIcon.displayName = 'PrismUINative.Alert.DefaultIcon';

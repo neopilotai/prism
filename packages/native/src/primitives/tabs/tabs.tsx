@@ -46,7 +46,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.Tabs.Root';
+Root.displayName = 'PrismUINative.Primitive.Tabs.Root';
 
 function useRootContext() {
   const context = useContext(TabsContext);
@@ -67,7 +67,7 @@ const List = forwardRef<ListRef, ListProps>(({ asChild, ...props }, ref) => {
   return <Component ref={ref} role="tablist" {...props} />;
 });
 
-List.displayName = 'HeroUINative.Primitive.Tabs.List';
+List.displayName = 'PrismUINative.Primitive.Tabs.List';
 
 // --------------------------------------------------
 
@@ -80,7 +80,7 @@ const Indicator = forwardRef<IndicatorRef, IndicatorProps>(
   }
 );
 
-Indicator.displayName = 'HeroUINative.Primitive.Tabs.Indicator';
+Indicator.displayName = 'PrismUINative.Primitive.Tabs.Indicator';
 
 // --------------------------------------------------
 
@@ -132,7 +132,7 @@ const Trigger = forwardRef<TriggerRef, TriggerProps>(
   }
 );
 
-Trigger.displayName = 'HeroUINative.Primitive.Tabs.Trigger';
+Trigger.displayName = 'PrismUINative.Primitive.Tabs.Trigger';
 
 function useTriggerContext() {
   const context = useContext(TriggerContext);
@@ -161,7 +161,7 @@ const Label = forwardRef<LabelRef, LabelProps>(({ asChild, ...props }, ref) => {
   );
 });
 
-Label.displayName = 'HeroUINative.Primitive.Tabs.Label';
+Label.displayName = 'PrismUINative.Primitive.Tabs.Label';
 
 // --------------------------------------------------
 
@@ -188,7 +188,7 @@ const Content = forwardRef<ContentRef, ContentProps>(
   }
 );
 
-Content.displayName = 'HeroUINative.Primitive.Tabs.Content';
+Content.displayName = 'PrismUINative.Primitive.Tabs.Content';
 
 export {
   Content,

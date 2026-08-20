@@ -1,7 +1,7 @@
 "use client";
 
 import {QrCode} from "@gravity-ui/icons";
-import {Button, Disclosure} from "@heroui/react";
+import {Button, Disclosure} from "@khulnasoft/react";
 import {Icon} from "@iconify/react";
 import React from "react";
 
@@ -14,14 +14,14 @@ export function Basic() {
         <Disclosure.Heading>
           <Button slot="trigger" variant="secondary">
             <QrCode />
-            预览 HeroUI Native
+            预览 PrismUI Native
             <Disclosure.Indicator />
           </Button>
         </Disclosure.Heading>
         <Disclosure.Content>
           <Disclosure.Body className="shadow-panel flex flex-col items-center rounded-3xl bg-surface p-4 text-center">
             <p className="text-sm text-muted">
-              使用手机相机扫描此二维码，即可预览 HeroUI Native 组件。
+              使用手机相机扫描此二维码，即可预览 PrismUI Native 组件。
             </p>
             <img
               alt="Expo Go 二维码"

@@ -1,8 +1,8 @@
 {
   "name": "@khulnasoft/styles",
   "version": "3.2.4",
-  "description": "HeroUI core styles and Tailwind plugin",
-  "author": "HeroUI <support@heroui.com>",
+  "description": "PrismUI core styles and Tailwind plugin",
+  "author": "PrismUI <support@heroui.com>",
   "homepage": "https://heroui.com",
   "repository": {
     "type": "git",

@@ -1,15 +1,15 @@
 import type { WithSpringConfig } from 'react-native-reanimated';
 
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.Tabs.Root',
-  LIST: 'HeroUINative.Tabs.List',
-  LIST_BACKGROUND: 'HeroUINative.Tabs.ListBackground',
-  SCROLL_VIEW: 'HeroUINative.Tabs.ScrollView',
-  TRIGGER: 'HeroUINative.Tabs.Trigger',
-  LABEL: 'HeroUINative.Tabs.Label',
-  INDICATOR: 'HeroUINative.Tabs.Indicator',
-  SEPARATOR: 'HeroUINative.Tabs.Separator',
-  CONTENT: 'HeroUINative.Tabs.Content',
+  ROOT: 'PrismUINative.Tabs.Root',
+  LIST: 'PrismUINative.Tabs.List',
+  LIST_BACKGROUND: 'PrismUINative.Tabs.ListBackground',
+  SCROLL_VIEW: 'PrismUINative.Tabs.ScrollView',
+  TRIGGER: 'PrismUINative.Tabs.Trigger',
+  LABEL: 'PrismUINative.Tabs.Label',
+  INDICATOR: 'PrismUINative.Tabs.Indicator',
+  SEPARATOR: 'PrismUINative.Tabs.Separator',
+  CONTENT: 'PrismUINative.Tabs.Content',
 } as const;
 
 export const DEFAULT_INDICATOR_SPRING_CONFIG: WithSpringConfig = {

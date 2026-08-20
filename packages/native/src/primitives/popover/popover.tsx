@@ -373,10 +373,10 @@ const Close = forwardRef<CloseRef, CloseProps>(
 
 // --------------------------------------------------
 
-Root.displayName = 'HeroUINative.Popover.Root';
-Trigger.displayName = 'HeroUINative.Popover.Trigger';
-Overlay.displayName = 'HeroUINative.Popover.Overlay';
-Content.displayName = 'HeroUINative.Popover.Content';
-Close.displayName = 'HeroUINative.Popover.Close';
+Root.displayName = 'PrismUINative.Popover.Root';
+Trigger.displayName = 'PrismUINative.Popover.Trigger';
+Overlay.displayName = 'PrismUINative.Popover.Overlay';
+Content.displayName = 'PrismUINative.Popover.Content';
+Close.displayName = 'PrismUINative.Popover.Close';
 
 export { Close, Content, Overlay, Portal, Root, Trigger, useRootContext };

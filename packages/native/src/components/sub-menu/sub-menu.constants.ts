@@ -2,11 +2,11 @@
  * Display names for the SubMenu components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.SubMenu.Root',
-  BACKGROUND: 'HeroUINative.SubMenu.Background',
-  TRIGGER: 'HeroUINative.SubMenu.Trigger',
-  TRIGGER_INDICATOR: 'HeroUINative.SubMenu.TriggerIndicator',
-  CONTENT: 'HeroUINative.SubMenu.Content',
+  ROOT: 'PrismUINative.SubMenu.Root',
+  BACKGROUND: 'PrismUINative.SubMenu.Background',
+  TRIGGER: 'PrismUINative.SubMenu.Trigger',
+  TRIGGER_INDICATOR: 'PrismUINative.SubMenu.TriggerIndicator',
+  CONTENT: 'PrismUINative.SubMenu.Content',
 };
 
 /** Default icon size for the trigger indicator chevron */

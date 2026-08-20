@@ -2,12 +2,12 @@
  * Display names for Alert components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.Alert',
-  BACKGROUND: 'HeroUINative.Alert.Background',
-  INDICATOR: 'HeroUINative.Alert.Indicator',
-  CONTENT: 'HeroUINative.Alert.Content',
-  TITLE: 'HeroUINative.Alert.Title',
-  DESCRIPTION: 'HeroUINative.Alert.Description',
+  ROOT: 'PrismUINative.Alert',
+  BACKGROUND: 'PrismUINative.Alert.Background',
+  INDICATOR: 'PrismUINative.Alert.Indicator',
+  CONTENT: 'PrismUINative.Alert.Content',
+  TITLE: 'PrismUINative.Alert.Title',
+  DESCRIPTION: 'PrismUINative.Alert.Description',
 };
 
 /** Default icon size in pixels */

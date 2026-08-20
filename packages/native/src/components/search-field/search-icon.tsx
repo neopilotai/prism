@@ -34,4 +34,4 @@ export const SearchIcon: React.FC<SearchIconProps> = ({ size = 16, color }) => {
   );
 };
 
-SearchIcon.displayName = 'HeroUINative.SearchIcon';
+SearchIcon.displayName = 'PrismUINative.SearchIcon';

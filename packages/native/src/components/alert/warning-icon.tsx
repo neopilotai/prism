@@ -25,4 +25,4 @@ export const WarningIcon: React.FC<AlertIconProps> = ({ size = 20, color }) => {
   );
 };
 
-WarningIcon.displayName = 'HeroUINative.Alert.WarningIcon';
+WarningIcon.displayName = 'PrismUINative.Alert.WarningIcon';

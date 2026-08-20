@@ -77,7 +77,7 @@ function useRootContext() {
   return context;
 }
 
-Root.displayName = 'HeroUINative.Primitive.Dialog.Root';
+Root.displayName = 'PrismUINative.Primitive.Dialog.Root';
 
 // --------------------------------------------------
 
@@ -106,7 +106,7 @@ const Trigger = forwardRef<TriggerRef, TriggerProps>(
   }
 );
 
-Trigger.displayName = 'HeroUINative.Primitive.Dialog.Trigger';
+Trigger.displayName = 'PrismUINative.Primitive.Dialog.Trigger';
 
 // --------------------------------------------------
 
@@ -162,7 +162,7 @@ const Overlay = forwardRef<OverlayRef, OverlayProps>(
   }
 );
 
-Overlay.displayName = 'HeroUINative.Primitive.Dialog.Overlay';
+Overlay.displayName = 'PrismUINative.Primitive.Dialog.Overlay';
 
 // --------------------------------------------------
 
@@ -207,7 +207,7 @@ const Content = forwardRef<ContentRef, ContentProps>(
   }
 );
 
-Content.displayName = 'HeroUINative.Primitive.Dialog.Content';
+Content.displayName = 'PrismUINative.Primitive.Dialog.Content';
 
 // --------------------------------------------------
 
@@ -235,7 +235,7 @@ const Close = forwardRef<CloseRef, CloseProps>(
   }
 );
 
-Close.displayName = 'HeroUINative.Primitive.Dialog.Close';
+Close.displayName = 'PrismUINative.Primitive.Dialog.Close';
 
 // --------------------------------------------------
 
@@ -246,7 +246,7 @@ const Title = forwardRef<TitleRef, TitleProps>((props, ref) => {
   );
 });
 
-Title.displayName = 'HeroUINative.Primitive.Dialog.Title';
+Title.displayName = 'PrismUINative.Primitive.Dialog.Title';
 
 // --------------------------------------------------
 
@@ -257,7 +257,7 @@ const Description = forwardRef<DescriptionRef, DescriptionProps>(
   }
 );
 
-Description.displayName = 'HeroUINative.Primitive.Dialog.Description';
+Description.displayName = 'PrismUINative.Primitive.Dialog.Description';
 
 // --------------------------------------------------
 

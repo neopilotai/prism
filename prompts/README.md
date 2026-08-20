@@ -1,6 +1,6 @@
-# HeroUI v3 — AI Integration Prompt Packs
+# PrismUI v3 — AI Integration Prompt Packs
 
-System prompts that teach AI code-generation tools to produce correct, idiomatic HeroUI v3 code.
+System prompts that teach AI code-generation tools to produce correct, idiomatic PrismUI v3 code.
 
 ## What's in this directory
 
@@ -24,7 +24,7 @@ Paste the contents of `bolt-heroui.md` at the start of your prompt when creating
 
 ### Cursor / Claude / ChatGPT / Copilot
 
-Use `heroui-system-prompt.md` as a custom instruction, system prompt, or `.cursorrules` file. It gives the AI a complete reference of HeroUI v3 components and patterns.
+Use `heroui-system-prompt.md` as a custom instruction, system prompt, or `.cursorrules` file. It gives the AI a complete reference of PrismUI v3 components and patterns.
 
 ### Any other tool
 
@@ -34,7 +34,7 @@ The universal `heroui-system-prompt.md` works with any tool that accepts system-
 
 For deeper integration beyond system prompts:
 
-- **MCP Server** — The HeroUI MCP server provides real-time component docs, source code, and theme tokens to AI agents. See the [`@heroui/mcp`](https://www.npmjs.com/package/@heroui/mcp) package.
+- **MCP Server** — The PrismUI MCP server provides real-time component docs, source code, and theme tokens to AI agents. See the [`@khulnasoft/mcp`](https://www.npmjs.com/package/@khulnasoft/mcp) package.
 - **llms.txt** — Full-context documentation following the llms.txt standard, available at [heroui.com/llms.txt](https://heroui.com/llms.txt).
 
 ## Contributing

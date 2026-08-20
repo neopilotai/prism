@@ -4,8 +4,8 @@ import { Easing } from 'react-native-reanimated';
  * Display name constants for the Skeleton component
  */
 export const DISPLAY_NAME = {
-  SKELETON: 'HeroUINative.Skeleton',
-  LINEAR_GRADIENT: 'HeroUINative.Skeleton.LinearGradient',
+  SKELETON: 'PrismUINative.Skeleton',
+  LINEAR_GRADIENT: 'PrismUINative.Skeleton.LinearGradient',
 };
 
 /**

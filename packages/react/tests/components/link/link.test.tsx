@@ -1,4 +1,4 @@
-import {render, screen, setupUser} from "@heroui/testing/helpers";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Link} from "@/components/link";
 
@@ -10,9 +10,9 @@ describe("Link", () => {
   });
 
   it("renders with role, accessible name, and href", () => {
-    render(<Link href="https://heroui.com">HeroUI</Link>);
+    render(<Link href="https://heroui.com">PrismUI</Link>);
 
-    const link = screen.getByRole("link", {name: "HeroUI"});
+    const link = screen.getByRole("link", {name: "PrismUI"});
 
     expect(link).toBeInTheDocument();
     expect(link).toHaveAttribute("href", "https://heroui.com");
@@ -104,7 +104,7 @@ describe("Link", () => {
     it("exposes data-slot when composed", () => {
       render(
         <Link href="https://heroui.com">
-          HeroUI
+          PrismUI
           <Link.Icon />
         </Link>,
       );
@@ -119,7 +119,7 @@ describe("Link", () => {
     it("supports custom icon children without default icon marker", () => {
       render(
         <Link href="https://heroui.com">
-          HeroUI
+          PrismUI
           <Link.Icon>
             <span data-testid="custom-icon">→</span>
           </Link.Icon>

@@ -22,7 +22,7 @@
 
 ## Getting Started
 
-Visit <a aria-label="heroui learn" href="https://heroui.com/docs/native/getting-started/quick-start">https://heroui.com/docs/native/getting-started/quick-start</a> to get started with HeroUI Native.
+Visit <a aria-label="heroui learn" href="https://heroui.com/docs/native/getting-started/quick-start">https://heroui.com/docs/native/getting-started/quick-start</a> to get started with PrismUI Native.
 
 ## Documentation
 
@@ -30,7 +30,7 @@ Visit [https://heroui.com/docs/native/getting-started](https://heroui.com/docs/n
 
 ## Preview App
 
-Experience HeroUI Native components in action with our official preview app! You can explore all components and their variants directly on your device.
+Experience PrismUI Native components in action with our official preview app! You can explore all components and their variants directly on your device.
 
 ### Download
 
@@ -39,11 +39,11 @@ Experience HeroUI Native components in action with our official preview app! You
 
 ## Quick Start with Example App
 
-Want to start building with HeroUI Native immediately? We provide a standalone example app that's fully configured and ready to use:
+Want to start building with PrismUI Native immediately? We provide a standalone example app that's fully configured and ready to use:
 
-**[🚀 HeroUI Native Example App](https://github.com/khulnasoft/heroui-native-example)**
+**[🚀 PrismUI Native Example App](https://github.com/khulnasoft/heroui-native-example)**
 
-This repository contains a pre-configured React Native app with HeroUI Native already set up, including:
+This repository contains a pre-configured React Native app with PrismUI Native already set up, including:
 
 - All necessary dependencies installed
 - Uniwind configuration ready
@@ -62,7 +62,7 @@ See [Roadmap](https://herouinative.featurebase.app/roadmap) to see what we're wo
 
 ## Community
 
-We're excited to see the community adopt HeroUI, raise issues, and provide feedback.
+We're excited to see the community adopt PrismUI, raise issues, and provide feedback.
 Whether it's a feature request, bug report, or a project to showcase, please get involved!
 
 - [Discord](https://discord.gg/9b6yyZKmH4)
@@ -71,7 +71,7 @@ Whether it's a feature request, bug report, or a project to showcase, please get
 
 ## Contributing
 
-Contributions are always welcome! We appreciate your help in making HeroUI Native better.
+Contributions are always welcome! We appreciate your help in making PrismUI Native better.
 
 ### How to Contribute
 

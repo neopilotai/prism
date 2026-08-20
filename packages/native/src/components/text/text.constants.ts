@@ -5,10 +5,10 @@ import type { TextType } from './text.types';
  * Display names for Text components
  */
 export const DISPLAY_NAME = {
-  TEXT_ROOT: 'HeroUINative.Text',
-  TEXT_HEADING: 'HeroUINative.Text.Heading',
-  TEXT_PARAGRAPH: 'HeroUINative.Text.Paragraph',
-  TEXT_CODE: 'HeroUINative.Text.Code',
+  TEXT_ROOT: 'PrismUINative.Text',
+  TEXT_HEADING: 'PrismUINative.Text.Heading',
+  TEXT_PARAGRAPH: 'PrismUINative.Text.Paragraph',
+  TEXT_CODE: 'PrismUINative.Text.Code',
 } as const;
 
 export const DYNAMIC_TYPE_RAMP: Record<

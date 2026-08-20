@@ -18,7 +18,7 @@ export default function ToastNativeModalScreen() {
           toast.show({
             variant: 'default',
             label: t`Join a team`,
-            description: t`Junior Garcia sent you an invitation to join HeroUI team!`,
+            description: t`Junior Garcia sent you an invitation to join PrismUI team!`,
             icon: (
               <View className="mt-0.5">
                 <Logo

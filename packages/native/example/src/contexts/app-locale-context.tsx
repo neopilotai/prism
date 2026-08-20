@@ -29,7 +29,7 @@ const AppLocaleContext = createContext<AppLocaleContextType | undefined>(
  * flips the layout, and picking English restores left-to-right.
  *
  * `isRTL` drives both Uniwind's `LayoutDirection` wrapper (Yoga direction and
- * `rtl:` variants) and the `isRTL` flag passed to `HeroUINativeProvider`.
+ * `rtl:` variants) and the `isRTL` flag passed to `PrismUINativeProvider`.
  */
 export const AppLocaleProvider: React.FC<{ children: React.ReactNode }> = ({
   children,

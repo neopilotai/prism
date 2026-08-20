@@ -1,11 +1,11 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {CalendarYearPickerVariants} from "@heroui/styles";
+import type {CalendarYearPickerVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {CalendarHeadingProps, CalendarYearPickerProps} from "react-aria/useCalendar";
 
-import {calendarYearPickerVariants} from "@heroui/styles";
+import {calendarYearPickerVariants} from "@khulnasoft/styles";
 import React from "react";
 import {useCalendarHeading, useCalendarYearPicker} from "react-aria/useCalendar";
 import {Button as ButtonPrimitive} from "react-aria-components/Button";
@@ -146,7 +146,7 @@ const CalendarYearPickerTrigger = ({
   );
 };
 
-CalendarYearPickerTrigger.displayName = "HeroUI.CalendarYearPicker.Trigger";
+CalendarYearPickerTrigger.displayName = "PrismUI.CalendarYearPicker.Trigger";
 
 /* -------------------------------------------------------------------------------------------------
  * CalendarYearPickerTriggerHeading
@@ -174,7 +174,7 @@ const CalendarYearPickerTriggerHeading = <E extends keyof React.JSX.IntrinsicEle
   );
 };
 
-CalendarYearPickerTriggerHeading.displayName = "HeroUI.CalendarYearPicker.TriggerHeading";
+CalendarYearPickerTriggerHeading.displayName = "PrismUI.CalendarYearPicker.TriggerHeading";
 
 /* -------------------------------------------------------------------------------------------------
  * CalendarYearPickerTriggerIndicator
@@ -201,7 +201,7 @@ const CalendarYearPickerTriggerIndicator = <E extends keyof React.JSX.IntrinsicE
   );
 };
 
-CalendarYearPickerTriggerIndicator.displayName = "HeroUI.CalendarYearPicker.TriggerIndicator";
+CalendarYearPickerTriggerIndicator.displayName = "PrismUI.CalendarYearPicker.TriggerIndicator";
 
 /* -------------------------------------------------------------------------------------------------
  * CalendarYearPickerGrid
@@ -488,7 +488,7 @@ const CalendarYearPickerGrid = <E extends keyof React.JSX.IntrinsicElements = "d
   );
 };
 
-CalendarYearPickerGrid.displayName = "HeroUI.CalendarYearPicker.Grid";
+CalendarYearPickerGrid.displayName = "PrismUI.CalendarYearPicker.Grid";
 
 /* -------------------------------------------------------------------------------------------------
  * CalendarYearPickerGridBody
@@ -526,7 +526,7 @@ const CalendarYearPickerGridBody = ({children}: CalendarYearPickerGridBodyProps)
   );
 };
 
-CalendarYearPickerGridBody.displayName = "HeroUI.CalendarYearPicker.GridBody";
+CalendarYearPickerGridBody.displayName = "PrismUI.CalendarYearPicker.GridBody";
 
 /* -------------------------------------------------------------------------------------------------
  * CalendarYearPickerCell
@@ -586,7 +586,7 @@ const CalendarYearPickerCell = ({
   );
 };
 
-CalendarYearPickerCell.displayName = "HeroUI.CalendarYearPicker.Cell";
+CalendarYearPickerCell.displayName = "PrismUI.CalendarYearPicker.Cell";
 
 /* -------------------------------------------------------------------------------------------------
  * Exports

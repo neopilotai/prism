@@ -32,7 +32,7 @@ const heroui = new Command();
 heroui
   .name('heroui')
   .usage('[command]')
-  .description(getCommandDescAndLog(`\nHeroUI CLI v${pkg.version}\n`, ''))
+  .description(getCommandDescAndLog(`\nPrismUI CLI v${pkg.version}\n`, ''))
   .version(pkg.version, '-v, --version', 'Output the current version')
   .helpOption('-h, --help', 'Display help for command')
   .allowUnknownOption()
@@ -67,7 +67,7 @@ heroui
 
       let helpInfoArr = helpInfo.split('\n');
 
-      helpInfoArr = helpInfoArr.filter((info) => info && !info.includes('HeroUI CLI v'));
+      helpInfoArr = helpInfoArr.filter((info) => info && !info.includes('PrismUI CLI v'));
       // Add command name color
       helpInfoArr = helpInfoArr.map((info) => {
         const command = info.match(/(\w+)\s\[/)?.[1];
@@ -107,7 +107,7 @@ heroui.hook('preAction', async (command) => {
   // Init latest version
   store.cliLatestVersion = cliLatestVersion;
 
-  // Add HeroUI CLI version check preAction
+  // Add PrismUI CLI version check preAction
   const currentVersion = pkg.version;
 
   if (compareVersions(currentVersion, cliLatestVersion) === -1) {
@@ -124,7 +124,7 @@ heroui.hook('preAction', async (command) => {
           'https://github.com/khulnasoft/prism/releases'
         )}`
       )}`,
-      title: gradientString('HeroUI CLI')
+      title: gradientString('PrismUI CLI')
     });
     Logger.newLine();
   }

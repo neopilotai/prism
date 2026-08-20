@@ -2,20 +2,20 @@
   "home": {
     "releaseBadges": [
       {
-        "label": "HeroUI React v3.2.4 — patch release",
+        "label": "PrismUI React v3.2.4 — patch release",
         "href": "/docs/react/releases/v3-2-4",
         "date": "2026-08-04"
       },
       {
-        "label": "HeroUI Native v1.0.8 — patch release",
+        "label": "PrismUI Native v1.0.8 — patch release",
         "href": "/docs/native/releases/v1-0-8",
         "date": "2026-07-31"
       }
     ],
     "titleMain": "Beautiful by default.",
     "titleMuted": "Customizable by design.",
-    "description": "HeroUI is the modern UI library for web and mobile, built to help you move fast, stay consistent, and deliver delightful user experiences.",
-    "metaTitle": "HeroUI v3 (Previously NextUI) - Beautiful by default, customizable by design.",
+    "description": "PrismUI is the modern UI library for web and mobile, built to help you move fast, stay consistent, and deliver delightful user experiences.",
+    "metaTitle": "PrismUI v3 (Previously NextUI) - Beautiful by default, customizable by design.",
     "metaDescription": "Beautiful, accessible React UI components built on React Aria and Tailwind CSS v4. The modern alternative to MUI, Chakra UI, and shadcn/ui for building production-ready applications.",
     "getStarted": "Get started",
     "viewComponents": "View components",
@@ -47,8 +47,8 @@
   },
   "blog": {
     "heading": "Blog",
-    "metaTitle": "Blog | HeroUI",
-    "metaDescription": "Guides, tutorials, and resources for building modern React applications with HeroUI. Comparisons, best practices, and more.",
+    "metaTitle": "Blog | PrismUI",
+    "metaDescription": "Guides, tutorials, and resources for building modern React applications with PrismUI. Comparisons, best practices, and more.",
     "categoriesAriaLabel": "Blog categories",
     "categories": {
       "all": "All",
@@ -64,7 +64,7 @@
   },
   "showcase": {
     "heading": "Showcase",
-    "description": "Explore interactive examples showcasing HeroUI components in real-world scenarios."
+    "description": "Explore interactive examples showcasing PrismUI components in real-world scenarios."
   },
   "footer": {
     "allRightsReserved": "All rights reserved."
@@ -118,8 +118,8 @@
   },
   "themes": {
     "heading": "Theme Builder",
-    "metaTitle": "HeroUI Theme Builder – Customize React UI",
-    "metaDescription": "Customize HeroUI React themes visually. Tune colors, typography, and radius, preview components live, and copy production-ready HeroUI CSS variables.",
+    "metaTitle": "PrismUI Theme Builder – Customize React UI",
+    "metaDescription": "Customize PrismUI React themes visually. Tune colors, typography, and radius, preview components live, and copy production-ready PrismUI CSS variables.",
     "theme": "Theme",
     "custom": "Custom",
     "designTheme": "Design theme",
@@ -130,7 +130,7 @@
   },
   "themeBuilder": {
     "onboarding": {
-      "title": "Adapt HeroUI v3 to your brand",
+      "title": "Adapt PrismUI v3 to your brand",
       "description": "Customize colors, radius, and typography using a token system that keeps every component consistent and production-ready.",
       "moreComing": "More features and themes coming soon.",
       "continue": "Continue"
@@ -228,7 +228,7 @@
     },
     "allowNotifications": {
       "label": "Allow notifications",
-      "description": "Receive push notifications from HeroUI"
+      "description": "Receive push notifications from PrismUI"
     },
     "buttons": {
       "clickMe": "Click me"

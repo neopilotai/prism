@@ -70,7 +70,7 @@ export function getPackageInfo(packagePath: string) {
 /**
  * Get installed @heroui/* packages from package.json
  */
-export function getInstalledHeroUIPackages(
+export function getInstalledPrismUIPackages(
   allDependencies: Record<string, string>
 ): PackageComponent[] {
   return Object.keys(allDependencies)

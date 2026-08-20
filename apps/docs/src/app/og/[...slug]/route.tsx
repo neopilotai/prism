@@ -7,7 +7,7 @@ import path from "path";
 import {notFound} from "next/navigation";
 import {ImageResponse} from "next/og";
 
-import {HeroUILogo} from "@/components/heroui-logo";
+import {PrismUILogo} from "@/components/heroui-logo";
 import {getDocsSeoMetadata} from "@/lib/docs-seo";
 import {stripLocale} from "@/lib/seo";
 import {source} from "@/lib/source";
@@ -111,7 +111,7 @@ export const GET = async (_req: Request, {params}: {params: Promise<{slug: strin
         weight: 600,
       },
     ],
-    icon: <HeroUILogo size={58} />,
+    icon: <PrismUILogo size={58} />,
     title: seoMetadata?.title ?? page.data.title,
   });
 };

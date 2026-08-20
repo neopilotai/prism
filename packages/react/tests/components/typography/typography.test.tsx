@@ -1,12 +1,12 @@
-import {render, screen} from "@heroui/testing/helpers";
+import {render, screen} from "@khulnasoft/testing/helpers";
 
 import {Typography} from "@/components/typography";
 
 describe("Typography", () => {
   it("renders text content", () => {
-    render(<Typography>HeroUI Typography</Typography>);
+    render(<Typography>PrismUI Typography</Typography>);
 
-    expect(screen.getByText("HeroUI Typography")).toBeInTheDocument();
+    expect(screen.getByText("PrismUI Typography")).toBeInTheDocument();
   });
 
   it("exposes BEM block, data-slot, and data-type", () => {

@@ -4,11 +4,11 @@ description: Build flexible UI with component composition patterns
 icon: layers
 ---
 
-HeroUI uses composition patterns to create flexible, customizable components. Change the rendered element, compose components together, and maintain full control over markup.
+PrismUI uses composition patterns to create flexible, customizable components. Change the rendered element, compose components together, and maintain full control over markup.
 
 ## Framework-Agnostic Styles
 
-HeroUI's variant functions are available in the `@khulnasoft/styles` package, which can be used independently of React. This enables Vue, Svelte, and other frameworks to use HeroUI's design system:
+PrismUI's variant functions are available in the `@khulnasoft/styles` package, which can be used independently of React. This enables Vue, Svelte, and other frameworks to use PrismUI's design system:
 
 ```tsx
 // Import directly from @khulnasoft/styles (framework-agnostic)
@@ -22,7 +22,7 @@ Both imports work identically. Use `@khulnasoft/styles` when building for non-Re
 
 ## Polymorphic Styling
 
-Apply HeroUI styles to any element using variant functions or BEM classes. Extend component styles to framework components, native HTML elements, or custom components with full type safety.
+Apply PrismUI styles to any element using variant functions or BEM classes. Extend component styles to framework components, native HTML elements, or custom components with full type safety.
 
 **Example: Styling a Link as a Button**
 
@@ -62,7 +62,7 @@ import Link from 'next/link';
 
 **Working with Compound Components**
 
-When using a custom root element instead of HeroUI's Root component, child components cannot access context slots. You can manually pass `className` to child components using variant functions or BEM classes:
+When using a custom root element instead of PrismUI's Root component, child components cannot access context slots. You can manually pass `className` to child components using variant functions or BEM classes:
 
 ```tsx
 import { Link } from '@khulnasoft/react';
@@ -83,11 +83,11 @@ const slots = linkVariants();
 </NextLink>
 ```
 
-This approach works because HeroUI's variant functions and BEM classes can be applied to any element, giving you complete flexibility to style framework components, native elements, or custom components with HeroUI's design system.
+This approach works because PrismUI's variant functions and BEM classes can be applied to any element, giving you complete flexibility to style framework components, native elements, or custom components with PrismUI's design system.
 
 ## Direct Class Application
 
-The simplest way to style links or other elements is to apply HeroUI's [BEM](https://getbem.com/) classes directly. This approach is straightforward and works with any framework or vanilla HTML.
+The simplest way to style links or other elements is to apply PrismUI's [BEM](https://getbem.com/) classes directly. This approach is straightforward and works with any framework or vanilla HTML.
 
 **With Next.js Link:**
 ```tsx
@@ -111,11 +111,11 @@ import Link from 'next/link';
 - `.button--sm`, `.button--md`, `.button--lg` — Sizes
 - `.button--icon-only` — Icon-only button
 
-This approach works because HeroUI uses [BEM](https://getbem.com/) classes that can be applied to any element. It's perfect when you don't need the component's interactive features (like `onPress` handlers) and just want the visual styling.
+This approach works because PrismUI uses [BEM](https://getbem.com/) classes that can be applied to any element. It's perfect when you don't need the component's interactive features (like `onPress` handlers) and just want the visual styling.
 
 ## Using Variant Functions
 
-For more control and type safety, use variant functions to apply HeroUI styles to framework-specific components or custom elements. Variant functions are available from both `@khulnasoft/styles` (framework-agnostic) and `@khulnasoft/react` (re-exports).
+For more control and type safety, use variant functions to apply PrismUI styles to framework-specific components or custom elements. Variant functions are available from both `@khulnasoft/styles` (framework-agnostic) and `@khulnasoft/react` (re-exports).
 
 **With Next.js Link:**
 
@@ -146,11 +146,11 @@ import Link from 'next/link';
 </Link>
 ```
 
-**Available variant functions:** Each component exports its variant function (`buttonVariants`, `chipVariants`, `linkVariants`, `spinnerVariants`, and more) from `@khulnasoft/styles`. Use them to apply HeroUI's design system to any element while maintaining type safety.
+**Available variant functions:** Each component exports its variant function (`buttonVariants`, `chipVariants`, `linkVariants`, `spinnerVariants`, and more) from `@khulnasoft/styles`. Use them to apply PrismUI's design system to any element while maintaining type safety.
 
 ## Compound Components
 
-HeroUI components are built as compound components—they export multiple parts that work together. Use them in three flexible ways:
+PrismUI components are built as compound components—they export multiple parts that work together. Use them in three flexible ways:
 
 **Option 1: Compound pattern (recommended)** — Use the main component directly without `.Root` suffix:
 
@@ -252,13 +252,13 @@ const buttonStyles = buttonVariants({ variant: "tertiary", size: "md" });
   className={buttonStyles}
   href="https://heroui.com"
 >
-  HeroUI
+  PrismUI
 </Link>
 ```
 
 ## Custom Components
 
-Create your own components by composing HeroUI primitives:
+Create your own components by composing PrismUI primitives:
 
 ```tsx
 import { Button, Tooltip } from '@khulnasoft/react';

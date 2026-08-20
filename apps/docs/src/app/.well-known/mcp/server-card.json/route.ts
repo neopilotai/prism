@@ -21,7 +21,7 @@ export async function GET(request: Request) {
       tools: true,
     },
     description:
-      "HeroUI MCP servers expose read-only HeroUI React and HeroUI Native documentation, component metadata, source references, styles, and theme variables to AI coding agents.",
+      "PrismUI MCP servers expose read-only PrismUI React and PrismUI Native documentation, component metadata, source references, styles, and theme variables to AI coding agents.",
     endpoint: absoluteUrl(origin, "/.well-known/mcp/server-card.json"),
     links: {
       docs: [
@@ -37,12 +37,12 @@ export async function GET(request: Request) {
     notes:
       "The supported MCP transport today is stdio through the published npm packages. The endpoint field identifies this server card for browser and catalog discovery; it is not a Streamable HTTP MCP endpoint.",
     serverInfo: {
-      name: "HeroUI MCP",
+      name: "PrismUI MCP",
       version: MCP_PACKAGE_VERSION,
     },
     tools: [
       {
-        description: "List all available HeroUI v3 React components.",
+        description: "List all available PrismUI v3 React components.",
         name: "list_components",
         package: "@khulnasoft/react-mcp",
       },
@@ -62,17 +62,17 @@ export async function GET(request: Request) {
         package: "@khulnasoft/react-mcp",
       },
       {
-        description: "Get HeroUI React theme variables.",
+        description: "Get PrismUI React theme variables.",
         name: "get_theme_variables",
         package: "@khulnasoft/react-mcp",
       },
       {
-        description: "Browse full HeroUI React documentation.",
+        description: "Browse full PrismUI React documentation.",
         name: "get_docs",
         package: "@khulnasoft/react-mcp",
       },
       {
-        description: "List all available HeroUI Native components.",
+        description: "List all available PrismUI Native components.",
         name: "list_components",
         package: "@khulnasoft/native-mcp",
       },
@@ -82,12 +82,12 @@ export async function GET(request: Request) {
         package: "@khulnasoft/native-mcp",
       },
       {
-        description: "Get HeroUI Native theme variables.",
+        description: "Get PrismUI Native theme variables.",
         name: "get_theme_variables",
         package: "@khulnasoft/native-mcp",
       },
       {
-        description: "Browse full HeroUI Native documentation.",
+        description: "Browse full PrismUI Native documentation.",
         name: "get_docs",
         package: "@khulnasoft/native-mcp",
       },

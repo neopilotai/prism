@@ -46,7 +46,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.Switch.Root';
+Root.displayName = 'PrismUINative.Primitive.Switch.Root';
 
 // --------------------------------------------------
 
@@ -56,6 +56,6 @@ const Thumb = forwardRef<ThumbRef, ThumbProps>(({ asChild, ...props }, ref) => {
   return <Component ref={ref} role="presentation" {...props} />;
 });
 
-Thumb.displayName = 'HeroUINative.Primitive.Switch.Thumb';
+Thumb.displayName = 'PrismUINative.Primitive.Switch.Thumb';
 
 export { Root, Thumb };

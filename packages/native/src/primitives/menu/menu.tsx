@@ -753,17 +753,17 @@ const Label = forwardRef<LabelRef, LabelProps>(({ asChild, ...props }, ref) => {
 
 // --------------------------------------------------
 
-Root.displayName = 'HeroUINative.Menu.Root';
-Trigger.displayName = 'HeroUINative.Menu.Trigger';
-Overlay.displayName = 'HeroUINative.Menu.Overlay';
-Content.displayName = 'HeroUINative.Menu.Content';
-Close.displayName = 'HeroUINative.Menu.Close';
-Group.displayName = 'HeroUINative.Menu.Group';
-Item.displayName = 'HeroUINative.Menu.Item';
-ItemTitle.displayName = 'HeroUINative.Menu.ItemTitle';
-ItemDescription.displayName = 'HeroUINative.Menu.ItemDescription';
-ItemIndicator.displayName = 'HeroUINative.Menu.ItemIndicator';
-Label.displayName = 'HeroUINative.Menu.Label';
+Root.displayName = 'PrismUINative.Menu.Root';
+Trigger.displayName = 'PrismUINative.Menu.Trigger';
+Overlay.displayName = 'PrismUINative.Menu.Overlay';
+Content.displayName = 'PrismUINative.Menu.Content';
+Close.displayName = 'PrismUINative.Menu.Close';
+Group.displayName = 'PrismUINative.Menu.Group';
+Item.displayName = 'PrismUINative.Menu.Item';
+ItemTitle.displayName = 'PrismUINative.Menu.ItemTitle';
+ItemDescription.displayName = 'PrismUINative.Menu.ItemDescription';
+ItemIndicator.displayName = 'PrismUINative.Menu.ItemIndicator';
+Label.displayName = 'PrismUINative.Menu.Label';
 
 export {
   Close,

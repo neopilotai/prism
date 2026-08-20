@@ -807,6 +807,10 @@ importers:
         specifier: ^0.1.9
         version: 0.1.10
 
+  packages/native/lib/module: {}
+
+  packages/native/lib/typescript: {}
+
   packages/react:
     dependencies:
       '@khulnasoft/styles':

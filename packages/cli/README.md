@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://heroui.com">
       <img width="20%" src="https://raw.githubusercontent.com/khulnasoft/heroui/v3/apps/docs/public/icons/readme-logo.png" alt="heroui (previously nextui)" />
-      <h1 align="center">HeroUI CLI</h1>
+      <h1 align="center">PrismUI CLI</h1>
   </a>
 </p>
 </br>
@@ -14,13 +14,13 @@
   </a>
 </p>
 
-The CLI offers a suite of commands to initialize, manage, and improve your HeroUI projects. It enables you to `install`, `uninstall`, or `upgrade` HeroUI packages, assess the health of your project, and more.
+The CLI offers a suite of commands to initialize, manage, and improve your PrismUI projects. It enables you to `install`, `uninstall`, or `upgrade` PrismUI packages, assess the health of your project, and more.
 
 ## Quick Start
 
-> **Note**: The HeroUI CLI requires [Node.js](https://nodejs.org/en) _22+_ or later
+> **Note**: The PrismUI CLI requires [Node.js](https://nodejs.org/en) _22+_ or later
 
-You can choose the following ways to start the HeroUI CLI.
+You can choose the following ways to start the PrismUI CLI.
 
 ### Npx
 
@@ -50,10 +50,10 @@ Commands:
   install [options]              Installs @heroui/react and @heroui/styles in your project
   upgrade [options]              Upgrades @heroui/react and @heroui/styles to the latest versions
   uninstall [options]            Uninstalls @heroui/react and @heroui/styles from the project
-  list [options]                 Lists installed HeroUI packages (@heroui/react, @heroui/styles)
+  list [options]                 Lists installed PrismUI packages (@heroui/react, @heroui/styles)
   env [options]                  Displays debugging information for the local environment
   doctor [options]               Checks for issues in the project
-  agents-md [options]            Downloads HeroUI documentation for AI coding agents
+  agents-md [options]            Downloads PrismUI documentation for AI coding agents
   help [command]                 Display help for command
 ```
 
@@ -69,7 +69,7 @@ The `agents-md` command collects anonymous usage data.
 
 ### Init
 
-Initialize a new HeroUI project with official templates.
+Initialize a new PrismUI project with official templates.
 
 ```bash
 heroui init [projectName] [options]
@@ -83,7 +83,7 @@ heroui init [projectName] [options]
 ##### Example
 
 ```bash
-# Initialize a new HeroUI project with the app template, named my-heroui-app using pnpm
+# Initialize a new PrismUI project with the app template, named my-heroui-app using pnpm
 heroui init my-heroui-app -t app -p pnpm
 ```
 
@@ -96,15 +96,15 @@ heroui init
 output:
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ┌  Create a new project
 │
 ◇  Select a template (Enter to select)
-│  ● App (A Next.js 16 with app directory template pre-configured with HeroUI (v3) and Tailwind CSS.)
-│  ○ Pages (A Next.js 16 with pages directory template pre-configured with HeroUI (v3) and Tailwind CSS.)
-│  ○ Vite (A Vite template pre-configured with HeroUI (v3) and Tailwind CSS.)
-│  ○ React Router (A React Router template pre-configured with HeroUI (v3) and Tailwind CSS.)
+│  ● App (A Next.js 16 with app directory template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ Pages (A Next.js 16 with pages directory template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ Vite (A Vite template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ React Router (A React Router template pre-configured with PrismUI (v3) and Tailwind CSS.)
 │
 ◇  New project name (Enter to skip with default name)
 │  my-heroui-app
@@ -148,7 +148,7 @@ heroui install
 Output:
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 📦 Packages to be installed:
 ╭─────────────────────────────────────────────────────────────────────────────╮
@@ -191,7 +191,7 @@ heroui upgrade
 Output:
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ╭──────────────────────────── Upgrade ────────────────────────────╮
 │  @heroui/react               ^3.0.0  ->  ^3.1.0                │
@@ -226,7 +226,7 @@ heroui uninstall
 Output:
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ❗️ Packages slated for uninstallation:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
@@ -244,7 +244,7 @@ HeroUI CLI <version>
 
 ### List
 
-List the installed HeroUI packages (`@heroui/react`, `@heroui/styles`).
+List the installed PrismUI packages (`@heroui/react`, `@heroui/styles`).
 
 ```bash
 heroui list [options]
@@ -263,7 +263,7 @@ heroui list
 Output:
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 Current installed packages:
 
@@ -303,13 +303,13 @@ Output:
 If there is a problem in your project, the `doctor` command will display the problem information.
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
-HeroUI CLI: ❌ Your project has 1 issue that require attention
+PrismUI CLI: ❌ Your project has 1 issue that require attention
 
-❗️Issue 1: missingHeroUIPackages
+❗️Issue 1: missingPrismUIPackages
 
-The following HeroUI packages are not installed:
+The following PrismUI packages are not installed:
 - @heroui/styles
 
 Run `heroui install` to install them.
@@ -318,7 +318,7 @@ Run `heroui install` to install them.
 Otherwise, the `doctor` command will display the following message.
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ✅ Your project has no detected issues.
 ```
@@ -344,7 +344,7 @@ heroui env
 Output:
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 Current installed packages:
 
@@ -365,7 +365,7 @@ Environment Info:
 
 ### Agents-md
 
-Download HeroUI documentation for AI coding agents (Claude, Cursor, etc.). This command downloads the latest documentation from the HeroUI repository and generates an index file that can be injected into markdown files like `AGENTS.md` or `CLAUDE.md` to help AI assistants understand your project's HeroUI setup.
+Download PrismUI documentation for AI coding agents (Claude, Cursor, etc.). This command downloads the latest documentation from the PrismUI repository and generates an index file that can be injected into markdown files like `AGENTS.md` or `CLAUDE.md` to help AI assistants understand your project's PrismUI setup.
 
 ```bash
 heroui agents-md [options]
@@ -373,7 +373,7 @@ heroui agents-md [options]
 
 #### Features
 
-> 1. Downloads latest HeroUI documentation from the `v3` branch
+> 1. Downloads latest PrismUI documentation from the `v3` branch
 > 2. Supports React, Native, and Migration (v2→v3) documentation
 > 3. Generates a section for the selected library (React, Native, or Migration) in the markdown file
 > 4. Automatically adds `.heroui-docs/` to `.gitignore`
@@ -382,7 +382,7 @@ heroui agents-md [options]
 
 - `--react` [boolean] Include React docs only (one library at a time)
 - `--native` [boolean] Include Native docs only
-- `--migration` [boolean] Include HeroUI v2 to v3 migration docs only
+- `--migration` [boolean] Include PrismUI v2 to v3 migration docs only
 - `--output <file>` [string] Target file path (e.g., `AGENTS.md`, `CLAUDE.md`)
 - `--ssh` [boolean] Use SSH instead of HTTPS for git clone
 
@@ -420,7 +420,7 @@ heroui agents-md --react --ssh --output AGENTS.md
 
 #### How It Works
 
-1. **Downloads Documentation**: Clones the HeroUI repository using git sparse-checkout to download only the documentation files
+1. **Downloads Documentation**: Clones the PrismUI repository using git sparse-checkout to download only the documentation files
 2. **Generates Index**: Creates a compact index of all documentation files organized by directory
 3. **Injects into Markdown**: Injects the index into your specified markdown file (e.g., `AGENTS.md`) with special markers:
    - `<!-- HEROUI-REACT-AGENTS-MD-START -->` / `<!-- HEROUI-REACT-AGENTS-MD-END -->` for React docs
@@ -449,7 +449,7 @@ your-project/
 
 ### Community
 
-We're excited to see the community adopt HeroUI CLI, raise issues, and provide feedback.
+We're excited to see the community adopt PrismUI CLI, raise issues, and provide feedback.
 Whether it's a feature request, bug report, or a project to showcase, please get involved!
 
 - [Discord](https://discord.gg/9b6yyZKmH4)

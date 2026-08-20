@@ -1,7 +1,7 @@
 "use client";
 
 import {QrCode} from "@gravity-ui/icons";
-import {Button, Disclosure, DisclosureGroup, Separator} from "@heroui/react";
+import {Button, Disclosure, DisclosureGroup, Separator} from "@khulnasoft/react";
 import {Icon} from "@iconify/react";
 import React from "react";
 import {cn} from "tailwind-variants";
@@ -13,7 +13,7 @@ export function Basic() {
     <div className="w-full max-w-md">
       <div className="flex flex-col gap-4 bg-transparent p-4">
         <DisclosureGroup expandedKeys={expandedKeys} onExpandedChange={setExpandedKeys}>
-          <Disclosure aria-label="预览 HeroUI Native" id="preview">
+          <Disclosure aria-label="预览 PrismUI Native" id="preview">
             <Disclosure.Heading>
               <Button
                 slot="trigger"
@@ -24,7 +24,7 @@ export function Basic() {
               >
                 <div className="flex w-full items-center justify-start gap-2">
                   <QrCode />
-                  预览 HeroUI Native
+                  预览 PrismUI Native
                 </div>
                 <Disclosure.Indicator className="text-muted" />
               </Button>
@@ -32,7 +32,7 @@ export function Basic() {
             <Disclosure.Content>
               <Disclosure.Body className="mx-2 flex flex-col items-center gap-2 p-4 text-center">
                 <p className="text-sm text-muted">
-                  使用手机相机扫描此二维码，即可预览 HeroUI Native 组件。
+                  使用手机相机扫描此二维码，即可预览 PrismUI Native 组件。
                 </p>
                 <img
                   alt="Expo Go 二维码"
@@ -49,7 +49,7 @@ export function Basic() {
           </Disclosure>
           <Separator className="my-2" />
           <Disclosure id="download">
-            <Disclosure.Heading aria-label="下载 HeroUI Native">
+            <Disclosure.Heading aria-label="下载 PrismUI Native">
               <Button
                 slot="trigger"
                 variant={expandedKeys.has("download") ? "secondary" : "tertiary"}
@@ -67,7 +67,7 @@ export function Basic() {
             <Disclosure.Content>
               <Disclosure.Body className="mx-2 flex flex-col items-center gap-2 p-4 text-center">
                 <p className="text-sm text-muted">
-                  下载 HeroUI Native 应用，即可在设备上直接体验我们的移动端组件。
+                  下载 PrismUI Native 应用，即可在设备上直接体验我们的移动端组件。
                 </p>
                 <img
                   alt="App Store 二维码"

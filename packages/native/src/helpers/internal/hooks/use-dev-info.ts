@@ -23,7 +23,7 @@ export function useDevInfo(devInfo?: DevInfoConfig): void {
   useEffect(() => {
     if (__DEV__ && stylingPrinciples) {
       console.info(
-        `${LOG_COLOR.BLUE}HeroUI Native Styling Principles${LOG_COLOR.RESET}\n` +
+        `${LOG_COLOR.BLUE}PrismUI Native Styling Principles${LOG_COLOR.RESET}\n` +
           `• className: this is your go-to styling solution. Use Tailwind CSS classes via className prop on all components.\n` +
           `• StyleSheet precedence: The style prop (StyleSheet API) has precedence over className when both are provided. This allows you to override Tailwind classes when needed.\n` +
           `• Animated styles: Some style properties are animated using react-native-reanimated and have precedence over className. To identify which styles are animated:\n` +

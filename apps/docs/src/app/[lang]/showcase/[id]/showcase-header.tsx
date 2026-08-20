@@ -8,11 +8,11 @@ import {
   TooltipContent,
   TooltipRoot,
   TooltipTrigger,
-} from "@heroui/react";
+} from "@khulnasoft/react";
 import {useParams, useRouter, useSearchParams} from "next/navigation";
 import {useEffect} from "react";
 
-import {HeroUILogo} from "@/components/heroui-logo";
+import {PrismUILogo} from "@/components/heroui-logo";
 import {Iconify} from "@/components/iconify";
 import {useCodePanel} from "@/hooks/use-code-panel";
 import {i18n} from "@/lib/i18n";
@@ -67,7 +67,7 @@ export function ShowcaseHeader() {
         </TooltipRoot>
       </div>
       <div className="flex flex-1 items-center justify-center">
-        <HeroUILogo className="text-foreground/20" />
+        <PrismUILogo className="text-foreground/20" />
       </div>
       <div className="flex flex-1 items-center justify-end gap-2">
         <ShowcaseThemeSwitch />

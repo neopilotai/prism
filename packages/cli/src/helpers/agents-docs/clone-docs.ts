@@ -103,7 +103,7 @@ export async function cloneDocsFolder(
 
       if (message.includes('not found') || message.includes('did not match')) {
         throw new Error(
-          `Could not find documentation for HeroUI ${ref}. This branch/tag may not exist on GitHub.`
+          `Could not find documentation for PrismUI ${ref}. This branch/tag may not exist on GitHub.`
         );
       }
       throw error;

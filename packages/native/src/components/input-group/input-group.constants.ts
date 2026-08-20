@@ -1,6 +1,6 @@
 export const DISPLAY_NAME = {
-  INPUT_GROUP: 'HeroUINative.InputGroup',
-  INPUT_GROUP_PREFIX: 'HeroUINative.InputGroup.Prefix',
-  INPUT_GROUP_SUFFIX: 'HeroUINative.InputGroup.Suffix',
-  INPUT_GROUP_INPUT: 'HeroUINative.InputGroup.Input',
+  INPUT_GROUP: 'PrismUINative.InputGroup',
+  INPUT_GROUP_PREFIX: 'PrismUINative.InputGroup.Prefix',
+  INPUT_GROUP_SUFFIX: 'PrismUINative.InputGroup.Suffix',
+  INPUT_GROUP_INPUT: 'PrismUINative.InputGroup.Input',
 } as const;

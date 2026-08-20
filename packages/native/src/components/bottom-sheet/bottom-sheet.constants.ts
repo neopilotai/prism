@@ -2,13 +2,13 @@
  * Display names for BottomSheet components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.BottomSheet.Root',
-  TRIGGER: 'HeroUINative.BottomSheet.Trigger',
-  PORTAL: 'HeroUINative.BottomSheet.Portal',
-  OVERLAY: 'HeroUINative.BottomSheet.Overlay',
-  CONTENT: 'HeroUINative.BottomSheet.Content',
-  BACKGROUND: 'HeroUINative.BottomSheet.Background',
-  CLOSE: 'HeroUINative.BottomSheet.Close',
-  TITLE: 'HeroUINative.BottomSheet.Title',
-  DESCRIPTION: 'HeroUINative.BottomSheet.Description',
+  ROOT: 'PrismUINative.BottomSheet.Root',
+  TRIGGER: 'PrismUINative.BottomSheet.Trigger',
+  PORTAL: 'PrismUINative.BottomSheet.Portal',
+  OVERLAY: 'PrismUINative.BottomSheet.Overlay',
+  CONTENT: 'PrismUINative.BottomSheet.Content',
+  BACKGROUND: 'PrismUINative.BottomSheet.Background',
+  CLOSE: 'PrismUINative.BottomSheet.Close',
+  TITLE: 'PrismUINative.BottomSheet.Title',
+  DESCRIPTION: 'PrismUINative.BottomSheet.Description',
 };

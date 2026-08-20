@@ -226,4 +226,4 @@ export const BottomSheetContent = forwardRef<
   }
 );
 
-BottomSheetContent.displayName = 'HeroUINative.BottomSheetContent';
+BottomSheetContent.displayName = 'PrismUINative.BottomSheetContent';

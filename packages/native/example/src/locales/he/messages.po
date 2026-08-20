@@ -1610,8 +1610,8 @@ msgstr "הצטרפות לצוות"
 #: src/app/(home)/components/toast-native-modal.tsx
 #: src/app/(home)/components/toast.tsx
 #: src/app/(home)/components/toast.tsx
-msgid "Junior Garcia sent you an invitation to join HeroUI team!"
-msgstr "ג'וניור גרסיה שלח לך הזמנה להצטרף לצוות HeroUI!"
+msgid "Junior Garcia sent you an invitation to join PrismUI team!"
+msgstr "ג'וניור גרסיה שלח לך הזמנה להצטרף לצוות PrismUI!"
 
 #: src/components/bottom-sheet/basic.tsx
 msgid "Keep yourself safe"
@@ -3253,8 +3253,8 @@ msgstr "עדכנו את התוכנה לגרסה האחרונה לאבטחה ול
 
 #: src/app/(home)/components/toast.tsx
 #: src/app/(home)/components/toast.tsx
-msgid "Upgrade to a paid plan to continue using HeroUI Chat"
-msgstr "שדרגו למסלול בתשלום כדי להמשיך להשתמש ב-HeroUI Chat"
+msgid "Upgrade to a paid plan to continue using PrismUI Chat"
+msgstr "שדרגו למסלול בתשלום כדי להמשיך להשתמש ב-PrismUI Chat"
 
 #: src/app/(home)/components/dialog.tsx
 msgid "Upload Audio"
@@ -3566,8 +3566,8 @@ msgstr "אפשר לשנות או לבטל הזמנה ללא עלות בתוך ש
 
 #: src/app/(home)/components/toast.tsx
 #: src/app/(home)/components/toast.tsx
-msgid "You can continue using HeroUI Chat and more"
-msgstr "תוכלו להמשיך להשתמש ב-HeroUI Chat ועוד"
+msgid "You can continue using PrismUI Chat and more"
+msgstr "תוכלו להמשיך להשתמש ב-PrismUI Chat ועוד"
 
 #: src/app/(home)/components/toast.tsx
 msgid "You have 2 credits left"

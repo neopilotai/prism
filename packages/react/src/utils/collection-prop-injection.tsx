@@ -6,7 +6,7 @@ import React, {Children, createContext, forwardRef, isValidElement, useContext} 
 
 import {Logger} from "./logger";
 
-const logger = new Logger({prefix: "HeroUI"});
+const logger = new Logger({prefix: "PrismUI"});
 
 /** Dev-only registry for duplicate slot name warnings. */
 let registry: Set<string> | undefined;
@@ -70,7 +70,7 @@ export const createCollectionSlot = <T extends object>(name: string) => {
     );
   };
 
-  Injector.displayName = `HeroUI.CollectionSlot(${name})`;
+  Injector.displayName = `PrismUI.CollectionSlot(${name})`;
 
   type WithSlotProps<P> = P & {children?: ReactNode};
 
@@ -127,7 +127,7 @@ export const createCollectionSlot = <T extends object>(name: string) => {
       },
     );
 
-    Wrapped.displayName = `HeroUI.withCollectionSlot(${Primitive.displayName || Primitive.name || name})`;
+    Wrapped.displayName = `PrismUI.withCollectionSlot(${Primitive.displayName || Primitive.name || name})`;
 
     return Wrapped;
   };

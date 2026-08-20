@@ -1,17 +1,17 @@
 ---
 title: Styling & Theming
-description: Complete guide to styling changes and theming system migration from HeroUI v2 to v3
+description: Complete guide to styling changes and theming system migration from PrismUI v2 to v3
 ---
 
 <Callout type="info">
-  This guide covers all styling-related changes between HeroUI v2 and v3, including utility classes, component styles, theme system architecture, and visual differences. For component-specific API changes, see individual component migration guides.
+  This guide covers all styling-related changes between PrismUI v2 and v3, including utility classes, component styles, theme system architecture, and visual differences. For component-specific API changes, see individual component migration guides.
 </Callout>
 
 **Note:** The `classNames` prop has been replaced with `className` prop in v3. All components now use the standard React `className` prop instead of the `classNames` object prop from v2.
 
 ## Overview
 
-HeroUI v3 introduces significant changes to the styling system:
+PrismUI v3 introduces significant changes to the styling system:
 
 - **CSS-First Architecture**: Replaces Tailwind plugin with pure CSS files
 - **Standard Tailwind Utilities**: Custom utilities replaced with standard Tailwind classes
@@ -51,7 +51,7 @@ HeroUI v3 introduces significant changes to the styling system:
 
 ### Text Utilities
 
-HeroUI v2 provided custom text size utilities that mapped to CSS variables. v3 uses standard Tailwind text size classes.
+PrismUI v2 provided custom text size utilities that mapped to CSS variables. v3 uses standard Tailwind text size classes.
 
 **v2 Text Utilities:**
 
@@ -261,7 +261,7 @@ v3 uses a pure CSS approach:
 
 **No Tailwind Config Required:**
 
-If you only use HeroUI, you can remove `tailwind.config.js` entirely. If you have custom Tailwind config, keep it but remove the HeroUI plugin.
+If you only use PrismUI, you can remove `tailwind.config.js` entirely. If you have custom Tailwind config, keep it but remove the PrismUI plugin.
 
 ### Architecture Comparison
 

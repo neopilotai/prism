@@ -1,6 +1,6 @@
 ---
-title: "How Styling and Theming Work in HeroUI Native"
-description: "Why HeroUI Native ships real CSS files for React Native, how its design tokens derive states automatically, and how Pro themes change components without forking them."
+title: "How Styling and Theming Work in PrismUI Native"
+description: "Why PrismUI Native ships real CSS files for React Native, how its design tokens derive states automatically, and how Pro themes change components without forking them."
 date: "2026-07-31"
 author: "Volodymyr Serbulenko"
 authorHandle: "@v_serbulenko"
@@ -12,11 +12,11 @@ image: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/blog/heroui-native
 
 Most React Native component libraries define their appearance in JavaScript. A component's look lives in a `StyleSheet.create` call, a styled-components template, or a theme object threaded through React context. That works, but it makes two things awkward: overriding a library's internals without forking them, and shipping a genuinely different visual theme as an artifact you can install.
 
-HeroUI Native takes a different route. Component appearance is defined in real `.css` files that ship with the package, and theming is CSS variables all the way down. This post explains the principles behind that decision, and how they make something unusual possible: a complete visual identity — down to the inside of a component you did not write — packaged as a stylesheet you install.
+PrismUI Native takes a different route. Component appearance is defined in real `.css` files that ship with the package, and theming is CSS variables all the way down. This post explains the principles behind that decision, and how they make something unusual possible: a complete visual identity — down to the inside of a component you did not write — packaged as a stylesheet you install.
 
 ## CSS in a React Native Library
 
-HeroUI Native is built on [Uniwind](https://docs.uniwind.dev), which brings Tailwind CSS v4 to React Native. Uniwind hooks into your Metro bundler, reads your CSS entry file, and resolves `className` on React Native views. Nothing parses a stylesheet on the device at runtime — the CSS is processed when your app bundles.
+PrismUI Native is built on [Uniwind](https://docs.uniwind.dev), which brings Tailwind CSS v4 to React Native. Uniwind hooks into your Metro bundler, reads your CSS entry file, and resolves `className` on React Native views. Nothing parses a stylesheet on the device at runtime — the CSS is processed when your app bundles.
 
 That unlocks a real CSS authoring layer. Installing the library is a package install plus one import in your CSS entry file:
 
@@ -180,11 +180,11 @@ import {Uniwind} from "uniwind";
 Uniwind.setTheme("ocean-dark");
 ```
 
-Notably, this does not go through a React theme provider. Uniwind resolves the variables, so a theme change does not cascade a context update down your entire tree. `HeroUINativeProvider` exists, but it handles safe-area insets, text defaults, the toast host, and RTL — it is app infrastructure, not a theme engine.
+Notably, this does not go through a React theme provider. Uniwind resolves the variables, so a theme change does not cascade a context update down your entire tree. `PrismUINativeProvider` exists, but it handles safe-area insets, text defaults, the toast host, and RTL — it is app infrastructure, not a theme engine.
 
 ## The Pro Theme Pattern
 
-Because tokens are variables and component styles are CSS classes, a complete visual identity can be packaged as a stylesheet. That is how HeroUI Native Pro ships themes, and it works in two passes. The Brutalism theme shows both clearly, since it is about as far from the default look as a theme can get.
+Because tokens are variables and component styles are CSS classes, a complete visual identity can be packaged as a stylesheet. That is how PrismUI Native Pro ships themes, and it works in two passes. The Brutalism theme shows both clearly, since it is about as far from the default look as a theme can get.
 
 **Pass one retunes the tokens.** The entire variable file for Brutalism is about fifteen lines:
 
@@ -259,7 +259,7 @@ Pulling the principles together:
 - **One change propagates.** A single accent color or base radius flows into every derived state and size in the system.
 - **Theming is not a React concern.** Themes live in CSS and switch through Uniwind, without a context update cascading through your tree.
 - **Themes are shippable artifacts.** A complete visual identity is a stylesheet, so it can be published, versioned, and installed like any other dependency.
-- **The vocabulary matches the rest of HeroUI.** Semantic roles, foreground pairing, and compound components are the same ideas you already use on the web.
+- **The vocabulary matches the rest of PrismUI.** Semantic roles, foreground pairing, and compound components are the same ideas you already use on the web.
 - **Agents can read it.** Design tokens as CSS variables and component styles as CSS classes are formats AI assistants handle well, which is why the [MCP server](/docs/native/getting-started/mcp-server) and [llms.txt](/docs/native/getting-started/llms-txt) endpoints can describe the styling system accurately.
 
 ## Where to Go Next

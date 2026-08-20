@@ -9,7 +9,7 @@ const Root = forwardRef<RootRef, RootProps>(({ asChild, ...props }, ref) => {
   return <Component ref={ref} {...props} />;
 });
 
-Root.displayName = 'HeroUINative.Primitive.Label.Root';
+Root.displayName = 'PrismUINative.Primitive.Label.Root';
 
 // --------------------------------------------------
 
@@ -19,6 +19,6 @@ const Text = forwardRef<TextRef, TextProps>(({ asChild, ...props }, ref) => {
   return <Component ref={ref} {...props} />;
 });
 
-Text.displayName = 'HeroUINative.Primitive.Label.Text';
+Text.displayName = 'PrismUINative.Primitive.Label.Text';
 
 export { Root, Text };

@@ -332,7 +332,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.InputOTP.Root';
+Root.displayName = 'PrismUINative.Primitive.InputOTP.Root';
 
 // --------------------------------------------------
 
@@ -356,7 +356,7 @@ const Group = forwardRef<GroupRef, GroupProps>(
   }
 );
 
-Group.displayName = 'HeroUINative.Primitive.InputOTP.Group';
+Group.displayName = 'PrismUINative.Primitive.InputOTP.Group';
 
 // --------------------------------------------------
 
@@ -401,7 +401,7 @@ const Slot = forwardRef<SlotRef, SlotProps>(
   }
 );
 
-Slot.displayName = 'HeroUINative.Primitive.InputOTP.Slot';
+Slot.displayName = 'PrismUINative.Primitive.InputOTP.Slot';
 
 // --------------------------------------------------
 
@@ -425,7 +425,7 @@ const Separator = forwardRef<SeparatorRef, SeparatorProps>(
   }
 );
 
-Separator.displayName = 'HeroUINative.Primitive.InputOTP.Separator';
+Separator.displayName = 'PrismUINative.Primitive.InputOTP.Separator';
 
 // --------------------------------------------------
 

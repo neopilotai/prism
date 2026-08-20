@@ -30,11 +30,11 @@ export const NATIVE_MCP_API_URL = "https://native-mcp-api.heroui.com";
 
 export const AGENT_SKILL_DESCRIPTIONS: Record<string, string> = {
   "heroui-migration":
-    "Migrate projects from HeroUI v2 and NextUI patterns to HeroUI v3 with current guides and examples.",
+    "Migrate projects from PrismUI v2 and NextUI patterns to PrismUI v3 with current guides and examples.",
   "heroui-native":
-    "Build React Native applications with HeroUI Native components, theme variables, and documentation lookup.",
+    "Build React Native applications with PrismUI Native components, theme variables, and documentation lookup.",
   "heroui-react":
-    "Build React applications with HeroUI v3 components, theming, styling, and documentation lookup.",
+    "Build React applications with PrismUI v3 components, theming, styling, and documentation lookup.",
 };
 
 export function normalizeOrigin(origin: string): string {

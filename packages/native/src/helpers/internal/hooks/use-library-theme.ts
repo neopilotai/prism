@@ -11,14 +11,14 @@ export const THEME_CSS_VARIABLE = '--theme';
  * Known library theme names. Open-ended so future theme CSS packages can
  * introduce new values without a type change.
  */
-export type HeroUINativeTheme = 'default' | 'glass' | (string & {});
+export type PrismUINativeTheme = 'default' | 'glass' | (string & {});
 
 /**
  * Returns the active library theme — the value of the `--theme` CSS
  * variable. Components use it to decide theme-specific content (e.g. a
  * frosted-glass background layer when the theme is `glass`).
  */
-export const useLibraryTheme = (): HeroUINativeTheme => {
+export const useLibraryTheme = (): PrismUINativeTheme => {
   const [theme] = useCSSVariable([THEME_CSS_VARIABLE]);
 
   if (typeof theme === 'string') {

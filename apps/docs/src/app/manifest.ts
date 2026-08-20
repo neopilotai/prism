@@ -21,8 +21,8 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
       },
     ],
-    name: "HeroUI",
-    short_name: "HeroUI",
+    name: "PrismUI",
+    short_name: "PrismUI",
     start_url: "/",
     theme_color: "#000000",
   };

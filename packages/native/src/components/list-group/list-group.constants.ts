@@ -2,13 +2,13 @@
  * Display names for ListGroup components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUI.ListGroup.Root',
-  ITEM: 'HeroUI.ListGroup.Item',
-  ITEM_PREFIX: 'HeroUI.ListGroup.ItemPrefix',
-  ITEM_CONTENT: 'HeroUI.ListGroup.ItemContent',
-  ITEM_TITLE: 'HeroUI.ListGroup.ItemTitle',
-  ITEM_DESCRIPTION: 'HeroUI.ListGroup.ItemDescription',
-  ITEM_SUFFIX: 'HeroUI.ListGroup.ItemSuffix',
+  ROOT: 'PrismUI.ListGroup.Root',
+  ITEM: 'PrismUI.ListGroup.Item',
+  ITEM_PREFIX: 'PrismUI.ListGroup.ItemPrefix',
+  ITEM_CONTENT: 'PrismUI.ListGroup.ItemContent',
+  ITEM_TITLE: 'PrismUI.ListGroup.ItemTitle',
+  ITEM_DESCRIPTION: 'PrismUI.ListGroup.ItemDescription',
+  ITEM_SUFFIX: 'PrismUI.ListGroup.ItemSuffix',
 };
 
 /**

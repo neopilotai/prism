@@ -1610,8 +1610,8 @@ msgstr "Join a team"
 #: src/app/(home)/components/toast-native-modal.tsx
 #: src/app/(home)/components/toast.tsx
 #: src/app/(home)/components/toast.tsx
-msgid "Junior Garcia sent you an invitation to join HeroUI team!"
-msgstr "Junior Garcia sent you an invitation to join HeroUI team!"
+msgid "Junior Garcia sent you an invitation to join PrismUI team!"
+msgstr "Junior Garcia sent you an invitation to join PrismUI team!"
 
 #: src/components/bottom-sheet/basic.tsx
 msgid "Keep yourself safe"
@@ -3253,8 +3253,8 @@ msgstr "Update your software to the latest version for better security and perfo
 
 #: src/app/(home)/components/toast.tsx
 #: src/app/(home)/components/toast.tsx
-msgid "Upgrade to a paid plan to continue using HeroUI Chat"
-msgstr "Upgrade to a paid plan to continue using HeroUI Chat"
+msgid "Upgrade to a paid plan to continue using PrismUI Chat"
+msgstr "Upgrade to a paid plan to continue using PrismUI Chat"
 
 #: src/app/(home)/components/dialog.tsx
 msgid "Upload Audio"
@@ -3566,8 +3566,8 @@ msgstr "You can change or cancel an order free of charge within two hours of pla
 
 #: src/app/(home)/components/toast.tsx
 #: src/app/(home)/components/toast.tsx
-msgid "You can continue using HeroUI Chat and more"
-msgstr "You can continue using HeroUI Chat and more"
+msgid "You can continue using PrismUI Chat and more"
+msgstr "You can continue using PrismUI Chat and more"
 
 #: src/app/(home)/components/toast.tsx
 msgid "You have 2 credits left"

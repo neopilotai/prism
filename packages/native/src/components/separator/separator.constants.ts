@@ -2,5 +2,5 @@
  * Display name for the Separator component
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.Separator.Root',
+  ROOT: 'PrismUINative.Separator.Root',
 } as const;

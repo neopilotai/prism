@@ -1,11 +1,11 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {SwitchVariants} from "@heroui/styles";
+import type {SwitchVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {SwitchButtonRenderProps, SwitchFieldRenderProps} from "react-aria-components/Switch";
 
-import {switchVariants} from "@heroui/styles";
+import {switchVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {
   SwitchButton as SwitchButtonPrimitive,
@@ -46,7 +46,7 @@ const SwitchRoot = ({children, className, size, ...props}: SwitchRootProps) => {
   );
 };
 
-SwitchRoot.displayName = "HeroUI.Switch";
+SwitchRoot.displayName = "PrismUI.Switch";
 
 /* -------------------------------------------------------------------------------------------------
  * Switch.Content — the clickable `SwitchButton` label wrapping the control + `Label`.
@@ -68,7 +68,7 @@ const SwitchContent = ({children, className, ...props}: SwitchContentProps) => {
   );
 };
 
-SwitchContent.displayName = "HeroUI.Switch.Content";
+SwitchContent.displayName = "PrismUI.Switch.Content";
 
 /* -----------------------------------------------------------------------------------------------*/
 
@@ -97,7 +97,7 @@ const SwitchControl = <E extends keyof React.JSX.IntrinsicElements = "span">({
   );
 };
 
-SwitchControl.displayName = "HeroUI.Switch.Control";
+SwitchControl.displayName = "PrismUI.Switch.Control";
 
 /* -----------------------------------------------------------------------------------------------*/
 
@@ -126,7 +126,7 @@ const SwitchThumb = <E extends keyof React.JSX.IntrinsicElements = "span">({
   );
 };
 
-SwitchThumb.displayName = "HeroUI.Switch.Thumb";
+SwitchThumb.displayName = "PrismUI.Switch.Thumb";
 
 /* -----------------------------------------------------------------------------------------------*/
 
@@ -155,7 +155,7 @@ const SwitchIcon = <E extends keyof React.JSX.IntrinsicElements = "span">({
   );
 };
 
-SwitchIcon.displayName = "HeroUI.Switch.Icon";
+SwitchIcon.displayName = "PrismUI.Switch.Icon";
 
 /* ----------------------------------------------------------------------------------------------*/
 

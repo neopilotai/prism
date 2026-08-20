@@ -19,7 +19,7 @@ import {pickNativeQRTarget} from "./qr-preview-popover/target";
 export type ImageHeroViewProps = NativeQRPreviewTarget;
 
 /**
- * ImageHeroView pairs the HeroUI Native OG hero image with the QR popover.
+ * ImageHeroView pairs the PrismUI Native OG hero image with the QR popover.
  * Used by the docs landing page to introduce the library while letting
  * desktop visitors jump straight into the app from the same surface.
  */
@@ -28,7 +28,7 @@ export const ImageHeroView = (props: ImageHeroViewProps) => {
     <div className="flex flex-col items-end gap-4">
       <QRPreviewPopover {...pickNativeQRTarget(props)} />
       <DocsImage
-        alt="HeroUI Native Introduction"
+        alt="PrismUI Native Introduction"
         darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/heroui-native-og-dark-1.webp"
         src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/heroui-native-og-light-1.webp"
       />

@@ -5,7 +5,7 @@ export function getOrganizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     logo: "https://heroui.com/icons/favicon.svg",
-    name: "HeroUI",
+    name: "PrismUI",
     sameAs: [siteConfig.links.github, siteConfig.links.twitter, siteConfig.links.discord],
     url: "https://heroui.com",
   };
@@ -16,10 +16,10 @@ export function getWebSiteJsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     description: siteConfig.description,
-    name: "HeroUI",
+    name: "PrismUI",
     publisher: {
       "@type": "Organization",
-      name: "HeroUI",
+      name: "PrismUI",
     },
     url: "https://heroui.com",
   };
@@ -31,8 +31,8 @@ export function getSoftwareApplicationJsonLd() {
     "@type": "SoftwareApplication",
     applicationCategory: "DeveloperApplication",
     description: siteConfig.description,
-    downloadUrl: "https://www.npmjs.com/package/@heroui/react",
-    name: "HeroUI",
+    downloadUrl: "https://www.npmjs.com/package/@khulnasoft/react",
+    name: "PrismUI",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -77,7 +77,7 @@ export function getTechArticleJsonLd(params: {
         }
       : {
           "@type": "Organization",
-          name: "HeroUI",
+          name: "PrismUI",
         },
     description: params.description,
     headline: params.title,
@@ -91,7 +91,7 @@ export function getTechArticleJsonLd(params: {
         "@type": "ImageObject",
         url: "https://heroui.com/icons/favicon.svg",
       },
-      name: "HeroUI",
+      name: "PrismUI",
     },
     url: params.url,
     ...(params.datePublished && {datePublished: params.datePublished}),
@@ -118,15 +118,15 @@ export function getBlogJsonLd(params: {
     })),
     description:
       params.description ??
-      "Guides, tutorials, and resources for building modern React applications with HeroUI.",
-    name: params.name ?? "HeroUI Blog",
+      "Guides, tutorials, and resources for building modern React applications with PrismUI.",
+    name: params.name ?? "PrismUI Blog",
     publisher: {
       "@type": "Organization",
       logo: {
         "@type": "ImageObject",
         url: "https://heroui.com/icons/favicon.svg",
       },
-      name: "HeroUI",
+      name: "PrismUI",
     },
     url: params.url,
   };

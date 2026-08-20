@@ -1,11 +1,11 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {ProgressBarVariants} from "@heroui/styles";
+import type {ProgressBarVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {ProgressBarRenderProps} from "react-aria-components/ProgressBar";
 
-import {progressBarVariants} from "@heroui/styles";
+import {progressBarVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {ProgressBar as ProgressBarPrimitive} from "react-aria-components/ProgressBar";
 
@@ -46,7 +46,7 @@ const ProgressBarRoot = ({children, className, color, size, ...props}: ProgressB
   );
 };
 
-ProgressBarRoot.displayName = "HeroUI.ProgressBar";
+ProgressBarRoot.displayName = "PrismUI.ProgressBar";
 
 /* -------------------------------------------------------------------------------------------------
  * ProgressBar Output
@@ -77,7 +77,7 @@ const ProgressBarOutput = <E extends keyof React.JSX.IntrinsicElements = "span">
   );
 };
 
-ProgressBarOutput.displayName = "HeroUI.ProgressBar.Output";
+ProgressBarOutput.displayName = "PrismUI.ProgressBar.Output";
 
 /* -------------------------------------------------------------------------------------------------
  * ProgressBar Track
@@ -108,7 +108,7 @@ const ProgressBarTrack = <E extends keyof React.JSX.IntrinsicElements = "div">({
   );
 };
 
-ProgressBarTrack.displayName = "HeroUI.ProgressBar.Track";
+ProgressBarTrack.displayName = "PrismUI.ProgressBar.Track";
 
 /* -------------------------------------------------------------------------------------------------
  * ProgressBar Fill
@@ -142,7 +142,7 @@ const ProgressBarFill = <E extends keyof React.JSX.IntrinsicElements = "div">({
   );
 };
 
-ProgressBarFill.displayName = "HeroUI.ProgressBar.Fill";
+ProgressBarFill.displayName = "PrismUI.ProgressBar.Fill";
 
 /* -------------------------------------------------------------------------------------------------
  * Exports

@@ -45,7 +45,7 @@ describe('heroui-agents-md', () => {
       };
       const out = generateHerouiMdIndex(data, 'migration');
 
-      expect(out).toContain('[HeroUI Migration Docs Index]');
+      expect(out).toContain('[PrismUI Migration Docs Index]');
       expect(out).toContain('root: ./.heroui-docs/migration');
       expect(out).toContain('Start with: agent-index.mdx');
       expect(out).toContain('.:{agent-index.mdx,hooks.mdx}');
@@ -60,7 +60,7 @@ describe('heroui-agents-md', () => {
       };
       const out = generateHerouiMdIndex(data, 'react');
 
-      expect(out).toContain('[HeroUI React v3 Docs Index]');
+      expect(out).toContain('[PrismUI React v3 Docs Index]');
       expect(out).toContain('root: ./.heroui-docs/react');
       expect(out).toContain('getting-started.mdx');
       expect(out).toContain('heroui agents-md --react');
@@ -74,7 +74,7 @@ describe('heroui-agents-md', () => {
       };
       const out = generateHerouiMdIndex(data, 'native');
 
-      expect(out).toContain('[HeroUI Native Docs Index]');
+      expect(out).toContain('[PrismUI Native Docs Index]');
       expect(out).toContain('root: ./.heroui-docs/native');
       expect(out).toContain('heroui agents-md --native');
     });
@@ -211,7 +211,7 @@ describe('heroui-agents-md', () => {
       expect(result.error).toContain('No package.json');
     });
 
-    it('returns error when no HeroUI packages in simple project', () => {
+    it('returns error when no PrismUI packages in simple project', () => {
       tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
       fs.writeFileSync(
         path.join(tmpDir, 'package.json'),

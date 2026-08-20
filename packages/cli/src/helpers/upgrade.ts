@@ -32,11 +32,11 @@ const DEFAULT_SPACE = ''.padEnd(7);
 const MISSING = 'Missing';
 
 export async function upgrade<T extends Upgrade = Upgrade>(options: ExtractUpgrade<T>) {
-  const {all, allDependencies, isHeroUIAll, upgradeOptionList} = options as Required<Upgrade>;
+  const {all, allDependencies, isPrismUIAll, upgradeOptionList} = options as Required<Upgrade>;
   let result: UpgradeOption[] = [];
   const missingDepSet = new Set<MissingDepSetType>();
 
-  const allOutputData = await getAllOutputData(all, isHeroUIAll, allDependencies, missingDepSet);
+  const allOutputData = await getAllOutputData(all, isPrismUIAll, allDependencies, missingDepSet);
   const libsData = await getLibsData(allDependencies);
 
   const transformUpgradeOptionList = upgradeOptionList.map((c) => ({
@@ -242,11 +242,11 @@ function outputDependencies(outputList: UpgradeOption[], peerDepList: UpgradeOpt
  */
 export async function getAllOutputData(
   all: boolean,
-  isHeroUIAll: boolean,
+  isPrismUIAll: boolean,
   allDependencies: Record<string, SAFE_ANY>,
   missingDepSet: Set<MissingDepSetType>
 ) {
-  if (!all || !isHeroUIAll) {
+  if (!all || !isPrismUIAll) {
     return {
       allOutputList: [],
       allPeerDepList: []

@@ -433,7 +433,7 @@
 * fix(popup): initial controlled state issue ([ae61916](https://github.com/khulnasoft/heroui-native/commit/ae61916))
 * fix(select): triger ref close issue ([e2cc7e7](https://github.com/khulnasoft/heroui-native/commit/e2cc7e7))
 * feat: add description component ([0b01d98](https://github.com/khulnasoft/heroui-native/commit/0b01d98))
-* feat: add devInfo to HeroUINativeProvider configs ([51c4c30](https://github.com/khulnasoft/heroui-native/commit/51c4c30))
+* feat: add devInfo to PrismUINativeProvider configs ([51c4c30](https://github.com/khulnasoft/heroui-native/commit/51c4c30))
 * feat: add label component ([3dd0cfe](https://github.com/khulnasoft/heroui-native/commit/3dd0cfe))
 * feat(input-otp): add initial components ([11972cf](https://github.com/khulnasoft/heroui-native/commit/11972cf))
 * feat(input-otp): add placeholder props to slot text ([f175c66](https://github.com/khulnasoft/heroui-native/commit/f175c66))

@@ -49,7 +49,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.Radio.Root';
+Root.displayName = 'PrismUINative.Primitive.Radio.Root';
 
 /**
  * Hook to access radio context values within compound components.
@@ -103,7 +103,7 @@ const Trigger = forwardRef<PressableRef, SlottablePressableProps>(
   }
 );
 
-Trigger.displayName = 'HeroUINative.Primitive.Radio.Trigger';
+Trigger.displayName = 'PrismUINative.Primitive.Radio.Trigger';
 
 // --------------------------------------------------
 
@@ -128,6 +128,6 @@ const Indicator = forwardRef<IndicatorRef, IndicatorProps>(
   }
 );
 
-Indicator.displayName = 'HeroUINative.Primitive.Radio.Indicator';
+Indicator.displayName = 'PrismUINative.Primitive.Radio.Indicator';
 
 export { Indicator, Root, useRadioContext };

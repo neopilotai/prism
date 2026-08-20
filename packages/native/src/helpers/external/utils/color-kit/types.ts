@@ -5,7 +5,7 @@
  * Author: @alabsi91
  * License: MIT
  *
- * This code has been adapted for use in HeroUI Native with modifications
+ * This code has been adapted for use in PrismUI Native with modifications
  * for TypeScript compatibility and integration with the theme system.
  */
 

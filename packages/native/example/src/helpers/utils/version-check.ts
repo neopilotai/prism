@@ -1,7 +1,7 @@
 import Constants from 'expo-constants';
 import { Platform } from 'react-native';
 
-/** App Store link for the HeroUI Native app */
+/** App Store link for the PrismUI Native app */
 export const APP_STORE_URL =
   'https://apps.apple.com/us/app/heroui-native/id6757860059';
 

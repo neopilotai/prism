@@ -2,7 +2,7 @@ import { forwardRef, type FC } from 'react';
 import { View } from 'react-native';
 import {
   useLibraryTheme,
-  type HeroUINativeTheme,
+  type PrismUINativeTheme,
 } from '../../helpers/internal/hooks';
 import { GlassView } from '../glass-view';
 import { DISPLAY_NAME } from './theme-background.constants';
@@ -18,7 +18,7 @@ import type {
  * without an entry render nothing.
  */
 const THEME_BACKGROUND_CONTENT: Partial<
-  Record<HeroUINativeTheme, FC<ThemeBackgroundContentProps>>
+  Record<PrismUINativeTheme, FC<ThemeBackgroundContentProps>>
 > = {
   glass: GlassView,
 };

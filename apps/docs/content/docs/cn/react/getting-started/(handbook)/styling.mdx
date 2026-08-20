@@ -1,17 +1,17 @@
 ---
 title: 样式
-description: 使用 CSS、Tailwind 或 CSS-in-JS 为 HeroUI 组件设置样式
+description: 使用 CSS、Tailwind 或 CSS-in-JS 为 PrismUI 组件设置样式
 icon: brush
 links:
   themes: true
   tailwind: theme
 ---
 
-HeroUI 组件提供灵活的样式方案：Tailwind CSS 工具类、配合 [BEM](https://getbem.com/) 类名或数据属性的 CSS、CSS-in-JS 库，以及用于动态样式的渲染属性。
+PrismUI 组件提供灵活的样式方案：Tailwind CSS 工具类、配合 [BEM](https://getbem.com/) 类名或数据属性的 CSS、CSS-in-JS 库，以及用于动态样式的渲染属性。
 
 ## 基础样式
 
-**使用 className：** 所有 HeroUI 组件都接受 `className` 属性：
+**使用 className：** 所有 PrismUI 组件都接受 `className` 属性：
 
 ```tsx
 <Button className="bg-purple-500 hover:bg-purple-600">
@@ -33,7 +33,7 @@ HeroUI 组件提供灵活的样式方案：Tailwind CSS 工具类、配合 [BEM]
 
 ## 滚动条
 
-HeroUI 的滚动插槽在组件 CSS 中使用 `@apply scrollbar`。对于你自己的溢出容器，可使用 `@khulnasoft/styles` 提供的工具类：
+PrismUI 的滚动插槽在组件 CSS 中使用 `@apply scrollbar`。对于你自己的溢出容器，可使用 `@khulnasoft/styles` 提供的工具类：
 
 ```tsx
 <div className="scrollbar h-64 overflow-y-auto">
@@ -43,8 +43,8 @@ HeroUI 的滚动插槽在组件 CSS 中使用 `@apply scrollbar`。对于你自�
 
 | 工具类 | 效果 |
 |---------|--------|
-| `scrollbar` | HeroUI 滚动条滑块（读取主题的 `--scrollbar-*` 变量） |
-| `scrollbar-thin` | HeroUI 主题化纤细滚动条 |
+| `scrollbar` | PrismUI 滚动条滑块（读取主题的 `--scrollbar-*` 变量） |
+| `scrollbar-thin` | PrismUI 主题化纤细滚动条 |
 | `scrollbar-default` | 操作系统 / 浏览器默认滚动条 |
 | `scrollbar-none` | 隐藏滚动条 |
 
@@ -52,7 +52,7 @@ HeroUI 的滚动插槽在组件 CSS 中使用 `@apply scrollbar`。对于你自�
 
 ## 基于状态的样式
 
-HeroUI 组件通过数据属性公开其状态，类似于 CSS 伪类：
+PrismUI 组件通过数据属性公开其状态，类似于 CSS 伪类：
 
 ```css
 /* Target different states */
@@ -101,7 +101,7 @@ HeroUI 组件通过数据属性公开其状态，类似于 CSS 伪类：
 
 ## BEM 类名
 
-HeroUI 使用 [BEM 方法论](https://getbem.com/) 来保持类名命名的一致性：
+PrismUI 使用 [BEM 方法论](https://getbem.com/) 来保持类名命名的一致性：
 
 ```css
 /* Block */

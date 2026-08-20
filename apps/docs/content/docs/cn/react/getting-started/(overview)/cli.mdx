@@ -1,10 +1,10 @@
 ---
 title: 命令行
-description: 使用命令行管理 HeroUI 依赖并初始化项目。
+description: 使用命令行管理 PrismUI 依赖并初始化项目。
 icon: terminal
 ---
 
-`prism-cli`是官方命令行工具，提供了一整套命令，用于初始化、管理和优化你的 HeroUI 项目。你可以 `install`、`uninstall` 或 `upgrade` 单个组件，检查项目健康状况，下载用于 AI 编程助手的文档，等等。
+`prism-cli`是官方命令行工具，提供了一整套命令，用于初始化、管理和优化你的 PrismUI 项目。你可以 `install`、`uninstall` 或 `upgrade` 单个组件，检查项目健康状况，下载用于 AI 编程助手的文档，等等。
 
 ## 安装
 
@@ -73,16 +73,16 @@ Commands:
   install [options]              Installs @khulnasoft/react and @khulnasoft/styles to your project
   upgrade [options]              Upgrades @khulnasoft/react and @khulnasoft/styles to the latest versions
   uninstall [options]            Uninstall @khulnasoft/react and @khulnasoft/styles from the project
-  list [options]                 Lists installed HeroUI packages (@khulnasoft/react, @khulnasoft/styles)
+  list [options]                 Lists installed PrismUI packages (@khulnasoft/react, @khulnasoft/styles)
   env [options]                  Displays debugging information for the local environment
   doctor [options]               Checks for issues in the project
-  agents-md [options]            Downloads HeroUI documentation for AI coding agents
+  agents-md [options]            Downloads PrismUI documentation for AI coding agents
   help [command]                 Display help for command
 ```
 
 ### init
 
-使用 `init` 命令初始化一个新的 HeroUI 项目。该命令会为你的项目完成必要的配置。
+使用 `init` 命令初始化一个新的 PrismUI 项目。该命令会为你的项目完成必要的配置。
 
 ```bash
 heroui init [options]
@@ -96,15 +96,15 @@ heroui init [options]
 输出：
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ┌  Create a new project
 │
 ◇  Select a template (Enter to select)
-│  ● App (A Next.js 16 with app directory template pre-configured with HeroUI (v3) and Tailwind CSS.)
-│  ○ Pages (A Next.js 16 with pages directory template pre-configured with HeroUI (v3) and Tailwind CSS.)
-│  ○ Vite (A Vite template pre-configured with HeroUI (v3) and Tailwind CSS.)
-│  ○ React Router (A React Router template pre-configured with HeroUI (v3) and Tailwind CSS.)
+│  ● App (A Next.js 16 with app directory template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ Pages (A Next.js 16 with pages directory template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ Vite (A Vite template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ React Router (A React Router template pre-configured with PrismUI (v3) and Tailwind CSS.)
 │
 ◇  New project name (Enter to skip with default name)
 │  my-heroui-app
@@ -175,7 +175,7 @@ heroui install [options]
 **输出：**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 📦 Packages to be installed:
 ╭─────────────────────────────────────────────────────────────────────────────╮
@@ -213,7 +213,7 @@ heroui upgrade [options]
 **输出：**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ╭──────────────────────────── Upgrade ────────────────────────────╮
 │  @khulnasoft/react               ^3.0.0  ->  ^3.1.0                │
@@ -242,7 +242,7 @@ heroui uninstall [options]
 **输出：**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ❗️ Packages slated for uninstallation:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
@@ -260,7 +260,7 @@ HeroUI CLI <version>
 
 ### list
 
-列出已安装的 HeroUI 包（`@khulnasoft/react`、`@khulnasoft/styles`）。
+列出已安装的 PrismUI 包（`@khulnasoft/react`、`@khulnasoft/styles`）。
 
 ```bash
 heroui list [options]
@@ -273,7 +273,7 @@ heroui list [options]
 **输出：**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 Current installed packages:
 
@@ -305,13 +305,13 @@ heroui doctor [options]
 如果项目中存在问题，`doctor` 命令将显示问题信息。
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
-HeroUI CLI: ❌ Your project has 1 issue that require attention
+PrismUI CLI: ❌ Your project has 1 issue that require attention
 
-❗️Issue 1: missingHeroUIPackages
+❗️Issue 1: missingPrismUIPackages
 
-The following HeroUI packages are not installed:
+The following PrismUI packages are not installed:
 - @khulnasoft/styles
 
 Run `heroui install` to install them.
@@ -320,7 +320,7 @@ Run `heroui install` to install them.
 否则，`doctor` 命令将显示以下消息。
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ✅ Your project has no detected issues.
 ```
@@ -340,7 +340,7 @@ heroui env [options]
 **输出：**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 Current installed packages:
 
@@ -361,7 +361,7 @@ Environment Info:
 
 ### agents-md
 
-下载用于 AI 编程助手（Claude、Cursor 等）的 HeroUI 文档。该命令会从 HeroUI 仓库克隆最新文档，并将一份精简索引注入到 `AGENTS.md` 或 `CLAUDE.md` 中，方便助手参考你项目中的 HeroUI 配置。
+下载用于 AI 编程助手（Claude、Cursor 等）的 PrismUI 文档。该命令会从 PrismUI 仓库克隆最新文档，并将一份精简索引注入到 `AGENTS.md` 或 `CLAUDE.md` 中，方便助手参考你项目中的 PrismUI 配置。
 
 ```bash
 heroui agents-md [options]
@@ -371,7 +371,7 @@ heroui agents-md [options]
 
 - `--react` [boolean] 仅包含 React 文档（一次只能选择一个文档库）
 - `--native` [boolean] 仅包含 Native 文档
-- `--migration` [boolean] 仅包含 HeroUI v2 到 v3 的迁移文档
+- `--migration` [boolean] 仅包含 PrismUI v2 到 v3 的迁移文档
 - `--output <file>` [string] 目标文件路径（例如 `AGENTS.md`、`CLAUDE.md`）
 - `--ssh` [boolean] 使用 SSH 而非 HTTPS 进行 git clone
 

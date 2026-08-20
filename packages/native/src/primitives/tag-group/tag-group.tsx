@@ -164,7 +164,7 @@ const Root = forwardRef<RootRef, RootProps>(
   }
 );
 
-Root.displayName = 'HeroUINative.Primitive.TagGroup.Root';
+Root.displayName = 'PrismUINative.Primitive.TagGroup.Root';
 
 // --------------------------------------------------
 // List
@@ -176,7 +176,7 @@ const List = forwardRef<ListRef, ListProps>(({ asChild, ...props }, ref) => {
   return <Component ref={ref} role="list" {...props} />;
 });
 
-List.displayName = 'HeroUINative.Primitive.TagGroup.List';
+List.displayName = 'PrismUINative.Primitive.TagGroup.List';
 
 // --------------------------------------------------
 // Item
@@ -270,7 +270,7 @@ const Item = forwardRef<ItemRef, ItemProps>(
   }
 );
 
-Item.displayName = 'HeroUINative.Primitive.TagGroup.Item';
+Item.displayName = 'PrismUINative.Primitive.TagGroup.Item';
 
 // --------------------------------------------------
 // ItemLabel
@@ -284,7 +284,7 @@ const ItemLabel = forwardRef<ItemLabelRef, ItemLabelProps>(
   }
 );
 
-ItemLabel.displayName = 'HeroUINative.Primitive.TagGroup.ItemLabel';
+ItemLabel.displayName = 'PrismUINative.Primitive.TagGroup.ItemLabel';
 
 // --------------------------------------------------
 // RemoveButton
@@ -319,6 +319,6 @@ const RemoveButton = forwardRef<RemoveButtonRef, RemoveButtonProps>(
   }
 );
 
-RemoveButton.displayName = 'HeroUINative.Primitive.TagGroup.RemoveButton';
+RemoveButton.displayName = 'PrismUINative.Primitive.TagGroup.RemoveButton';
 
 export { Item, ItemLabel, List, RemoveButton, Root };

@@ -10,7 +10,7 @@ github:
   <span className="text-sm text-muted">2026 年 7 月 28 日</span>
 </div>
 
-HeroUI Native v1.0.7 让组件表面变得可扩展：组件现在接受 `background` 属性，并暴露配套的背景复合部件，从而可将表面后方的层替换为任意节点。本版本还新增 `GlassView` 层组件、用于 Dialog 与 Bottom Sheet 的 `blur` 遮罩变体，并将 `expo-blur` 作为可选的对等依赖。这些都是扩展点——默认主题不注册任何背景内容，因此渲染结果不变。
+PrismUI Native v1.0.7 让组件表面变得可扩展：组件现在接受 `background` 属性，并暴露配套的背景复合部件，从而可将表面后方的层替换为任意节点。本版本还新增 `GlassView` 层组件、用于 Dialog 与 Bottom Sheet 的 `blur` 遮罩变体，并将 `expo-blur` 作为可选的对等依赖。这些都是扩展点——默认主题不注册任何背景内容，因此渲染结果不变。
 
 ## 安装
 
@@ -40,7 +40,7 @@ HeroUI Native v1.0.7 让组件表面变得可扩展：组件现在接受 `backgr
 </Tabs>
 
 <Callout type="info">
-  **使用 AI 助手？** 直接提示「Hey Cursor，把 HeroUI Native 升级到最新版本」，助手会自动比对版本并完成必要修改。了解更多请参见 [HeroUI Native MCP 服务器](/docs/native/getting-started/mcp-server)。
+  **使用 AI 助手？** 直接提示「Hey Cursor，把 PrismUI Native 升级到最新版本」，助手会自动比对版本并完成必要修改。了解更多请参见 [PrismUI Native MCP 服务器](/docs/native/getting-started/mcp-server)。
 </Callout>
 
 ## 真机体验
@@ -75,7 +75,7 @@ import { Button, GlassView } from "heroui-native";
 
 属性与部件配对规律清晰——`background` 位于 Button、Avatar、Switch、Chip、Checkbox、Input 与 SubMenu 的根组件上，位于 `Radio.Indicator`、`Slider.Track`、`Tabs.List`、`TagGroup.Item`、`InputOTP.Slot` 与 `Popover.Content` 的子部件上，其对应部件分别为 `Radio.IndicatorBackground`、`Slider.TrackBackground`、`Tabs.ListBackground`、`TagGroup.ItemBackground`、`InputOTP.SlotBackground` 与 `Popover.ContentBackground`。每个背景容器都是绝对填充视图，继承宿主元素的定位与裁剪，并接受 `fallbackColor` 主题令牌用于不支持原生模糊的平台。
 
-是否挂载默认层由 `--theme` CSS 变量决定，可使用 `useIsGlassTheme` 与 `useHasDefaultThemeBackground` 检测这一情况。HeroUI Native 附带的主题不注册任何背景内容，因此除非你自行注入，否则不会渲染任何内容；用于激活这些层的 `glass` 主题由 `heroui-native-pro/themes/glass` 提供。
+是否挂载默认层由 `--theme` CSS 变量决定，可使用 `useIsGlassTheme` 与 `useHasDefaultThemeBackground` 检测这一情况。PrismUI Native 附带的主题不注册任何背景内容，因此除非你自行注入，否则不会渲染任何内容；用于激活这些层的 `glass` 主题由 `heroui-native-pro/themes/glass` 提供。
 
 **相关 PR：** [#457](https://github.com/khulnasoft/heroui-native/pull/457)
 

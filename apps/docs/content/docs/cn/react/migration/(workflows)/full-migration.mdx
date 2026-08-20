@@ -1,11 +1,11 @@
 ---
 title: 完全迁移
-description: 使用完整迁移方法将 HeroUI v2 迁移到 v3 的分步指南
+description: 使用完整迁移方法将 PrismUI v2 迁移到 v3 的分步指南
 ---
 
 ## 概述
 
-完全迁移是一种从 HeroUI v2 迁移到 v3 的结构化方法。此方法首先迁移所有组件代码，然后切换依赖关系，确保干净的过渡。
+完全迁移是一种从 PrismUI v2 迁移到 v3 的结构化方法。此方法首先迁移所有组件代码，然后切换依赖关系，确保干净的过渡。
 
 **重要：** 完全迁移意味着项目在迁移过程中将被破坏（v2 和 v3 不能共存）。在功能分支中工作以维护工作主分支。
 
@@ -60,9 +60,9 @@ v3 需要 React 19+。更新你的 React 版本：
   </Tab>
 </Tabs>
 
-**注意**：这些依赖项更新可以在切换 HeroUI 之前完成（不会破坏项目）。但是，HeroUI 包切换只能在所有组件代码迁移之后进行。
+**注意**：这些依赖项更新可以在切换 PrismUI 之前完成（不会破坏项目）。但是，PrismUI 包切换只能在所有组件代码迁移之后进行。
 
-#### 更新 HeroUI 包
+#### 更新 PrismUI 包
 
 **重要**：在迁移所有组件代码后执行此操作。删除 v2 软件包并安装 v3：
 
@@ -173,7 +173,7 @@ module.exports = {
 
 **v3 配置：**
 
-删除`heroui()`来自 Tailwind 配置的插件。如果您仅将 Tailwind 用于 HeroUI 并且没有其他自定义，则可以删除`tailwind.config.js`完全。否则，保留该文件但删除 HeroUI 插件配置。
+删除`heroui()`来自 Tailwind 配置的插件。如果您仅将 Tailwind 用于 PrismUI 并且没有其他自定义，则可以删除`tailwind.config.js`完全。否则，保留该文件但删除 PrismUI 插件配置。
 
 #### 更新 CSS 导入
 
@@ -210,7 +210,7 @@ rm hero.ts
 
 <section id="step-3-remove-herouiprovider">
 
-### 第3步：删除HeroUIProvider
+### 第3步：删除PrismUIProvider
 
 v3 不需要 Provider 组件。从应用程序根目录中删除它。
 
@@ -218,13 +218,13 @@ v3 不需要 Provider 组件。从应用程序根目录中删除它。
 
 ```tsx
 // app.tsx or App.tsx
-import {HeroUIProvider} from "@khulnasoft/react";
+import {PrismUIProvider} from "@khulnasoft/react";
 
 function App() {
   return (
-    <HeroUIProvider>
+    <PrismUIProvider>
       <YourApplication />
-    </HeroUIProvider>
+    </PrismUIProvider>
   );
 }
 ```
@@ -262,7 +262,7 @@ v3 删除了 Framer Motion 依赖性并以不同方式处理动画：
 
 ### 第 4 步：更换拆下的挂钩
 
-HeroUI v2 提供了组件挂钩（例如`useSwitch`, `useInput`, `useCheckbox`等）和实用程序挂钩，例如`useDisclosure`。 HeroUI v3 删除了大多数组件挂钩，转而使用复合组件，并替换了`useDisclosure`和`useOverlayState`.
+PrismUI v2 提供了组件挂钩（例如`useSwitch`, `useInput`, `useCheckbox`等）和实用程序挂钩，例如`useDisclosure`。 PrismUI v3 删除了大多数组件挂钩，转而使用复合组件，并替换了`useDisclosure`和`useOverlayState`.
 
 查看综合[Hooks 迁移指南](/docs/react/migration/hooks)为了：
 - 组件挂钩移除并迁移到复合组件
@@ -453,7 +453,7 @@ v3 使用 CSS 变量。在 CSS 中覆盖它们：
 
 ### 依赖关系
 - 将 React 更新至 v19+
-- 将 HeroUI 包更新到 v3（组件迁移后）
+- 将 PrismUI 包更新到 v3（组件迁移后）
 - 删除Framer Motion
 - 将 Tailwind CSS 更新至 v4
 
@@ -463,7 +463,7 @@ v3 使用 CSS 变量。在 CSS 中覆盖它们：
 - 消除`hero.ts`文件（如果存在）
 
 ### 应用程序代码-组件迁移
-- 消除`HeroUIProvider`包装纸
+- 消除`PrismUIProvider`包装纸
 - 处理提供者道具迁移（路由器、区域设置、动画）
 - 将所有组件导入更新为`@khulnasoft/react`
 - 迁移重命名组件（Divider → Separator、Autocomplete → Combobox、NumberInput → NumberField）

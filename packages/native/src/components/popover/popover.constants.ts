@@ -2,16 +2,16 @@
  * Display names for the Popover components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.Popover.Root',
-  TRIGGER: 'HeroUINative.Popover.Trigger',
-  PORTAL: 'HeroUINative.Popover.Portal',
-  OVERLAY: 'HeroUINative.Popover.Overlay',
-  CONTENT: 'HeroUINative.Popover.Content',
-  CONTENT_BACKGROUND: 'HeroUINative.Popover.ContentBackground',
-  CLOSE: 'HeroUINative.Popover.Close',
-  TITLE: 'HeroUINative.Popover.Title',
-  DESCRIPTION: 'HeroUINative.Popover.Description',
-  ARROW: 'HeroUINative.Popover.Arrow',
+  ROOT: 'PrismUINative.Popover.Root',
+  TRIGGER: 'PrismUINative.Popover.Trigger',
+  PORTAL: 'PrismUINative.Popover.Portal',
+  OVERLAY: 'PrismUINative.Popover.Overlay',
+  CONTENT: 'PrismUINative.Popover.Content',
+  CONTENT_BACKGROUND: 'PrismUINative.Popover.ContentBackground',
+  CLOSE: 'PrismUINative.Popover.Close',
+  TITLE: 'PrismUINative.Popover.Title',
+  DESCRIPTION: 'PrismUINative.Popover.Description',
+  ARROW: 'PrismUINative.Popover.Arrow',
 };
 
 /**

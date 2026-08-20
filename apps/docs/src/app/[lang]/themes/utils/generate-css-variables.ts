@@ -158,8 +158,8 @@ export function generateMinimalCssVariables(
     : "";
 
   return `/*
- * HeroUI Theme Customization
- * Add this to your global.css after importing @heroui/styles
+ * PrismUI Theme Customization
+ * Add this to your global.css after importing @khulnasoft/styles
  * Only includes variables users need to customize
  * @see https://heroui.com/docs/react/getting-started/theming
  */

@@ -2,6 +2,6 @@
  * Display name for Input component
  */
 export const DISPLAY_NAME = {
-  INPUT: 'HeroUINative.Input',
-  BACKGROUND: 'HeroUINative.Input.Background',
+  INPUT: 'PrismUINative.Input',
+  BACKGROUND: 'PrismUINative.Input.Background',
 } as const;

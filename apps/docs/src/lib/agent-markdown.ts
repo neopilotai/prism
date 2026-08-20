@@ -61,11 +61,11 @@ export function estimateMarkdownTokens(markdown: string): number {
 export function getHomepageMarkdown(origin: string): string {
   const baseUrl = origin.replace(/\/$/, "");
 
-  return `# HeroUI
+  return `# PrismUI
 
 Beautiful, accessible React UI components built on React Aria and Tailwind CSS v4. The modern alternative to MUI, Chakra UI, and shadcn/ui for building production-ready applications.
 
-HeroUI is the modern UI library for web and mobile, built to help teams move fast, stay consistent, and deliver delightful user experiences.
+PrismUI is the modern UI library for web and mobile, built to help teams move fast, stay consistent, and deliver delightful user experiences.
 
 ## Start here
 
@@ -86,10 +86,10 @@ HeroUI is the modern UI library for web and mobile, built to help teams move fas
 
 ## MCP and skills
 
-- [HeroUI React MCP server](${baseUrl}/docs/react/getting-started/mcp-server)
-- [HeroUI Native MCP server](${baseUrl}/docs/native/getting-started/mcp-server)
-- [HeroUI React Agent Skills](${baseUrl}/docs/react/getting-started/agent-skills)
-- [HeroUI Native Agent Skills](${baseUrl}/docs/native/getting-started/agent-skills)
+- [PrismUI React MCP server](${baseUrl}/docs/react/getting-started/mcp-server)
+- [PrismUI Native MCP server](${baseUrl}/docs/native/getting-started/mcp-server)
+- [PrismUI React Agent Skills](${baseUrl}/docs/react/getting-started/agent-skills)
+- [PrismUI Native Agent Skills](${baseUrl}/docs/native/getting-started/agent-skills)
 `;
 }
 

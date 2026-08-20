@@ -26,4 +26,4 @@ export const CloseIcon: React.FC<CloseIconProps> = ({ size = 16, color }) => {
   );
 };
 
-CloseIcon.displayName = 'HeroUINative.CloseIcon';
+CloseIcon.displayName = 'PrismUINative.CloseIcon';

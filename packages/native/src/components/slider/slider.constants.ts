@@ -2,12 +2,12 @@
  * Display names for Slider components
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUI.Slider.Root',
-  OUTPUT: 'HeroUI.Slider.Output',
-  TRACK: 'HeroUI.Slider.Track',
-  TRACK_BACKGROUND: 'HeroUI.Slider.TrackBackground',
-  FILL: 'HeroUI.Slider.Fill',
-  THUMB: 'HeroUI.Slider.Thumb',
+  ROOT: 'PrismUI.Slider.Root',
+  OUTPUT: 'PrismUI.Slider.Output',
+  TRACK: 'PrismUI.Slider.Track',
+  TRACK_BACKGROUND: 'PrismUI.Slider.TrackBackground',
+  FILL: 'PrismUI.Slider.Fill',
+  THUMB: 'PrismUI.Slider.Thumb',
 };
 
 /**

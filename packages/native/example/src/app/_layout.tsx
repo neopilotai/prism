@@ -29,7 +29,7 @@ import '../i18n/polyfills';
 import { I18nProvider } from '@lingui/react';
 import { Slot } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { HeroUINativeProvider } from 'heroui-native';
+import { PrismUINativeProvider } from 'heroui-native';
 import { useCallback } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
@@ -54,7 +54,7 @@ SplashScreen.setOptions({
 
 /**
  * Component that wraps app content inside KeyboardProvider
- * Contains the contentWrapper and HeroUINativeProvider configuration
+ * Contains the contentWrapper and PrismUINativeProvider configuration
  */
 function AppContent() {
   const { isRTL } = useAppLocale();
@@ -87,7 +87,7 @@ function AppContent() {
             className="flex-1"
             style={isRTL ? styles.directionRTL : styles.directionLTR}
           >
-            <HeroUINativeProvider
+            <PrismUINativeProvider
               config={{
                 textProps: {
                   maxFontSizeMultiplier: 2,
@@ -102,7 +102,7 @@ function AppContent() {
               }}
             >
               <Slot />
-            </HeroUINativeProvider>
+            </PrismUINativeProvider>
           </View>
         </LayoutDirection>
       </I18nProvider>

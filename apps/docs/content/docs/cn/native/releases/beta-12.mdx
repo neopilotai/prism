@@ -39,7 +39,7 @@ Beta 12 新增三个核心表单组件——InputOTP、Label、Description——
 </Tabs>
 
 <Callout type="info">
-  **使用 AI 助手？** 直接提示「Hey Cursor，把 HeroUI Native 升级到最新版本」，助手会自动比对版本并完成必要修改。了解更多请参见 [HeroUI Native MCP 服务器](/docs/native/getting-started/mcp-server)。
+  **使用 AI 助手？** 直接提示「Hey Cursor，把 PrismUI Native 升级到最新版本」，助手会自动比对版本并完成必要修改。了解更多请参见 [PrismUI Native MCP 服务器](/docs/native/getting-started/mcp-server)。
 </Callout>
 
 ## 抢先体验
@@ -276,24 +276,24 @@ Dialog、Bottom Sheet、Popover 等弹层组件已修复通过 `isOpen` 的受�
 
 ## API 增强
 
-### HeroUINativeProvider 的 devInfo 配置
+### PrismUINativeProvider 的 devInfo 配置
 
-`HeroUINativeProvider` 现支持 `devInfo` 配置项，便于开发与调试。
+`PrismUINativeProvider` 现支持 `devInfo` 配置项，便于开发与调试。
 
 **新能力：**
 
 ```tsx
-import { HeroUINativeProvider } from "heroui-native";
+import { PrismUINativeProvider } from "heroui-native";
 
 export function App() {
   return (
-    <HeroUINativeProvider
+    <PrismUINativeProvider
       devInfo={{
         // 开发期配置项
       }}
     >
       {/* 应用内容 */}
-    </HeroUINativeProvider>
+    </PrismUINativeProvider>
   );
 }
 ```

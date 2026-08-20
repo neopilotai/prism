@@ -10,7 +10,7 @@ github:
   <span className="text-sm text-muted">July 28, 2026</span>
 </div>
 
-HeroUI Native v1.0.7 makes component surfaces extensible: components now accept a `background` prop and expose a matching background compound part, so the layer behind a surface can be replaced with any node. It also adds the `GlassView` layer component, a `blur` overlay variant for Dialog and Bottom Sheet, and `expo-blur` as an optional peer dependency. These are extension points — the default theme registers no background content, so rendering is unchanged.
+PrismUI Native v1.0.7 makes component surfaces extensible: components now accept a `background` prop and expose a matching background compound part, so the layer behind a surface can be replaced with any node. It also adds the `GlassView` layer component, a `blur` overlay variant for Dialog and Bottom Sheet, and `expo-blur` as an optional peer dependency. These are extension points — the default theme registers no background content, so rendering is unchanged.
 
 ## Installation
 
@@ -40,7 +40,7 @@ Update to the latest version:
 </Tabs>
 
 <Callout type="info">
-  **Using AI assistants?** Simply prompt "Hey Cursor, update HeroUI Native to the latest version" and your AI assistant will automatically compare versions and apply the necessary changes. Learn more about the [HeroUI Native MCP Server](/docs/native/getting-started/mcp-server).
+  **Using AI assistants?** Simply prompt "Hey Cursor, update PrismUI Native to the latest version" and your AI assistant will automatically compare versions and apply the necessary changes. Learn more about the [PrismUI Native MCP Server](/docs/native/getting-started/mcp-server).
 </Callout>
 
 ## Try It on Your Device
@@ -75,7 +75,7 @@ import { Button, GlassView } from "heroui-native";
 
 The prop and part pair up predictably — `background` sits on the root for Button, Avatar, Switch, Chip, Checkbox, Input, and SubMenu, and on the sub-part for `Radio.Indicator`, `Slider.Track`, `Tabs.List`, `TagGroup.Item`, `InputOTP.Slot`, and `Popover.Content`, whose parts are `Radio.IndicatorBackground`, `Slider.TrackBackground`, `Tabs.ListBackground`, `TagGroup.ItemBackground`, `InputOTP.SlotBackground`, and `Popover.ContentBackground`. Each background container is an absolute-fill view that inherits the host element's positioning and clipping, and accepts a `fallbackColor` theme token for platforms without native blur.
 
-Whether a default layer mounts is decided by the `--theme` CSS variable, with `useIsGlassTheme` and `useHasDefaultThemeBackground` available for detecting that case. The theme shipped with HeroUI Native registers no background content, so nothing renders unless you inject it yourself; the `glass` theme that activates these layers is provided by `heroui-native-pro/themes/glass`.
+Whether a default layer mounts is decided by the `--theme` CSS variable, with `useIsGlassTheme` and `useHasDefaultThemeBackground` available for detecting that case. The theme shipped with PrismUI Native registers no background content, so nothing renders unless you inject it yourself; the `glass` theme that activates these layers is provided by `heroui-native-pro/themes/glass`.
 
 **Related PR:** [#457](https://github.com/khulnasoft/heroui-native/pull/457)
 

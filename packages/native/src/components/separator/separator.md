@@ -73,7 +73,7 @@ export default function SeparatorExample() {
   return (
     <Surface variant="secondary" className="px-6 py-7">
       <Text className="text-base font-medium text-foreground">
-        HeroUI Native
+        PrismUI Native
       </Text>
       <Text className="text-sm text-muted">
         A modern React Native component library.

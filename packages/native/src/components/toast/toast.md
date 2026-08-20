@@ -47,7 +47,7 @@ const { toast } = useToast();
 toast.show({
   variant: 'success',
   label: 'You have upgraded your plan',
-  description: 'You can continue using HeroUI Chat',
+  description: 'You can continue using PrismUI Chat',
   icon: <Icon name="check" />,
   actionLabel: 'Close',
   onActionPress: ({ hide }) => hide(),
@@ -124,7 +124,7 @@ export default function ToastExample() {
           toast.show({
             variant: 'success',
             label: 'You have upgraded your plan',
-            description: 'You can continue using HeroUI Chat',
+            description: 'You can continue using PrismUI Chat',
             actionLabel: 'Close',
             onActionPress: ({ hide }) => hide(),
           })
@@ -160,7 +160,7 @@ You can find more examples in the [GitHub repository](<https://github.com/khulna
 
 ## Global Configuration
 
-Configure toast behavior globally using `HeroUINativeProvider` config prop. Global configs serve as defaults for all toasts unless overridden locally.
+Configure toast behavior globally using `PrismUINativeProvider` config prop. Global configs serve as defaults for all toasts unless overridden locally.
 
 > **Note**: For complete provider configuration options, see the [Provider documentation](../../providers/hero-ui-native/provider.md).
 
@@ -169,7 +169,7 @@ Configure toast behavior globally using `HeroUINativeProvider` config prop. Glob
 Insets control the distance of toast sides from screen edges. Insets are added to safe area insets. To set all toasts to have a side distance of 20px from screen edges, configure insets:
 
 ```tsx
-<HeroUINativeProvider
+<PrismUINativeProvider
   config={{
     toast: {
       insets: {
@@ -182,7 +182,7 @@ Insets control the distance of toast sides from screen edges. Insets are added t
   }}
 >
   {children}
-</HeroUINativeProvider>
+</PrismUINativeProvider>
 ```
 
 ### Content Wrapper with KeyboardAvoidingView
@@ -194,7 +194,7 @@ import {
   KeyboardAvoidingView,
   KeyboardProvider,
 } from 'react-native-keyboard-controller';
-import { HeroUINativeProvider } from 'heroui-native';
+import { PrismUINativeProvider } from 'heroui-native';
 import { useCallback } from 'react';
 
 function AppContent() {
@@ -214,7 +214,7 @@ function AppContent() {
 
   return (
     <KeyboardProvider>
-      <HeroUINativeProvider
+      <PrismUINativeProvider
         config={{
           toast: {
             contentWrapper,
@@ -222,7 +222,7 @@ function AppContent() {
         }}
       >
         {children}
-      </HeroUINativeProvider>
+      </PrismUINativeProvider>
     </KeyboardProvider>
   );
 }
@@ -233,7 +233,7 @@ function AppContent() {
 Set global defaults for variant, placement, animation, and swipe behavior:
 
 ```tsx
-<HeroUINativeProvider
+<PrismUINativeProvider
   config={{
     toast: {
       defaultProps: {
@@ -245,7 +245,7 @@ Set global defaults for variant, placement, animation, and swipe behavior:
   }}
 >
   {children}
-</HeroUINativeProvider>
+</PrismUINativeProvider>
 ```
 
 ## API Reference
@@ -330,7 +330,7 @@ For inherited props including `isDisabled` and all Button props, see [Button API
 
 ### ToastProviderProps
 
-Props for configuring toast behavior globally via `HeroUINativeProvider` config prop.
+Props for configuring toast behavior globally via `PrismUINativeProvider` config prop.
 
 | prop                                         | type                                                | default | description                                                                                                                                                                                                      |
 | -------------------------------------------- | --------------------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -368,7 +368,7 @@ Insets for spacing from screen edges. Values are added to safe area insets.
 
 ### useToast
 
-Hook to access toast functionality. Must be used within a `ToastProvider` (provided by `HeroUINativeProvider`).
+Hook to access toast functionality. Must be used within a `ToastProvider` (provided by `PrismUINativeProvider`).
 
 | return value     | type           | description                              |
 | ---------------- | -------------- | ---------------------------------------- |
@@ -418,4 +418,4 @@ Options for showing a toast. Can be either a config object with default styling 
 
 ### Element Inspector (iOS)
 
-Toast uses FullWindowOverlay on iOS. To enable the React Native element inspector during development, set `disableFullWindowOverlay={true}` on `ToastProvider` (via `config.toast` when using HeroUINativeProvider). Tradeoff: toasts will not appear above native modals when disabled.
+Toast uses FullWindowOverlay on iOS. To enable the React Native element inspector during development, set `disableFullWindowOverlay={true}` on `ToastProvider` (via `config.toast` when using PrismUINativeProvider). Tradeoff: toasts will not appear above native modals when disabled.

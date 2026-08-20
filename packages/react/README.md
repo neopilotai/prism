@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://heroui.com">
       <img 
-        alt="HeroUI v3 logo" 
+        alt="PrismUI v3 logo" 
         width="100%" 
         src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-og_2x.jpg"
       />
@@ -16,9 +16,9 @@
   </a>
 </p>
 
-## Why HeroUI?
+## Why PrismUI?
 
-HeroUI (previously NextUI) is a production-ready React component library that combines the accessibility rigor of [React Aria](https://react-spectrum.adobe.com/react-aria/) with the utility-first styling of [Tailwind CSS v4](https://tailwindcss.com/). It ships a clean compound component API (`Card.Header`, `Card.Content`, `Select.Item`, …), requires no `<Provider>` wrapper, and works out of the box with React 19 and Next.js.
+PrismUI (previously NextUI) is a production-ready React component library that combines the accessibility rigor of [React Aria](https://react-spectrum.adobe.com/react-aria/) with the utility-first styling of [Tailwind CSS v4](https://tailwindcss.com/). It ships a clean compound component API (`Card.Header`, `Card.Content`, `Select.Item`, …), requires no `<Provider>` wrapper, and works out of the box with React 19 and Next.js.
 
 - **Accessible by default** — Built on React Aria for WCAG-compliant keyboard, focus, and screen-reader behavior
 - **Tailwind CSS v4** — Modern engine, no CSS-in-JS runtime, smaller output, faster builds
@@ -37,7 +37,7 @@ HeroUI (previously NextUI) is a production-ready React component library that co
 
 ## Getting Started
 
-Visit [heroui.com/docs/react/getting-started/quick-start](https://heroui.com/docs/react/getting-started/quick-start) to get started with HeroUI.
+Visit [heroui.com/docs/react/getting-started/quick-start](https://heroui.com/docs/react/getting-started/quick-start) to get started with PrismUI.
 
 ```bash
 npm install @khulnasoft/react
@@ -45,7 +45,7 @@ npm install @khulnasoft/react
 
 ## Who Is This For?
 
-HeroUI is a good fit if you are building:
+PrismUI is a good fit if you are building:
 
 - **SaaS applications** — forms, tables, overlays, and notifications out of the box
 - **Dashboards & admin panels** — data-dense layouts with consistent design tokens
@@ -55,7 +55,7 @@ HeroUI is a good fit if you are building:
 
 ## AI-Powered Development
 
-HeroUI is built for the AI-assisted development workflow.
+PrismUI is built for the AI-assisted development workflow.
 
 | Tool | What it does |
 |---|---|
@@ -67,12 +67,12 @@ Works with **Cursor**, **Claude Code**, **Windsurf**, **GitHub Copilot**, and an
 
 ## Compared To
 
-| Library | How HeroUI differs |
+| Library | How PrismUI differs |
 |---|---|
-| **shadcn/ui** | HeroUI is batteries-included with a consistent design system; shadcn is copy-paste-customize |
-| **MUI** | HeroUI is lighter, Tailwind-native, no CSS-in-JS runtime overhead |
-| **Chakra UI** | HeroUI uses React Aria (stronger a11y primitives) and Tailwind v4 (better perf) |
-| **Mantine** | HeroUI has AI tooling (MCP, llms.txt), Tailwind-first styling |
+| **shadcn/ui** | PrismUI is batteries-included with a consistent design system; shadcn is copy-paste-customize |
+| **MUI** | PrismUI is lighter, Tailwind-native, no CSS-in-JS runtime overhead |
+| **Chakra UI** | PrismUI uses React Aria (stronger a11y primitives) and Tailwind v4 (better perf) |
+| **Mantine** | PrismUI has AI tooling (MCP, llms.txt), Tailwind-first styling |
 
 ## Documentation
 
@@ -85,15 +85,15 @@ Visit [storybook-v3.heroui.com](https://storybook-v3.heroui.com/) to view the st
 
 ## Roadmap
 
-Visit [herouiv3.featurebase.app/roadmap](https://herouiv3.featurebase.app/roadmap) to view the roadmap for HeroUI v3.
+Visit [herouiv3.featurebase.app/roadmap](https://herouiv3.featurebase.app/roadmap) to view the roadmap for PrismUI v3.
 
 ## Figma
 
-Visit the [HeroUI Figma Kit (v3)](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3) to view the design kit.
+Visit the [PrismUI Figma Kit (v3)](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3) to view the design kit.
 
 ## Community
 
-We're excited to see the community adopt HeroUI, raise issues, and provide feedback.
+We're excited to see the community adopt PrismUI, raise issues, and provide feedback.
 Whether it's a feature request, bug report, or a project to showcase, please get involved!
 
 - [Discord](https://discord.gg/9b6yyZKmH4)

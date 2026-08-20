@@ -1,10 +1,10 @@
 ---
 title: 设计原则
-description: 指导 HeroUI v3 设计和开发的核心原则
+description: 指导 PrismUI v3 设计和开发的核心原则
 icon: book
 ---
 
-HeroUI v3 遵循 10 项核心原则，注重清晰度、无障碍、可定制性以及开发者体验。
+PrismUI v3 遵循 10 项核心原则，注重清晰度、无障碍、可定制性以及开发者体验。
 
 ## 核心原则
 
@@ -220,7 +220,7 @@ const slots = linkVariants({ underline: "hover" });
 ```tsx
 import Link from 'next/link';
 
-// Apply HeroUI's BEM classes directly to any element
+// Apply PrismUI's BEM classes directly to any element
 <Link className="button button--primary" href="/dashboard">
   Dashboard
 </Link>
@@ -277,9 +277,9 @@ function CustomButton({ variant, className, ...props }) {
 <CustomButton variant="secondary-cta">Learn More</CustomButton>
 ```
 
-## 与 HeroUI v2 的对比
+## 与 PrismUI v2 的对比
 
-| 维度 | HeroUI v2 | HeroUI v3 |
+| 维度 | PrismUI v2 | PrismUI v3 |
 |--------|-----------|-----------|
 | **动画** | Framer Motion | CSS + GPU 加速 |
 | **组件模式** | 带有大量 props 的单一组件 | 复合组件 |

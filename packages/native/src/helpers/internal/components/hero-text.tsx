@@ -15,7 +15,7 @@ export interface HeroTextProps extends RNTextProps {
 
 /**
  * HeroText component that automatically applies global text configuration
- * from HeroUINativeProvider.
+ * from PrismUINativeProvider.
  *
  * This component is distinct from React Native's Text component and includes
  * a default 'font-normal' className that can be extended via the className prop.
@@ -38,9 +38,9 @@ export interface HeroTextProps extends RNTextProps {
  * ```
  *
  * @example
- * Global configuration in HeroUINativeProvider:
+ * Global configuration in PrismUINativeProvider:
  * ```tsx
- * <HeroUINativeProvider config={{
+ * <PrismUINativeProvider config={{
  *   textProps: {
  *     allowFontScaling: false,
  *     adjustsFontSizeToFit: false,
@@ -48,7 +48,7 @@ export interface HeroTextProps extends RNTextProps {
  *   }
  * }}>
  *   <App />
- * </HeroUINativeProvider>
+ * </PrismUINativeProvider>
  * ```
  */
 export const HeroText = React.forwardRef<RNText, HeroTextProps>(

@@ -1,10 +1,10 @@
 # AGENTS.md
 
-Instructions for AI agents working with the HeroUI v3 repository.
+Instructions for AI agents working with the PrismUI v3 repository.
 
 ## Repository Overview
 
-HeroUI v3 is a modern React UI library built with **Tailwind CSS v4**, organized as a **pnpm monorepo** managed by **Turborepo**. Components are built on top of [React Aria Components](https://react-spectrum.adobe.com/react-aria/) and follow a compound component pattern similar to Radix UI.
+PrismUI v3 is a modern React UI library built with **Tailwind CSS v4**, organized as a **pnpm monorepo** managed by **Turborepo**. Components are built on top of [React Aria Components](https://react-spectrum.adobe.com/react-aria/) and follow a compound component pattern similar to Radix UI.
 
 ### Tech Stack
 
@@ -69,7 +69,7 @@ HeroUI v3 is a modern React UI library built with **Tailwind CSS v4**, organized
   - optional `fixtures.tsx` — shared JSX across layers
 - Import harness from `@khulnasoft/testing/helpers` (`render`, `setupUser`, `runAllTimers`, `ssrSmoke`, `User`). Browser suites: `render` from `@khulnasoft/testing/browser` (wraps `vitest-browser-react`; owned by `@khulnasoft/testing`). Prefer `@/` for sources. Pattern testers: `const user = new User(...); user.createTester(...)` — not a top-level export.
 - Query: `getByRole` / label / text first; `data-testid` when needed; avoid class-primary queries.
-- Assert: roles/names, HeroUI `data-*` hooks, callbacks, focus, light BEM + documented `data-slot` on compound parts — not colors, full class lists, or RAC internals.
+- Assert: roles/names, PrismUI `data-*` hooks, callbacks, focus, light BEM + documented `data-slot` on compound parts — not colors, full class lists, or RAC internals.
 - Fake timers: per-suite only; wire `advanceTimers` into `setupUser` + `User`; use `runAllTimers()`.
 - Pattern testers for groups / overlays / collections; skip for Button / Checkbox / Switch / TextField.
 - Naming: `describe("Component")`; nested concern; `it` as `supports…` / `calls…` / `exposes…` / `renders…`. SSR: `"Component SSR"`; browser: `"Component (browser)"`.
@@ -130,7 +130,7 @@ pnpm build
 
 ### Compound Component Pattern
 
-HeroUI uses a compound component pattern. Each component exports its sub-parts so users can compose and style them independently.
+PrismUI uses a compound component pattern. Each component exports its sub-parts so users can compose and style them independently.
 
 ```tsx
 // Context shares state/styles across parts
@@ -188,7 +188,7 @@ export {componentVariants, type ComponentVariants} from "./component.styles";
 2. **Import from `tailwind-variants`**, never from `@khulnasoft/standard`.
 3. **Never use `twMerge` manually** — `tailwind-variants` already includes it.
 4. **Add `"use client"` directive** at the top of every component `.tsx` file.
-5. **Display names** follow: `HeroUI.ComponentName` or `HeroUI.Component.SubPart`.
+5. **Display names** follow: `PrismUI.ComponentName` or `PrismUI.Component.SubPart`.
 
 ### CSS / BEM Naming
 
@@ -282,7 +282,7 @@ Storybook is the primary dev workflow — run with `pnpm dev` (port 6006).
 
 ### Icon Library
 
-HeroUI uses **Iconify** with **gravity-ui** as the default icon set.
+PrismUI uses **Iconify** with **gravity-ui** as the default icon set.
 
 ## Current Components
 

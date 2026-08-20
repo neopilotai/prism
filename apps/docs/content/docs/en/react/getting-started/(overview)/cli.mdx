@@ -1,10 +1,10 @@
 ---
 title: CLI
-description: Use the CLI to manage HeroUI dependencies and initialize projects.
+description: Use the CLI to manage PrismUI dependencies and initialize projects.
 icon: terminal
 ---
 
-The CLI offers a comprehensive suite of commands to initialize, manage, and improve your HeroUI projects. It enables you to `install`, `uninstall`, or `upgrade` individual components, assess the health of your project, download documentation for AI coding agents, and more.
+The CLI offers a comprehensive suite of commands to initialize, manage, and improve your PrismUI projects. It enables you to `install`, `uninstall`, or `upgrade` individual components, assess the health of your project, download documentation for AI coding agents, and more.
 
 ## Installation
 
@@ -73,16 +73,16 @@ Commands:
   install [options]              Installs @khulnasoft/react and @khulnasoft/styles to your project
   upgrade [options]              Upgrades @khulnasoft/react and @khulnasoft/styles to the latest versions
   uninstall [options]            Uninstall @khulnasoft/react and @khulnasoft/styles from the project
-  list [options]                 Lists installed HeroUI packages (@khulnasoft/react, @khulnasoft/styles)
+  list [options]                 Lists installed PrismUI packages (@khulnasoft/react, @khulnasoft/styles)
   env [options]                  Displays debugging information for the local environment
   doctor [options]               Checks for issues in the project
-  agents-md [options]            Downloads HeroUI documentation for AI coding agents
+  agents-md [options]            Downloads PrismUI documentation for AI coding agents
   help [command]                 Display help for command
 ```
 
 ### init
 
-Initialize a new HeroUI project using the `init` command. This sets up your project with the necessary configurations.
+Initialize a new PrismUI project using the `init` command. This sets up your project with the necessary configurations.
 
 ```bash
 heroui init [options]
@@ -96,15 +96,15 @@ heroui init [options]
 output:
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ┌  Create a new project
 │
 ◇  Select a template (Enter to select)
-│  ● App (A Next.js 16 with app directory template pre-configured with HeroUI (v3) and Tailwind CSS.)
-│  ○ Pages (A Next.js 16 with pages directory template pre-configured with HeroUI (v3) and Tailwind CSS.)
-│  ○ Vite (A Vite template pre-configured with HeroUI (v3) and Tailwind CSS.)
-│  ○ React Router (A React Router template pre-configured with HeroUI (v3) and Tailwind CSS.)
+│  ● App (A Next.js 16 with app directory template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ Pages (A Next.js 16 with pages directory template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ Vite (A Vite template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ React Router (A React Router template pre-configured with PrismUI (v3) and Tailwind CSS.)
 │
 ◇  New project name (Enter to skip with default name)
 │  my-heroui-app
@@ -175,7 +175,7 @@ heroui install [options]
 **Output:**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 📦 Packages to be installed:
 ╭─────────────────────────────────────────────────────────────────────────────╮
@@ -213,7 +213,7 @@ heroui upgrade [options]
 **Output:**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ╭──────────────────────────── Upgrade ────────────────────────────╮
 │  @khulnasoft/react               ^3.0.0  ->  ^3.1.0                │
@@ -242,7 +242,7 @@ heroui uninstall [options]
 **Output:**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ❗️ Packages slated for uninstallation:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
@@ -260,7 +260,7 @@ HeroUI CLI <version>
 
 ### list
 
-List the installed HeroUI packages (`@khulnasoft/react`, `@khulnasoft/styles`).
+List the installed PrismUI packages (`@khulnasoft/react`, `@khulnasoft/styles`).
 
 ```bash
 heroui list [options]
@@ -273,7 +273,7 @@ heroui list [options]
 **Output:**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 Current installed packages:
 
@@ -305,13 +305,13 @@ heroui doctor [options]
 If there is a problem in your project, the `doctor` command will display the problem information.
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
-HeroUI CLI: ❌ Your project has 1 issue that require attention
+PrismUI CLI: ❌ Your project has 1 issue that require attention
 
-❗️Issue 1: missingHeroUIPackages
+❗️Issue 1: missingPrismUIPackages
 
-The following HeroUI packages are not installed:
+The following PrismUI packages are not installed:
 - @khulnasoft/styles
 
 Run `heroui install` to install them.
@@ -320,7 +320,7 @@ Run `heroui install` to install them.
 Otherwise, the `doctor` command will display the following message.
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 ✅ Your project has no detected issues.
 ```
@@ -340,7 +340,7 @@ heroui env [options]
 **Output:**
 
 ```bash
-HeroUI CLI <version>
+PrismUI CLI <version>
 
 Current installed packages:
 
@@ -361,7 +361,7 @@ Environment Info:
 
 ### agents-md
 
-Download HeroUI documentation for AI coding agents (Claude, Cursor, etc.). The command clones the latest docs from the HeroUI repository and injects a compact index into `AGENTS.md` or `CLAUDE.md` so assistants can reference your project's HeroUI setup.
+Download PrismUI documentation for AI coding agents (Claude, Cursor, etc.). The command clones the latest docs from the PrismUI repository and injects a compact index into `AGENTS.md` or `CLAUDE.md` so assistants can reference your project's PrismUI setup.
 
 ```bash
 heroui agents-md [options]
@@ -371,7 +371,7 @@ heroui agents-md [options]
 
 - `--react` [boolean] Include React docs only (one library at a time)
 - `--native` [boolean] Include Native docs only
-- `--migration` [boolean] Include HeroUI v2 to v3 migration docs only
+- `--migration` [boolean] Include PrismUI v2 to v3 migration docs only
 - `--output <file>` [string] Target file path (e.g., `AGENTS.md`, `CLAUDE.md`)
 - `--ssh` [boolean] Use SSH instead of HTTPS for git clone
 

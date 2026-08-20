@@ -2,7 +2,7 @@
  * Display names for the GlassView component
  */
 export const DISPLAY_NAME = {
-  ROOT: 'HeroUINative.GlassView',
+  ROOT: 'PrismUINative.GlassView',
 };
 
 /**

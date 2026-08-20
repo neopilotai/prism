@@ -2,7 +2,7 @@
  * Display name constants for ScrollShadow components
  */
 export const SCROLL_SHADOW_DISPLAY_NAME = {
-  ROOT: 'HeroUINative.ScrollShadow',
+  ROOT: 'PrismUINative.ScrollShadow',
 } as const;
 
 /**

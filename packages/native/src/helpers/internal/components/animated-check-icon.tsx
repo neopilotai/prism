@@ -75,4 +75,4 @@ export const AnimatedCheckIcon: React.FC<CheckIconProps> = ({
   );
 };
 
-AnimatedCheckIcon.displayName = 'HeroUINative.AnimatedCheckIcon';
+AnimatedCheckIcon.displayName = 'PrismUINative.AnimatedCheckIcon';

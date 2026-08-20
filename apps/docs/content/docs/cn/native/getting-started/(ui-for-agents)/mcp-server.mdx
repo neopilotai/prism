@@ -1,21 +1,21 @@
 ---
 title: MCP 服务器
-description: 在 AI 助手中直接访问 HeroUI Native 文档
+description: 在 AI 助手中直接访问 PrismUI Native 文档
 ---
 
-HeroUI MCP 服务器让 AI 助手直接读取 HeroUI Native 组件文档，便于在 AI 驱动的开发流程中使用 HeroUI。
+PrismUI MCP 服务器让 AI 助手直接读取 PrismUI Native 组件文档，便于在 AI 驱动的开发流程中使用 PrismUI。
 
 <DocsImage
   src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/hero-native-mcp-light-new.jpg"
   darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/hero-native-mcp-dark-new.jpg"
-  alt="HeroUI Native MCP 服务器"
+  alt="PrismUI Native MCP 服务器"
 />
 
 
 当前 MCP 服务器支持 **heroui-native** 与 [stdio 传输](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio)。npm 包名为 `@khulnasoft/native-mcp`。源码见 [GitHub](https://github.com/khulnasoft/heroui-mcp)。
 
 <Callout>
-  随着 HeroUI Native 组件增加，MCP 中的可用内容也会同步扩展。
+  随着 PrismUI Native 组件增加，MCP 中的可用内容也会同步扩展。
 </Callout>
 
 ## 快速配置
@@ -159,18 +159,18 @@ args = ["-y", "@khulnasoft/native-mcp@latest"]
 
 配置完成后，可向 AI 提问，例如：
 
-- "Help me install HeroUI Native in my Expo app"
-- "Show me all HeroUI Native components"
+- "Help me install PrismUI Native in my Expo app"
+- "Show me all PrismUI Native components"
 - "What props does the Button component have?"
 - "Give me an example of using the Card component"
 - "What are the theme variables for dark mode?"
 
 ### 自动升级
 
-MCP 也可协助将 HeroUI Native 升级到最新版本，例如：
+MCP 也可协助将 PrismUI Native 升级到最新版本，例如：
 
 ```bash
-"Hey Cursor, update HeroUI Native to the latest version"
+"Hey Cursor, update PrismUI Native to the latest version"
 ```
 
 助手通常会：
@@ -187,10 +187,10 @@ MCP 向 AI 暴露以下工具：
 
 | 工具 | 说明 |
 |------|------|
-| `list_components` | 列出全部 HeroUI Native 组件 |
+| `list_components` | 列出全部 PrismUI Native 组件 |
 | `get_component_docs` | 获取一个或多个组件的完整文档（结构、props、示例与用法模式） |
 | `get_theme_variables` | 读取颜色、排版、间距等主题变量，支持明暗模式 |
-| `get_docs` | 浏览 HeroUI Native 全部文档（指南与原则等）；安装说明可使用路径 `/docs/native/getting-started/quick-start` |
+| `get_docs` | 浏览 PrismUI Native 全部文档（指南与原则等）；安装说明可使用路径 `/docs/native/getting-started/quick-start` |
 
 
 ## 故障排除

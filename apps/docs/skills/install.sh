@@ -1,5 +1,5 @@
 #!/bin/bash
-# HeroUI Skill Installer
+# PrismUI Skill Installer
 # Usage: curl -sSL https://heroui.com/install | bash -s [skill-name]
 # Default: heroui-react
 # Available skills: heroui-react, heroui-native, heroui-migration
@@ -19,7 +19,7 @@ CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 
 INSTALLED=0
 
-echo "Installing HeroUI skill: ${SKILL_NAME}..."
+echo "Installing PrismUI skill: ${SKILL_NAME}..."
 echo ""
 
 # Claude Code - Skill only (skills are auto-discovered, no command needed)

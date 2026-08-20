@@ -362,13 +362,13 @@ export function getHerouiVersions(cwd: string): HerouiVersionsResult {
 
         if (!versions.react && !versions.native) {
           return {
-            error: `No HeroUI packages found in ${workspace.type} workspace packages.`
+            error: `No PrismUI packages found in ${workspace.type} workspace packages.`
           };
         }
       } else {
         return {
           error:
-            'HeroUI packages (@heroui/react or heroui-native) are not installed in this project.'
+            'PrismUI packages (@heroui/react or heroui-native) are not installed in this project.'
         };
       }
     }

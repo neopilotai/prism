@@ -37,7 +37,7 @@ const DefaultTemplate = (_props: Link["RootProps"]) => (
         variant: "tertiary",
       })}
     >
-      HeroUI
+      PrismUI
       <Link.Icon className="h-2 w-2" />
     </Link>
   </div>

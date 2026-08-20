@@ -1,10 +1,10 @@
 ---
 title: Design Principles
-description: Core principles that guide HeroUI v3's design and development
+description: Core principles that guide PrismUI v3's design and development
 icon: book
 ---
 
-HeroUI v3 follows 10 core principles that prioritize clarity, accessibility, customization, and developer experience.
+PrismUI v3 follows 10 core principles that prioritize clarity, accessibility, customization, and developer experience.
 
 ## Core Principles
 
@@ -220,7 +220,7 @@ const slots = linkVariants({ underline: "hover" });
 ```tsx
 import Link from 'next/link';
 
-// Apply HeroUI's BEM classes directly to any element
+// Apply PrismUI's BEM classes directly to any element
 <Link className="button button--primary" href="/dashboard">
   Dashboard
 </Link>
@@ -277,9 +277,9 @@ function CustomButton({ variant, className, ...props }) {
 <CustomButton variant="secondary-cta">Learn More</CustomButton>
 ```
 
-## Comparison with HeroUI v2
+## Comparison with PrismUI v2
 
-| Aspect | HeroUI v2 | HeroUI v3 |
+| Aspect | PrismUI v2 | PrismUI v3 |
 |--------|-----------|-----------|
 | **Animations** | Framer Motion | CSS + GPU accelerated |
 | **Component Pattern** | Single components with many props | Compound components |

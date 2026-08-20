@@ -17,7 +17,7 @@ const SeparatorInActionContent = () => {
           className="text-base font-medium text-foreground"
           maxFontSizeMultiplier={1.4}
         >
-          HeroUI Native
+          PrismUI Native
         </AppText>
         {/* eslint-enable lingui/no-unlocalized-strings */}
         <AppText className="text-sm text-muted" maxFontSizeMultiplier={1.4}>

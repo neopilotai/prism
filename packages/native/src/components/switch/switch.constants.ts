@@ -1,11 +1,11 @@
 import { Easing } from 'react-native-reanimated';
 
 export const DISPLAY_NAME = {
-  SWITCH_ROOT: 'HeroUINative.Switch.Root',
-  SWITCH_THUMB: 'HeroUINative.Switch.Thumb',
-  SWITCH_START_CONTENT: 'HeroUINative.Switch.StartContent',
-  SWITCH_END_CONTENT: 'HeroUINative.Switch.EndContent',
-  SWITCH_BACKGROUND: 'HeroUINative.Switch.Background',
+  SWITCH_ROOT: 'PrismUINative.Switch.Root',
+  SWITCH_THUMB: 'PrismUINative.Switch.Thumb',
+  SWITCH_START_CONTENT: 'PrismUINative.Switch.StartContent',
+  SWITCH_END_CONTENT: 'PrismUINative.Switch.EndContent',
+  SWITCH_BACKGROUND: 'PrismUINative.Switch.Background',
 } as const;
 
 export const ANIMATION_DURATION = 175;
