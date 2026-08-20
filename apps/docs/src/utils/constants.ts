@@ -44,7 +44,7 @@ export const THEMES_PATH =
 export const STORYBOOK_URL = __DEV__
   ? "http://localhost:6006"
   : __IS_PRE_RELEASE__ || __PREVIEW__
-    ? "https://storybook-v3.heroui.com"
-    : "https://storybook.heroui.com";
+    ? "https://storybook-v3.prism.khulnasoft.com"
+    : "https://storybook.prism.khulnasoft.com";
 
 export const CDN_URL = "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com";

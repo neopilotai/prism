@@ -358,7 +358,7 @@ ButtonBackground.displayName = DISPLAY_NAME.BUTTON_BACKGROUND;
  *
  * Props flow from Button to sub-components via context (size, variant, isDisabled).
  *
- * @see Full documentation: https://heroui.com/docs/native/components/button
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/button
  */
 const CompoundButton = Object.assign(ButtonRoot, {
   /** Button label - renders text or custom content */

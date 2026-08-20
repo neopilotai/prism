@@ -28,7 +28,7 @@ export async function doctorAction(options: DoctorCommandOptions) {
       'error',
       `❌ No ${chalk.underline(
         'PrismUI packages'
-      )} found in your project. Please consult the installation guide at: https://heroui.com/docs/react/getting-started/quick-start`
+      )} found in your project. Please consult the installation guide at: https://prism.khulnasoft.com/docs/react/getting-started/quick-start`
     );
 
     return;

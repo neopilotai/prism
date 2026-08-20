@@ -1,5 +1,5 @@
 import {CircleDollar} from "@gravity-ui/icons";
-import {Card, Link} from "@heroui/react";
+import {Card, Link} from "@khulnasoft/react";
 
 export function Default() {
   return (
@@ -14,7 +14,7 @@ export function Default() {
       <Card.Footer>
         <Link
           aria-label="前往 Acme 创作者中心（在新标签页打开）"
-          href="https://heroui.com"
+          href="https://prism.khulnasoft.com"
           rel="noopener noreferrer"
           target="_blank"
         >

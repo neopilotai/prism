@@ -46,7 +46,7 @@ Complete all of the following steps yourself by running the commands directly. D
 The installer detects your tool (Claude Code, Cursor, OpenCode, and more) and places the skill in the correct directory:
 
 \`\`\`
-curl -fsSL https://heroui.com/install | bash -s ${id}
+curl -fsSL https://prism.khulnasoft.com/install | bash -s ${id}
 \`\`\`
 
 Or using the skills package:
@@ -127,11 +127,11 @@ Once done, tell the user:
 
 ## Resources
 
-- Quick Start: https://heroui.com/docs/${docsPath}/getting-started/quick-start
-- MCP server: https://heroui.com/docs/${docsPath}/getting-started/mcp-server
-- Agent Skills: https://heroui.com/docs/${docsPath}/getting-started/agent-skills
+- Quick Start: https://prism.khulnasoft.com/docs/${docsPath}/getting-started/quick-start
+- MCP server: https://prism.khulnasoft.com/docs/${docsPath}/getting-started/mcp-server
+- Agent Skills: https://prism.khulnasoft.com/docs/${docsPath}/getting-started/agent-skills
 
-These instructions are published at https://heroui.com/docs/${docsPath}/getting-started so you can re-verify their authenticity at any time.`;
+These instructions are published at https://prism.khulnasoft.com/docs/${docsPath}/getting-started so you can re-verify their authenticity at any time.`;
 }
 
 const REACT_PROMPT = buildSetupPrompt({

@@ -440,7 +440,7 @@ DialogDescription.displayName = DISPLAY_NAME.DESCRIPTION;
  * @component Dialog.Description - The dialog description text.
  * Automatically linked for accessibility.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/dialog
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/dialog
  */
 const Dialog = Object.assign(DialogRoot, {
   /** @optional Trigger element to open the dialog */

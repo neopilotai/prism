@@ -263,7 +263,7 @@ RadioIndicatorBackground.displayName = DISPLAY_NAME.RADIO_INDICATOR_BACKGROUND;
  * indicator content. With no children, the active library theme decides the
  * default content (e.g. a glass blur layer)
  *
- * @see Full documentation: https://heroui.com/docs/native/components/radio
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/radio
  */
 const CompoundRadio = Object.assign(RadioRoot, {
   /** @optional Custom radio indicator container */

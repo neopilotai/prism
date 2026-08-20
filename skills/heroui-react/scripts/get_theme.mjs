@@ -9,7 +9,7 @@
  *   Theme variables organized by common/light/dark with oklch color format
  */
 
-const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.heroui.com";
+const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
 const APP_PARAM = "app=react-skills";
 
 // Fallback theme reference when API is unavailable

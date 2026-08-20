@@ -12,8 +12,8 @@
  * Note: For component docs, use get_component_docs.mjs instead.
  */
 
-const API_BASE = process.env.HEROUI_NATIVE_API_BASE || "https://native-mcp-api.heroui.com";
-const FALLBACK_BASE = "https://heroui.com";
+const API_BASE = process.env.HEROUI_NATIVE_API_BASE || "https://native-mcp-api.prism.khulnasoft.com";
+const FALLBACK_BASE = "https://prism.khulnasoft.com";
 const APP_PARAM = "app=native-skills";
 
 /**
@@ -54,7 +54,7 @@ async function fetchApi(path) {
 }
 
 /**
- * Fetch MDX directly from v3.heroui.com as fallback.
+ * Fetch MDX directly from v3.prism.khulnasoft.com as fallback.
  */
 async function fetchFallback(path) {
   // Ensure path starts with /docs and ends with .mdx

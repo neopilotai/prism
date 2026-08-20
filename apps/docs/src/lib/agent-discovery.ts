@@ -25,8 +25,8 @@ export const OPENAPI_HEADERS = {
 export const AGENT_API_VERSION = "3.0.5";
 export const MCP_PACKAGE_VERSION = "1.1.0";
 
-export const REACT_MCP_API_URL = "https://mcp-api.heroui.com";
-export const NATIVE_MCP_API_URL = "https://native-mcp-api.heroui.com";
+export const REACT_MCP_API_URL = "https://mcp-api.prism.khulnasoft.com";
+export const NATIVE_MCP_API_URL = "https://native-mcp-api.prism.khulnasoft.com";
 
 export const AGENT_SKILL_DESCRIPTIONS: Record<string, string> = {
   "heroui-migration":

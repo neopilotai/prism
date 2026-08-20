@@ -10,7 +10,7 @@
  *   Full TSX source code with GitHub URL for each component
  */
 
-const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.heroui.com";
+const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
 const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/khulnasoft/heroui/refs/heads/v3";
 const APP_PARAM = "app=react-skills";
 

@@ -69,7 +69,7 @@ const TabsContent = ({ variant }: TabsContentProps) => {
   const { t } = useLingui();
   const [activeTab, setActiveTab] = useState('general');
 
-  const [homepage] = useState('heroui.com');
+  const [homepage] = useState('prism.khulnasoft.com');
   const [showSidebar, setShowSidebar] = useState(true);
   const [showStatusBar, setShowStatusBar] = useState(false);
 

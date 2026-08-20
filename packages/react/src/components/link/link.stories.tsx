@@ -28,7 +28,7 @@ const DefaultTemplate = (_props: Link["RootProps"]) => (
       <Link.Icon />
     </Link>
     <Link
-      href="https://heroui.com"
+      href="https://prism.khulnasoft.com"
       rel="noopener noreferrer"
       target="_blank"
       className={buttonVariants({

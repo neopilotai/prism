@@ -9,9 +9,9 @@
  *   JSON with components array, latestVersion, and count
  */
 
-const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.heroui.com";
+const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
 const APP_PARAM = "app=react-skills";
-const LLMS_TXT_URL = "https://heroui.com/react/llms.txt";
+const LLMS_TXT_URL = "https://prism.khulnasoft.com/react/llms.txt";
 
 /**
  * Fetch data from PrismUI API with app parameter for analytics.
@@ -74,7 +74,7 @@ async function fetchFallback() {
       }
 
       // Extract component name from markdown link pattern
-      // Match: - [ComponentName](https://www.heroui.com/docs/react/components/component-name)
+      // Match: - [ComponentName](https://www.prism.khulnasoft.com/docs/react/components/component-name)
       // Skip "All Components" which links to /components without a specific component
       if (inComponentsSection) {
         const match = line.match(

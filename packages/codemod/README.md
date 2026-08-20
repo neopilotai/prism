@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://heroui.com">
+  <a href="https://prism.khulnasoft.com">
       <img width="20%" src="https://raw.githubusercontent.com/khulnasoft/heroui/main/apps/docs/public/isotipo.png" alt="nextui" />
       <h1 align="center">@heroui/codemod</h1>
   </a>

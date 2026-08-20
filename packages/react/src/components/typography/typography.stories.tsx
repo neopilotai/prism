@@ -300,7 +300,7 @@ export const ProseBlock: Story = {
 
       <h2>Next Steps</h2>
       <p>
-        Explore the <a href="https://heroui.com">component stories</a> in Storybook to see every
+        Explore the <a href="https://prism.khulnasoft.com">component stories</a> in Storybook to see every
         variant and composition in action. Each component ships with comprehensive documentation and
         live examples.
       </p>

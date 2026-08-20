@@ -4,10 +4,10 @@ The core PrismUI styles package containing CSS files for components, themes, and
 
 ## Documentation
 
-It's the [heroui.com](https://heroui.com) website for the latest version of PrismUI.
+It's the [prism.khulnasoft.com](https://prism.khulnasoft.com) website for the latest version of PrismUI.
 
-- **Latest (v3)**: [https://heroui.com](https://heroui.com)
-- **v2**: [https://v2.heroui.com](https://v2.heroui.com)
+- **Latest (v3)**: [https://prism.khulnasoft.com](https://prism.khulnasoft.com)
+- **v2**: [https://v2.prism.khulnasoft.com](https://v2.prism.khulnasoft.com)
 
 ## Installation
 

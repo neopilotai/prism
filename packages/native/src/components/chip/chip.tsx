@@ -180,7 +180,7 @@ ChipBackground.displayName = DISPLAY_NAME.CHIP_BACKGROUND;
  * Props flow from Chip to sub-components via context (size, variant, color).
  * All components use animated views with layout transitions for smooth animations.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/chip
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/chip
  */
 const CompoundChip = Object.assign(Chip, {
   /** Chip label - renders text or custom content */

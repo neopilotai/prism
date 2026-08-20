@@ -5,7 +5,7 @@ description: Access PrismUI v2 to v3 migration guides in your AI assistant
 
 The PrismUI Migration MCP Server gives AI assistants direct access to PrismUI v2 to v3 migration documentation.
 
-The Migration MCP server uses **Streamable HTTP transport** (URL-based) and is deployed at `https://migration-mcp.heroui.com`. View the source code on [GitHub](https://github.com/khulnasoft/heroui-mcp/tree/main/apps/migration-mcp).
+The Migration MCP server uses **Streamable HTTP transport** (URL-based) and is deployed at `https://migration-mcp.prism.khulnasoft.com`. View the source code on [GitHub](https://github.com/khulnasoft/heroui-mcp/tree/main/apps/migration-mcp).
 
 <Callout>
   The Migration MCP is for **migration only**. After completing migration, switch to the [PrismUI React MCP Server](/docs/react/getting-started/mcp-server) for v3 component development.
@@ -21,7 +21,7 @@ Add to **Cursor Settings** → **Tools** → **MCP Servers** or your project's `
 {
   "mcpServers": {
     "heroui-migration": {
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -38,7 +38,7 @@ Add to your project's `.mcp.json` file:
   "mcpServers": {
     "heroui-migration": {
       "type": "http",
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -56,7 +56,7 @@ Add the Migration MCP server to your project's `.windsurf/mcp.json` configuratio
 {
   "mcpServers": {
     "heroui-migration": {
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -74,7 +74,7 @@ Add the Migration MCP server to your `settings.json` configuration file. Open se
 {
   "context_servers": {
     "heroui-migration": {
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -91,7 +91,7 @@ To configure MCP in VS Code with GitHub Copilot, add the Migration MCP server to
   "servers": {
     "heroui-migration": {
       "type": "http",
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -107,7 +107,7 @@ Add the Migration MCP server to your `~/.codex/config.toml` (or a project-scoped
 
 ```toml title="config.toml"
 [mcp_servers.heroui-migration]
-url = "https://migration-mcp.heroui.com"
+url = "https://migration-mcp.prism.khulnasoft.com"
 ```
 
 After adding the configuration, restart Codex and run `/mcp` in the TUI to verify the server is active.
@@ -124,7 +124,7 @@ Add the Migration MCP server to your project's `opencode.json` configuration fil
   "mcp": {
     "heroui-migration": {
       "type": "remote",
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }

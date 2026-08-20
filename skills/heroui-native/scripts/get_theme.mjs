@@ -9,7 +9,7 @@
  *   Theme variables organized by light/dark with HSL color format
  */
 
-const API_BASE = process.env.HEROUI_NATIVE_API_BASE || "https://native-mcp-api.heroui.com";
+const API_BASE = process.env.HEROUI_NATIVE_API_BASE || "https://native-mcp-api.prism.khulnasoft.com";
 const APP_PARAM = "app=native-skills";
 
 // Fallback theme reference when API is unavailable

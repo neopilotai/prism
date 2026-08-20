@@ -5,7 +5,7 @@ import type {CSSProperties} from "react";
 import type {Color} from "react-aria-components";
 
 import {Palette} from "@gravity-ui/icons";
-import {ColorSwatchPicker, Spinner, Tabs, Tooltip, buttonVariants} from "@heroui/react";
+import {ColorSwatchPicker, Spinner, Tabs, Tooltip, buttonVariants} from "@khulnasoft/react";
 import {converter} from "culori";
 import LinkRoot from "fumadocs-core/link";
 import {useTheme} from "next-themes";
@@ -52,7 +52,7 @@ const toOklch = converter("oklch");
 function getProUrl(utm: {campaign?: string; content?: string; medium: string}) {
   const url = new URL(HEROUI_PRO_URL);
 
-  url.searchParams.set("utm_source", "heroui.com");
+  url.searchParams.set("utm_source", "prism.khulnasoft.com");
   url.searchParams.set("utm_medium", utm.medium);
   if (utm.campaign) url.searchParams.set("utm_campaign", utm.campaign);
   if (utm.content) url.searchParams.set("utm_content", utm.content);

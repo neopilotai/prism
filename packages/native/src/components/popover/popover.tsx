@@ -701,7 +701,7 @@ PopoverArrow.displayName = DISPLAY_NAME.ARROW;
  * Props flow from Popover to sub-components via context (placement, align, offset, etc.).
  * The popover automatically positions itself relative to the trigger element.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/popover
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/popover
  */
 const Popover = Object.assign(PopoverRoot, {
   Trigger: PopoverTrigger,

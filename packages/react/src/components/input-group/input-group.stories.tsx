@@ -137,7 +137,7 @@ export const WithPrefixAndSuffix: Story = {
 
 export const WithTextPrefix: Story = {
   render: () => (
-    <TextField className="w-[280px]" defaultValue="heroui.com" name="website">
+    <TextField className="w-[280px]" defaultValue="prism.khulnasoft.com" name="website">
       <Label>Website</Label>
       <InputGroup>
         <InputGroup.Prefix>https://</InputGroup.Prefix>
@@ -176,7 +176,7 @@ export const WithIconPrefixAndTextSuffix: Story = {
 
 export const WithCopySuffix: Story = {
   render: () => (
-    <TextField className="w-[280px]" defaultValue="heroui.com" name="website">
+    <TextField className="w-[280px]" defaultValue="prism.khulnasoft.com" name="website">
       <Label>Website</Label>
       <InputGroup>
         <InputGroup.Input className="w-[280px]" />
@@ -192,7 +192,7 @@ export const WithCopySuffix: Story = {
 
 export const WithIconPrefixAndCopySuffix: Story = {
   render: () => (
-    <TextField className="w-[280px]" defaultValue="heroui.com" name="website">
+    <TextField className="w-[280px]" defaultValue="prism.khulnasoft.com" name="website">
       <Label>Website</Label>
       <InputGroup>
         <InputGroup.Prefix>
@@ -491,7 +491,7 @@ export const AllVariations: Story = {
           <Description>What customers would pay</Description>
         </TextField>
 
-        <TextField className="w-[280px]" defaultValue="heroui.com" name="website1">
+        <TextField className="w-[280px]" defaultValue="prism.khulnasoft.com" name="website1">
           <Label>Website</Label>
           <InputGroup>
             <InputGroup.Prefix>https://</InputGroup.Prefix>
@@ -518,7 +518,7 @@ export const AllVariations: Story = {
           </InputGroup>
         </TextField>
 
-        <TextField className="w-[280px]" defaultValue="heroui.com" name="website4">
+        <TextField className="w-[280px]" defaultValue="prism.khulnasoft.com" name="website4">
           <Label>Website</Label>
           <InputGroup>
             <InputGroup.Input className="w-[280px]" />
@@ -530,7 +530,7 @@ export const AllVariations: Story = {
           </InputGroup>
         </TextField>
 
-        <TextField className="w-[280px]" defaultValue="heroui.com" name="website5">
+        <TextField className="w-[280px]" defaultValue="prism.khulnasoft.com" name="website5">
           <Label>Website</Label>
           <InputGroup>
             <InputGroup.Prefix>

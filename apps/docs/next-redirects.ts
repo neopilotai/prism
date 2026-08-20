@@ -136,8 +136,8 @@ export async function getRedirects(): Promise<Redirect[]> {
   // project domain configuration, which must route `www` to this deployment for
   // the application-level permanent status to take effect.
   redirects.push({
-    destination: "https://heroui.com/:path*",
-    has: [{type: "host", value: "www.heroui.com"}],
+    destination: "https://prism.khulnasoft.com/:path*",
+    has: [{type: "host", value: "www.prism.khulnasoft.com"}],
     permanent: true,
     source: "/:path*",
   });
@@ -150,7 +150,7 @@ export async function getRedirects(): Promise<Redirect[]> {
   });
 
   // PrismUI Agents product page lives on heroui.pro. Docs and npm still link to
-  // heroui.com/agents, so send those legacy paths to the live product URL.
+  // prism.khulnasoft.com/agents, so send those legacy paths to the live product URL.
   const agentsProductUrl = "https://heroui.pro/agents";
 
   redirects.push(

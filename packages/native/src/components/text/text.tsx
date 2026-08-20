@@ -122,7 +122,7 @@ TextCode.displayName = DISPLAY_NAME.TEXT_CODE;
  * wrapper that forces `type="code"`; the monospace `fontFamily` is applied
  * at the root.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/typography
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/typography
  */
 const CompoundTypography = Object.assign(TextRoot, {
   /** Heading text – renders h1-h6 with header accessibility role */

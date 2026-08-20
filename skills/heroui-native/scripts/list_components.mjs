@@ -9,9 +9,9 @@
  *   JSON with components array, latestVersion, and count
  */
 
-const API_BASE = process.env.HEROUI_NATIVE_API_BASE || "https://native-mcp-api.heroui.com";
+const API_BASE = process.env.HEROUI_NATIVE_API_BASE || "https://native-mcp-api.prism.khulnasoft.com";
 const APP_PARAM = "app=native-skills";
-const LLMS_TXT_URL = "https://heroui.com/native/llms.txt";
+const LLMS_TXT_URL = "https://prism.khulnasoft.com/native/llms.txt";
 
 /**
  * Fetch data from PrismUI Native API with app parameter for analytics.
@@ -74,7 +74,7 @@ async function fetchFallback() {
       }
 
       // Extract component name from markdown link pattern
-      // Match: - [ComponentName](https://www.heroui.com/docs/native/components/component-name)
+      // Match: - [ComponentName](https://www.prism.khulnasoft.com/docs/native/components/component-name)
       // Skip "All Components" which links to /components without a specific component
       if (inComponentsSection) {
         const match = line.match(

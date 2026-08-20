@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://heroui.com">
+  <a href="https://prism.khulnasoft.com">
       <img width="100%" src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-og.jpg" alt="heroui" />
   </a>
 </p>
@@ -22,11 +22,11 @@
 
 ## Getting Started
 
-Visit <a aria-label="heroui learn" href="https://heroui.com/docs/native/getting-started/quick-start">https://heroui.com/docs/native/getting-started/quick-start</a> to get started with PrismUI Native.
+Visit <a aria-label="heroui learn" href="https://prism.khulnasoft.com/docs/native/getting-started/quick-start">https://prism.khulnasoft.com/docs/native/getting-started/quick-start</a> to get started with PrismUI Native.
 
 ## Documentation
 
-Visit [https://heroui.com/docs/native/getting-started](https://heroui.com/docs/native/getting-started) to view the full documentation.
+Visit [https://prism.khulnasoft.com/docs/native/getting-started](https://prism.khulnasoft.com/docs/native/getting-started) to view the full documentation.
 
 ## Preview App
 

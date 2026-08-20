@@ -10,8 +10,8 @@
  *   MDX documentation including imports, usage, variants, props, examples
  */
 
-const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.heroui.com";
-const FALLBACK_BASE = "https://heroui.com";
+const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
+const FALLBACK_BASE = "https://prism.khulnasoft.com";
 const APP_PARAM = "app=react-skills";
 
 /**
@@ -58,7 +58,7 @@ async function fetchApi(endpoint, method = "GET", body = null) {
 }
 
 /**
- * Fetch MDX directly from v3.heroui.com as fallback.
+ * Fetch MDX directly from v3.prism.khulnasoft.com as fallback.
  */
 async function fetchFallback(component) {
   const kebabName = toKebabCase(component);

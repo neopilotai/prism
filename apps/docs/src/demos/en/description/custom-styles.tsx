@@ -1,4 +1,4 @@
-import {Description, Input, Label} from "@heroui/react";
+import {Description, Input, Label} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (
@@ -6,7 +6,7 @@ export function CustomStyles() {
       <Label htmlFor="workspace-slug">Workspace URL</Label>
       <Input id="workspace-slug" placeholder="acme" type="text" />
       <Description className="leading-relaxed tracking-wide" id="workspace-slug-hint">
-        Lowercase letters and hyphens only. Used in app.heroui.com/acme
+        Lowercase letters and hyphens only. Used in app.prism.khulnasoft.com/acme
       </Description>
     </div>
   );

@@ -242,7 +242,7 @@ SearchFieldClearButton.displayName = DISPLAY_NAME.SEARCH_FIELD_CLEAR_BUTTON;
  * input. Automatically hidden when value is empty. Calls `onChange("")` from
  * context on press.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/search-field
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/search-field
  */
 const CompoundSearchField = Object.assign(SearchFieldRoot, {
   /** Flex-row container for search icon, input, and clear button */

@@ -193,7 +193,7 @@ ListGroupItemSuffix.displayName = DISPLAY_NAME.ITEM_SUFFIX;
  * chevron-right icon by default; accepts children to override the default icon.
  * Supports iconProps (size, color) for customising the default chevron.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/list-group
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/list-group
  */
 const CompoundListGroup = Object.assign(ListGroupRoot, {
   /** @optional Single item row with flex-row layout */

@@ -542,7 +542,7 @@ ToastClose.displayName = DISPLAY_NAME.TOAST_CLOSE;
  *
  * Props flow from Toast to sub-components via context (variant).
  *
- * @see Full documentation: https://heroui.com/docs/native/components/toast
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/toast
  */
 const CompoundToast = Object.assign(ToastRoot, {
   /** Theme-aware background container behind the toast surface */

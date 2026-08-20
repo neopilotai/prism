@@ -4,10 +4,10 @@ export function getOrganizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    logo: "https://heroui.com/icons/favicon.svg",
+    logo: "https://prism.khulnasoft.com/icons/favicon.svg",
     name: "PrismUI",
     sameAs: [siteConfig.links.github, siteConfig.links.twitter, siteConfig.links.discord],
-    url: "https://heroui.com",
+    url: "https://prism.khulnasoft.com",
   };
 }
 
@@ -21,7 +21,7 @@ export function getWebSiteJsonLd() {
       "@type": "Organization",
       name: "PrismUI",
     },
-    url: "https://heroui.com",
+    url: "https://prism.khulnasoft.com",
   };
 }
 
@@ -39,7 +39,7 @@ export function getSoftwareApplicationJsonLd() {
       priceCurrency: "USD",
     },
     operatingSystem: "Any",
-    url: "https://heroui.com",
+    url: "https://prism.khulnasoft.com",
   };
 }
 
@@ -89,7 +89,7 @@ export function getTechArticleJsonLd(params: {
       "@type": "Organization",
       logo: {
         "@type": "ImageObject",
-        url: "https://heroui.com/icons/favicon.svg",
+        url: "https://prism.khulnasoft.com/icons/favicon.svg",
       },
       name: "PrismUI",
     },
@@ -124,7 +124,7 @@ export function getBlogJsonLd(params: {
       "@type": "Organization",
       logo: {
         "@type": "ImageObject",
-        url: "https://heroui.com/icons/favicon.svg",
+        url: "https://prism.khulnasoft.com/icons/favicon.svg",
       },
       name: "PrismUI",
     },

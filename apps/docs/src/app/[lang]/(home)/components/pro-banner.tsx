@@ -23,7 +23,7 @@ const DISCOUNT_CAMPAIGN = "launch_discount";
 const DEFAULT_CAMPAIGN = "pro_default";
 
 const getProHref = (medium: string, campaign: string) =>
-  `${PRO_URL}?utm_source=heroui.com&utm_medium=${medium}&utm_campaign=${campaign}`;
+  `${PRO_URL}?utm_source=prism.khulnasoft.com&utm_medium=${medium}&utm_campaign=${campaign}`;
 
 const DEFAULT_PRO_COPY = {
   cardDescription:

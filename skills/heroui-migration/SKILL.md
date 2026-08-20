@@ -16,7 +16,7 @@ This skill helps agents migrate PrismUI v2 applications to v3. PrismUI v3 introd
 ## Installation
 
 ```bash
-curl -fsSL https://heroui.com/install | bash -s heroui-migration
+curl -fsSL https://prism.khulnasoft.com/install | bash -s heroui-migration
 ```
 
 ---
@@ -85,7 +85,7 @@ When using Cursor or other MCP clients, configure the Migration MCP server for t
 {
   "mcpServers": {
     "heroui-migration": {
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -137,4 +137,4 @@ When using Cursor or other MCP clients, configure the Migration MCP server for t
 
 ## Preview Mode
 
-This skill targets the staging deployment of the `docs/migration` branch. Once docs are merged to main and live on heroui.com, set `HEROUI_MIGRATION_DOCS_BASE=https://heroui.com/docs/react/migration` or update the default in scripts.
+This skill targets the staging deployment of the `docs/migration` branch. Once docs are merged to main and live on prism.khulnasoft.com, set `HEROUI_MIGRATION_DOCS_BASE=https://prism.khulnasoft.com/docs/react/migration` or update the default in scripts.

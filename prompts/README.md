@@ -35,7 +35,7 @@ The universal `heroui-system-prompt.md` works with any tool that accepts system-
 For deeper integration beyond system prompts:
 
 - **MCP Server** — The PrismUI MCP server provides real-time component docs, source code, and theme tokens to AI agents. See the [`@khulnasoft/mcp`](https://www.npmjs.com/package/@khulnasoft/mcp) package.
-- **llms.txt** — Full-context documentation following the llms.txt standard, available at [heroui.com/llms.txt](https://heroui.com/llms.txt).
+- **llms.txt** — Full-context documentation following the llms.txt standard, available at [prism.khulnasoft.com/llms.txt](https://prism.khulnasoft.com/llms.txt).
 
 ## Contributing
 

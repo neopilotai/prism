@@ -168,7 +168,7 @@ InputBackground.displayName = DISPLAY_NAME.BACKGROUND;
  * (glass theme renders a blur layer). Accepts children to host custom content
  * such as gradients with the container's positioning and clipping applied.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/input
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/input
  */
 const Input = Object.assign(InputRoot, {
   /** @optional Theme-aware background container behind the text input */

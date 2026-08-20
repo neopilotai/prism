@@ -27,9 +27,9 @@ const IN_APP_COMPONENT_PATH = "components";
  * URL that Expo Router can navigate without going through `+native-intent`.
  *
  * Examples:
- *  - `https://heroui.com/docs/native-showcase/components/button` ->
+ *  - `https://prism.khulnasoft.com/docs/native-showcase/components/button` ->
  *    `herouinative://components/button`
- *  - `https://heroui.com/docs/native-showcase/components/`       ->
+ *  - `https://prism.khulnasoft.com/docs/native-showcase/components/`       ->
  *    `herouinative://`  (open at the app's initial route)
  *  - `""` (origin not yet resolved on the client) -> `""`
  */

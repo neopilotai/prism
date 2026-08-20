@@ -1,11 +1,11 @@
 "use client";
 
 import {Copy, Globe} from "@gravity-ui/icons";
-import {Button, InputGroup, Label, TextField} from "@heroui/react";
+import {Button, InputGroup, Label, TextField} from "@khulnasoft/react";
 
 export function WithIconPrefixAndCopySuffix() {
   return (
-    <TextField className="w-full max-w-[280px]" defaultValue="heroui.com" name="website">
+    <TextField className="w-full max-w-[280px]" defaultValue="prism.khulnasoft.com" name="website">
       <Label>网站</Label>
       <InputGroup>
         <InputGroup.Prefix>

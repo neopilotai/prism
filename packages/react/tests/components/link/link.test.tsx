@@ -10,12 +10,12 @@ describe("Link", () => {
   });
 
   it("renders with role, accessible name, and href", () => {
-    render(<Link href="https://heroui.com">PrismUI</Link>);
+    render(<Link href="https://prism.khulnasoft.com">PrismUI</Link>);
 
     const link = screen.getByRole("link", {name: "PrismUI"});
 
     expect(link).toBeInTheDocument();
-    expect(link).toHaveAttribute("href", "https://heroui.com");
+    expect(link).toHaveAttribute("href", "https://prism.khulnasoft.com");
   });
 
   it("exposes BEM block and data-slot", () => {
@@ -103,7 +103,7 @@ describe("Link", () => {
   describe("Link.Icon", () => {
     it("exposes data-slot when composed", () => {
       render(
-        <Link href="https://heroui.com">
+        <Link href="https://prism.khulnasoft.com">
           PrismUI
           <Link.Icon />
         </Link>,
@@ -118,7 +118,7 @@ describe("Link", () => {
 
     it("supports custom icon children without default icon marker", () => {
       render(
-        <Link href="https://heroui.com">
+        <Link href="https://prism.khulnasoft.com">
           PrismUI
           <Link.Icon>
             <span data-testid="custom-icon">→</span>

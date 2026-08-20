@@ -155,7 +155,7 @@ SurfaceBackground.displayName = DISPLAY_NAME.BACKGROUND;
  * with the container's positioning and clipping applied. Replaceable via the
  * `background` prop on Surface.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/surface
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/surface
  */
 const Surface = Object.assign(SurfaceRoot, {
   /** @optional Theme-aware background container behind the surface content */

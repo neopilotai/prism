@@ -180,7 +180,7 @@ const WithSuffixOnlyContent = () => {
           </InputGroup>
 
           <InputGroup>
-            <InputGroup.Input placeholder="heroui.com" autoCapitalize="none" />
+            <InputGroup.Input placeholder="prism.khulnasoft.com" autoCapitalize="none" />
             <InputGroup.Suffix isDecorative>
               <GlobeIcon size={16} colorClassName="accent-field-placeholder" />
             </InputGroup.Suffix>

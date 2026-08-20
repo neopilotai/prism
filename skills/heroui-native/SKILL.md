@@ -15,7 +15,7 @@ PrismUI Native is a component library built on **Uniwind (Tailwind CSS for React
 ## Installation
 
 ```bash
-curl -fsSL https://heroui.com/install | bash -s heroui-native
+curl -fsSL https://prism.khulnasoft.com/install | bash -s heroui-native
 ```
 
 ---
@@ -80,11 +80,11 @@ Component docs: fetch `.mdx` with a concrete kebab-case slug. Run `node scripts/
 
 Examples:
 
-- Button: `https://heroui.com/docs/native/components/button.mdx`
-- Dialog: `https://heroui.com/docs/native/components/dialog.mdx`
-- TextField: `https://heroui.com/docs/native/components/text-field.mdx`
+- Button: `https://prism.khulnasoft.com/docs/native/components/button.mdx`
+- Dialog: `https://prism.khulnasoft.com/docs/native/components/dialog.mdx`
+- TextField: `https://prism.khulnasoft.com/docs/native/components/text-field.mdx`
 
-Getting started guides: use a concrete topic URL such as `https://heroui.com/docs/native/getting-started/quick-start.mdx`.
+Getting started guides: use a concrete topic URL such as `https://prism.khulnasoft.com/docs/native/getting-started/quick-start.mdx`.
 
 **Important:** Always fetch component docs before implementing. The MDX docs include complete examples, props, anatomy, and API references.
 
@@ -226,4 +226,4 @@ const { theme } = useUniwind();
 Uniwind.setTheme(theme === "light" ? "dark" : "light");
 ```
 
-For detailed theming, fetch: `https://heroui.com/docs/native/getting-started/theming.mdx`
+For detailed theming, fetch: `https://prism.khulnasoft.com/docs/native/getting-started/theming.mdx`

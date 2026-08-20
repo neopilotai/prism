@@ -20,8 +20,8 @@
  *
  * Environments:
  *     - dev: http://localhost:8787
- *     - staging: https://staging-mcp-api.heroui.com
- *     - production: https://mcp-api.heroui.com
+ *     - staging: https://staging-mcp-api.prism.khulnasoft.com
+ *     - production: https://mcp-api.prism.khulnasoft.com
  *
  * Note: Tests are updated for v1 API endpoints which return {results: [...]} format
  * for batch requests (multiple components).
@@ -37,8 +37,8 @@ const execFileAsync = promisify(execFile);
 // Environment configurations
 const ENVIRONMENTS = {
   dev: "http://localhost:8787",
-  production: "https://mcp-api.heroui.com",
-  staging: "https://staging-mcp-api.heroui.com",
+  production: "https://mcp-api.prism.khulnasoft.com",
+  staging: "https://staging-mcp-api.prism.khulnasoft.com",
 };
 
 // Get script directory

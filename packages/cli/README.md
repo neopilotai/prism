@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://heroui.com">
+  <a href="https://prism.khulnasoft.com">
       <img width="20%" src="https://raw.githubusercontent.com/khulnasoft/heroui/v3/apps/docs/public/icons/readme-logo.png" alt="heroui (previously nextui)" />
       <h1 align="center">PrismUI CLI</h1>
   </a>
@@ -154,8 +154,8 @@ PrismUI CLI <version>
 ╭─────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version        │   Status   │   Docs                 │
 │─────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0          │   stable   │   https://heroui.com   │
-│   @heroui/styles   │   3.0.0          │   stable   │   https://heroui.com   │
+│   @heroui/react    │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
+│   @heroui/styles   │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
 ╰─────────────────────────────────────────────────────────────────────────────╯
 
 ╭─────────────── PeerDependencies ────────────────╮
@@ -232,8 +232,8 @@ PrismUI CLI <version>
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version   │   Status   │   Docs                               │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0     │   stable   │   https://heroui.com                 │
-│   @heroui/styles   │   3.0.0     │   stable   │   https://heroui.com                 │
+│   @heroui/react    │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
+│   @heroui/styles   │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ? Confirm uninstallation of these packages: › - Use arrow-keys. Return to submit.
 ❯   Yes
@@ -270,8 +270,8 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
-│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
@@ -351,8 +351,8 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
-│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 
 Environment Info:

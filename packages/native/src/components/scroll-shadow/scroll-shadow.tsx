@@ -268,7 +268,7 @@ ScrollShadowRoot.displayName = SCROLL_SHADOW_DISPLAY_NAME.ROOT;
  * shadow visibility based on scroll position and content size. Supports both vertical
  * and horizontal orientations.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/scroll-shadow
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/scroll-shadow
  */
 
 export default ScrollShadowRoot;

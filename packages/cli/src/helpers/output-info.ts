@@ -349,8 +349,8 @@ export function outputDeprecatedInfo() {
     text: `NextUI has rebranded to PrismUI! These packages are deprecated and won’t receive updates.
 PrismUI offers the same great features with ongoing improvements.
 
-→ ${chalk.bold('Switch to [PrismUI](https://heroui.com) for the latest updates.')}
-→ ${chalk.bold('Migration guide:')} [NextUI to PrismUI](https://heroui.com/docs/nextui-to-heroui)
+→ ${chalk.bold('Switch to [PrismUI](https://prism.khulnasoft.com) for the latest updates.')}
+→ ${chalk.bold('Migration guide:')} [NextUI to PrismUI](https://prism.khulnasoft.com/docs/nextui-to-heroui)
 → ${chalk.bold('New NPM package:')} "@heroui/react"
 
 Thanks for your support — see you at PrismUI!`,

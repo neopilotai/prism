@@ -5,7 +5,7 @@ description: 在 AI 助手中访问 PrismUI v2 到 v3 的迁移指南
 
 PrismUI 迁移 MCP 服务器使 AI 助手可以直接访问 PrismUI v2 到 v3 的迁移文档。
 
-迁移 MCP 服务器使用 **Streamable HTTP 传输**（基于 URL）并部署在`https://migration-mcp.heroui.com`。查看源代码[GitHub](https://github.com/khulnasoft/heroui-mcp/tree/main/apps/migration-mcp).
+迁移 MCP 服务器使用 **Streamable HTTP 传输**（基于 URL）并部署在`https://migration-mcp.prism.khulnasoft.com`。查看源代码[GitHub](https://github.com/khulnasoft/heroui-mcp/tree/main/apps/migration-mcp).
 
 <Callout>
   迁移 MCP 仅用于**迁移**。完成迁移后，切换到[PrismUI React MCP 服务器](/docs/react/getting-started/mcp-server)用于 v3 组件开发。
@@ -21,7 +21,7 @@ PrismUI 迁移 MCP 服务器使 AI 助手可以直接访问 PrismUI v2 到 v3 �
 {
   "mcpServers": {
     "heroui-migration": {
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -38,7 +38,7 @@ PrismUI 迁移 MCP 服务器使 AI 助手可以直接访问 PrismUI v2 到 v3 �
   "mcpServers": {
     "heroui-migration": {
       "type": "http",
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -56,7 +56,7 @@ PrismUI 迁移 MCP 服务器使 AI 助手可以直接访问 PrismUI v2 到 v3 �
 {
   "mcpServers": {
     "heroui-migration": {
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -74,7 +74,7 @@ PrismUI 迁移 MCP 服务器使 AI 助手可以直接访问 PrismUI v2 到 v3 �
 {
   "context_servers": {
     "heroui-migration": {
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -91,7 +91,7 @@ PrismUI 迁移 MCP 服务器使 AI 助手可以直接访问 PrismUI v2 到 v3 �
   "servers": {
     "heroui-migration": {
       "type": "http",
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }
@@ -107,7 +107,7 @@ PrismUI 迁移 MCP 服务器使 AI 助手可以直接访问 PrismUI v2 到 v3 �
 
 ```toml title="config.toml"
 [mcp_servers.heroui-migration]
-url = "https://migration-mcp.heroui.com"
+url = "https://migration-mcp.prism.khulnasoft.com"
 ```
 
 添加配置后，重启 Codex 并在 TUI 中运行 `/mcp` 以确认服务器已激活。
@@ -124,7 +124,7 @@ url = "https://migration-mcp.heroui.com"
   "mcp": {
     "heroui-migration": {
       "type": "remote",
-      "url": "https://migration-mcp.heroui.com"
+      "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
 }

@@ -510,7 +510,7 @@ SliderThumb.displayName = DISPLAY_NAME.THUMB;
  * (`useSlider`). The component layer is purely for styling, animations,
  * and gesture handling.
  *
- * @see Full documentation: https://heroui.com/docs/native/components/slider
+ * @see Full documentation: https://prism.khulnasoft.com/docs/native/components/slider
  */
 const CompoundSlider = Object.assign(SliderRoot, {
   /** @optional Value display with optional render function */

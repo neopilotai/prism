@@ -1,10 +1,10 @@
 "use client";
 
-import {InputGroup, Label, TextField} from "@heroui/react";
+import {InputGroup, Label, TextField} from "@khulnasoft/react";
 
 export function WithTextPrefix() {
   return (
-    <TextField className="w-full max-w-[280px]" defaultValue="heroui.com" name="website">
+    <TextField className="w-full max-w-[280px]" defaultValue="prism.khulnasoft.com" name="website">
       <Label>Website</Label>
       <InputGroup>
         <InputGroup.Prefix>https://</InputGroup.Prefix>

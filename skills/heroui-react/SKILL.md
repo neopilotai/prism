@@ -15,7 +15,7 @@ PrismUI v3 is a component library built on **Tailwind CSS v4** and **React Aria 
 ## Installation
 
 ```bash
-curl -fsSL https://heroui.com/install | bash -s heroui-react
+curl -fsSL https://prism.khulnasoft.com/install | bash -s heroui-react
 ```
 
 ---
@@ -102,11 +102,11 @@ Component docs: fetch `.mdx` with a concrete kebab-case slug. Run `node scripts/
 
 Examples:
 
-- Button: `https://heroui.com/docs/react/components/button.mdx`
-- Modal: `https://heroui.com/docs/react/components/modal.mdx`
-- Form: `https://heroui.com/docs/react/components/form.mdx`
+- Button: `https://prism.khulnasoft.com/docs/react/components/button.mdx`
+- Modal: `https://prism.khulnasoft.com/docs/react/components/modal.mdx`
+- Form: `https://prism.khulnasoft.com/docs/react/components/form.mdx`
 
-Getting started guides: use a concrete topic URL such as `https://heroui.com/docs/react/getting-started/quick-start.mdx`.
+Getting started guides: use a concrete topic URL such as `https://prism.khulnasoft.com/docs/react/getting-started/quick-start.mdx`.
 
 **Important:** Always fetch component docs before implementing. The MDX docs include complete examples, props, anatomy, and API references.
 
@@ -231,4 +231,4 @@ node scripts/get_theme.mjs
 <html class="dark" data-theme="dark"></html>
 ```
 
-For detailed theming, fetch: `https://heroui.com/docs/react/getting-started/theming.mdx`
+For detailed theming, fetch: `https://prism.khulnasoft.com/docs/react/getting-started/theming.mdx`
