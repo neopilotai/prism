@@ -119,7 +119,7 @@ const config: NextConfig = {
     ];
   },
   trailingSlash: false,
-  transpilePackages: ["@prismuisoft/react"prismuiulnasoft/styles"],
+  transpilePackages: ["@prismuisoft/react"prismui/styles"],
   typedRoutes: true,
   typescript: {
     ignoreBuildErrors: true,
