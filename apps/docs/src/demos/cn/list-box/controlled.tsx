@@ -1,9 +1,9 @@
 "use client";
 
-import type {Selection} from "@heroui/react";
+import type {Selection} from "@khulnasoft/react";
 
 import {Check} from "@gravity-ui/icons";
-import {Avatar, Description, Label, ListBox, Surface} from "@heroui/react";
+import {Avatar, Description, Label, ListBox, Surface} from "@khulnasoft/react";
 import {useState} from "react";
 
 export function Controlled() {
@@ -30,7 +30,7 @@ export function Controlled() {
             </Avatar>
             <div className="flex flex-col">
               <Label>Bob</Label>
-              <Description>bob@heroui.com</Description>
+              <Description>bob@khulnasoft.com</Description>
             </div>
             <ListBox.ItemIndicator>
               {({isSelected}) => (isSelected ? <Check className="size-4 text-accent" /> : null)}
@@ -46,7 +46,7 @@ export function Controlled() {
             </Avatar>
             <div className="flex flex-col">
               <Label>Fred</Label>
-              <Description>fred@heroui.com</Description>
+              <Description>fred@khulnasoft.com</Description>
             </div>
             <ListBox.ItemIndicator>
               {({isSelected}) => (isSelected ? <Check className="size-4 text-accent" /> : null)}
@@ -62,7 +62,7 @@ export function Controlled() {
             </Avatar>
             <div className="flex flex-col">
               <Label>Martha</Label>
-              <Description>martha@heroui.com</Description>
+              <Description>martha@khulnasoft.com</Description>
             </div>
             <ListBox.ItemIndicator>
               {({isSelected}) => (isSelected ? <Check className="size-4 text-accent" /> : null)}

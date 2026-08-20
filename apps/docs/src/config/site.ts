@@ -26,7 +26,7 @@ export const siteConfig = {
   ogImage: `/images/twitter-card.jpg`,
   ogImageNative: `/images/twitter-card-native.jpeg`,
   siteUrl: __BASE_URL__,
-  supportEmail: "support@heroui.com",
+  supportEmail: "support@khulnasoft.com",
 };
 
 export type SiteConfig = typeof siteConfig;

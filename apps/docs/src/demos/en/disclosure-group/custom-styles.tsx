@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Disclosure, DisclosureGroup, Separator} from "@heroui/react";
+import {Button, Disclosure, DisclosureGroup, Separator} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (
@@ -28,7 +28,7 @@ export function CustomStyles() {
         </Disclosure.Heading>
         <Disclosure.Content>
           <Disclosure.Body className="text-sm text-muted">
-            Reach us at help@heroui.com. Typical response time is under one business day.
+            Reach us at help@khulnasoft.com. Typical response time is under one business day.
           </Disclosure.Body>
         </Disclosure.Content>
       </Disclosure>

@@ -57,7 +57,7 @@
     "type": "git",
     "url": "git+https://github.com/khulnasoft/heroui-native.git"
   },
-  "author": "PrismUI <support@heroui.com> (https://github.com/khulnasoft)",
+  "author": "PrismUI <support@khulnasoft.com> (https://github.com/khulnasoft)",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/khulnasoft/heroui-native/issues"

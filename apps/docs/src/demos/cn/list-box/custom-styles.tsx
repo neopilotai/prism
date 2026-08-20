@@ -1,4 +1,4 @@
-import {Avatar, Description, Label, ListBox} from "@heroui/react";
+import {Avatar, Description, Label, ListBox} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (
@@ -21,7 +21,7 @@ export function CustomStyles() {
         </Avatar>
         <div className="flex flex-col">
           <Label>Bob</Label>
-          <Description>bob@heroui.com</Description>
+          <Description>bob@khulnasoft.com</Description>
         </div>
         <ListBox.ItemIndicator />
       </ListBox.Item>
@@ -39,7 +39,7 @@ export function CustomStyles() {
         </Avatar>
         <div className="flex flex-col">
           <Label>Fred</Label>
-          <Description>fred@heroui.com</Description>
+          <Description>fred@khulnasoft.com</Description>
         </div>
         <ListBox.ItemIndicator />
       </ListBox.Item>

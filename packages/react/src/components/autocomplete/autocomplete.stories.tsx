@@ -1,4 +1,4 @@
-import type {Key} from "@heroui/react";
+import type {Key} from "@khulnasoft/react";
 import type {Meta, StoryObj} from "@storybook/react";
 
 import {Icon} from "@iconify/react";
@@ -1377,35 +1377,35 @@ export const UserSelection: Story = {
       {
         id: "1",
         name: "Bob",
-        email: "bob@heroui.com",
+        email: "bob@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg",
         fallback: "B",
       },
       {
         id: "2",
         name: "Fred",
-        email: "fred@heroui.com",
+        email: "fred@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg",
         fallback: "F",
       },
       {
         id: "3",
         name: "Martha",
-        email: "martha@heroui.com",
+        email: "martha@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg",
         fallback: "M",
       },
       {
         id: "4",
         name: "John",
-        email: "john@heroui.com",
+        email: "john@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg",
         fallback: "J",
       },
       {
         id: "5",
         name: "Jane",
-        email: "jane@heroui.com",
+        email: "jane@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/orange.jpg",
         fallback: "J",
       },
@@ -1493,35 +1493,35 @@ export const UserSelectionMultiple: Story = {
       {
         id: "1",
         name: "Bob",
-        email: "bob@heroui.com",
+        email: "bob@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg",
         fallback: "B",
       },
       {
         id: "2",
         name: "Fred",
-        email: "fred@heroui.com",
+        email: "fred@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg",
         fallback: "F",
       },
       {
         id: "3",
         name: "Martha",
-        email: "martha@heroui.com",
+        email: "martha@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg",
         fallback: "M",
       },
       {
         id: "4",
         name: "John",
-        email: "john@heroui.com",
+        email: "john@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg",
         fallback: "J",
       },
       {
         id: "5",
         name: "Jane",
-        email: "jane@heroui.com",
+        email: "jane@khulnasoft.com",
         avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/orange.jpg",
         fallback: "J",
       },
