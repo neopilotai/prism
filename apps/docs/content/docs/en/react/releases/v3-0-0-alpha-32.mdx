@@ -16,22 +16,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @khulnasoft/styles@alpha @khulnasoft/react@alpha
+    npm i @khulnasoft/styles@alpha @prismui/react@alpha
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @khulnasoft/styles@alpha @khulnasoft/react@alpha
+    pnpm add @khulnasoft/styles@alpha @prismui/react@alpha
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @khulnasoft/styles@alpha @khulnasoft/react@alpha
+    yarn add @khulnasoft/styles@alpha @prismui/react@alpha
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @khulnasoft/styles@alpha @khulnasoft/react@alpha
+    bun add @khulnasoft/styles@alpha @prismui/react@alpha
     ```
   </Tab>
 </Tabs>
@@ -65,7 +65,7 @@ Or manually add to **Cursor Settings** → **Tools** → **MCP Servers**:
   "mcpServers": {
     "prismui-react": {
       "command": "npx",
-      "args": ["-y", "@khulnasoft/react-mcp@latest"]
+      "args": ["-y", "@prismui/react-mcp@latest"]
     }
   }
 }
@@ -76,7 +76,7 @@ Or manually add to **Cursor Settings** → **Tools** → **MCP Servers**:
 Run this command in your terminal:
 
 ```bash
-claude mcp add prismui-react -- npx -y @khulnasoft/react-mcp@latest
+claude mcp add prismui-react -- npx -y @prismui/react-mcp@latest
 ```
 
 [Learn more](/docs/ui-for-agents/mcp-server)
@@ -125,7 +125,7 @@ The [Card component](/docs/components/card) has been updated with a new variant 
 Added a [CloseButton component](/docs/components/close-button) for closing dialogs, modals, and other dismissible elements.
 
 ```tsx
-import {CloseButton} from "@khulnasoft/react";
+import {CloseButton} from "@prismui/react";
 
 // Basic usage
 <CloseButton onPress={() => console.log("Closed")} />
@@ -168,7 +168,7 @@ import {CloseButton} from "@khulnasoft/react";
 3. **Update imports:**
    ```tsx
    // Add CloseButton if needed
-   import {Card, CloseButton} from "@khulnasoft/react";
+   import {Card, CloseButton} from "@prismui/react";
    ```
 
 ## Links

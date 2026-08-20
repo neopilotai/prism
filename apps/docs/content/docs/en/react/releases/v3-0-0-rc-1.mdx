@@ -25,22 +25,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @khulnasoft/styles@rc @khulnasoft/react@rc
+    npm i @khulnasoft/styles@rc @prismui/react@rc
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @khulnasoft/styles@rc @khulnasoft/react@rc
+    pnpm add @khulnasoft/styles@rc @prismui/react@rc
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @khulnasoft/styles@rc @khulnasoft/react@rc
+    yarn add @khulnasoft/styles@rc @prismui/react@rc
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @khulnasoft/styles@rc @khulnasoft/react@rc
+    bun add @khulnasoft/styles@rc @prismui/react@rc
     ```
   </Tab>
 </Tabs>
@@ -183,7 +183,7 @@ New `ButtonGroup.Separator` sub-component adds an explicit visual divider betwee
 
 ### Table & ListBox Virtualization
 
-Table and ListBox now support virtualization via React Aria's `Virtualizer` for large datasets. `Virtualizer`, `TableLayout`, and `ListLayout` are re-exported from `@khulnasoft/react`.
+Table and ListBox now support virtualization via React Aria's `Virtualizer` for large datasets. `Virtualizer`, `TableLayout`, and `ListLayout` are re-exported from `@prismui/react`.
 
 <ComponentPreview
   name="table-virtualization"
@@ -203,14 +203,14 @@ Focus rings on grouped buttons now use `ring-inset` so they stay within button b
 
 ### Granular Component Imports
 
-`@khulnasoft/react` now supports per-component subpath entrypoints for more explicit imports ([#6301](https://github.com/khulnasoft/prismui/pull/6301)):
+`@prismui/react` now supports per-component subpath entrypoints for more explicit imports ([#6301](https://github.com/khulnasoft/prismui/pull/6301)):
 
 ```tsx
 // Before — root entrypoint
-import { Button } from "@khulnasoft/react";
+import { Button } from "@prismui/react";
 
 // After — granular subpath import
-import { Button } from "@khulnasoft/react/button";
+import { Button } from "@prismui/react/button";
 ```
 
 ## Dependencies

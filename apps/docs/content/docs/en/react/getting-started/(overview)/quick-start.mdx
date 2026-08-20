@@ -14,7 +14,7 @@ icon: rocket
 <CopyPrompt
   prompt={`Set up PrismUI in this React project.
 
-Use the PrismUI MCP server (@khulnasoft/react-mcp) as the single source of truth for installation steps, peer dependencies, and component APIs. Start by retrieving the latest quick-start / installation guide from the MCP and follow it precisely — do not rely on memory for versions, package names, or setup steps.
+Use the PrismUI MCP server (@prismui/react-mcp) as the single source of truth for installation steps, peer dependencies, and component APIs. Start by retrieving the latest quick-start / installation guide from the MCP and follow it precisely — do not rely on memory for versions, package names, or setup steps.
 
 Before making any changes:
 
@@ -24,10 +24,10 @@ Before making any changes:
 
 Then apply the setup:
 
-- Install @khulnasoft/react and @khulnasoft/styles plus any missing mandatory peer dependencies.
+- Install @prismui/react and @khulnasoft/styles plus any missing mandatory peer dependencies.
 - In the main Tailwind CSS entry file, add \`@import "@khulnasoft/styles";\` immediately after \`@import "tailwindcss";\`. Import order matters — tailwindcss must be imported first.
 - Make sure the CSS entry file is loaded by the app (e.g. imported in the root layout / entry file for Next.js, Vite, Remix, etc.). PrismUI v3 does not require a Provider, so no wrapper component is needed.
-- Add a small smoke test by rendering a \`<Button>\` from \`@khulnasoft/react\` somewhere visible to confirm styles are applied.
+- Add a small smoke test by rendering a \`<Button>\` from \`@prismui/react\` somewhere visible to confirm styles are applied.
 
 When done, summarize the changes you made and tell me how to start the dev server.`}
 >
@@ -39,22 +39,22 @@ Install PrismUI and required dependencies:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @khulnasoft/styles @khulnasoft/react
+    npm i @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @khulnasoft/styles @khulnasoft/react
+    pnpm add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @khulnasoft/styles @khulnasoft/react
+    yarn add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @khulnasoft/styles @khulnasoft/react
+    bun add @khulnasoft/styles @prismui/react
     ```
   </Tab>
 </Tabs>
@@ -75,7 +75,7 @@ Add to your main CSS file `globals.css`:
 ## Use Components
 
 ```tsx
-import { Button } from '@khulnasoft/react';
+import { Button } from '@prismui/react';
 
 function App() {
   return (

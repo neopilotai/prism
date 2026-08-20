@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, FieldError, Form, Label, ListBox, Select, Surface} from "@khulnasoft/react";
+import {Button, FieldError, Form, Label, ListBox, Select, Surface} from "@prismui/react";
 
 export function OnSurface() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {

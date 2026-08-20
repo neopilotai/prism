@@ -1,6 +1,6 @@
 "use client";
 
-import type {Key} from "@khulnasoft/react";
+import type {Key} from "@prismui/react";
 
 import {CircleXmarkFill} from "@gravity-ui/icons";
 import {Description, EmptyState, Label, Tag, TagGroup} from "@prismui/react";

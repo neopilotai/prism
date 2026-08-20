@@ -70,10 +70,10 @@ Options:
 
 Commands:
   init [options] [projectName]   Initializes a new project
-  install [options]              Installs @khulnasoft/react and @khulnasoft/styles to your project
-  upgrade [options]              Upgrades @khulnasoft/react and @khulnasoft/styles to the latest versions
-  uninstall [options]            Uninstall @khulnasoft/react and @khulnasoft/styles from the project
-  list [options]                 Lists installed PrismUI packages (@khulnasoft/react, @khulnasoft/styles)
+  install [options]              Installs @prismui/react and @khulnasoft/styles to your project
+  upgrade [options]              Upgrades @prismui/react and @khulnasoft/styles to the latest versions
+  uninstall [options]            Uninstall @prismui/react and @khulnasoft/styles from the project
+  list [options]                 Lists installed PrismUI packages (@prismui/react, @khulnasoft/styles)
   env [options]                  Displays debugging information for the local environment
   doctor [options]               Checks for issues in the project
   agents-md [options]            Downloads PrismUI documentation for AI coding agents
@@ -161,7 +161,7 @@ npm run dev
 
 ### Install
 
-Install `@khulnasoft/react` and `@khulnasoft/styles` to your project, along with their peer dependencies. If they are already installed, the command does nothing.
+Install `@prismui/react` and `@khulnasoft/styles` to your project, along with their peer dependencies. If they are already installed, the command does nothing.
 
 ```bash
 prismui install [options]
@@ -181,7 +181,7 @@ PrismUI CLI <version>
 ╭─────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version        │   Status   │   Docs                 │
 │─────────────────────────────────────────────────────────────────────────────│
-│   @khulnasoft/react    │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
+│   @prismui/react    │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
 │   @khulnasoft/styles   │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
 ╰─────────────────────────────────────────────────────────────────────────────╯
 
@@ -194,13 +194,13 @@ PrismUI CLI <version>
 ❯   Yes
     No
 
-✅ @khulnasoft/react and @khulnasoft/styles installed successfully
+✅ @prismui/react and @khulnasoft/styles installed successfully
 ```
 
 ### upgrade
 
 
-Upgrade `@khulnasoft/react` and `@khulnasoft/styles` with their peer dependencies to the latest versions.
+Upgrade `@prismui/react` and `@khulnasoft/styles` with their peer dependencies to the latest versions.
 
 ```bash
 prismui upgrade [options]
@@ -216,7 +216,7 @@ prismui upgrade [options]
 PrismUI CLI <version>
 
 ╭──────────────────────────── Upgrade ────────────────────────────╮
-│  @khulnasoft/react               ^3.0.0  ->  ^3.1.0                │
+│  @prismui/react               ^3.0.0  ->  ^3.1.0                │
 │  @khulnasoft/styles              ^3.0.0  ->  ^3.1.0                │
 ╰─────────────────────────────────────────────────────────────────╯
 
@@ -229,7 +229,7 @@ PrismUI CLI <version>
 
 ### uninstall
 
-Uninstall `@khulnasoft/react` and `@khulnasoft/styles` from your project. Peer dependencies will not be uninstalled.
+Uninstall `@prismui/react` and `@khulnasoft/styles` from your project. Peer dependencies will not be uninstalled.
 
 ```bash
 prismui uninstall [options]
@@ -248,19 +248,19 @@ PrismUI CLI <version>
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version   │   Status   │   Docs                               │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @khulnasoft/react    │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
+│   @prismui/react    │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
 │   @khulnasoft/styles   │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ? Confirm uninstallation of these packages: › - Use arrow-keys. Return to submit.
 ❯   Yes
     No
 
-✅ Successfully uninstalled: @khulnasoft/react, @khulnasoft/styles
+✅ Successfully uninstalled: @prismui/react, @khulnasoft/styles
 ```
 
 ### list
 
-List the installed PrismUI packages (`@khulnasoft/react`, `@khulnasoft/styles`).
+List the installed PrismUI packages (`@prismui/react`, `@khulnasoft/styles`).
 
 ```bash
 prismui list [options]
@@ -280,7 +280,7 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @khulnasoft/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @prismui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 │   @khulnasoft/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ```
@@ -288,7 +288,7 @@ Current installed packages:
 ### doctor
 
 Check for issues in your project.
-- Check whether `@khulnasoft/react` and `@khulnasoft/styles` are installed
+- Check whether `@prismui/react` and `@khulnasoft/styles` are installed
 - Check whether `required peer dependencies` are installed and matched minimal requirements in the project
 
 
@@ -347,7 +347,7 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @khulnasoft/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @prismui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 │   @khulnasoft/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 

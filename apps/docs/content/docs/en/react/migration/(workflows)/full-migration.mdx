@@ -69,26 +69,26 @@ v3 requires React 19+. Update your React version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm uninstall @khulnasoft/react @khulnasoft/theme
-    npm install @khulnasoft/styles @khulnasoft/react
+    npm uninstall @prismui/react @khulnasoft/theme
+    npm install @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm remove @khulnasoft/react @khulnasoft/theme
-    pnpm add @khulnasoft/styles @khulnasoft/react
+    pnpm remove @prismui/react @khulnasoft/theme
+    pnpm add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn remove @khulnasoft/react @khulnasoft/theme
-    yarn add @khulnasoft/styles @khulnasoft/react
+    yarn remove @prismui/react @khulnasoft/theme
+    yarn add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun remove @khulnasoft/react @khulnasoft/theme
-    bun add @khulnasoft/styles @khulnasoft/react
+    bun remove @prismui/react @khulnasoft/theme
+    bun add @khulnasoft/styles @prismui/react
     ```
   </Tab>
 </Tabs>
@@ -159,7 +159,7 @@ Ensure you're using Tailwind CSS v4:
 
 ```js
 // tailwind.config.js
-const {prismui} = require("@khulnasoft/react");
+const {prismui} = require("@prismui/react");
 
 module.exports = {
   content: [
@@ -218,7 +218,7 @@ v3 does not require a Provider component. Remove it from your application root.
 
 ```tsx
 // app.tsx or App.tsx
-import {PrismUIProvider} from "@khulnasoft/react";
+import {PrismUIProvider} from "@prismui/react";
 
 function App() {
   return (
@@ -285,14 +285,14 @@ import {Button} from "@khulnasoft/button";
 import {Card} from "@khulnasoft/card";
 
 // Or from main package
-import {Button, Card} from "@khulnasoft/react";
+import {Button, Card} from "@prismui/react";
 ```
 
 **v3 Imports:**
 
 ```tsx
 // All components from single package
-import {Button, Card} from "@khulnasoft/react";
+import {Button, Card} from "@prismui/react";
 ```
 
 #### TypeScript Considerations
@@ -301,10 +301,10 @@ If you're using TypeScript, be aware of type changes in v3:
 
 ```tsx
 // Import types alongside components
-import {Button, type ButtonProps} from "@khulnasoft/react";
+import {Button, type ButtonProps} from "@prismui/react";
 
 // Compound component types are properly exported
-import {Checkbox, type CheckboxProps} from "@khulnasoft/react";
+import {Checkbox, type CheckboxProps} from "@prismui/react";
 
 // Type names may have changed - check component documentation
 type MyButtonProps = ButtonProps & {
@@ -345,7 +345,7 @@ If you had custom theme overrides in v2, you'll need to update them for v3's CSS
 
 ```js
 // tailwind.config.js
-const {prismui} = require("@khulnasoft/react");
+const {prismui} = require("@prismui/react");
 
 module.exports = {
   plugins: [
@@ -465,7 +465,7 @@ Use this checklist to track your full migration progress:
 ### Application Code - Component Migration
 - Remove `PrismUIProvider` wrapper
 - Handle Provider props migration (router, locale, animations)
-- Update all component imports to `@khulnasoft/react`
+- Update all component imports to `@prismui/react`
 - Migrate renamed components (Divider → Separator, Autocomplete → Combobox, NumberInput → NumberField)
 - Update compound component patterns (Checkbox, Radio, Switch, Card, Modal, etc.)
 - Update group components (ButtonGroup, CheckboxGroup, RadioGroup)

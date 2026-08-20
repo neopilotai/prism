@@ -28,7 +28,7 @@ PrismUI v3 is a modern React UI library built with **Tailwind CSS v4**, organize
 ├── apps/
 │   └── docs/              # Documentation site (Next.js + Fumadocs)
 ├── packages/
-│   ├── react/             # Main UI library (@khulnasoft/react)
+│   ├── react/             # Main UI library (@prismui/react)
 │   │   ├── src/components/  # All components
 │   │   ├── src/utils/       # Shared utilities
 │   │   └── scripts/         # Build & codegen scripts
@@ -47,20 +47,20 @@ PrismUI v3 is a modern React UI library built with **Tailwind CSS v4**, organize
 |---|---|
 | Install dependencies | `pnpm i --hoist` |
 | Build all packages | `pnpm build` |
-| Build specific package | `pnpm build --filter=@khulnasoft/react` |
+| Build specific package | `pnpm build --filter=@prismui/react` |
 | Dev (Storybook, port 6006) | `pnpm dev` |
 | Dev (Docs site, port 3000) | `pnpm dev:docs` |
 | Lint | `pnpm lint` |
 | Typecheck | `pnpm typecheck` |
 | Test all (jsdom + browser) | `pnpm test` |
-| Test one file (filter) | `pnpm --filter @khulnasoft/react exec vitest run button` |
+| Test one file (filter) | `pnpm --filter @prismui/react exec vitest run button` |
 | Test with coverage | `pnpm test:coverage` (jsdom floors only — not “done”) |
-| Test changed files (local) | `pnpm --filter @khulnasoft/react test:changed` (jsdom only; not a gate) |
+| Test changed files (local) | `pnpm --filter @prismui/react test:changed` (jsdom only; not a gate) |
 | Format | `pnpm run format` |
 | Bump version | `pnpm version:bump` |
 | Scaffold a new component | `cd packages/react && pnpm add:component ComponentName` |
 
-## Behavioral tests (`@khulnasoft/react`)
+## Behavioral tests (`@prismui/react`)
 
 - Suites live in `packages/react/tests/components/<name>/`:
   - `*.test.tsx` — jsdom (~90% of contracts)
@@ -75,7 +75,7 @@ PrismUI v3 is a modern React UI library built with **Tailwind CSS v4**, organize
 - Naming: `describe("Component")`; nested concern; `it` as `supports…` / `calls…` / `exposes…` / `renders…`. SSR: `"Component SSR"`; browser: `"Component (browser)"`.
 - Intentional skips (no dedicated suite required): internals (`rac`, `icons`), non-exported helpers (`color-input-group`, `date-input-group`), in-progress `calendar-year-picker`, parent-covered parts (`list-box-item`, `menu-item`, `menu-section`, `list-box-section`), Toast SSR (client portal only — covered by jsdom + browser). Public `input-group` has its own suite. SSR and browser are risk-based, not universal.
 - Browser setup (once locally): `pnpm --filter @khulnasoft/testing exec playwright install chromium` before `pnpm test`. CI uses `playwright install --with-deps chromium`, then `test:browser` + `test:coverage` (not a single `pnpm test`).
-- Commands: `pnpm test` (jsdom + browser, needs Chromium); filter with `pnpm --filter @khulnasoft/react exec vitest run <name>`.
+- Commands: `pnpm test` (jsdom + browser, needs Chromium); filter with `pnpm --filter @prismui/react exec vitest run <name>`.
 - Coverage (`pnpm test:coverage`): jsdom only; `src/components/**` minus barrels. Thresholds are **CI floors** (statements/lines can pass with thin smoke). Green coverage ≠ sufficient depth — still require role/callback/focus (and browser for high-risk portals).
 - `test:changed`: local jsdom-only shortcut (`vitest related --changed`). Does **not** run browser suites; never use it as the merge gate — use `pnpm test` / CI.
 
@@ -298,7 +298,7 @@ calendar-year-picker
 
 1. **`pnpm i` triggers builds** — The `postinstall` hook builds `@khulnasoft/styles` and runs `typegen:docs` and `typegen:docs-cn`. If it fails, run `pnpm --filter @khulnasoft/styles build` manually.
 
-2. **Build order matters** — `@khulnasoft/styles` must build before `@khulnasoft/react`. Running `pnpm build` from root handles this via Turbo's `^build` dependency.
+2. **Build order matters** — `@khulnasoft/styles` must build before `@prismui/react`. Running `pnpm build` from root handles this via Turbo's `^build` dependency.
 
 3. **Native addons allowlist** — `onlyBuiltDependencies` in root `pnpm-workspace.yaml` allows native compilation for `esbuild`, `@swc/core`, `@parcel/watcher`, etc. If this list is missing, you'll see "Ignored build scripts" warnings.
 

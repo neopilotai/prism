@@ -1,6 +1,6 @@
 "use client";
 
-import type {ToastContentValue} from "@khulnasoft/react";
+import type {ToastContentValue} from "@prismui/react";
 
 import {
   Button,

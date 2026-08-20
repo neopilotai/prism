@@ -59,7 +59,7 @@ jobs:
           pnpm pack --pack-destination "$RUNNER_TEMP/prismui-release"
           npm publish "$RUNNER_TEMP/prismui-release/$PACKAGE_TARBALL" --access public ${{ inputs.dry_run && '--dry-run' || '' }}
 
-      - name: Publish @khulnasoft/react
+      - name: Publish @prismui/react
         if: steps.publish-styles.outcome == 'success'
         working-directory: packages/react
         run: |

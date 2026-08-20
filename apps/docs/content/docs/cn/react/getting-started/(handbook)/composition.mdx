@@ -14,8 +14,8 @@ PrismUI 的变体函数位于 `@khulnasoft/styles` 包中，可以独立于 Reac
 // Import directly from @khulnasoft/styles (framework-agnostic)
 import { buttonVariants } from '@khulnasoft/styles';
 
-// Or import from @khulnasoft/react (re-exports the same functions)
-import { buttonVariants } from '@khulnasoft/react';
+// Or import from @prismui/react (re-exports the same functions)
+import { buttonVariants } from '@prismui/react';
 ```
 
 两种导入方式的工作原理完全相同。在为非 React 框架构建，或希望避免引入 React 依赖时，请使用 `@khulnasoft/styles`。
@@ -65,7 +65,7 @@ import Link from 'next/link';
 当使用自定义根元素而非 PrismUI 的 Root 组件时，子组件无法访问 context slot。你可以使用变体函数或 BEM 类，手动将 `className` 传递给子组件：
 
 ```tsx
-import { Link } from '@khulnasoft/react';
+import { Link } from '@prismui/react';
 import { linkVariants } from '@khulnasoft/styles';
 import NextLink from 'next/link';
 
@@ -115,12 +115,12 @@ import Link from 'next/link';
 
 ## 使用变体函数
 
-如需更多控制和类型安全，可以使用变体函数将 PrismUI 样式应用到特定框架的组件或自定义元素上。`@khulnasoft/styles`（与框架无关）和 `@khulnasoft/react`（重新导出）都提供了变体函数。
+如需更多控制和类型安全，可以使用变体函数将 PrismUI 样式应用到特定框架的组件或自定义元素上。`@khulnasoft/styles`（与框架无关）和 `@prismui/react`（重新导出）都提供了变体函数。
 
 **配合 Next.js Link 使用：**
 
 ```tsx
-import { Link } from '@khulnasoft/react';
+import { Link } from '@prismui/react';
 import { linkVariants } from '@khulnasoft/styles';
 import NextLink from 'next/link';
 
@@ -155,7 +155,7 @@ PrismUI 组件以复合组件的方式构建 —— 它们会导出多个协同�
 **选项 1：复合模式（推荐）** — 直接使用主组件，无需 `.Root` 后缀：
 
 ```tsx
-import { Alert } from '@khulnasoft/react';
+import { Alert } from '@prismui/react';
 
 <Alert>
   <Alert.Icon />
@@ -170,7 +170,7 @@ import { Alert } from '@khulnasoft/react';
 **选项 2：使用 .Root 的复合模式** — 如果你喜欢显式命名，可以添加 `.Root` 后缀：
 
 ```tsx
-import { Alert } from '@khulnasoft/react';
+import { Alert } from '@prismui/react';
 
 <Alert.Root>
   <Alert.Icon />
@@ -192,7 +192,7 @@ import {
   AlertTitle,
   AlertDescription,
   AlertClose
-} from '@khulnasoft/react';
+} from '@prismui/react';
 
 <AlertRoot>
   <AlertIcon />
@@ -207,7 +207,7 @@ import {
 **混合语法：** 在同一组件中混合复合和命名导出：
 
 ```tsx
-import { Alert, AlertTitle, AlertDescription } from '@khulnasoft/react';
+import { Alert, AlertTitle, AlertDescription } from '@prismui/react';
 
 <Alert>
   <Alert.Icon />
@@ -222,7 +222,7 @@ import { Alert, AlertTitle, AlertDescription } from '@khulnasoft/react';
 **简单组件：** 像 `Button` 这样的简单组件以同样的方式工作 —— 无需 `.Root`：
 
 ```tsx
-import { Button } from '@khulnasoft/react';
+import { Button } from '@prismui/react';
 
 // Recommended - no .Root needed
 <Button>Click me</Button>
@@ -231,7 +231,7 @@ import { Button } from '@khulnasoft/react';
 <Button.Root>Click me</Button.Root>
 
 // Or named export
-import { ButtonRoot } from '@khulnasoft/react';
+import { ButtonRoot } from '@prismui/react';
 <ButtonRoot>Click me</ButtonRoot>
 ```
 
@@ -242,7 +242,7 @@ import { ButtonRoot } from '@khulnasoft/react';
 你可以组合来自不同组件的变体函数，以创建独特的样式：
 
 ```tsx
-import { Link } from '@khulnasoft/react';
+import { Link } from '@prismui/react';
 import { linkVariants, buttonVariants } from '@khulnasoft/styles';
 
 // Link styled with button variants
@@ -261,7 +261,7 @@ const buttonStyles = buttonVariants({ variant: "tertiary", size: "md" });
 通过组合 PrismUI 原语，创建你自己的组件：
 
 ```tsx
-import { Button, Tooltip } from '@khulnasoft/react';
+import { Button, Tooltip } from '@prismui/react';
 import { buttonVariants } from '@khulnasoft/styles';
 
 // Link button component using variant functions
@@ -297,10 +297,10 @@ function IconButton({ icon, label, ...props }) {
 通过扩展组件的变体函数来创建自定义变体：
 
 ```tsx
-import type { ButtonRootProps } from "@khulnasoft/react";
+import type { ButtonRootProps } from "@prismui/react";
 import type { VariantProps } from "tailwind-variants";
 
-import { Button } from "@khulnasoft/react";
+import { Button } from "@prismui/react";
 import { buttonVariants, tv } from "@khulnasoft/styles";
 
 const myButtonVariants = tv({
@@ -346,7 +346,7 @@ export function CustomVariants() {
 
 **推荐 — 命名类型导入：**
 ```tsx
-import type { ButtonRootProps, AvatarRootProps } from "@khulnasoft/react";
+import type { ButtonRootProps, AvatarRootProps } from "@prismui/react";
 
 type MyButtonProps = ButtonRootProps;
 type MyAvatarProps = AvatarRootProps;
@@ -354,7 +354,7 @@ type MyAvatarProps = AvatarRootProps;
 
 **替代方案 — 对象样式语法：**
 ```tsx
-import { Button, Avatar } from "@khulnasoft/react";
+import { Button, Avatar } from "@prismui/react";
 
 type MyButtonProps = Button["RootProps"];
 type MyAvatarProps = Avatar["RootProps"];
@@ -369,7 +369,7 @@ type MyAvatarProps = Avatar["RootProps"];
 例如，你可以渲染一个 [Motion](https://motion.dev/) 按钮，并利用其状态来驱动动画。
 
 ```tsx
-import {Button} from '@khulnasoft/react';
+import {Button} from '@prismui/react';
 import {motion} from 'motion/react';
 
 <Button
@@ -385,7 +385,7 @@ import {motion} from 'motion/react';
 `render` prop 对于从客户端路由库渲染链接组件，或复用已有的展示型组件也很有用。
 
 ```tsx
-import {Link} from '@khulnasoft/react';
+import {Link} from '@prismui/react';
 import NextLink from 'next/link';
 
 <Link

@@ -1,6 +1,6 @@
 "use client";
 
-import type {SortDescriptor} from "@khulnasoft/react";
+import type {SortDescriptor} from "@prismui/react";
 
 import {Table} from "@prismui/react";
 import {useMemo, useState} from "react";

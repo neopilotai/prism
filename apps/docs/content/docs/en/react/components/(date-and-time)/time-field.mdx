@@ -11,7 +11,7 @@ links:
 ## Usage
 
 ```tsx
-import { TimeField } from '@khulnasoft/react';
+import { TimeField } from '@prismui/react';
 ```
 
 <ComponentPreview name="time-field-basic" />
@@ -19,7 +19,7 @@ import { TimeField } from '@khulnasoft/react';
 ## Anatomy
 
 ```tsx
-import {TimeField, Label, Description, FieldError} from '@khulnasoft/react';
+import {TimeField, Label, Description, FieldError} from '@prismui/react';
 
 export default () => (
   <TimeField>
@@ -226,19 +226,19 @@ TimeField inherits all props from React Aria's [TimeField](https://react-aria.ad
 
 TimeField works with these separate components that should be imported and used directly:
 
-- **Label** - Field label component from `@khulnasoft/react`
+- **Label** - Field label component from `@prismui/react`
 - **TimeField.Group** - Time input group component (documented below)
-- **TimeField.Input** - Input component with segmented editing from `@khulnasoft/react`
+- **TimeField.Input** - Input component with segmented editing from `@prismui/react`
 - **TimeField.Segment** - Individual time segment (hour, minute, second, etc.)
 - **TimeField.Prefix** / **TimeField.Suffix** - Prefix and suffix slots for the input group
-- **Description** - Helper text component from `@khulnasoft/react`
-- **FieldError** - Validation error message from `@khulnasoft/react`
+- **Description** - Helper text component from `@prismui/react`
+- **FieldError** - Validation error message from `@prismui/react`
 
 Each of these components has its own props API. Use them directly within TimeField for composition:
 
 ```tsx
 import {parseTime} from '@internationalized/date';
-import {TimeField, Label, Description, FieldError} from '@khulnasoft/react';
+import {TimeField, Label, Description, FieldError} from '@prismui/react';
 
 <TimeField
   isRequired

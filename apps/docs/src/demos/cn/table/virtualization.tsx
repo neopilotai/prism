@@ -1,6 +1,6 @@
 "use client";
 
-import {Table, TableLayout, Virtualizer} from "@khulnasoft/react";
+import {Table, TableLayout, Virtualizer} from "@prismui/react";
 
 interface User {
   id: number;

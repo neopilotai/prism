@@ -69,26 +69,26 @@ v3 需要 React 19+。更新你的 React 版本：
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm uninstall @khulnasoft/react @khulnasoft/theme
-    npm install @khulnasoft/styles @khulnasoft/react
+    npm uninstall @prismui/react @khulnasoft/theme
+    npm install @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm remove @khulnasoft/react @khulnasoft/theme
-    pnpm add @khulnasoft/styles @khulnasoft/react
+    pnpm remove @prismui/react @khulnasoft/theme
+    pnpm add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn remove @khulnasoft/react @khulnasoft/theme
-    yarn add @khulnasoft/styles @khulnasoft/react
+    yarn remove @prismui/react @khulnasoft/theme
+    yarn add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun remove @khulnasoft/react @khulnasoft/theme
-    bun add @khulnasoft/styles @khulnasoft/react
+    bun remove @prismui/react @khulnasoft/theme
+    bun add @khulnasoft/styles @prismui/react
     ```
   </Tab>
 </Tabs>
@@ -159,7 +159,7 @@ v3 不再需要 Framer Motion：
 
 ```js
 // tailwind.config.js
-const {prismui} = require("@khulnasoft/react");
+const {prismui} = require("@prismui/react");
 
 module.exports = {
   content: [
@@ -218,7 +218,7 @@ v3 不需要 Provider 组件。从应用程序根目录中删除它。
 
 ```tsx
 // app.tsx or App.tsx
-import {PrismUIProvider} from "@khulnasoft/react";
+import {PrismUIProvider} from "@prismui/react";
 
 function App() {
   return (
@@ -285,14 +285,14 @@ import {Button} from "@khulnasoft/button";
 import {Card} from "@khulnasoft/card";
 
 // Or from main package
-import {Button, Card} from "@khulnasoft/react";
+import {Button, Card} from "@prismui/react";
 ```
 
 **v3 导入：**
 
 ```tsx
 // All components from single package
-import {Button, Card} from "@khulnasoft/react";
+import {Button, Card} from "@prismui/react";
 ```
 
 #### TypeScript 注意事项
@@ -301,10 +301,10 @@ import {Button, Card} from "@khulnasoft/react";
 
 ```tsx
 // Import types alongside components
-import {Button, type ButtonProps} from "@khulnasoft/react";
+import {Button, type ButtonProps} from "@prismui/react";
 
 // Compound component types are properly exported
-import {Checkbox, type CheckboxProps} from "@khulnasoft/react";
+import {Checkbox, type CheckboxProps} from "@prismui/react";
 
 // Type names may have changed - check component documentation
 type MyButtonProps = ButtonProps & {
@@ -345,7 +345,7 @@ type MyButtonProps = ButtonProps & {
 
 ```js
 // tailwind.config.js
-const {prismui} = require("@khulnasoft/react");
+const {prismui} = require("@prismui/react");
 
 module.exports = {
   plugins: [
@@ -465,7 +465,7 @@ v3 使用 CSS 变量。在 CSS 中覆盖它们：
 ### 应用程序代码-组件迁移
 - 消除`PrismUIProvider`包装纸
 - 处理提供者道具迁移（路由器、区域设置、动画）
-- 将所有组件导入更新为`@khulnasoft/react`
+- 将所有组件导入更新为`@prismui/react`
 - 迁移重命名组件（Divider → Separator、Autocomplete → Combobox、NumberInput → NumberField）
 - 更新复合组件模式（复选框、单选、开关、卡片、模态等）
 - 更新组组件（ButtonGroup、CheckboxGroup、RadioGroup）

@@ -53,7 +53,7 @@ Premium components, templates, and AI tooling for React and React Native. Comman
 
 **Composition over configuration:** v2 components were black boxes. v3 adopts compound components: every internal piece is a real element you can style, move, swap, or remove.
 
-**Styles separated from implementation:** `@khulnasoft/styles` is standalone CSS. `@khulnasoft/react` handles behavior. Use the styles with React, plain HTML + Tailwind, or any framework. BEM class names make every slot customizable globally. Swap themes to change not just variables, but how components look and feel.
+**Styles separated from implementation:** `@khulnasoft/styles` is standalone CSS. `@prismui/react` handles behavior. Use the styles with React, plain HTML + Tailwind, or any framework. BEM class names make every slot customizable globally. Swap themes to change not just variables, but how components look and feel.
 
 **Headless when you want it:** Remove the `@khulnasoft/styles` import and you have a headless library. We maintain functionality and accessibility. You focus on your product.
 
@@ -255,7 +255,7 @@ Framer Motion, Motion One, or any CSS animation library works alongside PrismUI'
 
 ```tsx
 import { motion } from "framer-motion";
-import { Button } from "@khulnasoft/react";
+import { Button } from "@prismui/react";
 
 const MotionButton = motion(Button);
 
@@ -352,12 +352,12 @@ Import from the root or from per-component subpaths. Both work:
 
 ```tsx
 // Root import
-import { Button, Card, Table } from "@khulnasoft/react";
+import { Button, Card, Table } from "@prismui/react";
 
 // Subpath import
-import { Button } from "@khulnasoft/react/button";
-import { Card } from "@khulnasoft/react/card";
-import { Table } from "@khulnasoft/react/table";
+import { Button } from "@prismui/react/button";
+import { Card } from "@prismui/react/card";
+import { Table } from "@prismui/react/table";
 ```
 
 ## UI for Agents
@@ -373,7 +373,7 @@ The PrismUI MCP Server connects AI coding assistants (Cursor, Claude Code, VS Co
   "mcpServers": {
     "prismui-react": {
       "command": "npx",
-      "args": ["-y", "@khulnasoft/react-mcp@latest"]
+      "args": ["-y", "@prismui/react-mcp@latest"]
     }
   }
 }
@@ -601,22 +601,22 @@ Pre-sale pricing is live. v2 Pro customers get an upgrade discount. Use the same
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @khulnasoft/styles @khulnasoft/react
+    npm i @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @khulnasoft/styles @khulnasoft/react
+    pnpm add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @khulnasoft/styles @khulnasoft/react
+    yarn add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @khulnasoft/styles @khulnasoft/react
+    bun add @khulnasoft/styles @prismui/react
     ```
   </Tab>
 </Tabs>

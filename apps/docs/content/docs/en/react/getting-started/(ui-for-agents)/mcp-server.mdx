@@ -12,7 +12,7 @@ The PrismUI MCP Server gives AI assistants direct access to PrismUI v3 component
 />
 
 
-The MCP server currently supports **@khulnasoft/react v3** only and [stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio). Published at `@khulnasoft/react-mcp` on npm. View the source code on [GitHub](https://github.com/khulnasoft/prismui-mcp).
+The MCP server currently supports **@prismui/react v3** only and [stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio). Published at `@prismui/react-mcp` on npm. View the source code on [GitHub](https://github.com/khulnasoft/prismui-mcp).
 
 <Callout>
   As we add more components to PrismUI v3, they'll be available in the MCP server too.
@@ -41,7 +41,7 @@ Or manually add to **Cursor Settings** → **Tools** → **MCP Servers**:
   "mcpServers": {
     "prismui-react": {
       "command": "npx",
-      "args": ["-y", "@khulnasoft/react-mcp@latest"]
+      "args": ["-y", "@prismui/react-mcp@latest"]
     }
   }
 }
@@ -54,7 +54,7 @@ Alternatively, add the following to your `~/.cursor/mcp.json` file. To learn mor
 Run this command in your terminal:
 
 ```bash
-claude mcp add prismui-react -- npx -y @khulnasoft/react-mcp@latest
+claude mcp add prismui-react -- npx -y @prismui/react-mcp@latest
 ```
 
 Or manually add to your project's `.mcp.json` file:
@@ -64,7 +64,7 @@ Or manually add to your project's `.mcp.json` file:
   "mcpServers": {
     "prismui-react": {
       "command": "npx",
-      "args": ["-y", "@khulnasoft/react-mcp@latest"]
+      "args": ["-y", "@prismui/react-mcp@latest"]
     }
   }
 }
@@ -83,7 +83,7 @@ Add the PrismUI server to your project's `.windsurf/mcp.json` configuration file
   "mcpServers": {
     "prismui-react": {
       "command": "npx",
-      "args": ["-y", "@khulnasoft/react-mcp@latest"]
+      "args": ["-y", "@prismui/react-mcp@latest"]
     }
   }
 }
@@ -102,7 +102,7 @@ Add the PrismUI server to your `settings.json` configuration file. Open settings
   "context_servers": {
     "prismui-react": {
       "command": "npx",
-      "args": ["-y", "@khulnasoft/react-mcp@latest"],
+      "args": ["-y", "@prismui/react-mcp@latest"],
       "env": {}
     }
   }
@@ -123,7 +123,7 @@ To configure MCP in VS Code with GitHub Copilot, add the PrismUI server to your 
     "prismui-react": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@khulnasoft/react-mcp@latest"]
+      "args": ["-y", "@prismui/react-mcp@latest"]
     }
   }
 }
@@ -140,7 +140,7 @@ Add the PrismUI server to your `~/.codex/config.toml` (or a project-scoped `.cod
 ```toml title="config.toml"
 [mcp_servers.prismui-react]
 command = "npx"
-args = ["-y", "@khulnasoft/react-mcp@latest"]
+args = ["-y", "@prismui/react-mcp@latest"]
 ```
 
 After adding the configuration, restart Codex and run `/mcp` in the TUI to verify the server is active.
@@ -157,7 +157,7 @@ Add the PrismUI server to your project's `opencode.json` configuration file:
   "mcp": {
     "prismui-react": {
       "type": "local",
-      "command": ["npx", "-y", "@khulnasoft/react-mcp@latest"]
+      "command": ["npx", "-y", "@prismui/react-mcp@latest"]
     }
   }
 }
@@ -216,6 +216,6 @@ The MCP server provides these tools to AI assistants:
 
 ## Links
 
-- [npm Package](https://www.npmjs.com/package/@khulnasoft/react-mcp)
+- [npm Package](https://www.npmjs.com/package/@prismui/react-mcp)
 - [GitHub Repository](https://github.com/khulnasoft/prismui-mcp)
 - [Contributing Guide](https://github.com/khulnasoft/prismui-mcp/blob/main/CONTRIBUTING.md)

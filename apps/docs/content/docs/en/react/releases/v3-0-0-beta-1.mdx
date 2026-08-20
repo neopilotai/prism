@@ -18,22 +18,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @khulnasoft/styles@beta @khulnasoft/react@beta
+    npm i @khulnasoft/styles@beta @prismui/react@beta
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @khulnasoft/styles@beta @khulnasoft/react@beta
+    pnpm add @khulnasoft/styles@beta @prismui/react@beta
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @khulnasoft/styles@beta @khulnasoft/react@beta
+    yarn add @khulnasoft/styles@beta @prismui/react@beta
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @khulnasoft/styles@beta @khulnasoft/react@beta
+    bun add @khulnasoft/styles@beta @prismui/react@beta
     ```
   </Tab>
 </Tabs>
@@ -172,7 +172,7 @@ PrismUI now supports flexible component syntax. Use compound patterns with or wi
 **Available patterns:**
 
 ```tsx
-import { Avatar } from "@khulnasoft/react"
+import { Avatar } from "@prismui/react"
 
 // 1. Compound pattern (no .Root needed) - recommended
 <Avatar>
@@ -187,7 +187,7 @@ import { Avatar } from "@khulnasoft/react"
 </Avatar.Root>
 
 // 3. Named exports
-import { AvatarRoot, AvatarImage, AvatarFallback } from "@khulnasoft/react"
+import { AvatarRoot, AvatarImage, AvatarFallback } from "@prismui/react"
 
 <AvatarRoot>
   <AvatarImage src="/avatar.jpg" alt="User" />
@@ -198,7 +198,7 @@ import { AvatarRoot, AvatarImage, AvatarFallback } from "@khulnasoft/react"
 **Simple components** like Button work the same way:
 
 ```tsx
-import { Button } from "@khulnasoft/react"
+import { Button } from "@prismui/react"
 
 // No .Root needed
 <Button>Label</Button>
@@ -207,14 +207,14 @@ import { Button } from "@khulnasoft/react"
 <Button.Root>Label</Button.Root>
 
 // Or named export
-import { ButtonRoot } from "@khulnasoft/react"
+import { ButtonRoot } from "@prismui/react"
 <ButtonRoot>Label</ButtonRoot>
 ```
 
 **You can mix compound and named exports** in the same component:
 
 ```tsx
-import { Avatar, AvatarFallback } from "@khulnasoft/react"
+import { Avatar, AvatarFallback } from "@prismui/react"
 
 <Avatar>
   <Avatar.Image src="/avatar.jpg" alt="User" />
@@ -420,14 +420,14 @@ The Chip component's `type` prop has been renamed to `color`, and a new `size` p
 
 **Before:**
 ```tsx
-import { Chip } from "@khulnasoft/react";
+import { Chip } from "@prismui/react";
 
 <Chip type="danger" variant="secondary">Label</Chip>
 ```
 
 **After:**
 ```tsx
-import { Chip } from "@khulnasoft/react";
+import { Chip } from "@prismui/react";
 
 <Chip color="danger" variant="soft" size="md">Label</Chip>
 ```
@@ -443,14 +443,14 @@ The Link component now supports `underline` and `underlineOffset` props, and inc
 
 **Before:**
 ```tsx
-import { Link } from "@khulnasoft/react";
+import { Link } from "@prismui/react";
 
 <Link href="#">Link text</Link>
 ```
 
 **After:**
 ```tsx
-import { Link } from "@khulnasoft/react";
+import { Link } from "@prismui/react";
 
 <Link href="#" underline="hover" underlineOffset={4}>Link text</Link>
 ```
@@ -475,7 +475,7 @@ type AvatarProps = Avatar["RootProps"]
 
 **After (Option 2 - Named type imports, recommended):**
 ```tsx
-import type { AvatarRootProps } from "@khulnasoft/react"
+import type { AvatarRootProps } from "@prismui/react"
 
 type AvatarProps = AvatarRootProps
 ```
@@ -717,7 +717,7 @@ type ButtonProps = Button["RootProps"]
 
 **After (Option 2 - Named imports, recommended):**
 ```tsx
-import type { ButtonRootProps } from "@khulnasoft/react"
+import type { ButtonRootProps } from "@prismui/react"
 
 type ButtonProps = ButtonRootProps
 ```
@@ -728,7 +728,7 @@ Replace `TabListWrapper` with `TabListContainer`:
 
 **Before:**
 ```tsx
-import { Tabs } from "@khulnasoft/react"
+import { Tabs } from "@prismui/react"
 
 <Tabs.Root>
   <Tabs.ListWrapper>
@@ -742,7 +742,7 @@ import { Tabs } from "@khulnasoft/react"
 
 **After:**
 ```tsx
-import { Tabs } from "@khulnasoft/react"
+import { Tabs } from "@prismui/react"
 
 <Tabs>
   <Tabs.ListContainer>

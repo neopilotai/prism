@@ -53,7 +53,7 @@ description: 面向 React 与 React Native 的彻底重写。75+ Web 组件、37
 
 **组合优于配置：** v2 的组件是黑盒。v3 采用复合组件模式：每一个内部部件都是真实的元素，你可以为它们设置样式、调整位置、替换或移除。
 
-**样式与实现分离：** `@khulnasoft/styles` 是独立的 CSS 包，`@khulnasoft/react` 负责行为逻辑。这套样式可以配合 React、原生 HTML + Tailwind 或任意框架使用。BEM 类名让每一个 slot 都能在全局层面被定制。切换主题不仅会改变变量，还能改变组件的外观与质感。
+**样式与实现分离：** `@khulnasoft/styles` 是独立的 CSS 包，`@prismui/react` 负责行为逻辑。这套样式可以配合 React、原生 HTML + Tailwind 或任意框架使用。BEM 类名让每一个 slot 都能在全局层面被定制。切换主题不仅会改变变量，还能改变组件的外观与质感。
 
 **按需变身 Headless：** 只要不引入 `@khulnasoft/styles`，你就拥有了一套 headless 组件库。我们负责功能与无障碍，你专注于自己的产品。
 
@@ -255,7 +255,7 @@ Framer Motion、Motion One 或任何 CSS 动画库都可以与 PrismUI 内置的
 
 ```tsx
 import { motion } from "framer-motion";
-import { Button } from "@khulnasoft/react";
+import { Button } from "@prismui/react";
 
 const MotionButton = motion(Button);
 
@@ -352,12 +352,12 @@ Button、ButtonGroup、ToggleButton、ToggleButtonGroup、CloseButton 与 Toolba
 
 ```tsx
 // Root import
-import { Button, Card, Table } from "@khulnasoft/react";
+import { Button, Card, Table } from "@prismui/react";
 
 // Subpath import
-import { Button } from "@khulnasoft/react/button";
-import { Card } from "@khulnasoft/react/card";
-import { Table } from "@khulnasoft/react/table";
+import { Button } from "@prismui/react/button";
+import { Card } from "@prismui/react/card";
+import { Table } from "@prismui/react/table";
 ```
 
 ## 面向 Agent 的 UI
@@ -373,7 +373,7 @@ PrismUI MCP 服务器将 AI 编码助手（Cursor、Claude Code、VS Code Copilo
   "mcpServers": {
     "prismui-react": {
       "command": "npx",
-      "args": ["-y", "@khulnasoft/react-mcp@latest"]
+      "args": ["-y", "@prismui/react-mcp@latest"]
     }
   }
 }
@@ -601,22 +601,22 @@ Pro 许可包含高级版的 MCP 服务器与 Agent Skills，并内置 Pro 组�
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @khulnasoft/styles @khulnasoft/react
+    npm i @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @khulnasoft/styles @khulnasoft/react
+    pnpm add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @khulnasoft/styles @khulnasoft/react
+    yarn add @khulnasoft/styles @prismui/react
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @khulnasoft/styles @khulnasoft/react
+    bun add @khulnasoft/styles @prismui/react
     ```
   </Tab>
 </Tabs>

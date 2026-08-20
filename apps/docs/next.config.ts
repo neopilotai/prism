@@ -32,7 +32,7 @@ const config: NextConfig = {
   compress: true,
   experimental: {
     optimizePackageImports: [
-      "@khulnasoft/react",
+      "@prismui/react",
       "@gravity-ui/icons",
       "@iconify/react",
       "lucide-react",

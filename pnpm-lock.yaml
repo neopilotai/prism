@@ -189,7 +189,7 @@ importers:
       '@internationalized/date':
         specifier: 3.12.3
         version: 3.12.3
-      '@khulnasoft/react':
+      '@prismui/react':
         specifier: workspace:*
         version: link:../../packages/react
       '@lglab/react-qr-code':
@@ -912,7 +912,7 @@ importers:
       '@iconify/react':
         specifier: 6.0.2
         version: 6.0.2(react@19.2.6)
-      '@khulnasoft/react':
+      '@prismui/react':
         specifier: workspace:*
         version: link:../react
       '@khulnasoft/styles':

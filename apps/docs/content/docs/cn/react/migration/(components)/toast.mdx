@@ -12,7 +12,7 @@ description: Toast 从 PrismUI v2 到 v3 的迁移指南。
 在 v2 中，Toast 采用 Provider + Hook 模式：
 
 ```tsx
-import { ToastProvider, useToast } from "@khulnasoft/react";
+import { ToastProvider, useToast } from "@prismui/react";
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function MyComponent() {
 在 v3 中，Toast 改为 Provider 组件 + 全局 `toast()` 函数：
 
 ```tsx
-import { Toast } from "@khulnasoft/react";
+import { Toast } from "@prismui/react";
 
 function App() {
   return (
@@ -111,7 +111,7 @@ function MyComponent() {
   </Tab>
   <Tab value="v3">
     ```tsx
-    import { toast } from "@khulnasoft/react";
+    import { toast } from "@prismui/react";
 
     toast.success("Success", {
       description: "Your changes have been saved"
@@ -135,7 +135,7 @@ function MyComponent() {
   </Tab>
   <Tab value="v3">
     ```tsx
-    import { toast } from "@khulnasoft/react";
+    import { toast } from "@prismui/react";
 
     toast.success("Success");
     toast.danger("Error");
@@ -164,7 +164,7 @@ function MyComponent() {
   </Tab>
   <Tab value="v3">
     ```tsx
-    import { toast } from "@khulnasoft/react";
+    import { toast } from "@prismui/react";
 
     const handleAsync = async () => {
       toast.promise(someAsyncOperation(), {
@@ -194,7 +194,7 @@ function MyComponent() {
   </Tab>
   <Tab value="v3">
     ```tsx
-    import { Toast, ToastContent, ToastTitle } from "@khulnasoft/react";
+    import { Toast, ToastContent, ToastTitle } from "@prismui/react";
 
     <Toast.Provider>
       {({ toast: toastItem }) => (

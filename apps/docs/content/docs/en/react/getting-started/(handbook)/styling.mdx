@@ -145,7 +145,7 @@ PrismUI uses [BEM methodology](https://getbem.com/) for consistent class naming:
 Create reusable custom components using [tailwind-variants](https://tailwind-variants.org/)—a Tailwind CSS first-class variant API:
 
 ```tsx
-import { Button as HeroButton, type ButtonProps } from '@khulnasoft/react';
+import { Button as HeroButton, type ButtonProps } from '@prismui/react';
 import { buttonVariants, tv, type VariantProps } from '@khulnasoft/styles';
 
 const customButtonVariants = tv({
@@ -192,7 +192,7 @@ export function CustomButton({ intent, size, className, ...props }: CustomButton
 
 ```tsx
 import styled from 'styled-components';
-import { Button } from '@khulnasoft/react';
+import { Button } from '@prismui/react';
 
 const StyledButton = styled(Button)`
   background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
@@ -210,7 +210,7 @@ const StyledButton = styled(Button)`
 
 ```tsx
 import { css } from '@emotion/css';
-import { Button } from '@khulnasoft/react';
+import { Button } from '@prismui/react';
 
 const buttonStyles = css`
   background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
@@ -281,7 +281,7 @@ For scoped styles, use CSS Modules:
 
 ```tsx
 import styles from './Button.module.css';
-import { Button } from '@khulnasoft/react';
+import { Button } from '@prismui/react';
 
 <Button className={styles.button}>
   Scoped Button

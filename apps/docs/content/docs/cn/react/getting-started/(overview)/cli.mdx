@@ -70,10 +70,10 @@ Options:
 
 Commands:
   init [options] [projectName]   Initializes a new project
-  install [options]              Installs @khulnasoft/react and @khulnasoft/styles to your project
-  upgrade [options]              Upgrades @khulnasoft/react and @khulnasoft/styles to the latest versions
-  uninstall [options]            Uninstall @khulnasoft/react and @khulnasoft/styles from the project
-  list [options]                 Lists installed PrismUI packages (@khulnasoft/react, @khulnasoft/styles)
+  install [options]              Installs @prismui/react and @khulnasoft/styles to your project
+  upgrade [options]              Upgrades @prismui/react and @khulnasoft/styles to the latest versions
+  uninstall [options]            Uninstall @prismui/react and @khulnasoft/styles from the project
+  list [options]                 Lists installed PrismUI packages (@prismui/react, @khulnasoft/styles)
   env [options]                  Displays debugging information for the local environment
   doctor [options]               Checks for issues in the project
   agents-md [options]            Downloads PrismUI documentation for AI coding agents
@@ -161,7 +161,7 @@ npm run dev
 
 ### Install
 
-将 `@khulnasoft/react` 和 `@khulnasoft/styles` 及其对等依赖安装到你的项目中。若它们已安装，则该命令不会执行任何操作。
+将 `@prismui/react` 和 `@khulnasoft/styles` 及其对等依赖安装到你的项目中。若它们已安装，则该命令不会执行任何操作。
 
 ```bash
 prismui install [options]
@@ -181,7 +181,7 @@ PrismUI CLI <version>
 ╭─────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version        │   Status   │   Docs                 │
 │─────────────────────────────────────────────────────────────────────────────│
-│   @khulnasoft/react    │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
+│   @prismui/react    │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
 │   @khulnasoft/styles   │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
 ╰─────────────────────────────────────────────────────────────────────────────╯
 
@@ -194,13 +194,13 @@ PrismUI CLI <version>
 ❯   Yes
     No
 
-✅ @khulnasoft/react and @khulnasoft/styles installed successfully
+✅ @prismui/react and @khulnasoft/styles installed successfully
 ```
 
 ### upgrade
 
 
-将 `@khulnasoft/react` 和 `@khulnasoft/styles` 及其对等依赖升级到最新版本。
+将 `@prismui/react` 和 `@khulnasoft/styles` 及其对等依赖升级到最新版本。
 
 ```bash
 prismui upgrade [options]
@@ -216,7 +216,7 @@ prismui upgrade [options]
 PrismUI CLI <version>
 
 ╭──────────────────────────── Upgrade ────────────────────────────╮
-│  @khulnasoft/react               ^3.0.0  ->  ^3.1.0                │
+│  @prismui/react               ^3.0.0  ->  ^3.1.0                │
 │  @khulnasoft/styles              ^3.0.0  ->  ^3.1.0                │
 ╰─────────────────────────────────────────────────────────────────╯
 
@@ -229,7 +229,7 @@ PrismUI CLI <version>
 
 ### uninstall
 
-从你的项目中卸载 `@khulnasoft/react` 和 `@khulnasoft/styles`。对等依赖不会被卸载。
+从你的项目中卸载 `@prismui/react` 和 `@khulnasoft/styles`。对等依赖不会被卸载。
 
 ```bash
 prismui uninstall [options]
@@ -248,19 +248,19 @@ PrismUI CLI <version>
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version   │   Status   │   Docs                               │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @khulnasoft/react    │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
+│   @prismui/react    │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
 │   @khulnasoft/styles   │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ? Confirm uninstallation of these packages: › - Use arrow-keys. Return to submit.
 ❯   Yes
     No
 
-✅ Successfully uninstalled: @khulnasoft/react, @khulnasoft/styles
+✅ Successfully uninstalled: @prismui/react, @khulnasoft/styles
 ```
 
 ### list
 
-列出已安装的 PrismUI 包（`@khulnasoft/react`、`@khulnasoft/styles`）。
+列出已安装的 PrismUI 包（`@prismui/react`、`@khulnasoft/styles`）。
 
 ```bash
 prismui list [options]
@@ -280,7 +280,7 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @khulnasoft/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @prismui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 │   @khulnasoft/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ```
@@ -288,7 +288,7 @@ Current installed packages:
 ### doctor
 
 检查项目中存在的问题。
-- 检查 `@khulnasoft/react` 和 `@khulnasoft/styles` 是否已安装
+- 检查 `@prismui/react` 和 `@khulnasoft/styles` 是否已安装
 - 检查项目中是否安装了所需的 `对等依赖` 并满足最低版本要求
 
 
@@ -347,7 +347,7 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @khulnasoft/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @prismui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 │   @khulnasoft/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 

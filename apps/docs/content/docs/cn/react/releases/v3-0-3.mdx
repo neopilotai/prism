@@ -18,22 +18,22 @@ github:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @khulnasoft/styles@latest @khulnasoft/react@latest
+    npm i @khulnasoft/styles@latest @prismui/react@latest
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @khulnasoft/styles@latest @khulnasoft/react@latest
+    pnpm add @khulnasoft/styles@latest @prismui/react@latest
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @khulnasoft/styles@latest @khulnasoft/react@latest
+    yarn add @khulnasoft/styles@latest @prismui/react@latest
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @khulnasoft/styles@latest @khulnasoft/react@latest
+    bun add @khulnasoft/styles@latest @prismui/react@latest
     ```
   </Tab>
 </Tabs>
@@ -58,12 +58,12 @@ Table 现在支持以可展开行的形式呈现树形数据。设置 `treeColum
 
 ### useTheme Hook
 
-对于使用 Vite 或 Create React App 搭建（没有 Next.js 主题 Provider）的纯 React 应用，可以从 `@khulnasoft/react` 中引入 `useTheme`。它接受任意主题名（`"light"`、`"dark"`、`"brutalism-light"` 等），传入 `"system"` 则会跟随操作系统偏好。`useTheme` 会将主题值持久化到 `localStorage`，并在 `<html>` 元素上同步设置 `data-theme` 与 `class`，二者均为解析后的主题名。
+对于使用 Vite 或 Create React App 搭建（没有 Next.js 主题 Provider）的纯 React 应用，可以从 `@prismui/react` 中引入 `useTheme`。它接受任意主题名（`"light"`、`"dark"`、`"brutalism-light"` 等），传入 `"system"` 则会跟随操作系统偏好。`useTheme` 会将主题值持久化到 `localStorage`，并在 `<html>` 元素上同步设置 `data-theme` 与 `class`，二者均为解析后的主题名。
 
 ```tsx
 "use client";
 
-import { Button, useTheme } from "@khulnasoft/react";
+import { Button, useTheme } from "@prismui/react";
 
 export function ThemeSwitch() {
   const { theme, setTheme } = useTheme("light");

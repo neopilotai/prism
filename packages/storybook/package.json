@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@gravity-ui/icons": "2.16.0",
-    "@khulnasoft/react": "workspace:*",
+    "@prismui/react": "workspace:*",
     "@khulnasoft/styles": "workspace:*",
     "@iconify/react": "6.0.2",
     "apcach": "0.6.4",

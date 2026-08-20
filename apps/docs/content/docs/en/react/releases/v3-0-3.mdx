@@ -18,22 +18,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @khulnasoft/styles@latest @khulnasoft/react@latest
+    npm i @khulnasoft/styles@latest @prismui/react@latest
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @khulnasoft/styles@latest @khulnasoft/react@latest
+    pnpm add @khulnasoft/styles@latest @prismui/react@latest
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @khulnasoft/styles@latest @khulnasoft/react@latest
+    yarn add @khulnasoft/styles@latest @prismui/react@latest
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @khulnasoft/styles@latest @khulnasoft/react@latest
+    bun add @khulnasoft/styles@latest @prismui/react@latest
     ```
   </Tab>
 </Tabs>
@@ -58,12 +58,12 @@ Table now supports expandable rows for tree-style data. Set a `treeColumn` and r
 
 ### useTheme hook
 
-For plain React with Vite or Create React App (no Next.js theme provider), import `useTheme` from `@khulnasoft/react`. It accepts any theme name (`"light"`, `"dark"`, `"brutalism-light"`, etc.). Pass `"system"` to follow the OS preference. It persists the value in `localStorage`, and sets both `data-theme` and `class` on `<html>` to the resolved theme name.
+For plain React with Vite or Create React App (no Next.js theme provider), import `useTheme` from `@prismui/react`. It accepts any theme name (`"light"`, `"dark"`, `"brutalism-light"`, etc.). Pass `"system"` to follow the OS preference. It persists the value in `localStorage`, and sets both `data-theme` and `class` on `<html>` to the resolved theme name.
 
 ```tsx
 "use client";
 
-import { Button, useTheme } from "@khulnasoft/react";
+import { Button, useTheme } from "@prismui/react";
 
 export function ThemeSwitch() {
   const { theme, setTheme } = useTheme("light");

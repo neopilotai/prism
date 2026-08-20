@@ -9,10 +9,10 @@
 </p>
 <p align="center">
   <a href="https://github.com/khulnasoft/prismui/blob/main/LICENSE">
-    <img src="https://img.shields.io/npm/l/@khulnasoft/react?style=flat" alt="License">
+    <img src="https://img.shields.io/npm/l/@prismui/react?style=flat" alt="License">
   </a>
-  <a href="https://www.npmjs.com/package/@khulnasoft/react">
-    <img src="https://img.shields.io/npm/dm/@khulnasoft/react.svg?style=flat-round" alt="npm downloads">
+  <a href="https://www.npmjs.com/package/@prismui/react">
+    <img src="https://img.shields.io/npm/dm/@prismui/react.svg?style=flat-round" alt="npm downloads">
   </a>
 </p>
 
@@ -31,7 +31,7 @@ PrismUI (previously NextUI) is a production-ready React component library that c
 
 | Package | Description |
 |---|---|
-| [`@khulnasoft/react`](https://www.npmjs.com/package/@khulnasoft/react) | Full component bundle |
+| [`@prismui/react`](https://www.npmjs.com/package/@prismui/react) | Full component bundle |
 | [`@khulnasoft/styles`](https://www.npmjs.com/package/@khulnasoft/styles) | Styles / theme only |
 | Individual packages | e.g. `@khulnasoft/button`, `@khulnasoft/modal` — tree-shakeable per-component imports |
 
@@ -40,7 +40,7 @@ PrismUI (previously NextUI) is a production-ready React component library that c
 Visit [prism.khulnasoft.com/docs/react/getting-started/quick-start](https://prism.khulnasoft.com/docs/react/getting-started/quick-start) to get started with PrismUI.
 
 ```bash
-npm install @khulnasoft/react
+npm install @prismui/react
 ```
 
 ## Who Is This For?
@@ -59,7 +59,7 @@ PrismUI is built for the AI-assisted development workflow.
 
 | Tool | What it does |
 |---|---|
-| **MCP Server** (`@khulnasoft/react-mcp`) | Components that understand your theme — install the server in Cursor, Claude Code, Windsurf, or any MCP-compatible editor |
+| **MCP Server** (`@prismui/react-mcp`) | Components that understand your theme — install the server in Cursor, Claude Code, Windsurf, or any MCP-compatible editor |
 | **llms.txt** | Available at [prism.khulnasoft.com/llms.txt](https://prism.khulnasoft.com/llms.txt) — structured context for LLMs about every component |
 | **Agent Skills** | Run `npx prism-cli agents-md` to install skills for Cursor, Claude Code, and more |
 

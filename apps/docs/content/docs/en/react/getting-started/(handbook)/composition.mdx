@@ -14,8 +14,8 @@ PrismUI's variant functions are available in the `@khulnasoft/styles` package, w
 // Import directly from @khulnasoft/styles (framework-agnostic)
 import { buttonVariants } from '@khulnasoft/styles';
 
-// Or import from @khulnasoft/react (re-exports the same functions)
-import { buttonVariants } from '@khulnasoft/react';
+// Or import from @prismui/react (re-exports the same functions)
+import { buttonVariants } from '@prismui/react';
 ```
 
 Both imports work identically. Use `@khulnasoft/styles` when building for non-React frameworks or when you want to avoid pulling in React dependencies.
@@ -65,7 +65,7 @@ import Link from 'next/link';
 When using a custom root element instead of PrismUI's Root component, child components cannot access context slots. You can manually pass `className` to child components using variant functions or BEM classes:
 
 ```tsx
-import { Link } from '@khulnasoft/react';
+import { Link } from '@prismui/react';
 import { linkVariants } from '@khulnasoft/styles';
 import NextLink from 'next/link';
 
@@ -115,12 +115,12 @@ This approach works because PrismUI uses [BEM](https://getbem.com/) classes that
 
 ## Using Variant Functions
 
-For more control and type safety, use variant functions to apply PrismUI styles to framework-specific components or custom elements. Variant functions are available from both `@khulnasoft/styles` (framework-agnostic) and `@khulnasoft/react` (re-exports).
+For more control and type safety, use variant functions to apply PrismUI styles to framework-specific components or custom elements. Variant functions are available from both `@khulnasoft/styles` (framework-agnostic) and `@prismui/react` (re-exports).
 
 **With Next.js Link:**
 
 ```tsx
-import { Link } from '@khulnasoft/react';
+import { Link } from '@prismui/react';
 import { linkVariants } from '@khulnasoft/styles';
 import NextLink from 'next/link';
 
@@ -155,7 +155,7 @@ PrismUI components are built as compound components—they export multiple parts
 **Option 1: Compound pattern (recommended)** — Use the main component directly without `.Root` suffix:
 
 ```tsx
-import { Alert } from '@khulnasoft/react';
+import { Alert } from '@prismui/react';
 
 <Alert>
   <Alert.Icon />
@@ -170,7 +170,7 @@ import { Alert } from '@khulnasoft/react';
 **Option 2: Compound pattern with .Root** — Use the `.Root` suffix if you prefer explicit naming:
 
 ```tsx
-import { Alert } from '@khulnasoft/react';
+import { Alert } from '@prismui/react';
 
 <Alert.Root>
   <Alert.Icon />
@@ -192,7 +192,7 @@ import {
   AlertTitle,
   AlertDescription,
   AlertClose
-} from '@khulnasoft/react';
+} from '@prismui/react';
 
 <AlertRoot>
   <AlertIcon />
@@ -207,7 +207,7 @@ import {
 **Mixed syntax:** Mix compound and named exports in the same component:
 
 ```tsx
-import { Alert, AlertTitle, AlertDescription } from '@khulnasoft/react';
+import { Alert, AlertTitle, AlertDescription } from '@prismui/react';
 
 <Alert>
   <Alert.Icon />
@@ -222,7 +222,7 @@ import { Alert, AlertTitle, AlertDescription } from '@khulnasoft/react';
 **Simple components:** Simple components like `Button` work the same way—no `.Root` needed:
 
 ```tsx
-import { Button } from '@khulnasoft/react';
+import { Button } from '@prismui/react';
 
 // Recommended - no .Root needed
 <Button>Click me</Button>
@@ -231,7 +231,7 @@ import { Button } from '@khulnasoft/react';
 <Button.Root>Click me</Button.Root>
 
 // Or named export
-import { ButtonRoot } from '@khulnasoft/react';
+import { ButtonRoot } from '@prismui/react';
 <ButtonRoot>Click me</ButtonRoot>
 ```
 
@@ -242,7 +242,7 @@ import { ButtonRoot } from '@khulnasoft/react';
 You can combine variant functions from different components to create unique styles:
 
 ```tsx
-import { Link } from '@khulnasoft/react';
+import { Link } from '@prismui/react';
 import { linkVariants, buttonVariants } from '@khulnasoft/styles';
 
 // Link styled with button variants
@@ -261,7 +261,7 @@ const buttonStyles = buttonVariants({ variant: "tertiary", size: "md" });
 Create your own components by composing PrismUI primitives:
 
 ```tsx
-import { Button, Tooltip } from '@khulnasoft/react';
+import { Button, Tooltip } from '@prismui/react';
 import { buttonVariants } from '@khulnasoft/styles';
 
 // Link button component using variant functions
@@ -297,10 +297,10 @@ function IconButton({ icon, label, ...props }) {
 Create custom variants by extending the component's variant function:
 
 ```tsx
-import type { ButtonRootProps } from "@khulnasoft/react";
+import type { ButtonRootProps } from "@prismui/react";
 import type { VariantProps } from "tailwind-variants";
 
-import { Button } from "@khulnasoft/react";
+import { Button } from "@prismui/react";
 import { buttonVariants, tv } from "@khulnasoft/styles";
 
 const myButtonVariants = tv({
@@ -346,7 +346,7 @@ export function CustomVariants() {
 
 **Recommended — Named type imports:**
 ```tsx
-import type { ButtonRootProps, AvatarRootProps } from "@khulnasoft/react";
+import type { ButtonRootProps, AvatarRootProps } from "@prismui/react";
 
 type MyButtonProps = ButtonRootProps;
 type MyAvatarProps = AvatarRootProps;
@@ -354,7 +354,7 @@ type MyAvatarProps = AvatarRootProps;
 
 **Alternative — Object-style syntax:**
 ```tsx
-import { Button, Avatar } from "@khulnasoft/react";
+import { Button, Avatar } from "@prismui/react";
 
 type MyButtonProps = Button["RootProps"];
 type MyAvatarProps = Avatar["RootProps"];
@@ -369,7 +369,7 @@ Use the `render` prop on the following components to render a custom component i
 For example, you can render a [Motion](https://motion.dev/) button and use the state to drive an animation.
 
 ```tsx
-import {Button} from '@khulnasoft/react';
+import {Button} from '@prismui/react';
 import {motion} from 'motion/react';
 
 <Button
@@ -385,7 +385,7 @@ import {motion} from 'motion/react';
 The `render` prop is also useful for rendering link components from client-side routers, or reusing existing presentational components.
 
 ```tsx
-import {Link} from '@khulnasoft/react';
+import {Link} from '@prismui/react';
 import NextLink from 'next/link';
 
 <Link

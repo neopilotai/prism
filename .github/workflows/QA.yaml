@@ -62,7 +62,7 @@ jobs:
         run: pnpm --filter @khulnasoft/testing exec playwright install --with-deps chromium
 
       - name: Browser tests
-        run: pnpm --filter @khulnasoft/react test:browser
+        run: pnpm --filter @prismui/react test:browser
 
       - name: Jsdom tests with coverage
         run: pnpm test:coverage

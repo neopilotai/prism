@@ -1,4 +1,4 @@
-import {Surface} from "@khulnasoft/react";
+import {Surface} from "@prismui/react";
 
 export function Variants() {
   return (

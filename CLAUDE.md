@@ -35,7 +35,7 @@ pnpm dev:docs
 pnpm build
 
 # Build specific package
-pnpm build --filter=@khulnasoft/react
+pnpm build --filter=@prismui/react
 
 # Run linting
 pnpm lint
@@ -44,13 +44,13 @@ pnpm lint
 pnpm test
 
 # Filter by file name (e.g. button.test.tsx)
-pnpm --filter @khulnasoft/react exec vitest run button
+pnpm --filter @prismui/react exec vitest run button
 
 # Coverage (jsdom floors only — not a depth bar)
 pnpm test:coverage
 
 # Changed-set (local jsdom only; not a merge gate)
-pnpm --filter @khulnasoft/react test:changed
+pnpm --filter @prismui/react test:changed
 
 # Run formatting
 pnpm run format
@@ -59,7 +59,7 @@ pnpm run format
 pnpm typecheck
 ```
 
-### Behavioral tests (`@khulnasoft/react`)
+### Behavioral tests (`@prismui/react`)
 
 - Suites: `packages/react/tests/components/<name>/` — `*.test.tsx` (jsdom), `*.ssr.test.tsx` (Client SSR via `ssrSmoke()`, not RSC), `*.browser.test.tsx` (Playwright for high-risk portals/overlays; not universal), optional `fixtures.tsx`
 - Harness: `@khulnasoft/testing/helpers` (`render`, `setupUser`, `runAllTimers`, `ssrSmoke`, `User`); browser `render` from `@khulnasoft/testing/browser`. Sources via `@/`. Pattern testers: `user.createTester(...)` — do not import `createTester` directly
@@ -68,13 +68,13 @@ pnpm typecheck
 - Naming: `describe("Component")`; nested concern; `it` as `supports…` / `calls…` / `exposes…` / `renders…`. SSR: `"Component SSR"`; browser: `"Component (browser)"`
 - Intentional skips: internals (`rac`, `icons`), non-exported helpers (`color-input-group`, `date-input-group`), in-progress `calendar-year-picker`, parent-covered parts (`list-box-item`, `menu-item`, …), Toast SSR (client portal — jsdom + browser). Public `input-group` has its own suite. SSR/browser are risk-based
 - Browser setup (once locally): `playwright install chromium` before `pnpm test`. CI: `--with-deps`, then `test:browser` + `test:coverage`
-- Commands: `pnpm test` (jsdom + browser, needs Chromium); filter with `pnpm --filter @khulnasoft/react exec vitest run <name>`
+- Commands: `pnpm test` (jsdom + browser, needs Chromium); filter with `pnpm --filter @prismui/react exec vitest run <name>`
 - Coverage: jsdom-only floors — green ≠ depth. `test:changed`: local jsdom shortcut only, not a merge gate
 
 ### Package-Specific Commands
 
-- Use `--filter` flag with package name: `pnpm build --filter=@khulnasoft/react`
-- Main packages: `@khulnasoft/react`, `@khulnasoft/styles`, `@khulnasoft/docs`, `@khulnasoft/storybook`
+- Use `--filter` flag with package name: `pnpm build --filter=@prismui/react`
+- Main packages: `@prismui/react`, `@khulnasoft/styles`, `@khulnasoft/docs`, `@khulnasoft/storybook`
 
 ## Git Commit Convention
 
@@ -115,7 +115,7 @@ git commit -m "ci: add Claude Code GitHub Action workflow"
 ├── apps/
 │   └── docs/          # Documentation site (Next.js + Fumadocs)
 ├── packages/
-│   ├── react/         # Main UI component library (@khulnasoft/react)
+│   ├── react/         # Main UI component library (@prismui/react)
 │   ├── styles/        # CSS styles & variants (@khulnasoft/styles)
 │   ├── standard/      # Shared ESLint, Prettier, TypeScript configs
 │   ├── storybook/     # Storybook configuration
@@ -539,7 +539,7 @@ This workflow ensures thorough understanding, proper planning, and high-quality 
 
 2. **Testing**:
    - Follow Behavioral tests conventions above (semantics-first, `setupUser`, `data-*` state hooks)
-   - Run `pnpm test` for jsdom + browser; filter with `pnpm --filter @khulnasoft/react exec vitest run <name>`
+   - Run `pnpm test` for jsdom + browser; filter with `pnpm --filter @prismui/react exec vitest run <name>`
    - Place tests under `packages/react/tests/components/<name>/` (`*.test.tsx` / `*.ssr.test.tsx` / `*.browser.test.tsx`, optional `fixtures.tsx`)
    - Prefer arrow functions for harness helpers and test fixtures
 

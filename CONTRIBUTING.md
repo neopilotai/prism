@@ -81,7 +81,7 @@ https://www.conventionalcommits.org/ or check out the
 3. Make and commit your changes following the
    [commit convention](https://github.com/khulnasoft/prismui/blob/main/CONTRIBUTING.md#commit-convention).
    As you go, you can run `pnpm build --filter=<module>` and
-   `pnpm --filter @khulnasoft/react exec vitest run <name>` e.g. `pnpm build --filter=@khulnasoft/react && pnpm --filter @khulnasoft/react exec vitest run avatar` to make sure everything works as expected.
+   `pnpm --filter @prismui/react exec vitest run <name>` e.g. `pnpm build --filter=@prismui/react && pnpm --filter @prismui/react exec vitest run avatar` to make sure everything works as expected.
 
    > To know more about the `--filter` option, please check the turborepo [docs](https://turborepo.org/docs/core-concepts/filtering).
 
@@ -160,13 +160,13 @@ pnpm --filter @khulnasoft/testing exec playwright install chromium
 pnpm test
 
 # Filter by file name (e.g. button.test.tsx)
-pnpm --filter @khulnasoft/react exec vitest run button
+pnpm --filter @prismui/react exec vitest run button
 
 # Coverage report (jsdom project + CI floors only — not a depth bar)
 pnpm test:coverage
 
 # Optional local shortcut: related jsdom tests for changed files (skips browser)
-pnpm --filter @khulnasoft/react test:changed
+pnpm --filter @prismui/react test:changed
 ```
 
 CI (`QA` Test job) installs Chromium with `--with-deps`, then runs `test:browser` and `test:coverage` separately. Do not treat `test:changed` or coverage floors alone as “fully tested.”

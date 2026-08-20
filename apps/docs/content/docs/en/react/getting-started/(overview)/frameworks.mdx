@@ -23,7 +23,7 @@ npx prism-cli@latest init
     Example: `app/page.tsx`
 
     ```tsx
-    import {Button} from "@khulnasoft/react";
+    import {Button} from "@prismui/react";
 
     export default function HomePage() {
       return (
@@ -38,7 +38,7 @@ npx prism-cli@latest init
     Example: `pages/index.tsx`
 
     ```tsx
-    import {Button} from "@khulnasoft/react";
+    import {Button} from "@prismui/react";
 
     export default function HomePage() {
       return (
@@ -64,7 +64,7 @@ In your root layout, determine the user's preferred language and set the `lang` 
 ```tsx
 // app/layout.tsx
 import {headers} from 'next/headers';
-import {isRTL} from '@khulnasoft/react';
+import {isRTL} from '@prismui/react';
 import {ClientProviders} from './provider';
 
 export default async function RootLayout({children}) {
@@ -91,7 +91,7 @@ Create `app/provider.tsx`. This should render an `I18nProvider` to set the local
 // app/provider.tsx
 "use client";
 
-import {I18nProvider} from '@khulnasoft/react';
+import {I18nProvider} from '@prismui/react';
 
 export function ClientProviders({lang, children}) {
   return (
@@ -121,7 +121,7 @@ npx prism-cli@latest init
 Example: `src/App.tsx`
 
 ```tsx
-import {Button} from "@khulnasoft/react";
+import {Button} from "@prismui/react";
 
 function App() {
   return (

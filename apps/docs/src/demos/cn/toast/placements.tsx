@@ -1,6 +1,6 @@
 "use client";
 
-import type {ToastVariants} from "@khulnasoft/react";
+import type {ToastVariants} from "@prismui/react";
 
 import {Button, Toast, ToastQueue} from "@prismui/react";
 
