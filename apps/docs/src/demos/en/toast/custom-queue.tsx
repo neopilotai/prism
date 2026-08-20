@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Toast, ToastQueue} from "@heroui/react";
+import {Button, Toast, ToastQueue} from "@khulnasoft/react";
 
 export function CustomQueue() {
   const notificationQueue = new ToastQueue({maxVisibleToasts: 2});

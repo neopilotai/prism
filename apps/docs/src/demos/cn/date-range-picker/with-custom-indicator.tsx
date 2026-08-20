@@ -1,7 +1,7 @@
 "use client";
 
-import {DateField, DateRangePicker, Description, Label, RangeCalendar} from "@heroui/react";
 import {Icon} from "@iconify/react";
+import {DateField, DateRangePicker, Description, Label, RangeCalendar} from "@khulnasoft/react";
 
 export function WithCustomIndicator() {
   return (

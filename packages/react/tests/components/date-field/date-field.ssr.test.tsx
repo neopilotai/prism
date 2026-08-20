@@ -1,7 +1,7 @@
 import type {ReactNode} from "react";
 
-import {ssrSmoke} from "@heroui/testing/helpers";
 import {CalendarDate} from "@internationalized/date";
+import {ssrSmoke} from "@khulnasoft/testing/helpers";
 
 import {DateField} from "@/components/date-field";
 import {Description} from "@/components/description";

@@ -1,4 +1,4 @@
-import {Kbd} from "@heroui/react";
+import {Kbd} from "@khulnasoft/react";
 
 export function NavigationKeys() {
   return (

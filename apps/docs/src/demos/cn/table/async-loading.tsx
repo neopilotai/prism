@@ -1,6 +1,6 @@
 "use client";
 
-import {Chip, Spinner, Table} from "@heroui/react";
+import {Chip, Spinner, Table} from "@khulnasoft/react";
 import {useCallback, useRef, useState} from "react";
 
 interface User {

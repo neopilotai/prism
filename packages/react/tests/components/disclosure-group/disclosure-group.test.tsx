@@ -1,6 +1,6 @@
 import type {ComponentProps} from "react";
 
-import {render, screen, setupUser} from "@heroui/testing/helpers";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Disclosure} from "@/components/disclosure";
 import {DisclosureGroup} from "@/components/disclosure-group";

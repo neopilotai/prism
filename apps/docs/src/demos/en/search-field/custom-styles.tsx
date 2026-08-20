@@ -1,4 +1,4 @@
-import {Label, SearchField} from "@heroui/react";
+import {Label, SearchField} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

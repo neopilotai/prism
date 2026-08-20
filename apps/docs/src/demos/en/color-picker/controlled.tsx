@@ -1,5 +1,6 @@
 "use client";
 
+import {Icon} from "@iconify/react";
 import {
   Button,
   ColorArea,
@@ -10,8 +11,7 @@ import {
   ColorSwatchPicker,
   Label,
   parseColor,
-} from "@heroui/react";
-import {Icon} from "@iconify/react";
+} from "@khulnasoft/react";
 import {useState} from "react";
 
 export function Controlled() {

@@ -1,4 +1,4 @@
-import {User, cleanup, render, runAllTimers, screen, setupUser} from "@heroui/testing/helpers";
+import {User, cleanup, render, runAllTimers, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {ComboBoxFixture} from "./fixtures";
 

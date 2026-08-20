@@ -1,4 +1,4 @@
-import {Avatar} from "@heroui/react";
+import {Avatar} from "@khulnasoft/react";
 
 export function Colors() {
   return (

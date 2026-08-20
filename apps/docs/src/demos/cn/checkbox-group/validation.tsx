@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Checkbox, CheckboxGroup, FieldError, Form, Label} from "@heroui/react";
+import {Button, Checkbox, CheckboxGroup, FieldError, Form, Label} from "@khulnasoft/react";
 
 export function Validation() {
   return (

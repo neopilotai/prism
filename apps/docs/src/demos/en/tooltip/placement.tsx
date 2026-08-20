@@ -1,4 +1,4 @@
-import {Button, Tooltip} from "@heroui/react";
+import {Button, Tooltip} from "@khulnasoft/react";
 
 export function TooltipPlacement() {
   return (

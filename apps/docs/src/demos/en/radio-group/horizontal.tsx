@@ -1,4 +1,4 @@
-import {Description, Label, Radio, RadioGroup} from "@heroui/react";
+import {Description, Label, Radio, RadioGroup} from "@khulnasoft/react";
 
 export function Horizontal() {
   return (

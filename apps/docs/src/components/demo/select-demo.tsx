@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, ListBox, Select} from "@heroui/react";
+import {Label, ListBox, Select} from "@khulnasoft/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

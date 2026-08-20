@@ -1,7 +1,7 @@
 import type {ComponentProps} from "react";
 import type {Color} from "react-aria-components/ColorArea";
 
-import {render, screen, setupUser} from "@heroui/testing/helpers";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {ColorField} from "@/components/color-field";
 import {Description} from "@/components/description";

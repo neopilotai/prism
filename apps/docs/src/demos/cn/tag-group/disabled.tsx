@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Label, Tag, TagGroup} from "@heroui/react";
+import {Description, Label, Tag, TagGroup} from "@khulnasoft/react";
 
 export function TagGroupDisabled() {
   return (

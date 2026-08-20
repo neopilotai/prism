@@ -1,6 +1,6 @@
 "use client";
 
-import {Calendar} from "@heroui/react";
+import {Calendar} from "@khulnasoft/react";
 
 export function YearPicker() {
   return (

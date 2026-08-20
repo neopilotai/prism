@@ -1,4 +1,4 @@
-import {Label, Meter} from "@heroui/react";
+import {Label, Meter} from "@khulnasoft/react";
 
 const colors = ["default", "accent", "success", "warning", "danger"] as const;
 

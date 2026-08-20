@@ -1,5 +1,5 @@
 import {ArrowUpRightFromSquare, Link as LinkIcon} from "@gravity-ui/icons";
-import {Link} from "@heroui/react";
+import {Link} from "@khulnasoft/react";
 
 export function LinkCustomIcon() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import {CircleCheck} from "@gravity-ui/icons";
-import {Button, Modal} from "@heroui/react";
+import {Button, Modal} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

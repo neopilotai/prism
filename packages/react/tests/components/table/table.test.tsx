@@ -1,6 +1,6 @@
 import type {Selection, SortDescriptor} from "react-aria-components/Table";
 
-import {User, cleanup, render, runAllTimers, screen} from "@heroui/testing/helpers";
+import {User, cleanup, render, runAllTimers, screen} from "@khulnasoft/testing/helpers";
 
 import {Checkbox} from "@/components/checkbox";
 import {Table} from "@/components/table";

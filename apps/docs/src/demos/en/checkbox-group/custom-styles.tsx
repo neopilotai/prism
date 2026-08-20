@@ -1,4 +1,4 @@
-import {Checkbox, CheckboxGroup, Description, Label} from "@heroui/react";
+import {Checkbox, CheckboxGroup, Description, Label} from "@khulnasoft/react";
 
 const controlClassName = "bg-success-soft before:bg-success";
 const indicatorClassName =

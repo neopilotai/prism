@@ -1,4 +1,4 @@
-import {CloseButton} from "@heroui/react";
+import {CloseButton} from "@khulnasoft/react";
 
 export function Variants() {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import {AlertDialog, Button} from "@heroui/react";
+import {AlertDialog, Button} from "@khulnasoft/react";
 
 const PLACEMENT_LABELS = {
   auto: "自动",

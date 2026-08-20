@@ -1,4 +1,4 @@
-import {ssrSmoke} from "@heroui/testing/helpers";
+import {ssrSmoke} from "@khulnasoft/testing/helpers";
 
 import {Label} from "@/components/label";
 import {NumberField} from "@/components/number-field";

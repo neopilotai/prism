@@ -2,6 +2,7 @@
 
 import type {DateValue} from "@internationalized/date";
 
+import {getLocalTimeZone, today} from "@internationalized/date";
 import {
   Button,
   Calendar,
@@ -11,8 +12,7 @@ import {
   FieldError,
   Form,
   Label,
-} from "@heroui/react";
-import {getLocalTimeZone, today} from "@internationalized/date";
+} from "@khulnasoft/react";
 import {useState} from "react";
 
 export function FormExample() {

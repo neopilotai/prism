@@ -1,4 +1,4 @@
-import {InputOTP, Label} from "@heroui/react";
+import {InputOTP, Label} from "@khulnasoft/react";
 
 export function Variants() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
-import {DateField, Description, Label} from "@heroui/react";
 import {getLocalTimeZone, today} from "@internationalized/date";
+import {DateField, Description, Label} from "@khulnasoft/react";
 
 export function Disabled() {
   return (

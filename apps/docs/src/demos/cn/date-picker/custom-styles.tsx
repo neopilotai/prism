@@ -1,6 +1,6 @@
 "use client";
 
-import {Calendar, DateField, DatePicker, Label} from "@heroui/react";
+import {Calendar, DateField, DatePicker, Label} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

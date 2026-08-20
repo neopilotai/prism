@@ -1,5 +1,5 @@
 import {Envelope, Eye} from "@gravity-ui/icons";
-import {InputGroup, Label, TextField} from "@heroui/react";
+import {InputGroup, Label, TextField} from "@khulnasoft/react";
 
 export function FullWidth() {
   return (

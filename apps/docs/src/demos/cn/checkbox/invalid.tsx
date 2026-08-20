@@ -1,4 +1,4 @@
-import {Checkbox, FieldError} from "@heroui/react";
+import {Checkbox, FieldError} from "@khulnasoft/react";
 
 export function Invalid() {
   return (

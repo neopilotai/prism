@@ -1,4 +1,4 @@
-import {render, screen, setupUser} from "@heroui/testing/helpers";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Label} from "@/components/label";
 import {Switch} from "@/components/switch";

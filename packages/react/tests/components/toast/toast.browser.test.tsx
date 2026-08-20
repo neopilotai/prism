@@ -1,4 +1,4 @@
-import {render} from "@heroui/testing/browser";
+import {render} from "@khulnasoft/testing/browser";
 import {page} from "vitest/browser";
 
 import {Toast, ToastQueue} from "@/components/toast";

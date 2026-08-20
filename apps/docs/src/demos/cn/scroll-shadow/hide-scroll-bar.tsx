@@ -1,4 +1,4 @@
-import {ScrollShadow} from "@heroui/react";
+import {ScrollShadow} from "@khulnasoft/react";
 
 export default function HideScrollBar() {
   return (

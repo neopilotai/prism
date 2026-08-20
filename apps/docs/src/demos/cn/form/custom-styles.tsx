@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Form, Input, Label, TextField} from "@heroui/react";
+import {Button, Form, Input, Label, TextField} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

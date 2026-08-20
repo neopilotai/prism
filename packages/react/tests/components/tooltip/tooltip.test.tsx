@@ -1,4 +1,4 @@
-import {act, cleanup, render, runAllTimers, screen, setupUser} from "@heroui/testing/helpers";
+import {act, cleanup, render, runAllTimers, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Button} from "@/components/button";
 import {Tooltip} from "@/components/tooltip";

@@ -1,6 +1,6 @@
 "use client";
 
-import {Breadcrumbs} from "@heroui/react";
+import {Breadcrumbs} from "@khulnasoft/react";
 
 export default function BreadcrumbsLevel2() {
   return (

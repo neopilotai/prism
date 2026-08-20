@@ -1,4 +1,4 @@
-import {Switch, SwitchGroup} from "@heroui/react";
+import {Switch, SwitchGroup} from "@khulnasoft/react";
 
 export function Group() {
   return (

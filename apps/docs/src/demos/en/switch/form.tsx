@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Switch, SwitchGroup} from "@heroui/react";
+import {Button, Switch, SwitchGroup} from "@khulnasoft/react";
 import React from "react";
 
 export function Form() {

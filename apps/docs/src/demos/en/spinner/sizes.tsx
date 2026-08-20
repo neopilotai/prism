@@ -1,4 +1,4 @@
-import {Spinner} from "@heroui/react";
+import {Spinner} from "@khulnasoft/react";
 
 export function SpinnerSizes() {
   return (

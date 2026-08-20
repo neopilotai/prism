@@ -1,4 +1,4 @@
-import {render} from "@heroui/testing/browser";
+import {render} from "@khulnasoft/testing/browser";
 import {page, userEvent} from "vitest/browser";
 
 import {DropdownFixture} from "./fixtures";

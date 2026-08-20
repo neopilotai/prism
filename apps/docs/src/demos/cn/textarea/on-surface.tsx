@@ -1,4 +1,4 @@
-import {Surface, TextArea} from "@heroui/react";
+import {Surface, TextArea} from "@khulnasoft/react";
 
 export function OnSurface() {
   return (

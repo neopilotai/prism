@@ -1,7 +1,7 @@
 import type {ReactNode} from "react";
 
-import {ssrSmoke} from "@heroui/testing/helpers";
 import {CalendarDate} from "@internationalized/date";
+import {ssrSmoke} from "@khulnasoft/testing/helpers";
 
 import {I18nProvider} from "@/components/rac";
 import {RangeCalendar} from "@/components/range-calendar";

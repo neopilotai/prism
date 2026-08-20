@@ -1,6 +1,6 @@
 import type {Color} from "@react-types/color";
 
-import {render, screen, setupUser} from "@heroui/testing/helpers";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {ColorSwatchPicker} from "@/components/color-swatch-picker";
 

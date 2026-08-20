@@ -2,8 +2,8 @@
 
 import type {DateValue} from "@internationalized/date";
 
-import {Description, RangeCalendar} from "@heroui/react";
 import {getLocalTimeZone, today} from "@internationalized/date";
+import {Description, RangeCalendar} from "@khulnasoft/react";
 import {useState} from "react";
 
 type DateRange = {

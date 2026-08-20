@@ -1,6 +1,6 @@
 import type {TabsProps} from "@/components/tabs";
 
-import {User, act, render, screen, waitFor} from "@heroui/testing/helpers";
+import {User, act, render, screen, waitFor} from "@khulnasoft/testing/helpers";
 
 import {Tabs} from "@/components/tabs";
 

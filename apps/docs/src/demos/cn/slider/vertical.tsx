@@ -1,4 +1,4 @@
-import {Label, Slider} from "@heroui/react";
+import {Label, Slider} from "@khulnasoft/react";
 
 export function Vertical() {
   return (

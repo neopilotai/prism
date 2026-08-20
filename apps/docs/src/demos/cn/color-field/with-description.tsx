@@ -1,4 +1,4 @@
-import {ColorField, Description, Label} from "@heroui/react";
+import {ColorField, Description, Label} from "@khulnasoft/react";
 
 export function WithDescription() {
   return (

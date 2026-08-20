@@ -1,4 +1,4 @@
-import {User, render, screen, setupUser} from "@heroui/testing/helpers";
+import {User, render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Description} from "@/components/description";
 import {FieldError} from "@/components/field-error";

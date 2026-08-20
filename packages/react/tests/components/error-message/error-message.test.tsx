@@ -1,6 +1,6 @@
 import type {Key} from "react-aria-components";
 
-import {render, screen, setupUser} from "@heroui/testing/helpers";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 import {useMemo, useState} from "react";
 
 import {ErrorMessage} from "@/components/error-message";

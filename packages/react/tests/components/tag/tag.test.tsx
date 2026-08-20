@@ -1,4 +1,4 @@
-import {render, screen, setupUser} from "@heroui/testing/helpers";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Tag} from "@/components/tag";
 import {TagGroup} from "@/components/tag-group";

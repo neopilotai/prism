@@ -1,4 +1,4 @@
-import {ssrSmoke} from "@heroui/testing/helpers";
+import {ssrSmoke} from "@khulnasoft/testing/helpers";
 
 import {Checkbox} from "@/components/checkbox";
 import {Label} from "@/components/label";

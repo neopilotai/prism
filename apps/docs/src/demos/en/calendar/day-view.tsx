@@ -1,6 +1,6 @@
 "use client";
 
-import {Calendar, Label, ListBox, Select} from "@heroui/react";
+import {Calendar, Label, ListBox, Select} from "@khulnasoft/react";
 import {useState} from "react";
 
 const dayOptions = [

@@ -1,4 +1,4 @@
-import {Label, NumberField} from "@heroui/react";
+import {Label, NumberField} from "@khulnasoft/react";
 
 export function Basic() {
   return (

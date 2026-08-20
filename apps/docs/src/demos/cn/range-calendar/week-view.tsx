@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, ListBox, RangeCalendar, Select} from "@heroui/react";
+import {Label, ListBox, RangeCalendar, Select} from "@khulnasoft/react";
 import {useState} from "react";
 
 const weekOptions = [

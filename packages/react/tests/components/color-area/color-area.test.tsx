@@ -1,6 +1,6 @@
 import type {Color} from "@react-types/color";
 
-import {act, render, screen, setupUser} from "@heroui/testing/helpers";
+import {act, render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {ColorArea} from "@/components/color-area";
 

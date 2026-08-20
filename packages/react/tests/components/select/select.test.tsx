@@ -1,4 +1,4 @@
-import {User, cleanup, render, runAllTimers, screen} from "@heroui/testing/helpers";
+import {User, cleanup, render, runAllTimers, screen} from "@khulnasoft/testing/helpers";
 
 import {SelectFixture} from "./fixtures";
 

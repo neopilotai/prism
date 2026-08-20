@@ -1,5 +1,5 @@
 import {Heart, HeartFill} from "@gravity-ui/icons";
-import {ToggleButton} from "@heroui/react";
+import {ToggleButton} from "@khulnasoft/react";
 
 export function Disabled() {
   return (

@@ -1,4 +1,4 @@
-import {Button, Drawer} from "@heroui/react";
+import {Button, Drawer} from "@khulnasoft/react";
 
 const PLACEMENT_LABELS = {
   bottom: "底部",

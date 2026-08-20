@@ -1,4 +1,4 @@
-import {fireEvent, render, screen, setupUser} from "@heroui/testing/helpers";
+import {fireEvent, render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {CloseButton} from "@/components/close-button";
 

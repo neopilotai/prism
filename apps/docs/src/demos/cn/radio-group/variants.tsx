@@ -1,4 +1,4 @@
-import {Description, Radio, RadioGroup} from "@heroui/react";
+import {Description, Radio, RadioGroup} from "@khulnasoft/react";
 
 export function Variants() {
   return (

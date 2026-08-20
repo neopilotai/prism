@@ -1,4 +1,4 @@
-import {User, render, screen, setupUser} from "@heroui/testing/helpers";
+import {User, render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Checkbox} from "@/components/checkbox";
 import {CheckboxGroup} from "@/components/checkbox-group";

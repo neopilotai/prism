@@ -2,8 +2,8 @@
 
 import type {DateValue} from "@internationalized/date";
 
-import {Button, RangeCalendar} from "@heroui/react";
 import {getLocalTimeZone, isWeekend, today} from "@internationalized/date";
+import {Button, RangeCalendar} from "@khulnasoft/react";
 import {useState} from "react";
 import {useLocale} from "react-aria-components";
 

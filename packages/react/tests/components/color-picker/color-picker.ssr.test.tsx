@@ -1,4 +1,4 @@
-import {ssrSmoke} from "@heroui/testing/helpers";
+import {ssrSmoke} from "@khulnasoft/testing/helpers";
 
 import {ColorArea} from "@/components/color-area";
 import {ColorPicker} from "@/components/color-picker";

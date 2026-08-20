@@ -1,4 +1,4 @@
-import {Label, ListBox, Select} from "@heroui/react";
+import {Label, ListBox, Select} from "@khulnasoft/react";
 
 const itemClass =
   "rounded-lg data-[focused=true]:bg-accent/10 data-[selected=true]:text-foreground";

@@ -1,4 +1,4 @@
-import {ssrSmoke} from "@heroui/testing/helpers";
+import {ssrSmoke} from "@khulnasoft/testing/helpers";
 
 import {ColorField} from "@/components/color-field";
 import {Label} from "@/components/label";

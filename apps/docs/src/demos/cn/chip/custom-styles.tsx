@@ -1,4 +1,4 @@
-import {Chip} from "@heroui/react";
+import {Chip} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

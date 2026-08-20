@@ -1,6 +1,6 @@
 "use client";
 
-import {Switch} from "@heroui/react";
+import {Switch} from "@khulnasoft/react";
 
 export function RenderFunction() {
   return (

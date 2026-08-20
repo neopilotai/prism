@@ -1,4 +1,4 @@
-import {ColorArea, ColorPicker, ColorSlider, ColorSwatch, Label} from "@heroui/react";
+import {ColorArea, ColorPicker, ColorSlider, ColorSwatch, Label} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

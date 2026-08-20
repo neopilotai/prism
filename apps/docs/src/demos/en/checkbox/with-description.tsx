@@ -1,4 +1,4 @@
-import {Checkbox, Description} from "@heroui/react";
+import {Checkbox, Description} from "@khulnasoft/react";
 
 export function WithDescription() {
   return (

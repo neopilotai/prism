@@ -1,4 +1,4 @@
-import {render, screen} from "@heroui/testing/helpers";
+import {render, screen} from "@khulnasoft/testing/helpers";
 
 import {Label} from "@/components/label";
 import {ProgressBar} from "@/components/progress-bar";

@@ -1,4 +1,4 @@
-import {Link} from "@heroui/react";
+import {Link} from "@khulnasoft/react";
 
 export function LinkUnderlineAndOffset() {
   return (

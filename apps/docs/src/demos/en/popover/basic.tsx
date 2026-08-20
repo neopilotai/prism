@@ -1,4 +1,4 @@
-import {Button, Popover} from "@heroui/react";
+import {Button, Popover} from "@khulnasoft/react";
 
 export function PopoverBasic() {
   return (

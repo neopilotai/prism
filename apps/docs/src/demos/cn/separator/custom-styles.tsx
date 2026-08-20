@@ -1,4 +1,4 @@
-import {Separator} from "@heroui/react";
+import {Separator} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

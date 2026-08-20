@@ -1,7 +1,7 @@
 import type {DateValue} from "@internationalized/date";
 
-import {cleanup, render, runAllTimers, screen, setupUser} from "@heroui/testing/helpers";
 import {CalendarDate} from "@internationalized/date";
+import {cleanup, render, runAllTimers, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Calendar} from "@/components/calendar";
 import {DateField} from "@/components/date-field";

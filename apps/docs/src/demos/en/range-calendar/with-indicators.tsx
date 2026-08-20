@@ -1,7 +1,7 @@
 "use client";
 
-import {RangeCalendar} from "@heroui/react";
 import {getLocalTimeZone, isToday} from "@internationalized/date";
+import {RangeCalendar} from "@khulnasoft/react";
 
 const datesWithEvents = [3, 7, 12, 15, 21, 28];
 

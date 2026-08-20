@@ -1,6 +1,6 @@
 "use client";
 
-import {Table, TableLayout, Virtualizer} from "@heroui/react";
+import {Table, TableLayout, Virtualizer} from "@khulnasoft/react";
 
 interface User {
   id: number;

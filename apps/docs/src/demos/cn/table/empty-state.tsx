@@ -1,7 +1,7 @@
 "use client";
 
-import {EmptyState, Table} from "@heroui/react";
 import {Icon} from "@iconify/react";
+import {EmptyState, Table} from "@khulnasoft/react";
 
 export function EmptyStateDemo() {
   return (

@@ -1,4 +1,4 @@
-import {Description, Switch} from "@heroui/react";
+import {Description, Switch} from "@khulnasoft/react";
 
 export function WithDescription() {
   return (

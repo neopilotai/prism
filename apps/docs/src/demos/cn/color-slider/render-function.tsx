@@ -1,6 +1,6 @@
 "use client";
 
-import {ColorSlider, Label} from "@heroui/react";
+import {ColorSlider, Label} from "@khulnasoft/react";
 
 export function RenderFunction() {
   return (

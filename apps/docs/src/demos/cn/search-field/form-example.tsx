@@ -1,6 +1,14 @@
 "use client";
 
-import {Button, Description, FieldError, Form, Label, SearchField, Spinner} from "@heroui/react";
+import {
+  Button,
+  Description,
+  FieldError,
+  Form,
+  Label,
+  SearchField,
+  Spinner,
+} from "@khulnasoft/react";
 import React from "react";
 
 export function FormExample() {

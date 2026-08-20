@@ -1,6 +1,6 @@
 "use client";
 
-import {ComboBox, Description, Input, Label, ListBox} from "@heroui/react";
+import {ComboBox, Description, Input, Label, ListBox} from "@khulnasoft/react";
 
 export function AllowsCustomValue() {
   return (

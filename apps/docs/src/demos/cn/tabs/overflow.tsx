@@ -1,4 +1,4 @@
-import {Tabs} from "@heroui/react";
+import {Tabs} from "@khulnasoft/react";
 
 const items = [
   {id: "overview", label: "概览"},

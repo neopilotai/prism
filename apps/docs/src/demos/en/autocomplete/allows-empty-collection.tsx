@@ -1,6 +1,6 @@
 "use client";
 
-import {Autocomplete, EmptyState, Label, ListBox, SearchField, useFilter} from "@heroui/react";
+import {Autocomplete, EmptyState, Label, ListBox, SearchField, useFilter} from "@khulnasoft/react";
 
 export function AllowsEmptyCollection() {
   const {contains} = useFilter({sensitivity: "base"});

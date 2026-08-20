@@ -1,7 +1,7 @@
 import type {ReactNode} from "react";
 
-import {ssrSmoke} from "@heroui/testing/helpers";
 import {Time} from "@internationalized/date";
+import {ssrSmoke} from "@khulnasoft/testing/helpers";
 
 import {Description} from "@/components/description";
 import {FieldError} from "@/components/field-error";

@@ -1,4 +1,4 @@
-import {Checkbox} from "@heroui/react";
+import {Checkbox} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

@@ -2,8 +2,8 @@
 
 import type {DateValue} from "@internationalized/date";
 
-import {Button, Description, RangeCalendar} from "@heroui/react";
 import {parseDate} from "@internationalized/date";
+import {Button, Description, RangeCalendar} from "@khulnasoft/react";
 import {useState} from "react";
 
 export function FocusedValue() {

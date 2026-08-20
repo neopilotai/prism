@@ -8,7 +8,7 @@ import {
   ListBox,
   SearchField,
   useFilter,
-} from "@heroui/react";
+} from "@khulnasoft/react";
 import {useState} from "react";
 
 export function ControlledOpenState() {

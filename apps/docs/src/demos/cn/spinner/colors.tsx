@@ -1,4 +1,4 @@
-import {Spinner} from "@heroui/react";
+import {Spinner} from "@khulnasoft/react";
 
 const COLOR_LABELS = {
   accent: "强调",

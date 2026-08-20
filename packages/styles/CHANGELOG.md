@@ -1,4 +1,4 @@
-# @heroui/styles
+# @khulnasoft/styles
 
 ## 3.0.1
 

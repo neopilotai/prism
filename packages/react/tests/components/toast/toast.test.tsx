@@ -1,4 +1,4 @@
-import {act, cleanup, render, runAllTimers, screen, setupUser} from "@heroui/testing/helpers";
+import {act, cleanup, render, runAllTimers, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Toast, ToastQueue} from "@/components/toast";
 

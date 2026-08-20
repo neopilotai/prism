@@ -1,4 +1,4 @@
-import {Typography} from "@heroui/react";
+import {Typography} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

@@ -1,4 +1,4 @@
-import {render, screen, setupUser} from "@heroui/testing/helpers";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {ToggleButton} from "@/components/toggle-button";
 import {ToggleButtonGroup} from "@/components/toggle-button-group";

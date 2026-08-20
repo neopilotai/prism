@@ -1,4 +1,4 @@
-import {Skeleton} from "@heroui/react";
+import {Skeleton} from "@khulnasoft/react";
 
 export function UserProfile() {
   return (

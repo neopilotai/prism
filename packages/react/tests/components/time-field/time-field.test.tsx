@@ -1,8 +1,8 @@
 import type {ComponentProps} from "react";
 import type {TimeValue} from "react-aria-components";
 
-import {render, screen, setupUser} from "@heroui/testing/helpers";
 import {Time} from "@internationalized/date";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Description} from "@/components/description";
 import {FieldError} from "@/components/field-error";

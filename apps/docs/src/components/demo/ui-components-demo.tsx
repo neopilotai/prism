@@ -1,6 +1,6 @@
 "use client";
 
-import {Checkbox, Radio, RadioGroup, Spinner, Switch} from "@heroui/react";
+import {Checkbox, Radio, RadioGroup, Spinner, Switch} from "@khulnasoft/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

@@ -1,6 +1,6 @@
 import type {ReactNode} from "react";
 
-import {ssrSmoke} from "@heroui/testing/helpers";
+import {ssrSmoke} from "@khulnasoft/testing/helpers";
 import {useFilter} from "react-aria-components/Autocomplete";
 
 import {Autocomplete} from "@/components/autocomplete";

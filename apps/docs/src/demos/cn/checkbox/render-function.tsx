@@ -1,6 +1,6 @@
 "use client";
 
-import {Checkbox, Label} from "@heroui/react";
+import {Checkbox, Label} from "@khulnasoft/react";
 
 export function RenderFunction() {
   return (

@@ -1,4 +1,4 @@
-import {Alert, Button, CloseButton} from "@heroui/react";
+import {Alert, Button, CloseButton} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

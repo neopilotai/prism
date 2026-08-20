@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Label, ListBox, Select} from "@heroui/react";
+import {Button, Label, ListBox, Select} from "@khulnasoft/react";
 import {useState} from "react";
 
 export function ControlledOpenState() {

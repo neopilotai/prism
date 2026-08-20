@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Form, InputOTP, Label, Spinner} from "@heroui/react";
+import {Button, Form, InputOTP, Label, Spinner} from "@khulnasoft/react";
 import React from "react";
 
 export function OnComplete() {

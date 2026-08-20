@@ -1,4 +1,4 @@
-import {Surface} from "@heroui/react";
+import {Surface} from "@khulnasoft/react";
 
 export function Basic() {
   return (

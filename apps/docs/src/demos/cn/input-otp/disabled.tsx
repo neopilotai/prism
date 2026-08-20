@@ -1,4 +1,4 @@
-import {Description, InputOTP, Label} from "@heroui/react";
+import {Description, InputOTP, Label} from "@khulnasoft/react";
 
 export function Disabled() {
   return (

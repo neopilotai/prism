@@ -1,6 +1,6 @@
 "use client";
 
-import {Input, Surface, TextArea} from "@heroui/react";
+import {Input, Surface, TextArea} from "@khulnasoft/react";
 
 export function WithFormComponents() {
   return (

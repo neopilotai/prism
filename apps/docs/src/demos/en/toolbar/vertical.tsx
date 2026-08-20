@@ -6,7 +6,7 @@ import {
   ToggleButton,
   ToggleButtonGroup,
   Toolbar,
-} from "@heroui/react";
+} from "@khulnasoft/react";
 
 export function Vertical() {
   return (

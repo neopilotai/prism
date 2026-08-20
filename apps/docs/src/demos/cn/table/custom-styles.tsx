@@ -1,4 +1,4 @@
-import {Table} from "@heroui/react";
+import {Table} from "@khulnasoft/react";
 
 const headerCell = "text-xs font-semibold uppercase tracking-wide text-muted";
 

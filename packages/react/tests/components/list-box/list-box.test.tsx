@@ -1,6 +1,6 @@
 import type {Key, Selection} from "@react-types/shared";
 
-import {User, render, screen} from "@heroui/testing/helpers";
+import {User, render, screen} from "@khulnasoft/testing/helpers";
 
 import {Header} from "@/components/header";
 import {Label} from "@/components/label";

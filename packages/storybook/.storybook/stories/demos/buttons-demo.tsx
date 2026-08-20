@@ -1,4 +1,4 @@
-import {Button} from "@heroui/react";
+import {Button} from "@khulnasoft/react";
 import React from "react";
 
 export const ButtonsDemo = () => {

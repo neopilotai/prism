@@ -1,5 +1,5 @@
-import {Description, Label, Radio, RadioGroup} from "@heroui/react";
 import {Icon} from "@iconify/react";
+import {Description, Label, Radio, RadioGroup} from "@khulnasoft/react";
 import clsx from "clsx";
 
 export function DeliveryAndPayment() {

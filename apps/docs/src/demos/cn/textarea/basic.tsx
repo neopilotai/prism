@@ -1,4 +1,4 @@
-import {TextArea} from "@heroui/react";
+import {TextArea} from "@khulnasoft/react";
 
 export function Basic() {
   return (

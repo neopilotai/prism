@@ -1,5 +1,5 @@
 import {Bold, Italic, Strikethrough, Underline} from "@gravity-ui/icons";
-import {ToggleButton, ToggleButtonGroup} from "@heroui/react";
+import {ToggleButton, ToggleButtonGroup} from "@khulnasoft/react";
 
 export function Attached() {
   return (

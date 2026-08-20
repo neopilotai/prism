@@ -1,4 +1,4 @@
-import {Tabs} from "@heroui/react";
+import {Tabs} from "@khulnasoft/react";
 
 export function Basic() {
   return (

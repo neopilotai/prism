@@ -1,4 +1,4 @@
-import {InputOTP, Label, Link} from "@heroui/react";
+import {InputOTP, Label, Link} from "@khulnasoft/react";
 
 export function Basic() {
   return (

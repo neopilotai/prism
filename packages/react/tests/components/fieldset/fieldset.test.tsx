@@ -1,4 +1,4 @@
-import {render, screen} from "@heroui/testing/helpers";
+import {render, screen} from "@khulnasoft/testing/helpers";
 
 import {Fieldset} from "@/components/fieldset";
 

@@ -1,8 +1,8 @@
 import type {DateValue} from "@internationalized/date";
 import type {ComponentProps} from "react";
 
-import {render, screen, setupUser} from "@heroui/testing/helpers";
 import {CalendarDate} from "@internationalized/date";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {RangeCalendar} from "@/components/range-calendar";
 

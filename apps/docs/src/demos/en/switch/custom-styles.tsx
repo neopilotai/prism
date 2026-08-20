@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Label, Switch} from "@heroui/react";
+import {Description, Label, Switch} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (

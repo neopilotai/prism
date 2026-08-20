@@ -1,4 +1,4 @@
-import {render, screen, setupUser} from "@heroui/testing/helpers";
+import {render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {Button} from "@/components/button";
 import {ButtonGroup} from "@/components/button-group";

@@ -1,6 +1,6 @@
 "use client";
 
-import {Alert, Button} from "@heroui/react";
+import {Alert, Button} from "@khulnasoft/react";
 
 import {useDictionary} from "@/hooks/use-dictionary";
 

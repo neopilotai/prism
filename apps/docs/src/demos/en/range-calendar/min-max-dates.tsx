@@ -1,7 +1,7 @@
 "use client";
 
-import {Description, RangeCalendar} from "@heroui/react";
 import {getLocalTimeZone, today} from "@internationalized/date";
+import {Description, RangeCalendar} from "@khulnasoft/react";
 
 export function MinMaxDates() {
   const now = today(getLocalTimeZone());

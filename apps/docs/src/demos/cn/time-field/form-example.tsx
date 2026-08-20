@@ -3,8 +3,8 @@
 import type {Time} from "@internationalized/date";
 
 import {Clock} from "@gravity-ui/icons";
-import {Button, Description, FieldError, Form, Label, TimeField} from "@heroui/react";
 import {parseTime} from "@internationalized/date";
+import {Button, Description, FieldError, Form, Label, TimeField} from "@khulnasoft/react";
 import {useState} from "react";
 
 export function FormExample() {

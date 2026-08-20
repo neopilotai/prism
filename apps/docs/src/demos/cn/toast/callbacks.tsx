@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, toast} from "@heroui/react";
+import {Button, toast} from "@khulnasoft/react";
 import React from "react";
 
 export function Callbacks() {

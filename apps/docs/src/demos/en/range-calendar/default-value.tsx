@@ -1,7 +1,7 @@
 "use client";
 
-import {RangeCalendar} from "@heroui/react";
 import {parseDate} from "@internationalized/date";
+import {RangeCalendar} from "@khulnasoft/react";
 
 export function DefaultValue() {
   return (

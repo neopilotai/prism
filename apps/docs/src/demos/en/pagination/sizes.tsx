@@ -1,6 +1,6 @@
 "use client";
 
-import {Pagination} from "@heroui/react";
+import {Pagination} from "@khulnasoft/react";
 import {useState} from "react";
 
 function SizePagination({size}: {size: "sm" | "md" | "lg"}) {

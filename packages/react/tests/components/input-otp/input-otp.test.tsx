@@ -1,6 +1,6 @@
 import type {InputOTPProps} from "@/components/input-otp";
 
-import {cleanup, render, screen, setupUser} from "@heroui/testing/helpers";
+import {cleanup, render, screen, setupUser} from "@khulnasoft/testing/helpers";
 
 import {FieldError} from "@/components/field-error";
 import {InputOTP} from "@/components/input-otp";

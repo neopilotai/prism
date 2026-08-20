@@ -1,4 +1,4 @@
-import {ColorArea} from "@heroui/react";
+import {ColorArea} from "@khulnasoft/react";
 
 export function ColorAreaBasic() {
   return (

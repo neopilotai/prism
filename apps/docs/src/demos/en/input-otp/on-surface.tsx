@@ -1,4 +1,4 @@
-import {InputOTP, Label, Link, Surface} from "@heroui/react";
+import {InputOTP, Label, Link, Surface} from "@khulnasoft/react";
 
 export function OnSurface() {
   return (

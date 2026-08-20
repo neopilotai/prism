@@ -3,8 +3,8 @@
 import type {DateValue} from "@internationalized/date";
 
 import {Calendar} from "@gravity-ui/icons";
-import {Button, DateField, Description, FieldError, Form, Label} from "@heroui/react";
 import {getLocalTimeZone, today} from "@internationalized/date";
+import {Button, DateField, Description, FieldError, Form, Label} from "@khulnasoft/react";
 import {useState} from "react";
 
 export function FormExample() {

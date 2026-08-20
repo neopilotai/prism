@@ -1,7 +1,7 @@
 "use client";
 
 import {Paperclip} from "@gravity-ui/icons";
-import {Button, Spinner} from "@heroui/react";
+import {Button, Spinner} from "@khulnasoft/react";
 import React, {useState} from "react";
 
 export function LoadingState() {
