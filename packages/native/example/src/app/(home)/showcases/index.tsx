@@ -10,9 +10,9 @@ const StyledIonicons = withUniwind(Ionicons);
 const data = [
   {
     imageLight:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/super-app-paywall-light.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/super-app-paywall-light.png',
     imageDark:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/super-app-paywall-dark.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/super-app-paywall-dark.png',
     title: 'Super App Paywall',
     description:
       'Modern subscription paywall, featuring animated bottom sheet, tab navigation, and flexible plan options.',
@@ -27,9 +27,9 @@ const data = [
   },
   {
     imageLight:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/raycast-showcase-light.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/raycast-showcase-light.png',
     imageDark:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/raycast-showcase-dark.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/raycast-showcase-dark.png',
     title: 'Raycast Model Select',
     description:
       'AI model selector with animated blur backdrop, progressive blurs, and smooth spring transitions inspired by Raycast.',
@@ -42,9 +42,9 @@ const data = [
   },
   {
     imageLight:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/cooking-onboarding-light-1.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/cooking-onboarding-light-1.png',
     imageDark:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/cooking-onboarding-dark-1.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/cooking-onboarding-dark-1.png',
     title: 'Cooking Onboarding',
     description:
       'Multi-step onboarding experience with automated popover sequences, state management, and interactive recipe features.',
@@ -58,9 +58,9 @@ const data = [
   },
   {
     imageLight:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/linear-task-light.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/linear-task-light.png',
     imageDark:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/linear-task-dark.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/linear-task-dark.png',
     title: 'Linear Issue',
     description:
       'Interactive task management interface inspired by Linear, featuring dynamic dialogs and status updates.',
@@ -78,9 +78,9 @@ const data = [
   },
   {
     imageLight:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/showcase-paywall.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/showcase-paywall.png',
     imageDark:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/showcase-paywall.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/showcase-paywall.png',
     title: 'Hero Paywall',
     description:
       'Modern, animated paywall with free trial, secure checkout, and flexible plans.',
@@ -94,9 +94,9 @@ const data = [
   },
   {
     imageLight:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/showcases-onboarding-light-1.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/showcases-onboarding-light-1.png',
     imageDark:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/showcases-onboarding-dark-1.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/showcases-onboarding-dark-1.png',
     title: 'Onboarding',
     description: 'Onboarding step with marquee carousel of shadowed cards.',
     href: '/showcases/onboarding',

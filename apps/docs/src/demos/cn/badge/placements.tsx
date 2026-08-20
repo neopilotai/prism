@@ -1,6 +1,6 @@
-import {Avatar, Badge} from "@heroui/react";
+import {Avatar, Badge} from "@khulnasoft/react";
 
-const AVATAR_URL = "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg";
+const AVATAR_URL = "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg";
 
 const placements = ["top-right", "top-left", "bottom-right", "bottom-left"] as const;
 

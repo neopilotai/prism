@@ -200,9 +200,9 @@ function mcpApiDocument(kind: "react" | "native"): OpenAPIDocument {
 }
 
 const OPENAPI_BUILDERS: Record<string, (origin: string) => OpenAPIDocument> = {
-  "heroui-agent-api.json": agentApiDocument,
-  "heroui-native-mcp-api.json": () => mcpApiDocument("native"),
-  "heroui-react-mcp-api.json": () => mcpApiDocument("react"),
+  "prismui-agent-api.json": agentApiDocument,
+  "prismui-native-mcp-api.json": () => mcpApiDocument("native"),
+  "prismui-react-mcp-api.json": () => mcpApiDocument("react"),
 };
 
 export async function GET(request: Request, {params}: {params: Promise<{api: string}>}) {

@@ -30,7 +30,7 @@ export function RenderFunction() {
             <img
               alt="Expo Go 二维码"
               className="aspect-square w-full max-w-54 object-cover"
-              src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
+              src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
             />
             <p className="text-sm text-muted">设备需已安装 Expo。</p>
             <Button className="mt-4" variant="primary">

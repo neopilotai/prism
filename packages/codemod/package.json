@@ -1,5 +1,5 @@
 {
-  "name": "@heroui/codemod",
+  "name": "@prismui/codemod",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -36,7 +36,7 @@
     "dist"
   ],
   "bin": {
-    "heroui-codemod": "./dist/index.js"
+    "prismui-codemod": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -44,14 +44,14 @@
   "scripts": {
     "dev": "tsup --watch",
     "link:cli": "pnpm link --global",
-    "link:remove": "pnpm uninstall --global heroui-codemod",
+    "link:remove": "pnpm uninstall --global prismui-codemod",
     "build": "tsup",
     "lint": "eslint . --max-warnings=0",
     "lint:fix": "eslint . --max-warnings=0 --fix",
     "check:prettier": "prettier --check .",
     "check:types": "tsc --noEmit",
     "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s --commit-path .",
-    "release": "bumpp --execute='pnpm run changelog' --all --tag 'heroui-codemodv%s'",
+    "release": "bumpp --execute='pnpm run changelog' --all --tag 'prismui-codemodv%s'",
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {

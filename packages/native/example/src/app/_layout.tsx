@@ -29,7 +29,7 @@ import '../i18n/polyfills';
 import { I18nProvider } from '@lingui/react';
 import { Slot } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { PrismUINativeProvider } from 'heroui-native';
+import { PrismUINativeProvider } from 'prismui-native';
 import { useCallback } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';

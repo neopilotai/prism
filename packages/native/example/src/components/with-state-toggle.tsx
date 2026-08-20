@@ -1,4 +1,4 @@
-import { ControlField, Description, Label, Separator } from 'heroui-native';
+import { ControlField, Description, Label, Separator } from 'prismui-native';
 import { type FC, type ReactNode } from 'react';
 import { Platform, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';

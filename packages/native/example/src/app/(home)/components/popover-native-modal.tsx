@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useLingui } from '@lingui/react/macro';
-import { Button, Popover } from 'heroui-native';
+import { Button, Popover } from 'prismui-native';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { withUniwind } from 'uniwind';

@@ -8,7 +8,7 @@ import {CopyPromptButton} from "./copy-prompt-button";
 interface SetupPromptConfig {
   /** Docs path segment used for resource links, e.g. `react`. */
   docsPath: string;
-  /** Skill / MCP server / install identifier, e.g. `heroui-react`. */
+  /** Skill / MCP server / install identifier, e.g. `prismui-react`. */
   id: string;
   /** One-line summary of what is being built, e.g. ``UIs with PrismUI v3 (`@khulnasoft/react`)``. */
   intro: string;
@@ -52,7 +52,7 @@ curl -fsSL https://prism.khulnasoft.com/install | bash -s ${id}
 Or using the skills package:
 
 \`\`\`
-npx skills add khulnasoft/heroui
+npx skills add khulnasoft/prismui
 \`\`\`
 
 ## 2. Register the ${productName} MCP server
@@ -136,7 +136,7 @@ These instructions are published at https://prism.khulnasoft.com/docs/${docsPath
 
 const REACT_PROMPT = buildSetupPrompt({
   docsPath: "react",
-  id: "heroui-react",
+  id: "prismui-react",
   intro: "UIs with PrismUI v3 (`@khulnasoft/react`)",
   mcpAccess: "component docs, source code, CSS, and theme variables",
   mcpPackage: "@khulnasoft/react-mcp",
@@ -145,8 +145,8 @@ const REACT_PROMPT = buildSetupPrompt({
 
 const NATIVE_PROMPT = buildSetupPrompt({
   docsPath: "native",
-  id: "heroui-native",
-  intro: "mobile UIs with PrismUI Native (`heroui-native`)",
+  id: "prismui-native",
+  intro: "mobile UIs with PrismUI Native (`prismui-native`)",
   mcpAccess: "component docs, theme variables, and setup guides",
   mcpPackage: "@khulnasoft/native-mcp",
   productName: "PrismUI Native",

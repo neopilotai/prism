@@ -1,5 +1,5 @@
-import {render} from "@heroui/testing/browser";
-import {isDocumentScrollLocked} from "@heroui/testing/helpers";
+import {render} from "@khulnasoft/testing/browser";
+import {isDocumentScrollLocked} from "@prismuisoft/testing/helpers";
 import {page, userEvent} from "vitest/browser";
 
 import {ModalFixture} from "./fixtures";

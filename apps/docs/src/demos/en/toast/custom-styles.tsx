@@ -1,6 +1,6 @@
 "use client";
 
-import type {ToastContentValue} from "@heroui/react";
+import type {ToastContentValue} from "@khulnasoft/react";
 
 import {
   Button,
@@ -10,7 +10,7 @@ import {
   ToastIndicator,
   ToastQueue,
   ToastTitle,
-} from "@heroui/react";
+} from "@prismuisoft/react";
 
 export function CustomStyles() {
   const queue = new ToastQueue();

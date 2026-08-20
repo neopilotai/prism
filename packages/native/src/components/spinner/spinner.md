@@ -5,7 +5,7 @@ Displays an animated loading indicator.
 ## Import
 
 ```tsx
-import { Spinner } from 'heroui-native';
+import { Spinner } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -97,7 +97,7 @@ const themeColorForeground = useThemeColor('foreground')
 ## Example
 
 ```tsx
-import { Spinner } from 'heroui-native';
+import { Spinner } from 'prismui-native';
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
@@ -134,7 +134,7 @@ export default function SpinnerExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/spinner.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/spinner.tsx>).
 
 ## API Reference
 

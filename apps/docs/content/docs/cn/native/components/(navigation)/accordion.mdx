@@ -8,14 +8,14 @@ links:
 
 <NativeVideoPlayerView
   target="auto"
-  srcLight="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/accordion-docs-light.mp4"
-  srcDark="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/accordion-docs-dark-1.mp4"
+  srcLight="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/accordion-docs-light.mp4"
+  srcDark="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/accordion-docs-dark-1.mp4"
 />
 
 ## 导入
 
 ```tsx
-import { Accordion } from 'heroui-native';
+import { Accordion } from 'prismui-native';
 ```
 
 ## 结构
@@ -173,7 +173,7 @@ Accordion 通过复合子组件创建可展开的内容区块。
 对 `Accordion.Trigger` 使用 `asChild`，并用 `PressableFeedback` 包裹内容以添加按压反馈动画。
 
 ```tsx
-import { Accordion, PressableFeedback } from 'heroui-native';
+import { Accordion, PressableFeedback } from 'prismui-native';
 import { View } from 'react-native';
 
 <Accordion>
@@ -197,7 +197,7 @@ import { View } from 'react-native';
 ## 示例
 
 ```tsx
-import { Accordion, useThemeColor } from 'heroui-native';
+import { Accordion, useThemeColor } from 'prismui-native';
 import { Ionicons } from '@expo/vector-icons';
 import { View, Text } from 'react-native';
 
@@ -253,7 +253,7 @@ export default function AccordionExample() {
 }
 ```
 
-更多示例见 [GitHub 仓库](https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/accordion.tsx)。
+更多示例见 [GitHub 仓库](https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/accordion.tsx)。
 
 ## API 参考
 
@@ -392,7 +392,7 @@ export default function AccordionExample() {
 访问手风琴根上下文，必须在 `Accordion` 内使用。
 
 ```tsx
-import { useAccordion } from 'heroui-native';
+import { useAccordion } from 'prismui-native';
 
 const { value, onValueChange, selectionMode, isCollapsible, isDisabled } =
   useAccordion();
@@ -413,7 +413,7 @@ const { value, onValueChange, selectionMode, isCollapsible, isDisabled } =
 访问单条条目上下文，必须在 `Accordion.Item` 内使用。
 
 ```tsx
-import { useAccordionItem } from 'heroui-native';
+import { useAccordionItem } from 'prismui-native';
 
 const { value, isExpanded, isDisabled, nativeID } = useAccordionItem();
 ```
@@ -432,7 +432,7 @@ const { value, isExpanded, isDisabled, nativeID } = useAccordionItem();
 当 Accordion 与同屏其他组件一起使用时，请为这些组件导入并应用 `AccordionLayoutTransition`，以保证整屏布局动画一致、顺滑。
 
 ```jsx
-import { Accordion, AccordionLayoutTransition } from 'heroui-native';
+import { Accordion, AccordionLayoutTransition } from 'prismui-native';
 import Animated from 'react-native-reanimated';
 
 <Animated.ScrollView layout={AccordionLayoutTransition}>

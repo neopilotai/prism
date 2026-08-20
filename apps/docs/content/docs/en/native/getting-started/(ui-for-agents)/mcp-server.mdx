@@ -6,13 +6,13 @@ description: Access PrismUI Native documentation directly in your AI assistant
 The PrismUI MCP Server gives AI assistants direct access to PrismUI Native component documentation, making it easier to build with PrismUI in AI-powered development environments.
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/hero-native-mcp-light-new.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/hero-native-mcp-dark-new.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/hero-native-mcp-light-new.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/hero-native-mcp-dark-new.jpg"
   alt="PrismUI v3 MCP Server"
 />
 
 
-The MCP server currently supports **heroui-native** and [stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio). Published at `@khulnasoft/native-mcp` on npm. View the source code on [GitHub](https://github.com/khulnasoft/heroui-mcp).
+The MCP server currently supports **prismui-native** and [stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio). Published at `@khulnasoft/native-mcp` on npm. View the source code on [GitHub](https://github.com/khulnasoft/prismui-mcp).
 
 <Callout>
   As we add more components to PrismUI Native, they'll be available in the MCP server too.
@@ -39,7 +39,7 @@ Or manually add to **Cursor Settings** → **Tools** → **MCP Servers**:
 ```json title=".cursor/mcp.json"
 {
   "mcpServers": {
-    "heroui-native": {
+    "prismui-native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -52,7 +52,7 @@ Alternatively, add the following to your `~/.cursor/mcp.json` file. To learn mor
 **Claude Code:** Run this command in your terminal:
 
 ```bash
-claude mcp add heroui-native -- npx -y @khulnasoft/native-mcp@latest
+claude mcp add prismui-native -- npx -y @khulnasoft/native-mcp@latest
 ```
 
 Or manually add to your project's `.mcp.json` file:
@@ -60,7 +60,7 @@ Or manually add to your project's `.mcp.json` file:
 ```json title=".mcp.json"
 {
   "mcpServers": {
-    "heroui-native": {
+    "prismui-native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -77,7 +77,7 @@ See the [Claude Code MCP documentation](https://docs.claude.com/en/docs/claude-c
 ```json title=".windsurf/mcp.json"
 {
   "mcpServers": {
-    "heroui-native": {
+    "prismui-native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -94,7 +94,7 @@ See the [Windsurf MCP documentation](https://docs.windsurf.com/windsurf/cascade/
 ```json title="settings.json"
 {
   "context_servers": {
-    "heroui-native": {
+    "prismui-native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"],
       "env": {}
@@ -103,7 +103,7 @@ See the [Windsurf MCP documentation](https://docs.windsurf.com/windsurf/cascade/
 }
 ```
 
-After adding the configuration, restart Zed and open the Agent Panel settings view. Check that the indicator dot next to the heroui-native server is green with "Server is active" tooltip.
+After adding the configuration, restart Zed and open the Agent Panel settings view. Check that the indicator dot next to the prismui-native server is green with "Server is active" tooltip.
 
 See the [Zed MCP documentation](https://zed.dev/docs/ai/mcp) for more details.
 
@@ -112,7 +112,7 @@ See the [Zed MCP documentation](https://zed.dev/docs/ai/mcp) for more details.
 ```json title=".vscode/mcp.json"
 {
   "servers": {
-    "heroui-native": {
+    "prismui-native": {
       "type": "stdio",
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
@@ -121,14 +121,14 @@ See the [Zed MCP documentation](https://zed.dev/docs/ai/mcp) for more details.
 }
 ```
 
-After adding the configuration, open `.vscode/mcp.json` and click **Start** next to the heroui-native server.
+After adding the configuration, open `.vscode/mcp.json` and click **Start** next to the prismui-native server.
 
 See the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) for more details.
 
 **Codex:** Add the PrismUI server to your `~/.codex/config.toml` (or a project-scoped `.codex/config.toml`):
 
 ```toml title="config.toml"
-[mcp_servers.heroui-native]
+[mcp_servers.prismui-native]
 command = "npx"
 args = ["-y", "@khulnasoft/native-mcp@latest"]
 ```
@@ -143,7 +143,7 @@ See the [Codex MCP documentation](https://developers.openai.com/codex/mcp) for m
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "heroui-native": {
+    "prismui-native": {
       "type": "local",
       "command": ["npx", "-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -196,10 +196,10 @@ The MCP server provides these tools to AI assistants:
 
 **Requirements:** Node.js 22 or higher. The package will be automatically downloaded when using `npx`.
 
-**Need help?** [GitHub Issues](https://github.com/khulnasoft/heroui-mcp/issues) | [Discord Community](https://discord.gg/heroui)
+**Need help?** [GitHub Issues](https://github.com/khulnasoft/prismui-mcp/issues) | [Discord Community](https://discord.gg/prismui)
 
 ## Links
 
 - [npm Package](https://www.npmjs.com/package/@khulnasoft/native-mcp)
-- [GitHub Repository](https://github.com/khulnasoft/heroui-mcp)
-- [Contributing Guide](https://github.com/khulnasoft/heroui-mcp/blob/main/CONTRIBUTING.md)
+- [GitHub Repository](https://github.com/khulnasoft/prismui-mcp)
+- [Contributing Guide](https://github.com/khulnasoft/prismui-mcp/blob/main/CONTRIBUTING.md)

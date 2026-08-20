@@ -11,7 +11,7 @@
  */
 
 const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.prism.khulnasoft.com";
-const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/khulnasoft/heroui/refs/heads/v3";
+const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/khulnasoft/prismui/refs/heads/v3";
 const APP_PARAM = "app=react-skills";
 
 /**
@@ -76,7 +76,7 @@ async function fetchGithubFallback(component) {
         return {
           component,
           filePath: path,
-          githubUrl: `https://github.com/khulnasoft/heroui/blob/v3/${path}`,
+          githubUrl: `https://github.com/khulnasoft/prismui/blob/v3/${path}`,
           source: "fallback",
           sourceCode: content,
         };

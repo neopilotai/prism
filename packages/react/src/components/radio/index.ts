@@ -38,6 +38,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {radioVariants} from "@heroui/styles";
+export {radioVariants} from "@khulnasoft/styles";
 
-export type {RadioVariants} from "@heroui/styles";
+export type {RadioVariants} from "@prismuisoft/styles";

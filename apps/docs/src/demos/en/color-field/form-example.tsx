@@ -1,8 +1,8 @@
 "use client";
 
-import type {Color} from "@heroui/react";
+import type {Color} from "@khulnasoft/react";
 
-import {Button, ColorField, ColorSwatch, Description, Form, Label} from "@heroui/react";
+import {Button, ColorField, ColorSwatch, Description, Form, Label} from "@prismuisoft/react";
 import {useState} from "react";
 
 export function FormExample() {

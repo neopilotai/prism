@@ -11,10 +11,10 @@ import {
   generateHerouiMdIndex,
   getHerouiVersions,
   injectIntoClaudeMd
-} from '@helpers/agents-docs/heroui-agents-md';
+} from '@helpers/agents-docs/prismui-agents-md';
 import {afterEach, describe, expect, it} from 'vitest';
 
-describe('heroui-agents-md', () => {
+describe('prismui-agents-md', () => {
   describe('buildDocTree', () => {
     it('groups files by directory and sorts sections and files', () => {
       const files = [{relativePath: 'b.mdx'}, {relativePath: 'a.mdx'}, {relativePath: 'sub/c.mdx'}];
@@ -36,7 +36,7 @@ describe('heroui-agents-md', () => {
   describe('generateHerouiMdIndex', () => {
     it('generates migration index with root and start hint', () => {
       const data = {
-        migrationDocsPath: './.heroui-docs/migration',
+        migrationDocsPath: './.prismui-docs/migration',
         migrationSections: buildDocTree([
           {relativePath: 'agent-index.mdx'},
           {relativePath: 'hooks.mdx'}
@@ -46,48 +46,48 @@ describe('heroui-agents-md', () => {
       const out = generateHerouiMdIndex(data, 'migration');
 
       expect(out).toContain('[PrismUI Migration Docs Index]');
-      expect(out).toContain('root: ./.heroui-docs/migration');
+      expect(out).toContain('root: ./.prismui-docs/migration');
       expect(out).toContain('Start with: agent-index.mdx');
       expect(out).toContain('.:{agent-index.mdx,hooks.mdx}');
-      expect(out).toContain('heroui agents-md --migration');
+      expect(out).toContain('prismui agents-md --migration');
     });
 
     it('generates react index with sections and run command', () => {
       const data = {
-        reactDocsPath: './.heroui-docs/react',
+        reactDocsPath: './.prismui-docs/react',
         reactSections: buildDocTree([{relativePath: 'getting-started.mdx'}]),
         selection: 'react' as const
       };
       const out = generateHerouiMdIndex(data, 'react');
 
       expect(out).toContain('[PrismUI React v3 Docs Index]');
-      expect(out).toContain('root: ./.heroui-docs/react');
+      expect(out).toContain('root: ./.prismui-docs/react');
       expect(out).toContain('getting-started.mdx');
-      expect(out).toContain('heroui agents-md --react');
+      expect(out).toContain('prismui agents-md --react');
     });
 
     it('generates native index when library is native', () => {
       const data = {
-        nativeDocsPath: './.heroui-docs/native',
+        nativeDocsPath: './.prismui-docs/native',
         nativeSections: buildDocTree([{relativePath: 'intro.mdx'}]),
         selection: 'native' as const
       };
       const out = generateHerouiMdIndex(data, 'native');
 
       expect(out).toContain('[PrismUI Native Docs Index]');
-      expect(out).toContain('root: ./.heroui-docs/native');
-      expect(out).toContain('heroui agents-md --native');
+      expect(out).toContain('root: ./.prismui-docs/native');
+      expect(out).toContain('prismui agents-md --native');
     });
 
     it('uses custom output file in run command when provided', () => {
       const data = {
-        migrationDocsPath: './.heroui-docs/migration',
+        migrationDocsPath: './.prismui-docs/migration',
         outputFile: 'CLAUDE.md',
         selection: 'migration' as const
       };
       const out = generateHerouiMdIndex(data, 'migration');
 
-      expect(out).toContain('heroui agents-md --migration --output CLAUDE.md');
+      expect(out).toContain('prismui agents-md --migration --output CLAUDE.md');
     });
   });
 
@@ -140,29 +140,29 @@ describe('heroui-agents-md', () => {
       }
     });
 
-    it('adds .heroui-docs/ to new .gitignore and returns updated', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
+    it('adds .prismui-docs/ to new .gitignore and returns updated', () => {
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
       const result = ensureGitignoreEntry(tmpDir);
 
       expect(result.updated).toBe(true);
       expect(result.alreadyPresent).toBe(false);
       expect(result.path).toBe(path.join(tmpDir, '.gitignore'));
-      expect(fs.readFileSync(path.join(tmpDir, '.gitignore'), 'utf-8')).toContain('.heroui-docs/');
+      expect(fs.readFileSync(path.join(tmpDir, '.gitignore'), 'utf-8')).toContain('.prismui-docs/');
     });
 
     it('does not duplicate when entry already present', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
-      fs.writeFileSync(path.join(tmpDir, '.gitignore'), '.heroui-docs/\n', 'utf-8');
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
+      fs.writeFileSync(path.join(tmpDir, '.gitignore'), '.prismui-docs/\n', 'utf-8');
       const result = ensureGitignoreEntry(tmpDir);
 
       expect(result.updated).toBe(false);
       expect(result.alreadyPresent).toBe(true);
-      expect(fs.readFileSync(path.join(tmpDir, '.gitignore'), 'utf-8')).toBe('.heroui-docs/\n');
+      expect(fs.readFileSync(path.join(tmpDir, '.gitignore'), 'utf-8')).toBe('.prismui-docs/\n');
     });
 
-    it('recognizes .heroui-docs with trailing path as present', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
-      fs.writeFileSync(path.join(tmpDir, '.gitignore'), '.heroui-docs\n', 'utf-8');
+    it('recognizes .prismui-docs with trailing path as present', () => {
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
+      fs.writeFileSync(path.join(tmpDir, '.gitignore'), '.prismui-docs\n', 'utf-8');
       const result = ensureGitignoreEntry(tmpDir);
 
       expect(result.alreadyPresent).toBe(true);
@@ -180,10 +180,10 @@ describe('heroui-agents-md', () => {
     });
 
     it('returns react version from dependencies', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
       fs.writeFileSync(
         path.join(tmpDir, 'package.json'),
-        JSON.stringify({dependencies: {'@heroui/react': '^2.0.0'}}),
+        JSON.stringify({dependencies: {'@prismui/react': '^2.0.0'}}),
         'utf-8'
       );
       const result = getHerouiVersions(tmpDir);
@@ -193,10 +193,10 @@ describe('heroui-agents-md', () => {
     });
 
     it('returns react version from devDependencies', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
       fs.writeFileSync(
         path.join(tmpDir, 'package.json'),
-        JSON.stringify({devDependencies: {'@heroui/react': '3.0.0'}}),
+        JSON.stringify({devDependencies: {'@prismui/react': '3.0.0'}}),
         'utf-8'
       );
       const result = getHerouiVersions(tmpDir);
@@ -205,14 +205,14 @@ describe('heroui-agents-md', () => {
     });
 
     it('returns error when no package.json', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
       const result = getHerouiVersions(tmpDir);
 
       expect(result.error).toContain('No package.json');
     });
 
     it('returns error when no PrismUI packages in simple project', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
       fs.writeFileSync(
         path.join(tmpDir, 'package.json'),
         JSON.stringify({dependencies: {react: '18.0.0'}}),
@@ -234,7 +234,7 @@ describe('heroui-agents-md', () => {
     });
 
     it('returns mdx and md files and excludes index files', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
       fs.writeFileSync(path.join(tmpDir, 'page.mdx'), '', 'utf-8');
       fs.writeFileSync(path.join(tmpDir, 'index.mdx'), '', 'utf-8');
       fs.writeFileSync(path.join(tmpDir, 'other.md'), '', 'utf-8');
@@ -264,7 +264,7 @@ describe('heroui-agents-md', () => {
     });
 
     it('returns all mdx and md files including index', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
       fs.writeFileSync(path.join(tmpDir, 'index.mdx'), '', 'utf-8');
       fs.writeFileSync(path.join(tmpDir, 'hooks.mdx'), '', 'utf-8');
 
@@ -287,7 +287,7 @@ describe('heroui-agents-md', () => {
     });
 
     it('returns tsx files excluding path ending with /index.tsx', () => {
-      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-test-'));
+      tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
       fs.writeFileSync(path.join(tmpDir, 'button.tsx'), '', 'utf-8');
       fs.mkdirSync(path.join(tmpDir, 'sub'), {recursive: true});
       fs.writeFileSync(path.join(tmpDir, 'sub', 'index.tsx'), '', 'utf-8');
@@ -301,7 +301,7 @@ describe('heroui-agents-md', () => {
     });
 
     it('returns empty array when dir does not exist', () => {
-      tmpDir = path.join(os.tmpdir(), 'heroui-agents-md-nonexistent-' + Date.now());
+      tmpDir = path.join(os.tmpdir(), 'prismui-agents-md-nonexistent-' + Date.now());
       expect(collectDemoFiles(tmpDir)).toEqual([]);
     });
   });

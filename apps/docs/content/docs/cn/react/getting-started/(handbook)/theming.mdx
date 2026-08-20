@@ -414,17 +414,17 @@ export function ThemeSwitch() {
 
 ## 变量参考
 
-PrismUI 在 [`variables.css`](https://github.com/khulnasoft/heroui/blob/v3/packages/styles/themes/default/variables.css) 中定义了三种类型的变量：
+PrismUI 在 [`variables.css`](https://github.com/khulnasoft/prismui/blob/v3/packages/styles/themes/default/variables.css) 中定义了三种类型的变量：
 
 1. **基础变量（Base Variables）** — 不会变化的值，例如 `--white`、`--black`、间距以及排版
 2. **主题变量（Theme Variables）** — 在浅色 / 深色主题之间切换的颜色，以及滚动条令牌（`--scrollbar-thumb`、`--scrollbar-width` 等）
 3. **计算变量（Calculated Variables）** — 悬停状态、柔和（soft）变体以及边框 / 分隔线层级（每个浅色 / 深色主题中的 **Calculated Colors** 区块，使用 `color-mix()` 计算）
 
-如需完整参考，请查阅：[颜色文档](/docs/handbook/colors)、[默认主题变量](https://github.com/khulnasoft/heroui/blob/v3/packages/styles/themes/default/variables.css)、[共享主题工具](https://github.com/khulnasoft/heroui/blob/v3/packages/styles/themes/shared/theme.css)
+如需完整参考，请查阅：[颜色文档](/docs/handbook/colors)、[默认主题变量](https://github.com/khulnasoft/prismui/blob/v3/packages/styles/themes/default/variables.css)、[共享主题工具](https://github.com/khulnasoft/prismui/blob/v3/packages/styles/themes/shared/theme.css)
 
 **Tailwind 主题桥接（`@theme inline`）：**
 
-[`themes/shared/theme.css`](https://github.com/khulnasoft/heroui/blob/v3/packages/styles/themes/shared/theme.css) 将语义化变量映射为 Tailwind 令牌（`--color-*`、`--radius-*`、`--ease-*`）。计算颜色引用的是 `variables.css` 中的底层变量（例如 `--surface-hover`、`--accent-soft`）—— 它们并不会在该文件中通过 `color-mix()` 内联展开：
+[`themes/shared/theme.css`](https://github.com/khulnasoft/prismui/blob/v3/packages/styles/themes/shared/theme.css) 将语义化变量映射为 Tailwind 令牌（`--color-*`、`--radius-*`、`--ease-*`）。计算颜色引用的是 `variables.css` 中的底层变量（例如 `--surface-hover`、`--accent-soft`）—— 它们并不会在该文件中通过 `color-mix()` 内联展开：
 <CollapsibleCode lang="css" code={`  @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
@@ -623,7 +623,7 @@ PrismUI 为组件中的滚动区域（表格、弹出框、抽屉等）应用统
 </div>
 ```
 
-**主题变量** — 在 [`variables.css`](https://github.com/khulnasoft/heroui/blob/v3/packages/styles/themes/default/variables.css) 的浅色与深色主题区块中定义：
+**主题变量** — 在 [`variables.css`](https://github.com/khulnasoft/prismui/blob/v3/packages/styles/themes/default/variables.css) 的浅色与深色主题区块中定义：
 
 | 变量 | 描述 |
 |------|------|

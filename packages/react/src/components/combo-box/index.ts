@@ -51,6 +51,6 @@ export {ComboBoxContext} from "./combo-box";
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {comboBoxVariants} from "@heroui/styles";
+export {comboBoxVariants} from "@khulnasoft/styles";
 
-export type {ComboBoxVariants} from "@heroui/styles";
+export type {ComboBoxVariants} from "@prismuisoft/styles";

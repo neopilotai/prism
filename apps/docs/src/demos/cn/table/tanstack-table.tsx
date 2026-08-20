@@ -1,9 +1,9 @@
 "use client";
 
-import type {SortDescriptor} from "@heroui/react";
+import type {SortDescriptor} from "@khulnasoft/react";
 import type {SortingState} from "@tanstack/react-table";
 
-import {Chip, Pagination, Table} from "@heroui/react";
+import {Chip, Pagination, Table} from "@prismuisoft/react";
 import {
   createColumnHelper,
   flexRender,

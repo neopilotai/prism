@@ -5,7 +5,7 @@ import {
   useSelectAnimation,
   useThemeColor,
   type SelectTriggerRef,
-} from 'heroui-native';
+} from 'prismui-native';
 import React, { useRef, useState, type FC } from 'react';
 import { StyleSheet, TextInput, View } from 'react-native';
 import { KeyboardController } from 'react-native-keyboard-controller';

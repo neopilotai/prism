@@ -176,13 +176,13 @@ export function DemoShowcase() {
     const iframe = iframeRef.current;
 
     if (!iframe?.contentWindow) return;
-    iframe.contentWindow.postMessage({theme: resolvedTheme ?? "dark", type: "heroui-theme"}, "*");
-    iframe.contentWindow.postMessage({type: "heroui-accent", vars: iframeThemeVars}, "*");
+    iframe.contentWindow.postMessage({theme: resolvedTheme ?? "dark", type: "prismui-theme"}, "*");
+    iframe.contentWindow.postMessage({type: "prismui-accent", vars: iframeThemeVars}, "*");
     iframe.contentWindow.postMessage(
       {
         cdnUrl: computedDesignThemeVars.fontMeta.cdnUrl,
         family: computedDesignThemeVars.fontMeta.family,
-        type: "heroui-font",
+        type: "prismui-font",
         variable: computedDesignThemeVars.fontMeta.variable,
       },
       "*",
@@ -197,7 +197,7 @@ export function DemoShowcase() {
   // Listen for iframe requesting initial state
   useEffect(() => {
     function handleMessage(event: MessageEvent) {
-      if (event.data?.type === "heroui-ready") {
+      if (event.data?.type === "prismui-ready") {
         sendMessageToIframe();
       }
     }

@@ -1,6 +1,6 @@
-export const REACT_SCAN_ADDON_ID = "heroui-react-scan-addon";
-export const REACT_SCAN_GLOBAL_TYPE_ID = "heroui-react-scan";
-export const REACT_SCAN_PARAM_KEY = "heroui-react-scan";
+export const REACT_SCAN_ADDON_ID = "prismui-react-scan-addon";
+export const REACT_SCAN_GLOBAL_TYPE_ID = "prismui-react-scan";
+export const REACT_SCAN_PARAM_KEY = "prismui-react-scan";
 
 export const REACT_SCAN_VALUES = ["true", "false"] as const;
 

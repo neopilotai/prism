@@ -13,8 +13,8 @@ PrismUI Native follows 9 core principles that prioritize clarity, accessibility,
 Use semantic naming (primary, secondary, tertiary) instead of visual descriptions (solid, flat, bordered). Inspired by [Uber's Base design system](https://base.uber.com/6d2425e9f/p/756216-button), variants follow a clear hierarchy:
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/emphasis.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/emphasis-dark.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/emphasis.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/emphasis-dark.jpg"
   alt="Semantic Intent Hierarchy"
 />
 
@@ -38,7 +38,7 @@ Use semantic naming (primary, secondary, tertiary) instead of visual description
 Accessibility follows mobile development best practices with proper touch accessibility, focus management, and screen reader support built into every component. All components include proper accessibility labels and semantic structure for VoiceOver (iOS) and TalkBack (Android).
 
 ```tsx
-import { Tabs } from 'heroui-native';
+import { Tabs } from 'prismui-native';
 
 <Tabs value="profile" onValueChange={setActiveTab}>
   <Tabs.List>
@@ -61,7 +61,7 @@ Compound components let you rearrange, customize, or omit parts as needed. Use d
 
 ```tsx
 // Compose parts to build exactly what you need
-import { Accordion } from 'heroui-native';
+import { Accordion } from 'prismui-native';
 
 <Accordion>
   <Accordion.Item value="1">
@@ -79,7 +79,7 @@ import { Accordion } from 'heroui-native';
 Start simple, add complexity only when needed. Components work with minimal props and scale up as requirements grow.
 
 ```tsx
-import { Button, Spinner } from 'heroui-native';
+import { Button, Spinner } from 'prismui-native';
 import { Feather } from '@expo/vector-icons';
 
 // Level 1: Minimal
@@ -109,7 +109,7 @@ import { Feather } from '@expo/vector-icons';
 Consistent patterns across all components: sizes (`sm`, `md`, `lg`), variants, and className support. Same API, same behavior.
 
 ```tsx
-import { Button, Chip, Avatar } from 'heroui-native';
+import { Button, Chip, Avatar } from 'prismui-native';
 
 // All components follow the same patterns
 <Button size="lg" variant="primary" className="custom">
@@ -128,7 +128,7 @@ import { Button, Chip, Avatar } from 'heroui-native';
 Full TypeScript support with IntelliSense, auto-completion, and compile-time error detection. Extend types for custom components.
 
 ```tsx
-import type { ButtonRootProps } from 'heroui-native';
+import type { ButtonRootProps } from 'prismui-native';
 
 // Type-safe props and event handlers
 <Button
@@ -180,8 +180,8 @@ Beautiful defaults out-of-the-box. Transform the entire look with CSS variables 
 Wrap, extend, and customize components to match your needs. Create custom wrappers or apply custom styles using className.
 
 ```tsx
-import { Button } from 'heroui-native';
-import type { ButtonRootProps } from 'heroui-native';
+import { Button } from 'prismui-native';
+import type { ButtonRootProps } from 'prismui-native';
 
 // Custom wrapper component
 interface CTAButtonProps extends Omit<ButtonRootProps, 'variant'> {
@@ -214,7 +214,7 @@ const CTAButton = ({
 **Extend with Tailwind Variants:**
 
 ```tsx
-import { Button } from 'heroui-native';
+import { Button } from 'prismui-native';
 import { tv } from 'tailwind-variants';
 
 // Extend button styles with custom variants

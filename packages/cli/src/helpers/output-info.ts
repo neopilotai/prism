@@ -350,8 +350,8 @@ export function outputDeprecatedInfo() {
 PrismUI offers the same great features with ongoing improvements.
 
 → ${chalk.bold('Switch to [PrismUI](https://prism.khulnasoft.com) for the latest updates.')}
-→ ${chalk.bold('Migration guide:')} [NextUI to PrismUI](https://prism.khulnasoft.com/docs/nextui-to-heroui)
-→ ${chalk.bold('New NPM package:')} "@heroui/react"
+→ ${chalk.bold('Migration guide:')} [NextUI to PrismUI](https://prism.khulnasoft.com/docs/nextui-to-prismui)
+→ ${chalk.bold('New NPM package:')} "@prismui/react"
 
 Thanks for your support — see you at PrismUI!`,
     title: chalk.yellow(`❗️ Notice: NextUI is now ${chalk.bold('PrismUI')} ❗️`)

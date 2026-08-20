@@ -5,7 +5,7 @@ import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Button, Card, PressableFeedback } from 'heroui-native';
+import { Button, Card, PressableFeedback } from 'prismui-native';
 import { StyleSheet, View } from 'react-native';
 import { withUniwind } from 'uniwind';
 import { AppText } from '../../../components/app-text';
@@ -27,7 +27,7 @@ const BackgroundImageCardContent = () => {
         <Card className="flex-1">
           <Image
             source={{
-              uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/neo2.jpeg',
+              uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/neo2.jpeg',
             }}
             style={StyleSheet.absoluteFill}
             contentFit="cover"
@@ -113,7 +113,7 @@ const CardWithImageContent = () => {
               <Card.Header>
                 <StyledImage
                   source={{
-                    uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo1.jpg',
+                    uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo1.jpg',
                   }}
                   className="h-16 aspect-square rounded-xl"
                 />
@@ -158,7 +158,7 @@ const CardWithImageContent = () => {
               <Card.Header>
                 <StyledImage
                   source={{
-                    uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo2.jpg',
+                    uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo2.jpg',
                   }}
                   className="h-16 aspect-square rounded-xl"
                 />

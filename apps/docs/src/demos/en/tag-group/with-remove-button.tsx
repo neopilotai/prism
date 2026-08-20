@@ -1,9 +1,9 @@
 "use client";
 
-import type {Key} from "@heroui/react";
+import type {Key} from "@khulnasoft/react";
 
 import {CircleXmarkFill} from "@gravity-ui/icons";
-import {Description, EmptyState, Label, Tag, TagGroup} from "@heroui/react";
+import {Description, EmptyState, Label, Tag, TagGroup} from "@prismuisoft/react";
 import {useState} from "react";
 
 export function TagGroupWithRemoveButton() {

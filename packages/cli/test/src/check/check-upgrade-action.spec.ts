@@ -78,7 +78,7 @@ describe('Upgrade functionality with beta flag', () => {
             {
               isLatest: false,
               latestVersion: store.beta ? '2.1.0-beta.3' : '2.1.0',
-              package: '@heroui/react',
+              package: '@prismui/react',
               version: '2.0.0',
               versionMode: ''
             }
@@ -94,7 +94,7 @@ describe('Upgrade functionality with beta flag', () => {
             {
               isLatest: false,
               latestVersion: '2.1.0-beta.3',
-              package: '@heroui/react',
+              package: '@prismui/react',
               version: '2.0.0',
               versionMode: ''
             }
@@ -104,7 +104,7 @@ describe('Upgrade functionality with beta flag', () => {
             {
               isLatest: false,
               latestVersion: '2.1.0',
-              package: '@heroui/react',
+              package: '@prismui/react',
               version: '2.0.0',
               versionMode: ''
             },
@@ -243,7 +243,7 @@ describe('Upgrade functionality with beta flag', () => {
       store.beta = false;
 
       const mockDependencies = {
-        '@heroui/react': '2.0.0'
+        '@prismui/react': '2.0.0'
       };
 
       mockedGetConditionVersion.mockResolvedValue('2.1.0');
@@ -251,12 +251,12 @@ describe('Upgrade functionality with beta flag', () => {
       const result = await upgradeModule.getAllOutputData(true, true, mockDependencies, new Set());
 
       // Our mock of getAllOutputData will trigger getConditionVersion internally
-      mockedGetConditionVersion('@heroui/react');
+      mockedGetConditionVersion('@prismui/react');
 
-      expect(mockedGetConditionVersion).toHaveBeenCalledWith('@heroui/react');
+      expect(mockedGetConditionVersion).toHaveBeenCalledWith('@prismui/react');
       expect(result.allOutputList[0]).toMatchObject({
         isLatest: false,
-        package: '@heroui/react',
+        package: '@prismui/react',
         version: '2.0.0'
       });
     });
@@ -265,7 +265,7 @@ describe('Upgrade functionality with beta flag', () => {
       store.beta = true;
 
       const mockDependencies = {
-        '@heroui/react': '2.0.0'
+        '@prismui/react': '2.0.0'
       };
 
       mockedGetConditionVersion.mockResolvedValue('2.1.0-beta.3');
@@ -273,12 +273,12 @@ describe('Upgrade functionality with beta flag', () => {
       const result = await upgradeModule.getAllOutputData(true, true, mockDependencies, new Set());
 
       // Our mock of getAllOutputData will trigger getConditionVersion internally
-      mockedGetConditionVersion('@heroui/react');
+      mockedGetConditionVersion('@prismui/react');
 
-      expect(mockedGetConditionVersion).toHaveBeenCalledWith('@heroui/react');
+      expect(mockedGetConditionVersion).toHaveBeenCalledWith('@prismui/react');
       expect(result.allOutputList[0]).toMatchObject({
         isLatest: false,
-        package: '@heroui/react',
+        package: '@prismui/react',
         version: '2.0.0'
       });
     });
@@ -292,12 +292,12 @@ describe('Upgrade functionality with beta flag', () => {
         async (_all, _isPrismUIAll, allDependencies, missingDepSet) => {
           // Directly call getPackagePeerDep here to ensure it's called the correct number of times
           const result1 = await upgradeModule.getPackagePeerDep(
-            '@heroui/react',
+            '@prismui/react',
             allDependencies,
             missingDepSet
           );
           const result2 = await upgradeModule.getPackagePeerDep(
-            '@heroui/theme',
+            '@prismui/theme',
             allDependencies,
             missingDepSet
           );
@@ -307,7 +307,7 @@ describe('Upgrade functionality with beta flag', () => {
               {
                 isLatest: false,
                 latestVersion: '2.1.0',
-                package: '@heroui/react',
+                package: '@prismui/react',
                 version: '2.0.0',
                 versionMode: ''
               }
@@ -318,7 +318,7 @@ describe('Upgrade functionality with beta flag', () => {
       );
 
       const mockDependencies = {
-        '@heroui/react': '2.0.0',
+        '@prismui/react': '2.0.0',
         react: '18.0.0'
       };
 
@@ -436,7 +436,7 @@ describe('Upgrade functionality with beta flag', () => {
       mockedGetConditionVersion.mockResolvedValue('18.2.0-beta.1');
 
       const result = await upgradeModule.getPackagePeerDep(
-        '@heroui/react',
+        '@prismui/react',
         mockDependencies,
         new Set(),
         mockPeerDeps
@@ -576,7 +576,7 @@ describe('Upgrade functionality with beta flag', () => {
       store.beta = false;
 
       const mockDependencies = {
-        '@heroui/react': '2.0.0',
+        '@prismui/react': '2.0.0',
         react: '18.0.0'
       };
 
@@ -584,7 +584,7 @@ describe('Upgrade functionality with beta flag', () => {
         {
           isLatest: false,
           latestVersion: '2.1.0',
-          package: '@heroui/react',
+          package: '@prismui/react',
           version: '2.0.0',
           versionMode: ''
         }
@@ -603,7 +603,7 @@ describe('Upgrade functionality with beta flag', () => {
       expect(uniquePackages.size).toBe(result.length);
 
       // Should include both packages
-      expect(uniquePackages.has('@heroui/react')).toBe(true);
+      expect(uniquePackages.has('@prismui/react')).toBe(true);
       expect(uniquePackages.has('react')).toBe(true);
     });
 
@@ -611,7 +611,7 @@ describe('Upgrade functionality with beta flag', () => {
       store.beta = true;
 
       const mockDependencies = {
-        '@heroui/react': '2.0.0'
+        '@prismui/react': '2.0.0'
       };
 
       const mockUpgradeOptionList: UpgradeOption[] = [];
@@ -627,7 +627,7 @@ describe('Upgrade functionality with beta flag', () => {
       expect(result[0]).toMatchObject({
         isLatest: false,
         latestVersion: '2.1.0-beta.3',
-        package: '@heroui/react',
+        package: '@prismui/react',
         version: '2.0.0'
       });
     });
@@ -640,7 +640,7 @@ describe('Upgrade functionality with beta flag', () => {
 
       // Mock the list of packages to upgrade
       const mockDependencies = {
-        '@heroui/react': '2.0.0',
+        '@prismui/react': '2.0.0',
         'existing-package': '1.0.0'
       };
 
@@ -650,7 +650,7 @@ describe('Upgrade functionality with beta flag', () => {
           {
             isLatest: false,
             latestVersion: '2.1.0-beta.3',
-            package: '@heroui/react',
+            package: '@prismui/react',
             version: '2.0.0',
             versionMode: ''
           }
@@ -743,7 +743,7 @@ describe('Upgrade functionality with beta flag', () => {
         {
           isLatest: false,
           latestVersion: '2.1.0-beta.3',
-          package: '@heroui/react',
+          package: '@prismui/react',
           version: '2.0.0',
           versionMode: ''
         }
@@ -762,7 +762,7 @@ describe('Upgrade functionality with beta flag', () => {
       expect(uniquePackages.size).toBe(result.length);
 
       // Verify that the result should include the following packages
-      expect(result.some((pkg) => pkg.package === '@heroui/react')).toBe(true);
+      expect(result.some((pkg) => pkg.package === '@prismui/react')).toBe(true);
       expect(result.some((pkg) => pkg.package === 'lib-package')).toBe(true);
       expect(result.some((pkg) => pkg.package === 'react')).toBe(true);
       expect(result.some((pkg) => pkg.package === 'missing-package')).toBe(true);
@@ -842,7 +842,7 @@ describe('Upgrade functionality with beta flag', () => {
         {
           isLatest: false,
           latestVersion: '2.1.0-beta.3',
-          package: '@heroui/react',
+          package: '@prismui/react',
           version: '2.0.0',
           versionMode: ''
         },
@@ -886,7 +886,7 @@ describe('Upgrade functionality with beta flag', () => {
         {
           isLatest: false,
           latestVersion: '2.1.0',
-          package: '@heroui/react',
+          package: '@prismui/react',
           version: '2.0.0',
           versionMode: ''
         },

@@ -40,6 +40,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {checkboxVariants} from "@heroui/styles";
+export {checkboxVariants} from "@khulnasoft/styles";
 
-export type {CheckboxVariants} from "@heroui/styles";
+export type {CheckboxVariants} from "@prismuisoft/styles";

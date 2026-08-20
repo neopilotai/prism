@@ -5,7 +5,7 @@ Interactive component that triggers an action when pressed.
 ## Import
 
 ```tsx
-import { Button } from 'heroui-native';
+import { Button } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -220,7 +220,7 @@ const themeColorAccentForeground = useThemeColor('accent-foreground');
 Add gradient backgrounds using absolute positioned elements. Use `feedbackVariant="none"` to disable the default highlight overlay, or use `feedbackVariant="scale-ripple"` for a custom ripple effect.
 
 ```tsx
-import { Button, PressableFeedback } from 'heroui-native';
+import { Button, PressableFeedback } from 'prismui-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet } from 'react-native';
 
@@ -264,7 +264,7 @@ import { StyleSheet } from 'react-native';
 ## Example
 
 ```tsx
-import { Button, useThemeColor } from 'heroui-native';
+import { Button, useThemeColor } from 'prismui-native';
 import { Ionicons } from '@expo/vector-icons';
 import { View } from 'react-native';
 
@@ -317,7 +317,7 @@ export default function ButtonExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/button.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/button.tsx>).
 
 ## API Reference
 
@@ -399,7 +399,7 @@ Absolute-fill container rendered behind the button surface. With no children, th
 Hook to access the Button context values. Returns the button's size, variant, and disabled state.
 
 ```tsx
-import { useButton } from 'heroui-native';
+import { useButton } from 'prismui-native';
 
 const { size, variant, isDisabled } = useButton();
 ```

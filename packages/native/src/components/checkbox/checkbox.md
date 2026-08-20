@@ -5,7 +5,7 @@ A selectable control that allows users to toggle between checked and unchecked s
 ## Import
 
 ```tsx
-import { Checkbox } from 'heroui-native';
+import { Checkbox } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -117,7 +117,7 @@ import {
   Label,
   Separator,
   Surface,
-} from 'heroui-native';
+} from 'prismui-native';
 import React from 'react';
 import { View, Text } from 'react-native';
 
@@ -198,7 +198,7 @@ export default function BasicUsage() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/checkbox.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/checkbox.tsx>).
 
 ## API Reference
 
@@ -302,7 +302,7 @@ Animation configuration for checkbox indicator component. Can be:
 Hook to access checkbox context values within custom components or compound components.
 
 ```tsx
-import { useCheckbox } from 'heroui-native';
+import { useCheckbox } from 'prismui-native';
 
 const CustomIndicator = () => {
   const { isSelected, isInvalid, isDisabled } = useCheckbox();

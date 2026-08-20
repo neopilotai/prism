@@ -1,9 +1,9 @@
 "use client";
 
-import type {CloseButtonVariants} from "@heroui/styles";
+import type {CloseButtonVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {closeButtonVariants} from "@heroui/styles";
+import {closeButtonVariants} from "@prismuisoft/styles";
 import {useMemo} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components/Button";
 

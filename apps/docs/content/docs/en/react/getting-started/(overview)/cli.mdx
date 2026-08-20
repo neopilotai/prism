@@ -54,13 +54,13 @@ Alternatively, you can use `prism-cli` without a global installation by running 
 Once `prism-cli` is installed, run the following command to display available commands:
 
 ```bash
-heroui
+prismui
 ```
 
 This will produce the following help output:
 
 ```bash
-Usage: heroui [command]
+Usage: prismui [command]
 
 Options:
   -v, --version                  Output the current version
@@ -85,7 +85,7 @@ Commands:
 Initialize a new PrismUI project using the `init` command. This sets up your project with the necessary configurations.
 
 ```bash
-heroui init [options]
+prismui init [options]
 ```
 
 **Options:**
@@ -107,7 +107,7 @@ PrismUI CLI <version>
 │  ○ React Router (A React Router template pre-configured with PrismUI (v3) and Tailwind CSS.)
 │
 ◇  New project name (Enter to skip with default name)
-│  my-heroui-app
+│  my-prismui-app
 │
 ◇  Select a package manager (Enter to select)
 │  ● npm
@@ -119,7 +119,7 @@ PrismUI CLI <version>
 │
 ◇  Next steps ───────╮
 │                    │
-│  cd my-heroui-app  │
+│  cd my-prismui-app  │
 │  npm install       │
 │                    │
 ├────────────────────╯
@@ -133,22 +133,22 @@ Install the dependencies to start the local server:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    cd my-heroui-app && npm install
+    cd my-prismui-app && npm install
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    cd my-heroui-app && pnpm install
+    cd my-prismui-app && pnpm install
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    cd my-heroui-app && yarn install
+    cd my-prismui-app && yarn install
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    cd my-heroui-app && bun install
+    cd my-prismui-app && bun install
     ```
   </Tab>
 </Tabs>
@@ -164,7 +164,7 @@ npm run dev
 Install `@khulnasoft/react` and `@khulnasoft/styles` to your project, along with their peer dependencies. If they are already installed, the command does nothing.
 
 ```bash
-heroui install [options]
+prismui install [options]
 ```
 
 **Options:**
@@ -203,7 +203,7 @@ PrismUI CLI <version>
 Upgrade `@khulnasoft/react` and `@khulnasoft/styles` with their peer dependencies to the latest versions.
 
 ```bash
-heroui upgrade [options]
+prismui upgrade [options]
 ```
 
 **Options:**
@@ -232,7 +232,7 @@ PrismUI CLI <version>
 Uninstall `@khulnasoft/react` and `@khulnasoft/styles` from your project. Peer dependencies will not be uninstalled.
 
 ```bash
-heroui uninstall [options]
+prismui uninstall [options]
 ```
 
 **Options:**
@@ -263,7 +263,7 @@ PrismUI CLI <version>
 List the installed PrismUI packages (`@khulnasoft/react`, `@khulnasoft/styles`).
 
 ```bash
-heroui list [options]
+prismui list [options]
 ```
 
 **Options:**
@@ -293,7 +293,7 @@ Check for issues in your project.
 
 
 ```bash
-heroui doctor [options]
+prismui doctor [options]
 ```
 
 **Options:**
@@ -314,7 +314,7 @@ PrismUI CLI: ❌ Your project has 1 issue that require attention
 The following PrismUI packages are not installed:
 - @khulnasoft/styles
 
-Run `heroui install` to install them.
+Run `prismui install` to install them.
 ```
 
 Otherwise, the `doctor` command will display the following message.
@@ -330,7 +330,7 @@ PrismUI CLI <version>
 Display debug information about the local environment.
 
 ```bash
-heroui env [options]
+prismui env [options]
 ```
 
 **Options:**
@@ -364,7 +364,7 @@ Environment Info:
 Download PrismUI documentation for AI coding agents (Claude, Cursor, etc.). The command clones the latest docs from the PrismUI repository and injects a compact index into `AGENTS.md` or `CLAUDE.md` so assistants can reference your project's PrismUI setup.
 
 ```bash
-heroui agents-md [options]
+prismui agents-md [options]
 ```
 
 **Options:**
@@ -380,20 +380,20 @@ heroui agents-md [options]
 Run without flags to enter interactive mode:
 
 ```bash
-heroui agents-md
+prismui agents-md
 ```
 
 Download React docs to a specific file:
 
 ```bash
-heroui agents-md --react --output AGENTS.md
+prismui agents-md --react --output AGENTS.md
 ```
 
 Download Native or migration docs:
 
 ```bash
-heroui agents-md --native --output CLAUDE.md
-heroui agents-md --migration --output AGENTS.md
+prismui agents-md --native --output CLAUDE.md
+prismui agents-md --migration --output AGENTS.md
 ```
 
 **How it works:**
@@ -401,7 +401,7 @@ heroui agents-md --migration --output AGENTS.md
 1. Clones documentation from the `v3` branch using git sparse-checkout
 2. Generates a compact index of doc and demo files
 3. Injects the index into your markdown file between markers (`<!-- HEROUI-REACT-AGENTS-MD-START -->` / `<!-- HEROUI-REACT-AGENTS-MD-END -->`, and similar for Native and Migration)
-4. Adds `.heroui-docs/` to `.gitignore`
+4. Adds `.prismui-docs/` to `.gitignore`
 
 Only one of `--react`, `--native`, or `--migration` can be selected at a time.
 

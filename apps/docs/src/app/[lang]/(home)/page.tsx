@@ -92,7 +92,7 @@ export default async function HomePage({params}: {params: Promise<{lang: string}
           </div>
           <a
             className="mt-2 flex items-center justify-around gap-2 text-xs text-muted transition-colors hover:text-foreground lg:mt-4"
-            href="https://github.com/khulnasoft/heroui"
+            href="https://github.com/khulnasoft/prismui"
             rel="noopener noreferrer"
             target="_blank"
           >

@@ -1,8 +1,8 @@
 ---
-name: heroui-migration
+name: prismui-migration
 description: "PrismUI v2 to v3 migration guide for agents. Use when migrating PrismUI v2 apps to v3, upgrading components, or accessing migration documentation. Keywords: PrismUI migration, v2 to v3, migration guide, upgrade PrismUI."
 metadata:
-  author: heroui
+  author: prismui
   version: "2.0.0"
   status: preview
 ---
@@ -16,7 +16,7 @@ This skill helps agents migrate PrismUI v2 applications to v3. PrismUI v3 introd
 ## Installation
 
 ```bash
-curl -fsSL https://prism.khulnasoft.com/install | bash -s heroui-migration
+curl -fsSL https://prism.khulnasoft.com/install | bash -s prismui-migration
 ```
 
 ---
@@ -84,7 +84,7 @@ When using Cursor or other MCP clients, configure the Migration MCP server for t
 ```json
 {
   "mcpServers": {
-    "heroui-migration": {
+    "prismui-migration": {
       "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }

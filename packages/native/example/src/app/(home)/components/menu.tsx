@@ -1,7 +1,7 @@
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
-import type { MenuKey } from 'heroui-native';
-import { Avatar, Button, cn, Menu, Separator, SubMenu } from 'heroui-native';
+import type { MenuKey } from 'prismui-native';
+import { Avatar, Button, cn, Menu, Separator, SubMenu } from 'prismui-native';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';
@@ -221,7 +221,7 @@ const PlacementsContent = () => {
                 <Avatar size="sm" alt="Emily Chen">
                   <Avatar.Image
                     source={{
-                      uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg',
+                      uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg',
                     }}
                   />
                   <Avatar.Fallback>EC</Avatar.Fallback>

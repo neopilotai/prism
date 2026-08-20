@@ -5,7 +5,7 @@ A draggable input for selecting a value or range within a bounded interval.
 ## Import
 
 ```tsx
-import { Slider } from 'heroui-native';
+import { Slider } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -157,7 +157,7 @@ Disable the entire slider to prevent interaction.
 ## Example
 
 ```tsx
-import { Label, Slider } from 'heroui-native';
+import { Label, Slider } from 'prismui-native';
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 
@@ -205,7 +205,7 @@ export default function SliderExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/slider.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/slider.tsx>).
 
 ## API Reference
 
@@ -333,7 +333,7 @@ Animation configuration for the thumb knob scale effect. Can be:
 Hook to access the slider context. Must be used within a `Slider` component.
 
 ```tsx
-import { useSlider } from 'heroui-native';
+import { useSlider } from 'prismui-native';
 
 const { values, orientation, isDisabled, getThumbValueLabel } = useSlider();
 ```

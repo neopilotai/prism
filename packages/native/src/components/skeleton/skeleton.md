@@ -5,7 +5,7 @@ Displays a loading placeholder with shimmer or pulse animation effects.
 ## Import
 
 ```tsx
-import { Skeleton } from 'heroui-native';
+import { Skeleton } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -117,7 +117,7 @@ Apply custom Reanimated transitions when skeleton appears or disappears.
 ## Example
 
 ```tsx
-import { Avatar, Card, Skeleton } from 'heroui-native';
+import { Avatar, Card, Skeleton } from 'prismui-native';
 import { useState } from 'react';
 import { Image, Text, View } from 'react-native';
 
@@ -157,7 +157,7 @@ export default function SkeletonExample() {
         <View className="h-48 bg-surface-tertiary rounded-lg overflow-hidden">
           <Image
             source={{
-              uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/backgrounds/cards/car1.jpg',
+              uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/backgrounds/cards/car1.jpg',
             }}
             className="h-full w-full"
           />
@@ -168,7 +168,7 @@ export default function SkeletonExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/skeleton.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/skeleton.tsx>).
 
 ## API Reference
 

@@ -1,8 +1,8 @@
 "use client";
 
-import type {ColorChannel, ColorSpace} from "@heroui/react";
+import type {ColorChannel, ColorSpace} from "@khulnasoft/react";
 
-import {ColorPicker, ColorSlider, ColorSwatch, Label, ListBox, Select} from "@heroui/react";
+import {ColorPicker, ColorSlider, ColorSwatch, Label, ListBox, Select} from "@prismuisoft/react";
 import {useState} from "react";
 
 export function WithSliders() {

@@ -5,7 +5,7 @@ Displays a card container with flexible layout sections for structured content.
 ## Import
 
 ```tsx
-import { Card } from 'heroui-native';
+import { Card } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -100,7 +100,7 @@ Use an image as an absolute positioned background.
 ## Example
 
 ```tsx
-import { Button, Card } from 'heroui-native';
+import { Button, Card } from 'prismui-native';
 import { Ionicons } from '@expo/vector-icons';
 import { View } from 'react-native';
 
@@ -131,7 +131,7 @@ export default function CardExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/card.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/card.tsx>).
 
 ## API Reference
 

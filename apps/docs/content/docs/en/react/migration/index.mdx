@@ -27,7 +27,7 @@ Below are three approaches for AI assistants to access migration documentation. 
 - **Component API Updates**: Many components use React Aria Components patterns
 - **Compound Components**: New compound component patterns for better customization. See individual component guides for details.
 - **Hooks Removed**: v2 component hooks like `useSwitch` or `useInput` are removed - use compound components instead. `useDisclosure` is replaced with `useOverlayState`. See the [Hooks Migration Guide](/docs/react/migration/hooks) for details.
-- **Configuration**: Remove `heroui()` plugin from Tailwind config, update CSS imports, remove `hero.ts` file
+- **Configuration**: Remove `prismui()` plugin from Tailwind config, update CSS imports, remove `hero.ts` file
 - **Item identity**: Collection items (Dropdown, Listbox, Select, Accordion, etc.) now use `id` and `textValue` in v3; keep React's `key` for lists.
 
 </section>
@@ -94,7 +94,7 @@ PrismUI v2 and v3 cannot coexist in the same project without special setup. You 
 Use the table below to quickly find migration guidance for each component. Use the link in the "Migration Guide" column to jump to detailed migration instructions.
 
 <Callout>
-  **Component Development Status**: Components marked with 🔄 In Progress or 📋 Planned are still being developed. Check the [Roadmap](https://herouiv3.featurebase.app/roadmap) for the task status. Guides for these components will be available once development is finished.
+  **Component Development Status**: Components marked with 🔄 In Progress or 📋 Planned are still being developed. Check the [Roadmap](https://prismuiv3.featurebase.app/roadmap) for the task status. Guides for these components will be available once development is finished.
 </Callout>
 
 | v2 Component | v3 Component | Status | Migration Guide |
@@ -194,5 +194,5 @@ If you encounter issues during migration:
 
 1. Check the [v3 documentation](/docs/react)
 2. Review component-specific migration guides
-3. Check the [GitHub Discussions](https://github.com/khulnasoft/heroui/discussions)
+3. Check the [GitHub Discussions](https://github.com/khulnasoft/prismui/discussions)
 4. Join the [Discord community](https://discord.gg/9b6yyZKmH4)

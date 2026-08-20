@@ -9,34 +9,34 @@ description:
 </div>
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/cli-demo.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/cli-demo.mp4"
   height={430}
   muted
 />
 
-🎉 A new CLI — [`create-heroui-native-app`](https://www.npmjs.com/package/create-heroui-native-app) — is now the fastest way to start a PrismUI Native project. One command scaffolds a complete Expo Router app with PrismUI Native, Uniwind, Tailwind CSS, every required peer dependency, and the provider wiring already in place. No manual setup of `global.css`, `metro.config.js`, or `app/_layout.tsx`.
+🎉 A new CLI — [`create-prismui-native-app`](https://www.npmjs.com/package/create-prismui-native-app) — is now the fastest way to start a PrismUI Native project. One command scaffolds a complete Expo Router app with PrismUI Native, Uniwind, Tailwind CSS, every required peer dependency, and the provider wiring already in place. No manual setup of `global.css`, `metro.config.js`, or `app/_layout.tsx`.
 
 ## Quick Start
 
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npx create-heroui-native-app@latest my-app
+  npx create-prismui-native-app@latest my-app
   ```
 </Tab>
 <Tab value="pnpm">
   ```bash
-  pnpm create heroui-native-app@latest my-app
+  pnpm create prismui-native-app@latest my-app
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn create heroui-native-app my-app
+  yarn create prismui-native-app my-app
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun create heroui-native-app@latest my-app
+  bun create prismui-native-app@latest my-app
   ```
 </Tab>
 </Tabs>
@@ -60,8 +60,8 @@ The CLI ships with two templates. Pick one in the interactive picker, or pass a 
 | `--expo-tabs` | `expo-tabs` | Expo Router tabs layout with two tabs (`Button` + `Card` demos). |
 
 ```bash
-npx create-heroui-native-app@latest my-app --expo
-npx create-heroui-native-app@latest my-app --expo-tabs --use-pnpm
+npx create-prismui-native-app@latest my-app --expo
+npx create-prismui-native-app@latest my-app --expo-tabs --use-pnpm
 ```
 
 ## What You Get
@@ -81,7 +81,7 @@ Every scaffolded project ships preconfigured with:
 ## CLI Reference
 
 ```text
-create-heroui-native-app [project-name] [options]
+create-prismui-native-app [project-name] [options]
 ```
 
 | Option | Description |
@@ -99,19 +99,19 @@ create-heroui-native-app [project-name] [options]
 
 ```bash
 # Fully interactive — prompts for both project name and template
-npx create-heroui-native-app@latest
+npx create-prismui-native-app@latest
 
 # Project name supplied, template picker still shown
-npx create-heroui-native-app@latest my-app
+npx create-prismui-native-app@latest my-app
 
 # Fully non-interactive
-npx create-heroui-native-app@latest my-app --expo
+npx create-prismui-native-app@latest my-app --expo
 
 # Tabs template, install with pnpm
-npx create-heroui-native-app@latest my-app --expo-tabs --use-pnpm
+npx create-prismui-native-app@latest my-app --expo-tabs --use-pnpm
 
 # Scaffold only, no install, no git
-npx create-heroui-native-app@latest my-app --expo --skip-install --skip-git
+npx create-prismui-native-app@latest my-app --expo --skip-install --skip-git
 ```
 
 ## Requirements

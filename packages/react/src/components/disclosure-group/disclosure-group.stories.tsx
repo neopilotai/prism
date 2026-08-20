@@ -69,7 +69,7 @@ const Template = (props: DisclosureGroupProps) => {
                 <img
                   alt="Expo Go QR Code"
                   className="aspect-square w-full max-w-54 object-cover"
-                  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
+                  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
                 />
                 <p className="text-sm text-muted">Expo must be installed on your device.</p>
                 <Button className="mt-4" variant="primary">
@@ -104,7 +104,7 @@ const Template = (props: DisclosureGroupProps) => {
                 <img
                   alt="Expo Go QR Code"
                   className="aspect-square w-full max-w-54 object-cover"
-                  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
+                  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
                 />
                 <p className="text-sm text-muted">Expo must be installed on your device.</p>
                 <Button className="mt-4" variant="primary">
@@ -181,7 +181,7 @@ const ControlledTemplate = (props: DisclosureGroupProps) => {
                 <img
                   alt="Expo Go QR Code"
                   className="aspect-square w-full max-w-54 object-cover"
-                  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
+                  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
                 />
                 <p className="text-sm text-muted">Expo must be installed on your device.</p>
                 <Button className="mt-4" variant="primary">
@@ -216,7 +216,7 @@ const ControlledTemplate = (props: DisclosureGroupProps) => {
                 <img
                   alt="Expo Go QR Code"
                   className="aspect-square w-full max-w-54 object-cover"
-                  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
+                  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
                 />
                 <p className="text-sm text-muted">Expo must be installed on your device.</p>
                 <Button className="mt-4" variant="primary">

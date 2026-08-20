@@ -3,12 +3,12 @@
       <img 
         alt="PrismUI v3 logo" 
         width="100%" 
-        src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-og_2x.jpg"
+        src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui-og_2x.jpg"
       />
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/khulnasoft/heroui/blob/main/LICENSE">
+  <a href="https://github.com/khulnasoft/prismui/blob/main/LICENSE">
     <img src="https://img.shields.io/npm/l/@khulnasoft/react?style=flat" alt="License">
   </a>
   <a href="https://www.npmjs.com/package/@khulnasoft/react">
@@ -85,11 +85,11 @@ Visit [storybook-v3.prism.khulnasoft.com](https://storybook-v3.prism.khulnasoft.
 
 ## Roadmap
 
-Visit [herouiv3.featurebase.app/roadmap](https://herouiv3.featurebase.app/roadmap) to view the roadmap for PrismUI v3.
+Visit [prismuiv3.featurebase.app/roadmap](https://prismuiv3.featurebase.app/roadmap) to view the roadmap for PrismUI v3.
 
 ## Figma
 
-Visit the [PrismUI Figma Kit (v3)](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3) to view the design kit.
+Visit the [PrismUI Figma Kit (v3)](https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3) to view the design kit.
 
 ## Community
 
@@ -98,15 +98,15 @@ Whether it's a feature request, bug report, or a project to showcase, please get
 
 - [Discord](https://discord.gg/9b6yyZKmH4)
 - [X](https://x.com/hero_ui)
-- [GitHub Discussions](https://github.com/khulnasoft/heroui/discussions)
+- [GitHub Discussions](https://github.com/khulnasoft/prismui/discussions)
 
 ## Contributing
 
 Contributions are always welcome!
 
-See [CONTRIBUTING.md](https://github.com/khulnasoft/heroui/blob/main/CONTRIBUTING.md) for ways to get started.
+See [CONTRIBUTING.md](https://github.com/khulnasoft/prismui/blob/main/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/heroui/blob/main/CODE_OF_CONDUCT.md).
+Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/prismui/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 

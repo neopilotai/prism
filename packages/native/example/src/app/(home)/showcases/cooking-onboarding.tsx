@@ -7,7 +7,7 @@ import {
   Separator,
   useThemeColor,
   type PopoverTriggerRef,
-} from 'heroui-native';
+} from 'prismui-native';
 import {
   useCallback,
   useEffect,

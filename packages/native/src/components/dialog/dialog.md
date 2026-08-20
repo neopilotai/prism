@@ -5,7 +5,7 @@ Displays a modal overlay with animated transitions and gesture-based dismissal.
 ## Import
 
 ```tsx
-import { Dialog } from 'heroui-native';
+import { Dialog } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -113,7 +113,7 @@ Dialog with text inputs and keyboard handling.
 ## Example
 
 ```tsx
-import { Button, Dialog } from 'heroui-native';
+import { Button, Dialog } from 'prismui-native';
 import { View } from 'react-native';
 import { useState } from 'react';
 
@@ -149,7 +149,7 @@ export default function DialogExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/dialog.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/dialog.tsx>).
 
 ## API Reference
 

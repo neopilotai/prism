@@ -67,13 +67,13 @@ export async function migrateAction(projectPaths?: string[], options = {} as Mig
     step++;
   }
 
-  /** ======================== 2. Migrate import nextui to heroui ======================== */
-  const runMigrateImportNextui = getCanRunCodemod(codemod, 'import-heroui');
+  /** ======================== 2. Migrate import nextui to prismui ======================== */
+  const runMigrateImportNextui = getCanRunCodemod(codemod, 'import-prismui');
 
   if (runMigrateImportNextui) {
-    p.log.step(`${step}. Migrating import "nextui" to "heroui"`);
+    p.log.step(`${step}. Migrating import "nextui" to "prismui"`);
     const selectMigrateNextui = await confirmClack({
-      message: 'Do you want to migrate import nextui to heroui?'
+      message: 'Do you want to migrate import nextui to prismui?'
     });
 
     if (selectMigrateNextui) {
@@ -86,7 +86,7 @@ export async function migrateAction(projectPaths?: string[], options = {} as Mig
   }
 
   /** ======================== 3. Migrate NextUIProvider to PrismUIProvider ======================== */
-  const runMigrateNextuiProvider = getCanRunCodemod(codemod, 'heroui-provider');
+  const runMigrateNextuiProvider = getCanRunCodemod(codemod, 'prismui-provider');
 
   if (runMigrateNextuiProvider) {
     p.log.step(`${step}. Migrating "NextUIProvider" to "PrismUIProvider"`);
@@ -101,7 +101,7 @@ export async function migrateAction(projectPaths?: string[], options = {} as Mig
   }
 
   /** ======================== 4. Migrate tailwindcss ======================== */
-  const runMigrateTailwindcss = getCanRunCodemod(codemod, 'tailwindcss-heroui');
+  const runMigrateTailwindcss = getCanRunCodemod(codemod, 'tailwindcss-prismui');
 
   if (runMigrateTailwindcss) {
     p.log.step(`${step}. Migrating "tailwindcss"`);
@@ -163,7 +163,7 @@ export async function migrateAction(projectPaths?: string[], options = {} as Mig
     p.log.step(`${step}. Remaining files with "@nextui-org" (${remainingFiles.length})`);
     p.log.info(remainingFiles.join('\n'));
     const selectMigrateLeftFiles = await confirmClack({
-      message: 'Do you want to replace all remaining instances of "@nextui-org" with "@heroui"?'
+      message: 'Do you want to replace all remaining instances of "@nextui-org" with "@prismui"?'
     });
 
     if (selectMigrateLeftFiles) {

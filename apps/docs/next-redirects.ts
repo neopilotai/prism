@@ -149,9 +149,9 @@ export async function getRedirects(): Promise<Redirect[]> {
     source: "/en",
   });
 
-  // PrismUI Agents product page lives on heroui.pro. Docs and npm still link to
+  // PrismUI Agents product page lives on prismui.pro. Docs and npm still link to
   // prism.khulnasoft.com/agents, so send those legacy paths to the live product URL.
-  const agentsProductUrl = "https://heroui.pro/agents";
+  const agentsProductUrl = "https://prismui.pro/agents";
 
   redirects.push(
     {
@@ -191,8 +191,8 @@ export async function getRedirects(): Promise<Redirect[]> {
   // This post has no Chinese translation. Avoid serving English content at a
   // Chinese URL and point crawlers directly at the published English article.
   redirects.push({
-    destination: "/en/blog/styling-and-theming-in-heroui-native",
-    source: "/cn/blog/styling-and-theming-in-heroui-native",
+    destination: "/en/blog/styling-and-theming-in-prismui-native",
+    source: "/cn/blog/styling-and-theming-in-prismui-native",
     statusCode: 301,
   });
 

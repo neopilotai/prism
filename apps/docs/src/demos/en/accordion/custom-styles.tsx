@@ -1,16 +1,16 @@
 import {ChevronDown} from "@gravity-ui/icons";
-import {Accordion} from "@heroui/react";
+import {Accordion} from "@khulnasoft/react";
 
 const items = [
   {
     content: "Stay informed about your account activity with real-time notifications.",
-    iconUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/3dicons/bell-small.png",
+    iconUrl: "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/3dicons/bell-small.png",
     subtitle: "Receive account activity updates",
     title: "Set Up Notifications",
   },
   {
     content: "Enhance your browsing experience by installing our official browser extension",
-    iconUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/3dicons/compass-small.png",
+    iconUrl: "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/3dicons/compass-small.png",
     subtitle: "Connect your browser to your account",
     title: "Set up Browser Extension",
   },
@@ -18,7 +18,7 @@ const items = [
     content:
       "Begin your journey into the world of digital collectibles by creating your first NFT. ",
     iconUrl:
-      "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/3dicons/mint-collective-small.png",
+      "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/3dicons/mint-collective-small.png",
     subtitle: "Create your first collectible",
     title: "Mint Collectible",
   },

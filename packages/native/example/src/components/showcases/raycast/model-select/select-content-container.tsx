@@ -1,4 +1,4 @@
-import { Select, useSelect } from 'heroui-native';
+import { Select, useSelect } from 'prismui-native';
 import { useEffect, type FC, type PropsWithChildren } from 'react';
 import Animated, {
   Easing,

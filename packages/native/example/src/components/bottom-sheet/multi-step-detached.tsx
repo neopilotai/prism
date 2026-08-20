@@ -6,7 +6,7 @@
 
 import Feather from '@expo/vector-icons/Feather';
 import { useLingui } from '@lingui/react/macro';
-import { BottomSheet, Button } from 'heroui-native';
+import { BottomSheet, Button } from 'prismui-native';
 import { useCallback, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Animated, {

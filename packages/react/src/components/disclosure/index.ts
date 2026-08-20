@@ -56,6 +56,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {disclosureVariants} from "@heroui/styles";
+export {disclosureVariants} from "@khulnasoft/styles";
 
-export type {DisclosureVariants} from "@heroui/styles";
+export type {DisclosureVariants} from "@prismuisoft/styles";

@@ -5,7 +5,7 @@ A text input component with label, description, and error handling for collectin
 ## Import
 
 ```tsx
-import { TextField } from 'heroui-native';
+import { TextField } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -55,7 +55,7 @@ Mark fields as required to show an asterisk in the label.
 Display error messages when the field is invalid.
 
 ```tsx
-import { FieldError, Input, Label, TextField } from 'heroui-native';
+import { FieldError, Input, Label, TextField } from 'prismui-native';
 
 <TextField isRequired isInvalid={true}>
   <Label>Email</Label>
@@ -75,7 +75,7 @@ import {
   Input,
   Label,
   TextField,
-} from 'heroui-native';
+} from 'prismui-native';
 
 <TextField isInvalid={true}>
   <Label isInvalid={false}>Email</Label>
@@ -144,7 +144,7 @@ Customize the input appearance using className.
 
 ```tsx
 import { Ionicons } from '@expo/vector-icons';
-import { Description, Input, Label, TextField } from 'heroui-native';
+import { Description, Input, Label, TextField } from 'prismui-native';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 import { withUniwind } from 'uniwind';
@@ -206,7 +206,7 @@ export const TextInputContent = () => {
 };
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/text-field.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/text-field.tsx>).
 
 ## API Reference
 
@@ -238,7 +238,7 @@ You can find more examples in the [GitHub repository](<https://github.com/khulna
 Hook to access the TextField context values. Must be used within a `TextField` component.
 
 ```tsx
-import { TextField, useTextField } from 'heroui-native';
+import { TextField, useTextField } from 'prismui-native';
 
 function CustomComponent() {
   const { isDisabled, isInvalid, isRequired } = useTextField();

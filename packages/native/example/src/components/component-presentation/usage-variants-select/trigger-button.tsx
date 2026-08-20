@@ -1,5 +1,5 @@
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import { useSelect, useThemeColor } from 'heroui-native';
+import { useSelect, useThemeColor } from 'prismui-native';
 import { useEffect } from 'react';
 import Animated, {
   Easing,

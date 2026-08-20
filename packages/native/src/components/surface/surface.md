@@ -5,7 +5,7 @@ Container component that provides elevation and background styling.
 ## Import
 
 ```tsx
-import { Surface } from 'heroui-native';
+import { Surface } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -88,7 +88,7 @@ Disable all animations including children by using the `"disable-all"` value for
 ## Example
 
 ```tsx
-import { Surface } from 'heroui-native';
+import { Surface } from 'prismui-native';
 import { Text, View } from 'react-native';
 
 export default function SurfaceExample() {
@@ -121,7 +121,7 @@ export default function SurfaceExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/surface.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/surface.tsx>).
 
 ## API Reference
 

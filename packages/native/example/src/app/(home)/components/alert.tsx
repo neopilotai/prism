@@ -1,6 +1,6 @@
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
-import { Alert, Button, CloseButton, Spinner } from 'heroui-native';
+import { Alert, Button, CloseButton, Spinner } from 'prismui-native';
 import { View } from 'react-native';
 import type { UsageVariant } from '../../../components/component-presentation/types';
 import { UsageVariantFlatList } from '../../../components/component-presentation/usage-variant-flatlist';

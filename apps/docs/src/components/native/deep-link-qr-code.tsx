@@ -6,7 +6,7 @@ import {ReactQRCode} from "@lglab/react-qr-code";
 import {NATIVE_APP} from "@/config/native-app";
 import {useIsMobileDevice} from "@/hooks/use-is-mobile-device";
 
-import {PrismUIPlainLogo} from "../heroui-plain-logo";
+import {PrismUIPlainLogo} from "../prismui-plain-logo";
 
 /**
  * In-app route segment that hosts component screens. This matches the
@@ -17,8 +17,8 @@ import {PrismUIPlainLogo} from "../heroui-plain-logo";
  * coming via Universal Links / App Links). For our custom-scheme URLs it
  * returns the path unchanged and Expo Router routes it natively, which means
  * the URL must already encode the in-app route — i.e.
- * `herouinative://components/{slug}` becomes `/components/{slug}` and
- * `herouinative://` opens the initial route.
+ * `prismuinative://components/{slug}` becomes `/components/{slug}` and
+ * `prismuinative://` opens the initial route.
  */
 const IN_APP_COMPONENT_PATH = "components";
 
@@ -28,9 +28,9 @@ const IN_APP_COMPONENT_PATH = "components";
  *
  * Examples:
  *  - `https://prism.khulnasoft.com/docs/native-showcase/components/button` ->
- *    `herouinative://components/button`
+ *    `prismuinative://components/button`
  *  - `https://prism.khulnasoft.com/docs/native-showcase/components/`       ->
- *    `herouinative://`  (open at the app's initial route)
+ *    `prismuinative://`  (open at the app's initial route)
  *  - `""` (origin not yet resolved on the client) -> `""`
  */
 function toCustomSchemeUrl(universalLinkUrl: string): string {
@@ -81,7 +81,7 @@ export const DeepLinkQRCode = ({size = 160, url}: DeepLinkQRCodeProps) => {
     // trigger iOS's app handoff — Safari treats it as an in-page navigation.
     // So on mobile we fire the custom URL scheme directly, encoded in the
     // shape Expo Router's deep-link handler expects:
-    // `herouinative://components/{slug}` (or `herouinative://` for home).
+    // `prismuinative://components/{slug}` (or `prismuinative://` for home).
     // The native app's `+native-intent.ts` deliberately only rewrites
     // `https:` URLs and returns custom-scheme paths unchanged, so the URL
     // itself must already be in the in-app route format.

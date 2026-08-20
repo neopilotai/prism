@@ -11,7 +11,7 @@ export function CustomCheckIcon() {
           <Avatar size="sm">
             <Avatar.Image
               alt="Bob"
-              src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg"
+              src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg"
             />
             <Avatar.Fallback>B</Avatar.Fallback>
           </Avatar>
@@ -27,7 +27,7 @@ export function CustomCheckIcon() {
           <Avatar size="sm">
             <Avatar.Image
               alt="Fred"
-              src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg"
+              src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg"
             />
             <Avatar.Fallback>F</Avatar.Fallback>
           </Avatar>
@@ -43,7 +43,7 @@ export function CustomCheckIcon() {
           <Avatar size="sm">
             <Avatar.Image
               alt="Martha"
-              src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg"
+              src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg"
             />
             <Avatar.Fallback>M</Avatar.Fallback>
           </Avatar>

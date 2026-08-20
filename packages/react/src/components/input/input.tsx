@@ -1,9 +1,9 @@
 "use client";
 
-import type {InputVariants} from "@heroui/styles";
+import type {InputVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {inputVariants} from "@heroui/styles";
+import {inputVariants} from "@prismuisoft/styles";
 import React, {use} from "react";
 import {Input as InputPrimitive} from "react-aria-components/Input";
 

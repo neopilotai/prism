@@ -254,7 +254,7 @@ The theme also provides calculated variables for hover states, soft colors, and 
 The package provides:
 
 - `index.css`: Main unminified CSS file
-- `heroui.min.css`: Minified production-ready CSS (generated during build)
+- `prismui.min.css`: Minified production-ready CSS (generated during build)
 
 ## Framework Integration
 

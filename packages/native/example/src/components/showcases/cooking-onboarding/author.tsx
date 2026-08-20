@@ -1,5 +1,5 @@
 import Feather from '@expo/vector-icons/Feather';
-import { Avatar } from 'heroui-native';
+import { Avatar } from 'prismui-native';
 import { type FC } from 'react';
 import { Pressable, View } from 'react-native';
 import { withUniwind } from 'uniwind';
@@ -14,7 +14,7 @@ export const Author: FC = () => {
       <Avatar alt="junior" size="sm" className="size-8 border-foreground/20">
         <Avatar.Image
           source={{
-            uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/junior-avatar.jpg',
+            uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/junior-avatar.jpg',
           }}
         />
         <Avatar.Fallback>

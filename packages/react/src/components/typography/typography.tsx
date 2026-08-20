@@ -1,9 +1,9 @@
 "use client";
 
-import type {TypographyVariants} from "@heroui/styles";
+import type {TypographyVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {typographyVariants} from "@heroui/styles";
+import {typographyVariants} from "@prismuisoft/styles";
 import {Text as TextPrimitive} from "react-aria-components/Text";
 
 import {composeSlotClassName} from "../../utils/compose";

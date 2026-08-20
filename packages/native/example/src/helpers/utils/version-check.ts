@@ -3,15 +3,15 @@ import { Platform } from 'react-native';
 
 /** App Store link for the PrismUI Native app */
 export const APP_STORE_URL =
-  'https://apps.apple.com/us/app/heroui-native/id6757860059';
+  'https://apps.apple.com/us/app/prismui-native/id6757860059';
 
 /** Resolved bundle/package identifier per platform */
 const bundleInfo = Platform.select({
   ios: {
-    id: Constants.expoConfig?.ios?.bundleIdentifier ?? 'com.herouinative.app',
+    id: Constants.expoConfig?.ios?.bundleIdentifier ?? 'com.prismuinative.app',
   },
   android: {
-    id: Constants.expoConfig?.android?.package ?? 'com.herouinative.android',
+    id: Constants.expoConfig?.android?.package ?? 'com.prismuinative.android',
   },
 });
 

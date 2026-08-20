@@ -36,7 +36,7 @@ export const createCollectionSlot = <T extends object>(name: string) => {
   }
 
   // String key required — React drops Symbol keys from element props / cloneElement.
-  const key = `$$heroui.collection.${name}`;
+  const key = `$$prismui.collection.${name}`;
   const SlotContext = createContext<T | undefined>(undefined);
 
   const inject = (children: ReactNode, value: T): ReactNode => {

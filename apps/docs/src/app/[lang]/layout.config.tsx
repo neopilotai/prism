@@ -1,6 +1,6 @@
 import type {BaseLayoutProps} from "fumadocs-ui/layouts/shared";
 
-import {PrismUILogo} from "@/components/heroui-logo";
+import {PrismUILogo} from "@/components/prismui-logo";
 
 export {getHomeLayoutLinks} from "./(home)/home-layout-links";
 

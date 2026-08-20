@@ -4,7 +4,7 @@ PrismUI Native uses CSS variables for theming. Customize everything from colors 
 
 ## How It Works
 
-PrismUI Native's theming system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme via [Uniwind](https://uniwind.dev/). When you import `heroui-native/styles`, it uses Tailwind's built-in color palettes, maps them to semantic variables, automatically switches between light and dark themes, and uses CSS layers and the `@theme` directive for organization.
+PrismUI Native's theming system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme via [Uniwind](https://uniwind.dev/). When you import `prismui-native/styles`, it uses Tailwind's built-in color palettes, maps them to semantic variables, automatically switches between light and dark themes, and uses CSS layers and the `@theme` directive for organization.
 
 **Naming pattern:**
 
@@ -29,7 +29,7 @@ PrismUI Native automatically supports dark mode through [Uniwind](https://docs.u
 
 ```tsx
 import { Uniwind, useUniwind } from 'uniwind';
-import { Button } from 'heroui-native';
+import { Button } from 'prismui-native';
 
 function ThemeToggle() {
   const { theme } = useUniwind();
@@ -233,7 +233,7 @@ Apply themes in your app:
 
 ```tsx
 import { Uniwind } from 'uniwind';
-import { Button } from 'heroui-native';
+import { Button } from 'prismui-native';
 
 function App() {
   return (
@@ -288,7 +288,7 @@ First, load your custom fonts (using Expo's `useFonts` hook for example):
 
 ```tsx
 import { useFonts } from 'expo-font';
-import { PrismUINativeProvider } from 'heroui-native';
+import { PrismUINativeProvider } from 'prismui-native';
 import {
   YourFont_400Regular,
   YourFont_500Medium,

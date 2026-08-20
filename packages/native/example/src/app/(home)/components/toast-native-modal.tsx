@@ -1,5 +1,5 @@
 import { useLingui } from '@lingui/react/macro';
-import { Button, useThemeColor, useToast } from 'heroui-native';
+import { Button, useThemeColor, useToast } from 'prismui-native';
 import { View } from 'react-native';
 import { Logo } from '../../../components/logo';
 

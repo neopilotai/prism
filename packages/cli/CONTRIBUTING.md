@@ -60,7 +60,7 @@ https://www.conventionalcommits.org/ or check out the
 
 ### Steps to PR
 
-1. Fork of the heroui cli repository and clone your fork
+1. Fork of the prismui cli repository and clone your fork
 
 2. Create a new branch out of the `main` branch. We follow the convention
    `[type/scope]`. For example `fix/dropdown-hook` or `docs/menu-typo`. `type`

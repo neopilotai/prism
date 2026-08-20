@@ -42,6 +42,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {cardVariants} from "@heroui/styles";
+export {cardVariants} from "@khulnasoft/styles";
 
-export type {CardVariants} from "@heroui/styles";
+export type {CardVariants} from "@prismuisoft/styles";

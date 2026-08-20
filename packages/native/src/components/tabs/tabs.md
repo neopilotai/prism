@@ -5,7 +5,7 @@ Organize content into tabbed views with animated transitions and indicators.
 ## Import
 
 ```tsx
-import { Tabs } from 'heroui-native';
+import { Tabs } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -251,7 +251,7 @@ import {
   Label,
   Tabs,
   TextField,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 import Animated, {
@@ -355,7 +355,7 @@ export default function TabsExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/tabs.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/tabs.tsx>).
 
 ## API Reference
 
@@ -504,7 +504,7 @@ Animation configuration for Tabs.Separator component. Can be:
 Hook to access tabs root context values within custom components or compound components.
 
 ```tsx
-import { useTabs } from 'heroui-native';
+import { useTabs } from 'prismui-native';
 
 const CustomComponent = () => {
   const { value, onValueChange, nativeID } = useTabs();
@@ -527,7 +527,7 @@ const CustomComponent = () => {
 Hook to access tab measurements context values for managing tab trigger positions and dimensions.
 
 ```tsx
-import { useTabsMeasurements } from 'heroui-native';
+import { useTabsMeasurements } from 'prismui-native';
 
 const CustomIndicator = () => {
   const { measurements, variant } = useTabsMeasurements();
@@ -558,7 +558,7 @@ const CustomIndicator = () => {
 Hook to access tab trigger context values within custom components or compound components.
 
 ```tsx
-import { useTabsTrigger } from 'heroui-native';
+import { useTabsTrigger } from 'prismui-native';
 
 const CustomLabel = () => {
   const { value, isSelected, nativeID } = useTabsTrigger();

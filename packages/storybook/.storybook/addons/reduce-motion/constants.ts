@@ -1,6 +1,6 @@
-export const REDUCE_MOTION_ADDON_ID = "heroui-reduce-motion-addon";
-export const REDUCE_MOTION_GLOBAL_TYPE_ID = "heroui-reduce-motion";
-export const REDUCE_MOTION_PARAM_KEY = "heroui-reduce-motion";
+export const REDUCE_MOTION_ADDON_ID = "prismui-reduce-motion-addon";
+export const REDUCE_MOTION_GLOBAL_TYPE_ID = "prismui-reduce-motion";
+export const REDUCE_MOTION_PARAM_KEY = "prismui-reduce-motion";
 
 export const REDUCE_MOTION_VALUES = ["true", "false"] as const;
 export type ReduceMotionKey = (typeof REDUCE_MOTION_VALUES)[number];

@@ -5,7 +5,7 @@ import {
   Label,
   Separator,
   Surface,
-} from 'heroui-native';
+} from 'prismui-native';
 import React from 'react';
 import { View } from 'react-native';
 

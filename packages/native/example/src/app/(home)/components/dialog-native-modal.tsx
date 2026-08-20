@@ -1,5 +1,5 @@
 import { useLingui } from '@lingui/react/macro';
-import { Button, Dialog } from 'heroui-native';
+import { Button, Dialog } from 'prismui-native';
 import { useState } from 'react';
 import { View } from 'react-native';
 

@@ -1,10 +1,10 @@
 "use client";
 
-import type {DateFieldVariants} from "@heroui/styles";
+import type {DateFieldVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {DateValue} from "react-aria-components/Calendar";
 
-import {dateFieldVariants} from "@heroui/styles";
+import {dateFieldVariants} from "@prismuisoft/styles";
 import React from "react";
 import {DateField as DateFieldPrimitive} from "react-aria-components/DateField";
 

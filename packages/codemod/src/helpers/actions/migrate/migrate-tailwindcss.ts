@@ -23,16 +23,16 @@ export function migrateTailwindcss(paths: string[]) {
     }
     let dirtyFlag = false;
 
-    // Migrate const {nextui} = require("xxx") --> const {heroui} = require("xxx")
+    // Migrate const {nextui} = require("xxx") --> const {prismui} = require("xxx")
     dirtyFlag = migrateImportName(parsedContent, NEXTUI_PLUGIN, HEROUI_PLUGIN);
 
-    // Migrate const {xxx} = require("nextui") --> const {xxx} = require("heroui") -- (optional avoid user skip the "import-heroui" codemod)
+    // Migrate const {xxx} = require("nextui") --> const {xxx} = require("prismui") -- (optional avoid user skip the "import-prismui" codemod)
     dirtyFlag = migrateImportPackage(parsedContent);
 
-    // Migrate plugin call expression nextui() -> heroui()
+    // Migrate plugin call expression nextui() -> prismui()
     dirtyFlag = migrateCallExpressionName(parsedContent, NEXTUI_PLUGIN, HEROUI_PLUGIN);
 
-    // Migrate the content path from `@nextui-org/theme` to `@heroui/theme`
+    // Migrate the content path from `@nextui-org/theme` to `@prismui/theme`
     parsedContent.find(jscodeshift.ObjectExpression).forEach((path) => {
       path.node.properties.forEach((prop: SAFE_ANY) => {
         if (

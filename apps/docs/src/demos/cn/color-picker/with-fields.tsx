@@ -1,6 +1,6 @@
 "use client";
 
-import type {ColorChannel, ColorSpace} from "@heroui/react";
+import type {ColorChannel, ColorSpace} from "@khulnasoft/react";
 
 import {
   ColorArea,
@@ -11,7 +11,7 @@ import {
   Label,
   ListBox,
   Select,
-} from "@heroui/react";
+} from "@prismuisoft/react";
 import {useState} from "react";
 
 const CHANNEL_LABELS: Record<ColorChannel, string> = {

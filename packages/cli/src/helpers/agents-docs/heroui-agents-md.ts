@@ -1,5 +1,5 @@
 /**
- * heroui-agents-md: Generate PrismUI documentation index for AI coding agents.
+ * prismui-agents-md: Generate PrismUI documentation index for AI coding agents.
  *
  * Downloads docs from GitHub via git sparse-checkout, builds a compact
  * index of all doc files, and injects it into CLAUDE.md or AGENTS.md.
@@ -61,7 +61,7 @@ export async function pullDocs(options: PullOptions): Promise<PullResult> {
 
   const gitRef = DEFAULT_DOCS_BRANCH;
 
-  const docsPath = docsDir ?? path.join(cwd, '.heroui-docs');
+  const docsPath = docsDir ?? path.join(cwd, '.prismui-docs');
 
   try {
     // Ensure the docs directory exists (but don't remove it - preserve other libraries)

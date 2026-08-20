@@ -17,7 +17,7 @@ export async function listAction(options: CommandOptions) {
 
     if (!installed.length) {
       Logger.warn(
-        'No PrismUI packages found. Run `heroui install` to install @heroui/react and @heroui/styles.'
+        'No PrismUI packages found. Run `prismui install` to install @prismui/react and @prismui/styles.'
       );
 
       return;

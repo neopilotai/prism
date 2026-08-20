@@ -13,35 +13,35 @@ import {
 export function CustomValue() {
   const users = [
     {
-      avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg",
+      avatarUrl: "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg",
       email: "bob@khulnasoft.com",
       fallback: "B",
       id: "1",
       name: "Bob",
     },
     {
-      avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg",
+      avatarUrl: "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg",
       email: "fred@khulnasoft.com",
       fallback: "F",
       id: "2",
       name: "Fred",
     },
     {
-      avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg",
+      avatarUrl: "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg",
       email: "martha@khulnasoft.com",
       fallback: "M",
       id: "3",
       name: "Martha",
     },
     {
-      avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg",
+      avatarUrl: "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg",
       email: "john@khulnasoft.com",
       fallback: "J",
       id: "4",
       name: "John",
     },
     {
-      avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/orange.jpg",
+      avatarUrl: "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/orange.jpg",
       email: "jane@khulnasoft.com",
       fallback: "J",
       id: "5",

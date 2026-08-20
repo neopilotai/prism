@@ -5,7 +5,7 @@ A text input component with styled border and background for collecting user inp
 ## Import
 
 ```tsx
-import { Input } from 'heroui-native';
+import { Input } from 'prismui-native';
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ import { Input } from 'heroui-native';
 Input can be used standalone or within a TextField component.
 
 ```tsx
-import { Input } from 'heroui-native';
+import { Input } from 'prismui-native';
 
 <Input placeholder="Enter your email" />;
 ```
@@ -25,7 +25,7 @@ import { Input } from 'heroui-native';
 Input works seamlessly with TextField for complete form structure.
 
 ```tsx
-import { Input, Label, TextField } from 'heroui-native';
+import { Input, Label, TextField } from 'prismui-native';
 
 <TextField>
   <Label>Email</Label>
@@ -38,7 +38,7 @@ import { Input, Label, TextField } from 'heroui-native';
 Display error state when the input is invalid.
 
 ```tsx
-import { FieldError, Input, Label, TextField } from 'heroui-native';
+import { FieldError, Input, Label, TextField } from 'prismui-native';
 
 <TextField isRequired isInvalid={true}>
   <Label>Email</Label>
@@ -52,7 +52,7 @@ import { FieldError, Input, Label, TextField } from 'heroui-native';
 Override the context's invalid state for the input.
 
 ```tsx
-import { FieldError, Input, Label, TextField } from 'heroui-native';
+import { FieldError, Input, Label, TextField } from 'prismui-native';
 
 <TextField isInvalid={true}>
   <Label isInvalid={false}>Email</Label>
@@ -66,7 +66,7 @@ import { FieldError, Input, Label, TextField } from 'heroui-native';
 Disable the input to prevent interaction.
 
 ```tsx
-import { Input, Label, TextField } from 'heroui-native';
+import { Input, Label, TextField } from 'prismui-native';
 
 <TextField isDisabled>
   <Label>Disabled Field</Label>
@@ -79,7 +79,7 @@ import { Input, Label, TextField } from 'heroui-native';
 Use different variants to style the input based on context.
 
 ```tsx
-import { Input, Label, TextField } from 'heroui-native';
+import { Input, Label, TextField } from 'prismui-native';
 
 <TextField>
   <Label>Primary Variant</Label>
@@ -97,7 +97,7 @@ import { Input, Label, TextField } from 'heroui-native';
 Customize the input appearance using className.
 
 ```tsx
-import { Input, Label, TextField } from 'heroui-native';
+import { Input, Label, TextField } from 'prismui-native';
 
 <TextField>
   <Label>Custom Styled</Label>
@@ -115,7 +115,7 @@ When rendering an Input inside a `BottomSheet`, use the `useBottomSheetAwareHand
 > **Note**: `useBottomSheetAwareHandlers` must be used inside a `BottomSheet`. Call it from a child component rendered inside `BottomSheet.Content` — outside of a `BottomSheet` context the returned handlers are no-ops.
 
 ```tsx
-import { Input, TextField, useBottomSheetAwareHandlers } from 'heroui-native';
+import { Input, TextField, useBottomSheetAwareHandlers } from 'prismui-native';
 
 const BottomSheetTextInput = () => {
   const { onFocus, onBlur } = useBottomSheetAwareHandlers();
@@ -132,7 +132,7 @@ const BottomSheetTextInput = () => {
 
 ```tsx
 import { Ionicons } from '@expo/vector-icons';
-import { Description, Input, Label, TextField } from 'heroui-native';
+import { Description, Input, Label, TextField } from 'prismui-native';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 import { withUniwind } from 'uniwind';
@@ -194,7 +194,7 @@ export const TextInputContent = () => {
 };
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/input.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/input.tsx>).
 
 ## API Reference
 

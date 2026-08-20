@@ -1,6 +1,6 @@
 "use client";
 
-import type {Key} from "@heroui/react";
+import type {Key} from "@khulnasoft/react";
 
 import {
   Autocomplete,
@@ -11,7 +11,7 @@ import {
   Tag,
   TagGroup,
   useFilter,
-} from "@heroui/react";
+} from "@prismuisoft/react";
 import {useState} from "react";
 
 export function TagGroupSelection() {

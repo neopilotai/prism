@@ -149,7 +149,7 @@ export const WithTextPrefix: Story = {
 
 export const WithTextSuffix: Story = {
   render: () => (
-    <TextField className="w-[280px]" defaultValue="heroui" name="website">
+    <TextField className="w-[280px]" defaultValue="prismui" name="website">
       <Label>Website</Label>
       <InputGroup>
         <InputGroup.Input className="w-[280px]" />
@@ -161,7 +161,7 @@ export const WithTextSuffix: Story = {
 
 export const WithIconPrefixAndTextSuffix: Story = {
   render: () => (
-    <TextField className="w-[280px]" defaultValue="heroui" name="website">
+    <TextField className="w-[280px]" defaultValue="prismui" name="website">
       <Label>Website</Label>
       <InputGroup>
         <InputGroup.Prefix>
@@ -499,7 +499,7 @@ export const AllVariations: Story = {
           </InputGroup>
         </TextField>
 
-        <TextField className="w-[280px]" defaultValue="heroui" name="website2">
+        <TextField className="w-[280px]" defaultValue="prismui" name="website2">
           <Label>Website</Label>
           <InputGroup>
             <InputGroup.Input className="w-[280px]" />
@@ -507,7 +507,7 @@ export const AllVariations: Story = {
           </InputGroup>
         </TextField>
 
-        <TextField className="w-[280px]" defaultValue="heroui" name="website3">
+        <TextField className="w-[280px]" defaultValue="prismui" name="website3">
           <Label>Website</Label>
           <InputGroup>
             <InputGroup.Prefix>

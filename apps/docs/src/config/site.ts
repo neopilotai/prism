@@ -14,9 +14,9 @@ export const siteConfig = {
   figmaCommunityFile: "https://www.figma.com/community/file/1546526812159103429",
   fullName: "PrismUI v3 (Previously NextUI) - Beautiful by default, customizable by design.",
   githubRawUrl:
-    "https://raw.githubusercontent.com/khulnasoft/heroui/refs/heads/v3/apps/docs/content/docs",
-  githubRepo: "khulnasoft/heroui",
-  githubUrl: "https://github.com/khulnasoft/heroui",
+    "https://raw.githubusercontent.com/khulnasoft/prismui/refs/heads/v3/apps/docs/content/docs",
+  githubRepo: "khulnasoft/prismui",
+  githubUrl: "https://github.com/khulnasoft/prismui",
   links: {
     discord: "https://discord.gg/9b6yyZKmH4",
     github: "https://github.com/khulnasoft",

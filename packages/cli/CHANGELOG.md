@@ -77,7 +77,7 @@
 - add action tailwindcss version always install latest verion ([#144](https://github.com/khulnasoft/prism/issues/144)) ([29936b7](https://github.com/khulnasoft/prism/commit/29936b70940dda0e8b79fd33b13cf2c844fede16))
 - add cache directory check before reading cache data ([#162](https://github.com/khulnasoft/prism/issues/162)) ([7d16929](https://github.com/khulnasoft/prism/commit/7d16929c450bc2adcda2f4b674ad76beee0ac6af))
 - add missing lock file entry for bun.lock ([#158](https://github.com/khulnasoft/prism/issues/158)) ([bb56da4](https://github.com/khulnasoft/prism/commit/bb56da46e3106067edc42d5b0367f97fee69b7d4))
-- upgrade beta package wont upgrade @heroui/react package ([#156](https://github.com/khulnasoft/prism/issues/156)) ([ac29f7c](https://github.com/khulnasoft/prism/commit/ac29f7cd8ff50203ff3e07e7568318c1140f2145))
+- upgrade beta package wont upgrade @prismui/react package ([#156](https://github.com/khulnasoft/prism/issues/156)) ([ac29f7c](https://github.com/khulnasoft/prism/commit/ac29f7cd8ff50203ff3e07e7568318c1140f2145))
 
 ### Features
 
@@ -89,7 +89,7 @@
 ### Bug Fixes
 
 - add action tailwindcss version always install latest verion ([#144](https://github.com/khulnasoft/prism/issues/144)) ([29936b7](https://github.com/khulnasoft/prism/commit/29936b70940dda0e8b79fd33b13cf2c844fede16))
-- upgrade beta package wont upgrade @heroui/react package ([#156](https://github.com/khulnasoft/prism/issues/156)) ([ac29f7c](https://github.com/khulnasoft/prism/commit/ac29f7cd8ff50203ff3e07e7568318c1140f2145))
+- upgrade beta package wont upgrade @prismui/react package ([#156](https://github.com/khulnasoft/prism/issues/156)) ([ac29f7c](https://github.com/khulnasoft/prism/commit/ac29f7cd8ff50203ff3e07e7568318c1140f2145))
 
 ### Features
 
@@ -118,7 +118,7 @@
 
 ### Bug Fixes
 
-- upgrade all should upgrade all heroui packages ([#151](https://github.com/khulnasoft/prism/issues/151)) ([ef84d5b](https://github.com/khulnasoft/prism/commit/ef84d5b4bb2e52cc5f603cef47f5bf95a0760574))
+- upgrade all should upgrade all prismui packages ([#151](https://github.com/khulnasoft/prism/issues/151)) ([ef84d5b](https://github.com/khulnasoft/prism/commit/ef84d5b4bb2e52cc5f603cef47f5bf95a0760574))
 
 # [1.0.0](https://github.com/khulnasoft/prism/compare/v0.6.0...v1.0.0) (2025-01-18)
 
@@ -148,7 +148,7 @@
 - add reinstall prompt and retry fetch version ([#137](https://github.com/nextui-org/nextui-cli/issues/137)) ([f36839e](https://github.com/nextui-org/nextui-cli/commit/f36839ed559b28b502b10639009f60c0622b7e4c))
 - add remaining files replace prompt and dot files detected and end note ([#135](https://github.com/nextui-org/nextui-cli/issues/135)) ([d29c05a](https://github.com/nextui-org/nextui-cli/commit/d29c05a71ab781dfa88e9b64014f993516d50f28))
 - **codemod:** change package version to latest ([#131](https://github.com/nextui-org/nextui-cli/issues/131)) ([b3bf4a8](https://github.com/nextui-org/nextui-cli/commit/b3bf4a896ecab6ceb8ac985b8cad9833b688cfbe))
-- init heroui codemod package ([#124](https://github.com/nextui-org/nextui-cli/issues/124)) ([2ddf426](https://github.com/nextui-org/nextui-cli/commit/2ddf426948f2e8ea31b3d31e5bba0f4a327ad611))
+- init prismui codemod package ([#124](https://github.com/nextui-org/nextui-cli/issues/124)) ([2ddf426](https://github.com/nextui-org/nextui-cli/commit/2ddf426948f2e8ea31b3d31e5bba0f4a327ad611))
 
 ## [0.5.1](https://github.com/nextui-org/nextui-cli/compare/v0.5.0...v0.5.1) (2024-12-23)
 
@@ -240,7 +240,7 @@
 ### Bug Fixes
 
 - add command error in tailwind ([#80](https://github.com/nextui-org/nextui-cli/issues/80)) ([455d6e0](https://github.com/nextui-org/nextui-cli/commit/455d6e03ed33f2bba18cb5cd113966af0a7dc69f))
-- upgrade command select option cannot select @heroui/react pkg ([#78](https://github.com/nextui-org/nextui-cli/issues/78)) ([93e5cdc](https://github.com/nextui-org/nextui-cli/commit/93e5cdc98299ec75d5720c0a6d44d08241c66dc7))
+- upgrade command select option cannot select @prismui/react pkg ([#78](https://github.com/nextui-org/nextui-cli/issues/78)) ([93e5cdc](https://github.com/nextui-org/nextui-cli/commit/93e5cdc98299ec75d5720c0a6d44d08241c66dc7))
 
 ### Features
 

@@ -1,8 +1,8 @@
 "use client";
 
-import type {TimeValue} from "@heroui/react";
+import type {TimeValue} from "@khulnasoft/react";
 
-import {DateField, DateRangePicker, Label, RangeCalendar, TimeField} from "@heroui/react";
+import {DateField, DateRangePicker, Label, RangeCalendar, TimeField} from "@prismuisoft/react";
 import {getLocalTimeZone, parseZonedDateTime} from "@internationalized/date";
 
 export function InputContainer() {

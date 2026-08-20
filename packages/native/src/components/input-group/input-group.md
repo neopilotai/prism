@@ -5,7 +5,7 @@ A compound layout component that groups an input with optional prefix and suffix
 ## Import
 
 ```tsx
-import { InputGroup } from 'heroui-native';
+import { InputGroup } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -117,7 +117,7 @@ Combine with TextField, Label, and Description for full form field support.
 ## Example
 
 ```tsx
-import { InputGroup } from 'heroui-native';
+import { InputGroup } from 'prismui-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
@@ -156,7 +156,7 @@ export default function InputGroupExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/input-group.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/input-group.tsx>).
 
 ## API Reference
 

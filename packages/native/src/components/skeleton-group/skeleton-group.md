@@ -5,7 +5,7 @@ Coordinates multiple skeleton loading placeholders with centralized animation co
 ## Import
 
 ```tsx
-import { SkeletonGroup } from 'heroui-native';
+import { SkeletonGroup } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -117,7 +117,7 @@ Apply Reanimated transitions when the group appears or disappears.
 ## Example
 
 ```tsx
-import { Card, SkeletonGroup, Avatar } from 'heroui-native';
+import { Card, SkeletonGroup, Avatar } from 'prismui-native';
 import { useState } from 'react';
 import { Text, View, Image } from 'react-native';
 
@@ -171,7 +171,7 @@ export default function SkeletonGroupExample() {
           <View className="h-48 bg-surface-tertiary rounded-lg overflow-hidden">
             <Image
               source={{
-                uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/backgrounds/cards/car1.jpg',
+                uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/backgrounds/cards/car1.jpg',
               }}
               className="h-full w-full"
             />
@@ -183,7 +183,7 @@ export default function SkeletonGroupExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/skeleton-group.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/skeleton-group.tsx>).
 
 ## API Reference
 

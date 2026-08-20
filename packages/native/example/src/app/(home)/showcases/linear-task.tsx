@@ -1,6 +1,6 @@
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { useRouter } from 'expo-router';
-import { Avatar, Card, Separator } from 'heroui-native';
+import { Avatar, Card, Separator } from 'prismui-native';
 import { Pressable, View } from 'react-native';
 import { KeyboardController } from 'react-native-keyboard-controller';
 import Animated, { FadeIn } from 'react-native-reanimated';
@@ -108,7 +108,7 @@ export default function LinearTaskScreen() {
               <Avatar alt="volo" className="size-6 bg-purple-500">
                 <Avatar.Image
                   source={{
-                    uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/volo-avatar.png',
+                    uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/volo-avatar.png',
                   }}
                 />
                 <Avatar.Fallback>
@@ -120,7 +120,7 @@ export default function LinearTaskScreen() {
               <Avatar alt="Junior" className="-ml-3 size-6 bg-sky-500">
                 <Avatar.Image
                   source={{
-                    uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/junior-avatar.jpg',
+                    uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/junior-avatar.jpg',
                   }}
                 />
                 <Avatar.Fallback>

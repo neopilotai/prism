@@ -1,10 +1,10 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {SwitchGroupVariants} from "@heroui/styles";
+import type {SwitchGroupVariants} from "@khulnasoft/styles";
 import type {ReactNode} from "react";
 
-import {switchGroupVariants} from "@heroui/styles";
+import {switchGroupVariants} from "@prismuisoft/styles";
 import React from "react";
 
 import {dom} from "../../utils/dom";

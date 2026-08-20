@@ -49,6 +49,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {popoverVariants} from "@heroui/styles";
+export {popoverVariants} from "@khulnasoft/styles";
 
-export type {PopoverVariants} from "@heroui/styles";
+export type {PopoverVariants} from "@prismuisoft/styles";

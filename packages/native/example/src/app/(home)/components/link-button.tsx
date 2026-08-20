@@ -1,6 +1,6 @@
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
-import { Button, Checkbox, ControlField, LinkButton } from 'heroui-native';
+import { Button, Checkbox, ControlField, LinkButton } from 'prismui-native';
 import React from 'react';
 import { Alert, View } from 'react-native';
 import { AppText } from '../../../components/app-text';

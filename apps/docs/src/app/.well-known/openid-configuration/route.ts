@@ -10,7 +10,7 @@ export async function GET(request: Request) {
     authorization_endpoint: absoluteUrl(origin, "/.well-known/oauth/not-supported/authorize"),
     claims_supported: [],
     grant_types_supported: [],
-    heroui_public_api_authentication:
+    prismui_public_api_authentication:
       "PrismUI public documentation and MCP data APIs are currently unauthenticated and read-only; no OpenID Connect sign-in flow is advertised for public API access.",
     issuer: origin,
     jwks_uri: absoluteUrl(origin, "/.well-known/jwks.json"),

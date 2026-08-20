@@ -9,7 +9,7 @@ import {
   Separator,
   Surface,
   Switch,
-} from 'heroui-native';
+} from 'prismui-native';
 import React from 'react';
 import { View } from 'react-native';
 import Animated, {

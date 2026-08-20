@@ -26,9 +26,9 @@ You specialize in:
 
 ## Project Structure Knowledge
 
-- **Storybook Path**: `/Users/juniorgarcia/workspace/heroui_v3/packages/storybook`
-- **Core Package**: `/Users/juniorgarcia/workspace/heroui_v3/packages/core` (generates CSS classes)
-- **React Package**: `/Users/juniorgarcia/workspace/heroui_v3/packages/react` (consumes CSS classes)
+- **Storybook Path**: `/Users/juniorgarcia/workspace/prismui_v3/packages/storybook`
+- **Core Package**: `/Users/juniorgarcia/workspace/prismui_v3/packages/core` (generates CSS classes)
+- **React Package**: `/Users/juniorgarcia/workspace/prismui_v3/packages/react` (consumes CSS classes)
 - **Global Styles**: `packages/storybook/styles/globals.css` (imports @khulnasoft/styles)
 - **Build Script**: `packages/core/scripts/build-css.mjs` (transforms CSS to JS)
 - **Plugin**: `packages/core/plugin.ts` (injects styles into Tailwind)

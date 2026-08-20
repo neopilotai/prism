@@ -24,6 +24,6 @@ export type {SwitchGroupRootProps, SwitchGroupRootProps as SwitchGroupProps} fro
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {switchGroupVariants} from "@heroui/styles";
+export {switchGroupVariants} from "@khulnasoft/styles";
 
-export type {SwitchGroupVariants} from "@heroui/styles";
+export type {SwitchGroupVariants} from "@prismuisoft/styles";

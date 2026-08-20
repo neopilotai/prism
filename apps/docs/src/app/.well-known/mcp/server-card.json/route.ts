@@ -32,7 +32,7 @@ export async function GET(request: Request) {
         "https://www.npmjs.com/package/@khulnasoft/react-mcp",
         "https://www.npmjs.com/package/@khulnasoft/native-mcp",
       ],
-      source: "https://github.com/khulnasoft/heroui-mcp",
+      source: "https://github.com/khulnasoft/prismui-mcp",
     },
     notes:
       "The supported MCP transport today is stdio through the published npm packages. The endpoint field identifies this server card for browser and catalog discovery; it is not a Streamable HTTP MCP endpoint.",

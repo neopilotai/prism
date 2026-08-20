@@ -12,8 +12,8 @@ import {
  * Migrate the import package will directly write the file
  * @example
  * migrateImportPackage(['xxx']);
- * import {xxx} from '@nextui-org/theme'; -> import {xxx} from '@heroui/theme';
- * const {xxx} = require('@nextui-org/theme'); -> const {xxx} = require('@heroui/theme');
+ * import {xxx} from '@nextui-org/theme'; -> import {xxx} from '@prismui/theme';
+ * const {xxx} = require('@nextui-org/theme'); -> const {xxx} = require('@prismui/theme');
  */
 export function migrateImportPackageWithPaths(paths: string[]) {
   for (const path of paths) {

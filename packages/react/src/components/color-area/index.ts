@@ -30,6 +30,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {colorAreaVariants} from "@heroui/styles";
+export {colorAreaVariants} from "@khulnasoft/styles";
 
-export type {ColorAreaVariants} from "@heroui/styles";
+export type {ColorAreaVariants} from "@prismuisoft/styles";

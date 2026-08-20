@@ -3,7 +3,7 @@
    the `t` macro. */
 import { useLingui } from '@lingui/react/macro';
 import { Image } from 'expo-image';
-import { Card, PressableFeedback } from 'heroui-native';
+import { Card, PressableFeedback } from 'prismui-native';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';
 import { AppText } from '../app-text';
@@ -24,7 +24,7 @@ export const CardContent = () => {
             <Card.Header>
               <StyledImage
                 source={{
-                  uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo1.jpg',
+                  uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo1.jpg',
                 }}
                 className="h-16 aspect-square rounded-xl"
               />
@@ -69,7 +69,7 @@ export const CardContent = () => {
             <Card.Header>
               <StyledImage
                 source={{
-                  uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo2.jpg',
+                  uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo2.jpg',
                 }}
                 className="h-16 aspect-square rounded-xl"
               />

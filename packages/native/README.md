@@ -1,14 +1,14 @@
 <p align="center">
   <a href="https://prism.khulnasoft.com">
-      <img width="100%" src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-og.jpg" alt="heroui" />
+      <img width="100%" src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-og.jpg" alt="prismui" />
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/khulnasoft/heroui-native/blob/main/LICENSE">
+  <a href="https://github.com/khulnasoft/prismui-native/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue?style=flat" alt="Apache License 2.0">
   </a>
-  <a href="https://www.npmjs.com/package/heroui-native">
-    <img src="https://img.shields.io/npm/dm/heroui-native.svg?style=flat-round" alt="npm downloads">
+  <a href="https://www.npmjs.com/package/prismui-native">
+    <img src="https://img.shields.io/npm/dm/prismui-native.svg?style=flat-round" alt="npm downloads">
   </a>
 </p>
 
@@ -22,7 +22,7 @@
 
 ## Getting Started
 
-Visit <a aria-label="heroui learn" href="https://prism.khulnasoft.com/docs/native/getting-started/quick-start">https://prism.khulnasoft.com/docs/native/getting-started/quick-start</a> to get started with PrismUI Native.
+Visit <a aria-label="prismui learn" href="https://prism.khulnasoft.com/docs/native/getting-started/quick-start">https://prism.khulnasoft.com/docs/native/getting-started/quick-start</a> to get started with PrismUI Native.
 
 ## Documentation
 
@@ -41,7 +41,7 @@ Experience PrismUI Native components in action with our official preview app! Yo
 
 Want to start building with PrismUI Native immediately? We provide a standalone example app that's fully configured and ready to use:
 
-**[🚀 PrismUI Native Example App](https://github.com/khulnasoft/heroui-native-example)**
+**[🚀 PrismUI Native Example App](https://github.com/khulnasoft/prismui-native-example)**
 
 This repository contains a pre-configured React Native app with PrismUI Native already set up, including:
 
@@ -58,7 +58,7 @@ See [CHANGELOG.md](./CHANGELOG.md) for a history of changes to this library.
 
 ## Roadmap
 
-See [Roadmap](https://herouinative.featurebase.app/roadmap) to see what we're working on.
+See [Roadmap](https://prismuinative.featurebase.app/roadmap) to see what we're working on.
 
 ## Community
 
@@ -67,7 +67,7 @@ Whether it's a feature request, bug report, or a project to showcase, please get
 
 - [Discord](https://discord.gg/9b6yyZKmH4)
 - [X](https://x.com/hero_ui)
-- [GitHub Discussions](https://github.com/khulnasoft/heroui/discussions)
+- [GitHub Discussions](https://github.com/khulnasoft/prismui/discussions)
 
 ## Contributing
 
@@ -75,15 +75,15 @@ Contributions are always welcome! We appreciate your help in making PrismUI Nati
 
 ### How to Contribute
 
-- **Bug Fixes**: Check our [GitHub Issues](https://github.com/khulnasoft/heroui-native/issues) for bugs that need fixing
-- **New Components**: Only core team can add new components. Check our [Roadmap](https://herouinative.featurebase.app/roadmap) to see what's planned
-- **Feature Proposals**: Start a discussion in [GitHub Discussions](https://github.com/khulnasoft/heroui/discussions) before implementing
+- **Bug Fixes**: Check our [GitHub Issues](https://github.com/khulnasoft/prismui-native/issues) for bugs that need fixing
+- **New Components**: Only core team can add new components. Check our [Roadmap](https://prismuinative.featurebase.app/roadmap) to see what's planned
+- **Feature Proposals**: Start a discussion in [GitHub Discussions](https://github.com/khulnasoft/prismui/discussions) before implementing
 
 **Important:** Please do not add new components or variants, change existing designs, or modify component behavior without prior discussion. We follow a strict design system based on our Figma designs and roadmap.
 
-For detailed guidelines, see [CONTRIBUTING.md](https://github.com/khulnasoft/heroui-native/blob/main/CONTRIBUTING.md).
+For detailed guidelines, see [CONTRIBUTING.md](https://github.com/khulnasoft/prismui-native/blob/main/CONTRIBUTING.md).
 
-Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/heroui-native/blob/main/CODE_OF_CONDUCT.md).
+Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/prismui-native/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 

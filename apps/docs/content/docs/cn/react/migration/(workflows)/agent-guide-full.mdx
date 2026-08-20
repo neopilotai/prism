@@ -105,11 +105,11 @@ PrismUI v2 提供了组件挂钩（例如`useSwitch`, `useInput`, `useCheckbox`�
 
 1. **创建迁移分支**
    - 创建一个功能分支用于迁移工作
-   - 例子：`git checkout -b migrate/heroui-v3`
+   - 例子：`git checkout -b migrate/prismui-v3`
 
 2. **验证迁移 MCP 是否已配置**
    - 检查迁移 MCP 服务器是否已连接
-   - 确保`heroui-react`MCP 未连接（以避免混淆）
+   - 确保`prismui-react`MCP 未连接（以避免混淆）
    - 验证 MCP 工具可用
 
 3. **分析项目并创建迁移计划**
@@ -172,7 +172,7 @@ PrismUI v2 提供了组件挂钩（例如`useSwitch`, `useInput`, `useCheckbox`�
    - 消除`framer-motion`如果存在
    - 更新 CSS 导入（添加`@import "@khulnasoft/styles";`)
    - 从应用程序根目录中删除 PrismUIProvider
-   - 更新 Tailwind 配置（删除`heroui()`插件）
+   - 更新 Tailwind 配置（删除`prismui()`插件）
 
 2. **修复剩余问题**
    - 运行 typecheck/lint（如果可用）（不构建）
@@ -310,7 +310,7 @@ PrismUI v2 提供了组件挂钩（例如`useSwitch`, `useInput`, `useCheckbox`�
 完成迁移后：
 
 1. 删除 v2 依赖项（已在依赖切换步骤中完成）
-2. 从迁移 MCP 切换到用于 v3 开发的 `heroui-react` MCP
+2. 从迁移 MCP 切换到用于 v3 开发的 `prismui-react` MCP
 3. 更新文档中的引用
 4. 运行最终验证
 5. 将迁移分支合并回主分支

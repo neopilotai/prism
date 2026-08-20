@@ -12,7 +12,7 @@ import {
   ScrollShadow,
   TextField,
   useThemeColor,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useState } from 'react';
 import { Platform, Text, useWindowDimensions, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';

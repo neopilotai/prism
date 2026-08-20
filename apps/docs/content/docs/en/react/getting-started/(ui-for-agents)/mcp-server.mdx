@@ -6,13 +6,13 @@ description: Access PrismUI v3 documentation directly in your AI assistant
 The PrismUI MCP Server gives AI assistants direct access to PrismUI v3 component documentation, making it easier to build with PrismUI in AI-powered development environments.
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/hero-react-mcp-light-new-2.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/hero-react-mcp-dark-new.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/hero-react-mcp-light-new-2.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/hero-react-mcp-dark-new.jpg"
   alt="PrismUI v3 MCP Server"
 />
 
 
-The MCP server currently supports **@khulnasoft/react v3** only and [stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio). Published at `@khulnasoft/react-mcp` on npm. View the source code on [GitHub](https://github.com/khulnasoft/heroui-mcp).
+The MCP server currently supports **@khulnasoft/react v3** only and [stdio transport](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio). Published at `@khulnasoft/react-mcp` on npm. View the source code on [GitHub](https://github.com/khulnasoft/prismui-mcp).
 
 <Callout>
   As we add more components to PrismUI v3, they'll be available in the MCP server too.
@@ -39,7 +39,7 @@ Or manually add to **Cursor Settings** → **Tools** → **MCP Servers**:
 ```json title=".cursor/mcp.json"
 {
   "mcpServers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -54,7 +54,7 @@ Alternatively, add the following to your `~/.cursor/mcp.json` file. To learn mor
 Run this command in your terminal:
 
 ```bash
-claude mcp add heroui-react -- npx -y @khulnasoft/react-mcp@latest
+claude mcp add prismui-react -- npx -y @khulnasoft/react-mcp@latest
 ```
 
 Or manually add to your project's `.mcp.json` file:
@@ -62,7 +62,7 @@ Or manually add to your project's `.mcp.json` file:
 ```json title=".mcp.json"
 {
   "mcpServers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -81,7 +81,7 @@ Add the PrismUI server to your project's `.windsurf/mcp.json` configuration file
 ```json title=".windsurf/mcp.json"
 {
   "mcpServers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -100,7 +100,7 @@ Add the PrismUI server to your `settings.json` configuration file. Open settings
 ```json title="settings.json"
 {
   "context_servers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"],
       "env": {}
@@ -109,7 +109,7 @@ Add the PrismUI server to your `settings.json` configuration file. Open settings
 }
 ```
 
-After adding the configuration, restart Zed and open the Agent Panel settings view. Check that the indicator dot next to the heroui server is green with "Server is active" tooltip.
+After adding the configuration, restart Zed and open the Agent Panel settings view. Check that the indicator dot next to the prismui server is green with "Server is active" tooltip.
 
 See the [Zed MCP documentation](https://zed.dev/docs/ai/mcp) for more details.
 
@@ -120,7 +120,7 @@ To configure MCP in VS Code with GitHub Copilot, add the PrismUI server to your 
 ```json title=".vscode/mcp.json"
 {
   "servers": {
-    "heroui-react": {
+    "prismui-react": {
       "type": "stdio",
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
@@ -129,7 +129,7 @@ To configure MCP in VS Code with GitHub Copilot, add the PrismUI server to your 
 }
 ```
 
-After adding the configuration, open `.vscode/mcp.json` and click **Start** next to the heroui-react server.
+After adding the configuration, open `.vscode/mcp.json` and click **Start** next to the prismui-react server.
 
 See the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) for more details.
 
@@ -138,7 +138,7 @@ See the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/c
 Add the PrismUI server to your `~/.codex/config.toml` (or a project-scoped `.codex/config.toml`):
 
 ```toml title="config.toml"
-[mcp_servers.heroui-react]
+[mcp_servers.prismui-react]
 command = "npx"
 args = ["-y", "@khulnasoft/react-mcp@latest"]
 ```
@@ -155,7 +155,7 @@ Add the PrismUI server to your project's `opencode.json` configuration file:
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "heroui-react": {
+    "prismui-react": {
       "type": "local",
       "command": ["npx", "-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -212,10 +212,10 @@ The MCP server provides these tools to AI assistants:
 
 **Requirements:** Node.js 22 or higher. The package will be automatically downloaded when using `npx`.
 
-**Need help?** [GitHub Issues](https://github.com/khulnasoft/heroui-mcp/issues) | [Discord Community](https://discord.gg/heroui)
+**Need help?** [GitHub Issues](https://github.com/khulnasoft/prismui-mcp/issues) | [Discord Community](https://discord.gg/prismui)
 
 ## Links
 
 - [npm Package](https://www.npmjs.com/package/@khulnasoft/react-mcp)
-- [GitHub Repository](https://github.com/khulnasoft/heroui-mcp)
-- [Contributing Guide](https://github.com/khulnasoft/heroui-mcp/blob/main/CONTRIBUTING.md)
+- [GitHub Repository](https://github.com/khulnasoft/prismui-mcp)
+- [Contributing Guide](https://github.com/khulnasoft/prismui-mcp/blob/main/CONTRIBUTING.md)

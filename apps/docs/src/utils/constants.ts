@@ -6,9 +6,9 @@ export const GITHUB_API_URL = "https://api.github.com";
 
 export const RAW_GITHUB_URL = "https://raw.githubusercontent.com";
 
-export const REPO_NAME = "khulnasoft/heroui";
+export const REPO_NAME = "khulnasoft/prismui";
 
-export const REPO_NAME_NATIVE = "khulnasoft/heroui-native";
+export const REPO_NAME_NATIVE = "khulnasoft/prismui-native";
 
 export const ISSUE_REPORT_URL = `${GITHUB_URL}/${REPO_NAME}/issues/new?assignees=&labels=bug&template=bug_report.yml&title=%5BBUG%5D+-+`;
 
@@ -47,4 +47,4 @@ export const STORYBOOK_URL = __DEV__
     ? "https://storybook-v3.prism.khulnasoft.com"
     : "https://storybook.prism.khulnasoft.com";
 
-export const CDN_URL = "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com";
+export const CDN_URL = "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com";

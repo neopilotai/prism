@@ -5,7 +5,7 @@ description: Access PrismUI v2 to v3 migration guides in your AI assistant
 
 The PrismUI Migration MCP Server gives AI assistants direct access to PrismUI v2 to v3 migration documentation.
 
-The Migration MCP server uses **Streamable HTTP transport** (URL-based) and is deployed at `https://migration-mcp.prism.khulnasoft.com`. View the source code on [GitHub](https://github.com/khulnasoft/heroui-mcp/tree/main/apps/migration-mcp).
+The Migration MCP server uses **Streamable HTTP transport** (URL-based) and is deployed at `https://migration-mcp.prism.khulnasoft.com`. View the source code on [GitHub](https://github.com/khulnasoft/prismui-mcp/tree/main/apps/migration-mcp).
 
 <Callout>
   The Migration MCP is for **migration only**. After completing migration, switch to the [PrismUI React MCP Server](/docs/react/getting-started/mcp-server) for v3 component development.
@@ -20,7 +20,7 @@ Add to **Cursor Settings** → **Tools** → **MCP Servers** or your project's `
 ```json title=".cursor/mcp.json"
 {
   "mcpServers": {
-    "heroui-migration": {
+    "prismui-migration": {
       "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
@@ -36,7 +36,7 @@ Add to your project's `.mcp.json` file:
 ```json title=".mcp.json"
 {
   "mcpServers": {
-    "heroui-migration": {
+    "prismui-migration": {
       "type": "http",
       "url": "https://migration-mcp.prism.khulnasoft.com"
     }
@@ -55,7 +55,7 @@ Add the Migration MCP server to your project's `.windsurf/mcp.json` configuratio
 ```json title=".windsurf/mcp.json"
 {
   "mcpServers": {
-    "heroui-migration": {
+    "prismui-migration": {
       "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
@@ -73,7 +73,7 @@ Add the Migration MCP server to your `settings.json` configuration file. Open se
 ```json title="settings.json"
 {
   "context_servers": {
-    "heroui-migration": {
+    "prismui-migration": {
       "url": "https://migration-mcp.prism.khulnasoft.com"
     }
   }
@@ -89,7 +89,7 @@ To configure MCP in VS Code with GitHub Copilot, add the Migration MCP server to
 ```json title=".vscode/mcp.json"
 {
   "servers": {
-    "heroui-migration": {
+    "prismui-migration": {
       "type": "http",
       "url": "https://migration-mcp.prism.khulnasoft.com"
     }
@@ -97,7 +97,7 @@ To configure MCP in VS Code with GitHub Copilot, add the Migration MCP server to
 }
 ```
 
-After adding the configuration, open `.vscode/mcp.json` and click **Start** next to the heroui-migration server.
+After adding the configuration, open `.vscode/mcp.json` and click **Start** next to the prismui-migration server.
 
 See the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers) for more details.
 
@@ -106,7 +106,7 @@ See the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/c
 Add the Migration MCP server to your `~/.codex/config.toml` (or a project-scoped `.codex/config.toml`):
 
 ```toml title="config.toml"
-[mcp_servers.heroui-migration]
+[mcp_servers.prismui-migration]
 url = "https://migration-mcp.prism.khulnasoft.com"
 ```
 
@@ -122,7 +122,7 @@ Add the Migration MCP server to your project's `opencode.json` configuration fil
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "heroui-migration": {
+    "prismui-migration": {
       "type": "remote",
       "url": "https://migration-mcp.prism.khulnasoft.com"
     }
@@ -170,6 +170,6 @@ The Migration MCP server provides guided prompts that can be used with slash com
 
 ## Links
 
-- [GitHub Repository](https://github.com/khulnasoft/heroui-mcp/tree/main/apps/migration-mcp)
+- [GitHub Repository](https://github.com/khulnasoft/prismui-mcp/tree/main/apps/migration-mcp)
 - [Discord Community](https://discord.gg/9b6yyZKmH4)
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Learn about MCP

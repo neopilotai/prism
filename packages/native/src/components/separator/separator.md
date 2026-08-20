@@ -5,7 +5,7 @@ A simple line to separate content visually.
 ## Import
 
 ```tsx
-import { Separator } from 'heroui-native';
+import { Separator } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -66,7 +66,7 @@ Set a specific thickness value for precise control.
 ## Example
 
 ```tsx
-import { Separator, Surface } from 'heroui-native';
+import { Separator, Surface } from 'prismui-native';
 import { Text, View } from 'react-native';
 
 export default function SeparatorExample() {
@@ -91,7 +91,7 @@ export default function SeparatorExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/separator.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/separator.tsx>).
 
 ## API Reference
 

@@ -1,6 +1,6 @@
 import Feather from '@expo/vector-icons/Feather';
 import * as Haptics from 'expo-haptics';
-import { Checkbox, Chip, cn, ControlField, Dialog, Label } from 'heroui-native';
+import { Checkbox, Chip, cn, ControlField, Dialog, Label } from 'prismui-native';
 import { useMemo, useState, type FC } from 'react';
 import { Platform, useWindowDimensions, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';

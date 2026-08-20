@@ -116,7 +116,7 @@ export function proxy(request: NextRequest) {
 
     const requestHeaders = new Headers(request.headers);
 
-    requestHeaders.set("x-heroui-markdown-path", pathname);
+    requestHeaders.set("x-prismui-markdown-path", pathname);
 
     return addHomepageDiscoveryHeaders(
       NextResponse.rewrite(url, {

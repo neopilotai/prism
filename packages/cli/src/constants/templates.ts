@@ -13,4 +13,4 @@ export const APP_NAME = 'next-app-template';
 export const PAGES_NAME = 'next-pages-template';
 export const VITE_NAME = 'vite-template';
 export const REACT_ROUTER_NAME = 'react-router-template';
-export const DEFAULT_PROJECT_NAME = 'heroui-app';
+export const DEFAULT_PROJECT_NAME = 'prismui-app';

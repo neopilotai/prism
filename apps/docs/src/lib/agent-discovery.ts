@@ -29,11 +29,11 @@ export const REACT_MCP_API_URL = "https://mcp-api.prism.khulnasoft.com";
 export const NATIVE_MCP_API_URL = "https://native-mcp-api.prism.khulnasoft.com";
 
 export const AGENT_SKILL_DESCRIPTIONS: Record<string, string> = {
-  "heroui-migration":
+  "prismui-migration":
     "Migrate projects from PrismUI v2 and NextUI patterns to PrismUI v3 with current guides and examples.",
-  "heroui-native":
+  "prismui-native":
     "Build React Native applications with PrismUI Native components, theme variables, and documentation lookup.",
-  "heroui-react":
+  "prismui-react":
     "Build React applications with PrismUI v3 components, theming, styling, and documentation lookup.",
 };
 

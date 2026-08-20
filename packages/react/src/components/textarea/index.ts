@@ -24,6 +24,6 @@ export type {TextAreaRootProps, TextAreaRootProps as TextAreaProps} from "./text
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {textAreaVariants} from "@heroui/styles";
+export {textAreaVariants} from "@khulnasoft/styles";
 
-export type {TextAreaVariants} from "@heroui/styles";
+export type {TextAreaVariants} from "@prismuisoft/styles";

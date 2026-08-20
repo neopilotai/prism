@@ -5,7 +5,7 @@ Displays validation error message content with smooth animations.
 ## Import
 
 ```tsx
-import { FieldError } from 'heroui-native';
+import { FieldError } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -43,7 +43,7 @@ const [isInvalid, setIsInvalid] = useState(false);
 FieldError automatically consumes form state from TextField via the form-item-state context.
 
 ```tsx
-import { FieldError, Label, TextField } from 'heroui-native';
+import { FieldError, Label, TextField } from 'prismui-native';
 
 <TextField isRequired isInvalid={true}>
   <Label>Email</Label>
@@ -128,7 +128,7 @@ Pass additional props to the Text component when children is a string.
 ## Example
 
 ```tsx
-import { Description, FieldError, Label, TextField } from 'heroui-native';
+import { Description, FieldError, Label, TextField } from 'prismui-native';
 import { useState } from 'react';
 import { View } from 'react-native';
 
@@ -162,7 +162,7 @@ export default function FieldErrorExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/field-error.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/field-error.tsx>).
 
 ## API Reference
 

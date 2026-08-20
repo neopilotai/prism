@@ -7,7 +7,7 @@ import path from "path";
 import {notFound} from "next/navigation";
 import {ImageResponse} from "next/og";
 
-import {PrismUILogo} from "@/components/heroui-logo";
+import {PrismUILogo} from "@/components/prismui-logo";
 import {getDocsSeoMetadata} from "@/lib/docs-seo";
 import {stripLocale} from "@/lib/seo";
 import {source} from "@/lib/source";

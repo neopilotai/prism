@@ -5,7 +5,7 @@ A field component that combines a label, description (or other content), and a c
 ## Import
 
 ```tsx
-import { ControlField } from 'heroui-native';
+import { ControlField } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -120,7 +120,7 @@ import {
   ControlField,
   Label,
   Switch,
-} from 'heroui-native';
+} from 'prismui-native';
 import React from 'react';
 import { ScrollView, View } from 'react-native';
 
@@ -179,7 +179,7 @@ export default function ControlFieldExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/control-field.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/control-field.tsx>).
 
 ## API Reference
 

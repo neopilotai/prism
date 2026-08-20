@@ -1,7 +1,7 @@
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Chip } from 'heroui-native';
+import { Chip } from 'prismui-native';
 import { StyleSheet, View } from 'react-native';
 import type { UsageVariant } from '../../../components/component-presentation/types';
 import { UsageVariantFlatList } from '../../../components/component-presentation/usage-variant-flatlist';

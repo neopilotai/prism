@@ -1,4 +1,4 @@
-import { LayoutDirectionScope, PortalHost } from 'heroui-native';
+import { LayoutDirectionScope, PortalHost } from 'prismui-native';
 import { type FC, type ReactNode } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { LayoutDirection } from 'uniwind';
@@ -33,7 +33,7 @@ export type ShowcaseLtrScopeProps = {
  *    sets this on its own wrapper, but that wrapper uses `display: contents`,
  *    which Yoga skips on RN 0.86 — the same reason the root layout carries an
  *    explicit `direction` style.
- * 3. `LayoutDirectionScope` (heroui-native) overrides the direction that library
+ * 3. `LayoutDirectionScope` (prismui-native) overrides the direction that library
  *    components read in JS: gesture inversion, animation offsets, and popover
  *    start/end alignment.
  */

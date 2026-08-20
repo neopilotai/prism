@@ -1,6 +1,6 @@
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Stack } from 'expo-router';
-import { useThemeColor } from 'heroui-native';
+import { useThemeColor } from 'prismui-native';
 import { ShowcaseLtrScope } from '../../../components/showcase-ltr-scope';
 
 export default function Layout() {

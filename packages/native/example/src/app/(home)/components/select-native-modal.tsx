@@ -1,5 +1,5 @@
 import { useLingui } from '@lingui/react/macro';
-import { Label } from 'heroui-native';
+import { Label } from 'prismui-native';
 import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { SelectButtonTrigger } from '../../../components/select/select-button-trigger';

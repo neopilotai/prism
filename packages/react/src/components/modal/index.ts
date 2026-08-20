@@ -81,6 +81,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {modalVariants} from "@heroui/styles";
+export {modalVariants} from "@khulnasoft/styles";
 
-export type {ModalVariants} from "@heroui/styles";
+export type {ModalVariants} from "@prismuisoft/styles";

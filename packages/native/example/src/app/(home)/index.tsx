@@ -4,7 +4,7 @@ import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
 import { useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { Card, Chip, cn } from 'heroui-native';
+import { Card, Chip, cn } from 'prismui-native';
 import type { FC } from 'react';
 import { Image, Pressable, View, type ImageSourcePropType } from 'react-native';
 import Animated, {

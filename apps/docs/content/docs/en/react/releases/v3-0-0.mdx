@@ -8,7 +8,7 @@ description: A ground-up rewrite for React and React Native. 75+ web components,
 </div>
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/heroui-v3-release.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-v3-release.mp4"
   height={430}
   muted
 />
@@ -28,26 +28,26 @@ Every component rewritten. Every animation moved to CSS. Styles decoupled from i
 37 components with shared design tokens, compound pattern, unified animation API, and adaptive presentation modes. Built native on each platform with [Uniwind](https://uniwind.dev/) for Tailwind CSS v4 support.
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/heroui-native-v1-release-.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-native-v1-release-.mp4"
   playMode="manual"
   height={430}
   muted
 />
 
-[Jump to details](#heroui-native)
+[Jump to details](#prismui-native)
 
 ### PrismUI Pro
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro@2x.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro-dark@2x.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui-pro@2x.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui-pro-dark@2x.jpg"
   alt="PrismUI Pro"
-  href="https://heroui.pro"
+  href="https://prismui.pro"
 />
 
-Premium components, templates, and AI tooling for React and React Native. Command palette, Kanban, DataGrid, Dashboard templates, and more. Pre-sale pricing at [heroui.pro](https://heroui.pro).
+Premium components, templates, and AI tooling for React and React Native. Command palette, Kanban, DataGrid, Dashboard templates, and more. Pre-sale pricing at [prismui.pro](https://prismui.pro).
 
-[Jump to details](#heroui-pro)
+[Jump to details](#prismui-pro)
 
 ## Design Principles
 
@@ -371,7 +371,7 @@ The PrismUI MCP Server connects AI coding assistants (Cursor, Claude Code, VS Co
 ```json
 {
   "mcpServers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -394,7 +394,7 @@ MCP server, agent skills, LLMs.txt. Three layers that give AI assistants the sam
 ## PrismUI Native
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/heroui-native-v1-release-.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-native-v1-release-.mp4"
   height={430}
   muted
 />
@@ -408,7 +408,7 @@ Scan the QR code with your device's camera or [Expo Go](https://expo.dev/go) to 
 <div className="flex justify-center my-6">
   <img
     width="200"
-    src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
+    src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
     alt="Expo Go QR Code"
   />
 </div>
@@ -426,7 +426,7 @@ Scan the QR code with your device's camera or [Expo Go](https://expo.dev/go) to 
 Forms, navigation, overlays, feedback, layout. From Button, Input, and Checkbox to Dialog, BottomSheet, Select, Toast, and InputOTP. Components follow the compound pattern:
 
 ```tsx
-import { Dialog, Button } from "heroui-native";
+import { Dialog, Button } from "prismui-native";
 
 <Dialog>
   <Dialog.Trigger asChild>
@@ -485,7 +485,7 @@ import { View, Text } from "react-native";
 Tailwind CSS v4 on both platforms. [Uniwind](https://uniwind.dev/) on native, standard Tailwind on web.
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/native-v1-demo/v-1-demo-2.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/native-v1-demo/v-1-demo-2.mp4"
   height={430}
   muted
 />
@@ -495,7 +495,7 @@ Tailwind CSS v4 on both platforms. [Uniwind](https://uniwind.dev/) on native, st
 Every animated native component exposes a single `animation` prop. Values, timing, spring configs, enter/exit transitions controlled from one place. Reanimated powers the math, but you never touch it directly:
 
 ```tsx
-import { Switch } from "heroui-native";
+import { Switch } from "prismui-native";
 
 <Switch
   animation={{
@@ -537,7 +537,7 @@ Popover, Select, and Menu switch between popover, bottom-sheet, and dialog with 
 No other React Native component library does this.
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/native-v1-demo/v-1-demo-3.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/native-v1-demo/v-1-demo-3.mp4"
   height={430}
   muted
 />
@@ -547,9 +547,9 @@ No other React Native component library does this.
 Each native component has its own entry point. Import only what you use:
 
 ```tsx
-import { PrismUINativeProvider } from "heroui-native/provider";
-import { Button } from "heroui-native/button";
-import { Card } from "heroui-native/card";
+import { PrismUINativeProvider } from "prismui-native/provider";
+import { Button } from "prismui-native/button";
+import { Card } from "prismui-native/card";
 ```
 
 ### AI Tooling for Native
@@ -559,7 +559,7 @@ PrismUI Native ships with its own MCP Server, agent skills, and LLMs.txt. Same t
 ```json
 {
   "mcpServers": {
-    "heroui-native": {
+    "prismui-native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -570,13 +570,13 @@ PrismUI Native ships with its own MCP Server, agent skills, and LLMs.txt. Same t
 ## PrismUI Pro
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro@2x.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro-dark@2x.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui-pro@2x.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui-pro-dark@2x.jpg"
   alt="PrismUI Pro"
-  href="https://heroui.pro"
+  href="https://prismui.pro"
 />
 
-Alongside v3, the pre-sale of [PrismUI Pro](https://heroui.pro) is live. Premium components, templates, and AI tooling for both React and React Native.
+Alongside v3, the pre-sale of [PrismUI Pro](https://prismui.pro) is live. Premium components, templates, and AI tooling for both React and React Native.
 
 ### Pro Components
 
@@ -592,7 +592,7 @@ Pro licenses include premium MCP servers and agent skills with Pro component doc
 
 Pre-sale pricing is live. v2 Pro customers get an upgrade discount. Use the same email or contact support.
 
-[See plans and pricing at heroui.pro](https://heroui.pro)
+[See plans and pricing at prismui.pro](https://prismui.pro)
 
 ## Get Started
 
@@ -633,22 +633,22 @@ Add two lines to your CSS:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm install heroui-native
+    npm install prismui-native
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add heroui-native
+    pnpm add prismui-native
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add heroui-native
+    yarn add prismui-native
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add heroui-native
+    bun add prismui-native
     ```
   </Tab>
 </Tabs>
@@ -662,13 +662,13 @@ See the [React docs](/docs/react/getting-started/quick-start) and [React Native 
 Every component in PrismUI v3 has a 1:1 match in Figma. Same variants, same naming, same structure. The kit uses auto layout throughout, Figma variables that map directly to code tokens (`--accent`, `--surface`, `--radius`), and Figma's new [slots](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma) for flexible component composition. Designers rearrange, swap, and customize parts the same way developers do in code.
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/cover-figma@2x.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/cover-figma-dark@2x.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/cover-figma@2x.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/cover-figma-dark@2x.jpg"
   alt="PrismUI Figma Kit v3"
-  href="https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3"
+  href="https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3"
 />
 
-[Get the Figma Kit](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3)
+[Get the Figma Kit](https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3)
 
 ## Acknowledgments
 
@@ -682,5 +682,5 @@ Thanks to every community member who filed issues, tested betas, and gave feedba
 - [React Native Docs](/docs/native/getting-started/quick-start)
 - [Theme Builder](/themes)
 - [MCP Server](/docs/ui-for-agents/mcp-server)
-- [GitHub Repository](https://github.com/khulnasoft/heroui)
-- [Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3)
+- [GitHub Repository](https://github.com/khulnasoft/prismui)
+- [Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3)

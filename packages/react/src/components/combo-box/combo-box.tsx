@@ -2,12 +2,12 @@
 
 import type {DOMRenderProps} from "../../utils/dom";
 import type {SurfaceVariants} from "../surface";
-import type {ComboBoxVariants} from "@heroui/styles";
+import type {ComboBoxVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactElement, ReactNode} from "react";
 import type {ButtonProps} from "react-aria-components/Button";
 import type {ComboBoxValueRenderProps} from "react-aria-components/ComboBox";
 
-import {comboBoxVariants} from "@heroui/styles";
+import {comboBoxVariants} from "@prismuisoft/styles";
 import React, {Children, createContext, isValidElement, use} from "react";
 import {useIsHidden} from "react-aria/private/collections/Hidden";
 import {Button} from "react-aria-components/Button";

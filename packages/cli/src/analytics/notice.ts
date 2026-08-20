@@ -7,7 +7,7 @@ import {Logger} from '@helpers/logger';
 const NOTICE_FILENAME = 'analytics-notice-seen';
 
 function getNoticePath(): string {
-  return `${homedir()}/.config/heroui/${NOTICE_FILENAME}`;
+  return `${homedir()}/.config/prismui/${NOTICE_FILENAME}`;
 }
 
 export function hasSeenNotice(): boolean {

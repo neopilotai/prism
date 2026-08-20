@@ -1,4 +1,4 @@
-import type {DocSelection} from './heroui-agents-md';
+import type {DocSelection} from './prismui-agents-md';
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -44,7 +44,7 @@ export function generateHerouiMdIndex(
     const targetFile = outputFile || 'AGENTS.md';
 
     parts.push(
-      `If docs missing, run this command first: heroui agents-md --react --output ${targetFile}`
+      `If docs missing, run this command first: prismui agents-md --react --output ${targetFile}`
     );
 
     if (reactSections) {
@@ -74,7 +74,7 @@ export function generateHerouiMdIndex(
     const targetFile = outputFile || 'AGENTS.md';
 
     parts.push(
-      `If docs missing, run this command first: heroui agents-md --native --output ${targetFile}`
+      `If docs missing, run this command first: prismui agents-md --native --output ${targetFile}`
     );
 
     if (nativeSections) {
@@ -96,7 +96,7 @@ export function generateHerouiMdIndex(
     const targetFile = outputFile || 'AGENTS.md';
 
     parts.push(
-      `If docs missing, run this command first: heroui agents-md --migration --output ${targetFile}`
+      `If docs missing, run this command first: prismui agents-md --migration --output ${targetFile}`
     );
 
     if (migrationSections) {
@@ -195,11 +195,11 @@ export interface GitignoreStatus {
   alreadyPresent: boolean;
 }
 
-const GITIGNORE_ENTRY = '.heroui-docs/';
+const GITIGNORE_ENTRY = '.prismui-docs/';
 
 export function ensureGitignoreEntry(cwd: string): GitignoreStatus {
   const gitignorePath = path.join(cwd, '.gitignore');
-  const entryRegex = /^\s*\.heroui-docs(?:\/.*)?$/;
+  const entryRegex = /^\s*\.prismui-docs(?:\/.*)?$/;
 
   let content = '';
 
@@ -214,7 +214,7 @@ export function ensureGitignoreEntry(cwd: string): GitignoreStatus {
   }
 
   const needsNewline = content.length > 0 && !content.endsWith('\n');
-  const header = content.includes('# heroui-agents-md') ? '' : '# heroui-agents-md\n';
+  const header = content.includes('# prismui-agents-md') ? '' : '# prismui-agents-md\n';
   const newContent = content + (needsNewline ? '\n' : '') + header + `${GITIGNORE_ENTRY}\n`;
 
   fs.writeFileSync(gitignorePath, newContent, 'utf-8');

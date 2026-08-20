@@ -49,6 +49,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {sliderVariants} from "@heroui/styles";
+export {sliderVariants} from "@khulnasoft/styles";
 
-export type {SliderVariants} from "@heroui/styles";
+export type {SliderVariants} from "@prismuisoft/styles";

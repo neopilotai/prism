@@ -6,7 +6,7 @@ import {
   Input,
   Label,
   TextField,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 import { EyeIcon } from '../icons/eye';

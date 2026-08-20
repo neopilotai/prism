@@ -5,7 +5,7 @@ Displays a user avatar with support for images, text initials, or fallback icons
 ## Import
 
 ```tsx
-import { Avatar } from 'heroui-native';
+import { Avatar } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -220,7 +220,7 @@ Disable animations for specific components:
 ## Example
 
 ```tsx
-import { Avatar } from 'heroui-native';
+import { Avatar } from 'prismui-native';
 import { View } from 'react-native';
 
 export default function AvatarExample() {
@@ -248,7 +248,7 @@ export default function AvatarExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/avatar.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/avatar.tsx>).
 
 ## API Reference
 
@@ -363,7 +363,7 @@ Hook to access Avatar primitive root context. Provides access to avatar status.
 **Note:** The `status` property is particularly useful for adding a skeleton loader while the image is loading.
 
 ```tsx
-import { Avatar, useAvatar, Skeleton } from 'heroui-native';
+import { Avatar, useAvatar, Skeleton } from 'prismui-native';
 
 function AvatarWithSkeleton() {
   return (

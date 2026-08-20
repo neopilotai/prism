@@ -164,9 +164,9 @@ function findHerouiInWorkspace(cwd: string, patterns: string[]): {react?: string
       const content = fs.readFileSync(packageJsonPath, 'utf-8');
       const pkg = JSON.parse(content);
       const reactVersion =
-        pkg.dependencies?.['@heroui/react'] || pkg.devDependencies?.['@heroui/react'];
+        pkg.dependencies?.['@prismui/react'] || pkg.devDependencies?.['@prismui/react'];
       const nativeVersion =
-        pkg.dependencies?.['heroui-native'] || pkg.devDependencies?.['heroui-native'];
+        pkg.dependencies?.['prismui-native'] || pkg.devDependencies?.['prismui-native'];
 
       if (reactVersion) {
         reactVersions.push(reactVersion.replace(/^[<=>^~]+/, ''));
@@ -333,8 +333,8 @@ export function getHerouiVersions(cwd: string): HerouiVersionsResult {
     const dependencies = packageJson.dependencies || {};
     const devDependencies = packageJson.devDependencies || {};
 
-    const reactVersion = dependencies['@heroui/react'] || devDependencies['@heroui/react'];
-    const nativeVersion = dependencies['heroui-native'] || devDependencies['heroui-native'];
+    const reactVersion = dependencies['@prismui/react'] || devDependencies['@prismui/react'];
+    const nativeVersion = dependencies['prismui-native'] || devDependencies['prismui-native'];
 
     const result: HerouiVersionsResult = {};
 
@@ -368,7 +368,7 @@ export function getHerouiVersions(cwd: string): HerouiVersionsResult {
       } else {
         return {
           error:
-            'PrismUI packages (@heroui/react or heroui-native) are not installed in this project.'
+            'PrismUI packages (@prismui/react or prismui-native) are not installed in this project.'
         };
       }
     }

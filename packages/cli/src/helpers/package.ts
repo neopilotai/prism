@@ -68,7 +68,7 @@ export function getPackageInfo(packagePath: string) {
 }
 
 /**
- * Get installed @heroui/* packages from package.json
+ * Get installed @prismui/* packages from package.json
  */
 export function getInstalledPrismUIPackages(
   allDependencies: Record<string, string>

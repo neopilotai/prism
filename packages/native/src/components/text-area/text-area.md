@@ -5,7 +5,7 @@ A multiline text input component with styled border and background for collectin
 ## Import
 
 ```tsx
-import { TextArea } from 'heroui-native';
+import { TextArea } from 'prismui-native';
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ import { TextArea } from 'heroui-native';
 TextArea can be used standalone or within a TextField component.
 
 ```tsx
-import { TextArea } from 'heroui-native';
+import { TextArea } from 'prismui-native';
 
 <TextArea placeholder="Enter your message" />;
 ```
@@ -25,7 +25,7 @@ import { TextArea } from 'heroui-native';
 TextArea works seamlessly with TextField for complete form structure.
 
 ```tsx
-import { Description, Label, TextArea, TextField } from 'heroui-native';
+import { Description, Label, TextArea, TextField } from 'prismui-native';
 
 <TextField>
   <Label>Message</Label>
@@ -39,7 +39,7 @@ import { Description, Label, TextArea, TextField } from 'heroui-native';
 Display error state when the text area is invalid.
 
 ```tsx
-import { FieldError, Label, TextArea, TextField } from 'heroui-native';
+import { FieldError, Label, TextArea, TextField } from 'prismui-native';
 
 <TextField isRequired isInvalid={true}>
   <Label>Message</Label>
@@ -53,7 +53,7 @@ import { FieldError, Label, TextArea, TextField } from 'heroui-native';
 Disable the text area to prevent interaction.
 
 ```tsx
-import { Label, TextArea, TextField } from 'heroui-native';
+import { Label, TextArea, TextField } from 'prismui-native';
 
 <TextField isDisabled>
   <Label>Disabled Field</Label>
@@ -66,7 +66,7 @@ import { Label, TextArea, TextField } from 'heroui-native';
 Use different variants to style the text area based on context.
 
 ```tsx
-import { Label, TextArea, TextField } from 'heroui-native';
+import { Label, TextArea, TextField } from 'prismui-native';
 
 <TextField>
   <Label>Primary Variant</Label>
@@ -84,7 +84,7 @@ import { Label, TextArea, TextField } from 'heroui-native';
 Customize the text area appearance using className.
 
 ```tsx
-import { Label, TextArea, TextField } from 'heroui-native';
+import { Label, TextArea, TextField } from 'prismui-native';
 
 <TextField>
   <Label>Custom Styled</Label>
@@ -104,7 +104,7 @@ import {
   Label,
   TextArea,
   TextField,
-} from 'heroui-native';
+} from 'prismui-native';
 import { View } from 'react-native';
 
 export default function TextAreaExample() {
@@ -126,7 +126,7 @@ export default function TextAreaExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/text-area.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/text-area.tsx>).
 
 ## API Reference
 

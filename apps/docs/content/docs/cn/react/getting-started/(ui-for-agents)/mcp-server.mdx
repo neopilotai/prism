@@ -6,13 +6,13 @@ description: 直接在你的 AI 助手中访问 PrismUI v3 文档
 PrismUI MCP 服务器让 AI 助手可以直接访问 PrismUI v3 组件文档，从而更轻松地在 AI 驱动的开发环境中使用 PrismUI 进行构建。
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/hero-react-mcp-light-new-2.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/hero-react-mcp-dark-new.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/hero-react-mcp-light-new-2.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/hero-react-mcp-dark-new.jpg"
   alt="PrismUI v3 MCP 服务器"
 />
 
 
-MCP 服务器目前仅支持 **@khulnasoft/react v3**，并使用 [stdio 传输](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio)。已在 npm 上以 `@khulnasoft/react-mcp` 发布。源代码请查看 [GitHub](https://github.com/khulnasoft/heroui-mcp)。
+MCP 服务器目前仅支持 **@khulnasoft/react v3**，并使用 [stdio 传输](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio)。已在 npm 上以 `@khulnasoft/react-mcp` 发布。源代码请查看 [GitHub](https://github.com/khulnasoft/prismui-mcp)。
 
 <Callout>
   随着我们向 PrismUI v3 添加更多组件，它们也将在 MCP 服务器中可用。
@@ -39,7 +39,7 @@ MCP 服务器目前仅支持 **@khulnasoft/react v3**，并使用 [stdio 传输]
 ```json title=".cursor/mcp.json"
 {
   "mcpServers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -54,7 +54,7 @@ MCP 服务器目前仅支持 **@khulnasoft/react v3**，并使用 [stdio 传输]
 在终端中运行此命令：
 
 ```bash
-claude mcp add heroui-react -- npx -y @khulnasoft/react-mcp@latest
+claude mcp add prismui-react -- npx -y @khulnasoft/react-mcp@latest
 ```
 
 或者手动添加到你项目的 `.mcp.json` 文件：
@@ -62,7 +62,7 @@ claude mcp add heroui-react -- npx -y @khulnasoft/react-mcp@latest
 ```json title=".mcp.json"
 {
   "mcpServers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -81,7 +81,7 @@ claude mcp add heroui-react -- npx -y @khulnasoft/react-mcp@latest
 ```json title=".windsurf/mcp.json"
 {
   "mcpServers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -100,7 +100,7 @@ claude mcp add heroui-react -- npx -y @khulnasoft/react-mcp@latest
 ```json title="settings.json"
 {
   "context_servers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"],
       "env": {}
@@ -109,7 +109,7 @@ claude mcp add heroui-react -- npx -y @khulnasoft/react-mcp@latest
 }
 ```
 
-添加配置后，重新启动 Zed 并打开 Agent Panel 设置视图。检查 heroui 服务器旁边的指示点是否为绿色，且 tooltip 显示为 "Server is active"。
+添加配置后，重新启动 Zed 并打开 Agent Panel 设置视图。检查 prismui 服务器旁边的指示点是否为绿色，且 tooltip 显示为 "Server is active"。
 
 更多详情请参阅 [Zed MCP 文档](https://zed.dev/docs/ai/mcp)。
 
@@ -120,7 +120,7 @@ claude mcp add heroui-react -- npx -y @khulnasoft/react-mcp@latest
 ```json title=".vscode/mcp.json"
 {
   "servers": {
-    "heroui-react": {
+    "prismui-react": {
       "type": "stdio",
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
@@ -129,7 +129,7 @@ claude mcp add heroui-react -- npx -y @khulnasoft/react-mcp@latest
 }
 ```
 
-添加配置后，打开 `.vscode/mcp.json`，然后点击 heroui-react 服务器旁边的 **Start**。
+添加配置后，打开 `.vscode/mcp.json`，然后点击 prismui-react 服务器旁边的 **Start**。
 
 更多详情请参阅 [VS Code MCP 文档](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)。
 
@@ -138,7 +138,7 @@ claude mcp add heroui-react -- npx -y @khulnasoft/react-mcp@latest
 将 PrismUI 服务器添加到你的 `~/.codex/config.toml`（或项目级的 `.codex/config.toml`）：
 
 ```toml title="config.toml"
-[mcp_servers.heroui-react]
+[mcp_servers.prismui-react]
 command = "npx"
 args = ["-y", "@khulnasoft/react-mcp@latest"]
 ```
@@ -155,7 +155,7 @@ args = ["-y", "@khulnasoft/react-mcp@latest"]
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "heroui-react": {
+    "prismui-react": {
       "type": "local",
       "command": ["npx", "-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -212,10 +212,10 @@ MCP 服务器为 AI 助手提供以下工具：
 
 **环境要求：** Node.js 22 或更高版本。使用 `npx` 时会自动下载该包。
 
-**需要帮助？** [GitHub Issues](https://github.com/khulnasoft/heroui-mcp/issues) | [Discord 社区](https://discord.gg/heroui)
+**需要帮助？** [GitHub Issues](https://github.com/khulnasoft/prismui-mcp/issues) | [Discord 社区](https://discord.gg/prismui)
 
 ## 链接
 
 - [npm 包](https://www.npmjs.com/package/@khulnasoft/react-mcp)
-- [GitHub 仓库](https://github.com/khulnasoft/heroui-mcp)
-- [贡献指南](https://github.com/khulnasoft/heroui-mcp/blob/main/CONTRIBUTING.md)
+- [GitHub 仓库](https://github.com/khulnasoft/prismui-mcp)
+- [贡献指南](https://github.com/khulnasoft/prismui-mcp/blob/main/CONTRIBUTING.md)

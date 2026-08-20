@@ -1,7 +1,7 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { BottomSheetFooter, BottomSheetScrollView } from '@gorhom/bottom-sheet';
 import { useLingui } from '@lingui/react/macro';
-import { BottomSheet, Button, Card, cn, Separator } from 'heroui-native';
+import { BottomSheet, Button, Card, cn, Separator } from 'prismui-native';
 import { useCallback, useMemo, useState } from 'react';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';

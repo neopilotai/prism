@@ -8,7 +8,7 @@ description: 面向 React 与 React Native 的彻底重写。75+ Web 组件、37
 </div>
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/heroui-v3-release.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-v3-release.mp4"
   height={430}
   muted
 />
@@ -28,26 +28,26 @@ description: 面向 React 与 React Native 的彻底重写。75+ Web 组件、37
 37 个组件，共享同一套设计 token、采用复合组件模式、统一的动画 API，以及自适应的呈现模式。每个平台都基于原生实现，并通过 [Uniwind](https://uniwind.dev/) 提供 Tailwind CSS v4 的支持。
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/heroui-native-v1-release-.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-native-v1-release-.mp4"
   playMode="manual"
   height={430}
   muted
 />
 
-[查看详情](#heroui-native)
+[查看详情](#prismui-native)
 
 ### PrismUI Pro
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro@2x.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro-dark@2x.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui-pro@2x.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui-pro-dark@2x.jpg"
   alt="PrismUI Pro"
-  href="https://heroui.pro"
+  href="https://prismui.pro"
 />
 
-面向 React 与 React Native 的高级组件、模板与 AI 工具。包含 Command Palette、Kanban、DataGrid、Dashboard 模板等。预售价格已上线 [heroui.pro](https://heroui.pro)。
+面向 React 与 React Native 的高级组件、模板与 AI 工具。包含 Command Palette、Kanban、DataGrid、Dashboard 模板等。预售价格已上线 [prismui.pro](https://prismui.pro)。
 
-[查看详情](#heroui-pro)
+[查看详情](#prismui-pro)
 
 ## 设计原则
 
@@ -371,7 +371,7 @@ PrismUI MCP 服务器将 AI 编码助手（Cursor、Claude Code、VS Code Copilo
 ```json
 {
   "mcpServers": {
-    "heroui-react": {
+    "prismui-react": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/react-mcp@latest"]
     }
@@ -394,7 +394,7 @@ MCP 服务器、Agent Skills、LLMs.txt——三层组合让 AI 助手能像人�
 ## PrismUI Native
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/heroui-native-v1-release-.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-native-v1-release-.mp4"
   height={430}
   muted
 />
@@ -408,7 +408,7 @@ PrismUI Native 是与 v3 网页版同时推出的全新组件库。渲染引擎�
 <div className="flex justify-center my-6">
   <img
     width="200"
-    src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
+    src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/qr-code-native.png"
     alt="Expo Go QR Code"
   />
 </div>
@@ -426,7 +426,7 @@ PrismUI Native 是与 v3 网页版同时推出的全新组件库。渲染引擎�
 涵盖表单、导航、浮层、反馈与布局。从 Button、Input、Checkbox，到 Dialog、BottomSheet、Select、Toast 与 InputOTP，所有组件都遵循复合组件模式：
 
 ```tsx
-import { Dialog, Button } from "heroui-native";
+import { Dialog, Button } from "prismui-native";
 
 <Dialog>
   <Dialog.Trigger asChild>
@@ -485,7 +485,7 @@ import { View, Text } from "react-native";
 两个平台都使用 Tailwind CSS v4：Native 端通过 [Uniwind](https://uniwind.dev/)，Web 端使用标准 Tailwind。
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/native-v1-demo/v-1-demo-2.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/native-v1-demo/v-1-demo-2.mp4"
   height={430}
   muted
 />
@@ -495,7 +495,7 @@ import { View, Text } from "react-native";
 每一个带动画的原生组件都只暴露一个 `animation` prop。数值、时长、弹簧参数、进出场过渡都集中在这里配置。底层由 Reanimated 负责计算，但你完全不需要直接接触它：
 
 ```tsx
-import { Switch } from "heroui-native";
+import { Switch } from "prismui-native";
 
 <Switch
   animation={{
@@ -537,7 +537,7 @@ Popover、Select 与 Menu 通过一个 prop 即可在 popover、bottom-sheet 与
 目前还没有其他 React Native 组件库提供这一能力。
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/native-v1-demo/v-1-demo-3.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/native-v1-demo/v-1-demo-3.mp4"
   height={430}
   muted
 />
@@ -547,9 +547,9 @@ Popover、Select 与 Menu 通过一个 prop 即可在 popover、bottom-sheet 与
 每一个原生组件都有自己的入口路径，只引入你实际用到的部分即可：
 
 ```tsx
-import { PrismUINativeProvider } from "heroui-native/provider";
-import { Button } from "heroui-native/button";
-import { Card } from "heroui-native/card";
+import { PrismUINativeProvider } from "prismui-native/provider";
+import { Button } from "prismui-native/button";
+import { Card } from "prismui-native/card";
 ```
 
 ### Native 端的 AI 工具
@@ -559,7 +559,7 @@ PrismUI Native 也配套提供了自己的 MCP 服务器、Agent Skills 与 LLMs
 ```json
 {
   "mcpServers": {
-    "heroui-native": {
+    "prismui-native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -570,13 +570,13 @@ PrismUI Native 也配套提供了自己的 MCP 服务器、Agent Skills 与 LLMs
 ## PrismUI Pro
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro@2x.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro-dark@2x.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui-pro@2x.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui-pro-dark@2x.jpg"
   alt="PrismUI Pro"
-  href="https://heroui.pro"
+  href="https://prismui.pro"
 />
 
-与 v3 同步，[PrismUI Pro](https://heroui.pro) 的预售也已经上线。面向 React 与 React Native，提供高级组件、模板与 AI 工具。
+与 v3 同步，[PrismUI Pro](https://prismui.pro) 的预售也已经上线。面向 React 与 React Native，提供高级组件、模板与 AI 工具。
 
 ### Pro 组件
 
@@ -592,7 +592,7 @@ Pro 许可包含高级版的 MCP 服务器与 Agent Skills，并内置 Pro 组�
 
 预售价格已上线。v2 Pro 用户可享受升级折扣，使用同一邮箱或联系客服即可。
 
-[访问 heroui.pro 查看套餐与定价](https://heroui.pro)
+[访问 prismui.pro 查看套餐与定价](https://prismui.pro)
 
 ## 快速上手
 
@@ -633,22 +633,22 @@ Pro 许可包含高级版的 MCP 服务器与 Agent Skills，并内置 Pro 组�
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm install heroui-native
+    npm install prismui-native
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add heroui-native
+    pnpm add prismui-native
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add heroui-native
+    yarn add prismui-native
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add heroui-native
+    bun add prismui-native
     ```
   </Tab>
 </Tabs>
@@ -662,13 +662,13 @@ Pro 许可包含高级版的 MCP 服务器与 Agent Skills，并内置 Pro 组�
 PrismUI v3 中的每一个组件在 Figma 中都有 1:1 的对应实现。变体、命名与结构完全一致。整套 Kit 全程采用 auto layout，使用与代码 token 直接对应的 Figma 变量（`--accent`、`--surface`、`--radius`），并借助 Figma 新推出的 [slots](https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma) 来实现灵活的组件组合。设计师可以像开发者写代码一样，自由调整、替换与定制组件的各个部件。
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/cover-figma@2x.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/cover-figma-dark@2x.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/cover-figma@2x.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/cover-figma-dark@2x.jpg"
   alt="PrismUI Figma Kit v3"
-  href="https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3"
+  href="https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3"
 />
 
-[获取 Figma Kit](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3)
+[获取 Figma Kit](https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3)
 
 ## 致谢
 
@@ -682,5 +682,5 @@ PrismUI v3 中的每一个组件在 Figma 中都有 1:1 的对应实现。变体
 - [React Native 文档](/docs/native/getting-started/quick-start)
 - [主题构建器](/themes)
 - [MCP 服务器](/docs/ui-for-agents/mcp-server)
-- [GitHub 仓库](https://github.com/khulnasoft/heroui)
-- [Figma Kit v3](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3)
+- [GitHub 仓库](https://github.com/khulnasoft/prismui)
+- [Figma Kit v3](https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3)

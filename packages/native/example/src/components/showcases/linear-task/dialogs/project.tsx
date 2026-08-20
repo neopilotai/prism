@@ -9,7 +9,7 @@ import {
   Radio,
   RadioGroup,
   useDialog,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useMemo, useState, type FC } from 'react';
 import { Platform, useWindowDimensions, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';

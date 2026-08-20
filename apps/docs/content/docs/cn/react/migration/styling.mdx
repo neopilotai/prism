@@ -210,11 +210,11 @@ v2 采用了 Tailwind CSS 插件方式：
 
 ```js
 // tailwind.config.js
-const {heroui} = require("@khulnasoft/react");
+const {prismui} = require("@khulnasoft/react");
 
 module.exports = {
   plugins: [
-    heroui({
+    prismui({
       layout: {
         fontSize: {
           tiny: "0.75rem",
@@ -278,17 +278,17 @@ v3 采用纯 CSS 的方式：
 
 ### 变量命名变更
 
-v2 采用 `--heroui-{property}-{scale}` 的命名模式，而 v3 改用 `--{property}` 或 `--color-{property}`。
+v2 采用 `--prismui-{property}-{scale}` 的命名模式，而 v3 改用 `--{property}` 或 `--color-{property}`。
 
 **v2 CSS 变量：**
 
 ```css
---heroui-font-size-tiny: 0.75rem;
---heroui-font-size-small: 0.875rem;
---heroui-radius-small: 8px;
---heroui-radius-medium: 12px;
---heroui-border-width-medium: 2px;
---heroui-disabled-opacity: 0.5;
+--prismui-font-size-tiny: 0.75rem;
+--prismui-font-size-small: 0.875rem;
+--prismui-radius-small: 8px;
+--prismui-radius-medium: 12px;
+--prismui-border-width-medium: 2px;
+--prismui-disabled-opacity: 0.5;
 ```
 
 **v3 CSS 变量：**
@@ -319,9 +319,9 @@ v2 采用 `--heroui-{property}-{scale}` 的命名模式，而 v3 改用 `--{prop
 **v2 颜色结构：**
 
 ```css
---heroui-primary: 210 100% 50%;
---heroui-primary-50: 210 100% 95%;
---heroui-primary-100: 210 100% 90%;
+--prismui-primary: 210 100% 50%;
+--prismui-primary-50: 210 100% 95%;
+--prismui-primary-100: 210 100% 90%;
 /* ... more shades ... */
 ```
 
@@ -495,9 +495,9 @@ v2 提供了 `content1`、`content2`、`content3` 和 `content4` 颜色，用于
 **v2 布局 token：**
 
 ```css
---heroui-divider-weight: 1px;
---heroui-disabled-opacity: 0.5;
---heroui-hover-opacity: 0.8;
+--prismui-divider-weight: 1px;
+--prismui-disabled-opacity: 0.5;
+--prismui-hover-opacity: 0.8;
 ```
 
 **v3 布局 token：**
@@ -517,9 +517,9 @@ v2 提供了 `content1`、`content2`、`content3` 和 `content4` 颜色，用于
 **v2 阴影：**
 
 ```css
---heroui-box-shadow-small: 0px 0px 5px 0px rgb(0 0 0 / 0.02), ...;
---heroui-box-shadow-medium: 0px 0px 15px 0px rgb(0 0 0 / 0.03), ...;
---heroui-box-shadow-large: 0px 0px 30px 0px rgb(0 0 0 / 0.04), ...;
+--prismui-box-shadow-small: 0px 0px 5px 0px rgb(0 0 0 / 0.02), ...;
+--prismui-box-shadow-medium: 0px 0px 15px 0px rgb(0 0 0 / 0.03), ...;
+--prismui-box-shadow-large: 0px 0px 30px 0px rgb(0 0 0 / 0.04), ...;
 ```
 
 **v3 阴影：**
@@ -670,11 +670,11 @@ v3 使用更一致的间隙：
   <Tab value="v2">
     ```js
     // tailwind.config.js
-    const {heroui} = require("@khulnasoft/react");
+    const {prismui} = require("@khulnasoft/react");
 
     module.exports = {
       plugins: [
-        heroui({
+        prismui({
           themes: {
             light: {
               colors: {

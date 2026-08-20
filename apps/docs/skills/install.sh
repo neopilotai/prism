@@ -1,14 +1,14 @@
 #!/bin/bash
 # PrismUI Skill Installer
 # Usage: curl -sSL https://prism.khulnasoft.com/install | bash -s [skill-name]
-# Default: heroui-react
-# Available skills: heroui-react, heroui-native, heroui-migration
+# Default: prismui-react
+# Available skills: prismui-react, prismui-native, prismui-migration
 # https://prism.khulnasoft.com
 
 set -e
 
-# Skill selection (default: heroui-react)
-SKILL_NAME="${1:-heroui-react}"
+# Skill selection (default: prismui-react)
+SKILL_NAME="${1:-prismui-react}"
 
 # URLs
 BASE_URL="${BASE_URL:-{{BASE_URL}}}"
@@ -29,10 +29,10 @@ if [ -d "$HOME/.claude" ]; then
   echo "✓ Installed ${SKILL_NAME} skill for Claude Code"
   INSTALLED=$((INSTALLED + 1))
 
-  # Cleanup old heroui skill (only when installing heroui-react)
-  if [ "$SKILL_NAME" = "heroui-react" ] && [ -d "$HOME/.claude/skills/heroui" ]; then
-    rm -rf "$HOME/.claude/skills/heroui"
-    echo "✓ Removed old heroui skill"
+  # Cleanup old prismui skill (only when installing prismui-react)
+  if [ "$SKILL_NAME" = "prismui-react" ] && [ -d "$HOME/.claude/skills/prismui" ]; then
+    rm -rf "$HOME/.claude/skills/prismui"
+    echo "✓ Removed old prismui skill"
   fi
 fi
 
@@ -43,18 +43,18 @@ if [ -d "$HOME/.cursor" ]; then
   echo "✓ Installed ${SKILL_NAME} skill for Cursor"
   INSTALLED=$((INSTALLED + 1))
 
-  # Cleanup old heroui skill and command (only when installing heroui-react)
-  if [ "$SKILL_NAME" = "heroui-react" ]; then
+  # Cleanup old prismui skill and command (only when installing prismui-react)
+  if [ "$SKILL_NAME" = "prismui-react" ]; then
     OLD_SKILL_FOUND=0
-    if [ -d "$HOME/.cursor/skills/heroui" ]; then
-      rm -rf "$HOME/.cursor/skills/heroui"
-      echo "✓ Removed old heroui skill"
+    if [ -d "$HOME/.cursor/skills/prismui" ]; then
+      rm -rf "$HOME/.cursor/skills/prismui"
+      echo "✓ Removed old prismui skill"
       OLD_SKILL_FOUND=1
     fi
 
-    if [ $OLD_SKILL_FOUND -eq 1 ] && [ -f "$HOME/.cursor/commands/heroui.md" ]; then
-      rm -f "$HOME/.cursor/commands/heroui.md"
-      echo "✓ Removed old /heroui command"
+    if [ $OLD_SKILL_FOUND -eq 1 ] && [ -f "$HOME/.cursor/commands/prismui.md" ]; then
+      rm -f "$HOME/.cursor/commands/prismui.md"
+      echo "✓ Removed old /prismui command"
     fi
   fi
 fi
@@ -66,18 +66,18 @@ if command -v opencode &> /dev/null || [ -d "$HOME/.config/opencode" ]; then
   echo "✓ Installed ${SKILL_NAME} skill for OpenCode"
   INSTALLED=$((INSTALLED + 1))
 
-  # Cleanup old heroui skill and command (only when installing heroui-react)
-  if [ "$SKILL_NAME" = "heroui-react" ]; then
+  # Cleanup old prismui skill and command (only when installing prismui-react)
+  if [ "$SKILL_NAME" = "prismui-react" ]; then
     OLD_SKILL_FOUND=0
-    if [ -d "$HOME/.config/opencode/skill/heroui" ]; then
-      rm -rf "$HOME/.config/opencode/skill/heroui"
-      echo "✓ Removed old heroui skill"
+    if [ -d "$HOME/.config/opencode/skill/prismui" ]; then
+      rm -rf "$HOME/.config/opencode/skill/prismui"
+      echo "✓ Removed old prismui skill"
       OLD_SKILL_FOUND=1
     fi
 
-    if [ $OLD_SKILL_FOUND -eq 1 ] && [ -f "$HOME/.config/opencode/command/heroui.md" ]; then
-      rm -f "$HOME/.config/opencode/command/heroui.md"
-      echo "✓ Removed old /heroui command"
+    if [ $OLD_SKILL_FOUND -eq 1 ] && [ -f "$HOME/.config/opencode/command/prismui.md" ]; then
+      rm -f "$HOME/.config/opencode/command/prismui.md"
+      echo "✓ Removed old /prismui command"
     fi
   fi
 fi
@@ -89,18 +89,18 @@ if command -v codex &> /dev/null || [ -d "$CODEX_HOME" ]; then
   echo "✓ Installed ${SKILL_NAME} skill for Codex"
   INSTALLED=$((INSTALLED + 1))
 
-  # Cleanup old heroui skill and command (only when installing heroui-react)
-  if [ "$SKILL_NAME" = "heroui-react" ]; then
+  # Cleanup old prismui skill and command (only when installing prismui-react)
+  if [ "$SKILL_NAME" = "prismui-react" ]; then
     OLD_SKILL_FOUND=0
-    if [ -d "$CODEX_HOME/skills/heroui" ]; then
-      rm -rf "$CODEX_HOME/skills/heroui"
-      echo "✓ Removed old heroui skill"
+    if [ -d "$CODEX_HOME/skills/prismui" ]; then
+      rm -rf "$CODEX_HOME/skills/prismui"
+      echo "✓ Removed old prismui skill"
       OLD_SKILL_FOUND=1
     fi
 
-    if [ $OLD_SKILL_FOUND -eq 1 ] && [ -f "$CODEX_HOME/prompts/heroui.md" ]; then
-      rm -f "$CODEX_HOME/prompts/heroui.md"
-      echo "✓ Removed old /heroui command"
+    if [ $OLD_SKILL_FOUND -eq 1 ] && [ -f "$CODEX_HOME/prompts/prismui.md" ]; then
+      rm -f "$CODEX_HOME/prompts/prismui.md"
+      echo "✓ Removed old /prismui command"
     fi
   fi
 fi
@@ -112,18 +112,18 @@ if [ -d "$HOME/.gemini" ]; then
   echo "✓ Installed ${SKILL_NAME} skill for Antigravity"
   INSTALLED=$((INSTALLED + 1))
 
-  # Cleanup old heroui skill and command (only when installing heroui-react)
-  if [ "$SKILL_NAME" = "heroui-react" ]; then
+  # Cleanup old prismui skill and command (only when installing prismui-react)
+  if [ "$SKILL_NAME" = "prismui-react" ]; then
     OLD_SKILL_FOUND=0
-    if [ -d "$HOME/.gemini/antigravity/skills/heroui" ]; then
-      rm -rf "$HOME/.gemini/antigravity/skills/heroui"
-      echo "✓ Removed old heroui skill"
+    if [ -d "$HOME/.gemini/antigravity/skills/prismui" ]; then
+      rm -rf "$HOME/.gemini/antigravity/skills/prismui"
+      echo "✓ Removed old prismui skill"
       OLD_SKILL_FOUND=1
     fi
 
-    if [ $OLD_SKILL_FOUND -eq 1 ] && [ -f "$HOME/.gemini/antigravity/global_workflows/heroui.md" ]; then
-      rm -f "$HOME/.gemini/antigravity/global_workflows/heroui.md"
-      echo "✓ Removed old /heroui command"
+    if [ $OLD_SKILL_FOUND -eq 1 ] && [ -f "$HOME/.gemini/antigravity/global_workflows/prismui.md" ]; then
+      rm -f "$HOME/.gemini/antigravity/global_workflows/prismui.md"
+      echo "✓ Removed old /prismui command"
     fi
   fi
 fi

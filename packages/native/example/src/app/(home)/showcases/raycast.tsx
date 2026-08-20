@@ -2,7 +2,7 @@ import Feather from '@expo/vector-icons/Feather';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useRouter } from 'expo-router';
-import { Avatar, cn } from 'heroui-native';
+import { Avatar, cn } from 'prismui-native';
 import { useState, type FC } from 'react';
 import { Alert, Pressable, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -96,7 +96,7 @@ export default function Raycast() {
           <Avatar alt="junior" className="size-8">
             <Avatar.Image
               source={{
-                uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/junior-avatar.jpg',
+                uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/junior-avatar.jpg',
               }}
             />
             <Avatar.Fallback>

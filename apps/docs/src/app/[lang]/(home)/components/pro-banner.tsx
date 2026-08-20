@@ -179,7 +179,7 @@ export function HeaderBanner() {
   );
 }
 
-const PRO_BANNER_DISMISSED_KEY = "heroui-pro-banner-dismissed-session";
+const PRO_BANNER_DISMISSED_KEY = "prismui-pro-banner-dismissed-session";
 
 const subscribeToDismissed = (callback: () => void) => {
   window.addEventListener("storage", callback);

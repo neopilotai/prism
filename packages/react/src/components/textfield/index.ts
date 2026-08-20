@@ -29,6 +29,6 @@ export {TextFieldContext} from "./textfield";
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {textFieldVariants} from "@heroui/styles";
+export {textFieldVariants} from "@khulnasoft/styles";
 
-export type {TextFieldVariants} from "@heroui/styles";
+export type {TextFieldVariants} from "@prismuisoft/styles";

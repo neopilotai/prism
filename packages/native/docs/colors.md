@@ -4,7 +4,7 @@ PrismUI Native uses CSS variables for colors that automatically switch between l
 
 ## How It Works
 
-PrismUI Native's color system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme via [Uniwind](https://uniwind.dev/). When you import `heroui-native/styles`, it uses Tailwind's built-in color palettes and maps them to semantic variables.
+PrismUI Native's color system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme via [Uniwind](https://uniwind.dev/). When you import `prismui-native/styles`, it uses Tailwind's built-in color palettes and maps them to semantic variables.
 
 **Naming pattern:**
 
@@ -159,7 +159,7 @@ For component-specific styling:
 
 ```tsx
 import { View, Text } from 'react-native';
-import { Button } from 'heroui-native';
+import { Button } from 'prismui-native';
 
 <View className="bg-background flex-1 p-4">
   <Text className="text-foreground mb-4">Content</Text>
@@ -250,7 +250,7 @@ The `useThemeColor` hook has been enhanced to support multiple colors selection,
 You can now select multiple colors at once, which is useful when you need to work with related color values together:
 
 ```tsx
-import { useThemeColor } from 'heroui-native';
+import { useThemeColor } from 'prismui-native';
 
 // Select multiple colors at once
 const [accent, accentForeground, success, danger] = useThemeColor([

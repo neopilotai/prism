@@ -61,6 +61,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {autocompleteVariants} from "@heroui/styles";
+export {autocompleteVariants} from "@khulnasoft/styles";
 
-export type {AutocompleteVariants} from "@heroui/styles";
+export type {AutocompleteVariants} from "@prismuisoft/styles";

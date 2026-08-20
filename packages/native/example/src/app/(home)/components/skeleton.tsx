@@ -11,7 +11,7 @@ import {
   Skeleton,
   SkeletonGroup,
   type SkeletonAnimation,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useState } from 'react';
 import { Image, Text, View } from 'react-native';
 import Animated, { FadeInLeft, FadeOutRight } from 'react-native-reanimated';
@@ -88,7 +88,7 @@ const CardSkeletonContent = () => {
                     <Avatar size="sm">
                       <Avatar.Image
                         source={{
-                          uri: 'https://img.heroui.chat/image/avatar?w=400&h=400&u=4',
+                          uri: 'https://img.prismui.chat/image/avatar?w=400&h=400&u=4',
                         }}
                       />
                       <Avatar.Fallback />
@@ -145,7 +145,7 @@ const CardSkeletonContent = () => {
                 <View className="h-48 bg-surface-secondary rounded-2xl overflow-hidden">
                   <Image
                     source={{
-                      uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/robot1.jpeg',
+                      uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/robot1.jpeg',
                     }}
                     className="h-full w-full"
                   />
@@ -295,7 +295,7 @@ const CircularSkeletonsContent = () => {
                 <Avatar size="sm">
                   <Avatar.Image
                     source={{
-                      uri: 'https://img.heroui.chat/image/avatar?w=400&h=400&u=3',
+                      uri: 'https://img.prismui.chat/image/avatar?w=400&h=400&u=3',
                     }}
                   />
                   <Avatar.Fallback />
@@ -306,7 +306,7 @@ const CircularSkeletonsContent = () => {
                 <Avatar size="md">
                   <Avatar.Image
                     source={{
-                      uri: 'https://img.heroui.chat/image/avatar?w=400&h=400&u=5',
+                      uri: 'https://img.prismui.chat/image/avatar?w=400&h=400&u=5',
                     }}
                   />
                   <Avatar.Fallback />
@@ -317,7 +317,7 @@ const CircularSkeletonsContent = () => {
                 <Avatar size="lg">
                   <Avatar.Image
                     source={{
-                      uri: 'https://img.heroui.chat/image/avatar?w=400&h=400&u=20',
+                      uri: 'https://img.prismui.chat/image/avatar?w=400&h=400&u=20',
                     }}
                   />
                   <Avatar.Fallback />

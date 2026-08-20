@@ -116,7 +116,7 @@ const tools: WebMCPTool[] = [
       required: ["query"],
       type: "object",
     },
-    name: "search_heroui_docs",
+    name: "search_prismui_docs",
   },
   {
     description: "Retrieve a PrismUI documentation page as markdown by same-origin docs URL.",
@@ -139,7 +139,7 @@ const tools: WebMCPTool[] = [
       required: ["url"],
       type: "object",
     },
-    name: "get_heroui_doc",
+    name: "get_prismui_doc",
   },
   {
     description:
@@ -165,7 +165,7 @@ const tools: WebMCPTool[] = [
       required: ["url"],
       type: "object",
     },
-    name: "navigate_heroui",
+    name: "navigate_prismui",
   },
   {
     description: "List PrismUI component documentation pages for React or Native.",
@@ -184,7 +184,7 @@ const tools: WebMCPTool[] = [
       },
       type: "object",
     },
-    name: "list_heroui_components",
+    name: "list_prismui_components",
   },
 ];
 

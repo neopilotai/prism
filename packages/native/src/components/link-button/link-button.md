@@ -5,7 +5,7 @@ A ghost-variant button with no highlight feedback, designed for inline link-styl
 ## Import
 
 ```tsx
-import { LinkButton } from 'heroui-native';
+import { LinkButton } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -89,7 +89,7 @@ Place link buttons inline alongside regular text for terms, policies, or context
 ## Example
 
 ```tsx
-import { Button, Checkbox, ControlField, LinkButton } from 'heroui-native';
+import { Button, Checkbox, ControlField, LinkButton } from 'prismui-native';
 import React from 'react';
 import { Alert, View } from 'react-native';
 
@@ -133,7 +133,7 @@ export default function LinkButtonExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/link-button.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/link-button.tsx>).
 
 ## API Reference
 

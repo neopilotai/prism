@@ -5,11 +5,11 @@ import jscodeshift from 'jscodeshift';
 /**
  * Migrate the name of the import
  * @example
- * migrateImportName(parsedContent, 'nextui', 'heroui');
- * import {nextui} from 'xxx'; -> import {heroui} from 'xxx';
- * import nextui from 'xxx'; -> import heroui from 'xxx';
- * const {nextui} = require('xxx'); -> const {heroui} = require('xxx');
- * const nextui = require('xxx'); -> const heroui = require('xxx');
+ * migrateImportName(parsedContent, 'nextui', 'prismui');
+ * import {nextui} from 'xxx'; -> import {prismui} from 'xxx';
+ * import nextui from 'xxx'; -> import prismui from 'xxx';
+ * const {nextui} = require('xxx'); -> const {prismui} = require('xxx');
+ * const nextui = require('xxx'); -> const prismui = require('xxx');
  */
 export function migrateImportName(
   parsedContent: StoreObject['parsedContent'],
@@ -117,8 +117,8 @@ export function migrateByRegex(rawContent: string, match: string, replace: strin
 /**
  * Migrate the name of the CallExpression
  * @example
- * migrateCallExpressionName(parsedContent, 'nextui', 'heroui');
- * nextui() -> heroui()
+ * migrateCallExpressionName(parsedContent, 'nextui', 'prismui');
+ * nextui() -> prismui()
  */
 export function migrateCallExpressionName(
   parsedContent: StoreObject['parsedContent'],
@@ -127,7 +127,7 @@ export function migrateCallExpressionName(
 ) {
   let dirtyFlag = false;
 
-  // Replace `nextui` with `heroui` in the plugins array
+  // Replace `nextui` with `prismui` in the plugins array
   parsedContent?.find(jscodeshift.CallExpression, {callee: {name: match}}).forEach((path) => {
     path.get('callee').replace(jscodeshift.identifier(replace));
     dirtyFlag = true;

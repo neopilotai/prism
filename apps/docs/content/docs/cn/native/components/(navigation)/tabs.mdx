@@ -8,14 +8,14 @@ links:
 
 <NativeVideoPlayerView
   target="auto"
-  srcLight="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/tabs-docs-light.mp4"
-  srcDark="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/tabs-docs-dark.mp4"
+  srcLight="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/tabs-docs-light.mp4"
+  srcDark="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/tabs-docs-dark.mp4"
 />
 
 ## 导入
 
 ```tsx
-import { Tabs } from 'heroui-native';
+import { Tabs } from 'prismui-native';
 ```
 
 ## 结构
@@ -261,7 +261,7 @@ import {
   Label,
   Tabs,
   TextField,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 import Animated, {
@@ -363,7 +363,7 @@ export default function TabsExample() {
 }
 ```
 
-更多示例见 [GitHub 仓库](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/tabs.tsx>)。
+更多示例见 [GitHub 仓库](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/tabs.tsx>)。
 
 ## API 参考
 
@@ -512,7 +512,7 @@ export default function TabsExample() {
 在自定义组件或复合子组件中读取 Tabs 根上下文。
 
 ```tsx
-import { useTabs } from 'heroui-native';
+import { useTabs } from 'prismui-native';
 
 const CustomComponent = () => {
   const { value, onValueChange, nativeID } = useTabs();
@@ -537,7 +537,7 @@ const CustomComponent = () => {
 读取标签测量上下文，用于管理各触发器的位置与尺寸。
 
 ```tsx
-import { useTabsMeasurements } from 'heroui-native';
+import { useTabsMeasurements } from 'prismui-native';
 
 const CustomIndicator = () => {
   const { measurements, variant } = useTabsMeasurements();
@@ -570,7 +570,7 @@ const CustomIndicator = () => {
 在自定义组件或复合子组件中读取单个 `Tabs.Trigger` 的上下文。
 
 ```tsx
-import { useTabsTrigger } from 'heroui-native';
+import { useTabsTrigger } from 'prismui-native';
 
 const CustomLabel = () => {
   const { value, isSelected, nativeID } = useTabsTrigger();

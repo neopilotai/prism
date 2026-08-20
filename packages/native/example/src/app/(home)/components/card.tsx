@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Button, Card, cn, type CardRootProps } from 'heroui-native';
+import { Button, Card, cn, type CardRootProps } from 'prismui-native';
 import { Image, Pressable, StyleSheet, View } from 'react-native';
 import { withUniwind } from 'uniwind';
 import { AppText } from '../../../components/app-text';
@@ -61,7 +61,7 @@ const CardWithImageContent = () => {
             <Card.Header>
               <StyledImage
                 source={{
-                  uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo1.jpg',
+                  uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo1.jpg',
                 }}
                 className="h-16 aspect-square rounded-xl"
               />
@@ -95,7 +95,7 @@ const CardWithImageContent = () => {
             <Card.Header>
               <StyledImage
                 source={{
-                  uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo2.jpg',
+                  uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo2.jpg',
                 }}
                 className="h-16 aspect-square rounded-xl"
               />
@@ -140,7 +140,7 @@ const HorizontalCardWithImageContent = () => {
         <Card className="flex-row gap-4 p-4" variant="tertiary">
           <StyledImage
             source={{
-              uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/avocado.jpeg',
+              uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/avocado.jpeg',
             }}
             className="h-28 aspect-square rounded-2xl"
             resizeMode="cover"
@@ -179,7 +179,7 @@ const HorizontalCardWithImageContent = () => {
         <Card className="flex-row gap-4 p-4" variant="tertiary">
           <StyledImage
             source={{
-              uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/oranges.jpeg',
+              uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/oranges.jpeg',
             }}
             className="h-28 aspect-square rounded-2xl"
             resizeMode="cover"
@@ -230,7 +230,7 @@ const BackgroundImageCardContent = () => {
       <Card className="w-full aspect-square">
         <Image
           source={{
-            uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/neo2.jpeg',
+            uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/neo2.jpeg',
           }}
           className="absolute inset-0"
           resizeMode="cover"

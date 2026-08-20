@@ -1,8 +1,8 @@
 ---
-name: heroui-react
-description: "PrismUI v3 React component library (Tailwind CSS v4 + React Aria). Use when building UIs with PrismUI — creating Buttons, Modals, Forms, Cards; installing @khulnasoft/react; configuring dark/light themes with oklch variables; or fetching component docs. Keywords: PrismUI, Hero UI, heroui, @khulnasoft/react, @khulnasoft/styles."
+name: prismui-react
+description: "PrismUI v3 React component library (Tailwind CSS v4 + React Aria). Use when building UIs with PrismUI — creating Buttons, Modals, Forms, Cards; installing @khulnasoft/react; configuring dark/light themes with oklch variables; or fetching component docs. Keywords: PrismUI, Hero UI, prismui, @khulnasoft/react, @khulnasoft/styles."
 metadata:
-  author: heroui
+  author: prismui
   version: "3.0.1"
 ---
 
@@ -15,7 +15,7 @@ PrismUI v3 is a component library built on **Tailwind CSS v4** and **React Aria 
 ## Installation
 
 ```bash
-curl -fsSL https://prism.khulnasoft.com/install | bash -s heroui-react
+curl -fsSL https://prism.khulnasoft.com/install | bash -s prismui-react
 ```
 
 ---

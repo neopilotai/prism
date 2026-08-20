@@ -24,6 +24,6 @@ export type {LabelRootProps, LabelRootProps as LabelProps} from "./label";
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {labelVariants} from "@heroui/styles";
+export {labelVariants} from "@khulnasoft/styles";
 
-export type {LabelVariants} from "@heroui/styles";
+export type {LabelVariants} from "@prismuisoft/styles";

@@ -36,6 +36,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {tooltipVariants} from "@heroui/styles";
+export {tooltipVariants} from "@khulnasoft/styles";
 
-export type {TooltipVariants} from "@heroui/styles";
+export type {TooltipVariants} from "@prismuisoft/styles";

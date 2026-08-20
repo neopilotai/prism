@@ -5,7 +5,7 @@ A compound search input for filtering and querying content.
 ## Import
 
 ```tsx
-import { SearchField } from 'heroui-native';
+import { SearchField } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -114,7 +114,7 @@ Set `isDisabled` on the root to disable all child components via context.
 ## Example
 
 ```tsx
-import { Description, Label, SearchField } from 'heroui-native';
+import { Description, Label, SearchField } from 'prismui-native';
 import { useState } from 'react';
 import { View } from 'react-native';
 
@@ -137,7 +137,7 @@ export default function SearchFieldExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/search-field.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/search-field.tsx>).
 
 ## API Reference
 
@@ -215,7 +215,7 @@ Automatically hidden when the controlled `value` is an empty string. Calls `onCh
 Hook to access the search field state from context. Must be used within a `SearchField` component.
 
 ```tsx
-import { useSearchField } from 'heroui-native';
+import { useSearchField } from 'prismui-native';
 
 const { value, onChange, isDisabled, isInvalid, isRequired } = useSearchField();
 ```

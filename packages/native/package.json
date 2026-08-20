@@ -1,5 +1,5 @@
 {
-  "name": "heroui-native",
+  "name": "prismui-native",
   "version": "1.0.8",
   "description": "Beautiful, fast and modern React Native UI library",
   "main": "./lib/module/index.js",
@@ -35,7 +35,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace heroui-native-example",
+    "example": "yarn workspace prismui-native-example",
     "test": "jest",
     "typecheck": "bash ./scripts/typecheck.sh",
     "lint": "eslint \"src/**/*.{ts,tsx}\" \"example/src/**/*.{ts,tsx}\"",
@@ -55,14 +55,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/khulnasoft/heroui-native.git"
+    "url": "git+https://github.com/khulnasoft/prismui-native.git"
   },
   "author": "PrismUI <support@khulnasoft.com> (https://github.com/khulnasoft)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/khulnasoft/heroui-native/issues"
+    "url": "https://github.com/khulnasoft/prismui-native/issues"
   },
-  "homepage": "https://github.com/khulnasoft/heroui-native#readme",
+  "homepage": "https://github.com/khulnasoft/prismui-native#readme",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

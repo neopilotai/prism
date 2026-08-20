@@ -12,9 +12,9 @@ import {DEBUG} from './helpers/debug';
 import {initOptions} from './helpers/options';
 import {codemods} from './types';
 
-const heroui = new Command();
+const prismui = new Command();
 
-heroui
+prismui
   .name(pkg.name)
   .usage('[command]')
   .description(getCommandDescAndLog(`\nPrismUI Codemod v${pkg.version}\n`, pkg.description))
@@ -26,13 +26,13 @@ heroui
   .option('-f, --format', 'Format the affected files with Prettier')
   .action(codemodAction);
 
-heroui
+prismui
   .command('migrate')
-  .description('Migrates your codebase to use the heroui')
+  .description('Migrates your codebase to use the prismui')
   .argument('[projectPath]', 'Path to the project to migrate')
   .action(migrateAction);
 
-heroui.hook('preAction', async (command) => {
+prismui.hook('preAction', async (command) => {
   const options = (command as SAFE_ANY).rawArgs.slice(2);
   const debug = options.includes('--debug') || options.includes('-d');
   const format = options.includes('--format') || options.includes('-f');
@@ -42,7 +42,7 @@ heroui.hook('preAction', async (command) => {
   DEBUG.enabled = debug;
 });
 
-heroui.parseAsync(process.argv).catch(async (reason) => {
+prismui.parseAsync(process.argv).catch(async (reason) => {
   Logger.newLine();
   Logger.error('Unexpected error. Please report it as a bug:');
   Logger.log(reason);

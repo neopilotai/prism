@@ -58,7 +58,7 @@ export async function installAction(options: CommandOptions) {
   const missing = HEROUI_PACKAGES.filter((pkg) => !allDependenciesKeys.has(pkg));
 
   if (!missing.length) {
-    Logger.success('✅ @heroui/react and @heroui/styles are already installed');
+    Logger.success('✅ @prismui/react and @prismui/styles are already installed');
     process.exit(0);
   }
 
@@ -101,6 +101,6 @@ export async function installAction(options: CommandOptions) {
   await exec(`${currentPkgManager} ${runCmd} ${installTargets.join(' ')}`);
 
   Logger.newLine();
-  Logger.success('✅ @heroui/react and @heroui/styles installed successfully');
+  Logger.success('✅ @prismui/react and @prismui/styles installed successfully');
   process.exit(0);
 }

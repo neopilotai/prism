@@ -2,7 +2,7 @@ import type {FC} from "react";
 
 import {NATIVE_APP} from "@/config/native-app";
 
-import {PrismUILogo} from "../heroui-logo";
+import {PrismUILogo} from "../prismui-logo";
 
 import {StoreButtons} from "./store-buttons";
 

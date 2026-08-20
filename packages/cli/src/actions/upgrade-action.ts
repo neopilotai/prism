@@ -30,7 +30,7 @@ export async function upgradeAction(options: CommandOptions) {
   if (!installed.length) {
     Logger.prefix(
       'error',
-      'No PrismUI packages found. Run `heroui install` to install @heroui/react and @heroui/styles.'
+      'No PrismUI packages found. Run `prismui install` to install @prismui/react and @prismui/styles.'
     );
 
     return;

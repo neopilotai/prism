@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "PrismUI Native OSS",
-    "slug": "heroui-native-oss",
-    "scheme": "herouinativeoss",
+    "slug": "prismui-native-oss",
+    "scheme": "prismuinativeoss",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
@@ -12,7 +12,7 @@
         "dark": "./assets/ios-icon-dark.png"
       },
       "supportsTablet": false,
-      "bundleIdentifier": "com.herouinativeoss.app",
+      "bundleIdentifier": "com.prismuinativeoss.app",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/android-adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.herouinativeoss.android"
+      "package": "com.prismuinativeoss.android"
     },
     "web": {
       "bundler": "metro"

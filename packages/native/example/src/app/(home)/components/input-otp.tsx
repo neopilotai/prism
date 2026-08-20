@@ -11,7 +11,7 @@ import {
   REGEXP_ONLY_CHARS,
   useToast,
   type InputOTPRef,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useRef, useState, type RefObject } from 'react';
 import { View } from 'react-native';
 import { WithOTPInputContent } from '../../../components/bottom-sheet/with-otp-input';

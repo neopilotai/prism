@@ -1,4 +1,4 @@
-import type {DocSelection} from '@helpers/agents-docs/heroui-agents-md';
+import type {DocSelection} from '@helpers/agents-docs/prismui-agents-md';
 import type {DocsOptions} from '@helpers/type';
 
 import fs from 'node:fs';
@@ -16,7 +16,7 @@ import {
   getHerouiVersions,
   injectIntoClaudeMd,
   pullDocs
-} from '@helpers/agents-docs/heroui-agents-md';
+} from '@helpers/agents-docs/prismui-agents-md';
 import {ValidationError} from '@helpers/errors';
 import {Logger} from '@helpers/logger';
 import {getAnalytics, shutdown} from 'src/analytics';
@@ -24,7 +24,7 @@ import {showAnalyticsNotice} from 'src/analytics/notice';
 import {getConfirm, getSelect, getText} from 'src/prompts';
 import {compareVersions} from 'src/scripts/helpers';
 
-const DOCS_DIR_NAME = '.heroui-docs';
+const DOCS_DIR_NAME = '.prismui-docs';
 
 function formatSelectionText(selection: DocSelection): string {
   if (selection === 'react') return 'PrismUI React v3';
@@ -109,27 +109,27 @@ function validateRequirements(cwd: string, selection: DocSelection): ValidationR
         warnings.push('React is not installed. PrismUI v3 requires React 19+.');
       }
 
-      // Check @heroui/react >= 2.8.0, @beta, or @latest (version that supports Tailwind v4)
-      // Only check if @heroui/react is installed
-      const herouiReactVersion = allDeps['@heroui/react'];
+      // Check @prismui/react >= 2.8.0, @beta, or @latest (version that supports Tailwind v4)
+      // Only check if @prismui/react is installed
+      const prismuiReactVersion = allDeps['@prismui/react'];
 
-      if (herouiReactVersion) {
+      if (prismuiReactVersion) {
         // Allow @beta and @latest versions
         if (
-          herouiReactVersion.includes('@beta') ||
-          herouiReactVersion === 'beta' ||
-          herouiReactVersion.includes('@latest') ||
-          herouiReactVersion === 'latest'
+          prismuiReactVersion.includes('@beta') ||
+          prismuiReactVersion === 'beta' ||
+          prismuiReactVersion.includes('@latest') ||
+          prismuiReactVersion === 'latest'
         ) {
           // Beta and latest versions are allowed, skip version check
         } else {
-          const cleanVersion = herouiReactVersion.replace(/^[<=>^~]+/, '');
+          const cleanVersion = prismuiReactVersion.replace(/^[<=>^~]+/, '');
           // Compare with 2.8.0 - returns -1 if cleanVersion < 2.8.0, 0 if equal, 1 if greater
           const comparison = compareVersions(cleanVersion, '2.8.0');
 
           if (comparison < 0) {
             warnings.push(
-              `@heroui/react version ${herouiReactVersion} is installed, but these docs are recommended for version >= 2.8.0, @beta, or @latest (which supports Tailwind CSS v4).`
+              `@prismui/react version ${prismuiReactVersion} is installed, but these docs are recommended for version >= 2.8.0, @beta, or @latest (which supports Tailwind CSS v4).`
             );
           }
         }
@@ -220,11 +220,11 @@ export async function docsAction(options: DocsOptions) {
       } else if (hasReact) {
         // Only React found - use it automatically
         selection = 'react';
-        Logger.log(chalk.dim('Detected @heroui/react, using PrismUI React v3 docs'));
+        Logger.log(chalk.dim('Detected @prismui/react, using PrismUI React v3 docs'));
       } else if (hasNative) {
         // Only Native found - use it automatically
         selection = 'native';
-        Logger.log(chalk.dim('Detected heroui-native, using PrismUI Native docs'));
+        Logger.log(chalk.dim('Detected prismui-native, using PrismUI Native docs'));
       } else {
         // Neither found - prompt for selection with warning
         if (options.output) {
@@ -401,7 +401,7 @@ export async function docsAction(options: DocsOptions) {
     Logger.log(
       `  • The index in ${chalk.bold(outputFiles[0])} helps assistants find relevant documentation`
     );
-    Logger.log(`  • Run ${chalk.bold('heroui agents-md')} again to update docs`);
+    Logger.log(`  • Run ${chalk.bold('prismui agents-md')} again to update docs`);
     Logger.newLine();
 
     analytics?.track({
@@ -429,7 +429,7 @@ export async function docsAction(options: DocsOptions) {
 
 async function promptForLibrarySelection(neitherFound: boolean = false): Promise<DocSelection> {
   if (neitherFound) {
-    Logger.warn('Neither @heroui/react nor heroui-native is installed in this project.');
+    Logger.warn('Neither @prismui/react nor prismui-native is installed in this project.');
     Logger.newLine();
   }
 

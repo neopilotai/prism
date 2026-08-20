@@ -5,7 +5,7 @@ Displays important messages and notifications to users with status indicators.
 ## Import
 
 ```tsx
-import { Alert } from 'heroui-native';
+import { Alert } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -142,7 +142,7 @@ Apply custom styles using the `className` prop on the root and compound parts.
 ## Example
 
 ```tsx
-import { Alert, Button, CloseButton } from 'heroui-native';
+import { Alert, Button, CloseButton } from 'prismui-native';
 import { View } from 'react-native';
 
 export default function AlertExample() {
@@ -188,7 +188,7 @@ export default function AlertExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/alert.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/alert.tsx>).
 
 ## API Reference
 
@@ -250,7 +250,7 @@ You can find more examples in the [GitHub repository](<https://github.com/khulna
 Hook to access the alert root context. Must be used within an `Alert` component.
 
 ```tsx
-import { useAlert } from 'heroui-native';
+import { useAlert } from 'prismui-native';
 
 const { status, nativeID } = useAlert();
 ```

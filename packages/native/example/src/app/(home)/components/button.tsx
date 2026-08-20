@@ -7,7 +7,7 @@ import {
   PressableFeedback,
   Spinner,
   useThemeColor,
-} from 'heroui-native';
+} from 'prismui-native';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { FadeIn, LinearTransition } from 'react-native-reanimated';

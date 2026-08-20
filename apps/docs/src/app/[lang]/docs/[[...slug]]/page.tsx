@@ -71,7 +71,7 @@ export default async function Page(props: {params: Promise<{lang: string; slug?:
   // TODO: add github last edit
   // const lastEditTime = await getGithubLastEdit({
   //   owner: "khulnasoft",
-  //   repo: "heroui",
+  //   repo: "prismui",
   //   path: `apps/docs/content/docs/${page.path}`,
   // });
 

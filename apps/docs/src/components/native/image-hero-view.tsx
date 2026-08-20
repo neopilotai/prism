@@ -29,8 +29,8 @@ export const ImageHeroView = (props: ImageHeroViewProps) => {
       <QRPreviewPopover {...pickNativeQRTarget(props)} />
       <DocsImage
         alt="PrismUI Native Introduction"
-        darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/heroui-native-og-dark-1.webp"
-        src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/heroui-native-og-light-1.webp"
+        darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/prismui-native-og-dark-1.webp"
+        src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/prismui-native-og-light-1.webp"
       />
     </div>
   );

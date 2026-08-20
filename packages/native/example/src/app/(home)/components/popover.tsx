@@ -3,7 +3,7 @@ import type { MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
 import { useRouter } from 'expo-router';
-import { Button, colorKit, Popover, useThemeColor } from 'heroui-native';
+import { Button, colorKit, Popover, useThemeColor } from 'prismui-native';
 import { useState } from 'react';
 import { Platform, View } from 'react-native';
 import { withUniwind } from 'uniwind';

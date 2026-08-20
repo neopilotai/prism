@@ -105,11 +105,11 @@ See the [Full Migration Guide](/docs/react/migration/full-migration#step-9-styli
 
 1. **Create migration branch**
    - Create a feature branch for migration work
-   - Example: `git checkout -b migrate/heroui-v3`
+   - Example: `git checkout -b migrate/prismui-v3`
 
 2. **Verify Migration MCP is configured**
    - Check that Migration MCP server is connected
-   - Ensure `heroui-react` MCP is NOT connected (to avoid confusion)
+   - Ensure `prismui-react` MCP is NOT connected (to avoid confusion)
    - Verify MCP tools are available
 
 3. **Analyze the project and create a migration plan**
@@ -172,7 +172,7 @@ For each component group in the migration plan:
    - Remove `framer-motion` if present
    - Update CSS imports (add `@import "@khulnasoft/styles";`)
    - Remove PrismUIProvider from app root
-   - Update Tailwind config (remove `heroui()` plugin)
+   - Update Tailwind config (remove `prismui()` plugin)
 
 2. **Fix remaining issues**
    - Run typecheck/lint if available (do NOT build)
@@ -310,7 +310,7 @@ For each component group in the migration plan:
 After completing migration:
 
 1. Remove v2 dependencies (already done in dependency switch)
-2. Switch from Migration MCP to `heroui-react` MCP for v3 development
+2. Switch from Migration MCP to `prismui-react` MCP for v3 development
 3. Update documentation references
 4. Run final verification
 5. Merge migration branch to main

@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://prism.khulnasoft.com">
-      <img width="20%" src="https://raw.githubusercontent.com/khulnasoft/heroui/main/apps/docs/public/isotipo.png" alt="nextui" />
-      <h1 align="center">@heroui/codemod</h1>
+      <img width="20%" src="https://raw.githubusercontent.com/khulnasoft/prismui/main/apps/docs/public/isotipo.png" alt="nextui" />
+      <h1 align="center">@prismui/codemod</h1>
   </a>
 </p>
 
@@ -11,34 +11,34 @@ The CLI provides a comprehensive suite of tools to migrate your codebase from Ne
 
 ## Quick Start
 
-> **Note**: The heroui CLI requires [Node.js](https://nodejs.org/en) _20.19.x_ or later
+> **Note**: The prismui CLI requires [Node.js](https://nodejs.org/en) _20.19.x_ or later
 >
 > **Note**: If running in monorepo, you need to run the command in the root of your monorepo
 
-You can start using @heroui/codemod in one of the following ways:
+You can start using @prismui/codemod in one of the following ways:
 
 ### Npx
 
 ```bash
-npx @heroui/codemod@latest
+npx @prismui/codemod@latest
 ```
 
 ### Global Installation
 
 ```bash
-npm install -g @heroui/codemod
+npm install -g @prismui/codemod
 ```
 
 ## Usage
 
 ```bash
-Usage: @heroui/codemod [command]
+Usage: @prismui/codemod [command]
 
-A CLI tool for migrating your codebase to heroui
+A CLI tool for migrating your codebase to prismui
 
 Arguments:
   codemod                Specify which codemod to run
-                         Codemods: import-heroui, package-json-package-name, heroui-provider, tailwindcss-heroui, css-variables, npmrc
+                         Codemods: import-prismui, package-json-package-name, prismui-provider, tailwindcss-prismui, css-variables, npmrc
 
 Options:
   -v, --version          Output the current version
@@ -47,111 +47,111 @@ Options:
   -f, --format           Format the affected files with Prettier
 
 Commands:
-  migrate [projectPath] Migrate your codebase to use heroui
+  migrate [projectPath] Migrate your codebase to use prismui
 ```
 
 ## Codemod Arguments
 
-### import-heroui
+### import-prismui
 
-Updates all import statements from `@nextui-org/*` packages to their `@heroui/*` equivalents.
+Updates all import statements from `@nextui-org/*` packages to their `@prismui/*` equivalents.
 
 ```bash
-heroui-codemod import-heroui
+prismui-codemod import-prismui
 ```
 
 Example:
 
-1. `import { Button } from "@nextui-org/button"` to `import { Button } from "@heroui/button"`
+1. `import { Button } from "@nextui-org/button"` to `import { Button } from "@prismui/button"`
 
 ### package-json-package-name
 
-Updates all package names in `package.json` from `@nextui-org/*` to `@heroui/*`.
+Updates all package names in `package.json` from `@nextui-org/*` to `@prismui/*`.
 
 ```bash
-heroui-codemod package-json-package-name
+prismui-codemod package-json-package-name
 ```
 
 Example:
 
-1. `@nextui-org/button: x.xx.xxx` to `@heroui/button: x.xx.xxx`
+1. `@nextui-org/button: x.xx.xxx` to `@prismui/button: x.xx.xxx`
 
-### heroui-provider
+### prismui-provider
 
 Migrate `NextUIProvider` to `HeroProvider`.
 
 ```bash
-heroui-codemod heroui-provider
+prismui-codemod prismui-provider
 ```
 
 Example:
 
-1. `import { NextUIProvider } from "@nextui-org/react"` to `import { HeroProvider } from "@heroui/react"`
+1. `import { NextUIProvider } from "@nextui-org/react"` to `import { HeroProvider } from "@prismui/react"`
 
 2. `<NextUIProvider>...</NextUIProvider>` to `<HeroProvider>...</HeroProvider>`
 
-### tailwindcss-heroui
+### tailwindcss-prismui
 
-Migrate all the `tailwind.config.(j|t)s` file to use the `@heroui` package.
+Migrate all the `tailwind.config.(j|t)s` file to use the `@prismui` package.
 
 ```bash
-heroui-codemod tailwindcss-heroui
+prismui-codemod tailwindcss-prismui
 ```
 
 Example:
 
-1. `const {nextui} = require('@nextui-org/theme')` to `const {heroui} = require('@heroui/theme')`
+1. `const {nextui} = require('@nextui-org/theme')` to `const {prismui} = require('@prismui/theme')`
 
-2. `plugins: [nextui({...})]` to `plugins: [heroui({...})]`
+2. `plugins: [nextui({...})]` to `plugins: [prismui({...})]`
 
-3. `content: ['./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}']` to `content: ['./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}']`
+3. `content: ['./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}']` to `content: ['./node_modules/@prismui/theme/dist/**/*.{js,ts,jsx,tsx}']`
 
-4. `var(--nextui-primary-500)` to `var(--heroui-primary-500)`
+4. `var(--nextui-primary-500)` to `var(--prismui-primary-500)`
 
 ### css-variables
 
-Migrate all the css variables in the file starting with `--nextui-` to `--heroui-`.
+Migrate all the css variables in the file starting with `--nextui-` to `--prismui-`.
 
 ```bash
-heroui-codemod css-variables
+prismui-codemod css-variables
 ```
 
 Example:
 
-1. `className="text-[var(--nextui-primary-500)]"` to `className="text-[var(--heroui-primary-500)]"`
+1. `className="text-[var(--nextui-primary-500)]"` to `className="text-[var(--prismui-primary-500)]"`
 
 ### npmrc (Pnpm only)
 
-Migrate the `.npmrc` file to use the `@heroui` package.
+Migrate the `.npmrc` file to use the `@prismui` package.
 
 ```bash
-heroui-codemod npmrc
+prismui-codemod npmrc
 ```
 
 Example:
 
-1. `public-hoist-pattern[]=*@nextui-org/theme*` to `public-hoist-pattern[]=*@heroui/theme*`
+1. `public-hoist-pattern[]=*@nextui-org/theme*` to `public-hoist-pattern[]=*@prismui/theme*`
 
 ## Migrate Command
 
-Migrate your entire codebase from NextUI to heroui. You can choose which codemods to run during the migration process.
+Migrate your entire codebase from NextUI to prismui. You can choose which codemods to run during the migration process.
 
 ```bash
-heroui-codemod migrate [projectPath] [--format]
+prismui-codemod migrate [projectPath] [--format]
 ```
 
 Example:
 
 ```bash
-heroui-codemod migrate ./my-nextui-app
+prismui-codemod migrate ./my-nextui-app
 ```
 
 Output:
 
 ```bash
-heroui Codemod v0.0.1
+prismui Codemod v0.0.1
 
-┌   Starting to migrate nextui to heroui
+┌   Starting to migrate nextui to prismui
 │
 ◇  1. Migrating "package.json"
 │
@@ -160,12 +160,12 @@ heroui Codemod v0.0.1
 │
 ◇  Migrated package.json
 │
-◇  2. Migrating import "nextui" to "heroui"
+◇  2. Migrating import "nextui" to "prismui"
 │
-◇  Do you want to migrate import nextui to heroui?
+◇  Do you want to migrate import nextui to prismui?
 │  Yes
 │
-◇  Migrated import nextui to heroui
+◇  Migrated import nextui to prismui
 │
 ◇  3. Migrating "NextUIProvider" to "PrismUIProvider"
 │

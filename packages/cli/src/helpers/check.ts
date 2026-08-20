@@ -19,7 +19,7 @@ interface CheckPeerDependenciesConfig {
 
 /**
  * Check if the required content is installed
- * @example return result and missing required [false, '@heroui/react', 'framer-motion']
+ * @example return result and missing required [false, '@prismui/react', 'framer-motion']
  */
 export async function checkRequiredContentInstalled<
   T extends CheckPeerDependenciesConfig = CheckPeerDependenciesConfig

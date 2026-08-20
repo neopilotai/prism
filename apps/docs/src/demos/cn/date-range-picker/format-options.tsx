@@ -1,6 +1,6 @@
 "use client";
 
-import type {TimeValue} from "@heroui/react";
+import type {TimeValue} from "@khulnasoft/react";
 import type {DateValue} from "@internationalized/date";
 
 import {
@@ -14,7 +14,7 @@ import {
   Switch,
   TimeField,
   useLocale,
-} from "@heroui/react";
+} from "@prismuisoft/react";
 import {
   DateFormatter,
   getLocalTimeZone,

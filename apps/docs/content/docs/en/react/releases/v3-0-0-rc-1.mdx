@@ -12,8 +12,8 @@ github:
 Seven new components: [Drawer](/docs/components/drawer), [ToggleButton](/docs/components/toggle-button), [ToggleButtonGroup](/docs/components/toggle-button-group), [Meter](/docs/components/meter), [ProgressBar](/docs/components/progress-bar), [ProgressCircle](/docs/components/progress-circle), and [Toolbar](/docs/components/toolbar). Table and ListBox gain virtualization, ButtonGroup gets a `Separator` sub-component + vertical orientation, and React Aria Components is bumped to v1.16.0.
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/rc-1-light@2x.jpg"
-  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/rc-1-dark@2x.jpg"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/rc-1-light@2x.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/rc-1-dark@2x.jpg"
   alt="PrismUI v3 RC 1"
   href="/docs/changelog/v3-0-0-rc-1"
 />
@@ -203,7 +203,7 @@ Focus rings on grouped buttons now use `ring-inset` so they stay within button b
 
 ### Granular Component Imports
 
-`@khulnasoft/react` now supports per-component subpath entrypoints for more explicit imports ([#6301](https://github.com/khulnasoft/heroui/pull/6301)):
+`@khulnasoft/react` now supports per-component subpath entrypoints for more explicit imports ([#6301](https://github.com/khulnasoft/prismui/pull/6301)):
 
 ```tsx
 // Before — root entrypoint
@@ -229,17 +229,17 @@ Upgraded `react-aria-components` from v1.15.1 to v1.16.0 and related packages:
 
 ## Bug Fixes
 
-- **InputGroup**: Focus styles now trigger only when the actual input/textarea is focused (`:has([data-slot]:focus)`) instead of any focusable child via `:focus-within` ([#6274](https://github.com/khulnasoft/heroui/pull/6274))
-- **Avatar**: Fallback element inherits `border-radius` from the parent instead of hardcoding `rounded-full`, so `className` overrides apply correctly ([#6300](https://github.com/khulnasoft/heroui/pull/6300))
-- **Modal & AlertDialog**: Backdrop click events no longer propagate through portals to parent elements ([#6297](https://github.com/khulnasoft/heroui/pull/6297))
-- **Table**: Fixed header rounding and background color bleeding in Firefox ([#6298](https://github.com/khulnasoft/heroui/pull/6298))
+- **InputGroup**: Focus styles now trigger only when the actual input/textarea is focused (`:has([data-slot]:focus)`) instead of any focusable child via `:focus-within` ([#6274](https://github.com/khulnasoft/prismui/pull/6274))
+- **Avatar**: Fallback element inherits `border-radius` from the parent instead of hardcoding `rounded-full`, so `className` overrides apply correctly ([#6300](https://github.com/khulnasoft/prismui/pull/6300))
+- **Modal & AlertDialog**: Backdrop click events no longer propagate through portals to parent elements ([#6297](https://github.com/khulnasoft/prismui/pull/6297))
+- **Table**: Fixed header rounding and background color bleeding in Firefox ([#6298](https://github.com/khulnasoft/prismui/pull/6298))
 
 ## Links
 
 - [Component Docs](/docs/react/components)
-- [Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3)
-- [GitHub Repository](https://github.com/khulnasoft/heroui)
-- [GitHub PR #6285](https://github.com/khulnasoft/heroui/pull/6285)
+- [Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3)
+- [GitHub Repository](https://github.com/khulnasoft/prismui)
+- [GitHub PR #6285](https://github.com/khulnasoft/prismui/pull/6285)
 
 ## Contributors
 

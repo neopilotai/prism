@@ -48,17 +48,17 @@ Update to the latest version:
 
 ### Chinese React Docs
 
-The documentation site now supports localized React docs, migration guides, release notes, and demos in Chinese ([#6533](https://github.com/khulnasoft/heroui/pull/6533)). The docs app was restructured around locale-aware content paths and localized demo registries, so React component pages, getting-started guides, and migration references can ship in both English and Chinese.
+The documentation site now supports localized React docs, migration guides, release notes, and demos in Chinese ([#6533](https://github.com/khulnasoft/prismui/pull/6533)). The docs app was restructured around locale-aware content paths and localized demo registries, so React component pages, getting-started guides, and migration references can ship in both English and Chinese.
 
 <DocsImage
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/oss-releases/cn-docs-showcase.png"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/oss-releases/cn-docs-showcase.png"
   alt="Chinese React documentation pages in PrismUI"
   wrapperClassName="aspect-[1922/1323]"
 />
 
 ### Accessible Soft Foreground Tokens
 
-Soft foreground colors now use dedicated theme tokens instead of raw semantic colors, improving contrast for soft badges, chips, alerts, toasts, avatars, and calendar range states ([#6548](https://github.com/khulnasoft/heroui/pull/6548)).
+Soft foreground colors now use dedicated theme tokens instead of raw semantic colors, improving contrast for soft badges, chips, alerts, toasts, avatars, and calendar range states ([#6548](https://github.com/khulnasoft/prismui/pull/6548)).
 
 New tokens include:
 
@@ -73,7 +73,7 @@ The default palette now uses soft foreground colors with accessibility-compliant
 
 ### Shared Scrollbar System
 
-Scroll containers now use a shared, standards-based scrollbar system with theme variables and per-subtree control through `data-scrollbar` ([#6545](https://github.com/khulnasoft/heroui/pull/6545)). Instead of maintaining separate scrollbar CSS in each component, scroll slots now read the same `--scrollbar-*` variables and use the shared scrollbar utilities, so scroll areas look more consistent across light mode, dark mode, overlays, tables, and custom overflow regions.
+Scroll containers now use a shared, standards-based scrollbar system with theme variables and per-subtree control through `data-scrollbar` ([#6545](https://github.com/khulnasoft/prismui/pull/6545)). Instead of maintaining separate scrollbar CSS in each component, scroll slots now read the same `--scrollbar-*` variables and use the shared scrollbar utilities, so scroll areas look more consistent across light mode, dark mode, overlays, tables, and custom overflow regions.
 
 Supported modes:
 
@@ -135,17 +135,17 @@ To return to normal browser scrollbars, set `data-scrollbar="default"` on the ro
 
 ## Component and Runtime Fixes
 
-- **Fieldset**: `disabled` now cascades through descendant field labels and explicitly disables React Aria `RadioGroup` and `Slider`, matching native fieldset behavior more closely ([#6547](https://github.com/khulnasoft/heroui/pull/6547)).
-- **Toast**: non-frontmost toasts are removed from keyboard tab order, and measured toast heights are cleaned up when toasts unmount so long-running sessions do not accumulate stale height entries ([#6510](https://github.com/khulnasoft/heroui/pull/6510), [#6512](https://github.com/khulnasoft/heroui/pull/6512)).
-- **`useTheme`**: the hook no longer reads browser-only APIs during SSR, derives `resolvedTheme` without circular state updates, and uses `useSyncExternalStore` to subscribe to system color-scheme changes ([#6561](https://github.com/khulnasoft/heroui/pull/6561)).
-- **Link**: the default underline is now hidden at rest, appears on hover with a 50% decoration color, and becomes full opacity on active or pressed states. The underline decoration color transition was removed for a crisper interaction ([#6570](https://github.com/khulnasoft/heroui/pull/6570), [#6571](https://github.com/khulnasoft/heroui/pull/6571)).
+- **Fieldset**: `disabled` now cascades through descendant field labels and explicitly disables React Aria `RadioGroup` and `Slider`, matching native fieldset behavior more closely ([#6547](https://github.com/khulnasoft/prismui/pull/6547)).
+- **Toast**: non-frontmost toasts are removed from keyboard tab order, and measured toast heights are cleaned up when toasts unmount so long-running sessions do not accumulate stale height entries ([#6510](https://github.com/khulnasoft/prismui/pull/6510), [#6512](https://github.com/khulnasoft/prismui/pull/6512)).
+- **`useTheme`**: the hook no longer reads browser-only APIs during SSR, derives `resolvedTheme` without circular state updates, and uses `useSyncExternalStore` to subscribe to system color-scheme changes ([#6561](https://github.com/khulnasoft/prismui/pull/6561)).
+- **Link**: the default underline is now hidden at rest, appears on hover with a 50% decoration color, and becomes full opacity on active or pressed states. The underline decoration color transition was removed for a crisper interaction ([#6570](https://github.com/khulnasoft/prismui/pull/6570), [#6571](https://github.com/khulnasoft/prismui/pull/6571)).
 
 ## Layout, Overlay, and RTL Fixes
 
-- **Overlay positioning**: entering overlays now limit transition properties to `opacity` and `transform`, preventing React Aria placement values from animating and producing incorrect popover placement during open animations ([#6549](https://github.com/khulnasoft/heroui/pull/6549)).
-- **Dialog and Modal focus**: Modal and AlertDialog content now use clipping that prevents focus from programmatically scrolling the dialog, while body focus rings are no longer cut off by container overflow ([#6448](https://github.com/khulnasoft/heroui/pull/6448), [#6557](https://github.com/khulnasoft/heroui/pull/6557)).
-- **RTL table corners**: Table rounded corners now use logical border-radius properties so outer corners remain correct in right-to-left layouts ([#6568](https://github.com/khulnasoft/heroui/pull/6568)).
-- **RTL picker and menu indicators**: Select, ListBox.Item, Autocomplete, ComboBox, and MenuItem now use logical inline start/end utilities for chevrons, value text, checkmarks, triggers, and submenu indicators ([#6573](https://github.com/khulnasoft/heroui/pull/6573)).
+- **Overlay positioning**: entering overlays now limit transition properties to `opacity` and `transform`, preventing React Aria placement values from animating and producing incorrect popover placement during open animations ([#6549](https://github.com/khulnasoft/prismui/pull/6549)).
+- **Dialog and Modal focus**: Modal and AlertDialog content now use clipping that prevents focus from programmatically scrolling the dialog, while body focus rings are no longer cut off by container overflow ([#6448](https://github.com/khulnasoft/prismui/pull/6448), [#6557](https://github.com/khulnasoft/prismui/pull/6557)).
+- **RTL table corners**: Table rounded corners now use logical border-radius properties so outer corners remain correct in right-to-left layouts ([#6568](https://github.com/khulnasoft/prismui/pull/6568)).
+- **RTL picker and menu indicators**: Select, ListBox.Item, Autocomplete, ComboBox, and MenuItem now use logical inline start/end utilities for chevrons, value text, checkmarks, triggers, and submenu indicators ([#6573](https://github.com/khulnasoft/prismui/pull/6573)).
 
 ## Docs and Dependencies
 
@@ -158,9 +158,9 @@ To return to normal browser scrollbars, set `data-scrollbar="default"` on the ro
 
 - [Component Docs](/docs/react/components)
 - [Theming Docs](/docs/react/getting-started/theming)
-- [Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3)
-- [GitHub Repository](https://github.com/khulnasoft/heroui)
-- [GitHub PR #6576](https://github.com/khulnasoft/heroui/pull/6576)
+- [Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3)
+- [GitHub Repository](https://github.com/khulnasoft/prismui)
+- [GitHub PR #6576](https://github.com/khulnasoft/prismui/pull/6576)
 
 ## Contributors
 

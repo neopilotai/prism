@@ -5,7 +5,7 @@ Text component for providing accessible descriptions and helper text for form fi
 ## Import
 
 ```tsx
-import { Description } from 'heroui-native';
+import { Description } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -82,7 +82,7 @@ When `hideOnInvalid` is `true`, the description will be hidden when the field is
 ## Example
 
 ```tsx
-import { Description, TextField } from 'heroui-native';
+import { Description, TextField } from 'prismui-native';
 import { View } from 'react-native';
 
 export default function DescriptionExample() {
@@ -111,7 +111,7 @@ export default function DescriptionExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/description.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/description.tsx>).
 
 ## API Reference
 

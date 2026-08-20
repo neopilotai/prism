@@ -1,4 +1,4 @@
-import type {DocSelection} from './heroui-agents-md';
+import type {DocSelection} from './prismui-agents-md';
 
 import {execSync} from 'node:child_process';
 import fs from 'node:fs';
@@ -15,7 +15,7 @@ const MIGRATION_WORKFLOWS_DIR = '(workflows)';
 const MIGRATION_FOR_AGENTS_DIR = '(migration-for-agents)';
 
 /**
- * Locale-prefixed root for documentation content in the heroui repo.
+ * Locale-prefixed root for documentation content in the prismui repo.
  * Docs were moved under `en/` (with a sibling `cn/`) for i18n on the v3 branch.
  * If this path is changed upstream, update both the sparse-checkout patterns
  * and the source-dir paths below.
@@ -85,12 +85,12 @@ export async function cloneDocsFolder(
   selection: DocSelection,
   useSsh: boolean
 ): Promise<void> {
-  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'heroui-agents-md-'));
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-'));
 
   // Use SSH URL if flag is set, otherwise use HTTPS
   const repoUrl = useSsh
-    ? 'git@github.com:khulnasoft/heroui.git'
-    : 'https://github.com/khulnasoft/heroui.git';
+    ? 'git@github.com:khulnasoft/prismui.git'
+    : 'https://github.com/khulnasoft/prismui.git';
 
   try {
     try {

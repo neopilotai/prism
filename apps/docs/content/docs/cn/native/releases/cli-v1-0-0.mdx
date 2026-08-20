@@ -9,34 +9,34 @@ description:
 </div>
 
 <VideoPlayer
-  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/cli-demo.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/cli-demo.mp4"
   height={430}
   muted
 />
 
-🎉 全新的 CLI —— [`create-heroui-native-app`](https://www.npmjs.com/package/create-heroui-native-app) —— 现已成为启动 PrismUI Native 项目最快捷的方式。一条命令即可生成一个完整的 Expo Router 应用，内置 PrismUI Native、Uniwind、Tailwind CSS、所有必需的 peer 依赖以及 Provider 包装，无需再手动配置 `global.css`、`metro.config.js` 或 `app/_layout.tsx`。
+🎉 全新的 CLI —— [`create-prismui-native-app`](https://www.npmjs.com/package/create-prismui-native-app) —— 现已成为启动 PrismUI Native 项目最快捷的方式。一条命令即可生成一个完整的 Expo Router 应用，内置 PrismUI Native、Uniwind、Tailwind CSS、所有必需的 peer 依赖以及 Provider 包装，无需再手动配置 `global.css`、`metro.config.js` 或 `app/_layout.tsx`。
 
 ## 快速开始
 
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npx create-heroui-native-app@latest my-app
+  npx create-prismui-native-app@latest my-app
   ```
 </Tab>
 <Tab value="pnpm">
   ```bash
-  pnpm create heroui-native-app@latest my-app
+  pnpm create prismui-native-app@latest my-app
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn create heroui-native-app my-app
+  yarn create prismui-native-app my-app
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun create heroui-native-app@latest my-app
+  bun create prismui-native-app@latest my-app
   ```
 </Tab>
 </Tabs>
@@ -60,8 +60,8 @@ CLI 自带两套模板。可在交互式选择器中选择，或通过命令行�
 | `--expo-tabs` | `expo-tabs` | 含两个 Tabs（`Button` + `Card` 演示）的 Expo Router 布局。 |
 
 ```bash
-npx create-heroui-native-app@latest my-app --expo
-npx create-heroui-native-app@latest my-app --expo-tabs --use-pnpm
+npx create-prismui-native-app@latest my-app --expo
+npx create-prismui-native-app@latest my-app --expo-tabs --use-pnpm
 ```
 
 ## 你将得到什么
@@ -81,7 +81,7 @@ npx create-heroui-native-app@latest my-app --expo-tabs --use-pnpm
 ## CLI 参考
 
 ```text
-create-heroui-native-app [project-name] [options]
+create-prismui-native-app [project-name] [options]
 ```
 
 | 选项 | 说明 |
@@ -99,19 +99,19 @@ create-heroui-native-app [project-name] [options]
 
 ```bash
 # 完全交互式 —— 同时提示项目名与模板
-npx create-heroui-native-app@latest
+npx create-prismui-native-app@latest
 
 # 已指定项目名，仍展示模板选择器
-npx create-heroui-native-app@latest my-app
+npx create-prismui-native-app@latest my-app
 
 # 完全非交互式
-npx create-heroui-native-app@latest my-app --expo
+npx create-prismui-native-app@latest my-app --expo
 
 # 使用 Tabs 模板，并通过 pnpm 安装依赖
-npx create-heroui-native-app@latest my-app --expo-tabs --use-pnpm
+npx create-prismui-native-app@latest my-app --expo-tabs --use-pnpm
 
 # 仅生成项目，不安装依赖、不初始化 git
-npx create-heroui-native-app@latest my-app --expo --skip-install --skip-git
+npx create-prismui-native-app@latest my-app --expo --skip-install --skip-git
 ```
 
 ## 系统要求

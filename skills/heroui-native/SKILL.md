@@ -1,8 +1,8 @@
 ---
-name: heroui-native
-description: "PrismUI Native component library for React Native (Tailwind v4 via Uniwind). Use when building mobile UIs with PrismUI Native — creating Buttons, Cards, TextFields, Dialogs; installing heroui-native; configuring dark/light themes; or fetching component docs. Keywords: PrismUI Native, heroui-native, React Native UI, Uniwind, mobile components."
+name: prismui-native
+description: "PrismUI Native component library for React Native (Tailwind v4 via Uniwind). Use when building mobile UIs with PrismUI Native — creating Buttons, Cards, TextFields, Dialogs; installing prismui-native; configuring dark/light themes; or fetching component docs. Keywords: PrismUI Native, prismui-native, React Native UI, Uniwind, mobile components."
 metadata:
-  author: heroui
+  author: prismui
   version: "2.0.1"
 ---
 
@@ -15,7 +15,7 @@ PrismUI Native is a component library built on **Uniwind (Tailwind CSS for React
 ## Installation
 
 ```bash
-curl -fsSL https://prism.khulnasoft.com/install | bash -s heroui-native
+curl -fsSL https://prism.khulnasoft.com/install | bash -s prismui-native
 ```
 
 ---
@@ -28,12 +28,12 @@ curl -fsSL https://prism.khulnasoft.com/install | bash -s heroui-native
 | ------------ | -------------------- | ----------------------------------- |
 | **Styling**  | Tailwind CSS v4      | Uniwind (Tailwind for React Native) |
 | **Colors**   | oklch format         | HSL format                          |
-| **Package**  | `@khulnasoft/react` 	  | `heroui-native`                     |
+| **Package**  | `@khulnasoft/react` 	  | `prismui-native`                     |
 | **Platform** | Web browsers         | iOS & Android                       |
 
 ```tsx
 // CORRECT — Native pattern
-import { Button } from "heroui-native";
+import { Button } from "prismui-native";
 
 <Button variant="primary" onPress={() => console.log("Pressed!")}>
 	Click me
@@ -95,7 +95,7 @@ Getting started guides: use a concrete topic URL such as `https://prism.khulnaso
 ### Quick Install
 
 ```bash
-npm i heroui-native react-native-reanimated react-native-gesture-handler react-native-safe-area-context @gorhom/bottom-sheet react-native-svg react-native-worklets tailwind-merge tailwind-variants
+npm i prismui-native react-native-reanimated react-native-gesture-handler react-native-safe-area-context @gorhom/bottom-sheet react-native-svg react-native-worklets tailwind-merge tailwind-variants
 ```
 
 ### Framework Setup (Expo - Recommended)
@@ -105,7 +105,7 @@ npm i heroui-native react-native-reanimated react-native-gesture-handler react-n
 ```bash
 npx create-expo-app MyApp
 cd MyApp
-npm i heroui-native uniwind tailwindcss
+npm i prismui-native uniwind tailwindcss
 npm i react-native-reanimated react-native-gesture-handler react-native-safe-area-context @gorhom/bottom-sheet react-native-svg react-native-worklets tailwind-merge tailwind-variants
 ```
 
@@ -114,16 +114,16 @@ npm i react-native-reanimated react-native-gesture-handler react-native-safe-are
 ```css
 @import "tailwindcss";
 @import "uniwind";
-@import "heroui-native/styles";
+@import "prismui-native/styles";
 
-@source "./node_modules/heroui-native/lib";
+@source "./node_modules/prismui-native/lib";
 ```
 
 3. **Wrap app with providers:**
 
 ```tsx
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { PrismUINativeProvider } from "heroui-native";
+import { PrismUINativeProvider } from "prismui-native";
 import "./global.css";
 
 export default function Layout() {
@@ -212,7 +212,7 @@ node scripts/get_theme.mjs
 **Access theme colors programmatically:**
 
 ```tsx
-import { useThemeColor } from "heroui-native";
+import { useThemeColor } from "prismui-native";
 
 const accentColor = useThemeColor("accent");
 ```

@@ -6,9 +6,9 @@ System prompts that teach AI code-generation tools to produce correct, idiomatic
 
 | File | Purpose |
 |------|---------|
-| `heroui-system-prompt.md` | Universal prompt — works with any LLM or AI coding tool (Claude, ChatGPT, Cursor, Copilot, etc.) |
-| `v0-heroui.md` | Tailored for [v0.dev](https://v0.dev) — emphasizes Next.js App Router, RSC patterns, and Tailwind v4 |
-| `bolt-heroui.md` | Tailored for [bolt.new](https://bolt.new) / StackBlitz — includes full Vite setup and runnable single-file examples |
+| `prismui-system-prompt.md` | Universal prompt — works with any LLM or AI coding tool (Claude, ChatGPT, Cursor, Copilot, etc.) |
+| `v0-prismui.md` | Tailored for [v0.dev](https://v0.dev) — emphasizes Next.js App Router, RSC patterns, and Tailwind v4 |
+| `bolt-prismui.md` | Tailored for [bolt.new](https://bolt.new) / StackBlitz — includes full Vite setup and runnable single-file examples |
 
 These prompts also work well with **Lovable**, **Replit Agent**, **Windsurf**, and similar AI-powered code generation platforms.
 
@@ -16,19 +16,19 @@ These prompts also work well with **Lovable**, **Replit Agent**, **Windsurf**, a
 
 ### v0.dev
 
-Paste the contents of `v0-heroui.md` into v0's system instructions or prepend it to your prompt.
+Paste the contents of `v0-prismui.md` into v0's system instructions or prepend it to your prompt.
 
 ### bolt.new / StackBlitz
 
-Paste the contents of `bolt-heroui.md` at the start of your prompt when creating a new project. It includes the full Vite + Tailwind v4 setup so bolt can scaffold the project correctly.
+Paste the contents of `bolt-prismui.md` at the start of your prompt when creating a new project. It includes the full Vite + Tailwind v4 setup so bolt can scaffold the project correctly.
 
 ### Cursor / Claude / ChatGPT / Copilot
 
-Use `heroui-system-prompt.md` as a custom instruction, system prompt, or `.cursorrules` file. It gives the AI a complete reference of PrismUI v3 components and patterns.
+Use `prismui-system-prompt.md` as a custom instruction, system prompt, or `.cursorrules` file. It gives the AI a complete reference of PrismUI v3 components and patterns.
 
 ### Any other tool
 
-The universal `heroui-system-prompt.md` works with any tool that accepts system-level instructions.
+The universal `prismui-system-prompt.md` works with any tool that accepts system-level instructions.
 
 ## Richer integrations
 

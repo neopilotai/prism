@@ -1,9 +1,9 @@
 "use client";
 
-import type {AvatarVariants} from "@heroui/styles";
+import type {AvatarVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {avatarVariants} from "@heroui/styles";
+import {avatarVariants} from "@prismuisoft/styles";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 import React, {createContext} from "react";
 

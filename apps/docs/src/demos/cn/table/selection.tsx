@@ -1,8 +1,8 @@
 "use client";
 
-import type {Selection} from "@heroui/react";
+import type {Selection} from "@khulnasoft/react";
 
-import {Checkbox, Table} from "@heroui/react";
+import {Checkbox, Table} from "@prismuisoft/react";
 import {useState} from "react";
 
 const users = [

@@ -1,10 +1,10 @@
 "use client";
 
-import type {ErrorMessageVariants} from "@heroui/styles";
+import type {ErrorMessageVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {TextProps} from "react-aria-components/Text";
 
-import {errorMessageVariants} from "@heroui/styles";
+import {errorMessageVariants} from "@prismuisoft/styles";
 import {Text} from "react-aria-components/Text";
 
 import {useHasTextSlot} from "../../utils/use-has-text-slot";

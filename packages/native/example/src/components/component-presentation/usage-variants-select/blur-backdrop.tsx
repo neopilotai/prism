@@ -1,4 +1,4 @@
-import { useSelect } from 'heroui-native';
+import { useSelect } from 'prismui-native';
 import { useEffect } from 'react';
 import { Pressable, StyleSheet } from 'react-native';
 import {

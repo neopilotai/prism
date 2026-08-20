@@ -18,22 +18,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i heroui-native@beta
+  npm i prismui-native@beta
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add heroui-native@beta
+  pnpm add prismui-native@beta
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add heroui-native@beta
+  yarn add prismui-native@beta
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add heroui-native@beta
+  bun add prismui-native@beta
   ```
 </Tab>
 </Tabs>
@@ -61,7 +61,7 @@ The [Bottom Sheet](/docs/native/components/bottom-sheet) component has been enha
 
 The Bottom Sheet component supports multiple ways to close: swiping down, pressing the overlay, clicking the close button, or programmatically calling close. Previously, these mechanisms could sometimes conflict or produce inconsistent behavior. This update ensures all close mechanisms work harmoniously together, providing a smoother and more predictable user experience.
 
-**Related PR:** [#201](https://github.com/khulnasoft/heroui-native/pull/201)
+**Related PR:** [#201](https://github.com/khulnasoft/prismui-native/pull/201)
 
 ### Dialog Swipe-to-Dismiss Gesture Handling Fix
 
@@ -76,7 +76,7 @@ The [Dialog](/docs/native/components/dialog) component has been fixed to properl
 
 The Dialog component supports swipe-to-dismiss functionality, allowing users to dismiss dialogs by swiping down. This fix resolves issues where gesture handling could become unresponsive or produce unexpected behavior during swipe interactions.
 
-**Related PR:** [#193](https://github.com/khulnasoft/heroui-native/pull/193)
+**Related PR:** [#193](https://github.com/khulnasoft/prismui-native/pull/193)
 
 ### TextField Styling and Functionality Fixes
 
@@ -92,7 +92,7 @@ The [TextField](/docs/native/components/text-field) component has been fixed to 
 
 These fixes ensure the TextField component displays correctly across all states (focused, blurred, invalid) and provides consistent visual feedback to users.
 
-**Related PR:** [#202](https://github.com/khulnasoft/heroui-native/pull/202)
+**Related PR:** [#202](https://github.com/khulnasoft/prismui-native/pull/202)
 
 ## API Enhancements
 
@@ -128,30 +128,30 @@ This enhancement allows developers to manually mount portal hosts in custom layo
 - Custom overlay rendering scenarios
 - Multi-host portal architectures
 
-**Related PR:** [#185](https://github.com/khulnasoft/heroui-native/pull/185)
+**Related PR:** [#185](https://github.com/khulnasoft/prismui-native/pull/185)
 
 ## Bug Fixes
 
 This release includes fixes for the following issues:
 
-- **[Issue #187](https://github.com/khulnasoft/heroui-native/issues/187)**: Fixed an issue where multiple presses were required to re-open a bottom sheet or dialog after it was dismissed via swipe gesture. The internal state now properly synchronizes with the close animation, allowing immediate reopening regardless of how the component was closed.
+- **[Issue #187](https://github.com/khulnasoft/prismui-native/issues/187)**: Fixed an issue where multiple presses were required to re-open a bottom sheet or dialog after it was dismissed via swipe gesture. The internal state now properly synchronizes with the close animation, allowing immediate reopening regardless of how the component was closed.
 
-- **[Issue #189](https://github.com/khulnasoft/heroui-native/issues/189)**: Fixed app freezing when swiping to dismiss dialogs containing text inputs.
+- **[Issue #189](https://github.com/khulnasoft/prismui-native/issues/189)**: Fixed app freezing when swiping to dismiss dialogs containing text inputs.
 
-- **[Issue #196](https://github.com/khulnasoft/heroui-native/issues/196)**: Fixed TextField multiline input behavior to match React Native's TextInput multiline functionality.
+- **[Issue #196](https://github.com/khulnasoft/prismui-native/issues/196)**: Fixed TextField multiline input behavior to match React Native's TextInput multiline functionality.
 
-- **[Issue #199](https://github.com/khulnasoft/heroui-native/issues/199)**: Fixed placeholder text positioning within TextField Input component.
+- **[Issue #199](https://github.com/khulnasoft/prismui-native/issues/199)**: Fixed placeholder text positioning within TextField Input component.
 
 **Related PRs:**
 
-- [#201](https://github.com/khulnasoft/heroui-native/pull/201)
-- [#202](https://github.com/khulnasoft/heroui-native/pull/202)
-- [#193](https://github.com/khulnasoft/heroui-native/pull/193)
+- [#201](https://github.com/khulnasoft/prismui-native/pull/201)
+- [#202](https://github.com/khulnasoft/prismui-native/pull/202)
+- [#193](https://github.com/khulnasoft/prismui-native/pull/193)
 
 ## Links
 
 - [Component Documentation](../components)
-- [GitHub Repository](https://github.com/khulnasoft/heroui-native)
+- [GitHub Repository](https://github.com/khulnasoft/prismui-native)
 
 ## Contributors
 

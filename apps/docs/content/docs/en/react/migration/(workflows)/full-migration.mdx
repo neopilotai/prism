@@ -159,21 +159,21 @@ Ensure you're using Tailwind CSS v4:
 
 ```js
 // tailwind.config.js
-const {heroui} = require("@khulnasoft/react");
+const {prismui} = require("@khulnasoft/react");
 
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@khulnasoft/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-  plugins: [heroui()],
+  plugins: [prismui()],
   // ... other config
 };
 ```
 
 **v3 Configuration:**
 
-Remove the `heroui()` plugin from your Tailwind config. If you only used Tailwind for PrismUI and have no other customizations, you can remove `tailwind.config.js` entirely. Otherwise, keep the file but remove the PrismUI plugin configuration.
+Remove the `prismui()` plugin from your Tailwind config. If you only used Tailwind for PrismUI and have no other customizations, you can remove `tailwind.config.js` entirely. Otherwise, keep the file but remove the PrismUI plugin configuration.
 
 #### Update CSS Imports
 
@@ -208,7 +208,7 @@ rm hero.ts
 
 </section>
 
-<section id="step-3-remove-herouiprovider">
+<section id="step-3-remove-prismuiprovider">
 
 ### Step 3: Remove PrismUIProvider
 
@@ -345,11 +345,11 @@ If you had custom theme overrides in v2, you'll need to update them for v3's CSS
 
 ```js
 // tailwind.config.js
-const {heroui} = require("@khulnasoft/react");
+const {prismui} = require("@khulnasoft/react");
 
 module.exports = {
   plugins: [
-    heroui({
+    prismui({
       themes: {
         light: {
           colors: {
@@ -458,7 +458,7 @@ Use this checklist to track your full migration progress:
 - Update Tailwind CSS to v4
 
 ### Configuration
-- Remove `heroui()` plugin from Tailwind config
+- Remove `prismui()` plugin from Tailwind config
 - Update CSS imports
 - Remove `hero.ts` file (if exists)
 

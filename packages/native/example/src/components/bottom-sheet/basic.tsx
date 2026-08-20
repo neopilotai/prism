@@ -1,6 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useLingui } from '@lingui/react/macro';
-import { BottomSheet, Button } from 'heroui-native';
+import { BottomSheet, Button } from 'prismui-native';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';

@@ -2,7 +2,7 @@
 
 Hello!, I am very excited that you are interested in contributing with PrismUI. However, before submitting your contribution, be sure to take a moment and read the following guidelines.
 
-- [Code of Conduct](https://github.com/khulnasoft/heroui/blob/canary/CODE_OF_CONDUCT.md)
+- [Code of Conduct](https://github.com/khulnasoft/prismui/blob/canary/CODE_OF_CONDUCT.md)
 - [Extraction request guidelines](#pull-request-guidelines)
 - [Development Setup](#development-setup)
 - [Tests](#tests)
@@ -71,7 +71,7 @@ https://www.conventionalcommits.org/ or check out the
 
 ### Steps to PR
 
-1. Fork of the heroui repository and clone your fork
+1. Fork of the prismui repository and clone your fork
 
 2. Create a new branch out of the `canary` branch. We follow the convention
    `[type/scope]`. For example `fix/dropdown-hook` or `docs/menu-typo`. `type`
@@ -79,7 +79,7 @@ https://www.conventionalcommits.org/ or check out the
    commit type. `scope` is just a short id that describes the scope of work.
 
 3. Make and commit your changes following the
-   [commit convention](https://github.com/khulnasoft/heroui/blob/main/CONTRIBUTING.md#commit-convention).
+   [commit convention](https://github.com/khulnasoft/prismui/blob/main/CONTRIBUTING.md#commit-convention).
    As you go, you can run `pnpm build --filter=<module>` and
    `pnpm --filter @khulnasoft/react exec vitest run <name>` e.g. `pnpm build --filter=@khulnasoft/react && pnpm --filter @khulnasoft/react exec vitest run avatar` to make sure everything works as expected.
 

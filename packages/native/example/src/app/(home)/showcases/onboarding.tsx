@@ -1,6 +1,6 @@
 import Feather from '@expo/vector-icons/Feather';
 import { useRouter } from 'expo-router';
-import { Button, cn, Separator } from 'heroui-native';
+import { Button, cn, Separator } from 'prismui-native';
 import { View } from 'react-native';
 import Animated, { FadeIn, FadeInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -18,7 +18,7 @@ const cards: CardProps[] = [
   {
     title: 'My First Show',
     image:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/showcase-onboarding-sneakers-1.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/showcase-onboarding-sneakers-1.png',
     liveCount: 23,
     category: 'Sneakers',
     brands: 'AetherStep',
@@ -26,7 +26,7 @@ const cards: CardProps[] = [
   {
     title: 'Fashion Week Special',
     image:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/showcase-onboarding-fashion.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/showcase-onboarding-fashion.png',
     liveCount: 45,
     category: 'Fashion',
     brands: 'Maison Orrix',
@@ -34,7 +34,7 @@ const cards: CardProps[] = [
   {
     title: 'Tech Gadgets',
     image:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/showcase-onboarding-headphones.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/showcase-onboarding-headphones.png',
     liveCount: 12,
     category: 'Electronics',
     brands: 'QuantaLabs',
@@ -42,7 +42,7 @@ const cards: CardProps[] = [
   {
     title: 'Air Collection',
     image:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/showcase-onboarding-sneakers-2.png',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/showcase-onboarding-sneakers-2.png',
     liveCount: 8,
     category: 'Collectibles',
     brands: 'CurioVault',

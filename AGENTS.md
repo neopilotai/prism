@@ -302,7 +302,7 @@ calendar-year-picker
 
 3. **Native addons allowlist** — `onlyBuiltDependencies` in root `pnpm-workspace.yaml` allows native compilation for `esbuild`, `@swc/core`, `@parcel/watcher`, etc. If this list is missing, you'll see "Ignored build scripts" warnings.
 
-4. **Behavioral tests** — see [Behavioral tests](#behavioral-tests-herouireact) above. Harness lives in `@khulnasoft/testing`; suites in `packages/react/tests/`.
+4. **Behavioral tests** — see [Behavioral tests](#behavioral-tests-prismuireact) above. Harness lives in `@khulnasoft/testing`; suites in `packages/react/tests/`.
 
 5. **Commit hooks** — Husky runs `lint-staged` on pre-commit and `commitlint` on commit-msg. Non-conforming commits are rejected.
 

@@ -5,7 +5,7 @@ A Surface-based container that groups related list items with consistent layout 
 ## Import
 
 ```tsx
-import { ListGroup } from 'heroui-native';
+import { ListGroup } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -184,7 +184,7 @@ Customise the default chevron icon size and color using `iconProps`.
 Wrap items with `PressableFeedback` to add scale and ripple press feedback animations. When using this pattern, pass `onPress` on `PressableFeedback` instead of `ListGroup.Item` and disable the item with `disabled` prop.
 
 ```tsx
-import { ListGroup, PressableFeedback, Separator } from 'heroui-native';
+import { ListGroup, PressableFeedback, Separator } from 'prismui-native';
 
 <ListGroup>
   <PressableFeedback animation={false} onPress={() => {}}>
@@ -223,7 +223,7 @@ import { ListGroup, PressableFeedback, Separator } from 'heroui-native';
 
 ```tsx
 import { Ionicons } from '@expo/vector-icons';
-import { ListGroup, Separator, useThemeColor } from 'heroui-native';
+import { ListGroup, Separator, useThemeColor } from 'prismui-native';
 import { View, Text } from 'react-native';
 import { withUniwind } from 'uniwind';
 
@@ -311,7 +311,7 @@ export default function ListGroupExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/list-group.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/list-group.tsx>).
 
 ## API Reference
 

@@ -21,7 +21,7 @@ PrismUI Native 的动画基于 [react-native-reanimated](https://docs.swmansion.
 调整缩放、透明度或颜色等数值：
 
 ```tsx
-import {Switch} from 'heroui-native';
+import {Switch} from 'prismui-native';
 
 <Switch
   animation={{
@@ -41,7 +41,7 @@ import {Switch} from 'heroui-native';
 自定义时长与缓动：
 
 ```tsx
-import {Accordion} from 'heroui-native';
+import {Accordion} from 'prismui-native';
 
 <Accordion>
   <Accordion.Item value="1">
@@ -68,7 +68,7 @@ import {Accordion} from 'heroui-native';
 使用 Reanimated 的布局动画 API：
 
 ```tsx
-import {Accordion} from 'heroui-native';
+import {Accordion} from 'prismui-native';
 import {FadeInRight, FadeInLeft, ZoomIn} from 'react-native-reanimated';
 import {Easing} from 'react-native-reanimated';
 
@@ -91,7 +91,7 @@ import {Easing} from 'react-native-reanimated';
 `state` 可在关闭动画的同时仍保留属性配置，便于微调而不真正播放动画：
 
 ```tsx
-import {Switch} from 'heroui-native';
+import {Switch} from 'prismui-native';
 
 <Switch
   animation={{
@@ -160,7 +160,7 @@ import {Switch} from 'heroui-native';
 在 `PrismUINativeProvider` 上统一关闭应用内全部 PrismUI Native 动画：
 
 ```tsx
-import {PrismUINativeProvider} from 'heroui-native';
+import {PrismUINativeProvider} from 'prismui-native';
 
 <PrismUINativeProvider
   config={{
@@ -187,7 +187,7 @@ import {PrismUINativeProvider} from 'heroui-native';
 许多组件支持将 `children` 设为函数，便于根据 `isSelected` 等状态渲染：
 
 ```tsx
-import {Switch} from 'heroui-native';
+import {Switch} from 'prismui-native';
 
 <Switch
   isSelected={isSelected}

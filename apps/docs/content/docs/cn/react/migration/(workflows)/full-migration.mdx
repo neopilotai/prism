@@ -159,21 +159,21 @@ v3 不再需要 Framer Motion：
 
 ```js
 // tailwind.config.js
-const {heroui} = require("@khulnasoft/react");
+const {prismui} = require("@khulnasoft/react");
 
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@khulnasoft/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-  plugins: [heroui()],
+  plugins: [prismui()],
   // ... other config
 };
 ```
 
 **v3 配置：**
 
-删除`heroui()`来自 Tailwind 配置的插件。如果您仅将 Tailwind 用于 PrismUI 并且没有其他自定义，则可以删除`tailwind.config.js`完全。否则，保留该文件但删除 PrismUI 插件配置。
+删除`prismui()`来自 Tailwind 配置的插件。如果您仅将 Tailwind 用于 PrismUI 并且没有其他自定义，则可以删除`tailwind.config.js`完全。否则，保留该文件但删除 PrismUI 插件配置。
 
 #### 更新 CSS 导入
 
@@ -208,7 +208,7 @@ rm hero.ts
 
 </section>
 
-<section id="step-3-remove-herouiprovider">
+<section id="step-3-remove-prismuiprovider">
 
 ### 第3步：删除PrismUIProvider
 
@@ -345,11 +345,11 @@ type MyButtonProps = ButtonProps & {
 
 ```js
 // tailwind.config.js
-const {heroui} = require("@khulnasoft/react");
+const {prismui} = require("@khulnasoft/react");
 
 module.exports = {
   plugins: [
-    heroui({
+    prismui({
       themes: {
         light: {
           colors: {
@@ -458,7 +458,7 @@ v3 使用 CSS 变量。在 CSS 中覆盖它们：
 - 将 Tailwind CSS 更新至 v4
 
 ### 配置
-- 消除`heroui()`Tailwind 配置中的插件
+- 消除`prismui()`Tailwind 配置中的插件
 - 更新 CSS 导入
 - 消除`hero.ts`文件（如果存在）
 

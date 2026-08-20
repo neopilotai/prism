@@ -8,7 +8,7 @@ type ScrollbarMode = {
 
 const modes: ScrollbarMode[] = [
   {
-    id: "heroui",
+    id: "prismui",
     label: "PrismUI 纤细",
     scrollbar: "thin",
   },

@@ -1,7 +1,7 @@
-import {Avatar} from "@heroui/react";
+import {Avatar} from "@khulnasoft/react";
 import Image from "next/image";
 
-const SRC = "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg";
+const SRC = "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg";
 
 export function CustomImageComponent() {
   return (

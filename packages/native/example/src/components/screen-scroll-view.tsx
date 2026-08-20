@@ -1,4 +1,4 @@
-import { cn } from 'heroui-native';
+import { cn } from 'prismui-native';
 import { type FC, type PropsWithChildren } from 'react';
 import { ScrollView, type ScrollViewProps } from 'react-native';
 import Animated, { type AnimatedProps } from 'react-native-reanimated';

@@ -10,7 +10,7 @@ import {
   Radio,
   RadioGroup,
   useDialog,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useMemo, useState, type FC } from 'react';
 import { Platform, useWindowDimensions, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -107,7 +107,7 @@ export const Assignee: FC = () => {
           <Avatar alt="junior" className="size-[18px] bg-sky-500">
             <Avatar.Image
               source={{
-                uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/junior-avatar.jpg',
+                uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/junior-avatar.jpg',
               }}
             />
             <Avatar.Fallback>
@@ -123,7 +123,7 @@ export const Assignee: FC = () => {
           <Avatar alt="volo" className="size-[18px] bg-purple-500">
             <Avatar.Image
               source={{
-                uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/volo-avatar.png',
+                uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/volo-avatar.png',
               }}
             />
             <Avatar.Fallback>

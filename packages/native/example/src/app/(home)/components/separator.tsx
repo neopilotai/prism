@@ -1,6 +1,6 @@
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
-import { Separator, Surface } from 'heroui-native';
+import { Separator, Surface } from 'prismui-native';
 import { View } from 'react-native';
 import { AppText } from '../../../components/app-text';
 import type { UsageVariant } from '../../../components/component-presentation/types';

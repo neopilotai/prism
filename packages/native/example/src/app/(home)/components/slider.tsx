@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
-import { BottomSheet, Button, Label, Slider } from 'heroui-native';
+import { BottomSheet, Button, Label, Slider } from 'prismui-native';
 import { useState } from 'react';
 import { View } from 'react-native';
 import type { UsageVariant } from '../../../components/component-presentation/types';

@@ -7,7 +7,7 @@ authorHandle: "@jrgarciadev"
 authorUrl: "https://x.com/jrgarciadev"
 authorAvatar: "https://avatars.githubusercontent.com/u/30373425?v=4"
 tags: ["native", "react-native", "design-system", "figma", "ai"]
-image: "/images/blog/design-to-code-with-heroui-native.jpg"
+image: "/images/blog/design-to-code-with-prismui-native.jpg"
 draft: true
 ---
 
@@ -42,7 +42,7 @@ PrismUI Native uses the same product-level ideas as the rest of the PrismUI ecos
 The implementation is native, not web. PrismUI Native uses React Native, Uniwind, `PrismUINativeProvider`, and mobile interaction patterns. But the design language stays familiar.
 
 ```tsx
-import {Button, Card} from "heroui-native";
+import {Button, Card} from "prismui-native";
 
 <Card>
   <Card.Header>
@@ -60,7 +60,7 @@ import {Button, Card} from "heroui-native";
 
 ## Figma Kit V3
 
-The [PrismUI Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3) is the design-side entry point for the ecosystem. It is linked from the Native docs so teams can work from the same visual system while building mobile screens.
+The [PrismUI Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/prismui-figma-kit-v3) is the design-side entry point for the ecosystem. It is linked from the Native docs so teams can work from the same visual system while building mobile screens.
 
 Use it to:
 
@@ -86,11 +86,11 @@ PrismUI Native provides dedicated AI entry points:
 
 That matters because Native code has different rules:
 
-- Import from `heroui-native`.
+- Import from `prismui-native`.
 - Use React Native press handlers such as `onPress`.
 - Configure `PrismUINativeProvider`.
 - Wrap the app with `GestureHandlerRootView`.
-- Use Uniwind and `heroui-native/styles`.
+- Use Uniwind and `prismui-native/styles`.
 - Use Native component anatomy, not web component anatomy.
 
 The MCP server and skills help agents follow those rules.

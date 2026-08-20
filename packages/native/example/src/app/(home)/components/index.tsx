@@ -5,7 +5,7 @@ import {
   PressableFeedback,
   Separator,
   useToast,
-} from 'heroui-native';
+} from 'prismui-native';
 import { Fragment, useEffect } from 'react';
 import { Platform, View } from 'react-native';
 import { ScreenScrollView } from '../../../components/screen-scroll-view';

@@ -1,2 +1,2 @@
-// Re-export cn from @heroui/react for convenience
-export {cn} from "@heroui/react";
+// Re-export cn from @khulnasoft/react for convenience
+export {cn} from "@prismuisoft/react";

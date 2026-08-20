@@ -10,7 +10,7 @@ import {FrameworksTabs} from "@/components/frameworks-tabs";
 import {DocsLayout} from "@/components/fumadocs/layouts/notebook";
 import {ThemeToggle} from "@/components/fumadocs/ui/theme-toggle";
 import {GitHubLinkSmall} from "@/components/github-link";
-import {PrismUILogo} from "@/components/heroui-logo";
+import {PrismUILogo} from "@/components/prismui-logo";
 import {VersionSelector} from "@/components/version-selector";
 import {source} from "@/lib/source";
 

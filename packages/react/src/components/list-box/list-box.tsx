@@ -1,9 +1,9 @@
 "use client";
 
-import type {ListBoxVariants} from "@heroui/styles";
+import type {ListBoxVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {listboxVariants} from "@heroui/styles";
+import {listboxVariants} from "@prismuisoft/styles";
 import React from "react";
 import {ListBox as ListBoxPrimitive} from "react-aria-components/ListBox";
 

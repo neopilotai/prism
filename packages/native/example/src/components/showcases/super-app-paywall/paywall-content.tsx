@@ -13,7 +13,7 @@ import {
   colorKit,
   Tabs,
   useThemeColor,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useState } from 'react';
 import { StyleSheet, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -125,7 +125,7 @@ export function SuperAppPaywallContent() {
       <View className="w-full" style={{ height: screenHeight * 0.4 }}>
         <Image
           source={{
-            uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/images/heroui-native-example/super-app-paywall-hero.png',
+            uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-example/super-app-paywall-hero.png',
           }}
           style={StyleSheet.absoluteFill}
           contentFit="cover"

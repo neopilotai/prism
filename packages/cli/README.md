@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://prism.khulnasoft.com">
-      <img width="20%" src="https://raw.githubusercontent.com/khulnasoft/heroui/v3/apps/docs/public/icons/readme-logo.png" alt="heroui (previously nextui)" />
+      <img width="20%" src="https://raw.githubusercontent.com/khulnasoft/prismui/v3/apps/docs/public/icons/readme-logo.png" alt="prismui (previously nextui)" />
       <h1 align="center">PrismUI CLI</h1>
   </a>
 </p>
@@ -37,7 +37,7 @@ npm install -g prism-cli
 ## Usage
 
 ```bash
-Usage: heroui [command]
+Usage: prismui [command]
 
 Options:
   -v, --version                  Output the current version
@@ -47,10 +47,10 @@ Options:
 
 Commands:
   init [options] [projectName]   Initializes a new project
-  install [options]              Installs @heroui/react and @heroui/styles in your project
-  upgrade [options]              Upgrades @heroui/react and @heroui/styles to the latest versions
-  uninstall [options]            Uninstalls @heroui/react and @heroui/styles from the project
-  list [options]                 Lists installed PrismUI packages (@heroui/react, @heroui/styles)
+  install [options]              Installs @prismui/react and @prismui/styles in your project
+  upgrade [options]              Upgrades @prismui/react and @prismui/styles to the latest versions
+  uninstall [options]            Uninstalls @prismui/react and @prismui/styles from the project
+  list [options]                 Lists installed PrismUI packages (@prismui/react, @prismui/styles)
   env [options]                  Displays debugging information for the local environment
   doctor [options]               Checks for issues in the project
   agents-md [options]            Downloads PrismUI documentation for AI coding agents
@@ -72,7 +72,7 @@ The `agents-md` command collects anonymous usage data.
 Initialize a new PrismUI project with official templates.
 
 ```bash
-heroui init [projectName] [options]
+prismui init [projectName] [options]
 ```
 
 #### Init Options
@@ -83,14 +83,14 @@ heroui init [projectName] [options]
 ##### Example
 
 ```bash
-# Initialize a new PrismUI project with the app template, named my-heroui-app using pnpm
-heroui init my-heroui-app -t app -p pnpm
+# Initialize a new PrismUI project with the app template, named my-prismui-app using pnpm
+prismui init my-prismui-app -t app -p pnpm
 ```
 
 Alternatively, you can run `init` without any flags and select an option from the prompt.
 
 ```bash
-heroui init
+prismui init
 ```
 
 output:
@@ -107,7 +107,7 @@ PrismUI CLI <version>
 │  ○ React Router (A React Router template pre-configured with PrismUI (v3) and Tailwind CSS.)
 │
 ◇  New project name (Enter to skip with default name)
-│  my-heroui-app
+│  my-prismui-app
 │
 ◇  Select a package manager (Enter to select)
 │  ● npm
@@ -119,7 +119,7 @@ PrismUI CLI <version>
 │
 ◇  Next steps ───────╮
 │                    │
-│  cd my-heroui-app  │
+│  cd my-prismui-app  │
 │  npm install       │
 │                    │
 ├────────────────────╯
@@ -129,10 +129,10 @@ PrismUI CLI <version>
 
 ### Install
 
-Install `@heroui/react` and `@heroui/styles` in your project, along with their peer dependencies. If they are already installed, the command does nothing.
+Install `@prismui/react` and `@prismui/styles` in your project, along with their peer dependencies. If they are already installed, the command does nothing.
 
 ```bash
-heroui install [options]
+prismui install [options]
 ```
 
 #### Install Options
@@ -142,7 +142,7 @@ heroui install [options]
 ##### Example
 
 ```bash
-heroui install
+prismui install
 ```
 
 Output:
@@ -154,8 +154,8 @@ PrismUI CLI <version>
 ╭─────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version        │   Status   │   Docs                 │
 │─────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
-│   @heroui/styles   │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
+│   @prismui/react    │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
+│   @prismui/styles   │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
 ╰─────────────────────────────────────────────────────────────────────────────╯
 
 ╭─────────────── PeerDependencies ────────────────╮
@@ -167,15 +167,15 @@ PrismUI CLI <version>
 ❯   Yes
     No
 
-✅ @heroui/react and @heroui/styles installed successfully
+✅ @prismui/react and @prismui/styles installed successfully
 ```
 
 ### Upgrade
 
-Upgrade `@heroui/react` and `@heroui/styles` with their peer dependencies to the latest versions.
+Upgrade `@prismui/react` and `@prismui/styles` with their peer dependencies to the latest versions.
 
 ```bash
-heroui upgrade [options]
+prismui upgrade [options]
 ```
 
 #### Upgrade Options
@@ -185,7 +185,7 @@ heroui upgrade [options]
 ##### Example
 
 ```bash
-heroui upgrade
+prismui upgrade
 ```
 
 Output:
@@ -194,8 +194,8 @@ Output:
 PrismUI CLI <version>
 
 ╭──────────────────────────── Upgrade ────────────────────────────╮
-│  @heroui/react               ^3.0.0  ->  ^3.1.0                │
-│  @heroui/styles              ^3.0.0  ->  ^3.1.0                │
+│  @prismui/react               ^3.0.0  ->  ^3.1.0                │
+│  @prismui/styles              ^3.0.0  ->  ^3.1.0                │
 ╰─────────────────────────────────────────────────────────────────╯
 
 ? Would you like to proceed with the upgrade? › - Use arrow-keys. Return to submit.
@@ -207,10 +207,10 @@ PrismUI CLI <version>
 
 ### Uninstall
 
-Uninstall `@heroui/react` and `@heroui/styles` from your project. Peer dependencies will not be deleted.
+Uninstall `@prismui/react` and `@prismui/styles` from your project. Peer dependencies will not be deleted.
 
 ```bash
-heroui uninstall [options]
+prismui uninstall [options]
 ```
 
 #### Uninstall Options
@@ -220,7 +220,7 @@ heroui uninstall [options]
 ##### Example
 
 ```bash
-heroui uninstall
+prismui uninstall
 ```
 
 Output:
@@ -232,22 +232,22 @@ PrismUI CLI <version>
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version   │   Status   │   Docs                               │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
-│   @heroui/styles   │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
+│   @prismui/react    │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
+│   @prismui/styles   │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ? Confirm uninstallation of these packages: › - Use arrow-keys. Return to submit.
 ❯   Yes
     No
 
-✅ Successfully uninstalled: @heroui/react, @heroui/styles
+✅ Successfully uninstalled: @prismui/react, @prismui/styles
 ```
 
 ### List
 
-List the installed PrismUI packages (`@heroui/react`, `@heroui/styles`).
+List the installed PrismUI packages (`@prismui/react`, `@prismui/styles`).
 
 ```bash
-heroui list [options]
+prismui list [options]
 ```
 
 #### List Options
@@ -257,7 +257,7 @@ heroui list [options]
 ##### Example
 
 ```bash
-heroui list
+prismui list
 ```
 
 Output:
@@ -270,8 +270,8 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
-│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @prismui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @prismui/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
@@ -280,12 +280,12 @@ Current installed packages:
 Check for issues in your project.
 
 ```bash
-heroui doctor [options]
+prismui doctor [options]
 ```
 
 #### Features
 
-> 1. Check whether `@heroui/react` and `@heroui/styles` are installed
+> 1. Check whether `@prismui/react` and `@prismui/styles` are installed
 > 2. Check whether `required peer dependencies` are installed and matched minimal requirements in the project
 
 #### Doctor Options
@@ -295,7 +295,7 @@ heroui doctor [options]
 ##### Example
 
 ```bash
-heroui doctor
+prismui doctor
 ```
 
 Output:
@@ -310,9 +310,9 @@ PrismUI CLI: ❌ Your project has 1 issue that require attention
 ❗️Issue 1: missingPrismUIPackages
 
 The following PrismUI packages are not installed:
-- @heroui/styles
+- @prismui/styles
 
-Run `heroui install` to install them.
+Run `prismui install` to install them.
 ```
 
 Otherwise, the `doctor` command will display the following message.
@@ -328,7 +328,7 @@ PrismUI CLI <version>
 Display debug information about the local environment.
 
 ```bash
-heroui env [options]
+prismui env [options]
 ```
 
 #### Env Options
@@ -338,7 +338,7 @@ heroui env [options]
 ##### Example
 
 ```bash
-heroui env
+prismui env
 ```
 
 Output:
@@ -351,8 +351,8 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
-│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @prismui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @prismui/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 
 Environment Info:
@@ -368,7 +368,7 @@ Environment Info:
 Download PrismUI documentation for AI coding agents (Claude, Cursor, etc.). This command downloads the latest documentation from the PrismUI repository and generates an index file that can be injected into markdown files like `AGENTS.md` or `CLAUDE.md` to help AI assistants understand your project's PrismUI setup.
 
 ```bash
-heroui agents-md [options]
+prismui agents-md [options]
 ```
 
 #### Features
@@ -376,7 +376,7 @@ heroui agents-md [options]
 > 1. Downloads latest PrismUI documentation from the `v3` branch
 > 2. Supports React, Native, and Migration (v2→v3) documentation
 > 3. Generates a section for the selected library (React, Native, or Migration) in the markdown file
-> 4. Automatically adds `.heroui-docs/` to `.gitignore`
+> 4. Automatically adds `.prismui-docs/` to `.gitignore`
 
 #### Agents-md Options
 
@@ -391,31 +391,31 @@ heroui agents-md [options]
 Run the command without any flags to enter interactive mode:
 
 ```bash
-heroui agents-md
+prismui agents-md
 ```
 
 Download React docs to a specific file:
 
 ```bash
-heroui agents-md --react --output AGENTS.md
+prismui agents-md --react --output AGENTS.md
 ```
 
 Download Native docs:
 
 ```bash
-heroui agents-md --native --output CLAUDE.md
+prismui agents-md --native --output CLAUDE.md
 ```
 
 Download migration docs (v2→v3):
 
 ```bash
-heroui agents-md --migration --output AGENTS.md
+prismui agents-md --migration --output AGENTS.md
 ```
 
 Use SSH for cloning (useful if HTTPS fails):
 
 ```bash
-heroui agents-md --react --ssh --output AGENTS.md
+prismui agents-md --react --ssh --output AGENTS.md
 ```
 
 #### How It Works
@@ -434,18 +434,18 @@ After running the command, you'll have:
 
 ```
 your-project/
-├── .heroui-docs/          # Downloaded documentation (gitignored)
+├── .prismui-docs/          # Downloaded documentation (gitignored)
 │   ├── react/            # React documentation files (if selected)
 │   ├── native/           # Native documentation files (if selected)
 │   └── migration/        # Migration docs (v2→v3, if selected)
 ├── AGENTS.md             # Your markdown file with injected index
-└── .gitignore            # Updated to include .heroui-docs/
+└── .gitignore            # Updated to include .prismui-docs/
 ```
 
 #### Notes
 
 - The command always downloads the latest documentation from the `v3` branch
-- Documentation is stored in `.heroui-docs/` which is automatically added to `.gitignore`
+- Documentation is stored in `.prismui-docs/` which is automatically added to `.gitignore`
 
 ### Community
 

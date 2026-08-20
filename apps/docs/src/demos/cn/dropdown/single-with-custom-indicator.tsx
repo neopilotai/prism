@@ -1,8 +1,8 @@
 "use client";
 
-import type {Selection} from "@heroui/react";
+import type {Selection} from "@khulnasoft/react";
 
-import {Button, Dropdown, Header, Label} from "@heroui/react";
+import {Button, Dropdown, Header, Label} from "@prismuisoft/react";
 import {useState} from "react";
 
 export function SingleWithCustomIndicator() {

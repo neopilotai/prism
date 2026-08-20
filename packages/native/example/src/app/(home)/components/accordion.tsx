@@ -1,7 +1,7 @@
 import type { MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
-import { Accordion, PressableFeedback, useAccordionItem } from 'heroui-native';
+import { Accordion, PressableFeedback, useAccordionItem } from 'prismui-native';
 import { View } from 'react-native';
 import Animated, {
   Easing,

@@ -1,4 +1,4 @@
-import { useBottomSheet, useBottomSheetAnimation } from 'heroui-native';
+import { useBottomSheet, useBottomSheetAnimation } from 'prismui-native';
 import { Pressable, StyleSheet } from 'react-native';
 import Animated, {
   interpolate,

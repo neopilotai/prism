@@ -5,7 +5,7 @@ Text component for labeling form fields and other UI elements with support for r
 ## Import
 
 ```tsx
-import { Label } from 'heroui-native';
+import { Label } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -56,7 +56,7 @@ Show an asterisk indicator for required fields using the `isRequired` prop.
 Display labels in an invalid state to indicate validation errors.
 
 ```tsx
-import { FieldError, Label, TextField } from 'heroui-native';
+import { FieldError, Label, TextField } from 'prismui-native';
 
 <TextField isInvalid>
   <Label isInvalid>Confirm password</Label>
@@ -112,7 +112,7 @@ Apply custom styles using className, classNames, or styles props.
 ## Example
 
 ```tsx
-import { FieldError, Label, TextField } from 'heroui-native';
+import { FieldError, Label, TextField } from 'prismui-native';
 import { View } from 'react-native';
 
 export default function LabelExample() {
@@ -145,7 +145,7 @@ export default function LabelExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/label.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/label.tsx>).
 
 ## API Reference
 

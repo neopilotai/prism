@@ -10,7 +10,7 @@ import {
   SearchField,
   useBottomSheetAwareHandlers,
   useThemeColor,
-} from 'heroui-native';
+} from 'prismui-native';
 import { useMemo, useState } from 'react';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';

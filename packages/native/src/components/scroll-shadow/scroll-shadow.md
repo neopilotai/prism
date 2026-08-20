@@ -5,7 +5,7 @@ Adds dynamic gradient shadows to scrollable content based on scroll position and
 ## Import
 
 ```tsx
-import { ScrollShadow } from 'heroui-native';
+import { ScrollShadow } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -101,7 +101,7 @@ const scrollHandler = useAnimatedScrollHandler({
 ## Example
 
 ```tsx
-import { ScrollShadow, Surface } from 'heroui-native';
+import { ScrollShadow, Surface } from 'prismui-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { FlatList, ScrollView, Text, View } from 'react-native';
 
@@ -156,7 +156,7 @@ export default function ScrollShadowExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/scroll-shadow.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/scroll-shadow.tsx>).
 
 ## API Reference
 

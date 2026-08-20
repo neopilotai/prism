@@ -36,6 +36,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {meterVariants} from "@heroui/styles";
+export {meterVariants} from "@khulnasoft/styles";
 
-export type {MeterVariants} from "@heroui/styles";
+export type {MeterVariants} from "@prismuisoft/styles";

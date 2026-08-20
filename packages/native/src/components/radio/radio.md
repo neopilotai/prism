@@ -5,7 +5,7 @@ An individual radio option that indicates a single selection from a set of choic
 ## Import
 
 ```tsx
-import { Radio } from 'heroui-native';
+import { Radio } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -158,7 +158,7 @@ import {
   RadioGroup,
   Separator,
   Surface,
-} from 'heroui-native';
+} from 'prismui-native';
 import React from 'react';
 import { View, Text } from 'react-native';
 
@@ -248,7 +248,7 @@ export default function RadioExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/radio-group.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/radio-group.tsx>).
 
 ## API Reference
 
@@ -330,7 +330,7 @@ Animation configuration for radio indicator thumb component. Can be:
 Hook to access radio context values within custom components or compound components.
 
 ```tsx
-import { useRadio } from 'heroui-native';
+import { useRadio } from 'prismui-native';
 
 const CustomIndicator = () => {
   const { isSelected, isDisabled, isInvalid, variant } = useRadio();

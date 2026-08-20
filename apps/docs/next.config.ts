@@ -32,7 +32,7 @@ const config: NextConfig = {
   compress: true,
   experimental: {
     optimizePackageImports: [
-      "@heroui/react",
+      "@khulnasoft/react",
       "@gravity-ui/icons",
       "@iconify/react",
       "lucide-react",
@@ -80,12 +80,12 @@ const config: NextConfig = {
     dangerouslyAllowLocalIP: true,
     remotePatterns: [
       {
-        hostname: "heroui-assets.nyc3.cdn.digitaloceanspaces.com",
+        hostname: "prismui-assets.nyc3.cdn.digitaloceanspaces.com",
         pathname: "/**",
         protocol: "https",
       },
       {
-        hostname: "img.heroui.chat",
+        hostname: "img.prismui.chat",
         pathname: "/**",
         protocol: "https",
       },
@@ -119,7 +119,7 @@ const config: NextConfig = {
     ];
   },
   trailingSlash: false,
-  transpilePackages: ["@heroui/react", "@heroui/styles"],
+  transpilePackages: ["@prismuisoft/react"prismuiulnasoft/styles"],
   typedRoutes: true,
   typescript: {
     ignoreBuildErrors: true,

@@ -1,8 +1,8 @@
 "use client";
 
-import type {Selection} from "@heroui/react";
+import type {Selection} from "@khulnasoft/react";
 
-import {Button, Dropdown, Header, Kbd, Label, Separator} from "@heroui/react";
+import {Button, Dropdown, Header, Kbd, Label, Separator} from "@prismuisoft/react";
 import {useState} from "react";
 
 export function WithSectionLevelSelection() {

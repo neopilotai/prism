@@ -1,10 +1,10 @@
 "use client";
 
 import type {SurfaceVariants} from "../surface";
-import type {DropdownVariants} from "@heroui/styles";
+import type {DropdownVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {dropdownVariants} from "@heroui/styles";
+import {dropdownVariants} from "@prismuisoft/styles";
 import React, {createContext, use} from "react";
 import {Button} from "react-aria-components/Button";
 import {

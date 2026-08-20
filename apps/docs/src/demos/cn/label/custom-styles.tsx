@@ -1,4 +1,4 @@
-import {Input, Label} from "@heroui/react";
+import {Input, Label} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (
@@ -6,7 +6,7 @@ export function CustomStyles() {
       <Label className="text-xs font-semibold tracking-wide text-accent uppercase" htmlFor="repo">
         仓库
       </Label>
-      <Input className="w-64 bg-field" id="repo" placeholder="heroui/react" />
+      <Input className="w-64 bg-field" id="repo" placeholder="prismui/react" />
     </div>
   );
 }

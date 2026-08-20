@@ -12,7 +12,7 @@ import {
 import {useParams, useRouter, useSearchParams} from "next/navigation";
 import {useEffect} from "react";
 
-import {PrismUILogo} from "@/components/heroui-logo";
+import {PrismUILogo} from "@/components/prismui-logo";
 import {Iconify} from "@/components/iconify";
 import {useCodePanel} from "@/hooks/use-code-panel";
 import {i18n} from "@/lib/i18n";

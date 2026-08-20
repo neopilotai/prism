@@ -5,7 +5,7 @@ Displays temporary notification messages that appear at the top or bottom of the
 ## Import
 
 ```tsx
-import { Toast, useToast } from 'heroui-native';
+import { Toast, useToast } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -110,7 +110,7 @@ toast.show({
 ## Example
 
 ```tsx
-import { Button, Toast, useToast, useThemeColor } from 'heroui-native';
+import { Button, Toast, useToast, useThemeColor } from 'prismui-native';
 import { View } from 'react-native';
 
 export default function ToastExample() {
@@ -156,7 +156,7 @@ export default function ToastExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/toast.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/toast.tsx>).
 
 ## Global Configuration
 
@@ -194,7 +194,7 @@ import {
   KeyboardAvoidingView,
   KeyboardProvider,
 } from 'react-native-keyboard-controller';
-import { PrismUINativeProvider } from 'heroui-native';
+import { PrismUINativeProvider } from 'prismui-native';
 import { useCallback } from 'react';
 
 function AppContent() {

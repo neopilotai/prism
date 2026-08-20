@@ -5,7 +5,7 @@ A toggle control that allows users to switch between on and off states.
 ## Import
 
 ```tsx
-import { Switch } from 'heroui-native';
+import { Switch } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -129,7 +129,7 @@ Disable animations entirely or only for specific components.
 ## Example
 
 ```tsx
-import { Switch } from 'heroui-native';
+import { Switch } from 'prismui-native';
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { View } from 'react-native';
@@ -183,7 +183,7 @@ export default function SwitchExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/switch.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/switch.tsx>).
 
 ## API Reference
 
@@ -293,7 +293,7 @@ A hook that provides access to the Switch context. This is useful when building 
 **Example:**
 
 ```tsx
-import { useSwitch } from 'heroui-native';
+import { useSwitch } from 'prismui-native';
 
 function CustomSwitchContent() {
   const { isSelected, isDisabled } = useSwitch();
@@ -332,7 +332,7 @@ Using `outline` keeps the border visual without impacting the switch's internal 
 The Switch component integrates seamlessly with ControlField for press state sharing:
 
 ```tsx
-import { Description, ControlField, Label } from 'heroui-native';
+import { Description, ControlField, Label } from 'prismui-native';
 
 <ControlField isSelected={isSelected} onSelectedChange={setIsSelected}>
   <View className="flex-1">

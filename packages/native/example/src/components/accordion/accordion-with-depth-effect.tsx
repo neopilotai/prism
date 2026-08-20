@@ -8,7 +8,7 @@ import {
   Separator,
   useAccordion,
   useAccordionItem,
-} from 'heroui-native';
+} from 'prismui-native';
 import { createContext, use, useEffect, useState, type FC } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Animated, {

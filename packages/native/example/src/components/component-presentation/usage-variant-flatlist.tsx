@@ -1,7 +1,7 @@
 import { useLingui } from '@lingui/react/macro';
 import { BlurView } from 'expo-blur';
 import * as Haptics from 'expo-haptics';
-import { useToast } from 'heroui-native';
+import { useToast } from 'prismui-native';
 import { memo, useCallback, useRef, useState } from 'react';
 import {
   FlatList,

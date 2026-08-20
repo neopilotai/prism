@@ -5,7 +5,7 @@ A compound component for displaying and managing selectable tags with optional r
 ## Import
 
 ```tsx
-import { TagGroup } from 'heroui-native';
+import { TagGroup } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -228,7 +228,7 @@ Disable individual tags or the entire group.
 ## Example
 
 ```tsx
-import { TagGroup, Label, Description, FieldError } from 'heroui-native';
+import { TagGroup, Label, Description, FieldError } from 'prismui-native';
 import { useState, useMemo } from 'react';
 import { View } from 'react-native';
 
@@ -265,7 +265,7 @@ export default function TagGroupExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/tag-group.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/tag-group.tsx>).
 
 ## API Reference
 
@@ -369,7 +369,7 @@ Absolute-fill container rendered behind the tag surface. With no children, the a
 Hook to access the tag group root context. Must be used within a `TagGroup` component.
 
 ```tsx
-import { useTagGroup } from 'heroui-native';
+import { useTagGroup } from 'prismui-native';
 
 const {
   selectedKeys,
@@ -401,7 +401,7 @@ const {
 Hook to access the tag item context. Must be used within a `TagGroup.Item` component.
 
 ```tsx
-import { useTagGroupItem } from 'heroui-native';
+import { useTagGroupItem } from 'prismui-native';
 
 const { id, isSelected, isDisabled, allowsRemoving } = useTagGroupItem();
 ```

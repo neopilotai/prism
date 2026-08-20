@@ -63,6 +63,6 @@ export {useCalendarOrRangeState} from "./use-calendar-state";
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {calendarYearPickerVariants} from "@heroui/styles";
+export {calendarYearPickerVariants} from "@khulnasoft/styles";
 
-export type {CalendarYearPickerVariants} from "@heroui/styles";
+export type {CalendarYearPickerVariants} from "@prismuisoft/styles";

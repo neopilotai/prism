@@ -27,10 +27,10 @@ const commandList: CommandName[] = [
   'uninstall'
 ];
 
-const heroui = new Command();
+const prismui = new Command();
 
-heroui
-  .name('heroui')
+prismui
+  .name('prismui')
   .usage('[command]')
   .description(getCommandDescAndLog(`\nPrismUI CLI v${pkg.version}\n`, ''))
   .version(pkg.version, '-v, --version', 'Output the current version')
@@ -63,7 +63,7 @@ heroui
     }
 
     if (!isArgs) {
-      const helpInfo = heroui.helpInformation();
+      const helpInfo = prismui.helpInformation();
 
       let helpInfoArr = helpInfo.split('\n');
 
@@ -84,9 +84,9 @@ heroui
     process.exit(0);
   });
 
-registerCommands(heroui);
+registerCommands(prismui);
 
-heroui.hook('preAction', async (command) => {
+prismui.hook('preAction', async (command) => {
   const commandName = command.args?.[0];
   const options = (command as SAFE_ANY).rawArgs.slice(2);
   const noCache = options.includes('--no-cache');
@@ -130,7 +130,7 @@ heroui.hook('preAction', async (command) => {
   }
 });
 
-heroui.parseAsync(process.argv).catch(async (error: Error) => {
+prismui.parseAsync(process.argv).catch(async (error: Error) => {
   const isAgentsMd = process.argv.includes('agents-md');
 
   if (isAgentsMd) {

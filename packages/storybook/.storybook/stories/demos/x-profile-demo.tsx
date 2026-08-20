@@ -11,7 +11,7 @@ export function XProfileDemo() {
           <Avatar size="sm">
             <Avatar.Image
               alt="PrismUI"
-              src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui_isotipo.png"
+              src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/prismui_isotipo.png"
             />
             <Avatar.Fallback>H</Avatar.Fallback>
           </Avatar>

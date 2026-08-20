@@ -5,7 +5,7 @@ Absolute-fill frosted-glass layer. Real blur on iOS via the optional `expo-blur`
 ## Import
 
 ```tsx
-import { GlassView } from 'heroui-native';
+import { GlassView } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -26,7 +26,7 @@ The background parts activate when a glass theme sets the `--theme` variable:
 }
 ```
 
-The `heroui-native-pro/themes/glass` theme does this for you. Install the optional blur dependency for native blur on iOS:
+The `prismui-native-pro/themes/glass` theme does this for you. Install the optional blur dependency for native blur on iOS:
 
 ```bash
 npx expo install expo-blur

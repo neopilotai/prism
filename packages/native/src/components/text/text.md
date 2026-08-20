@@ -5,7 +5,7 @@ Primitive typography component for rendering styled text with semantic type vari
 ## Import
 
 ```tsx
-import { Typography } from 'heroui-native';
+import { Typography } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -139,7 +139,7 @@ Use the `truncate` boolean prop to limit the text to a single line with an ellip
 ## Example
 
 ```tsx
-import { Typography } from 'heroui-native';
+import { Typography } from 'prismui-native';
 import { View } from 'react-native';
 
 export default function TypographyExample() {
@@ -153,13 +153,13 @@ export default function TypographyExample() {
       <Typography.Paragraph color="muted" type="body-sm">
         Smaller supporting text for captions or footnotes.
       </Typography.Paragraph>
-      <Typography.Code>npm install heroui-native</Typography.Code>
+      <Typography.Code>npm install prismui-native</Typography.Code>
     </View>
   );
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/text.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/text.tsx>).
 
 ## API Reference
 

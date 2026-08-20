@@ -1,8 +1,8 @@
 "use client";
 
-import type {Selection} from "@heroui/react";
+import type {Selection} from "@khulnasoft/react";
 
-import {Button, Table, cn} from "@heroui/react";
+import {Button, Table, cn} from "@prismuisoft/react";
 import {Icon} from "@iconify/react";
 import {useState} from "react";
 

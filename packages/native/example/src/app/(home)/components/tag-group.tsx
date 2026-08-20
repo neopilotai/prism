@@ -9,7 +9,7 @@ import {
   Label,
   TagGroup,
   useThemeColor,
-} from 'heroui-native';
+} from 'prismui-native';
 import React, { useMemo, useState } from 'react';
 import { View } from 'react-native';
 import Animated, { LinearTransition } from 'react-native-reanimated';
@@ -421,35 +421,35 @@ type User = {
 const INITIAL_USERS: User[] = [
   {
     avatar:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg',
     fallback: 'F',
     id: 'fred',
     name: 'Fred',
   },
   {
     avatar:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg',
     fallback: 'M',
     id: 'michael',
     name: 'Michael',
   },
   {
     avatar:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg',
     fallback: 'J',
     id: 'jane',
     name: 'Jane',
   },
   {
     avatar:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg',
     fallback: 'A',
     id: 'alice',
     name: 'Alice',
   },
   {
     avatar:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/orange.jpg',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/orange.jpg',
     fallback: 'B',
     id: 'bob',
     name: 'Bob',

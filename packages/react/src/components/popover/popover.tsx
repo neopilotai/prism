@@ -2,10 +2,10 @@
 
 import type {DOMRenderProps} from "../../utils/dom";
 import type {SurfaceVariants} from "../surface";
-import type {PopoverVariants} from "@heroui/styles";
+import type {PopoverVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {popoverVariants} from "@heroui/styles";
+import {popoverVariants} from "@prismuisoft/styles";
 import React, {createContext, use} from "react";
 import {
   Dialog as DialogPrimitive,

@@ -24,6 +24,6 @@ export type {FieldErrorRootProps, FieldErrorRootProps as FieldErrorProps} from "
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {fieldErrorVariants} from "@heroui/styles";
+export {fieldErrorVariants} from "@khulnasoft/styles";
 
-export type {FieldErrorVariants} from "@heroui/styles";
+export type {FieldErrorVariants} from "@prismuisoft/styles";

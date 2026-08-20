@@ -72,7 +72,7 @@ PrismUI is the modern UI library for web and mobile, built to help teams move fa
 - [Get started](${baseUrl}/docs/react/getting-started)
 - [React components](${baseUrl}/docs/react/components)
 - [Native components](${baseUrl}/docs/native/components)
-- [GitHub repository](https://github.com/khulnasoft/heroui)
+- [GitHub repository](https://github.com/khulnasoft/prismui)
 
 ## Agent resources
 

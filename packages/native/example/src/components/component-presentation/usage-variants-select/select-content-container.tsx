@@ -1,4 +1,4 @@
-import { Select } from 'heroui-native';
+import { Select } from 'prismui-native';
 import { type FC, type PropsWithChildren } from 'react';
 import { Easing, FadeOut } from 'react-native-reanimated';
 

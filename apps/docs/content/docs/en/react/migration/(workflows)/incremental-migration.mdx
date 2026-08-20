@@ -50,8 +50,8 @@ This strategy uses pnpm package aliases to install v3 packages under different n
   "dependencies": {
     "@khulnasoft/react": "2.8.6",
     "@khulnasoft/theme": "2.4.24",
-    "@heroui-v3/react": "npm:@khulnasoft/react@latest",
-    "@heroui-v3/styles": "npm:@khulnasoft/styles@latest"
+    "@prismui-v3/react": "npm:@khulnasoft/react@latest",
+    "@prismui-v3/styles": "npm:@khulnasoft/styles@latest"
   }
 }
 ```
@@ -62,16 +62,16 @@ This strategy uses pnpm package aliases to install v3 packages under different n
 import {Button} from "@khulnasoft/react"; // v2
 ```
 
-3. Import v3 components from `@heroui-v3/react`:
+3. Import v3 components from `@prismui-v3/react`:
 
 ```tsx
-import {Button} from "@heroui-v3/react"; // v3
+import {Button} from "@prismui-v3/react"; // v3
 ```
 
 ### Migration Process
 
 1. **Migrate one component at a time:**
-   - Update imports to use `@heroui-v3/react`
+   - Update imports to use `@prismui-v3/react`
    - Update component code to v3 API
    - Test the migrated component
    - Verify styling looks correct
@@ -174,10 +174,10 @@ You'll need both Tailwind configs temporarily:
 **v2 Config (tailwind.config.js):**
 
 ```js
-const {heroui} = require("@khulnasoft/react");
+const {prismui} = require("@khulnasoft/react");
 
 module.exports = {
-  plugins: [heroui()],
+  plugins: [prismui()],
   // ... other config
 };
 ```
@@ -193,7 +193,7 @@ For each component you migrate:
    - Check component-specific migration guides
 
 2. **Update imports**
-   - Strategy A: Change `@khulnasoft/react` → `@heroui-v3/react`
+   - Strategy A: Change `@khulnasoft/react` → `@prismui-v3/react`
    - Strategy B: Change component package → `@khulnasoft/react`
 
 3. **Update component code**
@@ -240,7 +240,7 @@ Once all components are migrated:
    - If you left v2 removed components in place (Code, Image, Navbar, Ripple, Snippet, Spacer, User), you have two options: (1) Replace them per the migration guides before removing v2 dependencies, or (2) Keep v2 dependencies until you are ready to replace them. You may ask an agent to help remove them using the provided guides.
 
 2. **Update all imports:**
-   - Change `@heroui-v3/react` → `@khulnasoft/react` (Strategy A)
+   - Change `@prismui-v3/react` → `@khulnasoft/react` (Strategy A)
    - Change component package imports → `@khulnasoft/react` (Strategy B)
 
 3. **Update CSS:**

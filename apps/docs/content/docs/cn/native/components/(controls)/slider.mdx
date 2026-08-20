@@ -8,14 +8,14 @@ links:
 
 <NativeVideoPlayerView
   target="auto"
-  srcLight="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/slider-docs-light.mp4"
-  srcDark="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/slider-docs-dark.mp4"
+  srcLight="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/slider-docs-light.mp4"
+  srcDark="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/native/components/videos/slider-docs-dark.mp4"
 />
 
 ## 导入
 
 ```tsx
-import { Slider } from 'heroui-native';
+import { Slider } from 'prismui-native';
 ```
 
 ## 结构
@@ -167,7 +167,7 @@ const [volume, setVolume] = useState(50);
 ## 示例
 
 ```tsx
-import { Label, Slider } from 'heroui-native';
+import { Label, Slider } from 'prismui-native';
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 
@@ -215,7 +215,7 @@ export default function SliderExample() {
 }
 ```
 
-更多示例见 [GitHub 仓库](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/slider.tsx>)。
+更多示例见 [GitHub 仓库](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/slider.tsx>)。
 
 ## API 参考
 
@@ -343,7 +343,7 @@ export default function SliderExample() {
 访问滑块上下文，须在 `Slider` 内使用。
 
 ```tsx
-import { useSlider } from 'heroui-native';
+import { useSlider } from 'prismui-native';
 
 const { values, orientation, isDisabled, getThumbValueLabel } = useSlider();
 ```

@@ -5,7 +5,7 @@ A floating context menu with positioning, selection groups, and multiple present
 ## Import
 
 ```tsx
-import { Menu, SubMenu } from 'heroui-native';
+import { Menu, SubMenu } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -323,8 +323,8 @@ Use `variant="dot"` on `Menu.ItemIndicator` to show a filled circle instead of a
 ## Example
 
 ```tsx
-import type { MenuKey } from 'heroui-native';
-import { Button, Menu, Separator } from 'heroui-native';
+import type { MenuKey } from 'prismui-native';
+import { Button, Menu, Separator } from 'prismui-native';
 import { useState } from 'react';
 import { Text, View } from 'react-native';
 
@@ -393,7 +393,7 @@ export default function MenuExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/menu.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/menu.tsx>).
 
 ## API Reference
 
@@ -743,7 +743,7 @@ Animation configuration for the trigger indicator rotation. Can be:
 Hook to access the menu root context. Must be used within a `Menu` component.
 
 ```tsx
-import { useMenu } from 'heroui-native';
+import { useMenu } from 'prismui-native';
 
 const { isOpen, onOpenChange, presentation, isDisabled } = useMenu();
 ```
@@ -763,7 +763,7 @@ const { isOpen, onOpenChange, presentation, isDisabled } = useMenu();
 Hook to access the menu item context. Must be used within a `Menu.Item` component.
 
 ```tsx
-import { useMenuItem } from 'heroui-native';
+import { useMenuItem } from 'prismui-native';
 
 const { id, isSelected, isDisabled, variant } = useMenuItem();
 ```
@@ -782,7 +782,7 @@ const { id, isSelected, isDisabled, variant } = useMenuItem();
 Hook to access the menu animation context. Must be used within a `Menu` component.
 
 ```tsx
-import { useMenuAnimation } from 'heroui-native';
+import { useMenuAnimation } from 'prismui-native';
 
 const { progress, isDragging } = useMenuAnimation();
 ```
@@ -799,7 +799,7 @@ const { progress, isDragging } = useMenuAnimation();
 Hook to access the sub-menu context. Must be used within a `SubMenu` component.
 
 ```tsx
-import { useSubMenu } from 'heroui-native';
+import { useSubMenu } from 'prismui-native';
 
 const { isOpen, onOpenChange, isDisabled } = useSubMenu();
 ```

@@ -13,7 +13,7 @@ import {Button, Kbd, Separator, Tabs, Tooltip, toast} from "@khulnasoft/react";
 import Link from "next/link";
 import {useParams} from "next/navigation";
 
-import {PrismUILogo} from "@/components/heroui-logo";
+import {PrismUILogo} from "@/components/prismui-logo";
 import {useCodePanel} from "@/hooks/use-code-panel";
 import {useDictionary} from "@/hooks/use-dictionary";
 import useKeyPress from "@/hooks/use-key-press";

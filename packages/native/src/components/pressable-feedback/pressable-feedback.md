@@ -5,7 +5,7 @@ Container component that provides visual feedback for press interactions with au
 ## Import
 
 ```tsx
-import { PressableFeedback } from 'heroui-native';
+import { PressableFeedback } from 'prismui-native';
 ```
 
 ## Anatomy
@@ -146,7 +146,7 @@ You can also disable all animations while keeping a scale config (e.g. for toggl
 ## Example
 
 ```tsx
-import { PressableFeedback, Card, Button } from 'heroui-native';
+import { PressableFeedback, Card, Button } from 'prismui-native';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet, View, Text } from 'react-native';
@@ -157,7 +157,7 @@ export default function PressableFeedbackExample() {
       <Card className="flex-1">
         <Image
           source={{
-            uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/neo2.jpeg',
+            uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/neo2.jpeg',
           }}
           style={StyleSheet.absoluteFill}
           contentFit="cover"
@@ -199,7 +199,7 @@ export default function PressableFeedbackExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/pressable-feedback.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/pressable-feedback.tsx>).
 
 ## API Reference
 

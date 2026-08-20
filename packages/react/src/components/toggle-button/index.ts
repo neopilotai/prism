@@ -27,6 +27,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {toggleButtonVariants} from "@heroui/styles";
+export {toggleButtonVariants} from "@khulnasoft/styles";
 
-export type {ToggleButtonVariants} from "@heroui/styles";
+export type {ToggleButtonVariants} from "@prismuisoft/styles";

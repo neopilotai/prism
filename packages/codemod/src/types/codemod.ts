@@ -1,8 +1,8 @@
 export const codemods = [
-  'import-heroui',
+  'import-prismui',
   'package-json-package-name',
-  'heroui-provider',
-  'tailwindcss-heroui',
+  'prismui-provider',
+  'tailwindcss-prismui',
   'css-variables',
   'npmrc'
 ] as const;

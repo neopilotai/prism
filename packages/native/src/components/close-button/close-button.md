@@ -5,7 +5,7 @@ Button component for closing dialogs, modals, or dismissing content.
 ## Import
 
 ```tsx
-import { CloseButton } from 'heroui-native';
+import { CloseButton } from 'prismui-native';
 ```
 
 ## Usage
@@ -56,7 +56,7 @@ Disable the button to prevent interactions.
 ## Example
 
 ```tsx
-import { CloseButton, useThemeColor } from 'heroui-native';
+import { CloseButton, useThemeColor } from 'prismui-native';
 import { Ionicons } from '@expo/vector-icons';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';
@@ -86,7 +86,7 @@ export default function CloseButtonExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/heroui-native/blob/main/example/src/app/(home)/components/close-button.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui-native/blob/main/example/src/app/(home)/components/close-button.tsx>).
 
 ## API Reference
 

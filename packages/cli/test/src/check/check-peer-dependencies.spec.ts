@@ -11,10 +11,10 @@ describe('checkPeerDependencies', () => {
 
   it('should return empty array when no peer dependencies need updating', async () => {
     const mockAllDependencies = {
-      '@heroui/react': '1.0.0',
+      '@prismui/react': '1.0.0',
       react: '18.0.0'
     };
-    const mockPackageNames = ['@heroui/react'];
+    const mockPackageNames = ['@prismui/react'];
 
     vi.spyOn(upgradeHelper, 'getPackagePeerDep').mockResolvedValue([
       {
@@ -33,7 +33,7 @@ describe('checkPeerDependencies', () => {
 
     expect(result).toEqual([]);
     expect(upgradeHelper.getPackagePeerDep).toHaveBeenCalledWith(
-      '@heroui/react',
+      '@prismui/react',
       mockAllDependencies,
       expect.any(Set)
     );
@@ -41,10 +41,10 @@ describe('checkPeerDependencies', () => {
 
   it('should return array of outdated peer dependencies', async () => {
     const mockAllDependencies = {
-      '@heroui/react': '1.0.0',
+      '@prismui/react': '1.0.0',
       react: '17.0.0'
     };
-    const mockPackageNames = ['@heroui/react'];
+    const mockPackageNames = ['@prismui/react'];
 
     vi.spyOn(upgradeHelper, 'getPackagePeerDep').mockResolvedValue([
       {
@@ -66,12 +66,12 @@ describe('checkPeerDependencies', () => {
 
   it('should handle multiple packages with peer dependencies', async () => {
     const mockAllDependencies = {
-      '@heroui/icons': '1.0.0',
-      '@heroui/react': '1.0.0',
+      '@prismui/icons': '1.0.0',
+      '@prismui/react': '1.0.0',
       react: '17.0.0',
       typescript: '4.0.0'
     };
-    const mockPackageNames = ['@heroui/react', '@heroui/icons'];
+    const mockPackageNames = ['@prismui/react', '@prismui/icons'];
 
     vi.spyOn(packageHelper, 'getPackageInfo').mockReturnValue({
       allDependencies: mockAllDependencies,
@@ -115,11 +115,11 @@ describe('checkPeerDependencies', () => {
 
   it('should keep only the latest version when same package appears multiple times', async () => {
     const mockAllDependencies = {
-      '@heroui/icons': '1.0.0',
-      '@heroui/react': '1.0.0',
+      '@prismui/icons': '1.0.0',
+      '@prismui/react': '1.0.0',
       react: '17.0.0'
     };
-    const mockPackageNames = ['@heroui/react', '@heroui/icons'];
+    const mockPackageNames = ['@prismui/react', '@prismui/icons'];
 
     vi.spyOn(packageHelper, 'getPackageInfo').mockReturnValue({
       allDependencies: mockAllDependencies,

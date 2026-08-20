@@ -258,7 +258,7 @@ import { View, Text } from 'react-native';
 
 ## 默认主题
 
-完整主题定义见仓库中的 [variables.css](https://github.com/khulnasoft/heroui-native/blob/main/src/styles/variables.css)。该主题通过 [Uniwind 主题系统](https://docs.uniwind.dev/theming/basics) 在明暗模式间自动切换，并支持跟随系统与在代码中切换主题。
+完整主题定义见仓库中的 [variables.css](https://github.com/khulnasoft/prismui-native/blob/main/src/styles/variables.css)。该主题通过 [Uniwind 主题系统](https://docs.uniwind.dev/theming/basics) 在明暗模式间自动切换，并支持跟随系统与在代码中切换主题。
 
 <CollapsibleCode lang="css" code={`  @theme {
     /* 基础色（在明暗模式间保持不变） */
@@ -459,7 +459,7 @@ import { View, Text } from 'react-native';
 现在可以同时选取多种颜色，在需要一并处理相关色值时很有用：
 
 ```tsx
-import { useThemeColor } from 'heroui-native';
+import { useThemeColor } from 'prismui-native';
 
 // 一次选取多种颜色
 const [accent, accentForeground, success, danger] = useThemeColor([

@@ -2,7 +2,7 @@
 import { msg } from '@lingui/core/macro';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Avatar, cn } from 'heroui-native';
+import { Avatar, cn } from 'prismui-native';
 import { StyleSheet, Text, View } from 'react-native';
 import type { UsageVariant } from '../../../components/component-presentation/types';
 import { UsageVariantFlatList } from '../../../components/component-presentation/usage-variant-flatlist';
@@ -16,7 +16,7 @@ const SizesContent = () => {
         <Avatar size="sm">
           <Avatar.Image
             source={{
-              uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg',
+              uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg',
             }}
           />
           <Avatar.Fallback />
@@ -24,7 +24,7 @@ const SizesContent = () => {
         <Avatar size="md">
           <Avatar.Image
             source={{
-              uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg',
+              uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg',
             }}
           />
           <Avatar.Fallback>MD</Avatar.Fallback>
@@ -32,7 +32,7 @@ const SizesContent = () => {
         <Avatar size="lg">
           <Avatar.Image
             source={{
-              uri: 'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg',
+              uri: 'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg',
             }}
           />
           <Avatar.Fallback>LG</Avatar.Fallback>
@@ -212,25 +212,25 @@ const avatarGroupData = [
   {
     id: 1,
     image:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg',
     name: 'John Doe',
   },
   {
     id: 2,
     image:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg',
     name: 'Kate Wilson',
   },
   {
     id: 3,
     image:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg',
     name: 'Emily Chen',
   },
   {
     id: 4,
     image:
-      'https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/orange.jpg',
+      'https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/orange.jpg',
     name: 'Michael Brown',
   },
 ];
@@ -298,7 +298,7 @@ const CustomStylesContent = () => {
         <Avatar className="h-16 w-16">
           <Avatar.Image
             source={{
-              uri: 'https://img.heroui.chat/image/avatar?w=400&h=400&u=3',
+              uri: 'https://img.prismui.chat/image/avatar?w=400&h=400&u=3',
             }}
           />
           <Avatar.Fallback>XL</Avatar.Fallback>
@@ -306,7 +306,7 @@ const CustomStylesContent = () => {
         <Avatar className="rounded-lg">
           <Avatar.Image
             source={{
-              uri: 'https://img.heroui.chat/image/avatar?w=400&h=400&u=5',
+              uri: 'https://img.prismui.chat/image/avatar?w=400&h=400&u=5',
             }}
           />
           <Avatar.Fallback className="rounded-lg">SQ</Avatar.Fallback>
@@ -321,7 +321,7 @@ const CustomStylesContent = () => {
           <Avatar.Image
             className="border-[0.5px] border-background rounded-full"
             source={{
-              uri: 'https://img.heroui.chat/image/avatar?w=400&h=400&u=20',
+              uri: 'https://img.prismui.chat/image/avatar?w=400&h=400&u=20',
             }}
           />
           <Avatar.Fallback className="border-none">GB</Avatar.Fallback>
@@ -330,7 +330,7 @@ const CustomStylesContent = () => {
           <Avatar size="lg">
             <Avatar.Image
               source={{
-                uri: 'https://img.heroui.chat/image/avatar?w=400&h=400&u=23',
+                uri: 'https://img.prismui.chat/image/avatar?w=400&h=400&u=23',
               }}
               asChild
             >

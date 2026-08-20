@@ -23,7 +23,7 @@ icon: chevrons-expand-horizontal
 用该 provider 包裹你的应用根节点：
 
 ```tsx
-import { PrismUINativeProvider } from 'heroui-native';
+import { PrismUINativeProvider } from 'prismui-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function App() {
@@ -44,8 +44,8 @@ export default function App() {
 PrismUI Native 内所有 Text 组件的全局设置。这些 props 经过精心挑选，仅包含那些适合在应用中所有 Text 组件上进行全局配置的选项：
 
 ```tsx
-import { PrismUINativeProvider } from 'heroui-native';
-import type { PrismUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider } from 'prismui-native';
+import type { PrismUINativeConfig } from 'prismui-native';
 
 const config: PrismUINativeConfig = {
   textProps: {
@@ -77,8 +77,8 @@ export default function App() {
 PrismUI Native 内所有基于 TextInput 的组件的全局设置（例如 Input、TextArea、SearchField、InputGroup、InputOTP）。这些 props 经过精心挑选，仅包含那些适合在应用中所有输入组件上进行全局配置的选项：
 
 ```tsx
-import { PrismUINativeProvider } from 'heroui-native';
-import type { PrismUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider } from 'prismui-native';
+import type { PrismUINativeConfig } from 'prismui-native';
 
 const config: PrismUINativeConfig = {
   textInputProps: {
@@ -231,8 +231,8 @@ const config: PrismUINativeConfig = {
 以下是展示所有配置选项的完整示例：
 
 ```tsx
-import { PrismUINativeProvider } from 'heroui-native';
-import type { PrismUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider } from 'prismui-native';
+import type { PrismUINativeConfig } from 'prismui-native';
 import { I18nManager } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
@@ -295,8 +295,8 @@ export default function App() {
 
 ```tsx
 // app/_layout.tsx
-import { PrismUINativeProvider } from 'heroui-native';
-import type { PrismUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider } from 'prismui-native';
+import type { PrismUINativeConfig } from 'prismui-native';
 import { Stack } from 'expo-router';
 
 const config: PrismUINativeConfig = {
@@ -347,7 +347,7 @@ PrismUINativeProvider
 
 ### 何时使用
 
-当你想完全掌控打包体积中包含哪些依赖时，使用 `PrismUINativeProviderRaw`。使用从 `heroui-native/provider-raw` 导入的 raw provider 时，以下依赖是可选的，仅在你使用对应组件时才需要：
+当你想完全掌控打包体积中包含哪些依赖时，使用 `PrismUINativeProviderRaw`。使用从 `prismui-native/provider-raw` 导入的 raw provider 时，以下依赖是可选的，仅在你使用对应组件时才需要：
 
 - **react-native-screens** —— 浮层组件（Popover、Dialog）所需
 - **@gorhom/bottom-sheet** —— BottomSheet 组件所需
@@ -359,7 +359,7 @@ PrismUINativeProvider
 import {
   PrismUINativeProviderRaw,
   type PrismUINativeConfigRaw,
-} from 'heroui-native/provider-raw';
+} from 'prismui-native/provider-raw';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const config: PrismUINativeConfigRaw = {
@@ -384,9 +384,9 @@ export default function App() {
 如果你在使用 raw provider 时需要 toast 或 portal 功能，请自行添加：
 
 ```tsx
-import { PrismUINativeProviderRaw } from 'heroui-native/provider-raw';
-import { PortalHost } from 'heroui-native/portal';
-import { ToastProvider } from 'heroui-native/toast';
+import { PrismUINativeProviderRaw } from 'prismui-native/provider-raw';
+import { PortalHost } from 'prismui-native/portal';
+import { ToastProvider } from 'prismui-native/toast';
 
 export default function App() {
   return (
@@ -492,7 +492,7 @@ const config: PrismUINativeConfig = {
 该 provider 具有完整的类型定义。导入类型以获得更好的 IDE 支持：
 
 ```tsx
-import { PrismUINativeProvider, type PrismUINativeConfig } from 'heroui-native';
+import { PrismUINativeProvider, type PrismUINativeConfig } from 'prismui-native';
 
 const config: PrismUINativeConfig = {
   // 完整的类型安全和自动补全

@@ -1,8 +1,8 @@
 "use client";
 
-import type {Key} from "@heroui/react";
+import type {Key} from "@khulnasoft/react";
 
-import {Label, ListBox, Select} from "@heroui/react";
+import {Label, ListBox, Select} from "@prismuisoft/react";
 import React from "react";
 
 export function ControlledMultiple() {

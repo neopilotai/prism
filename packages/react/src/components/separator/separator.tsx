@@ -1,9 +1,9 @@
 "use client";
 
-import type {SeparatorVariants} from "@heroui/styles";
+import type {SeparatorVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {separatorVariants} from "@heroui/styles";
+import {separatorVariants} from "@prismuisoft/styles";
 import React from "react";
 import {SeparatorContext, Separator as SeparatorPrimitive} from "react-aria-components/Separator";
 import {useSlottedContext} from "react-aria-components/slots";

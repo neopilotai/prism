@@ -1,6 +1,6 @@
 "use client";
 
-import {Spinner} from "@heroui/react";
+import {Spinner} from "@khulnasoft/react";
 import {UNSAFE_PortalProvider} from "@react-aria/overlays";
 import {useTheme} from "next-themes";
 import {useCallback, useEffect, useMemo, useRef, useState} from "react";
@@ -48,13 +48,13 @@ export function PreviewContainer() {
     const iframe = iframeRef.current;
 
     if (!iframe?.contentWindow) return;
-    iframe.contentWindow.postMessage({theme: resolvedTheme ?? "dark", type: "heroui-theme"}, "*");
-    iframe.contentWindow.postMessage({type: "heroui-accent", vars: themeVars}, "*");
+    iframe.contentWindow.postMessage({theme: resolvedTheme ?? "dark", type: "prismui-theme"}, "*");
+    iframe.contentWindow.postMessage({type: "prismui-accent", vars: themeVars}, "*");
     iframe.contentWindow.postMessage(
       {
         cdnUrl: fontMeta.cdnUrl,
         family: fontMeta.family,
-        type: "heroui-font",
+        type: "prismui-font",
         variable: fontMeta.variable,
       },
       "*",
@@ -67,7 +67,7 @@ export function PreviewContainer() {
 
   useEffect(() => {
     function handleMessage(event: MessageEvent) {
-      if (event.data?.type === "heroui-ready") {
+      if (event.data?.type === "prismui-ready") {
         sendMessageToIframe();
       }
     }

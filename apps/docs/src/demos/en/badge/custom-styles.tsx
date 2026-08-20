@@ -1,4 +1,4 @@
-import {Avatar, Badge} from "@heroui/react";
+import {Avatar, Badge} from "@khulnasoft/react";
 
 export function CustomStyles() {
   return (
@@ -6,7 +6,7 @@ export function CustomStyles() {
       <Avatar>
         <Avatar.Image
           alt="Kate Wilson"
-          src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg"
+          src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg"
         />
         <Avatar.Fallback>KW</Avatar.Fallback>
       </Avatar>
