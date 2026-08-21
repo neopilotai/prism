@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { msg } from '@lingui/core/macro';
-import { CloseButton, useThemeColor } from 'prismui-native';
+import { CloseButton, useThemeColor } from '/native';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';
 import type { UsageVariant } from '../../../components/component-presentation/types';

@@ -5,7 +5,7 @@ Displays temporary notification messages that appear at the top or bottom of the
 ## Import
 
 ```tsx
-import { Toast, useToast } from 'prismui-native';
+import { Toast, useToast } from '/native';
 ```
 
 ## Anatomy
@@ -110,7 +110,7 @@ toast.show({
 ## Example
 
 ```tsx
-import { Button, Toast, useToast, useThemeColor } from 'prismui-native';
+import { Button, Toast, useToast, useThemeColor } from '/native';
 import { View } from 'react-native';
 
 export default function ToastExample() {
@@ -194,7 +194,7 @@ import {
   KeyboardAvoidingView,
   KeyboardProvider,
 } from 'react-native-keyboard-controller';
-import { PrismUINativeProvider } from 'prismui-native';
+import { PrismUINativeProvider } from '/native';
 import { useCallback } from 'react';
 
 function AppContent() {

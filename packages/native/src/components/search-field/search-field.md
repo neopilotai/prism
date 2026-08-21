@@ -5,7 +5,7 @@ A compound search input for filtering and querying content.
 ## Import
 
 ```tsx
-import { SearchField } from 'prismui-native';
+import { SearchField } from '/native';
 ```
 
 ## Anatomy
@@ -114,7 +114,7 @@ Set `isDisabled` on the root to disable all child components via context.
 ## Example
 
 ```tsx
-import { Description, Label, SearchField } from 'prismui-native';
+import { Description, Label, SearchField } from '/native';
 import { useState } from 'react';
 import { View } from 'react-native';
 
@@ -215,7 +215,7 @@ Automatically hidden when the controlled `value` is an empty string. Calls `onCh
 Hook to access the search field state from context. Must be used within a `SearchField` component.
 
 ```tsx
-import { useSearchField } from 'prismui-native';
+import { useSearchField } from '/native';
 
 const { value, onChange, isDisabled, isInvalid, isRequired } = useSearchField();
 ```

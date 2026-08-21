@@ -9,7 +9,7 @@ import {
   Label,
   TagGroup,
   useThemeColor,
-} from 'prismui-native';
+} from '/native';
 import React, { useMemo, useState } from 'react';
 import { View } from 'react-native';
 import Animated, { LinearTransition } from 'react-native-reanimated';

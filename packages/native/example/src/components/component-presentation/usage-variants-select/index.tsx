@@ -1,7 +1,7 @@
 import { useLingui } from '@lingui/react/macro';
 import * as Haptics from 'expo-haptics';
 import { LinearGradient } from 'expo-linear-gradient';
-import { colorKit, Select, useThemeColor } from 'prismui-native';
+import { colorKit, Select, useThemeColor } from '/native';
 import {
   FlatList,
   Platform,

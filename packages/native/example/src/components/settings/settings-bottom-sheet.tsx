@@ -6,7 +6,7 @@ import {
   Radio,
   RadioGroup,
   Separator,
-} from 'prismui-native';
+} from '/native';
 import { Fragment, type FC } from 'react';
 import { View } from 'react-native';
 import { useAppLocale } from '../../contexts/app-locale-context';

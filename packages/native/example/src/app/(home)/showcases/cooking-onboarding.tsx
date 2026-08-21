@@ -7,7 +7,7 @@ import {
   Separator,
   useThemeColor,
   type PopoverTriggerRef,
-} from 'prismui-native';
+} from '/native';
 import {
   useCallback,
   useEffect,

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "prismui-native": ["./src/index"]
+      "/native": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

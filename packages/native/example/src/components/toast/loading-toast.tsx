@@ -6,7 +6,7 @@ import {
   Toast,
   useThemeColor,
   type ToastComponentProps,
-} from 'prismui-native';
+} from '/native';
 import { useEffect } from 'react';
 import { View } from 'react-native';
 import { LinearTransition } from 'react-native-reanimated';

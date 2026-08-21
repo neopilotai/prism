@@ -1,6 +1,6 @@
 import type { BottomSheetFooterProps } from '@gorhom/bottom-sheet';
 import { useRouter } from 'expo-router';
-import { BottomSheet } from 'prismui-native';
+import { BottomSheet } from '/native';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { View } from 'react-native';
 import { SHOWCASE_PORTAL_HOST } from '../../../components/showcase-ltr-scope';

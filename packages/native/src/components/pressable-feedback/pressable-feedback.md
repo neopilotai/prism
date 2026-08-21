@@ -5,7 +5,7 @@ Container component that provides visual feedback for press interactions with au
 ## Import
 
 ```tsx
-import { PressableFeedback } from 'prismui-native';
+import { PressableFeedback } from '/native';
 ```
 
 ## Anatomy
@@ -146,7 +146,7 @@ You can also disable all animations while keeping a scale config (e.g. for toggl
 ## Example
 
 ```tsx
-import { PressableFeedback, Card, Button } from 'prismui-native';
+import { PressableFeedback, Card, Button } from '/native';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet, View, Text } from 'react-native';

@@ -7,7 +7,7 @@ authorHandle: "@jrgarciadev"
 authorUrl: "https://x.com/jrgarciadev"
 authorAvatar: "https://avatars.githubusercontent.com/u/30373425?v=4"
 tags: ["native", "react-native", "design-system", "figma", "ai"]
-image: "/images/blog/design-to-code-with-prismui-native.jpg"
+image: "/images/blog/design-to-code-with-/native.jpg"
 draft: true
 ---
 
@@ -42,7 +42,7 @@ PrismUI Native uses the same product-level ideas as the rest of the PrismUI ecos
 The implementation is native, not web. PrismUI Native uses React Native, Uniwind, `PrismUINativeProvider`, and mobile interaction patterns. But the design language stays familiar.
 
 ```tsx
-import {Button, Card} from "prismui-native";
+import {Button, Card} from "/native";
 
 <Card>
   <Card.Header>
@@ -86,11 +86,11 @@ PrismUI Native provides dedicated AI entry points:
 
 That matters because Native code has different rules:
 
-- Import from `prismui-native`.
+- Import from `/native`.
 - Use React Native press handlers such as `onPress`.
 - Configure `PrismUINativeProvider`.
 - Wrap the app with `GestureHandlerRootView`.
-- Use Uniwind and `prismui-native/styles`.
+- Use Uniwind and `/native/styles`.
 - Use Native component anatomy, not web component anatomy.
 
 The MCP server and skills help agents follow those rules.

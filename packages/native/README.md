@@ -1,14 +1,14 @@
 <p align="center">
   <a href="https://prism.khulnasoft.com">
-      <img width="100%" src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images/prismui-native-og.jpg" alt="prismui" />
+      <img width="100%" src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/images//native-og.jpg" alt="prismui" />
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/khulnasoft/prism/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue?style=flat" alt="Apache License 2.0">
   </a>
-  <a href="https://www.npmjs.com/package/prismui-native">
-    <img src="https://img.shields.io/npm/dm/prismui-native.svg?style=flat-round" alt="npm downloads">
+  <a href="https://www.npmjs.com/package//native">
+    <img src="https://img.shields.io/npm/dm//native.svg?style=flat-round" alt="npm downloads">
   </a>
 </p>
 

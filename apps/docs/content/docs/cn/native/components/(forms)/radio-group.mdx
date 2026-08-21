@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { RadioGroup } from 'prismui-native';
+import { RadioGroup } from '/native';
 ```
 
 ## 结构
@@ -64,7 +64,7 @@ import { RadioGroup } from 'prismui-native';
 在每个选项下方添加描述以补充上下文。
 
 ```tsx
-import { RadioGroup, Radio, Label, Description } from 'prismui-native';
+import { RadioGroup, Radio, Label, Description } from '/native';
 import { View } from 'react-native';
 
 <RadioGroup value={value} onValueChange={setValue}>
@@ -90,7 +90,7 @@ import { View } from 'react-native';
 使用 `Radio` 子组件将默认拇指替换为自定义内容。
 
 ```tsx
-import { RadioGroup, Radio, Label } from 'prismui-native';
+import { RadioGroup, Radio, Label } from '/native';
 
 <RadioGroup value={value} onValueChange={setValue}>
   <RadioGroup.Item value="custom">
@@ -117,7 +117,7 @@ import { RadioGroup, Radio, Label } from 'prismui-native';
 在 `RadioGroup.Item` 上使用渲染函数以访问状态并自定义整块内容。
 
 ```tsx
-import { RadioGroup, Radio, Label } from 'prismui-native';
+import { RadioGroup, Radio, Label } from '/native';
 
 <RadioGroup value={value} onValueChange={setValue}>
   <RadioGroup.Item value="option1">
@@ -138,7 +138,7 @@ import { RadioGroup, Radio, Label } from 'prismui-native';
 在单选组下方展示校验错误。
 
 ```tsx
-import { RadioGroup, FieldError } from 'prismui-native';
+import { RadioGroup, FieldError } from '/native';
 
 function RadioGroupWithError() {
   const [value, setValue] = React.useState<string | undefined>(undefined);
@@ -165,7 +165,7 @@ import {
   RadioGroup,
   Separator,
   Surface,
-} from 'prismui-native';
+} from '/native';
 import React from 'react';
 import { View } from 'react-native';
 

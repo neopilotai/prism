@@ -18,22 +18,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i prismui-native
+  npm i /native
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add prismui-native
+  pnpm add /native
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add prismui-native
+  yarn add /native
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add prismui-native
+  bun add /native
   ```
 </Tab>
 </Tabs>
@@ -78,7 +78,7 @@ The Alert component provides accessible alert messaging with built-in support fo
 **Usage:**
 
 ```tsx
-import { Alert } from "prismui-native";
+import { Alert } from "/native";
 
 export function Example() {
   return (
@@ -116,7 +116,7 @@ The [Select](/docs/native/components/select) component now includes a `TriggerIn
 **Usage:**
 
 ```tsx
-import { Select } from "prismui-native";
+import { Select } from "/native";
 
 <Select>
   <Select.Trigger>
@@ -197,7 +197,7 @@ Six components now support the unified `styles` prop for slot-based styling, pro
 **New Capability:**
 
 ```tsx
-import { Accordion, Label } from "prismui-native";
+import { Accordion, Label } from "/native";
 
 // Apply styles to specific slots
 <Label styles={{ text: { fontSize: 18 }, asterisk: { color: "red" } }} isRequired>
@@ -233,7 +233,7 @@ Portal-based components now support a `disableFullWindowOverlay` prop that enabl
 **New Capability:**
 
 ```tsx
-import { Dialog } from "prismui-native";
+import { Dialog } from "/native";
 
 // Enable element inspector support on iOS
 <Dialog>
@@ -259,7 +259,7 @@ A new lightweight provider variant, `PrismUINativeProviderRaw`, excludes `ToastP
 **New Capability:**
 
 ```tsx
-import { PrismUINativeProviderRaw } from "prismui-native/provider-raw";
+import { PrismUINativeProviderRaw } from "/native/provider-raw";
 
 // Lightweight provider without Toast and Portal dependencies
 export function App() {
@@ -282,7 +282,7 @@ The `Select.Trigger` component now supports a `variant` prop with `"default"` an
 **New Capability:**
 
 ```tsx
-import { Button, Select } from "prismui-native";
+import { Button, Select } from "/native";
 
 // Default variant (pre-styled trigger)
 <Select>
@@ -312,7 +312,7 @@ The [ControlField](/docs/native/components/control-field) component now supports
 **New Capability:**
 
 ```tsx
-import { ControlField } from "prismui-native";
+import { ControlField } from "/native";
 
 <ControlField>
   <ControlField.Indicator variant="radio" />
@@ -400,7 +400,7 @@ Replace all `RadioGroup.Indicator` and `RadioGroup.IndicatorThumb` usages with t
 
 ```tsx
 // Before
-import { RadioGroup } from "prismui-native";
+import { RadioGroup } from "/native";
 
 <RadioGroup>
   <RadioGroup.Item value="option1">
@@ -412,7 +412,7 @@ import { RadioGroup } from "prismui-native";
 </RadioGroup>
 
 // After
-import { Radio, RadioGroup } from "prismui-native";
+import { Radio, RadioGroup } from "/native";
 
 <RadioGroup>
   <RadioGroup.Item value="option1">

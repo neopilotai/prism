@@ -3,7 +3,7 @@ import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
 import * as Linking from 'expo-linking';
 import * as Updates from 'expo-updates';
-import { BottomSheet, Button } from 'prismui-native';
+import { BottomSheet, Button } from '/native';
 import type { FC } from 'react';
 import { Platform, View } from 'react-native';
 import { APP_STORE_URL } from '../../helpers/utils/version-check';

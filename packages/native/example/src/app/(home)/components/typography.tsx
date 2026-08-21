@@ -1,6 +1,6 @@
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
-import { Typography } from 'prismui-native';
+import { Typography } from '/native';
 import { View } from 'react-native';
 import type { UsageVariant } from '../../../components/component-presentation/types';
 import { UsageVariantFlatList } from '../../../components/component-presentation/usage-variant-flatlist';
@@ -68,7 +68,7 @@ const ParagraphsContent = () => {
 const CodeContent = () => {
   return (
     <View className="flex-1 justify-center px-5 gap-4">
-      <Typography.Code>npm install prismui-native</Typography.Code>
+      <Typography.Code>npm install /native</Typography.Code>
       <Typography.Code>{'const greeting = "Hello, world!";'}</Typography.Code>
       <Typography.Code>{'export default function App() { }'}</Typography.Code>
     </View>

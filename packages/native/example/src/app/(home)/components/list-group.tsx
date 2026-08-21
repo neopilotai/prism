@@ -7,7 +7,7 @@ import {
   PressableFeedback,
   Separator,
   useThemeColor,
-} from 'prismui-native';
+} from '/native';
 import type { ReactNode } from 'react';
 import { useState } from 'react';
 import { View } from 'react-native';

@@ -5,7 +5,7 @@ Input component for entering one-time passwords (OTP) with individual character 
 ## Import
 
 ```tsx
-import { InputOTP } from 'prismui-native';
+import { InputOTP } from '/native';
 ```
 
 ## Anatomy
@@ -140,7 +140,7 @@ Display validation errors when the OTP is invalid.
 Restrict input to specific character patterns using regex. Three predefined patterns are available: `REGEXP_ONLY_DIGITS` (matches digits 0-9), `REGEXP_ONLY_CHARS` (matches alphabetic characters a-z, A-Z), and `REGEXP_ONLY_DIGITS_AND_CHARS` (matches both digits and alphabetic characters).
 
 ```tsx
-import { InputOTP, REGEXP_ONLY_CHARS } from 'prismui-native';
+import { InputOTP, REGEXP_ONLY_CHARS } from '/native';
 
 <InputOTP
   maxLength={6}
@@ -195,7 +195,7 @@ When rendering an InputOTP inside a `BottomSheet`, use the `useBottomSheetAwareH
 > **Note**: `useBottomSheetAwareHandlers` must be used inside a `BottomSheet`. Call it from a child component rendered inside `BottomSheet.Content` — outside of a `BottomSheet` context the returned handlers are no-ops.
 
 ```tsx
-import { InputOTP, useBottomSheetAwareHandlers } from 'prismui-native';
+import { InputOTP, useBottomSheetAwareHandlers } from '/native';
 
 const BottomSheetOTPInput = () => {
   const { onFocus, onBlur } = useBottomSheetAwareHandlers();
@@ -221,7 +221,7 @@ const BottomSheetOTPInput = () => {
 ## Example
 
 ```tsx
-import { InputOTP, Label, Description, type InputOTPRef } from 'prismui-native';
+import { InputOTP, Label, Description, type InputOTPRef } from '/native';
 import { View } from 'react-native';
 import { useRef } from 'react';
 

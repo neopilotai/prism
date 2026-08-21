@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
-import { cn } from 'prismui-native';
+import { cn } from '/native';
 import { type FC } from 'react';
 import { Platform, TouchableOpacity } from 'react-native';
 import { withUniwind } from 'uniwind';

@@ -1,6 +1,6 @@
 import { useLingui } from '@lingui/react/macro';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Button, cn, ScrollShadow, Select, useThemeColor } from 'prismui-native';
+import { Button, cn, ScrollShadow, Select, useThemeColor } from '/native';
 import { useState } from 'react';
 import { TextInput, useWindowDimensions, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';

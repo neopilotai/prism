@@ -18,22 +18,22 @@ Beta 13 引入多行输入组件 TextArea、Button outline 变体，并为所有
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i prismui-native@beta
+  npm i /native@beta
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add prismui-native@beta
+  pnpm add /native@beta
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add prismui-native@beta
+  yarn add /native@beta
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add prismui-native@beta
+  bun add /native@beta
   ```
 </Tab>
 </Tabs>
@@ -106,7 +106,7 @@ TextArea 面向评论、消息、描述与较长表单字段等多行场景；�
 **用法：**
 
 ```tsx
-import { Description, Label, TextArea, TextField } from "prismui-native";
+import { Description, Label, TextArea, TextField } from "/native";
 
 export function Example() {
   return (
@@ -147,7 +147,7 @@ Input 现可作为独立组件使用，提供带边框与背景的单行输入�
 **用法：**
 
 ```tsx
-import { Description, Input, Label, TextField } from "prismui-native";
+import { Description, Input, Label, TextField } from "/native";
 
 export function Example() {
   return (
@@ -187,7 +187,7 @@ CloseButton 为关闭 Dialog、Modal、Popover 等遮罩提供统一实现：跨
 **用法：**
 
 ```tsx
-import { CloseButton } from "prismui-native";
+import { CloseButton } from "/native";
 
 // 独立使用
 <CloseButton onPress={handleClose} />
@@ -218,7 +218,7 @@ Tabs 新增 `Separator` 子组件，在触发器之间提供随当前选项卡�
 **用法：**
 
 ```tsx
-import { Tabs } from "prismui-native";
+import { Tabs } from "/native";
 
 <Tabs value={activeTab} onValueChange={setActiveTab}>
   <Tabs.List>
@@ -254,7 +254,7 @@ import { Tabs } from "prismui-native";
 **用法：**
 
 ```tsx
-import { Button } from "prismui-native";
+import { Button } from "/native";
 
 <Button variant="outline">Outline Button</Button>
 ```
@@ -336,26 +336,26 @@ Popover、Select、Dialog、BottomSheet 的动画系统已重构：统一进出�
 
 ```tsx
 // 细粒度导入——仅需少量组件时推荐
-import { PrismUINativeProvider } from "prismui-native/provider";
-import { Button } from "prismui-native/button";
-import { Card } from "prismui-native/card";
+import { PrismUINativeProvider } from "/native/provider";
+import { Button } from "/native/button";
+import { Card } from "/native/card";
 
 // 总入口导入——会拉取整库，适合大量使用组件时
-import { Button, Card } from "prismui-native";
+import { Button, Card } from "/native";
 ```
 
-细粒度导入适合只用少数组件的场景；从 `prismui-native` 总入口导入会包含完整库，适合全站大量使用。
+细粒度导入适合只用少数组件的场景；从 `/native` 总入口导入会包含完整库，适合全站大量使用。
 
 **可用细粒度路径：**
 
-- `prismui-native/provider` — Provider
-- `prismui-native/[component-name]` — 各组件
-- `prismui-native/portal` — Portal 工具
-- `prismui-native/utils` — 工具函数
-- `prismui-native/hooks` — 自定义 Hooks
+- `/native/provider` — Provider
+- `/native/[component-name]` — 各组件
+- `/native/portal` — Portal 工具
+- `/native/utils` — 工具函数
+- `/native/hooks` — 自定义 Hooks
 
 <Callout type="warning">
-  **重要**：为控制包体，请在整个项目中**一致地**使用细粒度导入。只要存在一处从 `prismui-native` 总入口的导入，摇树优化策略即可能失效。
+  **重要**：为控制包体，请在整个项目中**一致地**使用细粒度导入。只要存在一处从 `/native` 总入口的导入，摇树优化策略即可能失效。
 </Callout>
 
 **相关 PR：** [#233](https://github.com/khulnasoft/prism/pull/233)
@@ -367,7 +367,7 @@ import { Button, Card } from "prismui-native";
 **新能力：**
 
 ```tsx
-import { buttonClassNames } from "prismui-native";
+import { buttonClassNames } from "/native";
 
 const customStyles = {
   base: buttonClassNames.base,
@@ -462,11 +462,11 @@ Tabs 的 `variant` 由 `pill` / `line` 改为 `primary` / `secondary`，与其�
 
 ```tsx
 // 之前
-import { Divider } from "prismui-native";
+import { Divider } from "/native";
 <Divider />
 
 // 之后
-import { Separator } from "prismui-native";
+import { Separator } from "/native";
 <Separator />
 ```
 
@@ -506,14 +506,14 @@ import { Separator } from "prismui-native";
 
 ```tsx
 // 之前
-import { FormField, ErrorView, TextField } from "prismui-native";
+import { FormField, ErrorView, TextField } from "/native";
 <FormField>
   <TextField.Input />
   <ErrorView>Error message</ErrorView>
 </FormField>
 
 // 之后
-import { ControlField, FieldError, Input, TextField } from "prismui-native";
+import { ControlField, FieldError, Input, TextField } from "/native";
 <ControlField>
   <Input />
   <FieldError>Error message</FieldError>
@@ -526,13 +526,13 @@ import { ControlField, FieldError, Input, TextField } from "prismui-native";
 
 ```tsx
 // 之前
-import { TextField } from "prismui-native";
+import { TextField } from "/native";
 <TextField>
   <TextField.Input placeholder="Enter text..." />
 </TextField>
 
 // 之后
-import { Input, TextField } from "prismui-native";
+import { Input, TextField } from "/native";
 <TextField>
   <Input placeholder="Enter text..." />
 </TextField>
@@ -543,7 +543,7 @@ import { Input, TextField } from "prismui-native";
 `RadioGroup`、`TextField`、`ControlField` 现直接使用 `Label`、`Description`、`FieldError`：
 
 ```tsx
-import { ControlField, Description, FieldError, Input, Label, RadioGroup, TextField } from "prismui-native";
+import { ControlField, Description, FieldError, Input, Label, RadioGroup, TextField } from "/native";
 
 <TextField>
   <Label>Email</Label>
@@ -579,7 +579,7 @@ import { ControlField, Description, FieldError, Input, Label, RadioGroup, TextFi
 
 ```tsx
 // 之前
-import { Button, Dialog } from "prismui-native";
+import { Button, Dialog } from "/native";
 <Dialog>
   <Dialog.Close asChild>
     <Button>Cancel</Button>
@@ -587,7 +587,7 @@ import { Button, Dialog } from "prismui-native";
 </Dialog>
 
 // 之后：用受控 open + 自定义按钮处理关闭
-import { Button, Dialog } from "prismui-native";
+import { Button, Dialog } from "/native";
 const [isOpen, setIsOpen] = useState(false);
 <Dialog open={isOpen} onOpenChange={setIsOpen}>
   <Button onPress={() => setIsOpen(false)}>Cancel</Button>

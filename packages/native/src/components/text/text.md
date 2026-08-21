@@ -5,7 +5,7 @@ Primitive typography component for rendering styled text with semantic type vari
 ## Import
 
 ```tsx
-import { Typography } from 'prismui-native';
+import { Typography } from '/native';
 ```
 
 ## Anatomy
@@ -139,7 +139,7 @@ Use the `truncate` boolean prop to limit the text to a single line with an ellip
 ## Example
 
 ```tsx
-import { Typography } from 'prismui-native';
+import { Typography } from '/native';
 import { View } from 'react-native';
 
 export default function TypographyExample() {
@@ -153,7 +153,7 @@ export default function TypographyExample() {
       <Typography.Paragraph color="muted" type="body-sm">
         Smaller supporting text for captions or footnotes.
       </Typography.Paragraph>
-      <Typography.Code>npm install prismui-native</Typography.Code>
+      <Typography.Code>npm install /native</Typography.Code>
     </View>
   );
 }

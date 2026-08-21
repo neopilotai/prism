@@ -21,7 +21,7 @@ You can customize animations by passing an object to the `animation` prop. Each 
 Modify animation values like scale, opacity, or colors:
 
 ```tsx
-import {Switch} from 'prismui-native';
+import {Switch} from '/native';
 
 <Switch
   animation={{
@@ -41,7 +41,7 @@ import {Switch} from 'prismui-native';
 Customize animation timing and easing:
 
 ```tsx
-import {Accordion} from 'prismui-native';
+import {Accordion} from '/native';
 
 <Accordion>
   <Accordion.Item value="1">
@@ -68,7 +68,7 @@ import {Accordion} from 'prismui-native';
 Customize entering and exiting animations using Reanimated's layout animations:
 
 ```tsx
-import {Accordion} from 'prismui-native';
+import {Accordion} from '/native';
 import {FadeInRight, FadeInLeft, ZoomIn} from 'react-native-reanimated';
 import {Easing} from 'react-native-reanimated';
 
@@ -91,7 +91,7 @@ import {Easing} from 'react-native-reanimated';
 The `state` prop allows you to disable animations while still customizing animation properties. This is useful when you want to fine-tune component behavior without enabling animations:
 
 ```tsx
-import {Switch} from 'prismui-native';
+import {Switch} from '/native';
 
 <Switch
   animation={{
@@ -159,7 +159,7 @@ The `"disable-all"` option is only available at the root level of compound compo
 You can disable all PrismUI Native animations globally using the `PrismUINativeProvider`:
 
 ```tsx
-import {PrismUINativeProvider} from 'prismui-native';
+import {PrismUINativeProvider} from '/native';
 
 <PrismUINativeProvider
   config={{
@@ -186,7 +186,7 @@ We keep disabled state of animations under control internally to ensure they loo
 Many components support a render function pattern for children, which is particularly handy when working with state like `isSelected`:
 
 ```tsx
-import {Switch} from 'prismui-native';
+import {Switch} from '/native';
 
 <Switch
   isSelected={isSelected}

@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { SearchField } from 'prismui-native';
+import { SearchField } from '/native';
 ```
 
 ## 结构
@@ -124,7 +124,7 @@ import { SearchField } from 'prismui-native';
 ## 示例
 
 ```tsx
-import { Description, Label, SearchField } from 'prismui-native';
+import { Description, Label, SearchField } from '/native';
 import { useState } from 'react';
 import { View } from 'react-native';
 
@@ -225,7 +225,7 @@ export default function SearchFieldExample() {
 访问搜索字段上下文，必须在 `SearchField` 内使用。
 
 ```tsx
-import { useSearchField } from 'prismui-native';
+import { useSearchField } from '/native';
 
 const { value, onChange, isDisabled, isInvalid, isRequired } = useSearchField();
 ```

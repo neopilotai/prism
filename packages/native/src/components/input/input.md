@@ -5,7 +5,7 @@ A text input component with styled border and background for collecting user inp
 ## Import
 
 ```tsx
-import { Input } from 'prismui-native';
+import { Input } from '/native';
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ import { Input } from 'prismui-native';
 Input can be used standalone or within a TextField component.
 
 ```tsx
-import { Input } from 'prismui-native';
+import { Input } from '/native';
 
 <Input placeholder="Enter your email" />;
 ```
@@ -25,7 +25,7 @@ import { Input } from 'prismui-native';
 Input works seamlessly with TextField for complete form structure.
 
 ```tsx
-import { Input, Label, TextField } from 'prismui-native';
+import { Input, Label, TextField } from '/native';
 
 <TextField>
   <Label>Email</Label>
@@ -38,7 +38,7 @@ import { Input, Label, TextField } from 'prismui-native';
 Display error state when the input is invalid.
 
 ```tsx
-import { FieldError, Input, Label, TextField } from 'prismui-native';
+import { FieldError, Input, Label, TextField } from '/native';
 
 <TextField isRequired isInvalid={true}>
   <Label>Email</Label>
@@ -52,7 +52,7 @@ import { FieldError, Input, Label, TextField } from 'prismui-native';
 Override the context's invalid state for the input.
 
 ```tsx
-import { FieldError, Input, Label, TextField } from 'prismui-native';
+import { FieldError, Input, Label, TextField } from '/native';
 
 <TextField isInvalid={true}>
   <Label isInvalid={false}>Email</Label>
@@ -66,7 +66,7 @@ import { FieldError, Input, Label, TextField } from 'prismui-native';
 Disable the input to prevent interaction.
 
 ```tsx
-import { Input, Label, TextField } from 'prismui-native';
+import { Input, Label, TextField } from '/native';
 
 <TextField isDisabled>
   <Label>Disabled Field</Label>
@@ -79,7 +79,7 @@ import { Input, Label, TextField } from 'prismui-native';
 Use different variants to style the input based on context.
 
 ```tsx
-import { Input, Label, TextField } from 'prismui-native';
+import { Input, Label, TextField } from '/native';
 
 <TextField>
   <Label>Primary Variant</Label>
@@ -97,7 +97,7 @@ import { Input, Label, TextField } from 'prismui-native';
 Customize the input appearance using className.
 
 ```tsx
-import { Input, Label, TextField } from 'prismui-native';
+import { Input, Label, TextField } from '/native';
 
 <TextField>
   <Label>Custom Styled</Label>
@@ -115,7 +115,7 @@ When rendering an Input inside a `BottomSheet`, use the `useBottomSheetAwareHand
 > **Note**: `useBottomSheetAwareHandlers` must be used inside a `BottomSheet`. Call it from a child component rendered inside `BottomSheet.Content` — outside of a `BottomSheet` context the returned handlers are no-ops.
 
 ```tsx
-import { Input, TextField, useBottomSheetAwareHandlers } from 'prismui-native';
+import { Input, TextField, useBottomSheetAwareHandlers } from '/native';
 
 const BottomSheetTextInput = () => {
   const { onFocus, onBlur } = useBottomSheetAwareHandlers();
@@ -132,7 +132,7 @@ const BottomSheetTextInput = () => {
 
 ```tsx
 import { Ionicons } from '@expo/vector-icons';
-import { Description, Input, Label, TextField } from 'prismui-native';
+import { Description, Input, Label, TextField } from '/native';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 import { withUniwind } from 'uniwind';

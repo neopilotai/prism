@@ -8,7 +8,7 @@ import {
   Label,
   Separator,
   Surface,
-} from 'prismui-native';
+} from '/native';
 import React from 'react';
 import { View } from 'react-native';
 import Animated, { LinearTransition } from 'react-native-reanimated';

@@ -8,10 +8,10 @@ By default, the `PortalHost` is included in the `PrismUINativeProvider`, so ther
 
 ## Advanced Use Cases
 
-For advanced use cases, you can import `Portal` and `PortalHost` directly from `prismui-native` to create custom portal implementations:
+For advanced use cases, you can import `Portal` and `PortalHost` directly from `/native` to create custom portal implementations:
 
 ```tsx
-import { Portal, PortalHost } from "prismui-native";
+import { Portal, PortalHost } from "/native";
 import { View, Text } from "react-native";
 
 function AppLayout() {

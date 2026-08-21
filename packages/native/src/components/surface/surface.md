@@ -5,7 +5,7 @@ Container component that provides elevation and background styling.
 ## Import
 
 ```tsx
-import { Surface } from 'prismui-native';
+import { Surface } from '/native';
 ```
 
 ## Anatomy
@@ -88,7 +88,7 @@ Disable all animations including children by using the `"disable-all"` value for
 ## Example
 
 ```tsx
-import { Surface } from 'prismui-native';
+import { Surface } from '/native';
 import { Text, View } from 'react-native';
 
 export default function SurfaceExample() {

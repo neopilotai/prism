@@ -1,4 +1,4 @@
-import { Checkbox, Chip, ControlField, cn } from 'prismui-native';
+import { Checkbox, Chip, ControlField, cn } from '/native';
 import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useAppTheme } from '../../../contexts/app-theme-context';

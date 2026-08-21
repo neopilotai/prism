@@ -16,7 +16,7 @@ links:
 ## 导入
 
 ```tsx
-import { Popover } from 'prismui-native';
+import { Popover } from '/native';
 ```
 
 ## 结构
@@ -263,7 +263,7 @@ popoverRef.current?.close();
 
 ```tsx
 import { Ionicons } from '@expo/vector-icons';
-import { Button, Popover, useThemeColor } from 'prismui-native';
+import { Button, Popover, useThemeColor } from '/native';
 import { Text, View } from 'react-native';
 
 export default function PopoverExample() {
@@ -464,7 +464,7 @@ export default function PopoverExample() {
 在自定义或复合子组件中读取浮层上下文。
 
 ```tsx
-import { usePopover } from 'prismui-native';
+import { usePopover } from '/native';
 
 const CustomContent = () => {
   const { isOpen, onOpenChange, triggerPosition } = usePopover();
@@ -493,7 +493,7 @@ const CustomContent = () => {
 在自定义或复合子组件中读取浮层动画共享值。
 
 ```tsx
-import { usePopoverAnimation } from 'prismui-native';
+import { usePopoverAnimation } from '/native';
 
 const CustomContent = () => {
   const { progress, isDragging } = usePopoverAnimation();

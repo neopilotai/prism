@@ -5,7 +5,7 @@ A multiline text input component with styled border and background for collectin
 ## Import
 
 ```tsx
-import { TextArea } from 'prismui-native';
+import { TextArea } from '/native';
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ import { TextArea } from 'prismui-native';
 TextArea can be used standalone or within a TextField component.
 
 ```tsx
-import { TextArea } from 'prismui-native';
+import { TextArea } from '/native';
 
 <TextArea placeholder="Enter your message" />;
 ```
@@ -25,7 +25,7 @@ import { TextArea } from 'prismui-native';
 TextArea works seamlessly with TextField for complete form structure.
 
 ```tsx
-import { Description, Label, TextArea, TextField } from 'prismui-native';
+import { Description, Label, TextArea, TextField } from '/native';
 
 <TextField>
   <Label>Message</Label>
@@ -39,7 +39,7 @@ import { Description, Label, TextArea, TextField } from 'prismui-native';
 Display error state when the text area is invalid.
 
 ```tsx
-import { FieldError, Label, TextArea, TextField } from 'prismui-native';
+import { FieldError, Label, TextArea, TextField } from '/native';
 
 <TextField isRequired isInvalid={true}>
   <Label>Message</Label>
@@ -53,7 +53,7 @@ import { FieldError, Label, TextArea, TextField } from 'prismui-native';
 Disable the text area to prevent interaction.
 
 ```tsx
-import { Label, TextArea, TextField } from 'prismui-native';
+import { Label, TextArea, TextField } from '/native';
 
 <TextField isDisabled>
   <Label>Disabled Field</Label>
@@ -66,7 +66,7 @@ import { Label, TextArea, TextField } from 'prismui-native';
 Use different variants to style the text area based on context.
 
 ```tsx
-import { Label, TextArea, TextField } from 'prismui-native';
+import { Label, TextArea, TextField } from '/native';
 
 <TextField>
   <Label>Primary Variant</Label>
@@ -84,7 +84,7 @@ import { Label, TextArea, TextField } from 'prismui-native';
 Customize the text area appearance using className.
 
 ```tsx
-import { Label, TextArea, TextField } from 'prismui-native';
+import { Label, TextArea, TextField } from '/native';
 
 <TextField>
   <Label>Custom Styled</Label>
@@ -104,7 +104,7 @@ import {
   Label,
   TextArea,
   TextField,
-} from 'prismui-native';
+} from '/native';
 import { View } from 'react-native';
 
 export default function TextAreaExample() {

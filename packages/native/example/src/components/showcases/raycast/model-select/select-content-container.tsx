@@ -1,4 +1,4 @@
-import { Select, useSelect } from 'prismui-native';
+import { Select, useSelect } from '/native';
 import { useEffect, type FC, type PropsWithChildren } from 'react';
 import Animated, {
   Easing,

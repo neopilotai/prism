@@ -5,7 +5,7 @@ Displays a compact element in a capsule shape.
 ## Import
 
 ```tsx
-import { Chip } from 'prismui-native';
+import { Chip } from '/native';
 ```
 
 ## Anatomy
@@ -103,7 +103,7 @@ Disable all animations including children by using the `"disable-all"` value for
 ## Example
 
 ```tsx
-import { Chip } from 'prismui-native';
+import { Chip } from '/native';
 import { View, Text } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -186,7 +186,7 @@ Absolute-fill container rendered behind the chip surface. With no children, the 
 Hook to access the Chip context values. Returns the chip's size, variant, and color.
 
 ```tsx
-import { useChip } from 'prismui-native';
+import { useChip } from '/native';
 
 const { size, variant, color } = useChip();
 ```

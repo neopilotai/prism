@@ -1,7 +1,7 @@
 import { useLingui } from '@lingui/react/macro';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Stack } from 'expo-router';
-import { useThemeColor, useToast } from 'prismui-native';
+import { useThemeColor, useToast } from '/native';
 import { useCallback, useEffect, useState } from 'react';
 import { Image, Platform, StyleSheet, View } from 'react-native';
 import { useReducedMotion } from 'react-native-reanimated';

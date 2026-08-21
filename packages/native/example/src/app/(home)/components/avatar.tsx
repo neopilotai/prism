@@ -2,7 +2,7 @@
 import { msg } from '@lingui/core/macro';
 import { Image } from 'expo-image';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Avatar, cn } from 'prismui-native';
+import { Avatar, cn } from '/native';
 import { StyleSheet, Text, View } from 'react-native';
 import type { UsageVariant } from '../../../components/component-presentation/types';
 import { UsageVariantFlatList } from '../../../components/component-presentation/usage-variant-flatlist';

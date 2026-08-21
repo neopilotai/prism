@@ -16,22 +16,22 @@ icon: rocket
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npx create-prismui-native-app@latest
+    npx create-/native-app@latest
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm create prismui-native-app@latest
+    pnpm create /native-app@latest
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn create prismui-native-app
+    yarn create /native-app
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun create prismui-native-app@latest
+    bun create /native-app@latest
     ```
   </Tab>
 </Tabs>
@@ -60,13 +60,13 @@ Use the PrismUI Native MCP server (@khulnasoft/native-mcp) as the single source 
 
 Before making any changes:
 
-1. Analyze the project. Detect the package manager (npm / pnpm / yarn / bun), framework (Expo or bare React Native), TypeScript usage, and the location of node_modules. This matters for global.css — the @source path must be written relative to global.css itself and must resolve to node_modules/prismui-native/lib.
+1. Analyze the project. Detect the package manager (npm / pnpm / yarn / bun), framework (Expo or bare React Native), TypeScript usage, and the location of node_modules. This matters for global.css — the @source path must be written relative to global.css itself and must resolve to node_modules//native/lib.
 2. Read package.json and only install what is missing. Pin to the exact versions listed in the MCP quick-start to avoid compatibility issues.
 3. Inspect the app entry (App.tsx, app/_layout.tsx, index.tsx, etc.) and check whether GestureHandlerRootView already wraps the app. If it does, reuse it — do not nest a second GestureHandlerRootView.
 
 Then apply the setup:
 
-- Install prismui-native plus any missing mandatory+optional peer dependencies.
+- Install /native plus any missing mandatory+optional peer dependencies.
 - Set up Uniwind + Tailwind CSS (follow the Uniwind quickstart) and add the PrismUI Native imports plus the correct @source line to global.css.
 - Make sure GestureHandlerRootView wraps the entire app — it must be the outermost wrapper with style { flex: 1 }.
 - Add PrismUINativeProvider as a direct child of GestureHandlerRootView, wrapping the rest of the app.
@@ -81,22 +81,22 @@ When done, summarize the changes you made and tell me how to run the app on iOS 
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm install prismui-native
+    npm install /native
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add prismui-native
+    pnpm add /native
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add prismui-native
+    yarn add /native
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add prismui-native
+    bun add /native
     ```
   </Tab>
 </Tabs>
@@ -153,15 +153,15 @@ When done, summarize the changes you made and tell me how to run the app on iOS 
 @import 'tailwindcss';
 @import 'uniwind';
 
-@import 'prismui-native/styles';
+@import '/native/styles';
 
-/* Path to the prismui-native lib inside node_modules relative to global.css */
+/* Path to the /native lib inside node_modules relative to global.css */
 /* Examples:
- *   - If global.css is at project root: ./node_modules/prismui-native/lib
- *   - If global.css is in app/: ../node_modules/prismui-native/lib
- *   - If global.css is in src/styles/: ../../node_modules/prismui-native/lib
+ *   - If global.css is at project root: ./node_modules//native/lib
+ *   - If global.css is in app/: ../node_modules//native/lib
+ *   - If global.css is in src/styles/: ../../node_modules//native/lib
  */
-@source './node_modules/prismui-native/lib';
+@source './node_modules//native/lib';
 ```
 
 ### 6. 使用 Provider 包裹应用
@@ -169,7 +169,7 @@ When done, summarize the changes you made and tell me how to run the app on iOS 
 使用 `PrismUINativeProvider` 包裹应用，并务必外层再包一层 `GestureHandlerRootView`：
 
 ```tsx
-import { PrismUINativeProvider } from 'prismui-native';
+import { PrismUINativeProvider } from '/native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function App() {
@@ -186,7 +186,7 @@ export default function App() {
 ## 使用第一个组件
 
 ```tsx
-import { Button } from 'prismui-native';
+import { Button } from '/native';
 import { View } from 'react-native';
 
 export default function MyComponent() {
@@ -204,28 +204,28 @@ export default function MyComponent() {
 
 ```tsx
 // Granular imports - use when you need only a few components
-import { PrismUINativeProvider } from "prismui-native/provider";
-import { Button } from "prismui-native/button";
-import { Card } from "prismui-native/card";
+import { PrismUINativeProvider } from "/native/provider";
+import { Button } from "/native/button";
+import { Card } from "/native/card";
 
 // General import - imports the whole library, use when you're using many components
-import { Button, Card } from "prismui-native";
+import { Button, Card } from "/native";
 ```
 
-细粒度导入适合只用少量组件的场景，有助于控制包体。从 `prismui-native` 整体导入会包含完整库，适合在应用中广泛使用多组件时采用。
+细粒度导入适合只用少量组件的场景，有助于控制包体。从 `/native` 整体导入会包含完整库，适合在应用中广泛使用多组件时采用。
 
 **可用的细粒度入口：**
 
-- `prismui-native/provider` — Provider
-- `prismui-native/provider-raw` — 轻量 Provider（最小依赖起点）
-- `prismui-native/[component-name]` — 单个组件
-- `prismui-native/portal` — Portal 工具
-- `prismui-native/toast` — Toast Provider 与工具
-- `prismui-native/utils` — 工具函数
-- `prismui-native/hooks` — 自定义 Hooks
+- `/native/provider` — Provider
+- `/native/provider-raw` — 轻量 Provider（最小依赖起点）
+- `/native/[component-name]` — 单个组件
+- `/native/portal` — Portal 工具
+- `/native/toast` — Toast Provider 与工具
+- `/native/utils` — 工具函数
+- `/native/hooks` — 自定义 Hooks
 
 <Callout type="warning">
-  **重要：** 为控制包体，请**始终**坚持使用细粒度导入策略。只要存在一处从 `prismui-native` 的整体导入，就可能使上述优化失效。
+  **重要：** 为控制包体，请**始终**坚持使用细粒度导入策略。只要存在一处从 `/native` 的整体导入，就可能使上述优化失效。
 </Callout>
 
 > **提示：** 若需要更强控制，可使用 [`PrismUINativeProviderRaw`](/docs/native/getting-started/provider#raw-provider) — 轻量 Provider，不包含 `ToastProvider` 与 `PortalHost`。

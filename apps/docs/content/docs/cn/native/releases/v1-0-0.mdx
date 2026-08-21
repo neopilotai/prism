@@ -10,7 +10,7 @@ github:
 </div>
 
 <VideoPlayer
-  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-native-v1-release-.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos//native-v1-release-.mp4"
   height={430}
   muted
 />
@@ -24,22 +24,22 @@ github:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i prismui-native
+  npm i /native
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add prismui-native
+  pnpm add /native
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add prismui-native
+  yarn add /native
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add prismui-native
+  bun add /native
   ```
 </Tab>
 </Tabs>
@@ -102,7 +102,7 @@ github:
 **用法：**
 
 ```tsx
-import { LinkButton } from "prismui-native";
+import { LinkButton } from "/native";
 
 export function TermsLink() {
   return (
@@ -146,7 +146,7 @@ export function TermsLink() {
 **新行为：**
 
 ```tsx
-import { useThemeColor } from "prismui-native";
+import { useThemeColor } from "/native";
 
 // 正确 — 直接赋值
 const mutedColor = useThemeColor("muted");
@@ -166,7 +166,7 @@ const [color] = useThemeColor("muted"); // color: never
 **用法：**
 
 ```tsx
-import { useBottomSheetAwareHandlers, Input } from "prismui-native";
+import { useBottomSheetAwareHandlers, Input } from "/native";
 
 export function BottomSheetInput() {
   const { onFocus, onBlur } = useBottomSheetAwareHandlers();
@@ -190,7 +190,7 @@ export function BottomSheetInput() {
 <Input isBottomSheetAware placeholder="Type here..." />
 
 // 之后
-import { useBottomSheetAwareHandlers } from "prismui-native";
+import { useBottomSheetAwareHandlers } from "/native";
 
 const { onFocus, onBlur } = useBottomSheetAwareHandlers();
 <Input onFocus={onFocus} onBlur={onBlur} placeholder="Type here..." />

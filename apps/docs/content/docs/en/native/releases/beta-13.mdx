@@ -18,22 +18,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i prismui-native@beta
+  npm i /native@beta
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add prismui-native@beta
+  pnpm add /native@beta
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add prismui-native@beta
+  yarn add /native@beta
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add prismui-native@beta
+  bun add /native@beta
   ```
 </Tab>
 </Tabs>
@@ -80,7 +80,7 @@ The TextArea component provides a complete solution for multiline text input sce
 **Usage:**
 
 ```tsx
-import { Description, Label, TextArea, TextField } from "prismui-native";
+import { Description, Label, TextArea, TextField } from "/native";
 
 export function Example() {
   return (
@@ -121,7 +121,7 @@ The Input component is now available as a standalone component, providing single
 **Usage:**
 
 ```tsx
-import { Description, Input, Label, TextField } from "prismui-native";
+import { Description, Input, Label, TextField } from "/native";
 
 export function Example() {
   return (
@@ -161,7 +161,7 @@ The CloseButton component provides a reusable solution for closing dialogs, moda
 **Usage:**
 
 ```tsx
-import { CloseButton } from "prismui-native";
+import { CloseButton } from "/native";
 
 // Standalone usage
 <CloseButton onPress={handleClose} />
@@ -192,7 +192,7 @@ The Tabs component now includes a new `Separator` subcomponent that provides ani
 **Usage:**
 
 ```tsx
-import { Tabs } from "prismui-native";
+import { Tabs } from "/native";
 
 <Tabs value={activeTab} onValueChange={setActiveTab}>
   <Tabs.List>
@@ -228,7 +228,7 @@ The [Button](/docs/native/components/button) component now includes an `outline`
 **Usage:**
 
 ```tsx
-import { Button } from "prismui-native";
+import { Button } from "/native";
 
 <Button variant="outline">Outline Button</Button>
 ```
@@ -312,26 +312,26 @@ The library now provides granular exports for each component, allowing developer
 
 ```tsx
 // Granular imports - use when you need only a few components
-import { PrismUINativeProvider } from "prismui-native/provider";
-import { Button } from "prismui-native/button";
-import { Card } from "prismui-native/card";
+import { PrismUINativeProvider } from "/native/provider";
+import { Button } from "/native/button";
+import { Card } from "/native/card";
 
 // General import - imports the whole library, use when you're using many components
-import { Button, Card } from "prismui-native";
+import { Button, Card } from "/native";
 ```
 
-Granular imports are ideal when you only need a few components, as they help keep your bundle size smaller. General imports from `prismui-native` will include the entire library, which is convenient when you're using many components throughout your app.
+Granular imports are ideal when you only need a few components, as they help keep your bundle size smaller. General imports from `/native` will include the entire library, which is convenient when you're using many components throughout your app.
 
 **Available granular exports:**
 
-- `prismui-native/provider` - Provider component
-- `prismui-native/[component-name]` - Individual components
-- `prismui-native/portal` - Portal utilities
-- `prismui-native/utils` - Utility functions
-- `prismui-native/hooks` - Custom hooks
+- `/native/provider` - Provider component
+- `/native/[component-name]` - Individual components
+- `/native/portal` - Portal utilities
+- `/native/utils` - Utility functions
+- `/native/hooks` - Custom hooks
 
 <Callout type="warning">
-  **Important**: To keep the bundle size under control, you must follow the pattern with granular imports consistently. Even one general import from `prismui-native` will break this optimization strategy.
+  **Important**: To keep the bundle size under control, you must follow the pattern with granular imports consistently. Even one general import from `/native` will break this optimization strategy.
 </Callout>
 
 **Related PR:** [#233](https://github.com/khulnasoft/prism/pull/233)
@@ -343,7 +343,7 @@ All components now export their style class names, enabling developers to refere
 **New Capability:**
 
 ```tsx
-import { buttonClassNames } from "prismui-native";
+import { buttonClassNames } from "/native";
 
 // Access component class names programmatically
 const customStyles = {
@@ -457,12 +457,12 @@ Update all imports and usages:
 
 ```tsx
 // Before
-import { Divider } from "prismui-native";
+import { Divider } from "/native";
 
 <Divider />
 
 // After
-import { Separator } from "prismui-native";
+import { Separator } from "/native";
 
 <Separator />
 ```
@@ -526,7 +526,7 @@ Update all imports and usages:
 
 ```tsx
 // Before
-import { FormField, ErrorView, TextField } from "prismui-native";
+import { FormField, ErrorView, TextField } from "/native";
 
 <FormField>
   <TextField.Input />
@@ -534,7 +534,7 @@ import { FormField, ErrorView, TextField } from "prismui-native";
 </FormField>
 
 // After
-import { ControlField, FieldError, Input, TextField } from "prismui-native";
+import { ControlField, FieldError, Input, TextField } from "/native";
 
 <ControlField>
   <Input />
@@ -548,14 +548,14 @@ The `TextField.Input` subcomponent has been removed. Use the standalone `Input` 
 
 ```tsx
 // Before
-import { TextField } from "prismui-native";
+import { TextField } from "/native";
 
 <TextField>
   <TextField.Input placeholder="Enter text..." />
 </TextField>
 
 // After
-import { Input, TextField } from "prismui-native";
+import { Input, TextField } from "/native";
 
 <TextField>
   <Input placeholder="Enter text..." />
@@ -567,7 +567,7 @@ import { Input, TextField } from "prismui-native";
 `RadioGroup`, `TextField`, and `ControlField` now use `Label`, `Description`, and `FieldError` components directly, providing more flexible composition:
 
 ```tsx
-import { ControlField, Description, FieldError, Input, Label, RadioGroup, TextField } from "prismui-native";
+import { ControlField, Description, FieldError, Input, Label, RadioGroup, TextField } from "/native";
 
 // TextField with Label, Description, and FieldError
 <TextField>
@@ -608,7 +608,7 @@ Update any usage of `asChild` prop on Close components:
 
 ```tsx
 // Before
-import { Button, Dialog } from "prismui-native";
+import { Button, Dialog } from "/native";
 
 <Dialog>
   <Dialog.Close asChild>
@@ -617,7 +617,7 @@ import { Button, Dialog } from "prismui-native";
 </Dialog>
 
 // After
-import { Button, Dialog } from "prismui-native";
+import { Button, Dialog } from "/native";
 
 const [isOpen, setIsOpen] = useState(false);
 

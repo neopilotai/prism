@@ -13,7 +13,7 @@ description: PrismUI Native 的全部更新与变更，包括新功能、问题�
 
 **2026 年 7 月**
 
-本版本为整个库带来从右到左（RTL）布局支持：组件样式迁移到 Yoga 逻辑属性，Slider、Skeleton、Switch、Tabs、InputGroup、Popover 与 Menu 中对方向敏感的行为通过全新的 `isRTL` provider 配置解析，并提供 `LayoutDirectionScope` 作为子树的应急出口。同时让 `prismui-native/styles` 自行声明 `@source`，因此类名扫描不再依赖硬编码的 `node_modules` 路径。Card.Header 与 TagGroup.List 改变了子元素的对齐方式，两者均可用一行覆盖恢复。
+本版本为整个库带来从右到左（RTL）布局支持：组件样式迁移到 Yoga 逻辑属性，Slider、Skeleton、Switch、Tabs、InputGroup、Popover 与 Menu 中对方向敏感的行为通过全新的 `isRTL` provider 配置解析，并提供 `LayoutDirectionScope` 作为子树的应急出口。同时让 `/native/styles` 自行声明 `@source`，因此类名扫描不再依赖硬编码的 `node_modules` 路径。Card.Header 与 TagGroup.List 改变了子元素的对齐方式，两者均可用一行覆盖恢复。
 
 [阅读完整更新说明 →](/docs/native/releases/v1-0-8)
 
@@ -53,9 +53,9 @@ description: PrismUI Native 的全部更新与变更，包括新功能、问题�
 
 **2026 年 6 月**
 
-🎉 全新的 CLI，用于一键创建 PrismUI Native 项目。`npx create-prismui-native-app@latest my-app` 即可生成一个完整的 Expo Router 应用，内置 PrismUI Native、Uniwind、Tailwind CSS、所有必需的 peer 依赖以及 Provider 包装 —— 还可在单页面与 Tabs 两套起始模板中任选其一。
+🎉 全新的 CLI，用于一键创建 PrismUI Native 项目。`npx create-/native-app@latest my-app` 即可生成一个完整的 Expo Router 应用，内置 PrismUI Native、Uniwind、Tailwind CSS、所有必需的 peer 依赖以及 Provider 包装 —— 还可在单页面与 Tabs 两套起始模板中任选其一。
 
-[阅读完整更新说明 →](/docs/native/releases/create-prismui-native-app)
+[阅读完整更新说明 →](/docs/native/releases/create-/native-app)
 
 ---
 
@@ -63,7 +63,7 @@ description: PrismUI Native 的全部更新与变更，包括新功能、问题�
 
 **2026 年 5 月**
 
-本补丁版本将 `Text` 排版组件重命名为 `Typography`（保留 `Text` 的弃用导出以兼容旧代码），调整 `Alert`、`Avatar`、`Button`、`Chip`、`Toast` 等组件的 soft 前景色主题令牌，并新增可选的 `prismui-native/styles/vibrant` 鲜亮配色；为 `Menu`、`Popover`、`Select` 补充 iOS 原生模态偏移的处理说明；将示例应用升级至 Expo 56 / React Native 0.85，并将 `@gorhom/bottom-sheet` 对等依赖升至 `^5.2.9`。
+本补丁版本将 `Text` 排版组件重命名为 `Typography`（保留 `Text` 的弃用导出以兼容旧代码），调整 `Alert`、`Avatar`、`Button`、`Chip`、`Toast` 等组件的 soft 前景色主题令牌，并新增可选的 `/native/styles/vibrant` 鲜亮配色；为 `Menu`、`Popover`、`Select` 补充 iOS 原生模态偏移的处理说明；将示例应用升级至 Expo 56 / React Native 0.85，并将 `@gorhom/bottom-sheet` 对等依赖升至 `^5.2.9`。
 
 [阅读完整更新说明 →](/docs/native/releases/v1-0-4)
 

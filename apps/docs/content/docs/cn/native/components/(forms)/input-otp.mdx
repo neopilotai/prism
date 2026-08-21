@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { InputOTP } from 'prismui-native';
+import { InputOTP } from '/native';
 ```
 
 ## 结构
@@ -150,7 +150,7 @@ const [value, setValue] = useState('');
 使用正则限制可输入字符。内置：`REGEXP_ONLY_DIGITS`（0–9）、`REGEXP_ONLY_CHARS`（a–z、A–Z）、`REGEXP_ONLY_DIGITS_AND_CHARS`（数字与字母）。
 
 ```tsx
-import { InputOTP, REGEXP_ONLY_CHARS } from 'prismui-native';
+import { InputOTP, REGEXP_ONLY_CHARS } from '/native';
 
 <InputOTP
   maxLength={6}
@@ -203,7 +203,7 @@ import { InputOTP, REGEXP_ONLY_CHARS } from 'prismui-native';
 在 `BottomSheet` 中渲染 `InputOTP` 时，使用 `useBottomSheetAwareHandlers` 返回的 `onFocus` / `onBlur` 传给 `InputOTP`，以正确处理键盘避让。
 
 ```tsx
-import { InputOTP, useBottomSheetAwareHandlers } from 'prismui-native';
+import { InputOTP, useBottomSheetAwareHandlers } from '/native';
 
 const BottomSheetOTPInput = () => {
   const { onFocus, onBlur } = useBottomSheetAwareHandlers();
@@ -229,7 +229,7 @@ const BottomSheetOTPInput = () => {
 ## 示例
 
 ```tsx
-import { InputOTP, Label, Description, type InputOTPRef } from 'prismui-native';
+import { InputOTP, Label, Description, type InputOTPRef } from '/native';
 import { View } from 'react-native';
 import { useRef } from 'react';
 

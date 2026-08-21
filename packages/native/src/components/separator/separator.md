@@ -5,7 +5,7 @@ A simple line to separate content visually.
 ## Import
 
 ```tsx
-import { Separator } from 'prismui-native';
+import { Separator } from '/native';
 ```
 
 ## Anatomy
@@ -66,7 +66,7 @@ Set a specific thickness value for precise control.
 ## Example
 
 ```tsx
-import { Separator, Surface } from 'prismui-native';
+import { Separator, Surface } from '/native';
 import { Text, View } from 'react-native';
 
 export default function SeparatorExample() {

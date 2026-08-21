@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { Input } from 'prismui-native';
+import { Input } from '/native';
 ```
 
 ## 用法
@@ -25,7 +25,7 @@ import { Input } from 'prismui-native';
 `Input` 可单独使用，也可放在 `TextField` 内。
 
 ```tsx
-import { Input } from 'prismui-native';
+import { Input } from '/native';
 
 <Input placeholder="请输入邮箱" />;
 ```
@@ -35,7 +35,7 @@ import { Input } from 'prismui-native';
 与 `TextField` 搭配形成完整表单结构。
 
 ```tsx
-import { Input, Label, TextField } from 'prismui-native';
+import { Input, Label, TextField } from '/native';
 
 <TextField>
   <Label>邮箱</Label>
@@ -48,7 +48,7 @@ import { Input, Label, TextField } from 'prismui-native';
 非法时展示错误样式。
 
 ```tsx
-import { FieldError, Input, Label, TextField } from 'prismui-native';
+import { FieldError, Input, Label, TextField } from '/native';
 
 <TextField isRequired isInvalid={true}>
   <Label>邮箱</Label>
@@ -62,7 +62,7 @@ import { FieldError, Input, Label, TextField } from 'prismui-native';
 在输入上覆盖上下文中的非法状态。
 
 ```tsx
-import { FieldError, Input, Label, TextField } from 'prismui-native';
+import { FieldError, Input, Label, TextField } from '/native';
 
 <TextField isInvalid={true}>
   <Label isInvalid={false}>邮箱</Label>
@@ -76,7 +76,7 @@ import { FieldError, Input, Label, TextField } from 'prismui-native';
 禁用输入，阻止交互。
 
 ```tsx
-import { Input, Label, TextField } from 'prismui-native';
+import { Input, Label, TextField } from '/native';
 
 <TextField isDisabled>
   <Label>禁用字段</Label>
@@ -89,7 +89,7 @@ import { Input, Label, TextField } from 'prismui-native';
 按场景使用不同视觉变体。
 
 ```tsx
-import { Input, Label, TextField } from 'prismui-native';
+import { Input, Label, TextField } from '/native';
 
 <TextField>
   <Label>主要变体</Label>
@@ -107,7 +107,7 @@ import { Input, Label, TextField } from 'prismui-native';
 通过 `className` 自定义外观。
 
 ```tsx
-import { Input, Label, TextField } from 'prismui-native';
+import { Input, Label, TextField } from '/native';
 
 <TextField>
   <Label>自定义样式</Label>
@@ -123,7 +123,7 @@ import { Input, Label, TextField } from 'prismui-native';
 在 `BottomSheet` 中渲染 `Input` 时，使用 `useBottomSheetAwareHandlers` 连接键盘避让：将返回的 `onFocus`、`onBlur` 传给 `Input`。
 
 ```tsx
-import { Input, TextField, useBottomSheetAwareHandlers } from 'prismui-native';
+import { Input, TextField, useBottomSheetAwareHandlers } from '/native';
 
 const BottomSheetTextInput = () => {
   const { onFocus, onBlur } = useBottomSheetAwareHandlers();
@@ -144,7 +144,7 @@ const BottomSheetTextInput = () => {
 
 ```tsx
 import { Ionicons } from '@expo/vector-icons';
-import { Description, Input, Label, TextField } from 'prismui-native';
+import { Description, Input, Label, TextField } from '/native';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 import { withUniwind } from 'uniwind';

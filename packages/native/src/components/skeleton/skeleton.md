@@ -5,7 +5,7 @@ Displays a loading placeholder with shimmer or pulse animation effects.
 ## Import
 
 ```tsx
-import { Skeleton } from 'prismui-native';
+import { Skeleton } from '/native';
 ```
 
 ## Anatomy
@@ -117,7 +117,7 @@ Apply custom Reanimated transitions when skeleton appears or disappears.
 ## Example
 
 ```tsx
-import { Avatar, Card, Skeleton } from 'prismui-native';
+import { Avatar, Card, Skeleton } from '/native';
 import { useState } from 'react';
 import { Image, Text, View } from 'react-native';
 

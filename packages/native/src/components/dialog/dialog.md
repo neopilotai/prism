@@ -5,7 +5,7 @@ Displays a modal overlay with animated transitions and gesture-based dismissal.
 ## Import
 
 ```tsx
-import { Dialog } from 'prismui-native';
+import { Dialog } from '/native';
 ```
 
 ## Anatomy
@@ -113,7 +113,7 @@ Dialog with text inputs and keyboard handling.
 ## Example
 
 ```tsx
-import { Button, Dialog } from 'prismui-native';
+import { Button, Dialog } from '/native';
 import { View } from 'react-native';
 import { useState } from 'react';
 

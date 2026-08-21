@@ -16,7 +16,7 @@ links:
 ## 导入
 
 ```tsx
-import { Menu, SubMenu } from 'prismui-native';
+import { Menu, SubMenu } from '/native';
 ```
 
 ## 结构
@@ -334,8 +334,8 @@ const [textStyles, setTextStyles] = useState<Set<MenuKey>>(
 ## 示例
 
 ```tsx
-import type { MenuKey } from 'prismui-native';
-import { Button, Menu, Separator } from 'prismui-native';
+import type { MenuKey } from '/native';
+import { Button, Menu, Separator } from '/native';
 import { useState } from 'react';
 import { Text, View } from 'react-native';
 
@@ -754,7 +754,7 @@ SubMenu 根组件动画配置，可为：
 访问菜单根上下文，须在 `Menu` 内使用。
 
 ```tsx
-import { useMenu } from 'prismui-native';
+import { useMenu } from '/native';
 
 const { isOpen, onOpenChange, presentation, isDisabled } = useMenu();
 ```
@@ -774,7 +774,7 @@ const { isOpen, onOpenChange, presentation, isDisabled } = useMenu();
 访问菜单项上下文，须在 `Menu.Item` 内使用。
 
 ```tsx
-import { useMenuItem } from 'prismui-native';
+import { useMenuItem } from '/native';
 
 const { id, isSelected, isDisabled, variant } = useMenuItem();
 ```
@@ -793,7 +793,7 @@ const { id, isSelected, isDisabled, variant } = useMenuItem();
 访问菜单动画上下文，须在 `Menu` 内使用。
 
 ```tsx
-import { useMenuAnimation } from 'prismui-native';
+import { useMenuAnimation } from '/native';
 
 const { progress, isDragging } = useMenuAnimation();
 ```
@@ -810,7 +810,7 @@ const { progress, isDragging } = useMenuAnimation();
 访问子菜单上下文，须在 `SubMenu` 内使用。
 
 ```tsx
-import { useSubMenu } from 'prismui-native';
+import { useSubMenu } from '/native';
 
 const { isOpen, onOpenChange, isDisabled } = useSubMenu();
 ```

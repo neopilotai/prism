@@ -1,6 +1,6 @@
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { BlurView } from 'expo-blur';
-import { cn, Select, useSelect } from 'prismui-native';
+import { cn, Select, useSelect } from '/native';
 import { type FC } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import { withUniwind } from 'uniwind';

@@ -28,13 +28,13 @@ description: 面向 React 与 React Native 的彻底重写。75+ Web 组件、37
 37 个组件，共享同一套设计 token、采用复合组件模式、统一的动画 API，以及自适应的呈现模式。每个平台都基于原生实现，并通过 [Uniwind](https://uniwind.dev/) 提供 Tailwind CSS v4 的支持。
 
 <VideoPlayer
-  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-native-v1-release-.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos//native-v1-release-.mp4"
   playMode="manual"
   height={430}
   muted
 />
 
-[查看详情](#prismui-native)
+[查看详情](#/native)
 
 ### PrismUI Pro
 
@@ -394,7 +394,7 @@ MCP 服务器、Agent Skills、LLMs.txt——三层组合让 AI 助手能像人�
 ## PrismUI Native
 
 <VideoPlayer
-  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-native-v1-release-.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos//native-v1-release-.mp4"
   height={430}
   muted
 />
@@ -426,7 +426,7 @@ PrismUI Native 是与 v3 网页版同时推出的全新组件库。渲染引擎�
 涵盖表单、导航、浮层、反馈与布局。从 Button、Input、Checkbox，到 Dialog、BottomSheet、Select、Toast 与 InputOTP，所有组件都遵循复合组件模式：
 
 ```tsx
-import { Dialog, Button } from "prismui-native";
+import { Dialog, Button } from "/native";
 
 <Dialog>
   <Dialog.Trigger asChild>
@@ -495,7 +495,7 @@ import { View, Text } from "react-native";
 每一个带动画的原生组件都只暴露一个 `animation` prop。数值、时长、弹簧参数、进出场过渡都集中在这里配置。底层由 Reanimated 负责计算，但你完全不需要直接接触它：
 
 ```tsx
-import { Switch } from "prismui-native";
+import { Switch } from "/native";
 
 <Switch
   animation={{
@@ -547,9 +547,9 @@ Popover、Select 与 Menu 通过一个 prop 即可在 popover、bottom-sheet 与
 每一个原生组件都有自己的入口路径，只引入你实际用到的部分即可：
 
 ```tsx
-import { PrismUINativeProvider } from "prismui-native/provider";
-import { Button } from "prismui-native/button";
-import { Card } from "prismui-native/card";
+import { PrismUINativeProvider } from "/native/provider";
+import { Button } from "/native/button";
+import { Card } from "/native/card";
 ```
 
 ### Native 端的 AI 工具
@@ -559,7 +559,7 @@ PrismUI Native 也配套提供了自己的 MCP 服务器、Agent Skills 与 LLMs
 ```json
 {
   "mcpServers": {
-    "prismui-native": {
+    "/native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -633,22 +633,22 @@ Pro 许可包含高级版的 MCP 服务器与 Agent Skills，并内置 Pro 组�
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm install prismui-native
+    npm install /native
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add prismui-native
+    pnpm add /native
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add prismui-native
+    yarn add /native
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add prismui-native
+    bun add /native
     ```
   </Tab>
 </Tabs>

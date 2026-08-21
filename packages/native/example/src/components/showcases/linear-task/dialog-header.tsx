@@ -1,4 +1,4 @@
-import { Dialog } from 'prismui-native';
+import { Dialog } from '/native';
 import { type FC, type PropsWithChildren } from 'react';
 import { View } from 'react-native';
 import { AppText } from '../../app-text';

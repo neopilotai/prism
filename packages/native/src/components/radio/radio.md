@@ -5,7 +5,7 @@ An individual radio option that indicates a single selection from a set of choic
 ## Import
 
 ```tsx
-import { Radio } from 'prismui-native';
+import { Radio } from '/native';
 ```
 
 ## Anatomy
@@ -158,7 +158,7 @@ import {
   RadioGroup,
   Separator,
   Surface,
-} from 'prismui-native';
+} from '/native';
 import React from 'react';
 import { View, Text } from 'react-native';
 
@@ -330,7 +330,7 @@ Animation configuration for radio indicator thumb component. Can be:
 Hook to access radio context values within custom components or compound components.
 
 ```tsx
-import { useRadio } from 'prismui-native';
+import { useRadio } from '/native';
 
 const CustomIndicator = () => {
   const { isSelected, isDisabled, isInvalid, variant } = useRadio();

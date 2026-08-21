@@ -38,7 +38,7 @@ Use semantic naming (primary, secondary, tertiary) instead of visual description
 Accessibility follows mobile development best practices with proper touch accessibility, focus management, and screen reader support built into every component. All components include proper accessibility labels and semantic structure for VoiceOver (iOS) and TalkBack (Android).
 
 ```tsx
-import { Tabs } from 'prismui-native';
+import { Tabs } from '/native';
 
 <Tabs value="profile" onValueChange={setActiveTab}>
   <Tabs.List>
@@ -61,7 +61,7 @@ Compound components let you rearrange, customize, or omit parts as needed. Use d
 
 ```tsx
 // Compose parts to build exactly what you need
-import { Accordion } from 'prismui-native';
+import { Accordion } from '/native';
 
 <Accordion>
   <Accordion.Item value="1">
@@ -79,7 +79,7 @@ import { Accordion } from 'prismui-native';
 Start simple, add complexity only when needed. Components work with minimal props and scale up as requirements grow.
 
 ```tsx
-import { Button, Spinner } from 'prismui-native';
+import { Button, Spinner } from '/native';
 import { Feather } from '@expo/vector-icons';
 
 // Level 1: Minimal
@@ -109,7 +109,7 @@ import { Feather } from '@expo/vector-icons';
 Consistent patterns across all components: sizes (`sm`, `md`, `lg`), variants, and className support. Same API, same behavior.
 
 ```tsx
-import { Button, Chip, Avatar } from 'prismui-native';
+import { Button, Chip, Avatar } from '/native';
 
 // All components follow the same patterns
 <Button size="lg" variant="primary" className="custom">
@@ -128,7 +128,7 @@ import { Button, Chip, Avatar } from 'prismui-native';
 Full TypeScript support with IntelliSense, auto-completion, and compile-time error detection. Extend types for custom components.
 
 ```tsx
-import type { ButtonRootProps } from 'prismui-native';
+import type { ButtonRootProps } from '/native';
 
 // Type-safe props and event handlers
 <Button
@@ -180,8 +180,8 @@ Beautiful defaults out-of-the-box. Transform the entire look with CSS variables 
 Wrap, extend, and customize components to match your needs. Create custom wrappers or apply custom styles using className.
 
 ```tsx
-import { Button } from 'prismui-native';
-import type { ButtonRootProps } from 'prismui-native';
+import { Button } from '/native';
+import type { ButtonRootProps } from '/native';
 
 // Custom wrapper component
 interface CTAButtonProps extends Omit<ButtonRootProps, 'variant'> {
@@ -214,7 +214,7 @@ const CTAButton = ({
 **Extend with Tailwind Variants:**
 
 ```tsx
-import { Button } from 'prismui-native';
+import { Button } from '/native';
 import { tv } from 'tailwind-variants';
 
 // Extend button styles with custom variants

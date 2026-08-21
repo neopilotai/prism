@@ -8,7 +8,7 @@ import {
   Separator,
   useAccordion,
   useAccordionItem,
-} from 'prismui-native';
+} from '/native';
 import { createContext, use, useEffect, useState, type FC } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Animated, {

@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { Switch } from 'prismui-native';
+import { Switch } from '/native';
 ```
 
 ## 结构
@@ -139,7 +139,7 @@ import { Switch } from 'prismui-native';
 ## 示例
 
 ```tsx
-import { Switch } from 'prismui-native';
+import { Switch } from '/native';
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { View } from 'react-native';
@@ -303,7 +303,7 @@ Switch 根组件动画配置，可为：
 **示例：**
 
 ```tsx
-import { useSwitch } from 'prismui-native';
+import { useSwitch } from '/native';
 
 function CustomSwitchContent() {
   const { isSelected, isDisabled } = useSwitch();
@@ -342,7 +342,7 @@ function CustomSwitchContent() {
 Switch 可与 ControlField 组合以共享按压态、扩大点击区域：
 
 ```tsx
-import { Description, ControlField, Label } from 'prismui-native';
+import { Description, ControlField, Label } from '/native';
 
 <ControlField isSelected={isSelected} onSelectedChange={setIsSelected}>
   <View className="flex-1">

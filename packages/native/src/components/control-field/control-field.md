@@ -5,7 +5,7 @@ A field component that combines a label, description (or other content), and a c
 ## Import
 
 ```tsx
-import { ControlField } from 'prismui-native';
+import { ControlField } from '/native';
 ```
 
 ## Anatomy
@@ -120,7 +120,7 @@ import {
   ControlField,
   Label,
   Switch,
-} from 'prismui-native';
+} from '/native';
 import React from 'react';
 import { ScrollView, View } from 'react-native';
 

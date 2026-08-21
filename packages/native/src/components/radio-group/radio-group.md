@@ -5,7 +5,7 @@ A set of radio buttons where only one option can be selected at a time.
 ## Import
 
 ```tsx
-import { RadioGroup } from 'prismui-native';
+import { RadioGroup } from '/native';
 ```
 
 ## Anatomy
@@ -53,7 +53,7 @@ RadioGroup with simple string children automatically renders title and indicator
 Add descriptive text below each radio option for additional context.
 
 ```tsx
-import { RadioGroup, Radio, Label, Description } from 'prismui-native';
+import { RadioGroup, Radio, Label, Description } from '/native';
 import { View } from 'react-native';
 
 <RadioGroup value={value} onValueChange={setValue}>
@@ -79,7 +79,7 @@ import { View } from 'react-native';
 Replace the default indicator thumb with custom content using `Radio` sub-components.
 
 ```tsx
-import { RadioGroup, Radio, Label } from 'prismui-native';
+import { RadioGroup, Radio, Label } from '/native';
 
 <RadioGroup value={value} onValueChange={setValue}>
   <RadioGroup.Item value="custom">
@@ -106,7 +106,7 @@ import { RadioGroup, Radio, Label } from 'prismui-native';
 Use a render function on RadioGroup.Item to access state and customize the entire content.
 
 ```tsx
-import { RadioGroup, Radio, Label } from 'prismui-native';
+import { RadioGroup, Radio, Label } from '/native';
 
 <RadioGroup value={value} onValueChange={setValue}>
   <RadioGroup.Item value="option1">
@@ -127,7 +127,7 @@ import { RadioGroup, Radio, Label } from 'prismui-native';
 Display validation errors below the radio group.
 
 ```tsx
-import { RadioGroup, FieldError } from 'prismui-native';
+import { RadioGroup, FieldError } from '/native';
 
 function RadioGroupWithError() {
   const [value, setValue] = React.useState<string | undefined>(undefined);
@@ -154,7 +154,7 @@ import {
   RadioGroup,
   Separator,
   Surface,
-} from 'prismui-native';
+} from '/native';
 import React from 'react';
 import { View } from 'react-native';
 

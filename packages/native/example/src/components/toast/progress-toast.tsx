@@ -1,5 +1,5 @@
 import { useLingui } from '@lingui/react/macro';
-import { Toast, type ToastComponentProps } from 'prismui-native';
+import { Toast, type ToastComponentProps } from '/native';
 import { useCallback, useEffect } from 'react';
 import { View } from 'react-native';
 import Animated, {

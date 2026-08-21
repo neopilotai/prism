@@ -23,7 +23,7 @@ The provider serves as the main entry point for PrismUI Native, wrapping your ap
 Wrap your application root with the provider:
 
 ```tsx
-import { PrismUINativeProvider } from 'prismui-native';
+import { PrismUINativeProvider } from '/native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function App() {
@@ -44,8 +44,8 @@ The provider accepts a `config` prop with the following options:
 Global settings for all Text components within PrismUI Native. These props are carefully selected to include only those that make sense to configure globally across all Text components in the application:
 
 ```tsx
-import { PrismUINativeProvider } from 'prismui-native';
-import type { PrismUINativeConfig } from 'prismui-native';
+import { PrismUINativeProvider } from '/native';
+import type { PrismUINativeConfig } from '/native';
 
 const config: PrismUINativeConfig = {
   textProps: {
@@ -77,8 +77,8 @@ export default function App() {
 Global settings for all TextInput-based components within PrismUI Native (e.g. Input, TextArea, SearchField, InputGroup, InputOTP). These props are carefully selected to include only those that make sense to configure globally across all inputs in the application:
 
 ```tsx
-import { PrismUINativeProvider } from 'prismui-native';
-import type { PrismUINativeConfig } from 'prismui-native';
+import { PrismUINativeProvider } from '/native';
+import type { PrismUINativeConfig } from '/native';
 
 const config: PrismUINativeConfig = {
   textInputProps: {
@@ -231,8 +231,8 @@ To override the direction for a subtree, wrap it with `LayoutDirectionScope`, to
 Here's a comprehensive example showing all configuration options:
 
 ```tsx
-import { PrismUINativeProvider } from 'prismui-native';
-import type { PrismUINativeConfig } from 'prismui-native';
+import { PrismUINativeProvider } from '/native';
+import type { PrismUINativeConfig } from '/native';
 import { I18nManager } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
@@ -295,8 +295,8 @@ When using Expo Router, wrap your root layout:
 
 ```tsx
 // app/_layout.tsx
-import { PrismUINativeProvider } from 'prismui-native';
-import type { PrismUINativeConfig } from 'prismui-native';
+import { PrismUINativeProvider } from '/native';
+import type { PrismUINativeConfig } from '/native';
 import { Stack } from 'expo-router';
 
 const config: PrismUINativeConfig = {
@@ -347,7 +347,7 @@ The provider automatically wraps your application with [`SafeAreaListener`](http
 
 ### When to Use
 
-Use `PrismUINativeProviderRaw` when you want full control over which dependencies are included in your bundle. With the raw provider imported from `prismui-native/provider-raw`, the following dependencies are optional and only required if you use the corresponding components:
+Use `PrismUINativeProviderRaw` when you want full control over which dependencies are included in your bundle. With the raw provider imported from `/native/provider-raw`, the following dependencies are optional and only required if you use the corresponding components:
 
 - **react-native-screens** -- required for overlay components (Popover, Dialog)
 - **@gorhom/bottom-sheet** -- required for BottomSheet component
@@ -359,7 +359,7 @@ Use `PrismUINativeProviderRaw` when you want full control over which dependencie
 import {
   PrismUINativeProviderRaw,
   type PrismUINativeConfigRaw,
-} from 'prismui-native/provider-raw';
+} from '/native/provider-raw';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const config: PrismUINativeConfigRaw = {
@@ -384,9 +384,9 @@ export default function App() {
 If you need toast or portal functionality with the raw provider, add them yourself:
 
 ```tsx
-import { PrismUINativeProviderRaw } from 'prismui-native/provider-raw';
-import { PortalHost } from 'prismui-native/portal';
-import { ToastProvider } from 'prismui-native/toast';
+import { PrismUINativeProviderRaw } from '/native/provider-raw';
+import { PortalHost } from '/native/portal';
+import { ToastProvider } from '/native/toast';
 
 export default function App() {
   return (
@@ -492,7 +492,7 @@ const config: PrismUINativeConfig = {
 The provider is fully typed. Import types for better IDE support:
 
 ```tsx
-import { PrismUINativeProvider, type PrismUINativeConfig } from 'prismui-native';
+import { PrismUINativeProvider, type PrismUINativeConfig } from '/native';
 
 const config: PrismUINativeConfig = {
   // Full type safety and autocomplete

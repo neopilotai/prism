@@ -1,7 +1,7 @@
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
-import type { MenuKey } from 'prismui-native';
-import { Avatar, Button, cn, Menu, Separator, SubMenu } from 'prismui-native';
+import type { MenuKey } from '/native';
+import { Avatar, Button, cn, Menu, Separator, SubMenu } from '/native';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';

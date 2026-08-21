@@ -5,7 +5,7 @@ A compound component for displaying and managing selectable tags with optional r
 ## Import
 
 ```tsx
-import { TagGroup } from 'prismui-native';
+import { TagGroup } from '/native';
 ```
 
 ## Anatomy
@@ -228,7 +228,7 @@ Disable individual tags or the entire group.
 ## Example
 
 ```tsx
-import { TagGroup, Label, Description, FieldError } from 'prismui-native';
+import { TagGroup, Label, Description, FieldError } from '/native';
 import { useState, useMemo } from 'react';
 import { View } from 'react-native';
 
@@ -369,7 +369,7 @@ Absolute-fill container rendered behind the tag surface. With no children, the a
 Hook to access the tag group root context. Must be used within a `TagGroup` component.
 
 ```tsx
-import { useTagGroup } from 'prismui-native';
+import { useTagGroup } from '/native';
 
 const {
   selectedKeys,
@@ -401,7 +401,7 @@ const {
 Hook to access the tag item context. Must be used within a `TagGroup.Item` component.
 
 ```tsx
-import { useTagGroupItem } from 'prismui-native';
+import { useTagGroupItem } from '/native';
 
 const { id, isSelected, isDisabled, allowsRemoving } = useTagGroupItem();
 ```

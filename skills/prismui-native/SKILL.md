@@ -1,6 +1,6 @@
 ---
 name: prismui-native
-description: "PrismUI Native component library for React Native (Tailwind v4 via Uniwind). Use when building mobile UIs with PrismUI Native — creating Buttons, Cards, TextFields, Dialogs; installing prismui-native; configuring dark/light themes; or fetching component docs. Keywords: PrismUI Native, prismui-native, React Native UI, Uniwind, mobile components."
+description: "PrismUI Native component library for React Native (Tailwind v4 via Uniwind). Use when building mobile UIs with PrismUI Native — creating Buttons, Cards, TextFields, Dialogs; installing /native; configuring dark/light themes; or fetching component docs. Keywords: PrismUI Native, /native, React Native UI, Uniwind, mobile components."
 metadata:
   author: prismui
   version: "2.0.1"
@@ -28,12 +28,12 @@ curl -fsSL https://prism.khulnasoft.com/install | bash -s prismui-native
 | ------------ | -------------------- | ----------------------------------- |
 | **Styling**  | Tailwind CSS v4      | Uniwind (Tailwind for React Native) |
 | **Colors**   | oklch format         | HSL format                          |
-| **Package**  | `@prismui/react` 	  | `prismui-native`                     |
+| **Package**  | `@prismui/react` 	  | `/native`                     |
 | **Platform** | Web browsers         | iOS & Android                       |
 
 ```tsx
 // CORRECT — Native pattern
-import { Button } from "prismui-native";
+import { Button } from "/native";
 
 <Button variant="primary" onPress={() => console.log("Pressed!")}>
 	Click me
@@ -95,7 +95,7 @@ Getting started guides: use a concrete topic URL such as `https://prism.khulnaso
 ### Quick Install
 
 ```bash
-npm i prismui-native react-native-reanimated react-native-gesture-handler react-native-safe-area-context @gorhom/bottom-sheet react-native-svg react-native-worklets tailwind-merge tailwind-variants
+npm i /native react-native-reanimated react-native-gesture-handler react-native-safe-area-context @gorhom/bottom-sheet react-native-svg react-native-worklets tailwind-merge tailwind-variants
 ```
 
 ### Framework Setup (Expo - Recommended)
@@ -105,7 +105,7 @@ npm i prismui-native react-native-reanimated react-native-gesture-handler react-
 ```bash
 npx create-expo-app MyApp
 cd MyApp
-npm i prismui-native uniwind tailwindcss
+npm i /native uniwind tailwindcss
 npm i react-native-reanimated react-native-gesture-handler react-native-safe-area-context @gorhom/bottom-sheet react-native-svg react-native-worklets tailwind-merge tailwind-variants
 ```
 
@@ -114,16 +114,16 @@ npm i react-native-reanimated react-native-gesture-handler react-native-safe-are
 ```css
 @import "tailwindcss";
 @import "uniwind";
-@import "prismui-native/styles";
+@import "/native/styles";
 
-@source "./node_modules/prismui-native/lib";
+@source "./node_modules//native/lib";
 ```
 
 3. **Wrap app with providers:**
 
 ```tsx
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { PrismUINativeProvider } from "prismui-native";
+import { PrismUINativeProvider } from "/native";
 import "./global.css";
 
 export default function Layout() {
@@ -212,7 +212,7 @@ node scripts/get_theme.mjs
 **Access theme colors programmatically:**
 
 ```tsx
-import { useThemeColor } from "prismui-native";
+import { useThemeColor } from "/native";
 
 const accentColor = useThemeColor("accent");
 ```

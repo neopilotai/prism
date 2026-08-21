@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { msg } from '@lingui/core/macro';
-import { Spinner } from 'prismui-native';
+import { Spinner } from '/native';
 import { Text, View } from 'react-native';
 import { withUniwind } from 'uniwind';
 import type { UsageVariant } from '../../../components/component-presentation/types';

@@ -12,7 +12,7 @@ PrismUI MCP 服务器让 AI 助手直接读取 PrismUI Native 组件文档，便
 />
 
 
-当前 MCP 服务器支持 **prismui-native** 与 [stdio 传输](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio)。npm 包名为 `@khulnasoft/native-mcp`。源码见 [GitHub](https://github.com/khulnasoft/prismui-mcp)。
+当前 MCP 服务器支持 **/native** 与 [stdio 传输](https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#stdio)。npm 包名为 `@khulnasoft/native-mcp`。源码见 [GitHub](https://github.com/khulnasoft/prismui-mcp)。
 
 <Callout>
   随着 PrismUI Native 组件增加，MCP 中的可用内容也会同步扩展。
@@ -39,7 +39,7 @@ PrismUI MCP 服务器让 AI 助手直接读取 PrismUI Native 组件文档，便
 ```json title=".cursor/mcp.json"
 {
   "mcpServers": {
-    "prismui-native": {
+    "/native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -52,7 +52,7 @@ PrismUI MCP 服务器让 AI 助手直接读取 PrismUI Native 组件文档，便
 **Claude Code：** 在终端执行：
 
 ```bash
-claude mcp add prismui-native -- npx -y @khulnasoft/native-mcp@latest
+claude mcp add /native -- npx -y @khulnasoft/native-mcp@latest
 ```
 
 或手动写入项目的 `.mcp.json`：
@@ -60,7 +60,7 @@ claude mcp add prismui-native -- npx -y @khulnasoft/native-mcp@latest
 ```json title=".mcp.json"
 {
   "mcpServers": {
-    "prismui-native": {
+    "/native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -77,7 +77,7 @@ claude mcp add prismui-native -- npx -y @khulnasoft/native-mcp@latest
 ```json title=".windsurf/mcp.json"
 {
   "mcpServers": {
-    "prismui-native": {
+    "/native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
     }
@@ -94,7 +94,7 @@ claude mcp add prismui-native -- npx -y @khulnasoft/native-mcp@latest
 ```json title="settings.json"
 {
   "context_servers": {
-    "prismui-native": {
+    "/native": {
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"],
       "env": {}
@@ -103,7 +103,7 @@ claude mcp add prismui-native -- npx -y @khulnasoft/native-mcp@latest
 }
 ```
 
-重启 Zed 后，在 Agent 面板设置中确认 prismui-native 旁指示点为绿色，提示为「Server is active」。
+重启 Zed 后，在 Agent 面板设置中确认 /native 旁指示点为绿色，提示为「Server is active」。
 
 详见 [Zed MCP 文档](https://zed.dev/docs/ai/mcp)。
 
@@ -112,7 +112,7 @@ claude mcp add prismui-native -- npx -y @khulnasoft/native-mcp@latest
 ```json title=".vscode/mcp.json"
 {
   "servers": {
-    "prismui-native": {
+    "/native": {
       "type": "stdio",
       "command": "npx",
       "args": ["-y", "@khulnasoft/native-mcp@latest"]
@@ -121,14 +121,14 @@ claude mcp add prismui-native -- npx -y @khulnasoft/native-mcp@latest
 }
 ```
 
-打开 `.vscode/mcp.json`，在 prismui-native 旁点击 **Start**。
+打开 `.vscode/mcp.json`，在 /native 旁点击 **Start**。
 
 详见 [VS Code MCP 文档](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)。
 
 **Codex：** 写入 `~/.codex/config.toml` 或项目内 `.codex/config.toml`：
 
 ```toml title="config.toml"
-[mcp_servers.prismui-native]
+[mcp_servers./native]
 command = "npx"
 args = ["-y", "@khulnasoft/native-mcp@latest"]
 ```
@@ -143,7 +143,7 @@ args = ["-y", "@khulnasoft/native-mcp@latest"]
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "prismui-native": {
+    "/native": {
       "type": "local",
       "command": ["npx", "-y", "@khulnasoft/native-mcp@latest"]
     }

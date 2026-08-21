@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Button, Card, cn, type CardRootProps } from 'prismui-native';
+import { Button, Card, cn, type CardRootProps } from '/native';
 import { Image, Pressable, StyleSheet, View } from 'react-native';
 import { withUniwind } from 'uniwind';
 import { AppText } from '../../../components/app-text';

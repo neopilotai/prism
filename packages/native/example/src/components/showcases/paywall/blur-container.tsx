@@ -1,5 +1,5 @@
 import { BlurView } from 'expo-blur';
-import { cn } from 'prismui-native';
+import { cn } from '/native';
 import { type FC, type PropsWithChildren } from 'react';
 import { StyleSheet, View } from 'react-native';
 

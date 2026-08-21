@@ -18,22 +18,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i prismui-native
+  npm i /native
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add prismui-native
+  pnpm add /native
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add prismui-native
+  yarn add /native
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add prismui-native
+  bun add /native
   ```
 </Tab>
 </Tabs>
@@ -82,7 +82,7 @@ The Slider component supports single-value and range (multi-thumb) modes, horizo
 **Usage:**
 
 ```tsx
-import { Slider } from "prismui-native";
+import { Slider } from "/native";
 
 export function BasicSlider() {
   return (
@@ -141,7 +141,7 @@ The ListGroup component renders grouped list items inside a Surface container, p
 **Usage:**
 
 ```tsx
-import { ListGroup } from "prismui-native";
+import { ListGroup } from "/native";
 
 export function Example() {
   return (
@@ -192,7 +192,7 @@ The SearchField component provides a dedicated input for search and filtering sc
 **Usage:**
 
 ```tsx
-import { Label, SearchField } from "prismui-native";
+import { Label, SearchField } from "/native";
 
 export function Example() {
   return (
@@ -226,7 +226,7 @@ The [Select](/docs/native/components/select) component now supports multi-item s
 **Usage:**
 
 ```tsx
-import { Select } from "prismui-native";
+import { Select } from "/native";
 
 export function MultiSelect() {
   return (
@@ -258,7 +258,7 @@ A new compound sub-component for opt-in scale animation composability. `Pressabl
 **Usage:**
 
 ```tsx
-import { PressableFeedback } from "prismui-native";
+import { PressableFeedback } from "/native";
 
 <PressableFeedback.Scale>
   <ListGroup.Item onPress={handlePress}>
@@ -299,7 +299,7 @@ The [Button](/docs/native/components/button) component's pressable feedback API 
 **New Capability:**
 
 ```tsx
-import { Button } from "prismui-native";
+import { Button } from "/native";
 
 // Scale + highlight (default)
 <Button feedbackVariant="scale-highlight">Press me</Button>

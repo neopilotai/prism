@@ -5,7 +5,7 @@ A floating context menu with positioning, selection groups, and multiple present
 ## Import
 
 ```tsx
-import { Menu, SubMenu } from 'prismui-native';
+import { Menu, SubMenu } from '/native';
 ```
 
 ## Anatomy
@@ -323,8 +323,8 @@ Use `variant="dot"` on `Menu.ItemIndicator` to show a filled circle instead of a
 ## Example
 
 ```tsx
-import type { MenuKey } from 'prismui-native';
-import { Button, Menu, Separator } from 'prismui-native';
+import type { MenuKey } from '/native';
+import { Button, Menu, Separator } from '/native';
 import { useState } from 'react';
 import { Text, View } from 'react-native';
 
@@ -743,7 +743,7 @@ Animation configuration for the trigger indicator rotation. Can be:
 Hook to access the menu root context. Must be used within a `Menu` component.
 
 ```tsx
-import { useMenu } from 'prismui-native';
+import { useMenu } from '/native';
 
 const { isOpen, onOpenChange, presentation, isDisabled } = useMenu();
 ```
@@ -763,7 +763,7 @@ const { isOpen, onOpenChange, presentation, isDisabled } = useMenu();
 Hook to access the menu item context. Must be used within a `Menu.Item` component.
 
 ```tsx
-import { useMenuItem } from 'prismui-native';
+import { useMenuItem } from '/native';
 
 const { id, isSelected, isDisabled, variant } = useMenuItem();
 ```
@@ -782,7 +782,7 @@ const { id, isSelected, isDisabled, variant } = useMenuItem();
 Hook to access the menu animation context. Must be used within a `Menu` component.
 
 ```tsx
-import { useMenuAnimation } from 'prismui-native';
+import { useMenuAnimation } from '/native';
 
 const { progress, isDragging } = useMenuAnimation();
 ```
@@ -799,7 +799,7 @@ const { progress, isDragging } = useMenuAnimation();
 Hook to access the sub-menu context. Must be used within a `SubMenu` component.
 
 ```tsx
-import { useSubMenu } from 'prismui-native';
+import { useSubMenu } from '/native';
 
 const { isOpen, onOpenChange, isDisabled } = useSubMenu();
 ```

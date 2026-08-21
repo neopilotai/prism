@@ -5,7 +5,7 @@ Displays a floating content panel anchored to a trigger element with placement a
 ## Import
 
 ```tsx
-import { Popover } from 'prismui-native';
+import { Popover } from '/native';
 ```
 
 ## Anatomy
@@ -252,7 +252,7 @@ popoverRef.current?.close();
 
 ```tsx
 import { Ionicons } from '@expo/vector-icons';
-import { Button, Popover, useThemeColor } from 'prismui-native';
+import { Button, Popover, useThemeColor } from '/native';
 import { Text, View } from 'react-native';
 
 export default function PopoverExample() {
@@ -454,7 +454,7 @@ Popover.Close extends [CloseButton](../close-button/close-button.md) and automat
 Hook to access popover context values within custom components or compound components.
 
 ```tsx
-import { usePopover } from 'prismui-native';
+import { usePopover } from '/native';
 
 const CustomContent = () => {
   const { isOpen, onOpenChange, triggerPosition } = usePopover();
@@ -483,7 +483,7 @@ const CustomContent = () => {
 Hook to access popover animation state values within custom components or compound components.
 
 ```tsx
-import { usePopoverAnimation } from 'prismui-native';
+import { usePopoverAnimation } from '/native';
 
 const CustomContent = () => {
   const { progress, isDragging } = usePopoverAnimation();

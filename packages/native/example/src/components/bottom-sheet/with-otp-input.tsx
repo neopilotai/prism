@@ -10,7 +10,7 @@ import {
   useBottomSheetAwareHandlers,
   useToast,
   type InputOTPRef,
-} from 'prismui-native';
+} from '/native';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import { View } from 'react-native';
 import { KeyboardController } from 'react-native-keyboard-controller';

@@ -1,5 +1,5 @@
 import { useLingui } from '@lingui/react/macro';
-import { Select, Separator } from 'prismui-native';
+import { Select, Separator } from '/native';
 import React, { useState } from 'react';
 
 type SelectOption = {

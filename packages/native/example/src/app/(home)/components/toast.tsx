@@ -7,7 +7,7 @@ import {
   useThemeColor,
   useToast,
   type ToastComponentProps,
-} from 'prismui-native';
+} from '/native';
 import { useCallback, useRef, useState } from 'react';
 import { Platform, TextInput, View } from 'react-native';
 import { withUniwind } from 'uniwind';

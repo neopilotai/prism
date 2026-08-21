@@ -19,22 +19,22 @@ PrismUI Native v1.0.7 让组件表面变得可扩展：组件现在接受 `backg
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i prismui-native
+  npm i /native
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add prismui-native
+  pnpm add /native
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add prismui-native
+  yarn add /native
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add prismui-native
+  bun add /native
   ```
 </Tab>
 </Tabs>
@@ -54,7 +54,7 @@ PrismUI Native v1.0.7 让组件表面变得可扩展：组件现在接受 `backg
 组件此前会直接依据主题令牌渲染固定的不透明表面。在 v1.0.7 中，拥有表面的部件接受 `background` 属性，并暴露以其所背衬元素命名的背景复合部件。传入节点即可替换该层，或传入 `null` 将其移除。
 
 ```tsx
-import { Button, GlassView } from "prismui-native";
+import { Button, GlassView } from "/native";
 
 <Button
   variant="secondary"

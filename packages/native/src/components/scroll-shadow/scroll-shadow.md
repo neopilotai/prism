@@ -5,7 +5,7 @@ Adds dynamic gradient shadows to scrollable content based on scroll position and
 ## Import
 
 ```tsx
-import { ScrollShadow } from 'prismui-native';
+import { ScrollShadow } from '/native';
 ```
 
 ## Anatomy
@@ -101,7 +101,7 @@ const scrollHandler = useAnimatedScrollHandler({
 ## Example
 
 ```tsx
-import { ScrollShadow, Surface } from 'prismui-native';
+import { ScrollShadow, Surface } from '/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { FlatList, ScrollView, Text, View } from 'react-native';
 

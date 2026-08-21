@@ -5,7 +5,7 @@ Organize content into tabbed views with animated transitions and indicators.
 ## Import
 
 ```tsx
-import { Tabs } from 'prismui-native';
+import { Tabs } from '/native';
 ```
 
 ## Anatomy
@@ -251,7 +251,7 @@ import {
   Label,
   Tabs,
   TextField,
-} from 'prismui-native';
+} from '/native';
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 import Animated, {
@@ -504,7 +504,7 @@ Animation configuration for Tabs.Separator component. Can be:
 Hook to access tabs root context values within custom components or compound components.
 
 ```tsx
-import { useTabs } from 'prismui-native';
+import { useTabs } from '/native';
 
 const CustomComponent = () => {
   const { value, onValueChange, nativeID } = useTabs();
@@ -527,7 +527,7 @@ const CustomComponent = () => {
 Hook to access tab measurements context values for managing tab trigger positions and dimensions.
 
 ```tsx
-import { useTabsMeasurements } from 'prismui-native';
+import { useTabsMeasurements } from '/native';
 
 const CustomIndicator = () => {
   const { measurements, variant } = useTabsMeasurements();
@@ -558,7 +558,7 @@ const CustomIndicator = () => {
 Hook to access tab trigger context values within custom components or compound components.
 
 ```tsx
-import { useTabsTrigger } from 'prismui-native';
+import { useTabsTrigger } from '/native';
 
 const CustomLabel = () => {
   const { value, isSelected, nativeID } = useTabsTrigger();

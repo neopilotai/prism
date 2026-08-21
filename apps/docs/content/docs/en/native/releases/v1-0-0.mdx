@@ -10,7 +10,7 @@ github:
 </div>
 
 <VideoPlayer
-  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos/prismui-native-v1-release-.mp4"
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/videos//native-v1-release-.mp4"
   height={430}
   muted
 />
@@ -24,22 +24,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i prismui-native
+  npm i /native
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add prismui-native
+  pnpm add /native
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add prismui-native
+  yarn add /native
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add prismui-native
+  bun add /native
   ```
 </Tab>
 </Tabs>
@@ -76,7 +76,7 @@ The new [LinkButton](/docs/native/components/button) compound component renders 
 **Usage:**
 
 ```tsx
-import { LinkButton } from "prismui-native";
+import { LinkButton } from "/native";
 
 export function TermsLink() {
   return (
@@ -120,7 +120,7 @@ The `useThemeColor` hook now returns a `ThemeColorValue` branded type for single
 **New behavior:**
 
 ```tsx
-import { useThemeColor } from "prismui-native";
+import { useThemeColor } from "/native";
 
 // Correct — direct assignment
 const mutedColor = useThemeColor("muted");
@@ -140,7 +140,7 @@ The `useBottomSheetAwareHandlers` hook is now exported as a public API, giving c
 **Usage:**
 
 ```tsx
-import { useBottomSheetAwareHandlers, Input } from "prismui-native";
+import { useBottomSheetAwareHandlers, Input } from "/native";
 
 export function BottomSheetInput() {
   const { onFocus, onBlur } = useBottomSheetAwareHandlers();
@@ -164,7 +164,7 @@ The `isBottomSheetAware` prop has been removed from `Input` and `InputOTP`. Prev
 <Input isBottomSheetAware placeholder="Type here..." />
 
 // After
-import { useBottomSheetAwareHandlers } from "prismui-native";
+import { useBottomSheetAwareHandlers } from "/native";
 
 const { onFocus, onBlur } = useBottomSheetAwareHandlers();
 <Input onFocus={onFocus} onBlur={onBlur} placeholder="Type here..." />

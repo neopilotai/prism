@@ -1,4 +1,4 @@
-import { useSelect, useSelectAnimation } from 'prismui-native';
+import { useSelect, useSelectAnimation } from '/native';
 import { Pressable, StyleSheet } from 'react-native';
 import { interpolate, useDerivedValue } from 'react-native-reanimated';
 import { useAppTheme } from '../../contexts/app-theme-context';

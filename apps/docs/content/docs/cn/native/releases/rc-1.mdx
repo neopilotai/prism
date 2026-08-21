@@ -18,22 +18,22 @@ RC 1 是 PrismUI Native 的首个候选发布（Release Candidate），表明库
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i prismui-native
+  npm i /native
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add prismui-native
+  pnpm add /native
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add prismui-native
+  yarn add /native
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add prismui-native
+  bun add /native
   ```
 </Tab>
 </Tabs>
@@ -104,7 +104,7 @@ Alert 提供无障碍告警展示，内置五种状态变体：default、accent�
 **用法：**
 
 ```tsx
-import { Alert } from "prismui-native";
+import { Alert } from "/native";
 
 export function Example() {
   return (
@@ -142,7 +142,7 @@ export function Example() {
 **用法：**
 
 ```tsx
-import { Select } from "prismui-native";
+import { Select } from "/native";
 
 <Select>
   <Select.Trigger>
@@ -223,7 +223,7 @@ import { Select } from "prismui-native";
 **新能力：**
 
 ```tsx
-import { Accordion, Label } from "prismui-native";
+import { Accordion, Label } from "/native";
 
 // 对指定插槽应用样式
 <Label styles={{ text: { fontSize: 18 }, asterisk: { color: "red" } }} isRequired>
@@ -259,7 +259,7 @@ import { Accordion, Label } from "prismui-native";
 **新能力：**
 
 ```tsx
-import { Dialog } from "prismui-native";
+import { Dialog } from "/native";
 
 // 在 iOS 上启用元素检查器
 <Dialog>
@@ -285,7 +285,7 @@ iOS 上 `FullWindowOverlay` 使用独立原生窗口，会阻挡元素检查器�
 **新能力：**
 
 ```tsx
-import { PrismUINativeProviderRaw } from "prismui-native/provider-raw";
+import { PrismUINativeProviderRaw } from "/native/provider-raw";
 
 // 无 Toast 与 Portal 的轻量提供者
 export function App() {
@@ -308,7 +308,7 @@ export function App() {
 **新能力：**
 
 ```tsx
-import { Button, Select } from "prismui-native";
+import { Button, Select } from "/native";
 
 // 默认变体（预置样式触发器）
 <Select>
@@ -338,7 +338,7 @@ import { Button, Select } from "prismui-native";
 **新能力：**
 
 ```tsx
-import { ControlField } from "prismui-native";
+import { ControlField } from "/native";
 
 <ControlField>
   <ControlField.Indicator variant="radio" />
@@ -426,7 +426,7 @@ color: var(--surface-secondary-foreground);
 
 ```tsx
 // 之前
-import { RadioGroup } from "prismui-native";
+import { RadioGroup } from "/native";
 
 <RadioGroup>
   <RadioGroup.Item value="option1">
@@ -438,7 +438,7 @@ import { RadioGroup } from "prismui-native";
 </RadioGroup>
 
 // 之后
-import { Radio, RadioGroup } from "prismui-native";
+import { Radio, RadioGroup } from "/native";
 
 <RadioGroup>
   <RadioGroup.Item value="option1">

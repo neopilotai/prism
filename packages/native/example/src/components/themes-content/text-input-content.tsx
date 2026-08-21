@@ -6,7 +6,7 @@ import {
   Input,
   Label,
   TextField,
-} from 'prismui-native';
+} from '/native';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 import { EyeIcon } from '../icons/eye';

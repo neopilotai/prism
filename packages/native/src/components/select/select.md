@@ -5,7 +5,7 @@ Displays a list of options for the user to pick from—triggered by a button.
 ## Import
 
 ```tsx
-import { Select } from 'prismui-native';
+import { Select } from '/native';
 ```
 
 ## Anatomy
@@ -367,7 +367,7 @@ const [isOpen, setIsOpen] = useState(false);
 ## Example
 
 ```tsx
-import { Select, Separator } from 'prismui-native';
+import { Select, Separator } from '/native';
 import React, { useState } from 'react';
 
 type SelectOption = {
@@ -708,7 +708,7 @@ When using a render function for `children`, the following props are provided:
 Hook to access the Select root context. Returns the select state and control functions.
 
 ```tsx
-import { useSelect } from 'prismui-native';
+import { useSelect } from '/native';
 
 const {
   isOpen,
@@ -750,7 +750,7 @@ const {
 Hook to access the Select animation state values within custom components or compound components.
 
 ```tsx
-import { useSelectAnimation } from 'prismui-native';
+import { useSelectAnimation } from '/native';
 
 const { selectState, progress, isDragging, isGestureReleaseAnimationRunning } =
   useSelectAnimation();
@@ -778,7 +778,7 @@ const { selectState, progress, isDragging, isGestureReleaseAnimationRunning } =
 Hook to access the Select Item context. Returns the item's value and label.
 
 ```tsx
-import { useSelectItem } from 'prismui-native';
+import { useSelectItem } from '/native';
 
 const { itemValue, label } = useSelectItem();
 ```

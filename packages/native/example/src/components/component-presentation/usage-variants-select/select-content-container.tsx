@@ -1,4 +1,4 @@
-import { Select } from 'prismui-native';
+import { Select } from '/native';
 import { type FC, type PropsWithChildren } from 'react';
 import { Easing, FadeOut } from 'react-native-reanimated';
 

@@ -60,9 +60,20 @@ jobs:
           npm publish "$RUNNER_TEMP/prismui-release/$PACKAGE_TARBALL" --access public ${{ inputs.dry_run && '--dry-run' || '' }}
 
       - name: Publish @prismui/react
+        id: publish-react
         if: steps.publish-styles.outcome == 'success'
         working-directory: packages/react
         run: |
+          mkdir -p "$RUNNER_TEMP/prismui-release"
+          PACKAGE_TARBALL="$(node -p "const pkg = require('./package.json'); pkg.name.replace('@', '').replace('/', '-') + '-' + pkg.version + '.tgz'")"
+          pnpm pack --pack-destination "$RUNNER_TEMP/prismui-release"
+          npm publish "$RUNNER_TEMP/prismui-release/$PACKAGE_TARBALL" --access public ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Publish @prismui/native
+        if: steps.publish-react.outcome == 'success'
+        working-directory: packages/native
+        run: |
+          pnpm --filter @prismui/native build
           mkdir -p "$RUNNER_TEMP/prismui-release"
           PACKAGE_TARBALL="$(node -p "const pkg = require('./package.json'); pkg.name.replace('@', '').replace('/', '-') + '-' + pkg.version + '.tgz'")"
           pnpm pack --pack-destination "$RUNNER_TEMP/prismui-release"

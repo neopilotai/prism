@@ -5,7 +5,7 @@ Absolute-fill frosted-glass layer. Real blur on iOS via the optional `expo-blur`
 ## Import
 
 ```tsx
-import { GlassView } from 'prismui-native';
+import { GlassView } from '/native';
 ```
 
 ## Anatomy

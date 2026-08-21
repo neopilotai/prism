@@ -5,7 +5,7 @@ import {
   Select,
   useSelect,
   useThemeColor,
-} from 'prismui-native';
+} from '/native';
 import { type FC, memo, useEffect, useMemo, useRef } from 'react';
 import { FlatList } from 'react-native';
 

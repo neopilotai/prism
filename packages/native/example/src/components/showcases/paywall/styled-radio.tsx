@@ -5,7 +5,7 @@ import {
   Radio,
   RadioGroup,
   useRadioGroup,
-} from 'prismui-native';
+} from '/native';
 import { type FC } from 'react';
 import { View } from 'react-native';
 import { BlurContainer } from './blur-container';

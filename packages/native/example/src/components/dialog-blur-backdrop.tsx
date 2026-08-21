@@ -1,4 +1,4 @@
-import { Dialog, useDialogAnimation } from 'prismui-native';
+import { Dialog, useDialogAnimation } from '/native';
 import { StyleSheet } from 'react-native';
 import { interpolate, useDerivedValue } from 'react-native-reanimated';
 import { useAppTheme } from '../contexts/app-theme-context';

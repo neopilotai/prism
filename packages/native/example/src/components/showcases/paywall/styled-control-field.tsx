@@ -1,4 +1,4 @@
-import { ControlField, Label, Switch, useThemeColor } from 'prismui-native';
+import { ControlField, Label, Switch, useThemeColor } from '/native';
 import type { FC } from 'react';
 import { View } from 'react-native';
 import { BlurContainer } from './blur-container';

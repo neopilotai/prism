@@ -9,7 +9,7 @@ import {
   Select,
   Separator,
   useThemeColor,
-} from 'prismui-native';
+} from '/native';
 import React, { useState } from 'react';
 import { Platform, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';

@@ -1,5 +1,5 @@
 import { useLingui } from '@lingui/react/macro';
-import { ControlField, Description, Label } from 'prismui-native';
+import { ControlField, Description, Label } from '/native';
 import React from 'react';
 import { View } from 'react-native';
 

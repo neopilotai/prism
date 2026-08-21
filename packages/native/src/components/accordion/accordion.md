@@ -5,7 +5,7 @@ A collapsible content panel for organizing information in a compact space.
 ## Import
 
 ```tsx
-import { Accordion } from 'prismui-native';
+import { Accordion } from '/native';
 ```
 
 ## Anatomy
@@ -163,7 +163,7 @@ Apply custom styles using className, classNames, or styles props.
 Use `Accordion.Trigger` with `asChild` prop and wrap content with `PressableFeedback` to add custom press feedback animations.
 
 ```tsx
-import { Accordion, PressableFeedback } from 'prismui-native';
+import { Accordion, PressableFeedback } from '/native';
 import { View } from 'react-native';
 
 <Accordion>
@@ -187,7 +187,7 @@ import { View } from 'react-native';
 ## Example
 
 ```tsx
-import { Accordion, useThemeColor } from 'prismui-native';
+import { Accordion, useThemeColor } from '/native';
 import { Ionicons } from '@expo/vector-icons';
 import { View, Text } from 'react-native';
 
@@ -382,7 +382,7 @@ Animation configuration for accordion content component. Can be:
 Hook to access the accordion root context. Must be used within an `Accordion` component.
 
 ```tsx
-import { useAccordion } from 'prismui-native';
+import { useAccordion } from '/native';
 
 const { value, onValueChange, selectionMode, isCollapsible, isDisabled } =
   useAccordion();
@@ -403,7 +403,7 @@ const { value, onValueChange, selectionMode, isCollapsible, isDisabled } =
 Hook to access the accordion item context. Must be used within an `Accordion.Item` component.
 
 ```tsx
-import { useAccordionItem } from 'prismui-native';
+import { useAccordionItem } from '/native';
 
 const { value, isExpanded, isDisabled, nativeID } = useAccordionItem();
 ```
@@ -422,7 +422,7 @@ const { value, isExpanded, isDisabled, nativeID } = useAccordionItem();
 When using the Accordion component alongside other components in the same view, you should import and apply `AccordionLayoutTransition` to those components to ensure smooth and consistent layout animations across the entire screen.
 
 ```jsx
-import { Accordion, AccordionLayoutTransition } from 'prismui-native';
+import { Accordion, AccordionLayoutTransition } from '/native';
 import Animated from 'react-native-reanimated';
 
 <Animated.ScrollView layout={AccordionLayoutTransition}>

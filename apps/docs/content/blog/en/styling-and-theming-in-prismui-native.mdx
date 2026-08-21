@@ -7,7 +7,7 @@ authorHandle: "@v_serbulenko"
 authorUrl: "https://x.com/v_serbulenko"
 authorAvatar: "https://avatars.githubusercontent.com/u/115154506?v=4"
 tags: ["native", "react-native", "styling", "theming", "css", "design-system"]
-image: "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/blog/prismui-native-styling.jpg"
+image: "https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/blog//native-styling.jpg"
 ---
 
 Most React Native component libraries define their appearance in JavaScript. A component's look lives in a `StyleSheet.create` call, a styled-components template, or a theme object threaded through React context. That works, but it makes two things awkward: overriding a library's internals without forking them, and shipping a genuinely different visual theme as an artifact you can install.
@@ -24,9 +24,9 @@ That unlocks a real CSS authoring layer. Installing the library is a package ins
 /* global.css */
 @import "tailwindcss";
 @import "uniwind";
-@import "prismui-native/styles";
+@import "/native/styles";
 
-@source "./node_modules/prismui-native/lib";
+@source "./node_modules//native/lib";
 ```
 
 That single import pulls in the whole styling system: design tokens, light and dark themes, custom utilities, and the CSS for every component. From there, `className` is the primary styling API:
@@ -148,7 +148,7 @@ First, restyling is subtractive rather than additive. Because the component's ow
 Second, the variant router is public. Every component exports its `classNames` object, so you can build your own primitives that are visually indistinguishable from the library's:
 
 ```tsx
-import {buttonClassNames, cn} from "prismui-native";
+import {buttonClassNames, cn} from "/native";
 import {Pressable, Text} from "react-native";
 
 <Pressable className={cn(buttonClassNames.root({variant: "primary", size: "md"}))}>
@@ -230,7 +230,7 @@ That is the whole color and geometry story. Because the radius scale is derived,
 That is the complete button override for the theme. Switch does two lines. Widget does three. The theme is around thirty small files like this, covering both base and Pro components, and it is installed with one import placed after the base styles:
 
 ```css
-@import "prismui-native/styles";
+@import "/native/styles";
 @import "prismui-native-pro/styles";
 @import "prismui-native-pro/themes/brutalism";
 ```

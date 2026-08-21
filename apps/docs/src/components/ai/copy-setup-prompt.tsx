@@ -146,7 +146,7 @@ const REACT_PROMPT = buildSetupPrompt({
 const NATIVE_PROMPT = buildSetupPrompt({
   docsPath: "native",
   id: "prismui-native",
-  intro: "mobile UIs with PrismUI Native (`prismui-native`)",
+  intro: "mobile UIs with PrismUI Native (`@prismui/native`)",
   mcpAccess: "component docs, theme variables, and setup guides",
   mcpPackage: "@khulnasoft/native-mcp",
   productName: "PrismUI Native",

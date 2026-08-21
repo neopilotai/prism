@@ -1,4 +1,4 @@
-import { Card, Chip, cn } from 'prismui-native';
+import { Card, Chip, cn } from '/native';
 import { type FC } from 'react';
 import { Image, useWindowDimensions, View } from 'react-native';
 import Animated, {

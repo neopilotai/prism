@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { Checkbox } from 'prismui-native';
+import { Checkbox } from '/native';
 ```
 
 ## 结构
@@ -127,7 +127,7 @@ import {
   Label,
   Separator,
   Surface,
-} from "prismui-native";
+} from "/native";
 import React from 'react';
 import { View, Text } from 'react-native';
 
@@ -314,7 +314,7 @@ export default function BasicUsage() {
 在自定义或复合结构内访问复选框上下文。
 
 ```tsx
-import { useCheckbox } from 'prismui-native';
+import { useCheckbox } from '/native';
 
 const CustomIndicator = () => {
   const { isSelected, isInvalid, isDisabled } = useCheckbox();

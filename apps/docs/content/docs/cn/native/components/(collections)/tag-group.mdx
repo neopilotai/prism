@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { TagGroup } from 'prismui-native';
+import { TagGroup } from '/native';
 ```
 
 ## 结构
@@ -238,7 +238,7 @@ const onRemove = (keys) => {
 ## 示例
 
 ```tsx
-import { TagGroup, Label, Description, FieldError } from 'prismui-native';
+import { TagGroup, Label, Description, FieldError } from '/native';
 import { useState, useMemo } from 'react';
 import { View } from 'react-native';
 
@@ -379,7 +379,7 @@ export default function TagGroupExample() {
 访问标签组根上下文，必须在 `TagGroup` 内使用。
 
 ```tsx
-import { useTagGroup } from 'prismui-native';
+import { useTagGroup } from '/native';
 
 const {
   selectedKeys,
@@ -411,7 +411,7 @@ const {
 访问单个标签上下文，必须在 `TagGroup.Item` 内使用。
 
 ```tsx
-import { useTagGroupItem } from 'prismui-native';
+import { useTagGroupItem } from '/native';
 
 const { id, isSelected, isDisabled, allowsRemoving } = useTagGroupItem();
 ```

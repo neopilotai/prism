@@ -1,4 +1,4 @@
-import { Checkbox, cn, ControlField } from 'prismui-native';
+import { Checkbox, cn, ControlField } from '/native';
 import { StyleSheet, View } from 'react-native';
 import { useAppTheme } from '../../../contexts/app-theme-context';
 import { AppText } from '../../app-text';

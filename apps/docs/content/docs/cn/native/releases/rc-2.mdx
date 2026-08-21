@@ -18,22 +18,22 @@ RC 2 继续向生产就绪推进：新增 SearchField、ListGroup、Slider 三�
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
 <Tab value="npm">
   ```bash
-  npm i prismui-native
+  npm i /native
   ```
 </Tab>
 <Tab value="pnpm">
   ``` bash
-  pnpm add prismui-native
+  pnpm add /native
   ```
 </Tab>
 <Tab value="yarn">
   ```bash
-  yarn add prismui-native
+  yarn add /native
   ```
 </Tab>
 <Tab value="bun">
   ```bash
-  bun add prismui-native
+  bun add /native
   ```
 </Tab>
 </Tabs>
@@ -108,7 +108,7 @@ Slider 支持单值与区间（双拇指）模式、横纵布局、通过 `Intl.
 **用法：**
 
 ```tsx
-import { Slider } from "prismui-native";
+import { Slider } from "/native";
 
 export function BasicSlider() {
   return (
@@ -167,7 +167,7 @@ ListGroup 在 Surface 容器内渲染分组列表项，适用于设置页、菜�
 **用法：**
 
 ```tsx
-import { ListGroup } from "prismui-native";
+import { ListGroup } from "/native";
 
 export function Example() {
   return (
@@ -218,7 +218,7 @@ SearchField 为搜索与筛选场景提供专用输入，采用与 TextField 相
 **用法：**
 
 ```tsx
-import { Label, SearchField } from "prismui-native";
+import { Label, SearchField } from "/native";
 
 export function Example() {
   return (
@@ -252,7 +252,7 @@ export function Example() {
 **用法：**
 
 ```tsx
-import { Select } from "prismui-native";
+import { Select } from "/native";
 
 export function MultiSelect() {
   return (
@@ -284,7 +284,7 @@ export function MultiSelect() {
 **用法：**
 
 ```tsx
-import { PressableFeedback } from "prismui-native";
+import { PressableFeedback } from "/native";
 
 <PressableFeedback.Scale>
   <ListGroup.Item onPress={handlePress}>
@@ -325,7 +325,7 @@ import { PressableFeedback } from "prismui-native";
 **新能力：**
 
 ```tsx
-import { Button } from "prismui-native";
+import { Button } from "/native";
 
 // 缩放 + 高亮（默认）
 <Button feedbackVariant="scale-highlight">Press me</Button>

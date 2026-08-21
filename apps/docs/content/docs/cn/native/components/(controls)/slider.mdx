@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { Slider } from 'prismui-native';
+import { Slider } from '/native';
 ```
 
 ## 结构
@@ -167,7 +167,7 @@ const [volume, setVolume] = useState(50);
 ## 示例
 
 ```tsx
-import { Label, Slider } from 'prismui-native';
+import { Label, Slider } from '/native';
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 
@@ -343,7 +343,7 @@ export default function SliderExample() {
 访问滑块上下文，须在 `Slider` 内使用。
 
 ```tsx
-import { useSlider } from 'prismui-native';
+import { useSlider } from '/native';
 
 const { values, orientation, isDisabled, getThumbValueLabel } = useSlider();
 ```

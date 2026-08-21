@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { useLingui } from '@lingui/react/macro';
-import { Toast, useThemeColor, type ToastComponentProps } from 'prismui-native';
+import { Toast, useThemeColor, type ToastComponentProps } from '/native';
 import { useEffect } from 'react';
 import { View } from 'react-native';
 import Animated, {

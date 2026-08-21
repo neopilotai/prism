@@ -5,7 +5,7 @@ Displays an animated loading indicator.
 ## Import
 
 ```tsx
-import { Spinner } from 'prismui-native';
+import { Spinner } from '/native';
 ```
 
 ## Anatomy
@@ -97,7 +97,7 @@ const themeColorForeground = useThemeColor('foreground')
 ## Example
 
 ```tsx
-import { Spinner } from 'prismui-native';
+import { Spinner } from '/native';
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';

@@ -9,7 +9,7 @@ import {
   Radio,
   RadioGroup,
   useDialog,
-} from 'prismui-native';
+} from '/native';
 import { useState, type FC } from 'react';
 import { Platform, View } from 'react-native';
 import Animated, { FadeIn } from 'react-native-reanimated';

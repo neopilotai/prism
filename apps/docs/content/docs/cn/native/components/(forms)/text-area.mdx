@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { TextArea } from 'prismui-native';
+import { TextArea } from '/native';
 ```
 
 ## 用法
@@ -25,7 +25,7 @@ import { TextArea } from 'prismui-native';
 `TextArea` 可单独使用，也可放在 `TextField` 内。
 
 ```tsx
-import { TextArea } from 'prismui-native';
+import { TextArea } from '/native';
 
 <TextArea placeholder="请输入留言" />
 ```
@@ -35,7 +35,7 @@ import { TextArea } from 'prismui-native';
 与 `TextField` 搭配形成完整表单结构。
 
 ```tsx
-import { Description, Label, TextArea, TextField } from 'prismui-native';
+import { Description, Label, TextArea, TextField } from '/native';
 
 <TextField>
   <Label>留言</Label>
@@ -49,7 +49,7 @@ import { Description, Label, TextArea, TextField } from 'prismui-native';
 非法时展示错误样式。
 
 ```tsx
-import { FieldError, Label, TextArea, TextField } from 'prismui-native';
+import { FieldError, Label, TextArea, TextField } from '/native';
 
 <TextField isRequired isInvalid={true}>
   <Label>留言</Label>
@@ -63,7 +63,7 @@ import { FieldError, Label, TextArea, TextField } from 'prismui-native';
 禁用后不可编辑。
 
 ```tsx
-import { Label, TextArea, TextField } from 'prismui-native';
+import { Label, TextArea, TextField } from '/native';
 
 <TextField isDisabled>
   <Label>禁用字段</Label>
@@ -76,7 +76,7 @@ import { Label, TextArea, TextField } from 'prismui-native';
 按场景使用不同视觉变体。
 
 ```tsx
-import { Label, TextArea, TextField } from 'prismui-native';
+import { Label, TextArea, TextField } from '/native';
 
 <TextField>
   <Label>主要变体</Label>
@@ -94,7 +94,7 @@ import { Label, TextArea, TextField } from 'prismui-native';
 通过 `className` 自定义外观。
 
 ```tsx
-import { Label, TextArea, TextField } from 'prismui-native';
+import { Label, TextArea, TextField } from '/native';
 
 <TextField>
   <Label>自定义样式</Label>
@@ -108,7 +108,7 @@ import { Label, TextArea, TextField } from 'prismui-native';
 ## 示例
 
 ```tsx
-import { Description, FieldError, Label, TextArea, TextField } from 'prismui-native';
+import { Description, FieldError, Label, TextArea, TextField } from '/native';
 import { View } from 'react-native';
 
 export default function TextAreaExample() {

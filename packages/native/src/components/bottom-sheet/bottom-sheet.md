@@ -5,7 +5,7 @@ Displays a bottom sheet that slides up from the bottom with animated transitions
 ## Import
 
 ```tsx
-import { BottomSheet } from 'prismui-native';
+import { BottomSheet } from '/native';
 ```
 
 ## Anatomy
@@ -126,7 +126,7 @@ Use the built-in `blur` variant for an animated blur backdrop. iOS only, require
 Replace the default overlay with custom content like blur effects.
 
 ```tsx
-import { useBottomSheet, useBottomSheetAnimation } from 'prismui-native';
+import { useBottomSheet, useBottomSheetAnimation } from '/native';
 import { StyleSheet, Pressable } from 'react-native';
 import { interpolate, useDerivedValue } from 'react-native-reanimated';
 import { AnimatedBlurView } from './animated-blur-view';
@@ -175,7 +175,7 @@ When rendering an `Input` or `InputOTP` inside `BottomSheet.Content`, use the `u
 For scrollable content, also configure `BottomSheet.Content` with `keyboardBehavior="extend"` (or `"interactive"`) and `keyboardShouldPersistTaps="handled"` on the scrollable so taps don't dismiss the keyboard before reaching their target.
 
 ```tsx
-import { BottomSheet, Input, useBottomSheetAwareHandlers } from 'prismui-native';
+import { BottomSheet, Input, useBottomSheetAwareHandlers } from '/native';
 
 const BottomSheetTextInput = () => {
   const { onFocus, onBlur } = useBottomSheetAwareHandlers();
@@ -199,7 +199,7 @@ See full examples for [`Input`](https://github.com/khulnasoft/prism/blob/main/ex
 ## Example
 
 ```tsx
-import { BottomSheet, Button } from 'prismui-native';
+import { BottomSheet, Button } from '/native';
 import { useState } from 'react';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';

@@ -1,4 +1,4 @@
-import { cn } from 'prismui-native';
+import { cn } from '/native';
 import React from 'react';
 import { Text as RNText, type TextProps as RNTextProps } from 'react-native';
 

@@ -1,7 +1,7 @@
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import * as Haptics from 'expo-haptics';
-import { Button, useSelect, useThemeColor } from 'prismui-native';
+import { Button, useSelect, useThemeColor } from '/native';
 import { useEffect } from 'react';
 import { Platform } from 'react-native';
 import Animated, {

@@ -5,7 +5,7 @@ Displays important messages and notifications to users with status indicators.
 ## Import
 
 ```tsx
-import { Alert } from 'prismui-native';
+import { Alert } from '/native';
 ```
 
 ## Anatomy
@@ -142,7 +142,7 @@ Apply custom styles using the `className` prop on the root and compound parts.
 ## Example
 
 ```tsx
-import { Alert, Button, CloseButton } from 'prismui-native';
+import { Alert, Button, CloseButton } from '/native';
 import { View } from 'react-native';
 
 export default function AlertExample() {
@@ -250,7 +250,7 @@ You can find more examples in the [GitHub repository](<https://github.com/khulna
 Hook to access the alert root context. Must be used within an `Alert` component.
 
 ```tsx
-import { useAlert } from 'prismui-native';
+import { useAlert } from '/native';
 
 const { status, nativeID } = useAlert();
 ```

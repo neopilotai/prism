@@ -5,7 +5,7 @@ A compound layout component that groups an input with optional prefix and suffix
 ## Import
 
 ```tsx
-import { InputGroup } from 'prismui-native';
+import { InputGroup } from '/native';
 ```
 
 ## Anatomy
@@ -117,7 +117,7 @@ Combine with TextField, Label, and Description for full form field support.
 ## Example
 
 ```tsx
-import { InputGroup } from 'prismui-native';
+import { InputGroup } from '/native';
 import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';

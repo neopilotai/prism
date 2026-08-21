@@ -11,7 +11,7 @@ import {
   Skeleton,
   SkeletonGroup,
   type SkeletonAnimation,
-} from 'prismui-native';
+} from '/native';
 import { useState } from 'react';
 import { Image, Text, View } from 'react-native';
 import Animated, { FadeInLeft, FadeOutRight } from 'react-native-reanimated';

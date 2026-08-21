@@ -1,5 +1,5 @@
 import { useLingui } from '@lingui/react/macro';
-import { Select, useSelect } from 'prismui-native';
+import { Select, useSelect } from '/native';
 import { type FC } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { AppText } from '../../app-text';

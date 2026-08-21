@@ -5,7 +5,7 @@ A selectable control that allows users to toggle between checked and unchecked s
 ## Import
 
 ```tsx
-import { Checkbox } from 'prismui-native';
+import { Checkbox } from '/native';
 ```
 
 ## Anatomy
@@ -117,7 +117,7 @@ import {
   Label,
   Separator,
   Surface,
-} from 'prismui-native';
+} from '/native';
 import React from 'react';
 import { View, Text } from 'react-native';
 
@@ -302,7 +302,7 @@ Animation configuration for checkbox indicator component. Can be:
 Hook to access checkbox context values within custom components or compound components.
 
 ```tsx
-import { useCheckbox } from 'prismui-native';
+import { useCheckbox } from '/native';
 
 const CustomIndicator = () => {
   const { isSelected, isInvalid, isDisabled } = useCheckbox();

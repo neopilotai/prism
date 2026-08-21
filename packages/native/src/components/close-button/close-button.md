@@ -5,7 +5,7 @@ Button component for closing dialogs, modals, or dismissing content.
 ## Import
 
 ```tsx
-import { CloseButton } from 'prismui-native';
+import { CloseButton } from '/native';
 ```
 
 ## Usage
@@ -56,7 +56,7 @@ Disable the button to prevent interactions.
 ## Example
 
 ```tsx
-import { CloseButton, useThemeColor } from 'prismui-native';
+import { CloseButton, useThemeColor } from '/native';
 import { Ionicons } from '@expo/vector-icons';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';

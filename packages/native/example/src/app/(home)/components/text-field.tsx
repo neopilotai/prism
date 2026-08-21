@@ -7,7 +7,7 @@ import {
   Input,
   Label,
   TextField,
-} from 'prismui-native';
+} from '/native';
 import { useState } from 'react';
 import { Pressable, useWindowDimensions, View } from 'react-native';
 import { useReanimatedKeyboardAnimation } from 'react-native-keyboard-controller';

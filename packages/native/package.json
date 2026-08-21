@@ -1,6 +1,6 @@
 {
-  "name": "prismui-native",
-  "version": "1.0.8",
+  "name": "@prismui/native",
+  "version": "3.2.4",
   "description": "Beautiful, fast and modern React Native UI library",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -35,14 +35,14 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace prismui-native-example",
+    "example": "pnpm --filter prismui-native-example start",
+    "build": "bob build",
     "test": "jest",
     "typecheck": "bash ./scripts/typecheck.sh",
     "lint": "eslint \"src/**/*.{ts,tsx}\" \"example/src/**/*.{ts,tsx}\"",
     "clean": "del-cli lib",
-    "prepare": "bob build",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --commit-path .",
-    "release": "bumpp --execute='yarn changelog' --all",
+    "release": "bumpp --execute='pnpm changelog' --all",
     "prepack": "node scripts/update-exports.js prepack",
     "postpack": "node scripts/update-exports.js postpack"
   },
@@ -55,25 +55,23 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/khulnasoft/prism.git",
-    "directory": "native"
+    "url": "git+https://github.com/khulnasoft/prismui.git",
+    "directory": "packages/native"
   },
   "author": "PrismUI <support@khulnasoft.com> (https://github.com/khulnasoft)",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/khulnasoft/prism/issues"
+    "url": "https://github.com/khulnasoft/prismui/issues"
   },
-  "homepage": "https://github.com/khulnasoft/prism#readme",
+  "homepage": "https://github.com/khulnasoft/prismui#readme",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^19.6.0",
     "@eslint/compat": "^1.2.7",
     "@eslint/eslintrc": "^3.3.0",
     "@eslint/js": "^9.22.0",
-    "@evilmartians/lefthook": "^1.5.0",
     "@gorhom/bottom-sheet": "^5.2.14",
     "@react-native-community/cli": "latest",
     "@react-native/babel-preset": "0.78.2",
@@ -85,7 +83,6 @@
     "babel-plugin-transform-remove-imports": "^1.8.0",
     "bumpp": "^9.10.2",
     "changelogithub": "^13.16.0",
-    "commitlint": "^19.6.1",
     "conventional-changelog": "^7.1.1",
     "del-cli": "^5.1.0",
     "eslint": "^9.22.0",
@@ -135,20 +132,11 @@
       "optional": true
     }
   },
-  "workspaces": [
-    "example"
-  ],
-  "packageManager": "yarn@3.6.1",
   "jest": {
     "preset": "@react-native/jest-preset",
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
     ]
   },
   "bumpp": {

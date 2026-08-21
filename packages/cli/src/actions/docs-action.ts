@@ -224,7 +224,7 @@ export async function docsAction(options: DocsOptions) {
       } else if (hasNative) {
         // Only Native found - use it automatically
         selection = 'native';
-        Logger.log(chalk.dim('Detected prismui-native, using PrismUI Native docs'));
+        Logger.log(chalk.dim('Detected @prismui/native, using PrismUI Native docs'));
       } else {
         // Neither found - prompt for selection with warning
         if (options.output) {
@@ -429,7 +429,7 @@ export async function docsAction(options: DocsOptions) {
 
 async function promptForLibrarySelection(neitherFound: boolean = false): Promise<DocSelection> {
   if (neitherFound) {
-    Logger.warn('Neither @prismui/react nor prismui-native is installed in this project.');
+    Logger.warn('Neither @prismui/react nor @prismui/native is installed in this project.');
     Logger.newLine();
   }
 

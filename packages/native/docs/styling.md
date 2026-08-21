@@ -20,7 +20,7 @@ PrismUI Native is built with `className` as the go-to styling solution. You can 
 **Using className:** All PrismUI Native components accept `className` props:
 
 ```tsx
-import { Button } from 'prismui-native';
+import { Button } from '/native';
 
 <Button className="bg-accent px-6 py-3 rounded-lg">
   <Button.Label>Custom Button</Button.Label>
@@ -30,7 +30,7 @@ import { Button } from 'prismui-native';
 **Using style:** Components also accept inline styles via the `style` prop:
 
 ```tsx
-import { Button } from 'prismui-native';
+import { Button } from '/native';
 
 <Button style={{ backgroundColor: '#8B5CF6', paddingHorizontal: 24 }}>
   <Button.Label>Styled Button</Button.Label>
@@ -42,7 +42,7 @@ import { Button } from 'prismui-native';
 Use a render function to access component state and customize content dynamically:
 
 ```tsx
-import { RadioGroup, Label, cn } from 'prismui-native';
+import { RadioGroup, Label, cn } from '/native';
 
 <RadioGroup value={value} onValueChange={setValue}>
   <RadioGroup.Item value="option1">
@@ -75,8 +75,8 @@ import { RadioGroup, Label, cn } from 'prismui-native';
 Create reusable custom components using [tailwind-variants](https://tailwind-variants.org/)—a Tailwind CSS first-class variant API:
 
 ```tsx
-import { Button } from 'prismui-native';
-import type { ButtonRootProps } from 'prismui-native';
+import { Button } from '/native';
+import type { ButtonRootProps } from '/native';
 import { tv, type VariantProps } from 'tailwind-variants';
 
 const customButtonVariants = tv({
@@ -145,7 +145,7 @@ Each PrismUI Native component exports a `classNames` object that contains the sa
 For example, you can style a custom `Link` component to look like a `Button`:
 
 ```tsx
-import { buttonClassNames, cn } from 'prismui-native';
+import { buttonClassNames, cn } from '/native';
 import { Pressable, Text } from 'react-native';
 
 interface LinkProps {
@@ -192,7 +192,7 @@ Each component exports its `classNames` object. For example:
 **Usage pattern:**
 
 ```tsx
-import { buttonClassNames } from 'prismui-native';
+import { buttonClassNames } from '/native';
 
 // Use with variant and size options
 const rootClasses = buttonClassNames.root({
@@ -218,7 +218,7 @@ PrismUI Native supports Tailwind's responsive breakpoint system via [Uniwind](ht
 ### Responsive Typography and Spacing
 
 ```tsx
-import { Button } from 'prismui-native';
+import { Button } from '/native';
 import { View, Text } from 'react-native';
 
 <View className="px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
@@ -267,7 +267,7 @@ PrismUI Native provides utility functions to assist with styling components.
 The `cn` utility function merges Tailwind CSS classes with proper conflict resolution. It's particularly useful when combining conditional classes or merging classes from props:
 
 ```tsx
-import { cn } from 'prismui-native';
+import { cn } from '/native';
 import { View } from 'react-native';
 
 function MyComponent({ className, isActive }) {
@@ -305,7 +305,7 @@ Retrieves theme color values from CSS variables. Supports both single color and 
 **Single color usage:**
 
 ```tsx
-import { useThemeColor } from 'prismui-native';
+import { useThemeColor } from '/native';
 
 function MyComponent() {
   const accentColor = useThemeColor('accent');
@@ -322,7 +322,7 @@ function MyComponent() {
 **Multiple colors usage (more efficient):**
 
 ```tsx
-import { useThemeColor } from 'prismui-native';
+import { useThemeColor } from '/native';
 
 function MyComponent() {
   const [accentColor, backgroundColor, dangerColor] = useThemeColor([

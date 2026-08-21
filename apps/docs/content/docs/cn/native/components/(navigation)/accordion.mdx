@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { Accordion } from 'prismui-native';
+import { Accordion } from '/native';
 ```
 
 ## 结构
@@ -173,7 +173,7 @@ Accordion 通过复合子组件创建可展开的内容区块。
 对 `Accordion.Trigger` 使用 `asChild`，并用 `PressableFeedback` 包裹内容以添加按压反馈动画。
 
 ```tsx
-import { Accordion, PressableFeedback } from 'prismui-native';
+import { Accordion, PressableFeedback } from '/native';
 import { View } from 'react-native';
 
 <Accordion>
@@ -197,7 +197,7 @@ import { View } from 'react-native';
 ## 示例
 
 ```tsx
-import { Accordion, useThemeColor } from 'prismui-native';
+import { Accordion, useThemeColor } from '/native';
 import { Ionicons } from '@expo/vector-icons';
 import { View, Text } from 'react-native';
 
@@ -392,7 +392,7 @@ export default function AccordionExample() {
 访问手风琴根上下文，必须在 `Accordion` 内使用。
 
 ```tsx
-import { useAccordion } from 'prismui-native';
+import { useAccordion } from '/native';
 
 const { value, onValueChange, selectionMode, isCollapsible, isDisabled } =
   useAccordion();
@@ -413,7 +413,7 @@ const { value, onValueChange, selectionMode, isCollapsible, isDisabled } =
 访问单条条目上下文，必须在 `Accordion.Item` 内使用。
 
 ```tsx
-import { useAccordionItem } from 'prismui-native';
+import { useAccordionItem } from '/native';
 
 const { value, isExpanded, isDisabled, nativeID } = useAccordionItem();
 ```
@@ -432,7 +432,7 @@ const { value, isExpanded, isDisabled, nativeID } = useAccordionItem();
 当 Accordion 与同屏其他组件一起使用时，请为这些组件导入并应用 `AccordionLayoutTransition`，以保证整屏布局动画一致、顺滑。
 
 ```jsx
-import { Accordion, AccordionLayoutTransition } from 'prismui-native';
+import { Accordion, AccordionLayoutTransition } from '/native';
 import Animated from 'react-native-reanimated';
 
 <Animated.ScrollView layout={AccordionLayoutTransition}>

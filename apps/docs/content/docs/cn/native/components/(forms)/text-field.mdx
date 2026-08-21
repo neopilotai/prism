@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { TextField } from 'prismui-native';
+import { TextField } from '/native';
 ```
 
 ## 结构
@@ -65,7 +65,7 @@ import { TextField } from 'prismui-native';
 非法时展示错误信息。
 
 ```tsx
-import { FieldError, Input, Label, TextField } from 'prismui-native';
+import { FieldError, Input, Label, TextField } from '/native';
 
 <TextField isRequired isInvalid={true}>
   <Label>邮箱</Label>
@@ -85,7 +85,7 @@ import {
   Input,
   Label,
   TextField,
-} from 'prismui-native';
+} from '/native';
 
 <TextField isInvalid={true}>
   <Label isInvalid={false}>邮箱</Label>
@@ -154,7 +154,7 @@ import {
 
 ```tsx
 import { Ionicons } from '@expo/vector-icons';
-import { Description, Input, Label, TextField } from 'prismui-native';
+import { Description, Input, Label, TextField } from '/native';
 import { useState } from 'react';
 import { Pressable, View } from 'react-native';
 import { withUniwind } from 'uniwind';
@@ -248,7 +248,7 @@ export const TextInputContent = () => {
 访问 `TextField` 上下文，必须在 `TextField` 内使用。
 
 ```tsx
-import { TextField, useTextField } from 'prismui-native';
+import { TextField, useTextField } from '/native';
 
 function CustomComponent() {
   const { isDisabled, isInvalid, isRequired } = useTextField();

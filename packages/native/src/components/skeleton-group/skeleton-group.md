@@ -5,7 +5,7 @@ Coordinates multiple skeleton loading placeholders with centralized animation co
 ## Import
 
 ```tsx
-import { SkeletonGroup } from 'prismui-native';
+import { SkeletonGroup } from '/native';
 ```
 
 ## Anatomy
@@ -117,7 +117,7 @@ Apply Reanimated transitions when the group appears or disappears.
 ## Example
 
 ```tsx
-import { Card, SkeletonGroup, Avatar } from 'prismui-native';
+import { Card, SkeletonGroup, Avatar } from '/native';
 import { useState } from 'react';
 import { Text, View, Image } from 'react-native';
 

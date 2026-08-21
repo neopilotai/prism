@@ -1,6 +1,6 @@
 import { Image as ExpoImage } from 'expo-image';
 import { useRouter } from 'expo-router';
-import { Chip, cn, Surface } from 'prismui-native';
+import { Chip, cn, Surface } from '/native';
 import { Platform, Pressable, StyleSheet, View } from 'react-native';
 import Animated, {
   Extrapolation,

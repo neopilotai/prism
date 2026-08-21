@@ -1,6 +1,6 @@
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react/macro';
-import { Description, FieldError, Label, SearchField } from 'prismui-native';
+import { Description, FieldError, Label, SearchField } from '/native';
 import { useState } from 'react';
 import { Text, useWindowDimensions, View } from 'react-native';
 import { useReanimatedKeyboardAnimation } from 'react-native-keyboard-controller';

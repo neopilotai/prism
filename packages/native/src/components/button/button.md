@@ -5,7 +5,7 @@ Interactive component that triggers an action when pressed.
 ## Import
 
 ```tsx
-import { Button } from 'prismui-native';
+import { Button } from '/native';
 ```
 
 ## Anatomy
@@ -220,7 +220,7 @@ const themeColorAccentForeground = useThemeColor('accent-foreground');
 Add gradient backgrounds using absolute positioned elements. Use `feedbackVariant="none"` to disable the default highlight overlay, or use `feedbackVariant="scale-ripple"` for a custom ripple effect.
 
 ```tsx
-import { Button, PressableFeedback } from 'prismui-native';
+import { Button, PressableFeedback } from '/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet } from 'react-native';
 
@@ -264,7 +264,7 @@ import { StyleSheet } from 'react-native';
 ## Example
 
 ```tsx
-import { Button, useThemeColor } from 'prismui-native';
+import { Button, useThemeColor } from '/native';
 import { Ionicons } from '@expo/vector-icons';
 import { View } from 'react-native';
 
@@ -399,7 +399,7 @@ Absolute-fill container rendered behind the button surface. With no children, th
 Hook to access the Button context values. Returns the button's size, variant, and disabled state.
 
 ```tsx
-import { useButton } from 'prismui-native';
+import { useButton } from '/native';
 
 const { size, variant, isDisabled } = useButton();
 ```

@@ -3,7 +3,7 @@
    the `t` macro. */
 import { useLingui } from '@lingui/react/macro';
 import { Image } from 'expo-image';
-import { Card, PressableFeedback } from 'prismui-native';
+import { Card, PressableFeedback } from '/native';
 import { View } from 'react-native';
 import { withUniwind } from 'uniwind';
 import { AppText } from '../app-text';

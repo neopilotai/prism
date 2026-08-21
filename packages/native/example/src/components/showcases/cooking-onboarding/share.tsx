@@ -5,7 +5,7 @@ import {
   Popover,
   useThemeColor,
   type PopoverTriggerRef,
-} from 'prismui-native';
+} from '/native';
 import { type FC, type RefObject } from 'react';
 import { withUniwind } from 'uniwind';
 import { simulatePress } from '../../../helpers/utils/simulate-press';

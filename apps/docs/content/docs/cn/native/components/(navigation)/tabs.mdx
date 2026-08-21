@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { Tabs } from 'prismui-native';
+import { Tabs } from '/native';
 ```
 
 ## 结构
@@ -261,7 +261,7 @@ import {
   Label,
   Tabs,
   TextField,
-} from 'prismui-native';
+} from '/native';
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 import Animated, {
@@ -512,7 +512,7 @@ export default function TabsExample() {
 在自定义组件或复合子组件中读取 Tabs 根上下文。
 
 ```tsx
-import { useTabs } from 'prismui-native';
+import { useTabs } from '/native';
 
 const CustomComponent = () => {
   const { value, onValueChange, nativeID } = useTabs();
@@ -537,7 +537,7 @@ const CustomComponent = () => {
 读取标签测量上下文，用于管理各触发器的位置与尺寸。
 
 ```tsx
-import { useTabsMeasurements } from 'prismui-native';
+import { useTabsMeasurements } from '/native';
 
 const CustomIndicator = () => {
   const { measurements, variant } = useTabsMeasurements();
@@ -570,7 +570,7 @@ const CustomIndicator = () => {
 在自定义组件或复合子组件中读取单个 `Tabs.Trigger` 的上下文。
 
 ```tsx
-import { useTabsTrigger } from 'prismui-native';
+import { useTabsTrigger } from '/native';
 
 const CustomLabel = () => {
   const { value, isSelected, nativeID } = useTabsTrigger();

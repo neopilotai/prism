@@ -5,7 +5,7 @@ Displays a card container with flexible layout sections for structured content.
 ## Import
 
 ```tsx
-import { Card } from 'prismui-native';
+import { Card } from '/native';
 ```
 
 ## Anatomy
@@ -100,7 +100,7 @@ Use an image as an absolute positioned background.
 ## Example
 
 ```tsx
-import { Button, Card } from 'prismui-native';
+import { Button, Card } from '/native';
 import { Ionicons } from '@expo/vector-icons';
 import { View } from 'react-native';
 

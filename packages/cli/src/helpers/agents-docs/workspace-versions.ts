@@ -166,7 +166,10 @@ function findPrismuiInWorkspace(cwd: string, patterns: string[]): {react?: strin
       const reactVersion =
         pkg.dependencies?.['@prismui/react'] || pkg.devDependencies?.['@prismui/react'];
       const nativeVersion =
-        pkg.dependencies?.['prismui-native'] || pkg.devDependencies?.['prismui-native'];
+        pkg.dependencies?.['@prismui/native'] ||
+        pkg.devDependencies?.['@prismui/native'] ||
+        pkg.dependencies?.['prismui-native'] ||
+        pkg.devDependencies?.['prismui-native'];
 
       if (reactVersion) {
         reactVersions.push(reactVersion.replace(/^[<=>^~]+/, ''));
@@ -334,7 +337,11 @@ export function getPrismuiVersions(cwd: string): PrismuiVersionsResult {
     const devDependencies = packageJson.devDependencies || {};
 
     const reactVersion = dependencies['@prismui/react'] || devDependencies['@prismui/react'];
-    const nativeVersion = dependencies['prismui-native'] || devDependencies['prismui-native'];
+    const nativeVersion =
+      dependencies['@prismui/native'] ||
+      devDependencies['@prismui/native'] ||
+      dependencies['prismui-native'] ||
+      devDependencies['prismui-native'];
 
     const result: PrismuiVersionsResult = {};
 
@@ -368,7 +375,7 @@ export function getPrismuiVersions(cwd: string): PrismuiVersionsResult {
       } else {
         return {
           error:
-            'PrismUI packages (@prismui/react or prismui-native) are not installed in this project.'
+            'PrismUI packages (@prismui/react or @prismui/native) are not installed in this project.'
         };
       }
     }

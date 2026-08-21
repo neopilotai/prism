@@ -15,7 +15,7 @@ links:
 ## 导入
 
 ```tsx
-import { ListGroup } from 'prismui-native';
+import { ListGroup } from '/native';
 ```
 
 ## 结构
@@ -200,7 +200,7 @@ import { ListGroup } from 'prismui-native';
 用 `PressableFeedback` 包裹列表项以添加缩放与水波纹反馈。此模式下将 `onPress` 放在 `PressableFeedback` 上，并对 `ListGroup.Item` 使用 `disabled`。
 
 ```tsx
-import { ListGroup, PressableFeedback, Separator } from 'prismui-native';
+import { ListGroup, PressableFeedback, Separator } from '/native';
 
 <ListGroup>
   <PressableFeedback animation={false} onPress={() => {}}>
@@ -239,7 +239,7 @@ import { ListGroup, PressableFeedback, Separator } from 'prismui-native';
 
 ```tsx
 import { Ionicons } from '@expo/vector-icons';
-import { ListGroup, Separator, useThemeColor } from 'prismui-native';
+import { ListGroup, Separator, useThemeColor } from '/native';
 import { View, Text } from 'react-native';
 import { withUniwind } from 'uniwind';
 

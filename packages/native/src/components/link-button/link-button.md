@@ -5,7 +5,7 @@ A ghost-variant button with no highlight feedback, designed for inline link-styl
 ## Import
 
 ```tsx
-import { LinkButton } from 'prismui-native';
+import { LinkButton } from '/native';
 ```
 
 ## Anatomy
@@ -89,7 +89,7 @@ Place link buttons inline alongside regular text for terms, policies, or context
 ## Example
 
 ```tsx
-import { Button, Checkbox, ControlField, LinkButton } from 'prismui-native';
+import { Button, Checkbox, ControlField, LinkButton } from '/native';
 import React from 'react';
 import { Alert, View } from 'react-native';
 

@@ -12,7 +12,7 @@ import {
   RadioGroup,
   Tabs,
   TextField,
-} from 'prismui-native';
+} from '/native';
 import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Animated, {
