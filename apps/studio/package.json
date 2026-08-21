@@ -1,0 +1,83 @@
+{
+  "name": "@prismui/studio",
+  "description": "Visual design editor powered by GrapesJS for PrismUI",
+  "version": "3.2.4",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/grapes.min.js",
+  "module": "./dist/grapes.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/grapes.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/grapes.min.js"
+      }
+    },
+    "./*": "./*"
+  },
+  "files": [
+    "dist",
+    "src/styles"
+  ],
+  "sideEffects": [
+    "*.css",
+    "*.scss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/prismui.git",
+    "directory": "apps/studio"
+  },
+  "bugs": {
+    "url": "https://github.com/khulnasoft/prismui/issues"
+  },
+  "homepage": "https://prism.khulnasoft.com",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@types/backbone": "1.4.15",
+    "backbone": "1.4.1",
+    "backbone-undo": "0.2.6",
+    "codemirror": "5.63.0",
+    "codemirror-formatting": "1.0.0",
+    "underscore": "1.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.0.0",
+    "sass": "1.42.1",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10"
+  },
+  "resolutions": {
+    "backbone-undo/backbone": "1.3.3",
+    "backbone-undo/underscore": "1.13.1"
+  },
+  "keywords": [
+    "grapesjs",
+    "visual-editor",
+    "web-builder",
+    "drag-and-drop",
+    "page-builder",
+    "prismui"
+  ],
+  "scripts": {
+    "build": "tsup && sass src/styles/scss/main.scss dist/css/grapes.min.css --no-source-map --style=compressed --load-path=node_modules",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=22.x",
+    "pnpm": ">=10.x"
+  }
+}
