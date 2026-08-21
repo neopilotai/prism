@@ -15,7 +15,7 @@ Please **do not** open public GitHub issues or pull requests for security-relate
 
 To report a vulnerability privately, please use one of the following channels:
 
-1. **GitHub Security Advisories**: Navigate to the **Security** tab of this repository and select **"Report a vulnerability"** (or use [this link](https://github.com/khulnasoft/prism/security/advisories/new)).
+1. **GitHub Security Advisories**: Navigate to the **Security** tab of this repository and select **"Report a vulnerability"** (or use [this link](https://github.com/khulnasoft/prismui/security/advisories/new)).
 2. **Email**: Contact the maintainers listed in the [README](./README.md) (Authors section).
 
 Please include the following details in your report to help us triage it quickly:

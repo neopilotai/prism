@@ -1,6 +1,6 @@
 {
   "name": "tailwind-variants",
-  "version": "3.3.1",
+  "version": "3.2.4",
   "description": "🦄 Tailwindcss first-class variant API",
   "keywords": [
     "tailwindcss",
@@ -14,11 +14,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/prism",
-    "directory": "tailwind-variants"
+    "url": "https://github.com/khulnasoft/prismui.git",
+    "directory": "packages/tailwind-variants"
   },
   "bugs": {
-    "url": "https://github.com/khulnasoft/prism/issues"
+    "url": "https://github.com/khulnasoft/prismui/issues"
   },
   "type": "module",
   "main": "./dist/index.cjs",
@@ -86,9 +86,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.5",
-    "@commitlint/cli": "21.2.1",
-    "@commitlint/config-conventional": "21.2.0",
-    "@commitlint/types": "21.2.0",
     "@types/node": "26.1.1",
     "bumpp": "11.1.0",
     "changelogithub": "14.0.0",
@@ -114,8 +111,7 @@
     }
   },
   "engines": {
-    "pnpm": ">=7.x",
-    "node": ">=16.9.x"
-  },
-  "packageManager": "pnpm@11.17.0"
+    "pnpm": ">=10.x",
+    "node": ">=22.x"
+  }
 }
