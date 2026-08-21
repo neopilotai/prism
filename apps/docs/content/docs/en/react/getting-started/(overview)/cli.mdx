@@ -1,0 +1,417 @@
+---
+title: CLI
+description: Use the CLI to manage PrismUI dependencies and initialize projects.
+icon: terminal
+---
+
+The CLI offers a comprehensive suite of commands to initialize, manage, and improve your PrismUI projects. It enables you to `install`, `uninstall`, or `upgrade` individual components, assess the health of your project, download documentation for AI coding agents, and more.
+
+## Installation
+
+Requirements:
+
+- [Node.js version 22.22.0 or later](https://nodejs.org/en/)
+
+
+### Global Installation
+
+To install `/cli` globally, execute one of the following commands in your terminal:
+
+
+```npm
+npm install /cli@latest -g
+```
+
+### Without Installation
+
+Alternatively, you can use `/cli` without a global installation by running one of the following:
+
+<Tabs items={["pnpm", "npm", "yarn", "bun"]}>
+  <Tab value="pnpm">
+    ```bash
+    pnpm dlx /cli@latest
+    ```
+  </Tab>
+  <Tab value="npm">
+    ```bash
+    npx /cli@latest
+    ```
+  </Tab>
+  <Tab value="yarn">
+    ```bash
+    yarn dlx /cli@latest
+    ```
+  </Tab>
+  <Tab value="bun">
+    ```bash
+    bunx /cli@latest
+    ```
+  </Tab>
+</Tabs>
+
+## Quick Start
+
+Once `/cli` is installed, run the following command to display available commands:
+
+```bash
+prismui
+```
+
+This will produce the following help output:
+
+```bash
+Usage: prismui [command]
+
+Options:
+  -v, --version                  Output the current version
+  --no-cache                     Disable cache, by default data will be cached for 30m after the first request
+  -d, --debug                    Debug mode will not install dependencies
+  -h --help                      Display help information for commands
+
+Commands:
+  init [options] [projectName]   Initializes a new project
+  install [options]              Installs @prismui/react and @khulnasoft/styles to your project
+  upgrade [options]              Upgrades @prismui/react and @khulnasoft/styles to the latest versions
+  uninstall [options]            Uninstall @prismui/react and @khulnasoft/styles from the project
+  list [options]                 Lists installed PrismUI packages (@prismui/react, @khulnasoft/styles)
+  env [options]                  Displays debugging information for the local environment
+  doctor [options]               Checks for issues in the project
+  agents-md [options]            Downloads PrismUI documentation for AI coding agents
+  help [command]                 Display help for command
+```
+
+### init
+
+Initialize a new PrismUI project using the `init` command. This sets up your project with the necessary configurations.
+
+```bash
+prismui init [options]
+```
+
+**Options:**
+
+- `-t --template [string]` The template to use for the new project e.g. app, pages, vite, react-router
+- `-p --package [string]` The package manager to use for the new project
+
+output:
+
+```bash
+PrismUI CLI <version>
+
+┌  Create a new project
+│
+◇  Select a template (Enter to select)
+│  ● App (A Next.js 16 with app directory template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ Pages (A Next.js 16 with pages directory template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ Vite (A Vite template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│  ○ React Router (A React Router template pre-configured with PrismUI (v3) and Tailwind CSS.)
+│
+◇  New project name (Enter to skip with default name)
+│  my-prismui-app
+│
+◇  Select a package manager (Enter to select)
+│  ● npm
+│  ○ yarn
+│  ○ pnpm
+│  ○ bun
+│
+◇  Template created successfully!
+│
+◇  Next steps ───────╮
+│                    │
+│  cd my-prismui-app  │
+│  npm install       │
+│                    │
+├────────────────────╯
+│
+└  🚀 Get started with npm run dev
+```
+
+
+Install the dependencies to start the local server:
+
+<Tabs items={["npm", "pnpm", "yarn", "bun"]}>
+  <Tab value="npm">
+    ```bash
+    cd my-prismui-app && npm install
+    ```
+  </Tab>
+  <Tab value="pnpm">
+    ```bash
+    cd my-prismui-app && pnpm install
+    ```
+  </Tab>
+  <Tab value="yarn">
+    ```bash
+    cd my-prismui-app && yarn install
+    ```
+  </Tab>
+  <Tab value="bun">
+    ```bash
+    cd my-prismui-app && bun install
+    ```
+  </Tab>
+</Tabs>
+
+Start the local server:
+
+```npm
+npm run dev
+```
+
+### Install
+
+Install `@prismui/react` and `@khulnasoft/styles` to your project, along with their peer dependencies. If they are already installed, the command does nothing.
+
+```bash
+prismui install [options]
+```
+
+**Options:**
+
+- `-p --packagePath` [string] The path to the package.json file
+
+
+**Output:**
+
+```bash
+PrismUI CLI <version>
+
+📦 Packages to be installed:
+╭─────────────────────────────────────────────────────────────────────────────╮
+│   Package          │   Version        │   Status   │   Docs                 │
+│─────────────────────────────────────────────────────────────────────────────│
+│   @prismui/react    │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
+│   @khulnasoft/styles   │   3.0.0          │   stable   │   https://prism.khulnasoft.com   │
+╰─────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────── PeerDependencies ────────────────╮
+│  react@18.3.1                      latest       │
+│  react-dom@18.3.1                  latest       │
+│  tailwindcss@4.2.2                 latest       │
+╰─────────────────────────────────────────────────╯
+? Proceed with installation? › - Use arrow-keys. Return to submit.
+❯   Yes
+    No
+
+✅ @prismui/react and @khulnasoft/styles installed successfully
+```
+
+### upgrade
+
+
+Upgrade `@prismui/react` and `@khulnasoft/styles` with their peer dependencies to the latest versions.
+
+```bash
+prismui upgrade [options]
+```
+
+**Options:**
+
+- `-p --packagePath` [string] The path to the package.json file
+
+**Output:**
+
+```bash
+PrismUI CLI <version>
+
+╭──────────────────────────── Upgrade ────────────────────────────╮
+│  @prismui/react               ^3.0.0  ->  ^3.1.0                │
+│  @khulnasoft/styles              ^3.0.0  ->  ^3.1.0                │
+╰─────────────────────────────────────────────────────────────────╯
+
+? Would you like to proceed with the upgrade? › - Use arrow-keys. Return to submit.
+❯   Yes
+    No
+
+✅ Upgrade complete. All packages are up to date.
+```
+
+### uninstall
+
+Uninstall `@prismui/react` and `@khulnasoft/styles` from your project. Peer dependencies will not be uninstalled.
+
+```bash
+prismui uninstall [options]
+```
+
+**Options:**
+
+- `-p --packagePath` [string] The path to the package.json file
+
+**Output:**
+
+```bash
+PrismUI CLI <version>
+
+❗️ Packages slated for uninstallation:
+╭──────────────────────────────────────────────────────────────────────────────────────╮
+│   Package          │   Version   │   Status   │   Docs                               │
+│──────────────────────────────────────────────────────────────────────────────────────│
+│   @prismui/react    │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
+│   @khulnasoft/styles   │   3.0.0     │   stable   │   https://prism.khulnasoft.com                 │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
+? Confirm uninstallation of these packages: › - Use arrow-keys. Return to submit.
+❯   Yes
+    No
+
+✅ Successfully uninstalled: @prismui/react, @khulnasoft/styles
+```
+
+### list
+
+List the installed PrismUI packages (`@prismui/react`, `@khulnasoft/styles`).
+
+```bash
+prismui list [options]
+```
+
+**Options:**
+
+- `-p --packagePath` [string] The path to the package.json file
+
+**Output:**
+
+```bash
+PrismUI CLI <version>
+
+Current installed packages:
+
+╭──────────────────────────────────────────────────────────────────────────────────────╮
+│   Package          │   Version          │   Status   │   Docs                        │
+│──────────────────────────────────────────────────────────────────────────────────────│
+│   @prismui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @khulnasoft/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
+```
+
+### doctor
+
+Check for issues in your project.
+- Check whether `@prismui/react` and `@khulnasoft/styles` are installed
+- Check whether `required peer dependencies` are installed and matched minimal requirements in the project
+
+
+```bash
+prismui doctor [options]
+```
+
+**Options:**
+
+- `-p --packagePath` [string] The path to the package.json file
+
+**Output:**
+
+If there is a problem in your project, the `doctor` command will display the problem information.
+
+```bash
+PrismUI CLI <version>
+
+PrismUI CLI: ❌ Your project has 1 issue that require attention
+
+❗️Issue 1: missingPrismUIPackages
+
+The following PrismUI packages are not installed:
+- @khulnasoft/styles
+
+Run `prismui install` to install them.
+```
+
+Otherwise, the `doctor` command will display the following message.
+
+```bash
+PrismUI CLI <version>
+
+✅ Your project has no detected issues.
+```
+
+### env
+
+Display debug information about the local environment.
+
+```bash
+prismui env [options]
+```
+
+**Options:**
+
+- `-p --packagePath` [string] The path to the package.json file
+
+**Output:**
+
+```bash
+PrismUI CLI <version>
+
+Current installed packages:
+
+╭──────────────────────────────────────────────────────────────────────────────────────╮
+│   Package          │   Version          │   Status   │   Docs                        │
+│──────────────────────────────────────────────────────────────────────────────────────│
+│   @prismui/react    │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+│   @khulnasoft/styles   │   3.0.0 🚀latest   │   stable   │   https://prism.khulnasoft.com          │
+╰──────────────────────────────────────────────────────────────────────────────────────╯
+
+Environment Info:
+  System:
+    OS: darwin
+    CPU: arm64
+  Binaries:
+    Node: v25.8.1
+```
+
+### agents-md
+
+Download PrismUI documentation for AI coding agents (Claude, Cursor, etc.). The command clones the latest docs from the PrismUI repository and injects a compact index into `AGENTS.md` or `CLAUDE.md` so assistants can reference your project's PrismUI setup.
+
+```bash
+prismui agents-md [options]
+```
+
+**Options:**
+
+- `--react` [boolean] Include React docs only (one library at a time)
+- `--native` [boolean] Include Native docs only
+- `--migration` [boolean] Include PrismUI v2 to v3 migration docs only
+- `--output <file>` [string] Target file path (e.g., `AGENTS.md`, `CLAUDE.md`)
+- `--ssh` [boolean] Use SSH instead of HTTPS for git clone
+
+**Examples:**
+
+Run without flags to enter interactive mode:
+
+```bash
+prismui agents-md
+```
+
+Download React docs to a specific file:
+
+```bash
+prismui agents-md --react --output AGENTS.md
+```
+
+Download Native or migration docs:
+
+```bash
+prismui agents-md --native --output CLAUDE.md
+prismui agents-md --migration --output AGENTS.md
+```
+
+**How it works:**
+
+1. Clones documentation from the `v3` branch using git sparse-checkout
+2. Generates a compact index of doc and demo files
+3. Injects the index into your markdown file between markers (`<!-- PRISMUI-REACT-AGENTS-MD-START -->` / `<!-- PRISMUI-REACT-AGENTS-MD-END -->`, and similar for Native and Migration)
+4. Adds `.prismui-docs/` to `.gitignore`
+
+Only one of `--react`, `--native`, or `--migration` can be selected at a time.
+
+For more details, see [AGENTS.md](/docs/react/getting-started/agents-md).
+
+<Callout>
+  The `agents-md` command collects anonymous usage data (selection, output file names, duration, success or error). Set `PRISMUI_ANALYTICS_DISABLED=1` to opt out.
+</Callout>
+
+## Reporting issues
+
+If you found a bug, please report it in [/cli Issues](https://github.com/khulnasoft/prism/issues).
+

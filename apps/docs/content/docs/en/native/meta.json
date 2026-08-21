@@ -1,0 +1,5 @@
+{
+  "title": "Documentation",
+  "description": "PrismUI Native Documentation",
+  "pages": ["getting-started", "components", "releases"]
+}

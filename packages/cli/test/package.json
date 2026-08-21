@@ -1,0 +1,23 @@
+{
+  "name": "prismui-cli-test",
+  "type": "module",
+  "private": true,
+  "version": "1.0.0",
+  "description": "test for @prismui/cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "devDependencies": {
+    "vite": "8.0.13",
+    "vitest": "4.1.6"
+  },
+  "keywords": [
+    "prismui",
+    "cli",
+    "test"
+  ],
+  "author": "PrismUI",
+  "license": "MIT"
+}

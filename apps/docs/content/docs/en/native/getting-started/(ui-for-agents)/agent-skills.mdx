@@ -1,0 +1,69 @@
+---
+title: Agent Skills
+description: Enable AI assistants to build mobile UIs with PrismUI Native components
+---
+
+PrismUI Native Skills give your AI assistant comprehensive knowledge of PrismUI Native components, patterns, and best practices for React Native development.
+
+<DocsImage
+  src="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/agent-skills-native.jpg"
+  darkSrc="https://prismui-assets.nyc3.cdn.digitaloceanspaces.com/docs/agent-skills-native-dark.jpg"
+  alt="PrismUI Native Agent Skills"
+/>
+
+### Installation
+
+```bash
+curl -fsSL https://prism.khulnasoft.com/install | bash -s prismui-native
+```
+
+Or using the skills package:
+
+```bash
+npx skills add khulnasoft/prismui
+```
+
+<span className="text-sm text-muted">
+Support Claude Code, Cursor, OpenCode and more.
+</span>
+
+### Usage
+
+Skills are **automatically discovered** by your AI assistant, or call it directly using `//native` command.
+
+Simply ask your AI assistant to:
+- Build mobile components using PrismUI Native
+- Create screens with PrismUI Native components
+- Customize themes and styles
+- Access component documentation
+
+<Callout>
+  For more complex use cases, use the [MCP Server](/docs/native/getting-started/mcp-server) which provides real-time access to component documentation and source code.
+</Callout>
+
+### What's Included
+
+- PrismUI Native installation guide
+- All PrismUI Native components with props, examples, and usage patterns
+- Theming and styling guidelines with Uniwind
+- Design principles and composition patterns
+
+### Structure
+
+```
+skills//native/
+├── SKILL.md              # Main skill documentation
+├── LICENSE.txt           # Apache License 2.0
+└── scripts/              # Utility scripts
+    ├── list_components.mjs
+    ├── get_component_docs.mjs
+    ├── get_theme.mjs
+    └── get_docs.mjs
+```
+
+### Related Documentation
+
+- [Agent Skills Specification](https://agentskills.io/home) - Learn about the Agent Skills format
+- [Claude Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) - Claude's Skills documentation
+- [Cursor Skills](https://cursor.com/docs/context/skills) - Using Skills in Cursor
+- [OpenCode Skills](https://opencode.ai/docs/skills) - Using Skills in OpenCode
