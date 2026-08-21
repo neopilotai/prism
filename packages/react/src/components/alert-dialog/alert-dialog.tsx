@@ -6,7 +6,7 @@ import type {ComponentPropsWithRef, HTMLAttributes, ReactNode} from "react";
 import type {ButtonProps as ButtonPrimitiveProps} from "react-aria-components/Button";
 import type {DialogProps as DialogPrimitiveProps} from "react-aria-components/Dialog";
 
-import {alertDialogVariants} from "@prismui/styles";
+import {alertDialogVariants} from "@khulnasoft/styles";
 import {createContext, use, useMemo} from "react";
 import {
   DialogTrigger as AlertDialogTriggerPrimitive,

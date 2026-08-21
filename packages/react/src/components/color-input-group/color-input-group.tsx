@@ -5,7 +5,7 @@ import type {ColorInputGroupVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {InputProps as InputPrimitiveProps} from "react-aria-components/Input";
 
-import {colorInputGroupVariants} from "@prismui/styles";
+import {colorInputGroupVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {Group as GroupPrimitive} from "react-aria-components/Group";
 import {Input as InputPrimitive} from "react-aria-components/Input";

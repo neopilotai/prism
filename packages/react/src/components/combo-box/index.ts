@@ -53,4 +53,4 @@ export {ComboBoxContext} from "./combo-box";
  * -----------------------------------------------------------------------------------------------*/
 export {comboBoxVariants} from "@khulnasoft/styles";
 
-export type {ComboBoxVariants} from "@prismui/styles";
+export type {ComboBoxVariants} from "@khulnasoft/styles";

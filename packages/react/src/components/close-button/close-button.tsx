@@ -3,7 +3,7 @@
 import type {CloseButtonVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {closeButtonVariants} from "@prismui/styles";
+import {closeButtonVariants} from "@khulnasoft/styles";
 import {useMemo} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components/Button";
 

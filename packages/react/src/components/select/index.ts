@@ -41,4 +41,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {selectVariants} from "@khulnasoft/styles";
 
-export type {SelectVariants} from "@prismui/styles";
+export type {SelectVariants} from "@khulnasoft/styles";

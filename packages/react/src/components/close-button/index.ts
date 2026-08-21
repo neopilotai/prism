@@ -26,4 +26,4 @@ export type {CloseButtonRootProps, CloseButtonRootProps as CloseButtonProps} fro
  * -----------------------------------------------------------------------------------------------*/
 export {closeButtonVariants} from "@khulnasoft/styles";
 
-export type {CloseButtonVariants} from "@prismui/styles";
+export type {CloseButtonVariants} from "@khulnasoft/styles";

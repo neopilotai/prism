@@ -26,4 +26,4 @@ export type {RadioGroupRootProps, RadioGroupRootProps as RadioGroupProps} from "
  * -----------------------------------------------------------------------------------------------*/
 export {radioGroupVariants} from "@khulnasoft/styles";
 
-export type {RadioGroupVariants} from "@prismui/styles";
+export type {RadioGroupVariants} from "@khulnasoft/styles";

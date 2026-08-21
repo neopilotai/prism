@@ -35,4 +35,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {badgeVariants} from "@khulnasoft/styles";
 
-export type {BadgeVariants} from "@prismui/styles";
+export type {BadgeVariants} from "@khulnasoft/styles";

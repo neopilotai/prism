@@ -5,7 +5,7 @@ import type {SurfaceVariants} from "../surface";
 import type {CardVariants} from "@khulnasoft/styles";
 import type {ReactNode} from "react";
 
-import {cardVariants} from "@prismui/styles";
+import {cardVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 
 import {composeSlotClassName} from "../../utils/compose";

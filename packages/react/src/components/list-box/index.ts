@@ -34,4 +34,4 @@ export type {ListBoxRootProps, ListBoxRootProps as ListBoxProps} from "./list-bo
  * -----------------------------------------------------------------------------------------------*/
 export {listboxVariants} from "@khulnasoft/styles";
 
-export type {ListBoxVariants} from "@prismui/styles";
+export type {ListBoxVariants} from "@khulnasoft/styles";

@@ -26,4 +26,4 @@ export type {ColorSwatchRootProps, ColorSwatchRootProps as ColorSwatchProps} fro
  * -----------------------------------------------------------------------------------------------*/
 export {colorSwatchVariants} from "@khulnasoft/styles";
 
-export type {ColorSwatchVariants} from "@prismui/styles";
+export type {ColorSwatchVariants} from "@khulnasoft/styles";

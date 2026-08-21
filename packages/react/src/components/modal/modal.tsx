@@ -8,7 +8,7 @@ import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {Button as ButtonPrimitive} from "react-aria-components/Button";
 import type {DialogProps as DialogPrimitiveProps} from "react-aria-components/Dialog";
 
-import {modalVariants} from "@prismui/styles";
+import {modalVariants} from "@khulnasoft/styles";
 import {mergeProps} from "@react-aria/utils";
 import {createContext, use, useMemo} from "react";
 import {

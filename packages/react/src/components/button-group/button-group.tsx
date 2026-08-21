@@ -5,7 +5,7 @@ import type {ButtonProps} from "../button";
 import type {ButtonGroupVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {buttonGroupVariants} from "@prismui/styles";
+import {buttonGroupVariants} from "@khulnasoft/styles";
 import React, {Children, createContext, isValidElement, use} from "react";
 import {Group} from "react-aria-components/Group";
 import {useSlottedContext} from "react-aria-components/slots";

@@ -43,4 +43,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {progressBarVariants} from "@khulnasoft/styles";
 
-export type {ProgressBarVariants} from "@prismui/styles";
+export type {ProgressBarVariants} from "@khulnasoft/styles";

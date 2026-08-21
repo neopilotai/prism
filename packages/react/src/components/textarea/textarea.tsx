@@ -3,7 +3,7 @@
 import type {TextAreaVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {textAreaVariants} from "@prismui/styles";
+import {textAreaVariants} from "@khulnasoft/styles";
 import React, {use} from "react";
 import {TextArea as TextAreaPrimitive} from "react-aria-components/TextArea";
 

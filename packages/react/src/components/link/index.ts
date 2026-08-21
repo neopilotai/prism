@@ -28,4 +28,4 @@ export type {LinkRootProps, LinkIconProps, LinkRootProps as LinkProps} from "./l
  * -----------------------------------------------------------------------------------------------*/
 export {linkVariants} from "@khulnasoft/styles";
 
-export type {LinkVariants} from "@prismui/styles";
+export type {LinkVariants} from "@khulnasoft/styles";

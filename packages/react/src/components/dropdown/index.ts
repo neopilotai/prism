@@ -73,4 +73,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {dropdownVariants} from "@khulnasoft/styles";
 
-export type {DropdownVariants} from "@prismui/styles";
+export type {DropdownVariants} from "@khulnasoft/styles";

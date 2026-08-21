@@ -38,7 +38,7 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {inputOTPVariants} from "@khulnasoft/styles";
 
-export type {InputOTPVariants} from "@prismui/styles";
+export type {InputOTPVariants} from "@khulnasoft/styles";
 
 //  ===================================
 // Regular Expressions

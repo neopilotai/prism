@@ -6,7 +6,7 @@ import type {DisclosureVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {ButtonProps} from "react-aria-components/Button";
 
-import {disclosureVariants} from "@prismui/styles";
+import {disclosureVariants} from "@khulnasoft/styles";
 import React, {createContext, use, useRef} from "react";
 import {Button} from "react-aria-components/Button";
 import {

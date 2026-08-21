@@ -29,7 +29,7 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {disclosureGroupVariants} from "@khulnasoft/styles";
 
-export type {DisclosureGroupVariants} from "@prismui/styles";
+export type {DisclosureGroupVariants} from "@khulnasoft/styles";
 
 /* -------------------------------------------------------------------------------------------------
  * Hooks

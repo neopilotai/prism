@@ -3,7 +3,7 @@
 import type {SeparatorVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {separatorVariants} from "@prismui/styles";
+import {separatorVariants} from "@khulnasoft/styles";
 import React from "react";
 import {SeparatorContext, Separator as SeparatorPrimitive} from "react-aria-components/Separator";
 import {useSlottedContext} from "react-aria-components/slots";

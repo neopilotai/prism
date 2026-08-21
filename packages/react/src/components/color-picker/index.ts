@@ -35,4 +35,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {colorPickerVariants} from "@khulnasoft/styles";
 
-export type {ColorPickerVariants} from "@prismui/styles";
+export type {ColorPickerVariants} from "@khulnasoft/styles";

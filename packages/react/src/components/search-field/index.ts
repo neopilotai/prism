@@ -53,4 +53,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {searchFieldVariants} from "@khulnasoft/styles";
 
-export type {SearchFieldVariants} from "@prismui/styles";
+export type {SearchFieldVariants} from "@khulnasoft/styles";

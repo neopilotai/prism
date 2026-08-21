@@ -3,7 +3,7 @@
 import type {DOMRenderProps} from "../../utils/dom";
 import type {SkeletonVariants} from "@khulnasoft/styles";
 
-import {skeletonVariants} from "@prismui/styles";
+import {skeletonVariants} from "@khulnasoft/styles";
 import React from "react";
 
 import {useCSSVariable} from "../../hooks/use-css-variable";

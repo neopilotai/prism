@@ -31,4 +31,4 @@ export {SurfaceContext} from "./surface";
  * -----------------------------------------------------------------------------------------------*/
 export {surfaceVariants} from "@khulnasoft/styles";
 
-export type {SurfaceVariants} from "@prismui/styles";
+export type {SurfaceVariants} from "@khulnasoft/styles";

@@ -58,4 +58,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {disclosureVariants} from "@khulnasoft/styles";
 
-export type {DisclosureVariants} from "@prismui/styles";
+export type {DisclosureVariants} from "@khulnasoft/styles";

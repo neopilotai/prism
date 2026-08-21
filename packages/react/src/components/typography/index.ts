@@ -32,4 +32,4 @@ export type {
 
 export {typographyVariants} from "@khulnasoft/styles";
 
-export type {TypographyVariants} from "@prismui/styles";
+export type {TypographyVariants} from "@khulnasoft/styles";

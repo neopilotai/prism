@@ -55,4 +55,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {tabsVariants} from "@khulnasoft/styles";
 
-export type {TabsVariants} from "@prismui/styles";
+export type {TabsVariants} from "@khulnasoft/styles";

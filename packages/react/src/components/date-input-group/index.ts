@@ -58,4 +58,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {dateInputGroupVariants} from "@khulnasoft/styles";
 
-export type {DateInputGroupVariants} from "@prismui/styles";
+export type {DateInputGroupVariants} from "@khulnasoft/styles";

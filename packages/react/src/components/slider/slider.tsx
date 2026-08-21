@@ -5,7 +5,7 @@ import type {SliderVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {SliderRenderProps} from "react-aria-components/Slider";
 
-import {sliderVariants} from "@prismui/styles";
+import {sliderVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {
   SliderOutput as SliderOutputPrimitive,

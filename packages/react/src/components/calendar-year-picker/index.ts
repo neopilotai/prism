@@ -65,4 +65,4 @@ export {useCalendarOrRangeState} from "./use-calendar-state";
  * -----------------------------------------------------------------------------------------------*/
 export {calendarYearPickerVariants} from "@khulnasoft/styles";
 
-export type {CalendarYearPickerVariants} from "@prismui/styles";
+export type {CalendarYearPickerVariants} from "@khulnasoft/styles";

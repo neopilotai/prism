@@ -4,7 +4,7 @@ import type {TimeFieldVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {TimeValue} from "react-aria-components/TimeField";
 
-import {timeFieldVariants} from "@prismui/styles";
+import {timeFieldVariants} from "@khulnasoft/styles";
 import React from "react";
 import {TimeField as TimeFieldPrimitive} from "react-aria-components/TimeField";
 

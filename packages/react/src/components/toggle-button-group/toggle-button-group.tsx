@@ -4,7 +4,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {ToggleButtonGroupVariants, ToggleButtonVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {toggleButtonGroupVariants} from "@prismui/styles";
+import {toggleButtonGroupVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {useSlottedContext} from "react-aria-components/slots";
 import {

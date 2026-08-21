@@ -63,4 +63,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {accordionVariants} from "@khulnasoft/styles";
 
-export type {AccordionVariants} from "@prismui/styles";
+export type {AccordionVariants} from "@khulnasoft/styles";

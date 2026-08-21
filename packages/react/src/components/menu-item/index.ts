@@ -34,4 +34,4 @@ export type {
  * Variants
  * -----------------------------------------------------------------------------------------------*/
 export {menuItemVariants} from "@khulnasoft/styles";
-export type {MenuItemVariants} from "@prismui/styles";
+export type {MenuItemVariants} from "@khulnasoft/styles";

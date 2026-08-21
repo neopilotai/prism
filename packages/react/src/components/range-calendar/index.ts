@@ -105,4 +105,4 @@ export type {YearPickerContextValue} from "../calendar-year-picker";
 | * -----------------------------------------------------------------------------------------------*/
 export {rangeCalendarVariants} from "@khulnasoft/styles";
 
-export type {RangeCalendarVariants} from "@prismui/styles";
+export type {RangeCalendarVariants} from "@khulnasoft/styles";

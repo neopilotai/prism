@@ -4,7 +4,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {BadgeVariants} from "@khulnasoft/styles";
 import type {ReactNode} from "react";
 
-import {badgeVariants} from "@prismui/styles";
+import {badgeVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {cx} from "tailwind-variants";
 

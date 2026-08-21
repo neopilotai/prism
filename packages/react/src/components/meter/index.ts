@@ -38,4 +38,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {meterVariants} from "@khulnasoft/styles";
 
-export type {MeterVariants} from "@prismui/styles";
+export type {MeterVariants} from "@khulnasoft/styles";

@@ -4,7 +4,7 @@ import type {TagVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 import type {Button as ButtonPrimitive} from "react-aria-components/Button";
 
-import {tagVariants} from "@prismui/styles";
+import {tagVariants} from "@khulnasoft/styles";
 import React, {Children, createContext, use, useMemo} from "react";
 import {Tag as TagPrimitive} from "react-aria-components/TagGroup";
 

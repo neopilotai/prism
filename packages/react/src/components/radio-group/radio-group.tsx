@@ -3,7 +3,7 @@
 import type {RadioGroupVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {radioGroupVariants} from "@prismui/styles";
+import {radioGroupVariants} from "@khulnasoft/styles";
 import React from "react";
 import {RadioGroup as RadioGroupPrimitive} from "react-aria-components/RadioGroup";
 

@@ -53,4 +53,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {numberFieldVariants} from "@khulnasoft/styles";
 
-export type {NumberFieldVariants} from "@prismui/styles";
+export type {NumberFieldVariants} from "@khulnasoft/styles";

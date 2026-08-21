@@ -28,4 +28,4 @@ export type {TagRootProps, TagRemoveButtonProps} from "./tag";
  * -----------------------------------------------------------------------------------------------*/
 export {tagVariants} from "@khulnasoft/styles";
 
-export type {TagVariants} from "@prismui/styles";
+export type {TagVariants} from "@khulnasoft/styles";

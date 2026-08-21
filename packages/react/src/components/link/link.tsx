@@ -4,7 +4,7 @@ import type {DOMRenderProps} from "../../utils/dom";
 import type {LinkVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {linkVariants} from "@prismui/styles";
+import {linkVariants} from "@khulnasoft/styles";
 import React, {createContext, use} from "react";
 import {Link as LinkPrimitive} from "react-aria-components/Link";
 

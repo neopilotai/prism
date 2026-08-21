@@ -66,7 +66,7 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {toastVariants} from "@khulnasoft/styles";
 
-export type {ToastVariants} from "@prismui/styles";
+export type {ToastVariants} from "@khulnasoft/styles";
 
 /* -------------------------------------------------------------------------------------------------
  * Utilities

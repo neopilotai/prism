@@ -32,4 +32,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {tagGroupVariants} from "@khulnasoft/styles";
 
-export type {TagGroupVariants} from "@prismui/styles";
+export type {TagGroupVariants} from "@khulnasoft/styles";

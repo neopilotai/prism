@@ -3,7 +3,7 @@
 import type {ListBoxVariants} from "@khulnasoft/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {listboxVariants} from "@prismui/styles";
+import {listboxVariants} from "@khulnasoft/styles";
 import React from "react";
 import {ListBox as ListBoxPrimitive} from "react-aria-components/ListBox";
 

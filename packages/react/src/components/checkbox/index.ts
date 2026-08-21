@@ -42,4 +42,4 @@ export type {
  * -----------------------------------------------------------------------------------------------*/
 export {checkboxVariants} from "@khulnasoft/styles";
 
-export type {CheckboxVariants} from "@prismui/styles";
+export type {CheckboxVariants} from "@khulnasoft/styles";

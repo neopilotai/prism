@@ -23,4 +23,4 @@ export type {MenuSectionRootProps, MenuSectionRootProps as MenuSectionProps} fro
  * -----------------------------------------------------------------------------------------------*/
 export {menuSectionVariants} from "@khulnasoft/styles";
 
-export type {MenuSectionVariants} from "@prismui/styles";
+export type {MenuSectionVariants} from "@khulnasoft/styles";
