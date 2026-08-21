@@ -206,7 +206,7 @@ export const TextInputContent = () => {
 };
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prism/blob/main/example/src/app/(home)/components/text-field.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui/blob/main/example/src/app/(home)/components/text-field.tsx>).
 
 ## API Reference
 

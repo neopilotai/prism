@@ -4,7 +4,7 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/khulnasoft/prism/blob/main/LICENSE">
+  <a href="https://github.com/khulnasoft/prismui/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue?style=flat" alt="Apache License 2.0">
   </a>
   <a href="https://www.npmjs.com/package//native">
@@ -41,7 +41,7 @@ Experience PrismUI Native components in action with our official preview app! Yo
 
 Want to start building with PrismUI Native immediately? We provide a standalone example app that's fully configured and ready to use:
 
-**[🚀 PrismUI Native Example App](https://github.com/khulnasoft/prism-example)**
+**[🚀 PrismUI Native Example App](https://github.com/khulnasoft/prismui-example)**
 
 This repository contains a pre-configured React Native app with PrismUI Native already set up, including:
 
@@ -75,15 +75,15 @@ Contributions are always welcome! We appreciate your help in making PrismUI Nati
 
 ### How to Contribute
 
-- **Bug Fixes**: Check our [GitHub Issues](https://github.com/khulnasoft/prism/issues) for bugs that need fixing
+- **Bug Fixes**: Check our [GitHub Issues](https://github.com/khulnasoft/prismui/issues) for bugs that need fixing
 - **New Components**: Only core team can add new components. Check our [Roadmap](https://prismuinative.featurebase.app/roadmap) to see what's planned
 - **Feature Proposals**: Start a discussion in [GitHub Discussions](https://github.com/khulnasoft/prismui/discussions) before implementing
 
 **Important:** Please do not add new components or variants, change existing designs, or modify component behavior without prior discussion. We follow a strict design system based on our Figma designs and roadmap.
 
-For detailed guidelines, see [CONTRIBUTING.md](https://github.com/khulnasoft/prism/blob/main/CONTRIBUTING.md).
+For detailed guidelines, see [CONTRIBUTING.md](https://github.com/khulnasoft/prismui/blob/main/CONTRIBUTING.md).
 
-Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/prism/blob/main/CODE_OF_CONDUCT.md).
+Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/prismui/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 

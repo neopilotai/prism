@@ -393,7 +393,7 @@ export default function MenuExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prism/blob/main/example/src/app/(home)/components/menu.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui/blob/main/example/src/app/(home)/components/menu.tsx>).
 
 ## API Reference
 

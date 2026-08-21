@@ -86,7 +86,7 @@ export default function CloseButtonExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prism/blob/main/example/src/app/(home)/components/close-button.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui/blob/main/example/src/app/(home)/components/close-button.tsx>).
 
 ## API Reference
 

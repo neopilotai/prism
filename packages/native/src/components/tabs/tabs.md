@@ -355,7 +355,7 @@ export default function TabsExample() {
 }
 ```
 
-You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prism/blob/main/example/src/app/(home)/components/tabs.tsx>).
+You can find more examples in the [GitHub repository](<https://github.com/khulnasoft/prismui/blob/main/example/src/app/(home)/components/tabs.tsx>).
 
 ## API Reference
 
