@@ -143,7 +143,7 @@ export async function cloneDocsFolder(
 
       if (!fs.existsSync(sourceReactDir)) {
         throw new Error(
-          `Expected React docs at "${DOCS_CONTENT_ROOT}/react" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/khulnasoft/prism/issues.`
+          `Expected React docs at "${DOCS_CONTENT_ROOT}/react" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/khulnasoft/prismui/issues.`
         );
       }
 
@@ -171,7 +171,7 @@ export async function cloneDocsFolder(
 
       if (!fs.existsSync(sourceNativeDir)) {
         throw new Error(
-          `Expected Native docs at "${DOCS_CONTENT_ROOT}/native" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/khulnasoft/prism/issues.`
+          `Expected Native docs at "${DOCS_CONTENT_ROOT}/native" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/khulnasoft/prismui/issues.`
         );
       }
 
@@ -192,7 +192,7 @@ export async function cloneDocsFolder(
 
       if (!fs.existsSync(sourceMigrationDir)) {
         throw new Error(
-          `Expected Migration docs at "${DOCS_CONTENT_ROOT}/react/migration" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/khulnasoft/prism/issues.`
+          `Expected Migration docs at "${DOCS_CONTENT_ROOT}/react/migration" on branch "${ref}" but the directory is missing. The upstream docs layout may have changed; please report this at https://github.com/khulnasoft/prismui/issues.`
         );
       }
 

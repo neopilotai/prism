@@ -8,7 +8,7 @@ export const RAW_GITHUB_URL = "https://raw.githubusercontent.com";
 
 export const REPO_NAME = "khulnasoft/prismui";
 
-export const REPO_NAME_NATIVE = "khulnasoft/prism";
+export const REPO_NAME_NATIVE = "khulnasoft/prismui";
 
 export const ISSUE_REPORT_URL = `${GITHUB_URL}/${REPO_NAME}/issues/new?assignees=&labels=bug&template=bug_report.yml&title=%5BBUG%5D+-+`;
 

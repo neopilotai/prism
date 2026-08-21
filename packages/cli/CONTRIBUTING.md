@@ -2,7 +2,7 @@
 
 Hello!, I am very excited that you are interested in contributing with PrismUI CLI. However, before submitting your contribution, be sure to take a moment and read the following guidelines.
 
-- [Code of Conduct](https://github.com/khulnasoft/prism/blob/main/CODE_OF_CONDUCT.md)
+- [Code of Conduct](https://github.com/khulnasoft/prismui/blob/main/CODE_OF_CONDUCT.md)
 - [Pull Request Guidelines](#pull-request-guidelines)
 - [Development Setup](#development-setup)
 - [Documentation](#documentation)
@@ -68,7 +68,7 @@ https://www.conventionalcommits.org/ or check out the
    commit type. `scope` is just a short id that describes the scope of work.
 
 3. Make and commit your changes following the
-   [commit convention](https://github.com/khulnasoft/prism/blob/main/CONTRIBUTING.md#commit-convention).
+   [commit convention](https://github.com/khulnasoft/prismui/blob/main/CONTRIBUTING.md#commit-convention).
    As you develop, you can run `pnpm lint` and
    `pnpm build` e.g. `pnpm lint && pnpm build` to make sure everything works as expected.
 

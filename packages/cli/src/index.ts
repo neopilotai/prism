@@ -121,7 +121,7 @@ prismui.hook('preAction', async (command) => {
         )}\nRun \`${chalk.cyan(
           'npm install -g @prismui/cli@latest'
         )}\` to upgrade\nChangelog: ${chalk.underline(
-          'https://github.com/khulnasoft/prism/releases'
+          'https://github.com/khulnasoft/prismui/releases'
         )}`
       )}`,
       title: gradientString('PrismUI CLI')
