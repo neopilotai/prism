@@ -119,7 +119,7 @@ prismui.hook('preAction', async (command) => {
         `Available upgrade: v${currentVersion} -> ${chalk.greenBright(
           `v${cliLatestVersion}`
         )}\nRun \`${chalk.cyan(
-          'npm install -g prism-cli@latest'
+          'npm install -g @prismui/cli@latest'
         )}\` to upgrade\nChangelog: ${chalk.underline(
           'https://github.com/khulnasoft/prism/releases'
         )}`

@@ -3,7 +3,11 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "jsx": "react-jsx",
     "declaration": true,
     "declarationMap": false,
@@ -19,6 +23,14 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "."
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/*.stories.*", "**/*.test.*", "dist", ".rollup.cache"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.stories.*",
+    "**/*.test.*",
+    "dist",
+    ".rollup.cache"
+  ]
 }

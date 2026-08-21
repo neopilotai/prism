@@ -1,10 +1,10 @@
 {
-  "name": "prism-cli",
+  "name": "@prismui/cli",
   "private": false,
   "type": "module",
   "license": "MIT",
-  "version": "3.0.4",
-  "homepage": "https://github.com/khulnasoft/prism#readme",
+  "version": "3.2.4",
+  "homepage": "https://github.com/khulnasoft/prismui#readme",
   "description": "A CLI tool that unlocks seamless PrismUI integration",
   "keywords": [
     "UI",
@@ -22,11 +22,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/khulnasoft/prism.git",
-    "directory": "cli"
+    "url": "https://github.com/khulnasoft/prismui.git",
+    "directory": "packages/cli"
   },
   "bugs": {
-    "url": "https://github.com/khulnasoft/prism/issues"
+    "url": "https://github.com/khulnasoft/prismui/issues"
   },
   "publishConfig": {
     "access": "public",
@@ -44,7 +44,7 @@
   "scripts": {
     "dev": "tsup --watch",
     "link:cli": "pnpm link --global",
-    "link:remove": "pnpm uninstall --global prism-cli",
+    "link:remove": "pnpm uninstall --global @prismui/cli",
     "build": "tsup",
     "sync:docs": "tsx src/scripts/sync/sync.ts",
     "clean:cache": "tsx src/scripts/cache/clean.ts",
@@ -54,7 +54,6 @@
     "check:types": "tsc --noEmit",
     "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s --commit-path .",
     "release": "bumpp --execute='pnpm run changelog' --all",
-    "prepare": "husky install",
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
@@ -73,15 +72,12 @@
     "tar": "7.5.12"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.5.0",
-    "@commitlint/config-conventional": "19.5.0",
     "@types/gradient-string": "1.1.6",
     "@types/node": "20.19.28",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "bumpp": "10.3.2",
     "clean-package": "2.2.0",
-    "commitlint-plugin-function-rules": "4.3.0",
     "conventional-changelog-cli": "5.0.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.2",
@@ -92,8 +88,6 @@
     "eslint-plugin-sort-keys-fix": "1.1.2",
     "eslint-plugin-unicorn": "52.0.0",
     "eslint-plugin-unused-imports": "3.2.0",
-    "husky": "9.1.7",
-    "lint-staged": "16.2.7",
     "prettier": "3.7.4",
     "tsup": "8.5.1",
     "tsx": "4.21.0",
@@ -102,6 +96,5 @@
   "engines": {
     "node": ">=22.22.0",
     "pnpm": ">=10.x"
-  },
-  "packageManager": "pnpm@10.26.2"
+  }
 }

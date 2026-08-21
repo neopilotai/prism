@@ -6,11 +6,11 @@
 </p>
 </br>
 <p align="center">
-  <a href="https://github.com/khulnasoft/prism/blob/main/license">
-    <img src="https://img.shields.io/npm/l/prism-cli?style=flat" alt="License">
+  <a href="https://github.com/khulnasoft/prismui/blob/main/license">
+    <img src="https://img.shields.io/npm/l//cli?style=flat" alt="License">
   </a>
-  <a href="https://www.npmjs.com/package/prism-cli">
-    <img src="https://img.shields.io/npm/dm/prism-cli.svg?style=flat-round" alt="npm downloads">
+  <a href="https://www.npmjs.com/package//cli">
+    <img src="https://img.shields.io/npm/dm//cli.svg?style=flat-round" alt="npm downloads">
   </a>
 </p>
 
@@ -25,13 +25,13 @@ You can choose the following ways to start the PrismUI CLI.
 ### Npx
 
 ```bash
-npx prism-cli@latest
+npx /cli@latest
 ```
 
 ### Global Installation
 
 ```bash
-npm install -g prism-cli
+npm install -g /cli
 ```
 
 ## Usage
@@ -454,15 +454,15 @@ Whether it's a feature request, bug report, or a project to showcase, please get
 
 - [Discord](https://discord.gg/9b6yyZKmH4)
 - [Twitter](https://twitter.com/hero_ui)
-- [GitHub Discussions](https://github.com/khulnasoft/prism/discussions)
+- [GitHub Discussions](https://github.com/khulnasoft/prismui/discussions)
 
 ## Contributing
 
 Contributions are always welcome!
 
-See [CONTRIBUTING.md](https://github.com/khulnasoft/prism/blob/main/CONTRIBUTING.md) for ways to get started.
+See [CONTRIBUTING.md](https://github.com/khulnasoft/prismui/blob/main/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/prism/blob/main/CODE_OF_CONDUCT.md).
+Please adhere to this project's [CODE_OF_CONDUCT](https://github.com/khulnasoft/prismui/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 

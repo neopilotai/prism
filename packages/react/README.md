@@ -61,7 +61,7 @@ PrismUI is built for the AI-assisted development workflow.
 |---|---|
 | **MCP Server** (`@prismui/react-mcp`) | Components that understand your theme — install the server in Cursor, Claude Code, Windsurf, or any MCP-compatible editor |
 | **llms.txt** | Available at [prism.khulnasoft.com/llms.txt](https://prism.khulnasoft.com/llms.txt) — structured context for LLMs about every component |
-| **Agent Skills** | Run `npx prism-cli agents-md` to install skills for Cursor, Claude Code, and more |
+| **Agent Skills** | Run `npx /cli agents-md` to install skills for Cursor, Claude Code, and more |
 
 Works with **Cursor**, **Claude Code**, **Windsurf**, **GitHub Copilot**, and any tool that supports MCP or `llms.txt`.
 

@@ -13,7 +13,7 @@ export function getPkgTemplate(options: PkgTemplate = {}) {
         ...options.devDependencies
       },
       license: 'MIT',
-      name: 'prism-cli-pkg-template',
+      name: 'prismui-cli-pkg-template',
       private: false,
       type: 'module',
       version: '1.0.0'

@@ -1,9 +1,9 @@
 {
-  "name": "prism-cli-test",
+  "name": "prismui-cli-test",
   "type": "module",
   "private": true,
   "version": "1.0.0",
-  "description": "test for prism-cli",
+  "description": "test for @prismui/cli",
   "main": "index.js",
   "scripts": {
     "test": "vitest",
