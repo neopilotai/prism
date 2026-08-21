@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-export interface HerouiVersionsResult {
+export interface PrismuiVersionsResult {
   react?: string;
   native?: string;
   error?: string;
@@ -150,7 +150,7 @@ function parseNxWorkspace(cwd: string, packageJsonPath: string): string[] {
   return existingPatterns;
 }
 
-function findHerouiInWorkspace(cwd: string, patterns: string[]): {react?: string; native?: string} {
+function findPrismuiInWorkspace(cwd: string, patterns: string[]): {react?: string; native?: string} {
   const packagePaths = expandWorkspacePatterns(cwd, patterns);
   const reactVersions: string[] = [];
   const nativeVersions: string[] = [];
@@ -319,7 +319,7 @@ function compareVersions(a: string, b: string): number {
   return aPatch - bPatch;
 }
 
-export function getHerouiVersions(cwd: string): HerouiVersionsResult {
+export function getPrismuiVersions(cwd: string): PrismuiVersionsResult {
   const packageJsonPath = path.join(cwd, 'package.json');
 
   if (!fs.existsSync(packageJsonPath)) {
@@ -336,7 +336,7 @@ export function getHerouiVersions(cwd: string): HerouiVersionsResult {
     const reactVersion = dependencies['@prismui/react'] || devDependencies['@prismui/react'];
     const nativeVersion = dependencies['prismui-native'] || devDependencies['prismui-native'];
 
-    const result: HerouiVersionsResult = {};
+    const result: PrismuiVersionsResult = {};
 
     if (reactVersion) {
       result.react = reactVersion.replace(/^[<=>^~]+/, '');
@@ -351,7 +351,7 @@ export function getHerouiVersions(cwd: string): HerouiVersionsResult {
       const workspace = detectWorkspace(cwd);
 
       if (workspace.isMonorepo && workspace.packages.length > 0) {
-        const versions = findHerouiInWorkspace(cwd, workspace.packages);
+        const versions = findPrismuiInWorkspace(cwd, workspace.packages);
 
         if (versions.react) {
           result.react = versions.react;

@@ -21,8 +21,8 @@ import {
   collectDocFiles,
   collectMigrationDocFiles
 } from './doc-tree';
-import {ensureGitignoreEntry, generateHerouiMdIndex, injectIntoClaudeMd} from './index-and-inject';
-import {getHerouiVersions} from './workspace-versions';
+import {ensureGitignoreEntry, generatePrismuiMdIndex, injectIntoClaudeMd} from './index-and-inject';
+import {getPrismuiVersions} from './workspace-versions';
 
 export type DocSelection = 'react' | 'native' | 'migration';
 
@@ -32,13 +32,13 @@ export {
   collectDocFiles,
   collectMigrationDocFiles,
   ensureGitignoreEntry,
-  generateHerouiMdIndex,
-  getHerouiVersions,
+  generatePrismuiMdIndex,
+  getPrismuiVersions,
   injectIntoClaudeMd
 };
 
-export type {GitignoreStatus, HerouiMdIndexData} from './index-and-inject';
-export type {HerouiVersionsResult} from './workspace-versions';
+export type {GitignoreStatus, PrismuiMdIndexData} from './index-and-inject';
+export type {PrismuiVersionsResult} from './workspace-versions';
 
 /** Default branch for all docs (React, Native, and migration). */
 const DEFAULT_DOCS_BRANCH = 'v3';

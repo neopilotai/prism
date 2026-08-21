@@ -16,7 +16,7 @@ export function detectIndent(content: string): number {
   return match ? match[1]?.length || DEFAULT_INDENT : DEFAULT_INDENT;
 }
 
-function filterHeroUiPkgs(pkgs: string[]) {
+function filterprismuiPkgs(pkgs: string[]) {
   return pkgs.filter((pkg) => pkg.includes(PRISMUI_PREFIX) || pkg.includes(NEXTUI_PREFIX));
 }
 
@@ -33,7 +33,7 @@ export async function migrateJson(files: string[]) {
 
           try {
             await Promise.all([
-              ...filterHeroUiPkgs(Object.keys(json.dependencies)).map(async (key) => {
+              ...filterprismuiPkgs(Object.keys(json.dependencies)).map(async (key) => {
                 try {
                   const version = await fetchPackageLatestVersion(key);
 
@@ -42,7 +42,7 @@ export async function migrateJson(files: string[]) {
                   json.dependencies[key] = LATEST_VERSION;
                 }
               }),
-              ...filterHeroUiPkgs(Object.keys(json.devDependencies)).map(async (key) => {
+              ...filterprismuiPkgs(Object.keys(json.devDependencies)).map(async (key) => {
                 try {
                   const version = await fetchPackageLatestVersion(key);
 
@@ -70,7 +70,7 @@ export async function migrateJson(files: string[]) {
   }
 }
 
-export function migrateNextuiToHeroui(json: Record<string, SAFE_ANY>) {
+export function migrateNextuiToPrismui(json: Record<string, SAFE_ANY>) {
   const {dependencies, devDependencies} = json;
 
   if (dependencies) {

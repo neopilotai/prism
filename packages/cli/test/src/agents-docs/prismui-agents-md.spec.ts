@@ -8,8 +8,8 @@ import {
   collectDocFiles,
   collectMigrationDocFiles,
   ensureGitignoreEntry,
-  generateHerouiMdIndex,
-  getHerouiVersions,
+  generatePrismuiMdIndex,
+  getPrismuiVersions,
   injectIntoClaudeMd
 } from '@helpers/agents-docs/prismui-agents-md';
 import {afterEach, describe, expect, it} from 'vitest';
@@ -33,7 +33,7 @@ describe('prismui-agents-md', () => {
     });
   });
 
-  describe('generateHerouiMdIndex', () => {
+  describe('generatePrismuiMdIndex', () => {
     it('generates migration index with root and start hint', () => {
       const data = {
         migrationDocsPath: './.prismui-docs/migration',
@@ -43,7 +43,7 @@ describe('prismui-agents-md', () => {
         ]),
         selection: 'migration' as const
       };
-      const out = generateHerouiMdIndex(data, 'migration');
+      const out = generatePrismuiMdIndex(data, 'migration');
 
       expect(out).toContain('[PrismUI Migration Docs Index]');
       expect(out).toContain('root: ./.prismui-docs/migration');
@@ -58,7 +58,7 @@ describe('prismui-agents-md', () => {
         reactSections: buildDocTree([{relativePath: 'getting-started.mdx'}]),
         selection: 'react' as const
       };
-      const out = generateHerouiMdIndex(data, 'react');
+      const out = generatePrismuiMdIndex(data, 'react');
 
       expect(out).toContain('[PrismUI React v3 Docs Index]');
       expect(out).toContain('root: ./.prismui-docs/react');
@@ -72,7 +72,7 @@ describe('prismui-agents-md', () => {
         nativeSections: buildDocTree([{relativePath: 'intro.mdx'}]),
         selection: 'native' as const
       };
-      const out = generateHerouiMdIndex(data, 'native');
+      const out = generatePrismuiMdIndex(data, 'native');
 
       expect(out).toContain('[PrismUI Native Docs Index]');
       expect(out).toContain('root: ./.prismui-docs/native');
@@ -85,7 +85,7 @@ describe('prismui-agents-md', () => {
         outputFile: 'CLAUDE.md',
         selection: 'migration' as const
       };
-      const out = generateHerouiMdIndex(data, 'migration');
+      const out = generatePrismuiMdIndex(data, 'migration');
 
       expect(out).toContain('prismui agents-md --migration --output CLAUDE.md');
     });
@@ -170,7 +170,7 @@ describe('prismui-agents-md', () => {
     });
   });
 
-  describe('getHerouiVersions', () => {
+  describe('getPrismuiVersions', () => {
     let tmpDir: string;
 
     afterEach(() => {
@@ -186,7 +186,7 @@ describe('prismui-agents-md', () => {
         JSON.stringify({dependencies: {'@prismui/react': '^2.0.0'}}),
         'utf-8'
       );
-      const result = getHerouiVersions(tmpDir);
+      const result = getPrismuiVersions(tmpDir);
 
       expect(result.react).toBe('2.0.0');
       expect(result.error).toBeUndefined();
@@ -199,14 +199,14 @@ describe('prismui-agents-md', () => {
         JSON.stringify({devDependencies: {'@prismui/react': '3.0.0'}}),
         'utf-8'
       );
-      const result = getHerouiVersions(tmpDir);
+      const result = getPrismuiVersions(tmpDir);
 
       expect(result.react).toBe('3.0.0');
     });
 
     it('returns error when no package.json', () => {
       tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'prismui-agents-md-test-'));
-      const result = getHerouiVersions(tmpDir);
+      const result = getPrismuiVersions(tmpDir);
 
       expect(result.error).toContain('No package.json');
     });
@@ -218,7 +218,7 @@ describe('prismui-agents-md', () => {
         JSON.stringify({dependencies: {react: '18.0.0'}}),
         'utf-8'
       );
-      const result = getHerouiVersions(tmpDir);
+      const result = getPrismuiVersions(tmpDir);
 
       expect(result.error).toContain('not installed');
     });

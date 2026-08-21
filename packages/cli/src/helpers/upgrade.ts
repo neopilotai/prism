@@ -259,7 +259,7 @@ export async function getAllOutputData(
   const colorVersion = getColorVersion(currentVersion, latestVersion);
   const isLatest = compareVersions(currentVersion, latestVersion) >= 0;
 
-  const heroUIPeerDepList = await getPackagePeerDep(HERO_UI, allDependencies, missingDepSet);
+  const prismuiPeerDepList = await getPackagePeerDep(HERO_UI, allDependencies, missingDepSet);
 
   const allOutputList = [
     {
@@ -270,7 +270,7 @@ export async function getAllOutputData(
       versionMode
     }
   ];
-  const allPeerDepList = [...heroUIPeerDepList];
+  const allPeerDepList = [...prismuiPeerDepList];
   const allOutputData = {
     allOutputList,
     allPeerDepList

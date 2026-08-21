@@ -12,8 +12,8 @@ import {
   collectDocFiles,
   collectMigrationDocFiles,
   ensureGitignoreEntry,
-  generateHerouiMdIndex,
-  getHerouiVersions,
+  generatePrismuiMdIndex,
+  getPrismuiVersions,
   injectIntoClaudeMd,
   pullDocs
 } from '@helpers/agents-docs/prismui-agents-md';
@@ -47,7 +47,7 @@ function detectInstalledPackages(cwd: string): {
   hasReact: boolean;
   hasNative: boolean;
 } {
-  const versions = getHerouiVersions(cwd);
+  const versions = getPrismuiVersions(cwd);
 
   return {
     hasNative: !!versions.native,
@@ -326,7 +326,7 @@ export async function docsAction(options: DocsOptions) {
       selection === 'migration' ? `./${DOCS_DIR_NAME}/migration` : undefined;
 
     // Generate index content once (reused for all output files)
-    const indexData: Parameters<typeof generateHerouiMdIndex>[0] = {
+    const indexData: Parameters<typeof generatePrismuiMdIndex>[0] = {
       outputFile: outputFiles[0], // Use first file for index generation (for display purposes)
       selection
     };
@@ -341,11 +341,11 @@ export async function docsAction(options: DocsOptions) {
 
     // Generate index content for the selected library only
     const reactIndexContent =
-      selection === 'react' ? generateHerouiMdIndex(indexData, 'react') : undefined;
+      selection === 'react' ? generatePrismuiMdIndex(indexData, 'react') : undefined;
     const nativeIndexContent =
-      selection === 'native' ? generateHerouiMdIndex(indexData, 'native') : undefined;
+      selection === 'native' ? generatePrismuiMdIndex(indexData, 'native') : undefined;
     const migrationIndexContent =
-      selection === 'migration' ? generateHerouiMdIndex(indexData, 'migration') : undefined;
+      selection === 'migration' ? generatePrismuiMdIndex(indexData, 'migration') : undefined;
 
     // Write to all output files
     const gitignoreResult = ensureGitignoreEntry(cwd);

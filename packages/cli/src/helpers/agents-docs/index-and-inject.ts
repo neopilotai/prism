@@ -5,7 +5,7 @@ import path from 'node:path';
 
 import {type DocSection, collectAllFilesFromSections, groupByDirectory} from './doc-tree';
 
-export interface HerouiMdIndexData {
+export interface PrismuiMdIndexData {
   reactDocsPath?: string | undefined;
   nativeDocsPath?: string | undefined;
   migrationDocsPath?: string | undefined;
@@ -17,8 +17,8 @@ export interface HerouiMdIndexData {
   selection: DocSelection;
 }
 
-export function generateHerouiMdIndex(
-  data: HerouiMdIndexData,
+export function generatePrismuiMdIndex(
+  data: PrismuiMdIndexData,
   library: 'react' | 'native' | 'migration'
 ): string {
   const {
